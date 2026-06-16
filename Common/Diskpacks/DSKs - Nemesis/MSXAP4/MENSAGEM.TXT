@@ -1,0 +1,22 @@
+100 KEYOFF:SCREEN0:WIDTH40:LOCATE0,23
+110 PRINT" XWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWY"
+120 PRINT" V      SOFT-O-MATIC PACK N§O6      V"
+130 PRINT" V  FreeWare, ShareWare & DemoWare  V"
+140 PRINT" ZWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW["
+150 PRINT " Suas op‡µes s±o:" : PRINT
+160 PRINT"A>MALUCOS  (FreeWare) quebra  cabe‡as"
+170 PRINT"A>AUTOMENU (FreeWare) RUN  autom tico"
+180 PRINT"A>1-2-3MSX (DemoWare) integrado p/MSX"
+190 PRINT"A>BSDOS    (DemoWare) sistema p/disco"
+200 PRINT"A>MSXCLOCK (FreeWare) relogio no MSX1"
+210 PRINT"A>FDDMON   (FreeWare) editor  mem¢ria"
+220 PRINT"A>BUDGET   (FreeWare) controle p/MSX2"
+230 PRINT"A>DATASOFT (DemoWare) banco de  dados"
+240 PRINT"A>M-PAINT  (FreeWare) editor  gr fico"
+250 PRINT"A>TRANTOR  (FreeWare) jogo de a‡±o" : PRINT
+260 PRINT " Digite uma das op‡µes acima:":PRINT
+270 PRINT "Obs: Os arquivos .TXT s±o os manuais"
+280 PRINT "     dos programas aqui apresentados;"
+290 PRINT "     Conhe‡a outros pacotes da s‚rie!"
+300 CALL SYSTEM
+

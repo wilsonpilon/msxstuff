@@ -1,0 +1,535 @@
+     MSX PROJECT TOOLS 1.1
+
+     Programadores: Equipe Nemesis
+
+
+     INTRODUÄ∞O
+
+     O MSX PROJECT TOOLS  1.1  Ç  uma  coletÉnea  de  util°ssimas
+rotinas de programaá±o que facilitam ao usu†rio  o  projeto  e  a
+criaá±o de seus pr¢prios programas. Com a utilizaá±o das  rotinas
+existentes neste pacote, o seu programa em BASIC  ficar†  com  um
+aspecto muito mais profissional, pois elas re£nem  o  que  h†  de
+mais avanáado em termos de programaá±o.
+     Entre as rotinas que compµem o MSX PROJECT TOOLS 1.1 podemos
+destacar: CARACTERES REDEFINIDOS PADR∞O "WINDOWS", JANELAS COM 16
+NâVEIS,  MENUS  "PULL-DOWN",  ROTINA  DE  "ACCEPT",  ROTINAS   DE
+"SCROLL", DIRETäRIO "ROLODEX", NOVO MEIO DE FORMATAÄ∞O DE DISCOS,
+etc; todas com exemplos pr†ticos em BASIC.
+
+     CONTEãDO E CARREGAMENTO
+
+     Ao ser inserido  no  disk-drive  o  MSX  PROJECT  TOOLS  1.1
+executa autom†ticamente o "programa exemplo"  MSX  DISK-TOP  1.1.
+Este programa  foi  inteiramente  desenvolvido  em  BASIC  com  o
+aux°lio das rotinas que fazem parte do MSX PROJECT TOOLS  1.1.  O
+programa  MSX  DISK-TOP  1.O  que  foi  executado  Ç  o   arquivo
+"DISK-TOP.COM"   (fruto   da   uni±o    de    "DISK-TOP.BAS"    e
+"DISK-TOP.BIN"). AlÇm deste arquivo,  podemos  notar  atravÇs  do
+diret¢rio, que existem muitos outros arquivos:
+     Os  arquivos  de  apoio  s±o   programas   que   n±o   fazem
+necessariamente parte do MSX PROJECT  TOOLS  1.1,  mas  que  aqui
+est±o para dar suporte  ao  sistema.  S±o  eles:  "MSXDOS.SYS"  e
+"COMMAND.COM"     (Sistema      Operacional),      "AUTOEXEC.BAT"
+(auto-executor), "PRJTOOLS.COM" (tela de abertura) e "MANUAL.TXT"
+(texto explicativo);
+     Os arquivos restantes s±o  basicamente  as  12  rotinas  que
+compµem  o  MSX  PROJECT  TOOLS   1.1:   "CARACTER",   "WINDOWS",
+"PULLDOWN", "ROLODEX", "BUFFER", "ACCEPT", "PROMPT",  "FORMAT"  e
+as 4 rotinas de "SCROLL". Cada uma delas  compreende  3  arquivos
+que podem ser diferenciados atravÇs da extens±o do  seu  nome.  A
+rotina "BUFFER" por exemplo Ç composta por 3 arquivos distintos:
+
+"BUFFER.(1)": Programa em BASIC que monta a rotina "BUFFER"
+              atravÇs de linhas de "DATA";
+"BUFFER.(2)": Rotina pr¢priamente dita, em formato bin†rio.
+              Para execut†-la digite: BLOAD"BUFFER.(2)";
+"BUFFER.(3)": Programa em BASIC de exemplo de utilizaá±o da
+              rotina "BUFFER"  (deve ser  executado somente
+              depois da execuá±o do arquivo "BUFFER.(1)" ou
+              depois de carregada a rotina "BUFFER.(2)".
+
+     UTILIZAÄ∞O
+
+     A utilizaá±o do programa de exemplo  "MSX  DISK-TOP  1.O"  Ç
+muito simples, pois o mesmo funciona atravÇs  de  uma  "interface
+amig†vel"  (relaá±o  entre  programa  e  usu†rio)  que   facilita
+extremamente o seu  manuseio.  Ele  Ç  executado  automaticamente
+quando o disco Ç inserido no disk-drive  ou  atravÇs  do  Sistema
+Operacional:
+
+CCCA>DISK-TOP  e pressione [RETURN]!
+
+     Ao ser executado ele apresenta  uma  tela  inicial  com  uma
+"janela" no lado esquerdo onde podemos escolher uma  entre  as  6
+opáµes iniciais atravÇs de um menu "pull-down"  (barra  invertida
+que se movimenta atravÇs das setas direcionais). A opá±o  que  se
+encontra invertida Ç a que selecionamos.  Vamos  ent±o  descrever
+cada uma das opáµes:
+
+BASIC: Aborta o "DISK-TOP" e vai para o BASIC (todas as
+       rotinas que compµem o pacote permanecem na mem¢-
+       ria e podem ser reutilizadas);
+
+FILES: Mostra os arquivos que est±o no disco;
+
+ERASE: Apresenta uma janela onde um arquivo selecionado
+       ser† apagado do disco;
+
+RENAME: Apresenta uma janela onde um arquivo selecionado
+        poder† ser renomeado atravÇs de uma outra janela;
+
+FORMAT: Mostra uma janela com os 4 tipos poss°veis de
+        formataá±o de um disquete (Cuidado para n±o
+        formatar o disco do MSX PROJECT TOOLS!);
+
+SYSTEM: Aborta o programa e volta para o Sistema Opera-
+        cional "MSX-DOS".
+
+     Como j† foi dito  anteriormente,  o  MSX  DISK-TOP  1.O  foi
+programado em BASIC e  incrementado  com  as  rotinas  que  est±o
+presentes no MSX PROJECT TOOLS 1.1. Ao  utilizar  o  programa  de
+exemplo, vimos que  os  caracteres  est±o  redefinidos  com  novo
+desenho; s±o abertas "janelas" para a apresentaá±o de  opáµes;  a
+seleá±o de arquivos Ç feita atravÇs de  diret¢rio  "rolodex"  (os
+nomes dos arquivos "rolam" na janela) e menus "pull-down"; e  atÇ
+mesmo o "Ok" (sinal de "prompt") do BASIC  foi  substitu°do  pela
+palavra "Command?"; etc.
+     Cada uma destas implementaáµes est† dispon°vel  atravÇs  das
+rotinas  que  compµem  o  MSX  PROJECT  TOOLS  1.1.  Vamos  ent±o
+descrever todas as rotinas  existentes  no  pacote  e  apresentar
+exemplos pr†ticos de aplicaá±o para cada uma delas:
+
+     CARACTERES REDEFINIDOS
+
+     O novo "set" de caracteres n±o  somente  est†  diferente  no
+desenho das letras, como  tambÇm  contÇm  novos  padrµes  para  a
+montagem de "janelas" e plataformas e possui um banco  de  letras
+em cor invertida indispens†vel para  o  uso  da  rotina  de  menu
+"pull-down". No novo formato, por falta de espaáo, n±o existem os
+caracteres acentuados.
+
+     Para carregar a rotina execute o arquivo:
+
+     RUN"CARACTER.(1)" ou BLOAD"CARACTER.(2)" e tecle [RETURN]!
+
+     Depois de  carregada  a  rotina  digite  o  programa  abaixo
+("CARACTER.(3)") para instalar os novos caracteres:
+
+100 REM *****************************
+110 REM *  INSTALA O NOVO ALFABETO  *
+120 REM *****************************
+130 POKE &HF920,&HE1:POKE &HF921,&HC2
+140 POKE &HF91F,(INP(&HA8)AND48)/16
+150 KEYOFF : SCREEN 0,,0
+160 WIDTH 39 : COLOR15,1
+170 PRINT "Novos caracteres:" : PRINT
+180 FOR C = 0 TO 31 : BEEP
+190 PRINT CHR$(1)+CHR$(C+64); : NEXTC
+200 FOR N = 32 TO 255 : BEEP
+210 PRINT CHR$(N); : NEXT N : PRINT
+
+Atená±o: ê claro que o exemplo acima n±o ter† efeito se os
+         caracteres j† estiverem redefinidos  (como quando
+         abortamos o programa "MSX DISK-TOP 1.O");
+         As linhas 130 e 140 do exemplo s±o obrigat¢rias;
+         A redefiniá±o persiste mesmo quando acionamos CLS,
+         SCREEN, WIDTH, etc.
+
+     "BUFFER" DE TELAS
+
+     "Buffer" significa †rea de armazenamento.  Com  esta  rotina
+podemos  armazenar  atÇ  16  telas  de   texto   e   recuper†-las
+aleat¢riamente. Esta funá±o Ç muito £til para montarmos telas  de
+aux°lio, v†rios n°veis de janelas, etc. Para  compreender  melhor
+estes conceitos, carregue a rotina "BUFFER.(2)" do mesmo modo que
+fizemos com a anterior e depois execute os programas abaixo:
+
+100 REM ****************************
+110 REM * CRIA E ARMAZENA 16 TELAS *
+120 REM ****************************
+130 KEYOFF : SCREEN 0 : WIDTH 39
+140 FOR C=1 TO 16 : FOR N=1 TO 22
+150 PRINT STRING$(38,64+C) : NEXT N
+160 POKE &HC157,0 : ' Armazena
+170 POKE &HC159,C : ' No da tela
+180 DEFUSR = &HC144 : U = USR (0)
+190 CLS : NEXT C
+
+     O programa acima cria e armazena  16  telas  de  texto  e  o
+programa seguinte mostra as telas armazenadas:
+
+200 REM ****************************
+210 REM * MOSTRA 16 TELAS GRAVADAS *
+220 REM ****************************
+230 KEYOFF : SCREEN 0 : WIDTH 39
+240 FOR C=1 TO 16
+260 POKE &HC157,1 : ' Mostra
+270 POKE &HC159,C : ' No da tela
+280 DEFUSR = &HC144 : U = USR(0)
+290 IF INKEY$ = "" THEN 290
+300 NEXT C : GOTO 240
+
+     O endereáo de mem¢ria "&hC157" contÇm o  valor  "0"  para  a
+gravaá±o da tela no "buffer" e "1" para mostrar a tela contida no
+"buffer". O n£mero da tela, que  pode  variar  entre  1  e  16  Ç
+colocado no endereáo "&hC159" atravÇs do comando "POKE". Todas as
+operaáµes s±o ativadas no endereáo "&hC144"  atravÇs  do  comando
+"DEFUSR=&hC144:U=USR(0)". Caso n±o possua experiància, consulte o
+manual do seu  microcomputador  para  conhecer  maiores  detalhes
+sobre estes comandos.
+
+     "JANELAS" DE APRESENTAÄ∞O
+
+     As "janelas"  ("windows"  em  inglàs)  s±o  a  maneira  mais
+elegante  e  atual  de  apresentaá±o  de   dados   na   tela   do
+microcomputador. Para  abrir  uma  ou  v†rias  "janelas"  em  seu
+programa, basta  carregar  a  rotina  "WINDOWS.(2)",  colocar  as
+coordenadas de abertura nos respectivos endereáos  de  mem¢ria  e
+comandar "DEFUSR=&HC200:U=USR(0)".
+
+Exemplo:
+
+100 REM *****************************
+110 REM *       ABRE 9 JANELAS      *
+120 REM *****************************
+130 FOR C = 1 TO 9 : BEEP
+140 X=2+C : H=40-C : Y=1+C : L=22-C
+150 POKE &HC201,Y : POKE &HC202,X
+160 POKE &HC204,H : POKE &HC205,L
+170 DEFUSR=&HC200 : U=USR(0) : NEXT C
+
+     Como pode  ser  visto  no  exemplo  acima,  os  valores  das
+coordenadas das 9 "janelas" s±o colocadas nos endereáos "&hC201",
+"&hC202", "&hC204" e "&hC205".
+
+     ROTINA DE ENTRADA DE DADOS
+
+     A rotina de entrada de  dados  ("accept")  foi  desenvolvida
+para substituir os comandos "INPUT" e "LINE INPUT" do BASIC  MSX.
+Depois  de  carregada,  execute  o  exemplo  abaixo  para  melhor
+compreens±o do funcionamento da mesma:
+
+100 REM ******************************
+110 REM * UTILIZACAO - ROTINA ACCEPT *
+120 REM ******************************
+130 DATA NOME.... ,20
+140 DATA ENDERECO ,25
+150 DATA CIDADE.. ,10
+160 DATA ESTADO.. ,2
+170 DATA CEP..... ,5
+180 DATA TELEFONE ,8
+190 CLS : FOR C = 2 TO 12 STEP 2
+200 READ A$ : READ B
+210 LOCATE 2,C : PRINT A$ : NEXT C
+220 RESTORE 130 : FOR C=2 TO 12 STEP 2
+230 READ A$ : READ B
+240 POKE &HC121,11 : ' LINHA
+250 POKE &HC120,C : ' COLUNA
+260 POKE &HC11F,B : ' COMPRIMENTO
+270 DEFUSR=&HC000  : U=USR(0) : NEXT C
+280 CLEAR : GOTO 190
+
+     As linhas 240 e 250 do exemplo acima colocam as  coordenadas
+da entrada no v°deo; a  linha  260  determina  o  comprimento  da
+entrada e na linha 270 a rotina Ç executada.
+
+     DIRETäRIO "ROLODEX"
+
+     Uma das maneiras mais atraentes de  apresentar  o  nome  dos
+programas  constantes  num  disco  Ç  atravÇs  de  um   diret¢rio
+"rolodex". Ele possui este nome pois realiza um efeito de rotaá±o
+dos  nomes  que  pode   ser   controlado   atravÇs   das   teclas
+direcionais:
+
+100 REM ******************************
+110 REM *    DIRETORIO EM ROLODEX    *
+120 REM ******************************
+130 KEYOFF : SCREEN0 : WIDTH 39
+140 LOCATE 4,4 : PRINT "              "
+150 FOR C = 5 TO 16
+160 LOCATE 4,C : PRINT "              "
+170 NEXT C
+180 LOCATE 4,17: PRINT "              "
+190 D = 1  : ' DRIVE
+200 Y = 5  : ' COORDENADA Y
+210 X = 6  : ' COORDENADA X
+220 H = 12 : ' ALTURA
+230 POKE &HCB9C,D : POKE &HCB9D,Y
+240 POKE &HCB9E,X : POKE &HCB9F,H
+250 DEFUSR = &HCC65 : U=USR(0)
+
+     Na linha 190 Ç selecionado o drive a ser lido (1 para  A,  2
+para B, etc); nas linhas 200 e 210 a posiá±o do diret¢rio na tela
+e na linha 220 o n£mero de arquivos  que  ser±o  apresentados  de
+cada vez na "janela" (altura).
+
+     MENU "PULL-DOWN"
+
+     Para executar esta rotina Ç  necess†rio  que  os  caracteres
+estejam redefinidos pela rotina  "CARACTER".  Observe  com  muita
+atená±o os exemplos abaixo:
+
+Exemplo 1:
+
+100 REM *************************
+110 REM *   INVERTE UMA FRASE   *
+120 REM *************************
+130 CLS : LOCATE 11,2
+140 PRINT "NEMESIS SOFTWARE"
+150 POKE &HD401,11 : ' COLUNA
+160 POKE &HD402,2 : ' LINHA
+170 POKE &HD400,18: ' COMPRIMENTO
+180 DEFUSR = &HCAE1 : U=USR(0)
+
+     As coordenadas das linhas 150 e 160 localizam a  posiá±o  da
+palavra ou frase Ö ser invertida; e  na  linha  170  colocamos  o
+comprimento desta palavra ou frase. A invers±o Ç ativada na linha
+180. Vamos ao segundo exemplo:
+
+Exemplo 2:
+
+200 REM *************************
+210 REM * CRIA UM MENU PULLDOWN *
+220 REM *************************
+230 DATA FILES,ERASE,FORMAT,RENAME
+240 FOR C = 4 TO 7 : LOCATE 16,C
+250 READ A$ : PRINT A$ : NEXT C
+260 POKE &HD401,16 : ' COLUNA
+270 POKE &HD402,4 : ' LINHA
+280 POKE &HD400,8: ' COMPRIMENTO
+290 BEEP : U=USR(0)
+300 IF INKEY$ = "" THEN 300
+310 S = STICK(J)
+320 IF S = 0 THEN 310
+330 IF S=1 THEN U=USR(0) : L=L-1
+340 IF S=5 THEN U=USR(0) : L=L+1
+350 IF (SMOD2) = 0 THEN 310
+360 IFL<4 THEN L=4
+370 IFL>7 THEN L=7
+380 POKE &HD402,L
+390 U=USR(0) : GOTO 310
+
+     No  exemplo  acima  constru°mos  um  menu  "pull-down"  para
+seleá±o de uma entre 4 opáµes.
+
+Exemplo 3:
+
+400 REM *****************************
+410 REM *         POSICOES          *
+420 REM *****************************
+430 V=0  :' velocidade
+440 L=10 :' largura
+450 LI=20:' limite inferior
+460 LS=2 :' limite superior
+470 Y=LE :' linha  do cursor
+480 X=LS :' coluna do cursor
+490 LE=0 :' margem esquerda
+500 LD=30:' margem direita
+510 AV=1 :' avanco vertical
+520 AH=10:' avanco horizontal
+530 REM *****************************
+540 REM *       MONTA O MENU        *
+550 REM *****************************
+560 CLS : O=1 : PRINT"FACA A SUA OPCAO:"
+570 FOR N=LS TO LI : FOR I=LE TO LD STEP AH
+580 LOCATE I,N : PRINT "OPCAO" ; O
+590 O=O+1 : NEXT I : NEXT N : DEFUSR=&HCAE1
+600 POKE &HD400,L : POKE &HD401,Y
+610 POKE &HD402,X : U=USR(0)
+620 GOSUB 680
+630 LOCATE 0,22 : PRINT "Sua opcao:" ; N$
+640 GOTO 600
+650 REM *****************************
+660 REM *         PULL-DOWN         *
+670 REM *****************************
+680 IF INKEY$ = CHR$(13) THEN 810
+690 IF STRIG(J)<>0 THEN 810
+700 S=STICK(J) : IF S=0 THEN 680
+710 IF S=1 THEN U=USR(0) : X=X-AV : FOR N=1 TO V
+ : NEXT : IF X<LS THEN FOR N=1TO V*99 : NEXT : X=LI
+720 IF S=7 THEN U=USR(0) : Y=Y-AH : FOR N=1 TO V*9
+ : NEXT : IF Y<LE THEN Y=LD
+730 IF S=5 THEN U=USR(0) : X=X+AV : FOR N=1 TO V
+ : NEXT : IFX>LITHEN FOR N=1 TO V*99 : NEXT : X=LS
+740 IF S=3 THEN U=USR(0) : Y=Y+AH : FOR N=1 TO V*9
+ : NEXT : IF Y>LD THEN Y=LE
+750 IF (SMOD2) = 0 THEN 680
+760 POKE &HD401,Y : POKE &HD402,X
+770 FORN=1TOV*20:NEXT:U=USR(0):GOTO690
+780 REM *****************************
+790 REM *        LE A TARJA         *
+800 REM *****************************
+810 U=USR(0) : N$="" : FOR N = 0 TO L-1
+820 N$ = N$ + CHR$ (VPEEK(Y+X*40+N))
+830 NEXT N : RETURN
+
+     Neste  £ltimo  exemplo,  montamos  um  complexo  sistema  de
+escolha  entre  diversas  opáµes,  com  movimentos  verticais   e
+horizontais.
+
+     Atená±o: Esta rotina n±o funciona  adequadamente  nos  MSX2,
+devido  a  imcompatibilidade  no  endereáamento  da   tabela   de
+caracteres da "SCREEN 0".
+
+     ROTINA DE FORMATAÄ∞O
+
+     Esta rotina de  formataá±o  foi  criada  para  substituir  o
+processo original do disk-basic que n±o acompanhava o estilo  dos
+programas:
+
+100 REM ************************
+110 REM * ROTINA DE FORMATACAO *
+120 REM ************************
+130 CLS
+140 DATA "[1] 40 TRILHAS FS"
+150 DATA "[2] 40 TRILHAS FD"
+160 DATA "[3] 80 TRILHAS FS"
+170 DATA "[4] 80 TRILHAS FD"
+180 FOR C = 10 TO 13
+190 LOCATE 7,C
+200 READ A$ : PRINT A$ : NEXT C
+220 LOCATE 8 , 15
+230 PRINT "Sua escolha ? " ;
+240 A$ = INPUT$(1) : PRINT A$
+250 POKE &HBC7B , VAL(A$)
+260 DEFUSR=&HBCA9 : U=USR(0)
+270 DEFUSR=&HBC70 : U=USR(0)
+280 LOCATE 10 , 17
+290 PRINT "FORMATADO !"
+
+     Ao digitar e executar o  programa  acima,  certifique-se  de
+haver carregado previamente a rotina  "FORMAT.(2)"  e  previna-se
+contra a formataá±o de discos que contenham dados importantes.
+
+     ROTINAS DE "SCROLL"
+
+     As  rotinas  de  "scroll"  quando  ativadas  limpam  a  tela
+deslocando-a para a esquerda, para a direita, para baixo ou  para
+cima; criando um fant†stico  efeito  de  animaá±o.  Nos  exemplos
+abaixo, demonstramos como ativar cada uma das quatro  rotinas  de
+"scroll" da tela:
+
+Exemplo 1 - "scroll" para a direita ("SCROLL-1.(2)"):
+
+100 X = 23 * RND(1)
+110 LOCATE 0,X : PRINT ".";
+120 DEFUSR=&HBC00 : U=USR(0)
+130 GOTO 100
+
+Exemplo 2 - "scroll" para a esquerda ("SCROLL-2.(2)"):
+
+100 X = 23 * RND(1)
+110 LOCATE 39,X : PRINT ".";
+120 DEFUSR=&HBD00 : U=USR(0)
+130 GOTO 100
+
+Exemplo 3 - "scroll" para baixo ("SCROLL-3.(2)"):
+
+100 X = 40 * RND(1)
+110 LOCATE X,0 : PRINT ".";
+120 DEFUSR=&HBE00 : U=USR(0)
+130 GOTO 100
+
+Exemplo 4 - "scroll" para cima ("SCROLL-4.(2)"):
+
+100 X = 40 * RND(1)
+110 LOCATE X,20 : PRINT ".";
+120 DEFUSR=&HBF00 : U=USR(0)
+130 GOTO 100
+
+     INSTALANDO UM NOVO "PROMPT"
+
+     A rotina "PROMPT.(2)" quando carregada e  executada  atravÇs
+do comando BLOAD"PROMPT.(2)",R substitui o antigo "Ok"  do  BASIC
+pela palavra "Command?". Pode tambÇm  ser  executada  atravÇs  do
+comando "DEFUSR=&hBF70:U=USR(0)"  se  a  rotina  "PROMPT.(2)"  j†
+tiver sido carregada sem a opá±o de execuá±o ",R".
+
+     INFORMAÄ¥ES ãTEIS
+
+     Est† contido no disco o programa MSX DISK-TOP 1.O no formato
+BASIC, que deve ser examinado  para  melhor  compreens±o  do  seu
+funcionamento. Antes de execut†-lo Ç necess†rio carregar o  bloco
+"DISK-TOP.BIN" que na  verdade  Ç  um  agrupamento  de  todas  as
+rotinas que compµem o MSX PROJECT TOOLS 1.1;
+
+     O  arquivo  "DISK-TOP.COM"  por  sua  vez,  Ç  formado  pelo
+programa em BASIC  "DISK-TOP.BAS"  compilado  para  bin†rio  pelo
+utilit†rio "BAS-BIN.COM" do MSX-DOS TOOLS 4.O,  e  o  agrupamento
+das rotinas "DISK-TOP.BIN",  gravados  juntos  (&h8000,&hDB2D)  e
+ent±o transformados em ".COM" pelo "BIN-COM.COM" do MSX-DOS TOOLS
+4.0, ficando muito mais f†cil de ser  acessado  diretamente  pelo
+Sistema Operacional;
+
+     Para quem vai utilizar apenas algumas  das  rotinas  do  MSX
+PROJECT TOOLS 1.0 separadamente, ser† £til conhecer as †reas  que
+cada uma ocupa na mem¢ria do microcomputador:
+
+ACCEPT  .(2) - &HC000,&HC143 / BUFFER  .(2) - &HC144,&HC182
+WINDOWS .(2) - &HC200,&HC2E0 / CARACTER.(2) - &HC2E1,&HCAE0
+PULLDOWN.(2) - &HCAE1,&HCB18 / ROLODEX .(2) - &HCB19,&HDB2D
+SCROLL-1.(2) - &HBC00,&HBC3F / SCROLL-2.(2) - &HBD00,&HBD3F
+SCROLL-3.(2) - &HBE00,&HBE49 / SCROLL-4.(2) - &HBF00,&HBF46
+FORMAT  .(2) - &HBC70,&HBCCF / PROMPT  .(2) - &HBC70,&HBCBF
+                DISK-TOP.BIN - &HBC00,&HDB2D
+
+     Todas as rotinas apresentadas neste pacote funcionam no modo
+de texto "SCREEN 0". As rotinas "ACCEPT", "CARACTER", "ROLODEX" e
+"PROMPT" funcionam tambÇm na "SCREEN 1". A rotina  de  formataá±o
+pode ser adaptada para funcionar em qualquer modo de tela.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-97O
+                  Rio de Janeiro - RJ - Brasil.
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+HiSoft MON80 Disassembler Vs.1.05
+
+Vers±o em disco do mais famoso di
+sassembler j  criado para MSX.
+
+Teclas utilizadas: G,I,L,S(STATUS
+dos registradores),T,P. Pressione
+[CONTROL]+[E] para operar com  40
+colunas no v¡deo. Para instalar o
+programa utilize o programa:
+
+A>MON80INST e tecle [RETURN].
+
+

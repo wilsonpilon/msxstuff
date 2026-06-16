@@ -1,0 +1,16 @@
+
+ARGOS disk editer
+
+By LOGICIEL (LOAD MAGAZINE)
+            (BsAs Argentina)
+
+Para carregar:
+
+A>ARGOS & [RETURN]!
+
+Instru‡µes no programa.
+
+N±o roda em todas as versµes
+de interfaces de disk-drive!
+
+

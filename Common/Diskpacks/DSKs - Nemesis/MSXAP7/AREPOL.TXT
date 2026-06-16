@@ -1,0 +1,8 @@
+
+AREA DE POLIGONOS
+
+Para carregar digite:
+
+A>AREPOL e tecle [RETURN]!
+
+

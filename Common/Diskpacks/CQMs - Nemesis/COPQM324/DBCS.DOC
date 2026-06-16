@@ -1,0 +1,59 @@
+
+
+                 Supplemental Information for DBCS System Users
+                          (Chinese and Kanji Systems)
+
+                                  Sydex, Inc.
+                                 P.O. Box 5700
+                               Eugene, OR  97405
+
+     Overview
+
+     Commencing with version 3.12,  allowances for certain aspects of  dis-
+     plays  using  double-byte  character  (DBCS) encoding have been incor-
+     porated into the CopyQM product set.  Certain ideographic writing sys-
+     tems,  such as Chinese and Japanese Kanji make selective use  of  two-
+     byte  character  sequences to represent certain symbols.   This causes
+     display problems when a program attempts to use the PC extended charac-
+     ter set for line drawing and other purposes.
+
+     Description of Changes
+
+     All of the CopyQM product set has  been  modified  to  check  for  the
+     presence  of the E-Ten Chinese System display software.   In addition,
+     all CopyQM products accept a command-line switch of  either  /7BIT  or
+     7BIT which will manually force use of alternate character sets and dis-
+     play  color  schemes  that  do not conflict with the requirements of a
+     DBCS-aware system.
+
+     In most cases,  displays are altered to supplant line-drawing  graphic
+     characters  with  contrasting  color  schemes.    In  the  case  of  a
+     monochrome display,  where color cannot be used  for  contrast,  line-
+     drawing  characters have been replaced with the asterisk "*",  usually
+     as a border character in boxed text.
+
+     In all cases,  when DBCS operation is specified,  no character with  a
+     value above decimal 127 will be used in displays by CopyQM.   However,
+     8-bit text which is entered by the  user  will  be  displayed  without
+     modification.
+
+     If the /7BIT switch is used as a command-line option for CQMENU, it is
+     passed to CopyQM, as is the  /MONO (monochrome display) switch.
+
+     Users  of  the  Taiwanese  E-Ten display system should not have to ex-
+     plicitly specify 7BIT, as detection of the E-Ten software is automati-
+     cally performed by all products.   However,  if the  E-Ten  system  is
+     placed  in  the  non-DBCS  mode,  CopyQM will execute in full 8-bit PC
+     mode, even if the E-Ten display mode is changed during the session.
+
+     Examples
+
+     To start CopyQM in 7-bit display mode and copy using drive A::
+
+                                 COPYQM A: 7BIT
+
+     To view the diskette configuration:
+
+                                 VIEWCONF /7BIT
+
+

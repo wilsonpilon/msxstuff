@@ -1,0 +1,127 @@
+CCCSISTEMA OPERACIONAL HELLO! Vs 1.O
+
+CCCAutor: Eduardo Alberto Barbosa
+
+CCCVenda exclusiva: NEMESIS INFORMATICA LTDA.
+
+
+CCCAPRESENTACAO:
+
+     O Sistema Operacional HELLO! foi desenvolvido para facilitar os usuarios de microcomputadores MSX na utilizacao dos mesmos com Disk-drive.
+     O Sistema Operacional HELLO! tambem mostra-se demasiadamente util na localizacao e/ou recuperacao de defeitos a nivel de hardware e midia utilizada.
+     O programa foi idealizado levando-se em conta as necessidades mais frequentes de nossa equipe e de clientes consultados. Agradeceriamos tambem se voce fizesse seus comentarios e sugestoes, para que possam ser acrescentadas na medida do possivel em futuras versoes do mesmo. Todo comprador da versao original tem direito as atualizacoes que possam vir a ser lancadas, como tambem dos modulos opcionais que em breve serao criados pelo autor.
+     O Sistema Operacional HELLO! e' de muito simples utilizacao, pois e' todo montado atraves de menus "pull-down", sem necessidade de grandes conhecimentos.
+
+CCCCARREGAMENTO:
+
+     Ligue o disk-drive, ligue o computador e insira o disco com o programa. O Sistema Operacional HELLO! se auto-executara', mostrando em alguns segundos a tela inicial com o nome do programa, o nome do autor, o nome da NEMESIS INFORMATICA LTDA. e o nome do comprador responsavel pela copia.
+     Em caso de mal funcionamento, envie o disco para ser regravado pela NEMESIS INFORMATICA LTDA. O software e' 1OO% garantido contra falhas de gravacao ou ate' mesmo por danos causados pelo proprio usuario, por tempo indeterminado.
+
+CCCMENU INICIAL:
+
+     Depois de apresentada a tela de abertura, pressione a [BARRA DE ESPACOS] para ir ao Menu Inicial, com as principais funcoes do programa:
+Diretorio, Editar, Examinar, Formatar, Restaurar, Mapa, Ordenar, Pesquisar, Hardware, Sistema, Limpar, Versao, Back-up e Retornar.
+     Para acessar a uma destas funcoes, leve a tarja branca para a opcao desejada com o auxilio das setas direcionais e acione pressionando a [BARRA DE ESPACOS].
+     Veremos a seguir, a descricao de cada uma das funcoes disponiveis:
+
+CCCDIRETORIO:
+
+     Ao selecionar esta opcao, aparecera' no canto inferior direito da tela, uma janela onde podera' se optar pela confirmacao da opcao, selecionar o drive usado (A ou B, dependendo da configuracao utilizada), ou ainda retornar ao menu anterior (inicial).
+     Confirmando a opcao "Diretorio", abrirao no lado esquerdo da tela, duas janelas: uma com o NOME DO DISCO ("LABEL") e outra com os arquivos contidos no disco. Pressionando-se a [BARRA DE ESPACOS], pode-se selecionar atraves da tarja, um arquivo para que outra janela seja aberta com um novo menu de sub-opcoes:
+
+EXECUTA - Faz rodar o arquivo selecionado, desde que o mesmo esteja em formato "assembler absoluto" (.COM), ou que seja um dos modulos do MSX-DOS TOOLS (NEMESIS INFORMATICA LTDA.) ou de extensoes do HELLO!, brevemente disponiveis;
+
+RENOMEIA - Troca o nome do arquivo. O novo nome sera' pedido pelo programa atraves de uma nova janela;
+
+APAGAR - Apaga o arquivo selecionado. Cuidado para nao apagar acidentalmente algum arquivo importante. Em caso de perda acidental, recupere o arquivo com o utilitario "RECOVER.COM" do MSX-DOS TOOLS I (NEMESIS INFORMATICA LTDA.);
+
+EXIBE - Lista na tela o arquivo selecionado, desde que o mesmo esteja no formato ASCII (editado num processador de textos qualquer);
+
+COPIA - Fornece uma copia do arquivo selecionado para um outro disco. A opcao nao dara' um resultado satisfatorio com arquivos bloqueados ou do proprio HELLO!;
+
+LABEL - Muda o nome do disco. O novo nome sera' pedido numa nova janela. Ele nao deve ultrapassar 8 caracteres;
+MENU ANTERIOR - Como em todas as funcoes, volta ao menu inicial.
+
+CCCEDITAR:
+
+     No menu de sub-opcoes poderemos escolher entre EDITAR UM ARQUIVO ou EDITAR DIRETAMENTE NO DISCO, funcoes de "ZAPPER" comuns a outros sistemas, mas com muitas inovacoes que veremos adiante. Ao acessar uma das opcoes, entraremos no modo de edicao. Inicialmente o cursor se colocara' sobre o codigo em hexadecimal do caracter a ser editado. Pressionando-se [SELECT] moveremos o cursor para a area de edicao do caracter no codigo ASCII. As setas movem o cursor sobre as tabelas.
+
+Outros comandos:
+
+[CONTROL] + [A] - Avanca uma pagina;
+[CONTROL] + [R] - Retrocede uma pagina;
+[CONTROL] + [G] - Grava as alteracoes;
+[CONTROL] + [U] - Funcao "UNDO", recupera o estado original da pagina, desde que a mesma nao tenha sido gravada em sua nova forma;
+
+[ESC] - Aborta a funcao de edicao.
+
+CCCEXAMINAR:
+
+     Nesta funcao, podemos examinar um disco setor-por-setor. Ao localizar falha em algum setor, aparecera' uma janela no canto inferior direito da tela, onde teremos como opcoes RESTAURAR O SETOR DANIFICADO, ou CONTINUAR o teste, ignorando a falha.
+     A recuperacao de setores defeituosos (ERRO DE E/S) tem sucesso em 7O% dos casos em que o disco nao apresentou defeitos fisicos (furos, arranhoes, desmagnetismo, etc) impossiveis de se consertar mesmo em computadores mais sofisticados.
+     Garantimos que somente esta funcao do HELLO! ja' compensa o investimento no software.
+
+CCCFORMATAR:
+
+     Podemos escolher entre FORMATACAO SIMPLES (18O Kbytes) ou DUPLA (36O Kbytes). A formatacao corre um pouco mais rapida que a normal no ambiente MSX-DOS ou DISK-BASIC e e' "inteligente":
+Encontrando defeito fisico no disco que normalmente ocasionaria um "ERRO NA FORMATACAO", cria-se uma rede de isolamento da area afetada, informando a FAT que a area nao estara' disponivel para gravacao. E a formatacao continua, preparando com um pouco menos de espaco que o normal, um disco antes irrecuperavel!
+
+CCCRESTAURAR:
+
+     Um artificio muito inteligente que possui o HELLO! ‚ a gravacao de uma "sosia" da trilha "0" em uma area nao utilizavel do disco. Em caso da perda ou dano no diretorio do disco, o mesmo podera' ser regravado com "RECUPERAR A TRILHA 0". No caso de FORMATACAO ACIDENTAL, poderemos ao menos saber o que havia no disco, o que e' muito util em alguns casos.
+
+CCCMAPA:
+
+     Inicialmente aparecera' um quadro com as informacoes vitais sobre o disco analizado. Com as setas de movimentacao lateral poderemos observar o MAPA DE OCUPACAO dos arquivos gravados no disco. Pressionando-se a [BARRA DE ESPACOS] sera emitida uma HARD-COPY na impressora. Use [ESC] para abortar a funcao.
+
+CCCORDENAR:
+
+     Poderemos ordenar pela ordem alfabetica os arquivos existentes num determinado disco levando em conta o NOME do arquivo ou sua EXTENSAO. E' o sistema de ordenacao mais seguro existente para a linha MSX.
+
+CCCPESQUISAR:
+
+     Esta funcao nos possibilita procurar por uma "STRING" ou sequencia de caracteres num determinado arquivo ou diretamente nos setores do disco. Localizando-a poderemos edita-la.
+
+CCCHARDWARE:
+
+     Neste bloco, temos uma variedade de testes de disk-drive como: VELOCIDADE de rotacao do motor, ALINHAMENTO RADIAL dos cabecotes, e teste de LEITURA E GRAVACAO. Todos os testes sao acompanhados visualmente na tela por representacao simbolica.
+     Existe ainda o item "LIMPEZA", que aciona o cabecote do drive em movimentos sequencialmente corretos e de duracao calculada para o uso com discos de limpeza (encontraveis com facilidade em lojas de produtos eletronicos).
+
+     OBS: No item de verificacao de LEITURA e GRAVACAO, deve ser usado o proprio disco do HELLO! Um disco gravado normalmente podera' ter seu conteudo alterado.
+
+CCCSISTEMA:
+
+     Alem de apresentar o numero de DRIVES LOGICOS e FISICOS existentes na configuracao utilizada (teste de "INTERFACE"), esta opcao ainda verifica as MEMORIAS RAM e VRAM do microcomputador utilizado. O nivel de precisao e' altamente confiavel.
+
+CCCLIMPAR:
+
+     Limpa a tela das janelas sobrepostas e retorna ao MENU INICIAL.
+CCCVERSAO:
+
+     Limpa a tela das janelas sobrepostas e exibe a TELA DE ABERTURA.
+
+CCCBACK-UP:
+
+     Nesta opcao, que somente pode ser ativada com o uso de 2 drives, permite a copia fisica integral de um disco, simulando sua propria formatacao se necessario. Nao funciona adequadamente com discos gravados fora do padrao MSX-DOS, como e' o caso do proprio HELLO!, cujas copias sao geradas no padrao de microcomputadores IBM/PC.
+
+CCCRETORNAR:
+
+     Esta opcao aborta o HELLO! e retorna ao MSX-DOS.
+
+CCCATENCAO:
+
+     Este software esta' registrado pela NEMESIS INFORMATICA LTDA. Esta' tambem protegido contra copias nao autorizadas. O nome do cliente que o adquiriu, como o seu numero de registro, estao armazenados em diversas areas do disco. Copias ilegais secundarias levarao o nome do usuario primario.
+
+     Toda comunicacao referente aos nossos produtos deve ser encaminhada para a:
+
+CCCNEMESIS INFORMATICA LTDA.
+
+CCCCAIXA POSTAL 4.583 CEP 2O.OO1 RIO DE JANEIRO - RJ.
+
+CCCRUA SETE DE SETEMBRO 92 SALA 1.91O - CENTRO
+
+CCCRIO DE JANEIRO - RJ.
+
+CCCTELEFONE - (O21) 222-49OO
+
+

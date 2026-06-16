@@ -1,0 +1,23 @@
+
+HiSoft GEN80 Macro Assembler (DISK)
+
+Compilador Assembler para MSX. Com-
+pila programas digitados em  edito-
+res de texto do formato ASCII.   o
+mais profissional existente na  li-
+nha MSX. Recomendamos o uso do edi-
+tor SCED ou ainda o ED80.
+
+A sintaxe de compila‡±o ‚:
+
+A>GEN80 PROGRAMA.BIN=PROGRAMA.GEN
+
+(PROGRAMA.GEN ‚ o programa digitado
+no editor de textos em ASCII,   que
+obedece as normas do compilador)
+
+Para maiores detalhes digite:
+
+A>GEN80 e tecle [RETURN].
+
+

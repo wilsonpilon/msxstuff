@@ -1,0 +1,10 @@
+
+FISICA: ELETRICIDADE II
+
+     CONDUTIVIDADE
+
+Para carregar digite:
+
+A>CONDUTOR e tecle [RETURN]!
+
+

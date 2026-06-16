@@ -1,0 +1,24 @@
+
+CalcStar by MicroPro 1981
+
+CalStar is a "spreadsheet" designed to
+work in CP/M machines.    This version
+was totally adapted to work on any MSX
+computers with 80 columns adapter,  or
+any MSX2 standard. MSX emulates VT-52.
+
+The parts of the program are:  CS.COM,
+CS.OVR, CSDUMP.COM, CSDUMP.OVR, CSMASK
+.MSK, INSTCS.COM, INSTCS.DAT, INSTCS.O
+VR and TERMCAP.SYS.
+
+CS.COM is the principal program;
+CSDUMP.COM prints CS documents  in any
+printer or create a file with that;
+INSTCS is a install program to  change
+the operation mode of CS.COM;
+TERMCAP.SYS is the file with "INSTALL"
+modifications. It's automatic loaded.
+
+This is a FreeCopy. NOT FOR SALE, OK ?
+

@@ -1,0 +1,281 @@
+
+
+
+
+                Notes for Micro Solutions CompatiCard(tm) Users
+
+                                 July 29, 1992
+
+                                  Sydex, Inc.
+                                 P.O. Box 5700
+                               Eugene, OR  97405
+                                 (541) 683-6033
+
+
+     The CompatiCard(tm) line of diskette adapters from MicroSolutions,
+     Inc. (DeKalb, IL  60115) represents one of several options available
+     to add extra diskette drives to a system.  This document describes spe-
+     cial steps that may be necessary in order to use CompatiCard drives
+     with Sydex products.
+
+     First, it's important that the exact type of CompatiCard be iden-
+     tified; DIFFERENT MODELS ARE OPERATIONALLY DIFFERENT.  At the time of
+     this writing, Micro Solutions offers three models of the CompatiCard:
+
+          The CompatiCard I supports up to four diskette drives and can be
+          identified by its absence of DIP switches.  This model also has a
+          37-pin external drive connector mounted on the card bracket.
+          Documentation accompanying the CompatiCard identifies it simply
+          as the "CompatiCard" (no model number).  There is no BIOS ROM on
+          the card.
+
+          The CompatiCard II is a trimmed-down version of the CompatiCard I
+          and supports only two drives.  Like the CompatiCard I, it has no
+          DIP switches or BIOS ROM; it does not have an external drive con-
+          nector.
+
+          The CompatiCard IV is a much later product than either the Com-
+          patiCard I or II and features 2.88M drive support.  This card
+          also has a BIOS ROM and two sets of DIP switches located at the
+          top of the card.  This card also has an external drive connector.
+
+     Any of the CompatiCards can be configured either as the primary dis-
+     kette controller, or as an add-on secondary controller.  Normally, a
+     DISKETTE.CFG file should not be necessary if a CompatiCard is being
+     used as the primary diskette controller.  However, if you have dif-
+     ficulty accessing all of your diskette drives, it will be necessary to
+     explicitly specify your diskette configuration with a DISKETTE.CFG
+     file.
+
+
+
+
+
+
+
+                                     Page 1
+
+
+
+
+                            FOR COMPATICARD I OR II
+
+     Before proceeding with this discussion, please read the section titled
+     "Specifying a Diskette Configuration" in the documentation that accom-
+     panies your Sydex product.
+
+     Each drive used by the CompatiCard I or II must be completely
+     specified in the DISKETTE.CFG file.  Fortunately, most of the informa-
+     tion needed for the DISKETTE.CFG file is already present in your
+     system's CONFIG.SYS file.  Note that the CompatiCard I and II are non-
+     standard in their support of high-density diskettes and require that
+     COMPATICARD (abbreviated CO) be specified in the DISKETTE.CFG file for
+     each drive connected to them.
+
+     Begin by looking for the line in CONFIG.SYS that contains a reference
+     to CCDRIVER.SYS.  The line will have a form similar to the following:
+
+                         DEVICE=CCDRIVER.SYS /x,y,z ...
+
+     where "x", "y" and "z" are numbers.  Each set of "/x,y,z" describes
+     one diskette drive.
+
+     The first number, "x", indicates the BIOS unit number.  It also in-
+     directly indicates the CompatiCard port address as follows:
+
+                         Port Address    BIOS Unit "x"
+                         ============    =============
+                              3F0H           0 - 3
+                              370H           4 - 7
+                              360H           8 - 11
+                              3E0H           12 - 14
+
+     The "y" of the set is the drive type and can have the following
+     values:
+
+                       Type Number "y"        Drive Type
+                       ===============        ==========
+                              0                   360K
+                              1                   720K
+                              2                   1.2M
+                              3                   1.2M DUAL
+                              4                   8INCH
+                              5                   720K
+                              6                   not supported
+                              7                   1.44M
+
+     The "z" of each set is the step rate of the drive and should be used
+     directly with the SEEK keyword.
+
+
+
+                                     Page 2
+
+
+
+
+     If a CompatiCard II has been configured with nonstandard IRQ and DMA
+     settings, this will also be shown on the CCDRIVER.SYS line in
+     CONFIG.SYS:
+
+               DEVICE=CCDRIVER.SYS /x,y,z ... IRQ a  DMA b
+
+     If "IRQ" is present on the CCDRIVER.SYS line, specify INTERRUPT in
+     DISKETTE.CFG and use the value given by "a", above.  Similarly, use
+     the CCDRIVER.SYS DMA value for the DISKETTE.CFG DMA value.
+
+     The physical unit assigned to a drive and designated by the UNIT
+     keyword in DISKETTE.CFG is always in the range of 0 through 3.  To get
+     the physical unit number for any drive:
+
+          1.   Consult the port address table shown above.  Locate the line
+               which shows the port address for your particular CompatiCard
+               configuration.
+
+          2.   Take the first BIOS number (0, 4, 8 or 12) and subtract it
+               from the "x" value for the drive.  This will yield a number
+               between 0 and 3, the physical unit number of the drive.
+
+     As an example, consider a system with a CompatiCard II installed as a
+     secondary controller.  Two drives--E:, a 360K unit, and F:, a 1.44M
+     unit--are installed.  The following line is found in CONFIG.SYS:
+
+          DRIVER=CCDRIVER.SYS /8,0,6 /9,7,6
+
+     From this line, we obtain the following DISKETTE.CFG file:
+
+          DEFAULT:                      (to define drives A: and B:)
+          E: 360K BIOS 8 PORT 360H UNIT 0 SEEK 6 COMPATICARD
+          F: 1.44M BIOS 9 PORT 360H UNIT 1 SEEK 6 COMPATICARD
+
+     Note that the "DEFAULT:" line indicates that drives connected to the
+     primary controller are to use default parameters as determined by the
+     configuration routines.
+
+
+                               FOR COMPATICARD IV
+
+     The CompatiCard IV can be used in place of a system's primary diskette
+     controller to add four drive or 2.88M support to a system.  If the Com-
+     patiCard IV is used as a primary with the on-board BIOS enabled and
+     card address jumper J1 is set to the "A" position, a DISKETTE.CFG file
+     should be unnecessary.
+
+
+
+
+
+                                     Page 3
+
+
+
+
+     However, if the CompatiCard IV is used as a secondary controller in
+     addition to the normal system diskette controller, a DISKETTE.CFG file
+     must be present.  In addition, if the on-board BIOS has been disabled,
+     the following line must also be present in CONFIG.SYS:
+
+               DEVICE=CC4BIOS.SYS
+
+     The first step in determining values for drive configuration state-
+     ments in DISKETTE.CFG is to ascertain the I/O port address of the Com-
+     patiCard IV being used.  This can be done by inspecting jumper J1 on
+     the CompatiCard IV:
+
+                   J1 Setting    Port Address      BIOS Unit
+                   ==========    ============      =========
+                         A              3F0H           0 - 3
+                         B              370H           4 - 7
+                         C              360H           8 - 11
+                         D              3E0H           12 - 14
+
+     Next, the physical unit (UNIT keyword) must be determined from the way
+     the diskette drives are connected to the CompatiCard.  If a drive or
+     drives are connected to connector P2, the drive connected after the
+     "twist" in the drive cable is physical unit 0; the drive connected
+     before the "twist" at the end of the cable is physical unit 1.
+
+     If a drive or drives are connected to connector P3 or P4, the drive
+     connected after the "twist" in the drive cable is physical unit 2; the
+     drive connected before the "twist" at the end of the cable is physical
+     unit 3.
+
+     To determine the BIOS unit of a drive, consult the Port Address table
+     shown above.  Locate the line corresponding to your CompatiCard's J1
+     setting and take the first number under the "BIOS Unit" column heading
+     and add it to the physical unit number of the drive.
+
+     For example, a Compaticard having J1 set to C, a drive connected to
+     the straight end of the cable on connector P2 would have physical unit
+     number 1 and BIOS unit 9.
+
+     If factory settings for jumper J2 have been changed, DMA and INTERRUPT
+     specifications must be included for the affected drives in
+     DISKETTE.CFG.  If a DMA channel other than 2 has been set with jumper
+     J2, this DMA channel must be included in the DISKETTE.CFG line for a
+     drive.  Similarly, if the interrupt number set by jumper J2 is not In-
+     terrupt 6, this information must be included  in DISKETTE.CFG.
+
+     The COMPATICARD keyword must NOT be used with the CompatiCard IV.
+
+
+
+
+                                     Page 4
+
+
+
+
+     As an example, consider a CompatiCard IV being used as a secondary con-
+     troller.  Jumper J1 is set to position "D" and there is one 1.44M at-
+     tached.  The drive is connected after the "twist" in the cable to con-
+     nector P2.  Factory settings for J2 have not been disturbed.  The
+     added drive is known as G:.
+
+     The following DISKETTE.CFG file would be used to describe the con-
+     figuration to all Sydex products:
+
+               DEFAULT:            (for primary drives A: and B:)
+               G: 1.44M PORT 3E0H UNIT 0 BIOS 12 CHANGE
+
+     Note that the CHANGE keyword is used to specify that a "diskette
+     changed" status is available from the drive.  Normally, only 1.2M,
+     1.44M and 2.88M drives support this feature.
+
+
+                              IF YOU HAVE PROBLEMS
+
+     If the drive activity light is not illuminated when the drive is ac-
+     cessed, the port address, physical unit or BIOS unit has been incor-
+     rectly specified.  If the drive can be accessed, but encounters data
+     errors, the drive type is probably incorrect.   Note that the Com-
+     patiCard II does not support single-speed 1.2M drives; a 1.2M drive
+     must be described as "1.2M DUAL" to operate correctly.
+
+     If SEEK has been specified for any drive, it should not be less than 6
+     milliseconds, unless you are certain that the drive can operate at
+     faster speeds.  Because older technology was used in 8" drives, a
+     slower SEEK rate may need to be specified for them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     Page 5
+

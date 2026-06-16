@@ -1,0 +1,205 @@
+S, 1
+K, 15 
+W, 1 
+VFILE,OUTLINE
+LOAD,TUTOR.PIC
+W, 2 
+K, 15 
+X,S, 24  66 ,"EASYgraph ‚ utilit rio"
+X,S, 208  66 ,"gr -"
+X,S, 8  74 ,"fico de uso geral."
+X,S, 160  74 ,"A entrada no"
+X,S, 8  82 ,"programa e feita atrav‚s do te-"
+X,S, 8  90 ,"clado."
+PAUSE, 2 
+L, 0  98  255  98 
+X,S, 24  114 ,"A parte mais importante do "
+X,S, 8  122 ,"programa e o uso das teclas do"
+X,S, 8  130 ,"cursor."
+PAUSE, 2 
+I, 4 
+W, 1 
+V, 0 60 5 15 184 
++, 79  160 
++, 87  160 
++, 95  160 
++, 103  160 
++, 111  160 
++, 119  160 
++, 127  160 
++, 135  160 
++, 143  160 
++, 151  160 
++, 159  160 
++, 167  160 
++, 175  160 
++, 183  160 
++, 191  160 
++, 199  160 
++, 207  160 
++, 215  160 
++, 215  152 
++, 215  152 
++, 215  160 
++, 215  168 
++, 215  176 
++, 207  176 
++, 199  176 
++, 191  176 
++, 183  176 
++, 175  168 
++, 175  160 
++, 175  152 
++, 175  144 
++, 167  144 
++, 159  144 
++, 151  144 
++, 143  152 
++, 143  160 
++, 143  168 
++, 135  168 
++, 127  168 
++, 119  168 
++, 111  168 
++, 103  168 
++, 95  168 
++, 87  168 
++, 79  168 
++, 79  160 
++, 79  152 
++, 79  144 
+-
+X,S, 80 160 ,"[ESPA€O] ENTRA O PONTO"
+PAUSE, 5 
+K, 1 
+F, 0  48  255  143 
+K, 15 
+W, 1 
+X,S, 32  64 ,"Durante a execu‡±o ser  "
+X,S, 16  72 ,"solicitado a voce para entrar"
+PAUSE, 2
+X,S, 32  88 ,"CORNER - v‚rtice"
+PAUSE, 2
+X,S, 32  104 ,"ULC    - Upper Left Corner"
+X,S, 32  112 ,"(v‚rtice superior esquerdo)"
+PAUSE, 2
+X,S, 32  128 ,"LLC    - Lower Left Corner"
+X,S, 32  136 ,"(v‚rtice inferior esquerdo)"
+PAUSE, 2
+B, 104  152  64  24 
+X,S, 80  152 ,"ULC"
+X,S, 80  176 ,"LLC "
+PAUSE, 5 
+K, 1 
+F, 0  48  255  143 
+K, 15 
+T, 0  30 ,"L", 23  88 
+P, 15  31  86 
+X,S, 63  88 ,"‚ para linha"
+PAUSE, 2
+X,S, 7  104 ,"1-Entre com o inicio da linha"
+D, 23  120 
+PAUSE, 2
+X,S, 7  159 ,"2-Entre com o fim da linha"
+D, 111  143 
+PAUSE, 2
+L, 23  120  111  143 
+X,S, 82  123 ,"3-A linha ‚ desenhada"
+PAUSE, 2
+X,S, 42  175 ,"Arcos, C¡rculos, Elipses e"
+X,S, 8  183 ,"pontos funcionam da mesma forma"
+PAUSE, 5 
+K, 1 
+F, 0  48  255  143 
+K, 15 
+X,S, 48  63 ,"COMANDOS DE „REA"
+X,S, 16  79 ,"FRAME"
+X,S, 16  95 ,"1-Entre com um v‚rtice"
+D, 16  151 
+PAUSE, 2
+X,S, 16  111 ,"2-Entre com o v‚rtice oposto"
+D, 72  183 
+PAUSE, 2
+F, 16  151  56  32 
+PAUSE, 2
+X,S, 16  127 ,"3-Entre ULC da nova Posi‡±o"
+PAUSE, 2
++, 24  159 
++, 32  167 
++, 40  175 
++, 48  175 
++, 56  175 
++, 64  175 
++, 72  175 
++, 80  175 
++, 88  175 
++, 96  175 
++, 104  175 
++, 112  167 
++, 112  159 
++, 112  151 
++, 112  143 
+F, 112  143  56  32 
++, 120  143 
++, 128  143 
++, 136  143 
++, 144  143 
++, 152  143 
++, 160  143 
++, 168  143 
++, 176  143 
++, 184  143 
++, 192  143 
+F, 192  143  56  32 
+-
+PAUSE, 5 
+K, 1 
+F, 0  71  255  120 
+K, 15
+X,S, 15  79 ,"BOX - Id‚ntico a FRAME"
+PAUSE,3
+X,S, 15  95 ,"ERASE"
+T, 0  30 ,"ERASE", 31  183 
+X,S, 15  111 ,"1-Entre um v‚rtice da  rea"
++, 95  143
+PAUSE, 2
+D, 95  143 
+-
+X,S, 15  127 ,"2-Entre com o v‚rtice oposto"
+K, 1 
++, 95  151 
++, 95  159 
++, 95  167 
++, 95  175 
++, 95  183 
++, 95  183 
++, 95  191 
++, 103  191 
++, 111  191 
++, 119  191 
++, 127  191 
++, 135  191 
++, 143  191 
++, 151  191 
++, 159  191 
++, 167  191 
++, 175  191 
++, 183  191 
+PAUSE, 2
+F, 95  143  88  48 
+-
+PAUSE, 5 
+F, 0  48  255  143 
+K, 15 
+X,S, 55  87 ,"EASYgraph tamb‚m pode:"
+PAUSE, 2
+X,S, 23  111 ,"CARREGAR e SALVAR desenhos"
+PAUSE, 2
+X,S, 23  127 ,"Fazer c¢pias em IMPRESSORA"
+PAUSE, 2
+X,S, 55  151 ,"... e muito mais ..."
+PAUSE,3
+X,S, 15  183 ,"LEIA O MANUAL QUE O ACOMPANHA."
+PAUSE, 5 
+REPEAT
+

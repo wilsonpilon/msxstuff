@@ -1,0 +1,390 @@
+     MSX-DOS TOOLS 4.2
+
+     Programadores: Equipe NEMESIS
+
+     Introduá±o
+
+     O  MSX-DOS  TOOLS  4.2  Ç  uma  coleá±o  de  programas  1OO%
+nacionais desenvolvidos com a finalidade de melhorar a  interaá±o
+entre o usu†rio e seu microcomputador. O sistema Ç  composto  por
+diversos utilit†rios independentes que permitem desde a   simples
+ordenaá±o total  ou  parcial  do  diret¢rio  atÇ  o  carregamento
+autom†tico de qualquer programa atravÇs do DISK-BASIC,  inclu°ndo
+programas completos como "ZAPPER", CALCULADORA, etc.
+     Visando atender todo e qualquer  usu†rio desde  o  iniciante
+atÇ o de maior experiància  o  sistema  foi  desenvolvido  usando
+sempre  que  poss°vel,  as  tÇcnicas   de   "janelas"   e   menus
+auto-explicativos.
+
+     Carregamento
+
+     Existem 2 tipos de programas no MSX-DOS TOOLS 4.2:
+
+     a) Programas em formato "DOS" (.COM): para carreg†-los basta
+digitar seu nome e pressionar [RETURN].
+Ex: PROTETOR.COM - digite A>PROTETOR e tecle [RETURN];
+
+     b) Programas em formato bin†rio (.BIN): pressione [F4]  para
+ir ao BASIC DE DISCO e use o comando "BLOAD", muito utilizado nos
+jogos animados.
+Ex:  AUTOEXEC.BIN  -   digite   BLOAD"AUTOEXEC.BIN",R   e   tecle
+[RETURN].
+
+     Passaremos ent±o a  descrever  detalhadamente  cada  um  dos
+utilit†rios que compµem o MSX-DOS TOOLS 4.2:
+
+     RECUPERADOR DE ARQUIVOS DELETADOS (RECOVER.COM) *
+
+     Este  utilit†rio  tem  como  funá±o      recuperar  arquivos
+indevidamente deletados (apagados) num  disquete.  A  recuperaá±o
+dever† ser iniciada sempre pelo primeiro arquivo apagado ou seja,
+se o  disquete  contiver  3  arquivos  apagados  ao  recuperar  o
+terceiro as informaáµes pertinentes aos dois (1  e  2)  primeiros
+arquivos  ser±o  perdidas.  O   menu   de   opáµes   Ç   acionado
+pressionando-se a tecla  [I].  Note  que  vocà  poder†  recuperar
+arquivos de outros disquetes pressionando a tecla [D]  (diret¢rio
+de outro disco).
+     Para selecionar o arquivo a ser recuperado, use as teclas do
+cursor. Pressione a tecla [R] para efetivamente recuper†-lo. Ap¢s
+esta etapa uma  janela  se  abrir†  exibindo  o  nome  o  arquivo
+deletado sem a  primeira  letra,  que  dever†  ser  digitada  por
+vocà.
+     Dois fatos devem chamar a sua atená±o: o primeiro Ç que para
+uma recuperaá±o efetiva, o disquete n±o  poder†  estar  protegido
+contra a gravaá±o  e  o  segundo  refere-se  ao  fato  de  que  a
+recuperaá±o somente ter† sucesso se  o  disquete  n±o  apresentar
+arquivos divididos como acontece  normalmente  em  disquetes  que
+sofreram varios "KILLs" e "SAVEs".
+
+     COPIADOR DE DISQUETES (COPYDISK.COM) *
+
+     Este programa Ç um utilit†rio para c¢pia  setorial  integral
+de um disquete formatado pelo padr±o MSX-DOS. Note que  disquetes
+com  formataáµes  especiais  n±o  ser±o  reconhecidos  por   este
+programa.
+     A c¢pia se efetuar† com um £nico drive sendo que o  disquete
+original receber† o nome de  disquete  "A"  e  o  de  destino  de
+disquete "B".
+     Para o funcionamento perfeito deste programa n±o se  esqueáa
+de pressionar a tecla [CONTROL] para  ativar  somente  um  drive.
+Caso contr†rio, a mensagem de mem¢ria insuficiente  aparecer†  na
+tela, abortando o programa.
+     O disquete  de  destino  dever†  estar  formatado  de  forma
+idàntica ao disquete original.
+
+     COMPARADOR DE ARQUIVOS (COMPARQ.COM)
+
+     Este utilit†rio tem a funá±o de  comparar  arquivos.  A  sua
+principal utilidade  reside  na  liberaá±o  de  espaáo  de  disco
+ocupado por dois arquivos idànticos mas com nomes diferentes.
+     A primeira tela do programa ir† apresentar os  3O  primeiros
+arquivos que compµem o conte£do do disco. Para visualizar o  menu
+de comandos dispon°veis, pressione a tecla [I].  Como  vocà  pode
+observar, ap¢s pressionar a tecla [I],  aparecer±o  as  seguintes
+opáµes:
+
+          COMANDOS DISPONIVEIS:
+
+          [S] RETORNA AO SISTEMA
+
+          [D] OUTRO DIRETäRIO
+
+          [SELECT] COMPARA OS ARQUIVOS
+
+          [RETURN] SELECIONA OS ARQUIVOS
+
+     Para sair desta tela e retornar  a  tela  que  apresenta  os
+arquivos do diret¢rio, pressione alguma outra tecla.
+     Vejamos ent±o  o  funcionamento  de  cada  um  dos  comandos
+dispon°veis:
+     [D] Este comando deve ser  usado  sempre  que  trocarmos  de
+disco,   pois  a  sua  funá±o  Ç  exibir  o  diret¢rio  do  disco
+utilizado. Note que s±o apresentados apenas 3O arquivos por  vez.
+Para exibir os demais pressione a [BARRA DE ESPAÄO].  Deste  modo
+se o seu disco dispµe  de  4O  arquivos,  ser±o  exibidos  os  3O
+primeiros, e uma vez  pressionada  a  barra  de  espaco,  ser±o  
+exibidos os 1O £ltimos arquivos. Se for pressionada  a  barra  de
+espaáo mais uma vez, ser±o exibidos  novamente  os  3O  primeiros
+arquivos.
+     [S] Esta tecla deve ser usada sempre que desejar  voltar  ao
+sistema operacional, abortando o utilit†rio.
+     [SELECT] Esta tecla ir† ativar a rotina  que  lhe  permitir†
+escolher os arquivos a serem comparados.
+     Para  escolher os arquivos pressione  as  teclas  do  cursor
+correspondentes  as  setas  para  cima  e  para  baixo.  Uma  vez
+localizado o primeiro arquivo a ser comparado pressione  a  tecla
+[RETURN]. Feito  isto,  selecione  da  mesma  maneira  o  segundo
+arquivo a ser comparado com o primeiro. Ap¢s a escolha do segundo
+arquivo o computador ira iniciar o processo de comparaá±o.
+      [RETURN] Este comando ser†  utilizado  para  selecionar  os
+arquivos conforme foi visto no item anterior.
+
+     FORMATAÄ∞O RÑPIDA (FORMAT1.COM & FORMAT2.COM) *
+
+     Estes dois programas tem  como  funá±o  realizar  a  simples
+formataá±o de um disquete, porÇm de uma  maneira  mais  r†pida  e
+segura de que a dispon°vel no sistema operacional.
+     O arquivo FORMAT1.COM realiza a formataá±o em face simples e
+o arquivo FORMAT2.COM a formataá±o em face dupla (36OKb).
+     Ap¢s  o  aparecimento  da  mensagem  "Tecle  o  espaáo  para
+iniciar", vocà dever† colocar o disquete virgem no  drive  "A"  e
+ent±o pressionar a [BARRA DE ESPAÄO].
+
+     "STOP-DRIVE" (STOPDRV.COM) **
+
+     Este  utilit†rio  tem  por  objetivo  colocar  em  todos  os
+arquivos bin†rios (aqueles carregados  por  "BLOAD")  uma  rotina
+para parar o drive ap¢s o carregamento do programa.
+     O funcionamento deste utilit†rio  Ç  bem  simples,  bastando
+selecionar  o  arquivo  desejado  com   as   teclas   do   cursor
+pressionando-se ent±o a tecla [RETURN]. Se por  acaso  o  arquivo
+selecionado n±o for do tipo bin†rio o sistema n±o o modificar†. O
+menu de opáµes Ç selecionado pela tecla [I]. 
+
+     "STATUS" DO DISQUETE (CHECKDSK.COM)
+
+     Este programa tem como funá±o exibir o status  atual  de  um
+disquete  exibindo o n£mero de arquivos o espaáo livre e  o  tipo
+de formataá±o. As teclas  [D]  e  [S]  ativam  respectivamente  a
+exibiá±o do status  de um outro disquete e o retorno ao sistema.
+
+    EXAMINADOR DE DISCOS (DISKEXAM.COM)
+
+     Este utilit†rio faz um exame completo do disco,  dando  suas
+caracter°sticas principais. Para imprimir tal tabela  carregue  o
+arquivo HARDCOPY.COM.
+
+     CONVERSOR BASIC-BINÑRIO (BAS-BIN.COM)
+
+     Usa-se para converter programas  em  formato  BASIC  para  o
+BINÑRIO. Os  programas  que  eram  carregados  por  "LOAD"  ser±o
+carregados por "BLOAD". Basta selecionar o arquivo com as setas e
+[RETURN]. Pressione [I] para ver as instruáµes e [S] para  voltar
+ao sistema.
+
+     CONVERSOR BINARIO-DOS (BIN-COM.COM)
+
+     Usa-se para converter programas em formato  BINARIO  para  o
+formato de DOS. Os programas  que  eram  carregados  por  "BLOAD"
+ser±o carregados diretamente  do  Sistema  Operacional  de  Disco
+(MSX-DOS). Para utiliz†-lo, basta selecionar  o  arquivo  com  as
+setas e [RETURN]. Pressione [I] para ver as instruáµes e [S] para
+voltar ao sistema.
+
+     HARDCOPY (HARDCOPY.COM)
+
+     Repete na impressora todos os caracteres que  s±o  impressos
+no v°deo.  Se  a  impressora  n±o  possuir  banco  de  caracteres
+gr†ficos, estes evidentemente n±o sair±o na impress±o.
+
+     TRAVA DE MAIãSCULAS (CAPSLOCK.COM)
+
+     Funciona como trava de mai£sculas diretamente do DOS. ê £til
+para gerar arquivos "BATCH" para carregamento de aplicativos  que
+operam apenas com letras mai£sculas.
+
+Funcionam da mesma maneira:
+
+BEEP.COM     - Emite um beep;
+KEYON.COM    - Mostra as teclas de funá±o;
+KEYOFF.COM   - Inibe as teclas de funá±o;
+CLICK.COM    - Liga ou desliga o CLICK de teclado;
+RESET.COM    - Reseta o computador;
+CAPSMODE.COM - Muda o estado da trava de mai£sculas.
+
+     EDITOR DE CHAVES ESPECIAIS (KEYDOS.COM)
+
+     Serve para redefinir as teclas especiais (F1  a  F1O).  Para
+gravar a redefiniá±o para uso posterior,  utiliza-se  o  programa
+"SAVEKEYS.COM".
+
+     INSTALADOR DE AUTO-EXECUÄ∞O (INSTAUTO.COM)
+
+     Grava no disco um "BOOT"  para  carregamento  autom†tico  do
+programa AUTOEXEC.BIN (men£ de  carregamento  de  programas)  que
+deve ser gravado no mesmo disco pelos  processos  habituais.  Uma
+vez instalado, o programa  AUTOEXEC.BIN  carrega  automaticamente
+qualquer programa do disco sem  a  necessidade  de  digitaá±o  do
+comando de carregamento (LOAD ou BLOAD) por parte do usu†rio.
+
+     AUTO-EXECUÄ∞O DE PROGRAMAS (AUTOEXEC.BIN)
+
+     Este  utilit†rio  tem  como  funá±o  carregar   e   executar
+programas do disco em que est† instalado (ver °tem  anterior)  de
+uma maneira simplificada, usando para tanto somente as teclas  do
+cursor e [RETURN]. O programa ap¢s ser  executado  mostra  os  3O
+primeiros arquivos constantes no diret¢rio.  Basta  pressionar  a
+barra de espaáos para ver os  arquivos  restantes  se  os  mesmos
+existirem. Caso esteja presente no disco o  Sistema  Operacional,
+basta pressionar [S] para executar o  mesmo.  TambÇm  Ç  poss°vel
+carregar programas de outros discos, basta pressionar [D].
+     Para  executar  um  programa  qualquer,  selecione  o  mesmo
+atravÇs das teclas direcionais e em  seguida  pressione  a  tecla
+[RETURN]. Se o programa n±o estiver em BASIC ou n±o for  do  tipo
+bin†rio, o mesmo n±o ser† carregado.
+
+     PROTETOR DE PROGRAMAS (PROTETOR.COM)
+
+     Este utilit†rio serve para bloquear arquivos num determinado
+disquete, impedindo que o mesmo seja copiado para um outro disco.
+S¢mente poder±o ser bloqueados programas  em  bin†rio  que  sejam
+executados pelo comando BLOAD"XXXXXXXX.XXX",R. Ser† perguntado  o
+setor do disquete onde ser† iniciada a c¢pia da  parte  protegida
+do programa (lembre-se que um disco com 36OKb  tem  72O  setores,
+logo para bloquear um programa com 32Kb deveremos selecionar  por
+volta do setor 5OO.
+     N±o Ç recomendado, a n±o ser que  o  usu†rio  j†  tenha  uma
+certa pr†tica, o bloqueio de v†rios programas num mesmo disco.  O
+processo  de  bloqueio  pode  ser  melhor  analizado  atravÇs  do
+utilit†rio E-ZAPPER.COM.
+
+     LETRAS ALTERNATIVAS (LETRA-?.COM)
+
+     Digitando-se  A>LETRA-1  Ç  carregado  um  novo   banco   de
+caracteres, ou seja, um  alfabeto  com  um  novo  desenho,  muito
+interessante para variar o visual de um programa. Existem  v†rios
+bancos de letras no disco do MSX-DOS TOOLS 4.2.
+
+     CALCULADORA NO SISTEMA (CALCULAD.COM)
+
+     Trata-se de uma £til calculadora que aparece em  uma  janela
+do v°deo quando precisamos fazer uma conta qualquer utilizando as
+4 operaáµes. Use as teclas numÇricas  para  entrada  e  pressione
+[RETURN] para "zerar" o mostrador.  [C]  anula  o  £ltimo  n£mero
+digitado e [ESC] aborta a calculadora e volta ao sistema.
+
+     VELOCIDADE DIGITAL DO DRIVE (SPEED.COM) **
+
+     O "SPEED.COM" mostra a velocidade do motor do disk-drive.  A
+velocidade ideal Ç de 3OO r.p.m., no entanto, variaáµes de atÇ +5
+ou -5 r.p.m. s±o aceit†veis. Caso  contr†rio,  ser†  interessante
+rever a alimentaá±o (12 volts) da fonte do disk-drive para evitar
+falhas no carregamento  de  programas,  ou  atÇ  mesmo  erros  de
+entrada e sa°da.
+
+     EASY-ZAPPER" (E-ZAPPER.COM)
+
+     Este utilit†rio Ç  um  completo  programa  de  depuraá±o  de
+discos, com funáµes  de  c¢pia,  ediá±o,  traslado,  alteraá±o  e
+visualizaá±o setorial "byte-a-byte" de um disquete gravado.
+     Todas  as  funáµes  existentes  no  programa  s±o  acessadas
+atravÇs das teclas de funá±o de [F1] a [F1O] Ö seguir:
+
+
+[F1] LOAD - Carrega um determinado setor na mem¢ria do micro;
+[F2] SAVE - Grava um setor editado ou recÇm carregado no disco;
+[F3] COPY - Copia um determinado setor em um outro local ou
+            outro disco;
+[F4] EDIT - Edita ou altera os bytes que compµem o setor.
+            Pressione [ESC] para editar diretamente no
+            c¢digo ASCII. [RETURN] confirma a alteraá±o,
+            e as setas direcionais avanáam ou retrocedem
+            uma p†gina;
+[F5] DISK - Muda o drive em utilizaá±o (de A a F);
+[F6] S+1  - Avanáa 1 (um) setor;
+[F7] S-1  - Retrocede 1 (um) setor;
+[F8] DUMP - Imprime o setor em ediá±o na impressora;
+[F9] BLOC - Copia blocos de setores ou  atÇ  mesmo  integralmente
+um
+            disquete;
+[F1O]  END  -  Retorna  ao  Sistema  Operacional,   abortando   o
+programa.
+
+
+
+     - ATENÄ∞O -
+
+a)  Ao  fazer  suas  primeiras  experiàncias  com  o   utilit†rio
+E-ZAPPER.COM, certifique-se que o disco em utilizaá±o n±o  possua
+informaáµes ou arquivos importantes, que poder±o ser deletados ou
+alterados pelo uso inadequado do mesmo;
+
+b)  A  nota  acima  vale  tambÇm  para  quase  todos  os   outros
+utilit†rios presentes no MSX-DOS  TOOLS  4.2  ou  outro  qualquer
+programa para utilizaá±o ou aplicaá±o com disquetes;
+
+c) Os caracteres sobrepostos pela barra invertida dos  men£s  dos
+utilit†rios podem aparecer confusos quando executados em um MSX2,
+por causa da diferenáa nas tabelas de caracteres. Mas a diferenáa
+Ç apenas visual, n±o acarretando maiores problemas;
+
+d) Deve-se sempre utilizar o MSX-DOS TOOLS 4.2 com 4O colunas  de
+texto no v°deo. Usu†rios de MSX2 ou  de  cartµes  de  8O  colunas
+devem comandar "MODE  4O"  quando  for  utilizar  os  utilit†rios
+integrantes deste pacote;
+
+e) Restriáµes:
+
+     * - Os programas assinalados com 1 asterisco  n±o  funcionam
+em  interfaces  do  padr±o  internacional  (DDX   2.O,   LEOPARD,
+MICROSAN, TRADECO HOBBY, SHARP HB6OOO, DDPLUS e importadas);
+
+    ** - Os programas assinalados com 2  asteriscos  possuem  uma
+vers±o especial  para  as  interfaces  do  padr±o  internacional.
+Podemos   reconhecà-los   por   sua   extens±o   (".INT").   Para
+utiliz†-los, devemos renome†-los para a extens±o ".COM";
+
+       -  Os  programas  do  MSX-DOS  TOOLS  4.2  n±o   funcionam
+corretamente em discos formatados em 72OKb/8O trilhas.  Antes  de
+utilizar o programa, certifique-se que o disquete  em  utilizaá±o
+esteja formatado no padr±o 36OKb/4O trilhas (opá±o 2  do  comando
+"FORMAT");
+
+       - Os caracteres invertidos de alguns programas do  MSX-DOS
+TOOLS 4.2 podem se apresentar desfigurados quando  executados  em
+computadores MSX "transformados" para MSX2 ou MSX2+. No entanto Ç
+um problema apenas estÇtico que n±o interfere no  desempenho  dos
+programas.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-470
+                  Rio de Janeiro - RJ - Brasil.
+
+
+
+

@@ -1,0 +1,13 @@
+
+SUPERDIR
+
+Este programa mostra um
+diret¢rio mais eficiente 
+do que estamos acostumados
+a ver.
+
+Para rodar:
+
+A>SUPERDIR e tecle [RETURN]!
+
+

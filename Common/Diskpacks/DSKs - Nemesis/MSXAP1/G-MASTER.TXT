@@ -1,0 +1,24 @@
+
+GRAF-MASTER II by NEMESIS INFORMATICA
+
+Este programa n±o foi aprovado   pelo
+controle de qualidade da empresa para
+venda comercial. Foi colocado em domi
+nio p£blico em 1987. O programa funci
+ona corretamente nos micros Expert  e
+Hotbit, mas n±o em outras  configura-
+‡µes de mem¢ria. O problema est  numa
+rotina de armazenamento da VRAM  para
+uso posterior.
+
+Para carreg -lo digite:
+
+A>G-MASTER e tecle [RETURN]!
+
+Para us -lo siga as instru‡µes    que
+ir±o aparecendo no v¡deo.  Para mover
+o l pis use as setas direcionais ou o
+joystick. As teclas de fun‡±o  trocam
+o l pis por outros acess¢rios.
+
+

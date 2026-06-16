@@ -1,0 +1,7 @@
+
+MSX PROBE
+
+Para carregar digite:
+A>MSXPROBE e tecle [RETURN]!
+
+

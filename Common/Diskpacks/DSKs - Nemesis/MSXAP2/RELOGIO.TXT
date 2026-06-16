@@ -1,0 +1,10 @@
+
+RELOGIO para MSX2
+
+Para carregar digite:
+
+A>RELOGIO e tecle [RETURN]!
+
+As instru‡µes est±o em holandˆs!
+
+

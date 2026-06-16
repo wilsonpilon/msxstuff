@@ -1,0 +1,15 @@
+
+STAR SEEKER by Mirrorsoft (England)
+
+Este programa mostra o ceu  com  as
+estrelas e os planetas de uma posi-
+‡±o qualquer do planeta (por latitu
+de e longitude) e pode ainda forne-
+cer informa‡µes sobre os mesmos.
+
+Para carreg -lo comande:
+A>S-SEEKER e pressione a tecla [RETURN]
+Antes de ligar o computador pressione [CONTROL]
+para obter mais mem¢ria.
+
+

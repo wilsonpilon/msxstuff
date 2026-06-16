@@ -1,0 +1,21 @@
+10 REM ************************
+11 REM *  REDEFINE O "PROMPT" *
+12 REM ************************
+13 A$="Command?"
+14 DATA E5,C5,21,11,DC,06,00
+15 DATA 7E,DF,23,10,FB,C1,E1
+16 DATA C3,34,41
+17 T$ = CHR$(10) + CHR$(13)
+18 T$ = T$ + A$ + CHR$(10)
+19 T$ = T$ + CHR$(13)
+20 FOR C = &HDC00 TO &HDC10
+21 READA$:POKEC,VAL("&h"+A$)
+22 NEXT C
+23 FOR C = 1 TO LEN(T$)
+24 POKE&HDC10+C,ASC(MID$(T$,C,1))
+25 NEXT C
+26 POKE &HDC06,LEN(T$)
+27 POKE &HFF07,&HC3
+28 POKE &HFF08,&H0
+29 POKE &HFF09,&HDC
+

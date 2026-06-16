@@ -1,0 +1,13 @@
+
+ZAPPER 1.0 by Eduardo A. Barbosa
+
+Esta vers±o de "ZAPPER" foi a primeira
+que apareceu no mercado. Foi desenvol-
+vido pelo Eduardo Barbosa, famoso  por
+programas como HELLO!, MSX-DOS TOOLS e
+outros...
+
+Para carregar digite:
+A>ZAPPER e tecle [RETURN]!
+
+

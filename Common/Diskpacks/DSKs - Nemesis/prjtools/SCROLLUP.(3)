@@ -1,0 +1,5 @@
+100 X = 40 * RND(1)
+110 LOCATE X,20 : PRINT ".";
+120 U = USR(0)
+130 GOTO 100
+

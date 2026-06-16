@@ -1,0 +1,23 @@
+10 KEYOFF:SCREEN0:WIDTH40:LOCATE0,23
+20 PRINT" XWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWY"
+40 PRINT" V      SOFT-O-MATIC PACK N§O9      V"
+60 PRINT" V  FreeWare, ShareWare & DemoWare  V"
+80 PRINT" ZWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW["
+230 PRINT"A>MSX-GEN  (FreeWare) mont. assembler"
+240 PRINT"A>ELETRIC  (FreeWare) calc. el‚tricos"
+250 PRINT"A>DATIL    (FreeWare) datilografia   "
+260 PRINT"A>CONVSOL  (FreeWare) convert    CP/M"
+270 PRINT"A>HEAD-K   (FreeWare) alinha  azimuth"
+271 PRINT"A>D-A-M    (FreeWare) int. artificial"
+272 PRINT"A>AREPOL   (FreeWare) area  poligonos"
+273 PRINT"A>CONDUTOR (FreeWare) calc. el‚tricos"
+274 PRINT"A>MS-TEXT  (FreeWare) editor de texto"
+275 PRINT"A>DIGIVOIX (FreeWare) som  digital"
+276 PRINT"A>SUPERZAP (FreeWare) editor de disco"
+277 PRINT"A>SUPERDIR (FreeWare) analis.de disco"
+278 PRINT"A>ELEVAT   (FreeWare) jogo de a‡±o"
+280 PRINT " Digite uma das op‡µes acima:":PRINT
+290 PRINT "Obs: Os arquivos .TXT s±o os manuais"
+300 PRINT "     dos programas aqui apresentados;"
+310 CALL SYSTEM
+

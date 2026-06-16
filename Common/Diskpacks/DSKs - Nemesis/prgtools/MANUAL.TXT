@@ -1,0 +1,429 @@
+     MSX PROGRAM TOOLS 1.1
+
+     Programadores: Equipe NEMESIS
+
+     INTRODUÄ∞O
+
+     O MSX PROGRAM TOOLS 1.1 Ç  uma  coleá±o  de  programas  1OO%
+nacionais  desenvolvidos  com  a  intens±o  de  de   melhorar   a
+integraá±o entre o usu†rio e seu  microcomputador.  O  sistema  Ç
+composto por diversos utilit†rios inÇditos com as  mais  diversas
+finalidades:  CRIPTOGRAFADOR   de   PROGRAMAS,   LOCALIZADOR   de
+VARIAVEIS,  COMPACTADOR  DE   PROGRAMAS   ("PROGRAM   CRUNCHER"),
+LOCALIZADOR  de  DESVIOS  ("PROGRAM  RETRIEVE"),   IMPRESSOR   de
+PROGRAMAS, AUXILIARES  de  DIGITAÄ∞O  ("FASTYPER",  "CHRTYPER"  e
+"MEMOKEYS"),  EDITOR  de  PROGRAMAS,  "PASTE-UP"   de   "STRINGs"
+("STRING-SEARCH"),    RECUPERADOR    de    PROGRAMAS    PERDIDOS,
+"AUTO-SAVE", etc.
+
+     CARREGAMENTO
+
+     Ao  inserir  o  disquete  do  MSX  PROGRAM  TOOLS  1.1,  ele
+automaticamente mostra uma tela de abertura. Ao pressionarmos uma
+tecla, nos Ç apresentada uma lista com alguns arquivos  de  apoio
+(Sistema  Operacional,  autoexecutor  "autoexec.bat",   tela   de
+abertura "PRGTOOLS.COM" e este menu "PRGTOOLS.BAS") e Ç claro,  o
+que mais interessa, os utilit†rios presentes no  disco,  que  por
+sua  vez  dividem-se  em  3  classes  distintas  que  podem   ser
+rapidamente diferenciados por uma simples olhada na  extens±o  de
+seus nomes:
+
+     a) Programas em formato bin†rio (com extens±o ".BIN"):  para
+carreg†-los Ö partir do BASIC DE DISCO  use  o  comando  "BLOAD",
+muito utilizado no carregamento de jogos.
+Ex:  FASTYPER.BIN  -   digite   BLOAD"FASTYPER.BIN",R   e   tecle
+[RETURN].
+
+     b)  Programas  em  BASIC   (com   extens±o   ".BAS"):   para
+carreg†-los do BASIC DE DISCO use o comando "LOAD".
+Ex: RECBASIC.BAS - digite LOAD"RECBASIC.BAS" e tecle [RETURN];
+
+     d) Programas em formato ASCII (com extens±o  ".ASC"):  est±o
+gravados neste formato para  facilitar  operaáµes  de  "MERGE"  e
+associ†-los  aos  seus  programas.  Consulte  o  manual  de   seu
+computador para maiores detalhes sobre este comando.
+
+     Passaremos ent±o a descrever cada  um  dos  utilit†rios  que
+compµem o MSX PROGRAM  TOOLS  1.1.  Eles  est±o  divididos  em  3
+sub-grupos que s±o Utilit†rios para a Ediá±o de programas, para a
+Digitaá±o de programas e os utilit†rios com funáµes diversas:
+
+     EDIÄ∞O DE PROGRAMAS
+
+     Os utilit†rios descritos abaixo auxiliam  o  programador  na
+depuraá±o e localizaá±o de instruáµes e comandos de um  programa.
+Eles  foram  criados  para  dividir   a   mem¢ria   e   trabalhar
+simultÉneamente com o seu programa em BASIC.
+
+     LOCALIZADOR DE VARIAVEIS (V-SEARCH.ASC)
+
+     Este arquivo est† gravado no formato "ASCII" para poder  ser
+interligado ao seu programa em BASIC. Vamos supìr que a  listagem
+abaixo seja o programa que vocà est† desenvolvendo:
+
+10 REM ****************
+20 REM * MEU PROGRAMA *
+30 REM ****************
+40 KEYOFF : CLS : SCREEN 0
+50 LOCATE 2,2 : PRINT "HELLO!"
+60 LOCATE 2,4 : INPUT A$
+70 IF A$ = "HELLO!" THEN 90
+80 PRINT : END
+90 LOCATE 2,6 : PRINT "GOOD MORNING!"
+
+     Para associar seu programa ao "V-SEARCH.ASC" comande:
+
+     MERGE "V-SEARCH.ASC" e tecle [RETURN]
+
+LIST 90-65000
+90 LOCATE 2,6 : PRINT "GOOD MORNING!"
+65000 KEYOFF:SCREEN0:WIDTH40:COLOR15,1,1
+
+     Como pode ser observado na  nova  listagem  do  programa,  o
+"V-SEARCH.ASC" alojou-se Ö partir da linha 65000 e est† associado
+ao seu programa. Para execut†-lo digite: RUN 65000
+
+     O    "V-SEARCH.ASC"    ou    localizador    de     vari†veis
+("variable-searcher") serve para  localizar  uma  palavra  ou  um
+texto qualquer no meio de seu programa. Ele imprime no  v°deo  ou
+na impressora as linhas que contÇm a vari†vel que vocà procura.
+
+     Quando o programa perguntar qual a vari†vel procurada digite
+HELLO! e o programa apontar† que esta  palavra  se  encontra  nas
+linhas 50 e 70 do programa de exemplo. A pergunta  "Imprime?"  se
+refere a uma c¢pia na impressora se assim for necess†rio.
+
+     Depois de utilizado, o "V-SEARCH.ASC" pode ser  retirado  do
+seu programa com o comando "DELETE 65000-65290".
+
+     LOCALIZADOR DE LINHAS "REM" (R-SEARCH.ASC)
+
+     As linhas de coment†rios ("REM" de "remarks") s±o  de  muita
+importÉncia para  a  organizaá±o  de  programas.  Para  localizar
+rapidamente as  linhas  onde  elas  se  encontram  foi  criado  o
+utilit†rio "R-SEARCH.ASC". Ele funciona de  maneira  idàntica  ao
+"V-SEARCH.ASC".
+
+     LOCALIZADOR DE STRINGS (S-SEARCH.BIN)
+
+     O  utilit†rio  "S-SEARCH.BIN"  deve   ser   carregado   pelo
+comando:
+
+     BLOAD"S-SEARCH.BIN",R e tecle [RETURN]
+
+     Depois de carregado o programa se instala automaticamente na
+mem¢ria do microcomputador e espera por sua execuá±o.
+     O "S-SEARCH.BIN" Ç um localizador de "STRINGs", que percorre
+toda a mem¢ria do microcomputador em busca de  uma  sequància  de
+bytes fornecida pelo usu†rio.
+     Como exemplo, vamos fazà-lo procurar pelo nome "MSX".  Basta
+digitar cuidadosamente a instruá±o abaixo:
+
+     PRINT (USR("MSX")) e tecle [RETURN]
+
+     Como resposta  com  certeza  obteremos  o  valor  32480  que
+corresponde ao endereáo de mem¢ria que  contÇm  a  STRING  "MSX".
+Certifique-se com o teste apresentado abaixo:
+
+10 FOR C = 0 TO 49
+20 PRINT CHR$(PEEK(32480+C));
+30 NEXT C
+
+     No exemplo acima, o utilit†rio  "S-SEARCH.BIN"  localizou  a
+mensagem  "MSX"  da  tela  de  abertura  na  pr¢pria   "ROM"   do
+computador.
+
+     LOCALIZADOR DE DESVIOS E SUB-ROTINAS (RETRIEVE.BIN)
+
+     O localizador de desvios e subrotinas vasculha seu  programa
+em busca de instruáµes do tipo "GOTO" e "GOSUB" e as aponta assim
+que encontradas. Inicialmente ele  pergunta  o  limite  entre  as
+linhas por  onde  o  mesmo  far†  a  procura.  Caso  seja  apenas
+pressionada a  tecla  [RETURN]  ser†  adotada  como  "default"  a
+totalidade do programa (linhas compreendidas entre  0  e  65529).
+Ser† mostrado um resultado como o exemplo abaixo:
+
+Desvio > Origem
+10   >  40
+Ok!
+[SPACE] para sair  [P] imprime
+
+     Foi encontrado  no  programa  um  desvio  para  a  linha  10
+originado na linha 40. O programa pede  que  seja  pressionada  a
+tecla [SPACE] para abort†-lo ou a tecla  [P]  para  imprimir  uma
+c¢pia da tela na impressora.
+
+     COMPACTADOR DE PROGRAMAS EM BASIC (CRUNCHER.BIN)
+
+     Este utilit†rio retira os  espaáos  entre  as  instruáµes  e
+comandos, as £ltimas "aspas" de uma "STRING", o texto das  linhas
+de coment†rios "REM" (s¢mente se o usu†rio assim o desejar),  com
+a finalidade de economizar mem¢ria. Inicialmente ele perguntar† o
+limite entre as linhas a  serem  compactadas.  Caso  seja  apenas
+pressionada a  tecla  [RETURN]  ser†  adotada  como  "default"  a
+totalidade do programa (linhas compreendidas entre  0  e  65529).
+Como resultado ele listar† as linhas que sofreram compactaá±o com
+seus  respectivos  espaáos,  coment†rios  e  aspas   in£teis,   e
+finalmente o total de lacunas retiradas do programa.
+
+     RENOMEADOR DE PALAVRAS DE UM PROGRAMA (PASTE-UP.BIN)
+
+     O renomeador de palavras de um programa,  como  seu  pr¢prio
+nome j† diz, localiza uma determinada palavra chave e a substitui
+por uma outra dentro das linhas assinaladas. O processo poder† se
+executado passo-a-passo para que somente  as  palavras  desejadas
+sejam substitu°das. No final, o programa apresentar† o n£mero  de
+palavras encontradas e a variaá±o  do  comprimento  original  (em
+bytes) do programa (negativo ou positivo, dependendo da diferenáa
+do tamanho entre as 2 palavras).
+
+     TROCADOR DE "TOKENs" DE UM PROGRAMA (CHANWORD.BIN)
+
+     Este utilit†rio Ç utilizado quando se deseja trocar "TOKENs"
+de um programa ("PRINT" por  "LPRINT"  por  exemplo).  Depois  de
+instalado comande:
+
+     POKE &HC09C,X:POKE&HC09B,Y:DEFUSR=&HBF45:U=USR(0)
+
+     Nos comandos acima, "X" Ç o c¢digo original  e  "Y"  o  novo
+c¢digo da "TOKEN". Ao substituir "TOKENs" de funáµes  (ABS,  SIN,
+COS, TAN, etc), adicione o valor "&h80" aos seus c¢digos. 
+
+     EDITOR DE PROGRAMAS (P-EDITER.BIN)
+
+     O editor de programas permite a alteraá±o de um programa com
+procura autom†tica de um  texto  selecionado.  Inicia-se  optando
+pela entrada de um novo texto, que ser† autom†ticamente procurado
+(se n±o existir acusar† "inexistente!"). Ser† apresentada ent±o a
+linha com o texto e  um  menu  com  as  seguintes  opáµes:  Volta
+(reinicia), Print (imprime a linha na  impressora),  Texto  (para
+localizar um novo texto), Edita (permite  a  alteraá±o  no  texto
+encontrado) e Cont. (Continua a procura). A opá±o  [S]  aborta  o
+programa.
+
+     "ECO" NA IMPRESSORA (TEXTDUMP.BIN)
+
+     Depois de instalado, este programa copia na impressora todos
+os dados que  s±o  apresentados  no  v°deo.  Pode  ser  utilizado
+simultÉneamente com seus programas e muitos dos  utilit†rios  que
+acompanham o MSX PROGRAM TOOLS 1.1.
+
+     IMPRESSOR DE PROGRAMAS (PROGPRIN.BIN)
+
+     Este utilit†rio tem como funá±o controlar o comando  "LLIST"
+(que lista o seu programa  na  impressora)  para  os  formul†rios
+cont°nuos de 8O colunas e 66 linhas, evitando  imprimir  sobre  o
+"picote" dos mesmos.
+
+     AUXILIARES DE DIGITAÄ∞O
+
+     Os utilit†rios  descritos  Ö  seguir  facilitam  a  vida  do
+digitador de programas extensos,  simplificando  a  digitaá±o  de
+palavras, comandos e funáµes e ainda de caracteres dif°ceis de se
+localizar. Atená±o:  O  utilit†rios  deste  grupo  n±o  funcionam
+adequadamente nos computadores MSX de primeira geraá±o  adaptados
+para MSX2.
+
+     O UTILITÑRIO "FASTYPER" (FASTYPER.BIN)
+
+     Depois de corretamente instalado da  mesma  maneira  que  os
+outros utilit†rios j† comentados, o "FASTYPER"  estar†  pronto  a
+ajud†-lo na digitaá±o de programas extensos.  Ele  associou  para
+cada comando ou funá±o do MSX, uma das  letras  do  teclado  para
+funcionamento em conjunto com a tecla [SELECT].
+     Exemplo: para se digitar "STRING$(" basta pressionar a tecla
+[SELECT] e em seguida a tecla [S] e assim por diante. Consulte  a
+tabela de associaá±o em anexo.
+
+     O UTILITÑRIO "CHRTYPER" (CHRTYPER.BIN)
+
+     Depois de instalado,  o  "CHRTYPER"  fica  pronto  para  ser
+utilizado.  Ele  foi  criado  para  facilitar  a   digitaá±o   de
+caracteres dif°ceis de se encontrar no teclado.  Com  ele,  basta
+pressionarmos  a  tecla  [SELECT]  e   o   c¢digo   "ASCII"   (em
+hexadecimal) da tecla desejada. Ela rapidamente aparece na tela.
+     O c¢digo da tecla [A] Ç 41 (em hexadecimal, equivalente a 65
+em decimal), portanto para digit†-la basta digitarmos:
+
+     [SELECT] + [4] + [1]
+
+     TECLAS ALTERNATIVAS (MEMOKEYS.BIN)
+
+     Estas teclas especiais consistem em  programaáµes  especiais
+para as teclas [SELECT] e [ESC] para que  funcionem  similarmente
+as teclas de funá±o de [F1] a [F1O] existentes no MSX.  Poderemos
+programar [ESC] e [A] que pressionadas sequencialmente escrevam a
+palavra "ANTéNIO" ou outra qualquer que desejamos.
+     Programe as teclas para uso com [SELECT] com os nomes de sua
+escolha e ao final tecle [ESC] para sair.  Pode-se  imprimir  tal
+programaá±o para futura consulta. Programaremos ent±o as palavras
+para uso com a tecla  [ESC]  da  mesma  forma  como  fizemos  com
+[SELECT]. Ao final poderemos gravar esta  configuraá±o  para  uso
+futuro.
+     Ao  gravar-mos  a  configuraá±o,  ser†  criado   o   arquivo
+"NEWKEYS.BIN" para ser carregado quando necess†rio.
+
+     CURSOR PISCANTE (F-CURSOR.BIN)
+
+     Para facilitar ainda mais a digitaá±o podemos fazer o cursor
+piscar para sua melhor visualizaá±o em  telas  com  muito  texto.
+Para isso basta comandar:
+
+     BLOAD"F-CURSOR.BIN",R e tecle [RETURN]
+
+UTILITÑRIOS DIVERSOS
+
+     Est±o nessa classe, os  utilit†rios  com  as  mais  diversas
+funáµes que s±o indispens†veis ao programador:
+
+     RECUPERADOR DE PROGRAMAS EM BASIC (RECBASIC.BAS)
+
+     Este programa Ç  extremamente  £til.  Serve  para  recuperar
+programas em BASIC apagados com o comando NEW,  pelo  "RESET"  ou
+atÇ mesmo por um pico de voltagem na rede elÇtrica.
+Faáa um teste:
+
+10 KEYOFF : CLS
+20 PRINT "NEMESIS INFORMATICA LTDA."
+30 FOR X = 1 to 100 : NEXT
+40 GOTO 10
+
+     Digite ent±o o comando "NEW" e comprove que o programa  est†
+perdido, e j†  n±o  pode  ser  mais  listado.  Carregue  ent±o  o
+utilit†rio "RECBASIC.BAS" com LOAD"RECBASIC.BAS" quando  aparecer
+o "Ok" o programa estar† recuperado!
+     Antes de utilizar ou editar o programa  recuperado,  grave-o
+em disco com o o comando SAVE"NOME",A e depois  disso,  resete  o
+computador e carregue-o normalmente com o comando "LOAD".
+
+     GERADOR DE LINHAS "DATA" (GERADATA.BIN)
+
+     Este programa transforma uma regi±o da  mem¢ria  determinada
+pelo usu†rio em linhas de "DATA".  O  programa  gerado  pode  ser
+mostrado no v°deo, listado na impressora ou gravado em  disco  no
+formato "ASCII" para poss°vel  associaá±o  com  outros  programas
+criados pelo usu†rio. No utilit†rio Ç pedido o n£mero da primeira
+linha do programa a ser gerado, e a †rea da mem¢ria  compreendida
+entre os endereáos inicial e final.
+
+     "HEADER" DE PROGRAMAS BINARIOS (P-HEADER.BIN)
+
+     O "HEADER.BIN"  depois  de  executado  pede  o  nome  de  um
+programa em bin†rio (linguagem de  m†quina)  constante  do  disco
+para analizar seus endereáos (respectivamente: INICIAL,  FINAL  e
+de ENTRADA) e mostr†-los na tela. Logo depois s±o apresentadas as
+opáµes de repetiá±o e finalizaá±o do programa.
+
+     CRIPTOGRAFADOR DE PROGRAMAS BINARIOS (P-CRYPTO.BIN)
+
+     Este utilit†rio criptografa as mensagem de  um  programa  em
+linguagem  de  m†quina  para  que  n±o  possa  ser  alterado  por
+terceiros. Depois de carregado, o ele pergunta o nome do programa
+a ser criptografado e o novo nome para gravaá±o.  Se  for  apenas
+pressionada a tecla [RETURN], o programa Ç gravado com  seu  nome
+de origem. Embora sejam raros,  alguns  programas  n±o  funcionam
+adequadamente depois de criptografados, portanto tenha sempre uma
+c¢pia do original antes de submetà-lo Ö criptografia.
+
+     ADAPTADOR DE ACENTUAÄ∞O (ADAPTER1.ASC)
+
+     Este programa  adaptador,  que  funciona  associado  ao  seu
+programa  em  BASIC  pelo  comando  "MERGE"  que  j†  foi   visto
+anteriormente, adapta a acentuaá±o do mesmo. Os  antigos  modelos
+de  microcomputadores  MSX  (Expert  1.1)  possuiam  uma   tabela
+diferente de acentuaá±o, que pode ser convertida ou desconvertida
+automaticamente com o aux°lio deste utilit†rio.
+     Depois de carregado pelo comando MERGE"ADAPTER1.ASC"  digite
+RUN 65OOO e pressione [RETURN].
+
+     GRAVADOR AUTOMÑTICO DE PROGRAMAS EM BASIC (AUTOSAVE.BIN)
+
+     Este programa Ç  muito  £til  quando  digitamos  um  extenso
+programa em BASIC.  Ele  faz  com  que  o  programa  que  estamos
+digitando seja automaticamente gravado  em  disco  de  tantas  em
+tantas linhas digitadas (em intervalos selecionados entre 1 e 255
+linhas).
+
+     Sua utilizaá±o Ç muito simples:
+
+a) Carregue-o do disco com o comando BLOAD"AUTOSAVE.BIN",R
+
+b) Digite o nome com que deseja que seu programa  em  BASIC  seja
+gravado no disco (ex.: PROGRAMA.BAS);
+
+c) Digite um n£mero entre 1 e 255, que ser† o  numero  de  linhas
+digitadas entre cada gravaá±o;
+
+d) Digite normalmente o seu programa em BASIC. A  cada  intervalo
+selecionado o mesmo ser† gravado em disco.
+
+     Para  foráar  uma  gravaá±o  fora  do   intervalo   previsto
+pressione [SELECT]. Para desativar o "AUTO-SAVE" pressione [F6] e
+para reativ†-lo pressione [F7].
+
+     ATENÄ∞O
+
+     Como j† foi dito anteriormente, alguns dos  utilit†rios  que
+compµem  o  MSX  PROGRAM  TOOLS  1.1  foram  desenvolvidos   para
+funcionar simultÉneamente com seus programas em BASIC, entretanto
+convÇm certificar-se que realmente n±o exista alguma  rotina  que
+ocupe a †rea destinada ao programa "ferramenta". Para evitar  que
+isto aconteáa, antes de  utilizar  qualquer  um  dos  utilit†rios
+presentes  neste  pacote,   experimente-o   com   programas   sem
+importÉncia para que  possa  test†-lo  e  conhecà-lo  melhor.  De
+qualquer maneira Ç sempre £til gravar uma c¢pia do  programa  que
+est† sendo criado antes de submetà-lo a uma prova qualquer.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-970
+
+
+
+
+
+

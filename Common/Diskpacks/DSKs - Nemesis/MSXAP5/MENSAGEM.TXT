@@ -1,0 +1,23 @@
+10 KEYOFF:SCREEN0:WIDTH40:LOCATE0,23
+20 PRINT" XWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWY"
+40 PRINT" V      SOFT-O-MATIC PACK N§O7      V"
+60 PRINT" V  FreeWare, ShareWare & DemoWare  V"
+80 PRINT" ZWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW["
+230 PRINT"A>ED80     (FreeWare) editor de texto"
+240 PRINT"A>ODXDEMO  (DemoWare) org. diret¢rios"
+250 PRINT"A>MSXPROBE (FreeWare) an lize  a  rom"
+260 PRINT"A>OTICA    (FreeWare) aula  de  otica"
+270 PRINT"A>MASTER-V (FreeWare) digitalize sons"
+271 PRINT"A>MAGIA    (FreeWare) ezoterismo  MSX"
+272 PRINT"A>BUDGET   (FreeWare) or‡am. familiar"
+273 PRINT"A>STUDIO   (FreeWare) editor   sprite"
+274 PRINT"A>CHECK-UP (FreeWare) benchmark p/msx"
+275 PRINT"A>ZAPPER   (FreeWare) editor de disco"
+276 PRINT"A>FLUXO    (FreeWare) fluxo de  caixa"
+277 PRINT"A>LOTO     (FreeWare) jogo  da   loto"
+278 PRINT"A>SHADE    (FreeWare) jogo  em  3d" : PRINT
+280 PRINT " Digite uma das op‡µes acima:":PRINT
+290 PRINT "Obs: Os arquivos .TXT s±o os manuais"
+300 PRINT "     dos programas aqui apresentados;"
+310 CALL SYSTEM
+

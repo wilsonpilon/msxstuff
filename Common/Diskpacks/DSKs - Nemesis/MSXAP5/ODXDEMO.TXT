@@ -1,0 +1,49 @@
+
+               O D X
+
+Organizador de Diret¢rios da XSW 1991
+
+
+Este programa tem como finalidade fazer
+a perfeita organiza‡±o nos seus discos,
+ordenando-os conforme a sua vontade.
+Nenhum outro ordenador de discos faz 5O
+por cento do que o ODX realiza!
+
+Para carreg -lo digite:
+A>ODX e pressione [RETURN].
+
+Depois de carregado, o ODX lhe pergunta
+qual o drive utilizado e mostra o dire-
+t¢rio do mesmo. Com as teclas abaixo, o
+diret¢rio do disco em quest±o poder  ao
+seu crit‚rio, ser modificado:
+
+[A] Permite a Altera‡±o dos dados do di
+    ret¢rio em "full-screen";
+[D] Ordena por ordem crescente de datas
+    de cria‡±o dos programas;
+[E] Ordena por ordem crescente de Exten
+    sµes dos nomes dos arquivos;
+[F] Retorna ao MSX-DOS;
+[G] Grava as modifica‡µes geradas com o
+    ODX (n±o dispon¡vel na vers±o DEMO)
+[L] Lˆ o diret¢rio de outro disco;
+[M] Move um arquivo de um lugar para  o
+    outro num mesmo diret¢rio (pressio-
+    ne a tecla [ESC] para abortar);
+[N] Ordena o diret¢rio pela ordem cres-
+    cente dos nomes dos programas;
+[R] Recupera o diret¢rio inicial (UNDO)
+
+Mais detalhes no manual original que a-
+companha o programa. O ODX pode ser com
+prado nas seguintes empresas:
+
+XSW (S±o Paulo), PAULISOFT (S±o Paulo),
+ou na NEMESIS (Rio de Janeiro). Informa
+‡µes pelo telefone: (O242) 42-2455 !
+
+- PASSE A CŠPIA "DEMO" A UM AMIGO !!! -
+
+

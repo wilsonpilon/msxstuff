@@ -1,0 +1,16 @@
+
+    DIGVOIX
+
+Digitalizador de VOZ
+
+Este programa capta sons
+de uma fita cassete e os
+reproduz em variadas to-
+nalidades. Os sons podem
+ser armazenados para uti
+liza‡±o posterior.
+
+Para iniciar digite:
+A>DIGVOIX e tecle [RETURN]!
+
+

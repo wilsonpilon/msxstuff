@@ -1,0 +1,218 @@
+           LOGOTIPO
+              &
+           FOOTNOTE
+
+      por Reinaldo Silva
+        Nemesis - 1993
+
+    Para  percorrer  este  ma-
+nual, use as seguintes teclas:
+
+ [qq tecla] Prossegue a  apre-
+            sentaá±o   do  ma-
+            nual.
+ [TAB] Imprime este manual
+       [ESC] Interrompe a  im-
+             press±o
+ [ESC] Sai do manual.
+
+             ***
+
+     Este Ç um programa de MSX
+feito  para a impress±o de  um
+logotipo e/ou um footnote (no-
+ta ao pÇ da p†gina) em  diver-
+sas  p†ginas.  Ele  permite  a
+impress±o de timbres, persona-
+lizando  assim  as  folhas  de
+papel  a serem usadas para  os
+mais diversos fins. Os timbres
+podem ser desenhados em telas,
+atravÇs   de  qualquer  editor
+gr†fico,  que ser±o  impressas
+pelo   programa  nas  posiáµes
+desejadas,  dentre as dispon°-
+veis. AtÇ duas telas podem ser
+usadas para logotipo, e tambÇm
+atÇ  duas podem ser  impressas
+no footnote.  TambÇm permite a
+impress±o de apenas uma  tela,
+com a posiá±o horizontal dese-
+jada, ou a ausància do logoti-
+po  ou  footnote.  O  logotipo
+pode  ser impresso no meio  da
+p†gina,  em vez do topo, o que
+permite  carimbar  o verso  de
+cartas  ou  outros  documentos
+impressos.  Tràs densidades de
+impress±o  est±o  dispon°veis,
+dependendo da impressora. Pode
+ser  usado  em  papÇis  A4  ou
+tamanho Of°cio,  e em formul†-
+rio cont°nuo ou folha solta.
+
+      OPÄ¥ES DO PROGRAMA
+
+     A seguir s±o apresentadas
+as  opáµes  e as subopáµes  do
+programa.  Use as teclas [RET]
+ou  [ESPAÄO] para executar  as
+opáµes e [ESC] para voltar  ao
+menu anterior.
+
+[DRIVE: d:] Muda  o  drive  de
+            onde  ser±o  lidas
+            as telas.
+
+[Lç TELAS] Permite  o carrega-
+           mento   das   telas
+           para a mem¢ria.
+    [LOGOTIPO] Carrega as  te-
+               las que compµem
+               o logotipo.
+    [FOOTNOTE] Carrega as  te-
+               las que compµem
+               o footnote.
+    Para as duas opáµes acima:
+        [TELA ESQUERDA] Carre-
+              ga  a  tela  es-
+              querda.
+        [TELA DIREITA] Carrega
+              a  tela direita.
+        Obs: Ap¢s a escolha de
+        uma   dessas   opáµes,
+        procede-se  Ö  escolha
+        do  arquivo.   A  tela
+        deve  ser do tipo GRP.
+        Ser†   apresentada   a
+        lista dos arquivos, de
+        10 em 10. As seguintes
+        teclas est±o  dispon°-
+        veis:
+
+        [^v] Muda o arquivo
+        [->] Lista    arquivos
+             seguintes
+        [ESC] Sai sem escolher
+        [RET ou ESPAÄO] Carre-
+                ga o arquivo
+
+[Vç TELAS] Permite  a visuali-
+           zaá±o das telas que
+           est±o na mem¢ria. A
+           ordem  de  apresen-
+           taá±o Ç a seguinte:
+           logotipo  esquerdo,
+           logotipo   direito,
+           footnote  esquerdo,
+           footnote   direito.
+           Ap¢s  isso Ç  apre-
+           sentada as 4  telas
+           simultaneamente nu-
+           ma  reduá±o da  p†-
+           gina.     Digita-se
+           qualquer tecla para
+           prosseguir   a  se-
+           qÅància de apresen-
+           taá±o.
+
+[APAGA TELAS] Apaga  todas  as
+              telas  da  mem¢-
+              ria.
+
+[IMPRESS∞O] Permite a configu-
+            raá±o e a execuá±o
+            da impress±o.  Use
+            [RET] ou  [ESPAÄO]
+            para configurar ou
+            executar.
+    [DENSIDADE: d]   Densidade
+                da  impress±o.
+                Pode ser  sim-
+                ples, dupla ou
+                plotter.
+    [NãMERO DE TOQUES: n]  N£-
+        mero  de  passadas  do
+        carro  de impress±o (1
+        a 9).
+    [NãMERO DE CäPIAS:  n] N£-
+       mero  de c¢pias a serem
+       impressas  (1  a   99).
+       [RET] avanáa de 1 em 1,
+       [ESPAÄO]  avanáa de  10
+       em 10.
+    [TELAS P/ LOGOTIPO: n] N£-
+           mero  de telas  que
+           compµem o logotipo.
+           Pode variar de 0  a
+           2 telas.
+    [TELAS P/ FOOTNOTE: n] N£-
+           mero  de telas  que
+           compµem o footnote.
+           Pode variar de 0  a
+           2 telas.
+      Obs:   Para  apenas  uma
+      tela compondo o logotipo
+      ou  footnote,  s¢ a  que
+      foi carregada como  tela
+      esquerda  ser† impressa.
+      Usando-se densidade sim-
+      ples ou dupla,  se  duas
+      telas compµem o logotipo
+      ou footnote,  os 16 pon-
+      tos  Ö esquerda da  tela
+      esquerda  e os 16 pontos
+      Ö direita da tela direi-
+      ta n±o ser±o impressos.
+    [POSIÄ∞O] Define        as
+              posiáµes  para o
+              logotipo      ou
+             footnote  para  a
+             impress±o.
+        [LOGOTIPO] Posiciona o
+             logotipo.
+          [TOPO (ou MEIO)] Re-
+                fere-se  Ö po-
+                siá±o vertical
+                do logotipo.
+          [ESQUERDA (ou CENTRO
+           ou DIREITA)]  Refe-
+              re-se  Ö posiá±o
+              horizontal    do
+              logotipo.     S¢
+              pode ser altera-
+              da se apenas uma
+              tela  compµe   o
+              logotipo.
+        [FOOTNOTE] Posiciona o
+             footnote.
+          [ESQUERDA (ou CENTRO
+           ou DIREITA)]  Refe-
+              re-se  Ö posiá±o
+              horizontal    do
+              footnote.     S¢
+              pode ser altera-
+              da se apenas uma
+              tela  compµe   o
+              footnote.
+    [PAPEL: p] Define  o tama-
+               nho  do  papel.
+               Pode ser A4  ou
+               OFâCIO.
+    [FOLHA: f] Indica se have-
+               r† pausa ap¢s a
+               impress±o    de
+               cada    p†gina.
+               Pode  ser  CON-
+               TâNUA ou SOLTA.
+    [IMPRIME] Inicia a impres-
+              s±o.  Use [ESPA-
+              ÄO]  para inter-
+              romper a impres-
+              s±o.
+
+[FIM] Sai  do programa e volta
+      ao sistema.
+
+             ***
+

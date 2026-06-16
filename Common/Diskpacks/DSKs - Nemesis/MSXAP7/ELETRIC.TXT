@@ -1,0 +1,10 @@
+
+FISICA: ELETRICIDADE I
+
+    ELETROSTATICA
+
+Para carregar digite:
+
+A>ELETRIC e tecle [RETURN]!
+
+

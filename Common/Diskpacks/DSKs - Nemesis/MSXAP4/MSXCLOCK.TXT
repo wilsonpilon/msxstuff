@@ -1,0 +1,23 @@
+
+MSX CLOCK by M.V.F (Rio de Janeiro)
+
+Este programa possibilita mesmo aos MSX
+de primeira gera‡±o, a possibilidade de
+se instalar um rel¢gio de tempo real no
+v¡deo de seu microcomputador.
+
+Para carregar digite:
+
+A>MSXCLOCK e tecle [RETURN]
+
+Instalando o rel¢gio:
+
+Digite a hora certa quando o computador
+lhe solicitar e responda [S] (sim) quan
+do a hora estiver correta.    O rel¢gio
+n±o afeta a programa‡±o em BASIC mas po
+de atrapalhar algum programa em lingua-
+gem de m quina.
+
+PROGRAMA em REGIME de FREEWARE!
+

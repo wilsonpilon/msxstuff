@@ -1,0 +1,22 @@
+
+      MSX CHRISTMAS CARD 1.0
+
+Copyright (c) 1991 by NEMESIS LTDA
+
+
+Este programa foi desenvolvido pa-
+ra demonstrar algumas das facilida
+des do MSX PROJECT TOOLS 1.0 da NE
+MESIS INFORMATICA. O programa pos-
+sui instrucoes "ON LINE".
+
+Para executa-lo digite:
+
+A>XMASCARD  e pressione [RETURN]!
+
+
+Este programa nao deve ser vendido
+mas sim distribuido para todos  os
+seus amigos.            BOM NATAL!
+
+

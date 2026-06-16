@@ -1,0 +1,11 @@
+
+S.M.A. INTERNATIONAL COPY II (MSX2)
+
+Este copiador transfere os jogos de
+cartuchos MEGAROM para disco.   Ele
+funciona apenas em micros MSX2.
+
+As instru‡µes de utiliza‡±o s±o mos
+tradas na tela do programa.
+
+

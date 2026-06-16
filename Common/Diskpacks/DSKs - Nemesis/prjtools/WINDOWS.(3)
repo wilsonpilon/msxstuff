@@ -1,0 +1,9 @@
+100 REM *****************************
+110 REM *     ABRE AS 9 JANELAS     *
+120 REM *****************************
+130 FOR C = 1 TO 9 : BEEP
+140 X=2+C : H=40-C : Y=1+C : L=22-C
+150 POKE &HC201,Y : POKE &HC202,X
+160 POKE &HC204,L : POKE &HC205,H
+170 DEFUSR=&HC200 : U=USR(0) : NEXT C
+

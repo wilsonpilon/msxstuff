@@ -1,0 +1,10 @@
+
+BSDOS (Multi-utilit rio de disco)
+
+Para carregar digite:
+
+A>BSDOS e pressione [RETURN]
+
+Instru‡µes de utiliza‡±o no programa.
+
+

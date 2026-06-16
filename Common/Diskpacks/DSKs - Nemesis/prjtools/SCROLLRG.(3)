@@ -1,0 +1,5 @@
+280 X = 23 * RND(1)
+290 LOCATE 0,X : PRINT ".";
+300 X = USR0(0)
+310 GOTO 280
+

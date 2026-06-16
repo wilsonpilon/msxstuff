@@ -1,0 +1,2 @@
+basic SMACOPY2.BAS
+

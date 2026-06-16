@@ -1,0 +1,2 @@
+10 BLOAD"MAPPY.BIN",R
+

@@ -1,0 +1,601 @@
+     MSX TOP CAD 1.3
+
+     Autor: Frederico Liporace
+
+     Distribuiá±o exclusiva: NEMESIS INFORMATICA LTDA.
+
+
+  APRESENTAÄ∞O
+
+  Este manual foi elaborado com o objetivo de fazer vocà tirar  o
+m†ximo  proveito  do  programa.  Para  que   isso   aconteáa,   Ç
+fundamental que ele seja lido com muita atená±o. Com o aux°lio do
+pr¢prio programa, procure explorar cada  t¢pico  apresentado  atÇ
+entender por completo o seu funcionamento.
+
+  A sua participaá±o Ç muito importante no que  diz  respeito  ao
+desenvolvimento de futuras versµes  deste  programa,  assim  como
+outros programas ligados Ö  mesma  †rea.  Envie  suas  sugestµes,
+cr°ticas, etc diretamente para o autor, atravÇs da  caixa  postal
+4.583 CEP 2O.OO1 - Rio de Janeiro - RJ. N±o se esqueáa de  enviar
+tambÇm o nß de  sÇrie  de  seu  programa,  impresso  na  capa  do
+manual.
+
+  CARREGAMENTO e NOÄ¥ES BÑSICAS
+
+  Ligue o disk-drive, ligue o computador e insira o disquete  com
+o programa MSX TOP CAD da NEMESIS INFORMÑTICA LTDA.
+  Quando aparecer o sinal de "PROMPT" ou "A>" digite:
+  
+  A>TOPCAD ELETRO e pressione [ENTER]
+
+  Pronto, vocà agora est† no ambiente do MSX TOP  CAD.  O  cursor
+aparecer† no  canto  superior  esquerdo  do  v°deo,  e  pode  ser
+movimentado com as teclas de direá±o ou "setas".
+
+  Em muitas partes deste manual,  vamos  nos  referir  Ös  teclas
+[LGRA] e [RGRA] do micro-computador "Expert". Estas teclas tem  o
+mesmo efeito que as teclas [GRAPH] e [CODE]  respectivamente,  do
+"Hotbit" ou de micro-computadores MSX importados.
+
+  Experimente movimentar o cursor  com  ou  sem  a  tecla  [LGRA]
+pressionada juntamente com as setas. Vocà ir†  notar  que  [LGRA]
+possibilita um ajuste fino da posiá±o do cursor.
+
+  Pressione  agora  [F2].  Esta  tecla  aciona  uma  das  janelas
+gr†ficas do programa; no caso a de Entrada e  Sa°da  (I/O).  Vocà
+poder† selecionar qualquer uma das opáµes com as setas para  cima
+e para baixo e execut†-la com a barra  de  espaáo.  Com  a  tecla
+[ESC] pressionada vocà sai da janela sem executar nenhuma  opá±o.
+Existe uma janela associada a cada tecla de funá±o de [F1] a [F5]
+(Desenho, I/O, Texto, MiscelÉnea e  Componente,  respectivamente)
+que funcionam da mesma maneira descrita acima.
+
+  Vamos agora ler um circuito armazenado em disco: Pressione [F2]
+e execute a opá±o "LE TELA". O programa pedir†, ent±o, o nome  do
+projeto a ser carregado. Digite EXEMPLO, que Ç o nome do circuito
+eletrìnico  de  exemplo  que  acompanha  o  TOP  CAD  da  NEMESIS
+INFORMATICA LTDA. N±o Ç necess†rio se preocupar com a extens±o do
+arquivo, pois o  programa  assume  que  para  todo  o  projeto  a
+extens±o Ç ".CIC". Note que existe a opá±o de  se  interromper  o
+processo de digitaá±o do nome com a tecla [ESC].  A  tecla  [ESC]
+poder† s
+
+er  usada  para  esse  fim  durante  QUALQUER  entrada  de  dados
+solicitada pelo programa.
+
+  Experimente agora pressionar as setas juntamente  com  a  tecla
+[SHIFT]. Note que o tamanho do circuito editado  n±o  Ç  limitado
+pela resoluá±o do micro. Na verdade, o MSX TOP  CAD  trabalha  de
+maneira semelhante a um programa de  "desk-top  Publishing",  com
+algumas vantagens  quando  o  objetivo  Ç  desenhar  esquemas  de
+circuitos eletrìnicos, projetos arquitetìnicos,  mecÉnicos  e  de
+engenharia em geral.
+
+  Antes de passarmos para o pr¢ximo item, vamos limpar a †rea  de
+ediá±o. Para isso, pressione a tecla [HOME/CLS] 2 vezes seguidas.
+Atená±o: A tecla [STOP] volta ao MSX-DOS.
+
+  COMPONENTES
+
+  Este Ç o ponto que torna o MSX TOP CAD que  vocà  recebe  nesta
+embalagem, um editor espec°fico de  circuitos  eletrìnicos,  pois
+traz um banco de componentes l¢gicos e de eletrìnica que  j†  vàm
+prÇ-programados.  Pode-se  no  entanto  criar  quaisquer   outros
+elementos  para  as  mais  diversas  finalidades,  como   veremos
+adiante. Estes elementos ser±o daqui para frente designados  como
+"SHAPES".
+  Existem 2 maneiras de se acessar um shape: atravÇs de um  banco
+residente na mem¢ria ou atravÇs de bancos  situados  em  arquivos
+gravados no disco.
+
+  Acesso atravÇs do banco residente:
+
+  Pressione [SELECT]. O banco residente ser† mostrado  juntamente
+com as letras de [A] a [Z], cada uma associada a um componente. O
+trans°stor NPN, por exemplo, est† associado a tecla [N].
+  O banco  exibido  Ç  o  banco  carregado  automaticamente  pelo
+programa, ou seja, o arquivo  "E-CAD.BAN".  A  extens±o  "BAN"  Ç
+usada pelo MSX TOP CAD para designar o arquivo como um  banco  de
+26 componentes.
+
+  Pressione qualquer tecla para voltar Ö †rea de ediá±o. O acesso
+a um componente do banco segue ent±o o seguinte roteiro:
+
+  1) Pressione [RGRA]
+  2) Pressione a letra  associada  ao  componente  desejado  (por
+exemplo, [N] se for desejado um trans°stor NPN).
+
+  Vocà agora pode controlar o componente  da  mesma  maneira  que
+controlou o cursor descrito anteriormente.  Note  que  as  teclas
+[LGRA]  e  [SHIFT]  continuam  ativas.  Enquanto   vocà   estiver
+controlando o componente, as teclas a seguir assumem as seguintes
+funáµes:
+  [ESPAÄO] "Carimba" o componente na †rea de ediá±o.
+  [ESC] Volta ao cursor  principal  APAGANDO  TODOS  OS  CARIMBOS
+FEITOS DEPOIS DO ãLTIMO [ENTER].
+  [ENTER] Fixa a tela e delimita a aá±o de [ESC].
+  [CTRL]+[E]: Espelha o componente em relaá±o ao eixo vertical.
+  [CTRL]+[R]: Rotaciona o  componente  de  9O  graus  no  sentido
+anti-hor†rio.
+
+  Uma  observaá±o  importante:   Se   durante   o   processo   de
+"carimbaá±o" for feito um acesso Ö qualquer uma  das  janelas  ou
+for  usada  a  tecla   [SHIFT],   todas   as   operaáµes   feitas
+anteriormente n±o poder±o ser canceladas com o uso de  [ESC].  Em
+outras palavras, o acesso Ös janelas e o uso de [SHIFT] equivalem
+a pressionar [ENTER].
+  Pressionando [CTRL]+[U] durante a exibiá±o do cursor principal,
+vocà volta a controlar o £ltimo componente acessado.
+
+  Acesso atravÇs do banco em disco:
+
+  O acesso pelo banco na mem¢ria  Ç  f†cil  e  r†pido,  mas  est†
+limitado a 26 componentes. Para  contornar  isso,  foram  criados
+bancos em disco que, apesar do acesso ser mais lento,  podem  ser
+expandidos para atÇ 4OO componentes.
+
+  Pressione [F5] e selecione um grupo entre:
+
+  SEMICOND: Semicondutores em geral.
+  RLC: Elementos que, de uma forma ou de outra, s±o  constitu°dos
+de resistores, indutores ou capacitores (transformadores,  relàs,
+fontes independentes, etc).
+  DIGITAL: Portas l¢gicas, displays, etc
+  MISCELåNEA: Qualquer elemento que n±o  se  encaixe  nos  grupos
+anteriores, alÇm dos °cones (terra, chave, etc).
+
+  Vocà ser† ent±o solicitado a digitar  o  nome  por  extenso  do
+componente desejado. Para  obter  uma  listagem  dos  componentes
+presentes no banco, utilize as "seta para esquerda" e "seta  para
+direita".
+
+  Uma vez escolhido o componente,  vocà  ainda  tem  a  opá±o  de
+transfer°-lo tambÇm para o banco residente, utilizando a seguinte
+sintaxe:
+
+  "Nome do componente"-"letra a associar"
+
+  Por exemplo:
+
+    a) TRIAC-T
+    b) MOSFET EN-N
+    c) TUJ
+
+  No exemplo (a), far°amos uma c¢pia do componente TRIAC  para  o
+banco residente, e este componente ficaria associado Ö tecla [T],
+e  o  componente  anteriormente  associado  Ö  essa  tecla  seria
+apagado. No item (b), copiar°amos o  componente  MOSFET  Enhanced
+Canal N para o banco residente e o associar°amos Ö tecla [N].  No
+item (c), apenas passar°amos a controlar um trans°stor  unijuná±o
+(TUJ), mas sem copi†-lo no banco residente.
+
+  Observaáµes:
+
+    - [ESC] volta em qualquer momento ao cursor principal.
+    - O nome dos componentes tem no m†ximo 1O caracteres.
+    - A possibilidade de redefiniá±o dos componentes e atÇ  mesmo
+de criaá±o de novos componentes para expandir o  banco  em  disco
+existe, e ser† descrita mais adiante.
+
+  Uma vez na †rea de ediá±o, o procedimento para  movimentaá±o  e
+"carimbaá±o" do componente Ç o mesmo descrito anteriormente.
+
+  DESENHOS
+
+  O MSX TOP CAD oferece todas as funáµes  de  um  editor  gr†fico
+comum necess†rias  para  a  confecá±o  de  plantas  de  projetos,
+fazendo o uso das seguintes teclas:
+
+  [CAPS-LOCK] Marca um ponto na †rea de ediá±o.
+  [F1] Seleciona a opá±o de desenho.
+  [ESPAÄO] Executa a opá±o selecionada, ou seja:
+
+    -  LINHA:  Desenha  uma  linha  entre  o  ponto  marcado  com
+[CAPS-LOCK] e a posiá±o atual do cursor.
+
+    - BOX: Desenha uma caixa com  vÇrtice  superior  esquerdo  no
+ponto marcado e inferior direito na posiá±o do cursor.
+
+    - RAIO: Idem a LINHA, mas mantÇm o ponto marcado  na  posiá±o
+original.
+
+    - APAGA: Marca  vÇrtice  superior  esquerdo  da  †rea  a  ser
+apagada. Movimente o cursor e use [ESPAÄO] para marcar o  vÇrtice
+inferior direito. A †rea delimitada pelo retÉngulo  formado  ser†
+ent±o apagada. Essa opá±o Ç usada quando h† a necessidade  de  se
+apagar grandes †reas de desenho.
+
+    - CâRCULO: Desenha um c°rculo com centro no ponto  marcado  e
+que passa pela posiá±o do cursor.
+
+    - PAINT: Preenche uma †rea a partir da posiá±o do cursor.
+
+    - BORRACHA: Apaga a †rea que est† sob o cursor.  ê  utilizada
+juntamente  com  [LGRA]  quando  forem  necess†rios  retoques  no
+desenho do projeto.
+
+  AlÇm dessas, ainda existe uma opá±o especial usada  para  ligar
+componentes, que Ç acessada atravÇs de  [CTRL]+(uma  das  setas).
+Esta opá±o conecta um ponto marcado por [CAPS-LOCK] e  a  posiá±o
+atual do cursor.
+
+  Essa opá±o liga os  pontos  marcados  por  [CAPS-LOCK]  e  pela
+posiá±o do cursor atravÇs de 2 segmentos de reta. A  seta  apenas
+indica  qual  desses  dois  segmentos  ser†  o  primeiro  a   ser
+desenhado.
+
+  A tecla [P] desenha um simples ponto (muito usado para  indicar
+que  duas  trilhas  est±o  em  curto   no   caso   de   circuitos
+eletrìnicos).
+
+  As teclas [ESC]  e  [ENTER]  funcionam  em  conjunto  da  mesma
+maneira descrita na seá±o de componentes,  considerando  qualquer
+aá±o  de  desenho  executada   atravÇs   de   [ESPAÄO],   [P]   e
+[CTRL]+(seta) como um  "carimbo".  Valem  as  mesmas  observaáµes
+quanto Ö [SHIFT] e Ös janelas.
+
+  A opá±o selecionada  por  [F1]  fica  ativa  enquanto  n±o  for
+selecionada outra opá±o de desenho.
+
+  TEXTOS
+
+  O MSX TOP CAD  da  NEMESIS  INFORMATICA  LTDA.  permite  que  a
+mistura de texto com gr†ficos seja  extremamente  simples.  Basta
+pressionar [F3] e escolher um dos  tipos  de  letras  oferecidos,
+entre Normal, It†lico  +  (inclinado  para  direita),  It†lico  -
+(inclinado para esquerda), Compacto, Largo ou Sombreado.
+
+  Ap¢s isso, vocà entrar† no modo texto.  O  cursor  de  texto  Ç
+diferente  do  cursor  gr†fico  visto  anteriormente,   mas   sua
+movimentaá±o Ç idàntica, inclusive em relaá±o Ös teclas [LGRA]  e
+[SHIFT].
+  S±o ainda oferecidas as seguintes facilidades:
+
+  [BS] Volta cursor apagando £ltimo caracter.
+
+  [TAB] Marca margem direita.
+
+  [ENTER] "Carriage Return" com  cursor  na  coluna  marcada  por
+TAB.
+
+  [CTRL]+[F] Finaliza modo texto, voltando ao cursor principal.
+
+  Os caracteres acessados atravÇs de [LGRA] e [RGRA] poder±o  ser
+usados normalmente, assim como os caracteres  acentuados  poder±o
+ser acessados pelas teclas de acentos. Note apenas que  para  que
+esses caracteres sejam  impressos  Ç  preciso  que  eles  estejam
+definidos no set de caracteres utilizado no momento (ver  Entrada
+e Sa°da).
+
+  As teclas [ESC] e [ENTER] funcionam da mesma  maneira  descrita
+na seá±o componentes, considerando cada entrada e sa°da  do  modo
+texto como um "carimbo".
+
+  ENTRADA E SAâDA
+
+  Todas as funáµes de Entrada e Sa°da s±o  acessadas  atravÇs  de
+[F2]. A  descriá±o  de  cada  uma  delas,  lembrando  que  n±o  Ç
+necess†rio digitar a extens±o quando  Ç  perguntado  o  nome  dos
+arquivos de E/S, Ç a seguinte:
+
+  - IMPRESSORA: Imprime o circuito editado depois de  selecionada
+a densidade (simples ou dupla) e o n£mero de vezes (de 1  a  255)
+que o carro da  impressora  imprimir†  cada  linha.  A  impress±o
+poder† ser abortada em qualquer momento atravÇs do uso  da  tecla
+[ESC]. Deve ser usada uma impressora gr†fica matricial.
+
+  - Lç ALFABETO: Carrega um alfabeto do disco (extens±o  ".SET").
+Qualquer alfabeto  utilizado  pelo  MSX  PAGE  MAKER  da  NEMESIS
+INFORMÑTICA poder† ser usado, desde que convertido pelo  programa
+"CONVALF.COM" (Ver °tem Utilit†rios). O alfabeto  carregado  ser†
+ent±o utilizado quando se entrar no modo de texto.
+
+  - Lç BANCO E GRAVA BANCO: Grava (ou là) o banco de  componentes
+residente, com a extens±o ".BAN".  O  uso  conjunto  dessas  duas
+opáµes com as  opáµes  de  gerenciamento  de  componentes  vistas
+anteriormente permite a criaá±o de bancos residentes (portanto de
+acesso mais r†pido) de acordo com o projeto a ser elaborado.
+
+  - Lç TELA E GRAVA TELA: Grava (ou là) o projeto que est†  sendo
+editado com a extens±o ".CIC". Se ao  ser  perguntado  pelo  nome
+para gravaá±o vocà digitar simplesmente [ENTER]  o  projeto  ser†
+gravado com o nome atual.
+ 
+ - DIRETäRIO: Exibe o diret¢rio do disco de acordo com a  m†scara
+desejada. ê permitido o uso dos caracteres "?", ":"  e  "*"  como
+componentes da m†scara como no sistema operacional.
+
+  - SEGMENTO: Ver °tem Segmentos.
+
+  MISCELåNEA
+
+  Esse grupo de funáµes Ç acessado atravÇs de [F4].  A  descriá±o
+de cada uma delas Ç a seguinte:
+
+  -  ELÑSTICO:  Esta  opá±o  ativa  o  el†stico  para  ser  usado
+juntamente com  as  opáµes  de  desenho.  Ela  funciona  em  modo
+"toggle", ou seja, posicionando a barra de seleá±o  da  janela  e
+pressionando [ESPAÄO], o el†stico ser† ativado. Para desativ†-lo,
+repita o procedimento. Um "X" ao lado da palavra El†stico  indica
+se esse est† ou n±o ativo.
+  Note que tudo que for desenhado com o el†stico  ligado  somente
+poder† ser apagado com a BORRACHA e APAGA,  pois  a  tecla  [ESC]
+retornar† ao cursor principal SEM apagar nada.
+
+  - GRID: Assim como o el†stico,  essa  opá±o  funciona  no  modo
+"toggle". Quando ativa, faz com que a †rea  de  ediá±o  se  torne
+quadriculada. Vamos aproveitar esse momento para  introduzir  uma
+nova funá±o: Uma vez com a †rea de ediá±o quadriculada, movimente
+o cursor com [LGRA] e em  seguida  pressione  [TAB].  Esta  tecla
+desloca o cursor para o pixel superior esquerdo  do  quadrado  em
+que  o  cursor  est†  situado.  Movimente  agora  o  cursor   sem
+pressionar [LGRA] e veja que este sempre se  posiciona  no  pixel
+superior esquerd
+
+o  de  cada  quadrado.  Procure   ao   m†ximo   trabalhar   nesta
+circunstÉncia, uma vez que  isso  facilita  a  conex±o  entre  os
+componentes existentes.
+
+  - AJUSTE: TambÇm funciona no modo "toggle". Quando  ativa,  faz
+com que a movimentaá±o do cursor seja sempre feita  de  pixel  em
+pixel, estando ou n±o a tecla [LGRA] pressionada.
+
+  - DRIVE: Indica o drive "default" onde ser±o  procurados  todos
+os arquivos (alfabetos, circuitos, bancos, etc)  que  o  programa
+carrega  (ou  grava)  do  disco.  Esta  opá±o  funciona  no  modo
+"toggle", com a diferenáa de que em vez dos  estados  "LIGADO"  e
+"DESLIGADO", como anteriormente, os estados s±o "A" e "B".
+
+  - TAMANHO: Define a formataá±o da †rea  de  ediá±o.  Apesar  da
+mem¢ria reservada para a †rea de ediá±o  ser  fixa  (16  Kbytes),
+existem v†rias combinaáµes de  comprimento  e  largura  poss°veis
+para essa  †rea.  O  programa  permite  que  o  comprimento  seja
+especificado atravÇs dessa opá±o, modificando assim o formato  da
+†rea de ediá±o, se isso  for  conveniente  para  se  desenhar  um
+determinado projeto. O n£mero  apresentado  quando  se  acessa  a
+opá±o Ç o comprimento  atual  da  †rea  de  ediá±o,  em  unidades
+definidas como BLOCOS. 
+
+Para se ter uma noá±o do tamanho de um bloco,  o  comprimento  da
+†rea de ediá±o apresentada no v°deo Ç equivalente a 32 blocos e a
+largura Ç de 24 blocos.
+
+  ê claro que um aumento do comprimento acarreta  uma  diminuiá±o
+da largura da †rea de ediá±o. O  valor  do  comprimento  pode  se
+situar entre 32 e 85, e a †rea de  ediá±o  ser†  apagada  caso  o
+comprimento seja modificado.
+  
+  SEGMENTOS
+
+  O tamanho do projeto a ser desenhado n±o Ç limitado pelo espaáo
+de mem¢ria dispon°vel para a †rea de ediá±o (16  Kbytes).  O  MSX
+TOP CAD pode tratar um projeto como sendo na verdade composto  de
+v†rias  †reas,  acessando  uma  de  cada  vez  para  ediá±o,  mas
+juntando-as no momento da impress±o. A utilizaá±o  dessa  tÇcnica
+torna o tamanho do projeto limitado apenas pelo espaáo  em  disco
+necess†rio para gravar todos os segmentos (cada um ocupa em mÇdia
+4,5 Kbytes), ou pelo n£mero m†ximo de segmentos permitidos, que Ç
+d
+
+e 999.
+
+  Para mudar o segmento que est† sendo editado, utilize  a  opá±o
+SEGMENTO da janela de I/O ([F2]). O n£mero do segmento atual ser†
+mostrado, e vocà poder† mud†-lo digitando o nß do novo  segmento.
+Note que o primeiro segmento tem o n£mero zero.
+
+  Se o n£mero do novo segmento for vizinho do atual (1 para 2,  5
+para 6, 4 para 3, etc) ser† perguntado se vocà  deseja  copiar  a
+†rea compartilhada entre os segmentos, do atual para o novo. Essa
+†rea tem um comprimento igual a 3 blocos e a raz±o dela poder ser
+copiada Ç facilitar a  conex±o  entre  componentes  de  segmentos
+diferentes.
+
+  No momento da impress±o, ser† impressa a †rea compartilhada que
+pertencer ao segmento de MAIOR n£mero. A †rea  compartilhada  que
+pertencer ao segmento menor ser† ignorada.
+
+  Observaáµes:
+
+  - Os arquivos, em disco, dos segmentos ter±o  como  extens±o  o
+n£mero do segmento ao qual eles correspondem,  exceá±o  feita  ao
+segmento zero. Por exemplo:
+
+  TESTE.CIC --> SEGMENTO O
+  TESTE.1   --> SEGMENTO 1
+  TESTE.2   --> SEGMENTO 2, ETC...
+
+  - O comprimento da †rea de ediá±o  de  segmentos  de  um  mesmo
+projeto ser±o OBRIGATORIAMENTE iguais.
+
+  UTILITÑRIOS
+
+  O pacote do MSX TOP CAD da NEMESIS INFORMÑTICA Ç composto, alÇm
+do Editor principal, de 3 outros programas utilit†rios:
+
+  a) CONVALF.COM
+
+  Este programa Ç respons†vel  pela  convers±o  de  alfabetos  do
+padr±o utilizado pelo MSX PAGE MAKER da NEMESIS INFORMÑTICA LTDA.
+para o formato utilizado pelo TOP CAD. Sua  operaá±o  Ç  bastante
+simples e se baseia nos seguintes passos:
+
+  1) Digite o nome do arquivo a ser convertido (n±o Ç  necess†rio
+digitar a extens±o ".ALF").
+  2) Digite o nome para gravaá±o do arquivo  no  formato  do  TOP
+CAD. Se n±o for desejado alterar o nome do arquivo,  simplesmente
+digite [ENTER] e o nome  do  arquivo  destino  ser†  o  mesmo  do
+arquivo fonte, com a extens±o modificada para ".SET".
+
+  S±o permitidos como nome de arquivo expressµes do tipo "B:DATA"
+e "A:ROMANO" para indicar o drive fonte e/ou destino.
+
+  b) EDITOR.COM
+
+  Este  foi  o  programa  utilizado  para   desenhar   todos   os
+componentes do MSX TOP CAD, e agora poder† ser usado para definir
+novos componentes ou redefinir os j† existentes.
+
+  Vocà controla  inicialmente  um  cursor  num  "grid"  de  32x32
+posiáµes. Utilize as setas para mover o cursor, e [SHIFT]+(setas)
+se desejar mover o cursor de 8 em 8 posiáµes.
+
+  Existem 3 modos b†sicos de desenho, cada um associado a uma cor
+do cursor, que s±o os seguintes:
+
+  - Modo NOT (Verde): Ativado com [CTRL]+[N]
+  - Modo SET (Amarelo): Ativado com [CTRL]+[S]
+  - Modo RESET (Vermelho): Ativado com [CTRL]+[R]
+
+  Pressionando [ESPAÄO] no modo NOT,  o  ponto  que  est†  sob  o
+cursor ser† setado  (aceso)  se  estiver  resetado  (apagado),  e
+vice-versa.  No  modo  SET,  o  ponto  ser†  sempre  setado,  n±o
+importando o estado anterior e no modo RESET o ponto ser†  sempre
+resetado.
+
+  Vocà poder† visualizar, no canto superior direito do  v°deo,  o
+componente em tamanho natural. A tecla [HOME/CLS] apaga a †rea de
+ediá±o, enquanto [CTRL]+(setas) desloca o componente  editado  na
+direá±o desejada.
+
+  Os comandos que permitem a alteraá±o dos bancos de  componentes
+em disco s±o os seguintes:
+
+  [CTRL]+[L] Là um componente do disco:  Selecione  o  n£mero  do
+grupo desejado quando pedido e digite o nome  do  componente  por
+extenso.  Para  obter  uma  listagem  dos  componentes  do  grupo
+escolhido, digite "LIST" quando perguntado o nome do componente.
+  [CTRL]+[G] Grava (acrescenta) o componente editado em um  banco
+de componentes. Simplesmente selecione o grupo e digite o nome do
+novo  componente.  Lembre-se  que  cada  grupo   pode   ter   1OO
+componentes no m†ximo, e que o nome do componente poder† ter  atÇ
+1O caracteres.
+  [DELETE] Elimina um componente de um dos grupos. Se houverem  2
+componentes com o mesmo nome, apenas o primeiro ser† apagado.
+
+  Se [CTRL]+[E] for pressionado enquanto  um  componente  estiver
+sendo  editado,  ser†  feito  um  espelho  em  relaá±o  ao   eixo
+horizontal central. Essa funá±o Ç  £til  pois  grande  n£mero  de
+componentes poder† apresentar esta simetria.
+
+  Para voltar ao MSX-DOS, tecle [STOP].
+
+  c) LISTPC.COM
+
+  Este arquivo permite que circuito editados pelo TOP CAD  possam
+ser impressos em micros compat°veis com a linha IBM-PC.
+  Uma vez no MS-DOS do IBM/PC, digite:
+
+  >LISTPC (nome do circuito)
+
+   N±o ser† necess†rio digitar a extens±o do arquivo.
+ 
+  Entre em seguida com a densidade de impress±o e o nß  de  vezes
+que o carro da impressora imprimir† cada linha (atÇ 255 vezes).
+
+  IMPLEMENTAÄ¥ES DA VERS∞O 1.3:
+
+  Visando possibilitar o uso do TOPCAD em outras  †reas  que  n±o
+sejam a de  eletrìnica,  foram  feitas  algumas  modificaáµes  na
+maneira de como o programa Ç chamado do "DOS":
+
+  A>TOPCAD ELETRO
+
+  A mesma sintaxe dever† ser  usada  para  acessar  o  utilit†rio
+EDITOR:
+
+  A>EDITOR ELETRO
+
+  A palavra ELETRO indica o banco com o qual o TOPCAD ou o EDITOR
+ir±o trabalhar, no caso o de eletrìnica que acompanha seu disco.
+
+  Se for desejado trabalhar com outro banco, como por exemplo  um
+de arquitetura, deve-se seguir os seguintes passos:
+
+  1) Fornecer informaáµes sobre o banco que ser† criado,  atravÇs
+do  utilit†rio  CRIABAN,  fornecido  no   seu   disquete.   Essas
+informaáµes consistem no nome do novo banco, assim como o  n£mero
+e o nome de cada um dos subgrupos que o formam.  Por  exemplo,  o
+banco de eletrìnica fornecido tem o nome ELETRO e Ç dividido em 4
+subgrupos de nomes Semicond, RLC, Digital e MiscelÉnea. Um  banco
+de arquitetura seria ent±o criado da seguinte maneira:
+
+  A>CRIABAN
+
+  Nome do grupo: ARQUITET
+  Nß de subgrupos: 3
+
+  SG1: Portas
+  SG2: Janelas
+  SG3: Mobilia
+
+  Este foi apenas um exemplo. O n£mero e o nome de cada  subgrupo
+fica Ö critÇrio do usu†rio. O nome de cada subgrupo dever† ter no
+m†ximo 1O caracteres.
+
+  2) Para editar o banco criado, digite:
+
+  A>EDITOR ARQUITET
+
+  E para us†-lo no TOPCAD,
+
+  A>TOPCAD ARQUITET
+
+  O novo banco criado n±o contÇm nenhum componente. Estes dever±o
+ser desenhados atravÇs do EDITOR. N±o use o  TOPCAD  com  o  novo
+banco sem que pelo menos haja um componente em cada subgrupo.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-97O
+                  Rio de Janeiro - RJ - Brasil.
+
+
+
+
+

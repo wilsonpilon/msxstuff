@@ -1,0 +1,470 @@
+     MSX GRAPHIC TOOLS 1.1
+
+     Programadores: Equipe NEMESIS
+
+     Introduá±o
+
+     O MSX  GRAPHIC  TOOLS  1.1  Ç  um  conjunto  de  ferramentas
+dedicadas a aplicaáµes gr†ficas com  microcomputadores  da  linha
+MSX.  Entre  os  arquivos  que  compµem  este  programa,  podemos
+destacar algumas eficientes rotinas que que fazem parte da  lista
+de  intrumentos  mais  utilizados  por  nossos  programadores  na
+elaboraá±o dos mais diversos softwares para MSX.
+     Entre  as  funáµes  dispon°veis  do  programa,   encontramos
+"scanner" de telas gr†ficas, que possibilita  tirarmos  telas  de
+jogos  e  de  dentro  de  programas   gr†ficos   para   posterior
+utilizaá±o,  editor  gr†fico   (baseado   no   mais   sofisticado
+manipulador de telas existente para a linha  MSX,  com  todos  os
+recursos de desenho, espelho,  rotaá±o,  "zoom",  janelas,  etc),
+simulador  de  c¢pia  gr†fica  em  preto  e  branco  ("blanker"),
+conversor de telas do MSX1 para o MSX2 (s¢ pode ser executado  em
+MSX2), compactador e descompactador de telas (Screen  Cruncher  e
+"Descruncher"), conversores diversos para permuta de telas  entre
+todos os editores gr†ficos  existentes  para  MSX,  carregador  e
+conversor de telas do microcomputador ZX SPECTRUM (TK 9O/95) para
+MSX, programa completo de  impress±o  gr†fica  ("HARDCOPY")  para
+impressoras  matriciais  com  possibilidade  de   mudanáa   entre
+tonalidades de cinza, diversos tamanhos e  variados  recursos  de
+impress±o.
+     Sem d£vida alguma, o MSX GRAPHIC TOOLS 1.1 far† de agora  em
+diante parte dos utilit†rios mais procurados pelos  programadores
+e usu†rios de MSX em geral, tornando-o um acess¢rio indispens†vel
+para todos os que possuem estas m†quinas.
+
+     Carregamento
+
+     O MSX  GRAPHIC  TOOLS  1.1  Ç  autom†ticamente  carregado  e
+executado ao ser colocado no disk-drive de computador MSX, ap¢s o
+mesmo ter sido ligado. Em caso  de  n±o  funcionamento  acione  o
+"reset"  do  seu  MSX.  Persistindo  o  problema  consulte  nosso
+departamento tÇcnico.
+     O arquivo que Ç autom†ticamente executado Ç  o  GRPTOOLS.BAS
+(Sistema Gerenciador) que nada mais Ç que um men£ de  abertura  e
+carregador  autom†tico  (n±o   indispens†vel)   das   ferramentas
+existentes.  Todos  os  arquivos  tambÇm  podem  ser   carregados
+diretamente pelo BASIC sem maiores problemas.
+     A partir do BASIC e depois do  Sistema  Gerenciador  j†  ter
+sido   instalado    Ç    poss°vel    recarreg†-lo    digitando-se
+RUN"GRPTOOLS.BAS" e dando entrada com a tecla [RETURN].
+
+     Utilizaá±o
+
+     Ap¢s o men£ inicial ter sido carregado, Ç  poss°vel  ver  os
+arquivos existentes  no  disco.  Basta  pressionar  [RETURN];  ou
+escolher entre  as  principais  opáµes  dispon°veis  atravÇs  das
+teclas de funá±o de [F1] a [F1O]. S±o elas:
+
+     "SCREEN SCANNER"
+
+     Este utilit†rio serve para capturar telas gr†ficas de  jogos
+e programas em  execuá±o  desde  que  os  mesmos  n±o  apresentem
+"proteá±o  contra  intrusos".  As  telas  capturadas  podem   ser
+modificadas atravÇs de editores gr†ficos ou  guardadas  para  uso
+posterior.
+     O "screen Scanner" divide-se em dois blocos: "screen loader"
+e "screen saver". Estes dois arquivos podem ser acessados atravÇs
+do menu inicial do MSX GRAPHIC TOOLS  1.1  respectivamente  pelas
+teclas [F1] e [F2].
+     O "screen loader" tem a funá±o de ficar instalado numa parte
+geralmente  n±o  afetada  da  mem¢ria  do  computador,  e   ficar
+esperando  atÇ  que   as   teclas   abaixo   sejam   pressionadas
+simultÉneamente:
+
+     [CONTROL]+[SHIFT]+[LGRA]+[RGRA]
+
+     Ao pressionarmos estas teclas o  microcomputador  gravar†  a
+tela atual numa determinada  posiá±o  da  mem¢ria  e  "resetar†".
+Devemos ent±o colocar o disco do MSX GRAPHIC TOOLS 1.1 e  acionar
+[F2] para executar o bloco "screen saver" que lhe pedir†  o  nome
+com que a tela que o mesmo vai recuperar da mem¢ria ser†  gravada
+no disco.
+
+     Vamos exemplificar, seguindo passo-a-passo a retirada de uma
+tela do jogo "SPITFIRE" da Mirrorsoft:
+
+1ß passo: coloca-se o disco do MSX GRAPHIC TOOLS 1.1 e executamos
+o "screen loader" atravÇs da tecla [F1];
+2ß passo: trocamos o disco do utilit†rio pelo do jogo  "SPITFIRE"
+e acionamos o mesmo atravÇs de RUN"SPITFIRE.BAS";
+3ß passo: no momento desejado (durante qualquer  parte  do  jogo)
+pressionamos as  4  teclas  j†  mencionadas  de  uma  s¢  vez.  O
+computador vai resetar e o disco do MSX GRAPHIC  TOOLS  1.1  ser†
+novamente inserido;
+4ß passo: acionamos o "screen saver" pela tecla [F2]. Damos  para
+a tela o nome de SPITFIRE e pressionamos [RETURN].
+
+     A tela ser† gravada no disco com o  nome  "SPITFIRE.GRP",  e
+poder† ser visualizada atravÇs da opá±o [3] do sub-menu VER TELA,
+tecla  [F1O].  Como  j†  foi  dito,  a  tela  criada  poder†  ser
+modificada atravÇs do editor gr†fico (opá±o [F3]), guardada  para
+uso posterior, ou utilizada no seu programa como j† foi visto.
+
+     Editor gr†fico
+
+     O editor gr†fico que acompanha o MSX GRAPHIC TOOLS Ç baseado
+no famoso "Aackodraw & Paint" da empresa holandesa Aackosoft, e Ç
+uma poderosa ferramenta para desenho desenvolvida  exclusivamente
+para micros da linha MSX.
+     Este editor trabalha em disco com telas no formato  VRAM,  o
+mesmo do MSX PAGE MAKER da Nemesis Inform†tica Ltda. e de  outros
+importantes editores existentes no mercado.
+
+     Ao  ser  carregado,  o  editor  gr†fico  apresenta  um  menu
+principal com as opáµes:
+
+[ESC] Edita (vai para a tela de desenho);
+[L] Load tela (carrega tela de fita ou disco);
+[S] Save tela (grava a tela desenhada em fita ou disco);
+[M] Modo de tela (seleciona modo de recuperaá±o de tela - UNDO ou
+BACK-UP);
+[R] Refaz a tela (restaura tela armazenada na mem¢ria);
+[I] Inicia a tela (limpa a tela);
+[E] Edita padrµes (vai ao sub-menu  de  ediá±o  de  caracteres  e
+texturas);
+[TAB] Ajuda (mostra durante a ediá±o de tela, uma p†gina de ajuda
+com as teclas das  principais  funáµes  gr†ficas  dispon°veis  no
+editor).
+
+     No modo de ediá±o de tela, acionado por intermÇdio da  tecla
+[ESC], notamos no canto superior esquerdo, uma nota auxiliar  que
+nos exibe:
+
+Modo (modo de tela utilizado);
+Frente (cor da tinta utilizado);
+Fundo (cor do papel utilizado);
+Xpos (posiá±o horizontal do cursor);
+Ypos (posiá±o vertical do cursor);
+
+     Para mudar tais parametros, seguiremos abaixo  mostrando  as
+teclas principais para ediá±o de tela, desenho  ou  alteraá±o  de
+uma  tela  previamente  carregada  pela  funá±o  "load"  do  menu
+principal.
+
+     ATENC∞O: Para uma rapida visualizaá±o das teclas de operaá±o
+do modo de ediá±o de tela gr†fica, pressione [TAB]!
+
+     Como pode se perceber,  basta  usar  as  teclas  de  direá±o
+(SETAS) para mover o cursor (L†pis, no momento). Para que o l†pis
+risque aperte [SPACE]. Apertando duas  vezes,  o  l†pis  funciona
+como borracha, apagando seu riscado.
+
+[L] Linha (traáa uma linha de um ponto a outro);
+[B] Quadrado ou retÉngulo (pode ser aumentado ou diminuido  pelas
+setas);
+[C] C°rculo (traáa um c°rculo);
+[S] Spray (desenha pontos aleat¢rios como um spray);
+[R] Raio (traca retas de um mesmo ponto a outros);
+[F] Fill ou Paint (preenche uma †rea com a cor especificada);
+[P]  Escreve  (muda  o  cursor  para  um   formato   de   escrita
+datilogr†fica);
+[G] Grid de mediá±o;
+
+[SELECT] Zoom (amplia 4 vezes a †rea onde esta o cursor,  podendo
+mostrar detalhes precisos dos desenhos. Pode-se deslocar  a  †rea
+visada por meio de "Scroll" em todas as direáµes);
+[HOME] Centraliza o cursor no meio da tela;
+
+[DELETE] Apaga o £ltimo movimento ou traáo realizado (UNDO);
+[INSERT] Volta ao £ltimo BACK-UP gravado (se estiver  gravado,  Ç
+claro!);
+[STOP] Aborta o comando anterior (desliga a funá±o usada);
+
+[+] e [-] Aumenta ou diminui a velocidade do cursor;
+
+[0] a [9] Seleciona o padr±o de textura ser utilizado pela funá±o
+"fill";
+
+[ESC] Volta ao menu principal.
+
+[F1] Seleciona modo de BACK-UP;
+[F2] Seleciona a cor da tinta;
+[F3] Seleciona a cor da tela;
+[F4] Seleciona a cor do cursor;
+[F5] Muda a posiá±o ou retira o menu;
+[F6] Volta ao modo inicial;
+[F9] Seleciona a cor da borda;
+[F1O] Arma janela para utilizaá±o com um dos  comandos  descritos
+abaixo:
+
+[X] inverte cores no espaáo delimitado pela janela;
+[H] Inverte horizontalmente a tela ou o  espaco  delimitado  pela
+janela;
+[V] Inverte verticalmente a tela  ou  o  espaáo  delimitado  pela
+janela;
+[Y] Troca a cor da janela;
+[M] Move a tela ("scrool");
+[I] ObtÇm as cores da janela;
+[C] Copia a janela num outro local;
+[T] Move a janela de um local a outro;
+[D] Deleta cores da janela (atributos);
+[E] Apaga o conte£do da janela.
+
+     No modo de editaá±o de  padrµes  do  menu  inicial,  podemos
+escolher entre: Editar "fill" (pintura), editar "spray" ou editar
+o banco de caracteres.
+     A escolha poder† ser feita apertando uma  das  teclas:  [F],
+[S] ou [C]. Para voltar ao menu tecle [RETURN].
+     Dentro destas funáµes voce pode editar os padrµes usando  as
+facilidades das operaáµes existentes: Para sair leve o cursor ate
+a posiá±o de "SAI" e pressione a [SPACE]. Entre as outras  opáµes
+temos "LOAD" e "SAVE" que respectivamente gravam  e  carregam  os
+padrµes editados; "BOTA" que leva o padr±o editado  atÇ  a  linha
+inferior onde ele poder† ser colocado na posiá±o desejada; "RODA"
+e "INV." que rodam ou invertem o padr±o em ediá±o;  e  finalmente
+"E", "D", "C" e "B" que respectivamente giram  o  padr±o  editado
+para a Esquerda e Direita, e para Cima e para Baixo.
+
+     "BLANKER"
+
+     Este programa tem a finalidade  de  tirar  os  atributos  de
+cores de uma tela carregada, para obter uma simulaá±o no v°deo de
+como a mesma ser†  impressa  no  papel.  Ap¢s  a  tela  ter  sido
+carregada podemos pressionar [SPACE]  para  inverter  o  v°deo  e
+[RETURN] para gr†v†-la no disco no formato atual.
+
+     conversor de MSX1 a MSX2
+
+     Com este utilit†rio podemos converter uma  tela  no  formato
+VRAM (screen 2) de 14 Kbytes do MSX1 para o formato VRAM  (screen
+7 ou 8) de 54 Kbytes do MSX2. Com isso, uma tela do MSX1 pode ser
+passada para o MSX2.
+
+     Atená±o: N±o possuindo  o  MSX1  as  screens  7  e  8,  fica
+imposs°vel que computadores inferiores ao MSX2 com  128Kbytes  de
+VRAM executem este m¢dulo.
+
+     Compactador de telas
+
+     O compactador de telas ou "screen cruncher" tem como  funá±o
+compactar as telas em VRAM, transformando-as em formato RAM e com
+terminaá±o ".CPT". A funá±o de descompactar  realiza  o  trabalho
+inverso. A compactaá±o tem como objetivo a economia de espaáo  em
+disco. Telas de 14  Kbytes  podem  chegar  atÇ  3  ou  4  Kbytes,
+dependendo da  complexidade  da  figura  e  do  n£mero  de  cores
+empregadas.
+
+     Conversores diversos
+
+     A opá±o [F7] lista na tela todos os  conversores  existentes
+no disco. Para reconhecà-los obedeca a seguinte regra:
+
+     Exemplo:  GRPTOSCR.BAS
+               converte telas  em  VRAM  (.GRP")  para  (to)  RAM
+(.SCR)
+               e Ç um arquivo em  BASIC  (.BAS)    que  pode  ser
+carre-
+               gado por RUN"GRPTOSCR.BAS" (e tecle [RETURN]).
+
+     Outros conversores dispon°veis:
+
+SCRTOGRP.BAS - Converte de RAM (.SCR) para VRAM (.GRP);
+GRPTOHAL.BAS - Converte de  VRAM  para  o  formato  dos  editores
+gr†ficos da empresa HAL Laboratories do  Jap±o  como  os  famosos
+"EDDY II" e "GRAPHIC MASTER";
+HALTOGRP.BAS - Executa a operaá±o inversa a £ltima comentada;
+GRPTOVRS.BAS - Converte uma  tela  em  screen  2  para  o  padr±o
+GRADIUS da Nemesis Inform†tica Ltda.;
+VRSTOSCR.BAS - Transforma uma tela do formato  GRADIUS  para  uma
+tela em RAM;
+LOGTOGRP.BAS - Importa telas da linguagem LOGO  para  o  ambiente
+screen 2.
+
+     SPECTRUM
+
+     Este m¢dulo converte telas do microcomputador  Spectrum  (TK
+9O/95) para o MSX. As telas do Spectrum devem estar  gravadas  em
+fita cassette. S¢mente recomendamos a utilizaá±o deste m¢dulo por
+quem j† tem pr†tica de manuseio com  microcomputadores  da  linha
+Spectrum.
+     A tela carregada da fita cassette pode ser gravada em  disco
+no MSX com um nome escolhido pelo usu†rio.
+
+     "HARDCOPY"
+
+     O m¢dulo HARDCOPY Ç usado exclusivamente para  gerar  c¢pias
+gr†ficas em impressora. ê o £nico programa do gànero que  permite
+o uso de qualquer impressora gr†fica  com  ao  MSX,  pois  possui
+tabela de c¢digos reprogram†vel. Uma das suas funáµes mais  £teis
+Ç o multiplicador de  passadas,  que  faz  com  que  o  carro  da
+impressora imprima um n£mero determinado de vezes uma mesma linha
+antes do "carriage return", finalizando  com  uma  impress±o  com
+alto contraste mesmo com o uso de uma fita desgastada.
+     Depois de instalado ele ficar† livre para que uma tela  seja
+gerada ou carregada.
+
+     Exemplo de carregamento de uma tela:
+
+a) coloque um disco que possua uma tela;
+b) digite:
+
+10 SCREEN 2
+20 BLOAD"NOMETELA.GRP",S
+30 GOTO 30
+
+c) pressione [SELECT] para que o programa HARDCOPY  fique  pronto
+para funcionar;
+
+d) preencha os requisitos  de  acordo  com  a  c¢pia  que  deseja
+imprimir (tamanho, tabulaá±o, texturas, passadas, etc);
+
+e) selecione a opá±o IMPRIMIR, ligue  a  impressora  e  pressione
+[RETURN].   O   desenho   sair†   impresso   com   as   condiáµes
+estabelecidas.
+
+     Atená±o: Caso sua impressora imprima apenas n£meros e letras
+sem sentido e ela seja realmente gr†fica, ser† necess†rio adaptar
+o programa para as caracteristicas da mesma. Use a opá±o "tipo de
+impressora" com a  tabela  de  c¢digos  em  anexo  ao  manual  de
+instruáµes da sua impressora.
+
+     Outras opáµes do HARDCOPY:
+
+     Sair
+
+     Sai  do  programa  HARDCOPY   e   volta   a   tela   gr†fica
+prÇ-carregada;
+
+     Ver
+
+     Mostra a tela gr†fica prÇ-carregada;
+
+     Mostra formato atual
+
+     Mostra um "box" com  o  formato  da  impress±o  estabelecido
+(tamanho, n£mero de passadas, inverso, etc);
+
+     Imprimir
+
+     Imprime a tela carregada;
+
+     Selecionar tamanho
+
+     Seleciona entre impress±o NORMAL (tamanho original - 1/8  da
+p†gina de formulario de 8O colunas), DUPLA (tamanho  duplicado  -
+1/2 da pagina de formulario de 8O colunas) e SIMULAÄ∞O (duplicado
+na vertical - 1/1 da p†gina de formulario de 8O colunas);
+
+     Tipo de impressora
+
+     Permite    selecionar    impressoras    no    padr±o     MSX
+(ASCII/MICROSOFT japonàs), EPSON  (ELgin  Lady  8O/9O)  e  OUTRAS
+(permite a  programaá±o  direta  com  os  c¢digos  da  impressora
+utilizada);
+
+     N£mero de passadas
+
+     Seleciona o n£mero de "PASSADAS" com o carro  da  impressora
+antes de avanáar uma linha no papel  (carriage  return).  Recurso
+indispens†vel para gerar c¢pias mais contrastantes;
+
+     Fundo
+
+     Os planos de v°deo podem ser impressos separadamente.  Nesta
+opá±o podemos selecionar ou n±o a impress±o do fundo;
+
+     Sprites
+
+     Os planos de v°deo podem ser impressos separadamente.  Nesta
+opá±o podemos selecionar ou n±o a impress±o dos sprites;
+
+     Inverso
+
+     A tela pode ser impressa no modo inverso, ou seja, o que era
+escuro passa a ser claro e o que era claro passa a ser escuro;
+
+     Margem
+
+     Pode-se definir por pontos, o tamanho da margem esquerda  no
+papel onde ser† impressa a tela;
+
+     Tom das cores
+
+     Permite aumentar ou diminuir o tom das  cores  representadas
+pelas  texturas  proporcionalmente  com  o  n£mero  de   passadas
+selecionado;
+
+     Texturas
+
+     Permite a criaá±o dos pontos que  simular±o  as  cores  (por
+textura, ret°cula ou granulagem) na impress±o em branco e preto.
+
+     Atená±o: Se a sua impressora  n±o  tiver  resoluá±o  gr†fica
+suficiente  para  imprimir  toda  a  tela  em  formato  DUPLO  ou
+SIMULACAO (como a  GRAFIX  MTA  que  "come"  um  pedaáo  da  tela
+impressa), ao  final  das  linhas  de  gr†ficos  ser±o  impressos
+caracteres sem sentido atÇ o "carriage return". Para evitar  este
+tipo de problema, leve a tela ao editor  gr†fico  e  diminua  seu
+tamanho em 16 pontos no lado direito para a  impressao  DUPLA  ou
+acima para impressao tipo SIMULAÄ∞O.
+
+     C¢digos para a GRAFIX MTA:
+
+     Selecione a  funá±o  "tipo  de  impressora"  e  com  a  seta
+indicadora digite os seguintes codigos:
+
+013 000 000 000 000 000 - RETORNO DO CARRO (carriage return);
+027 065 008 010 000 000 - AVANÄO DE LINHA (line feed);
+027 075 000 001 000 000 - IMPRESS∞O (256 pontos);
+027 075 224 001 000 000 - IMPRESS∞O (512 pontos);
+027 075 224 001 000 000 - IMPRESS∞O (576 pontos);
+
+     VER TELA
+
+     Com esta £ltima opá±o do MSX GRAPHIC TOOLS 1.1  podemos  ver
+uma tela existente no disco. Basta escolher o formato de  tela  a
+ser carregado e digitar  o  seu  nome.  Pressionando-se  qualquer
+outra tela retornamos ao menu inicial.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-97O
+                  Rio de Janeiro - RJ - Brasil.
+
+
+
+
+

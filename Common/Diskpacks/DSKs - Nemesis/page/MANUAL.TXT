@@ -1,0 +1,1158 @@
+     MSX PageMaker DeLuxe 3.00
+
+     O  MSX  PageMaker  DeLuxe   Ç   o   programa   criado   para
+microcomputadores da linha  MSX  que  possibilita  a  criaá±o  de
+p†ginas gr†ficas para infinitas aplicaáµes. Com o  MSX  PageMaker
+DeLuxe Ç  poss°vel  criar  cartazes,  faixas,  cartµes  festivos,
+fanzines e hist¢rias em quadrinhos, diplomas,  tabelas  diversas,
+quadros de aviso,  propagandas  em  geral,  trabalhos  escolares,
+mapas,  convites,  formul†rios   diversos,   jornais,   revistas,
+panfletos, etc.
+
+     UM BREVE HISTäRICO
+
+     O MSX PageMaker DeLuxe Ç a vers±o mais atualizada (1993)  do
+maior "best-seller" nacional para os micros MSX: O MSX PageMaker,
+lanáado pela empresa Nemesis Inform†tica em 1988, introduzindo  o
+tàrmo "DESK-TOP PUBLISHING" ou  editoraá±o  eletrìnica  no  mundo
+MSX.
+     De l† para c† a Nemesis implementou  diversos  melhoramentos
+no programa que passou por diversas versµes (de  1.1  a  1.5).  A
+vers±o "DeLuxe" 3.0, entretanto,  modificou  consideravelmente  a
+estrutura b†sica do produto, tornando-o extremamente mais robusto
+e (quem diria?)  compar†vel  aos  melhores  softwares  do  gànero
+desenvolvidos para m†quinas mais poderosas  como  o  IBM/PC  e  o
+AMIGA.
+     Atualmente  o  MSX  PageMaker  DeLuxe  Ç  o  software   mais
+utilizado pelos usu†rios de micros MSX e para muitos  Ç  a  raz±o
+para continuarem adeptos a esta linha de computadores.
+     O MSX PageMaker DeLuxe Ç compat°vel com qualquer  modàlo  de
+microcomputador da linha MSX  nacional  ou  importado.  Pode  ser
+fornecido em disquete de 5 1/4 ou 3 1/2 polegadas e possui manual
+de instruáµes interno que pode ser impresso por uma impressora ou
+consultado na pr¢pria tela. Opcionalmente  o  programa  principal
+poder† ser adquirido com o KIT DE COMPLEMENTOS  que  consiste  em
+v†rios discos de apoio que trazem uma grande variedade  de  tipos
+de letras, figuras, molduras e  adìrnos  que  ir±o  trazer  muito
+mais
+ atrativos para as  p†ginas  confeccionadas  pelo  mesmo.  O  MSX
+PageMaker DeLuxe Ç tambÇm compat°vel  com  todos  os  aplicativos
+gr†ficos existentes para a linha MSX,  podendo  importar  letras,
+desenhos e telas. ê ainda compat°vel  com  figuras  e  letras  de
+aplicativos gr†ficos criados para computadores da  linha  IBM/PC,
+como o "Print-Master", "Print-Shop" e "News-Master".
+
+     Para os que pretendem utilizar, mas nunca utilizaram  o  MSX
+PageMaker  DeLuxe  ou  suas  versµes  anteriores,  Ç   importante
+conhecer alguns detalhes sobre o mesmo.
+     Se a equipe que  desenvolveu  este  aplicativo  pudesse  dar
+apenas  um  conselho  a  quem   ir†   utiliz†-lo,   com   certeza
+aconselharia ao usu†rio que treinasse bastante  a  utilizaá±o  do
+programa principal antes de se aventurar  a  utilizar  o  kit  de
+complementos.
+     O MSX PageMaker DeLuxe n±o  Ç  um  programa  dif°cil  de  se
+utilizar, mas Ç muito  poderoso  e  contÇm  muitos  recursos  que
+poder±o deixar o usu†rio que ainda n±o teve experiàncias  com  as
+versµes anteriores do mesmo, perdido no meio  de  tantas  opáµes,
+men£s e sub-men£s.
+     Recomendamos ent±o que o usu†rio tenha  calma,  reserve  uma
+tarde ou uma noite sem compromissos e dedique-se  a  realizar  as
+suas primeiras experiàncias com este software. Temos  certeza  de
+que o roteiro que descreveremos abaixo permitir†  que  o  usu†rio
+tenha um primeiro contato agrad†vel e proveitoso com o  programa.
+Siga cada uma das instruáµes e recomece  tudo  se  algo  n±o  der
+certo. Garantimos que seu tempo n±o ser† desperdiáado,  pois  uma
+vez dominada, a utilizaá±o correta do MSX  PageMaker  DeLuxe  lhe
+trar† 
+resultados surpreendentes e mais que satisfat¢rios.
+
+     PRIMEIRAS EXPERIçNCIAS
+
+     Inicialmente Ç recomend†vel  fazer  uma  c¢pia  do  disquete
+original e utilizar esta c¢pia para o trabalho. Para isto, poder†
+ser utilizado um copiador de discos  ("VERSOR"  da  empresa  XSW,
+"FASTCOPY" da Paulisoft, "MSX-DOS TOOLS" da Nemesis  Inform†tica,
+etc.) ou atÇ mesmo o pr¢prio sistema operacional que acompanha  o
+seu disk-drive, pois os programas da Nemesis n±o  s±o  fornecidos
+com travas ou bloqueios contra c¢pia.  Se  fìr  usado  o  sistema
+operacional basta digitar:
+
+A>COPY *.* B:  (e pressione [RETURN])
+
+     Insira ent±o o disco original do MSX PageMaker  DeLuxe  como
+disco "A" e v† alternando com um disco previamente formatado  que
+ser† o disco "B". Para evitar uma  gravaá±o  acidental  no  disco
+original do MSX PageMaker  DeLuxe,  ser†  conveniente  protegà-lo
+contra gravaá±o com a colocaá±o de  uma  etiqueta  em  sua  fenda
+lateral.
+
+     NOTA: Quando o MSX PageMaker DeLuxe original  ou  sua  c¢pia
+estiver sendo utilizada, os mesmos dever±o  estar  desprotegidos,
+pois durante o trabalho de criaá±o ou de ediá±o  de  uma  p†gina,
+diversas informaáµes dever±o ser lidas e gravadas no disco!
+     ATENÄ∞O:  O  usu†rio  poder†  fazer  c¢pias  para  seu  uso.
+Comercializar ou  fornecer  gratuitamente  c¢pias  do  produto  Ç
+qualificado como crime!
+
+     CRIANDO UMA PÑGINA PASSO-A-PASSO
+
+     Uma vez gerada a c¢pia de trabalho, ligue o seu  disk-drive,
+ligue o seu computador e insira a c¢pia do MSX PageMaker  DeLuxe.
+O programa ser† executado autom†ticamente. Siga ent±o com atená±o
+aos procedimentos que descreveremos Ö seguir:
+
+1ß passo - Ser† necess†ria a criaá±o de uma p†gina em branco para
+iniciarmos o nosso trabalho. Para isso, use as setas  direcionais
+e selecione a opá±o "ESTILIZA" do men£  inicial,  pressionando  a
+tecla [RETURN]. Na verdade, as outras opáµes de ediá±o de  p†gina
+n±o funcionar±o se n±o houver uma p†gina criada no disco;
+
+2ß passo - Uma vez carregado o m¢dulo "estilista",  surgem  novas
+opáµes para a prÇvia ediá±o da p†gina Ö ser criada.  Para  sermos
+mais objetivos, vamos nos limitar a escolher  uma  borda  para  a
+nova p†gina, deixando os  outros  recursos  mais  avanáados  para
+serem examinados mais adiante. Com a ajuda das setas direcionais,
+leve a barra de invers±o atÇ a opá±o "BORDAS". Pressione ent±o  a
+[BARRA DE ESPAÄOS] atÇ aparecer a borda que  desejar.  Depois  de
+selecionar a borda da p†gina, a mesma dever† ser salva no  disco.
+Ut
+ilize ent±o a opá±o "SALVA/Lç" e em seguida  a  sub-opá±o  "SALVA
+PÑGINA" (certifique-se que o disquete  est†  desprotegido  contra
+gravaá±o, ou a operaá±o ser† ignorada!). Ser† pedido um nome para
+a nova p†gina. Utilize um  nome  simples  com  atÇ  8  caracteres
+("PAGINA-1" por exemplo). Ap¢s digitar o  nome  da  nova  p†gina,
+ser† ent±o iniciado o processo de criaá±o da mesma  no  disco  em
+utilizaá±o. Este processo dura  aproximadamente  2  minutos  (ele
+cria os oito quadrantes do tamanho da tela cada um, que  formar±o
+a p†gina
+ em s°. Terminado o processo, tecle [ESC] para sair do sub-men£ e
+utilize a opá±o "RETORNA" para voltar ao men£ inicial;
+
+3ß passo - De volta ao men£ inicial e com  a  p†gina  j†  criada,
+poderemos ent±o passar para as opáµes de escrita,  desenho  e  de
+letras    gigantes    ("ESCREVE",    "DESENHA"     e     "LETRAS"
+respectivamente). Ao entrar em um destes  m¢dulos,  estaremos  na
+p†gina propriamente dita (em seu quadrante superior esquerdo para
+sermos exatos). Escolha inicialmente a opá±o "DESENHA"  para  que
+seja carregado o m¢dulo de desenho.
+
+4ß passo - Saberemos que j† estamos no m¢dulo de  desenho  quando
+aparecer no v°deo um cursor no formato de um  pequeno  l†pis  que
+pode ser movimentado pela tela atravÇs das teclas direcionais. Se
+pressionarmos a [BARRA DE ESPAÄOS] enquanto movemos o l†pis, ser†
+riscada uma linha por onde o mesmo passar. Se fìr  pressionada  a
+tecla [F2] o l†pis ser† trocado por uma borracha (um  cursor  com
+formato quadrado) que apagar† os desenhos que estiverem por  onde
+ela passar. Faáa um desenho qualquer, apenas para teste. ê i
+mportante notar que poderemos percorrer a p†gina (passar para  os
+outros   quadrantes)   pressionando   as    teclas    direcionais
+simulÉneamente com a tecla [SHIFT].  Note  que  ao  passarmos  de
+alguns quadrantes para outros, o disk-drive  ser†  acionado  para
+atualizar no disco, as alteraáµes que  fizemos  na  p†gina.  Para
+sair do m¢dulo de desenho, pressione a tecla [F5] para acessar  o
+men£ de opáµes, e utilize a opá±o "MENã INICIAL";
+
+5ß passo - Vamos ent±o para o m¢dulo de  escrita  selecionando  a
+opá±o "ESCREVE". Ao ser carregado, o m¢dulo de escrita mostra  um
+cursor quadrado que funciona de maneira semelhante ao  cursor  do
+BASIC ou de um editor de  textos  qualquer.  Como  no  m¢dulo  de
+desenho, a tecla [F5] nos permite acesso a  um  men£  de  opáµes.
+Experimente trocar a forma e  o  espaáamento  dos  caracteres  ou
+coloc†-los em modo inverso (para isso, use as primeiras opáµes do
+men£). Para retornar Ö  ediá±o  pressione  [ESC].  Para  sair  do
+m¢dulo de e
+scrita utilize a opá±o "MENã INICIAL" do men£ de opáµes;
+
+6ß passo -  Vamos  agora  imprimir  o  nosso  trabalho:  Ligue  a
+impressora e selecione a opá±o "IMPRESS∞O". Ao surgir um men£ com
+as opáµes de impress±o, ignore-as e v† para  a  opá±o  "IMPRIMIR"
+(se a sua  impressora  fìr  uma  GRAFIX  MTA  ou  outra  qualquer
+compat°vel com o padr±o EPSON MX-80,  Ç  poss°vel  que  a  p†gina
+somente possa ser impressa em densidade simples. Por outro  lado,
+se sua impressora fìr compat°vel com o  padr±o  EPSON  FX-80+  ou
+superior (LADY 80/90, OLâVIA, EPSON LX-810, ACTION PRINTER  2000,
+etc.) os recur
+sos de impress±o poder±o ser explorados ao  m†ximo.  O  tempo  de
+impress±o de uma p†gina pode variar de acìrdo com a velocidade da
+impressora em utilizaá±o.
+
+     Para reutilizar numa  outra  ocasi±o  a  p†gina  "PAGINA-1",
+insira o disco do MSX PageMaker DeLuxe onde foi criada  a  mesma,
+selecione a opá±o "DISCO E/S" e no  sub-men£  que  ir†  aparecer,
+utilize a opá±o "Lç PÑGINA". Ser±o mostradas as p†ginas que est±o
+gravadas naquele disco. Escolha  uma  delas  e  pronto:  a  mesma
+poder† ser re-editada ou re-impressa. No disco do  MSX  PageMaker
+DeLuxe cabe apenas uma p†gina, portanto ser† necess†rio removà-la
+para a criaá±o de uma nova p†gina.
+                              Ou use uma c¢pia  do  programa para
+cada p†gina criada. Mas o  melhor  mÇtodo  Ç  passar  as  p†ginas
+criadas para um outro disco para serem guardadas caso  n±o  sejam
+utilizadas frequentemente. Para isso, copie  os  arquivos  que  a
+compµem para um novo disco previamente formatado. Cada  p†gina  Ç
+composta por 4 arquivos com a extens±o ".PM?"  (onde  a  vari†vel
+"?" Ç um n£mero de 1 a 4). Logo, a p†gina  "PAGINA-1"  Ç  formada
+pelos arquivos "PAGINA-1.PM1", "PAGINA-1.PM2",  "PAGINA-1.PM3"  e
+"PAGINA-1.PM4". Estes arquivos devem estar  sempre  juntos  ou  a
+p†gina n±o poder† ser recuperada.
+                        As p†ginas poder±o ainda ser  armazenadas
+em formato compactado, que ocupa menos que  a  metade  do  espaáo
+original. Veja mais adiante  como  proceder  para  compactar  uma
+p†gina.
+
+     APROFUNDANDO-SE NO MSX PageMaker DeLuxe
+
+     Agora que j† criamos  uma  p†gina  e  j†  n±o  estamos  mais
+achando  o  programa  com  cara  de  "bicho-pap±o",   vamos   nos
+aprofundar um pouco mais nos seus infind†veis recursos, lembrando
+sempre que nem todos estes recursos poder±o ser  £teis  em  nosso
+caso, portanto n±o precisamos ficar decorando a funá±o de cada um
+deles. ê importante saber tudo que Ç  poss°vel  se  fazer  com  o
+programa  para  podermos  tirar   proveito   quando   necess†rio.
+Lembre-se tambÇm que nada nos impede de  consultar  o  manual  de
+instruáµes durante a o
+peraá±o  do  programa,  o  que  na  verdade  Ç  um  h†bito  muito
+saud†vel!
+     Vamos  iniciar  conhecendo  as   diversas   modalidades   de
+instalaá±o do programa. Lembramos que  a  operaá±o  do  mesmo  se
+tornar† muito mais r†pida se utilizarmos um cartucho  de  mem¢ria
+"MEGA-RAM DISK" que pode ser facilmente encontrada em  lojas  que
+trabalham com hardware para MSX.
+     
+     INSTALANDO O MSX PageMaker DeLuxe
+
+     O MSX PageMaker DeLuxe pode ser executado com  as  seguintes
+configuraáµes de mem¢ria:
+
+1) Apenas um drive (mantendo pressionada  a  tecla  [CONTROL]  ao
+ligar o micro);
+2) Apenas um drive;
+3) Um drive e uma megaram-disk em A: ou B: (com [CONTROL])
+4) Dois drives.
+
+     O MSX PageMaker DeLuxe deve ser executado no drive default e
+os arquivos de dados devem ser colocados no outro drive.
+     Haver† troca de discos nos casos 1 e 2. No 2ß  caso  deve-se
+apertar uma tecla adicional toda vez que acessar  um  arquivo  de
+dados, pois o sistema pede troca de disco, embora n±o apareáa  na
+tela gr†fica.
+     Para os casos 1, 2 e 4,  o  uso  de  formatadores  especiais
+poder† acelerar  sensivelmente  o  acesso  ao  disco,  visto  que
+somente metade da p†gina Ç mantida em mem¢ria. Por n±o dispor  de
+movimentos mecÉnicos, o uso da Megaram-disk  acelera  bastante  a
+leitura e a gravaá±o da p†gina.
+     A p†gina n±o compactada  (arquivos  com  extens±o  ".PM1"  a
+".PM4") deve estar  no  mesmo  disco  do  programa,  podendo  ser
+copiada ou compactada para armazenagem em outro disco.
+     Alguns m¢dulos solicitam a presenáa  do  disco  do  programa
+para o seu carregamento e ativaá±o. O disco da  p†gina  tambÇm  Ç
+necess†rio quando se percorre a †rea de ediá±o na vertical.  Caso
+n±o esteja no drive o disco adequado, ou  aparecer† uma  mensagem
+dizendo o c¢digo do erro ou a opá±o desejada n±o ser†  executada.
+O erro mais comum Ç o de arquivo n±o encontrado (ser† apresentada
+uma janela com amensagem de erro - c¢digo 53).  Se  outros  erros
+inesperados acontecerem, volte imediatamente ao menu principal,
+ o que poder† normalizar a situaá±o na maioria dos casos.
+     Para executarmos o programa com o aux°lio de  uma  "MEGA-RAM
+DISK" (m†quina ligada com [CONTROL] pressionado):
+
+- o  drive default deve ser a pr¢pria "MEGARAM-DISK", e ela  deve
+estar inicialmente vazia;
+
+- o programa deve ser copiado para a "MEGARAM-DISK" pelo seguinte
+procedimento: copie o arquivo  "INSPMMEG.BAT"  para  a  "MEGA-RAM
+DISK" e execute-o assim:
+
+  A>INSPMMEG B: ou B>INSPMMEG A:
+
+     Desse  modo,   somente   os   arquivos   necess†rios   ser±o
+copiados,liberando o maior espaáo poss°vel.
+
+- a p†gina a ser modificada (se n±o  estiver  compactada)  tambÇm
+deve ser copiada para ela, se necess†rio;
+
+- executar o programa com:
+
+  A> ou B>PAGEMAKER [RETURN]
+
+- colocar os discos de complementos  no  drive,  sempre  que  for
+preciso.
+
+     Sempre que houver escolha de  arquivos  para  leitura,  ser†
+apresentada a lista dos arquivos com o tipo de dado pedido, de 10
+em 10. As seguintes teclas est±o dispon°veis:
+
+ [SETAS PARA CIMA E PARA BAIXO] Mudam o arquivo;
+ [SETA PARA DIREITA] Lista os arquivos seguintes;
+ [ESC] Sai sem selecionar;
+ [RETURN] ou [SPACE] Seleciona o arquivo.
+
+     Passaremos a descrever ent±o, na integra as funáµes de  cada
+um  dos  men£s  e  sub-menus  que  s±o  apresentados  durante   a
+utilizaá±o do programa. Comeáaremos pela primeira opá±o  do  men£
+inicial e seguiremos por seus pr¢prios sub-men£s:
+
+     CRIANDO UMA NOVA PÑGINA
+
+     O m¢dulo estilista permite a criaá±o de p†ginas  com  borda,
+divisµes e t°tulo (letra que ser† ampliada durante a  criaá±o  da
+p†gina pelo m¢dulo estilista);
+
+     Men£ do m¢dulo estilista:
+
+     [SETAS] escolhe opá±o;
+     [RETURN] executa opá±o):
+
+          [LÑPIS] Desenha;
+
+               [SETAS] Movimenta o l†pis;
+               [SPACE] Acende/apaga ponto;
+               [L] Linha da cruz ao l†pis;
+               [R] RetÉngulo entre a cruz e o l†pis;
+               [E] Elipse  entre a cruz e o l†pis;
+               [A] Apaga retÉngulo entre a cruz e o l†pis;
+               [TAB] Coloca a cruz na mesma posiá±o do l†pis;
+               [SELECT] Apresenta coordena das do l†pis em mm;
+               [ESC] Volta ao menu;
+
+          [BORRACHA] Para apagar;
+
+               [SETAS] Movem ponto a ponto;
+               [QUALQUER CARACTER IMPRIMâVEL] Imprime caracter;
+               [SPACE] Apaga regi±o sob o cursor;
+               [F6] a [F9] Alfabeto 1 a 4 em uso;
+               [BS],[CONTROL]+[S],[Z],[W] Desloca 8 pontos (nas 4
+direáµes);
+               [CONTROL]+[X],[D] Ponto a ponto (para baixo e para
+a direita mais lentamente);
+               [CONTROL]+[Q] Coordenadas m£ltiplas de 8;
+               [RETURN] In°cio da p†gina;
+               [ESC] Volta ao men£;
+
+          [BORDAS] Escolhe borda para a p†gina;
+
+               [RETURN] ou [SPACE] Muda a borda;
+               [E] Edita a borda;
+                    [SETAS] Escolhe elemento a ser editado;
+                    [SELECT] Copia o elemento do  canto  superior
+esquerdo para os demais elementos;
+                    [RETURN] Edita elemento;
+                    [SETAS] Movimentam o cursor;
+                    [SPACE] Acende/apaga ponto;
+               [RETURN] Sai, salvando;
+                    [ESC] Sai sem mudar;
+               [ESC] Sai da ediá±o da borda;
+
+          [APAGA] Apaga a p†gina inteira;
+          [SALVA/Lç] Sub-men£:
+
+               [SALVA PÑGINA] Salva a p†gina;
+
+     O programa pedir† que o usu†rio dà um nome Ö p†gina que ser†
+gravada. O nome dever† ter atÇ  8  caracteres.  Ser±o  criados  4
+arquivos no disquete, como j† foi visto anteriormente.
+
+     NOTA: tudo o que foi desenhado sobre a p†gina ser† salvo com
+tamanho ampliado em 4 vezes, com exceá±o da borda. O  disco  deve
+estar desprotegido contra gravaá±o e  precisa  ter  ao  menos  48
+Kbytes livres.
+
+                    [ESC] Volta  ao  menu  sem salvar;
+
+               [TROCA BORDA] Troca  a  borda  de  uma  p†gina  j†
+existente pela borda selecionada;
+               [Lç FONTES] Carrega novos  alfabetos  (em  tamanho
+8x8, com extens±o ".ALF");
+
+                    NãMERO DO BUFFER: [1-3]
+
+                    - digitar um n£mero de 1 a 3;
+
+               [Lç BORDAS] Carrega novas bordas;
+
+     NOTA:  S¢  aceita  arquivos  "BORD*.ALF".  As  bordas  est±o
+contidas na metade superior de um alfabeto (Ö partir do  caracter
+127), e cada uma tem 8 elementos, mesmo  que  sejam  iguais,  num
+total de 16 bordas em cada arquivo, que est†  no  formato  de  um
+alfabeto. A remalina est† definida nos caracteres 28 a 31.
+
+               [SALVA TELA] Salva a tela do estilista;
+
+     Ser† pedido um nome para a tela Ö  ser  gravada  com  atÇ  8
+caracteres. A tela ser† gravada no cl†ssico formato  "VRAM",  com
+extens±o ".GRP". Se n±o houver pelo menos 15  Kbytes  de  mem¢ria
+livre no disco, a operaá±o n±o ser† realizada.
+
+                    [ESC] Volta ao menu sem salvar;
+
+               [Lç TELA] Carrega tela para o estilista;
+
+     NOTA: Como pìde ser observado, estas duas opáµes servem para
+carregar a tela sobre uma p†gina qualquer e editar o  layout  com
+todos os demais recursos do MSX PageMaker DeLuxe, retornando-a ao
+estilista para a construá±o da p†gina.
+
+                    [ESC] Sai do sub-menu;
+
+          [RETORNA]  Volta  ao  men£  inicial  do  MSX  PageMaker
+DeLuxe.
+
+     ESCREVENDO UM TEXTO
+
+     O m¢dulo de escrita  pode  ser  acessado  atravÇs  da  opá±o
+"ESCREVE" do men£ inicial. Ele Ç o  respons†vel  pela  ediá±o  do
+texto que estar† contido na p†gina. Uma vez carregado o m¢dulo de
+escrita, poderemos comeáar a escrever sobre a nova p†gina.
+
+     [QUALQUER CARACTER] Carimba o caracter na p†gina em ediá±o o
+caracter de forma semelhante a um editor de textos;
+
+          [BS] Apaga sob cursor e recua uma  coluna,  respeitando
+as margens;
+          [RETURN] In°cio da linha  seguinte,  de  acordo  com  a
+margem esquerda;
+          [INSERT] Inverso;
+          [DELETE] Gira o alfabeto corrente em 90  graus  para  a
+direita (exceto o alfabeto do buffer 4)
+          [SETAS] Movimentam o cursor;
+          [SHIFT]+[SETAS] Movimentam a p†gina;
+          [CONTROL]+[SETAS] Micro-deslocamento (ponto a ponto);
+          [CONTROL]+[N] Normaliza a posiá±o do caracter;
+          [CONTROL]+[Q] Redefine os caracteres "1" a "8"  com  os
+elementos da borda escolhida. O  formato  Ç  o  mesmo  do  m¢dulo
+estilista. Portanto deve-se antes carregar um desses alfabetos. A
+correspondància Ç a seguinte:
+
+               "1" - canto superior esquerdo;
+               "2" - moldura superior;
+               "3" - canto superior direito;
+               "4" - moldura direita;
+               "5" - canto inferior direito;
+               "6" - moldura inferior;
+               "7" - canto inferior esquerdo;
+               "8" - moldura esquerda;
+
+     Pode-se ent±o usar esses caracteres para montar a  borda  de
+qualquer regi±o  da  p†gina.  Esta  opá±o  n±o  funciona  para  o
+alfabeto 4.
+
+          [A] a [P] Seleciona uma das 16 bordas;
+          [CONTROL]+[S] Permite a superposiá±o de caracteres;
+          [CONTROL]+[T] Copia a tabela de caracteres da ROM  para
+o alfabeto 1;
+          [CONTROL]+[U] Apaga todas as mudanáas  feitas  na  tela
+(se n±o movimentou a p†gina ou n±o entrou no menu)
+          [CONTROL]+[V] Mostra em reduá±o a parte da  p†gina  que
+est† sendo editada;
+          [CONTROL]+[W] Mostra a tabela de caracteres do alfabeto
+em uso;
+          [CONTROL]+[Z] Permite a  ediá±o  de  um  caracter  (n±o
+funciona para o alfabeto 4);
+
+               [CARACTER: c] Digita-se o caracter a ser editado;
+               [SETAS] Movimenta o cursor;
+               [SPACE] Acende/apaga ponto;
+               [RETURN] Sai, salvando;
+               [ESC] Sai sem mudar;
+
+          [F1]        Muda         espaáamento         horizontal
+(4->6->8->9->12->16->18->4);
+
+     NOTA: A partir de 12 a largura Ç dobrada.
+
+          [F2] Muda espaáamento vertical (8->10->12->16->20->8);
+
+     NOTA: A partir de 16 a altura Ç dobrada.
+
+          [F3] Margem esquerda;
+          [F4] Margem direita;
+          [F5] Men£ do m¢dulo de escrita  (veja  mais  adiante  a
+funá±o de cada uma de suas opáµes);
+          [F6] a [F9] Seleciona para digitaá±o um dos 4 alfabetos
+contidos nos buffers de mem¢ria (veja detalhes mais adiante);
+          [F10] Habilita/desabilita a margem direita.
+
+     Vamos ent±o  descrever  as  opáµes  do  men£  do  m¢dulo  de
+escrita, acionado pela tecla [F5]:
+
+                    [ALFABETO: n] Apresenta e permite  a  seleá±o
+do alfabeto em uso;
+                    [ESPAÄO:  8x8]   Espaáamento   horizontal   x
+vertical;
+
+                         [RETURN] Muda espaáamento horizontal;
+                         [SPACE] Muda espaáamento vertical;
+
+                    [INVERSO]  Aciona   invers±o   na   cìr   dos
+caracteres;
+                    [MARCADORES]  Habilita/desabilita      margem
+direita;
+                    [SUPERPOSIÄ∞O]  Permite  a  superposiá±o   de
+caracteres;
+                    [INICIO] Vai para o in°cio da p†gina;
+                    [FINAL] Vai para o final da p†gina;
+                    [Lç FONTES] Carrega alfabeto 8x8 com extens±o
+".ALF";
+
+                         NãMERO DO BUFFER [1-3] Como j† foi dito,
+o programa pode manter atÇ 4 desenhos  de  alfabetos  na  mÇm¢ria
+para uso simultÉneo. Escolha um dos 3  buffers  dispon°veis  para
+armazenar o caracter que ir† ser carregado.
+
+                    [Lç TEXTO] Là um arquivo texto em ASCII. Caso
+se esteja  usando apenas um drive com [CONTROL],  Ç  aconselh†vel
+que  o  arquivo  texto  esteja  no  mesmo  disco  da  p†gina.   A
+configuraá±o com [CONTROL]  n±o  necessita  disso,  mas  torna  a
+operaá±o mais complicada e sujeita a erros na troca  dos  discos.
+Caracteres especiais que podem ser usados no texto:
+
+                         [CONTROL]+[P]  Muda  espaáamento   entre
+caracteres;
+                         [CONTROL]+[B]  Muda  espaáamento   entre
+linhas;
+                         [CONTROL]+[R] Inverso;
+                         [CONTROL]+[S] Superposiá±o;
+                         [CONTROL]+[T],[V],[W] ou  [Y]  Alfabetos
+contidos nos buffers de 1 a 4;
+                         [CONTROL]+[H] Backspace;
+                         [SPACE] Pausa.  Quase  todas  as  teclas
+usadas na digitaá±o de  um  texto  est±o  dispon°veis  durante  a
+pausa;
+                         [RETURN] Continua o texto;
+                         [ESC] Aborta  o texto e volta ao men£.
+
+                    [MENU INICIAL] Volta ao men£ inicial.
+
+     INCLUINDO GRÑFICOS E DESENHOS
+
+     Se optarmos no men£ inicial pela opá±o "DESENHA", entraremos
+no m¢dulo desenhista, respons†vel pela criaá±o e  manipulaá±o  de
+figuras. Nele temos os seguintes recursos:
+
+     [F1] L†pis (desenha);
+
+          [SETAS] Movimentam o l†pis;
+          [CONTROL]+[SETAS] Movimentam o l†pis ponto a ponto;
+          [LGRA]+[SETAS] Movimentam o l†pis ponto  a  ponto  e  a
+cruz no sentido contr†rio;
+          [RGRA]+[SETAS] Movimentam o l†pis ponto  a  ponto  e  a
+cruz no mesmo sentido;
+          [SHIFT]+[SETAS] Movimentam a p†gina;
+          [SPACE] Acende/apaga ponto;
+          [TAB] Coloca a cruz na mesma posiá±o do l†pis;
+          [A] Apaga retÉngulo entre a cruz e o l†pis;
+          [B] Tranforma em shape  a  regi±o  entre  a  cruz  e  o
+l†pis;
+          [C] C°rculo centrado na cruz e passando pelo l†pis;
+          [D] Apresenta distÉncia  entre a cruz e o l†pis em mm;
+          [E] Elipse entre a cruz e o l†pis;
+          [F] Preenche um retÉngulo entre a cruz e o l†pis com um
+dos padrµes selecionados;
+          [I]  Muda   intervalo   de   avanáo   da   p†gina   com
+[SHIFT]+[SETAS]: 32 ou 8 pontos;
+          [L] Linha da cruz ao l†pis;
+          [P] Pinta regi±o fechada com o padr±o selecionado;
+
+     NOTA: Se a figura  tiver  furos,  haver†  vazamento,  o  que
+poder† manchar a p†gina. Para contornar esse problema, a  tela  Ç
+salva antes da pintura e pode ser restaurada  usando-se  a  opá±o
+[U].
+
+          [R] RetÉngulo entre a cruz e o l†pis;
+          [S] Semi-elipse entre a cruz e  o  l†pis,  partindo  da
+cruz no  sentido  trigono  mÇtrico  e  orientaá±o  dependendo  do
+quadrante do l†pis;
+          [T] Troca a posiá±o do l†pis com a da cruz;
+          [U] Apaga todas as mudanáas  feitas  na  tela  (se  n±o
+movimentou a p†gina, n±o entrou no menu, n±o escolheu  padr±o  de
+preenchimento, n±o entrou no modo de shape ou  n±o pintou);
+          [V] Mostra em reduá±o a parte da p†gina que est†  sendo
+editada;
+          [Z] Apaga a tela;
+          [SELECT] Seleciona padr±o de preenchimento (texturas);
+
+               [SETAS] Posicionam o cursor no padr±o;
+               [RETURN] Seleciona o padr±o e sai;
+               [BS] Seleciona o inverso do padr±o e sai;
+               [ESC] Sai sem mudar o padr±o;
+               [E] Edita o padr±o;
+
+                    [SETAS] Movimentam o cursor;
+                    [SPACE] Acende/apaga ponto;
+                    [RETURN] sai, salvando;
+                    [ESC] sai sem mudar.
+
+     [F2] Borracha:
+
+          [SETAS] Movem a borracha ponto a ponto;
+          [SHIFT]+[SETAS] Movimentam a p†gina;
+          [SPACE] Apaga regi±o sob o cursor;
+          [Z] Zoom;
+
+               [SETAS] Movimentam cursor;
+               [SPACE] Acende/apaga ponto;
+               [RETURN] Sai, salvando;
+               [ESC] sai sem mudar.
+
+     [F3] Pincel:
+
+          [SETAS] Movem o pincel ponto a ponto;
+          [SHIFT]+[SETAS] Movimentam a p†gina;
+          [SPACE] Pinta de acordo com  o padr±o escolhido;
+          [SELECT] Muda o formato do pincel.
+
+     [F4] Shape (permite acesso  a  um  shape,  ou  um  banco  de
+shapes, previamente carregado do disco e que j† se  encontram  na
+mem¢ria):
+
+          [SETAS] Movimentam o shape a cada 8 pontos;
+          [SHIFT]+[SETAS] Movimentam a p†gina;
+          [CONTROL]+[SETAS] Selecionam um dos  shapes  que  est±o
+contidos no banco carregados;
+          [A-Z] Seleciona diretamente shapes 1 a 26;
+          [a-z] Seleciona diretamente shapes 27 a 52;
+          [SELECT] Muda operaá±o l¢gica com  a  tela,  na  ordem:
+Sobreposiá±o -> OR -> XOR -> AND -> Sobreposiá±o;
+          [CONTROL]+[T]  Textura   de   acordo   com   o   padr±o
+selecionado (o shape  deve  estar  de  preferància  executando  a
+operaá±o l¢gica AND);
+          [CONTROL]+[O]  Outline   (o   shape   deve   estar   de
+preferància executando a operaá±o l¢gica XOR);
+          [1] Espelha na horizontal;
+          [2] Espelha na vertical;
+          [3] Inverte;
+          [4] Gira para a esquerda 90 graus;
+          [5] Gira para a direira;
+          [TAB] Avanáa na horizontal de acordo com a  largura  do
+shape;
+          [BS] Recua na horizontal de acordo  com  a  largura  do
+shape;
+          [HOME] Avanáa na vertical de acordo  com  a  altura  do
+shape;
+          [CLS] Recua na vertical  de  acordo  com  a  altura  do
+shape;
+          [RETURN] Carimba shape;
+          [INSERT] Micro-deslocamento ponto a ponto  (sempre  com
+OR) de shapes;
+
+               [SETAS] Desloca um ponto;
+               [RETURN] Carimba;
+               [ESC] Sai do modo de micro-deslocamento.
+               [ESC] Sai do modo de shape.
+
+     [F5] Men£ do m¢dulo desenhista:
+
+          [LINHA: n] Altera a largura  da linha, variando de 1  a
+9, e afetando todos os outros traáados, inclusive  a  largura  do
+outline do shape;
+          [FATOR VERTICAL: n] Fator de ampliaá±o vertical para  o
+carregamento de shapes de PC, sendo 1 ou 2;
+          [Lç TELA] Carrega uma tela gr†fica oriunda de um  outro
+editor gr†fico ou do kit de complementos, no formato ".GRP" sobre
+a p†gina desprezando os atributos de cìr;
+
+     NOTA: Ap¢s o carregamento da tela o programa  aguardar†  uma
+tecla:
+
+               [RETURN] Fixa a tela na p†gina e volta ao men£;
+               [ESC] Volta ao menu sem fixar a tela;
+               [SPACE] MantÇm a tela  sem  fix†-la  na  p†gina  e
+volta direto para a ediá±o, permitindo que se  use  um  bloco  da
+tela atravÇs da opá±o [B] do l†pis e se restaure a p†gina  com  a
+opáá±o [U], ressalvadas as condiáµes em que a  tela  se  fixa  na
+p†gina.
+
+          [SALVA TELA]  Salva  a  tela  gr†fica  que  est†  sendo
+visualizada no  v°deo  num  arquivo  com  formato  "VRAM"  e  com
+extens±o ".GRP". Ser† pedido um nome de atÇ oito caracteres  para
+a gravaá±o da tela;
+
+               [ESC] Volta ao menu sem salvar;
+
+     NOTA: Ser† necess†rio um  m°nimo  de  15  kbytes  livres  no
+disco, para a operaá±o ser efeutuada corretamente.
+
+          [Lç SHAPES] Carrega shapes do padr±o MSX  com  extens±o
+".SHP";
+
+     NOTA: O tamanho do arquivo de shapes n±o pode  exceder  6912
+bytes, caso contr†rio o carregamento n±o se efetuar†.
+
+          [Lç SHAPES PC] Carrega as figuras  do  Print-Master  ou
+News-Master. Apresenta n£mero e nome da figura:
+
+               [SETAS HORIZONTAIS] Figura anterior/seguinte  (uma
+a uma);
+               [SETAS VERTICAIS] Figura anterior/seguinte (de dez
+em dez);
+               [RETURN] Là a figura.
+
+     NOTA: Caso a figura tenha mais de 176 linhas ou mais de  240
+pontos por linha, ou tenha zero linhas ou zero colunas,  ela  n±o
+ser† carregada. Caso o n£mero de linhas vezes o fator vertical  2
+exceda 240, ent±o pode-se optar pela metade superior ou  inferior
+da figura. No centro da tela aparecer†:
+
+          METADE SUPERIOR
+
+     e qualquer tecla alternar† com
+
+          METADE INFERIOR
+
+     Teclando-se [RETURN] carrega-se a metade desejada. A  figura
+aparecer† na tela ap¢s o  carregamento,  e  qualquer  tecla  far†
+voltar ao menu.
+
+          [ESC] Volta ao menu.
+
+          NOTA: As figuras do Print-Master s±o  guardadas  em  um
+arquivo ".SHP" (cuidado para n±o confundir com a  mesma  extens±o
+dos shapes do MSX) e  os  nomes  correspondentes  em  um  arquivo
+".SDR". Algumas bibliotecas com figuras de tamanho vari†vel devem
+vir acompanhadas de um arquivo ".SDX" contendo  ponteiros  com  a
+finalidade de agilizar o acesso.
+
+          [Lç PADR¥ES] Carrega padrµes de texturas  (aquelas  que
+s±o acessadas atravÇs da tecla [SELECT]);
+
+     NOTA: S¢ s±o listados os arquivos PADR*.ALF, que  contÇm  os
+padrµes de preenchimento.  Os  padrµes  devem  estar  contidos  a
+partir do caracter 192 de um alfabeto e  s±o  em  n£mero  de  30.
+Deve-se ter o cuidado de preservar os caracteres 252 a 255,  pois
+suas definiáµes na realidade contÇm instruáµes  em  linguagem  de
+m†quina para uso do programa.
+
+          [MENU INICIAL] Volta ao men£ inicial.
+
+     CRIANDO CARTAZES OU MANCHETES
+
+     Vamos descrever agora as opáµes do m¢dulo de letras  do  MSX
+PageMaker DeLuxe. Por intermÇdio deste m¢dulo, poderemos  colocar
+em nossa  p†gina,  as  letras  de  tamanho  grande  oriundas  dos
+programas Print-Master, Print-Shop e News-Master. O  interessante
+neste m¢dulo Ç que o programa se  comporta  como  um  criador  de
+cartazes,  j†  que  as  letras  carregadas  s±o   automaticamente
+centralizadas, permitindo uma  r†pida  confecá±o  de  uma  p†gina
+simples, ou ainda ser utilizada  em  conjunto  com  o  m¢dulo  de
+escrita para trabalh
+os mais elaborados. Dentro deste m¢dulo:
+
+     [SETAS] Movimentam a seta que determina a  posiá±o  superior
+para aonde as letras carregadas ser±o impressas;
+     [SHIFT]+[SETAS] Movimentam a p†gina;
+     [TAB] Coloca a cruz na mesma posiá±o da seta;
+     [A] Apaga retÉngulo entre a cruz e a seta;
+     [M] Marca, na posiá±o da seta, a margem:
+
+          [E] Esquerda;
+          [D] Direita;
+          [N] Normaliza para  a  posiá±o  vertical  definida  por
+[Y];
+
+     [P] Posiciona seta na margem:
+
+          [E] Esquerda;
+          [D] Direita;
+
+     [R] Reinicializa as margens;
+     [S] Define as margens simetricamente ao centro;
+     [T] Texto ser† alinhado:
+
+          [C] Ao centro;
+          [E] è esquerda;
+          [D] è direita;
+
+     [U]  Apaga  todas  as  mudanáas  feitas  na  tela  (se   n±o
+movimentou a p†gina ou n±o entrou no menu);
+     [V] Mostra em reduá±o a parte da    p†gina  que  est†  sendo
+editada;
+     [Y] Define o espaáamento vertical como a distÉncia  entre  a
+seta e a cruz;
+
+     [F5] Acesso ao men£ do m¢dulo de letras:
+
+          [FATOR VERTICAL: n] Fator de ampliaá±o vertical para as
+letras do PC, sendo 1 ou 2;
+          [ESPACAMENTO: n] Espaáamentodos alfabetos, sendo de 4 a
+9;
+          [ALFABETOS] Permite uso dos alfabetos com ampliaá±o  de
+4 vezes. Ap¢s a seleá±o do alfabeto, deve-se entrar a frase a ser
+escrita:
+
+               [BS] Apaga o £ltimo caracter e recua;
+               [RETURN] Passa a imprimir sobre a p†gina;
+               [ESC] Volta ao menu;
+
+          [FONTES  NEWS-MASTER]  Permite   uso   de   letras   do
+News-Master vers±o 1 ou 2 (*.FLB do  PC).  Apresenta  o  tipo  de
+letra:
+
+               [SETAS HORIZONTAIS] Tipo anterior/seguinte  (um  a
+um);
+               [SETAS VERTICAIS] Tipo anterior/seguinte  (de  dez
+em dez);
+               [RETURN] Seleciona o tipo;
+               [ESC] Volta ao men£. Ap¢s a  seleá±o  do  tipo  de
+letra, deve-se entrar a frase a ser escrita;
+
+               [SPACE] a [~] Caracteres permitidos;
+               [BS] Apaga o £ltimo caracter e recua.
+
+          [FONTES  PRINT-SHOP]  Permite    uso   de   letras   do
+Print-Shop (*.DAT no PC).  Ap¢s  a  seleá±o  do  tipo  de  letra,
+deve-se entrar a frase a ser escrita:
+
+               [SPACE] a [~] Caracteres permitidos;
+               [BS] Apaga o £ltimo caracter e recua;
+               [RETURN] Passa a imprimir sobre a p†gina;
+
+               [ESC] Volta ao menu.
+
+          [FONTES  PRINT-MASTER]  Permite  uso   de   letras   do
+Print-Master Plus ("*.FNM", "*.FSZ", e "*.FNT" no PC).  Apresenta
+o tipo de letra:
+
+               [SETAS HORIZONTAIS] Tipo anterior/seguinte  (um  a
+um);
+               [SETAS VERTICAIS] Tipo anterior/seguinte  (de  dez
+em dez);
+               [RETURN] Seleciona o tipo;
+               [ESC] Volta ao men£. Ap¢s a  seleá±o  do  tipo  de
+letra, deve-se entrar a frase a ser escrita;
+               [SPACE] a [z] Caracteres permitidos;
+               [BS] Apaga o £ltimo caracter e recua;
+
+          [MENU INICIAL] Volta ao menu principal.
+
+     IMPRIMINDO FAIXAS GIGANTES
+
+     Este m¢dulo permite a impress±o de faixas na impressora, com
+o uso de alfabetos, shapes, telas ".GRP",  letras  dos  programas
+News-Master, Print-Shop e Print-Master do  IBM/PC  e  figuras  do
+News-Master e Print-Master. As opáµes s±o:
+
+     [ALFABETOS] Faz faixas com alfabetos;
+     [LARGURA] Largura da letra (1 a 9);
+     [ALTURA] Altura da letra (1 a 9);
+     [ESPAÄAMENTO] Espaáamento horizontal da letra (4 a 9);
+     [Lç FONTE] Carrega o alfabeto. Ap¢s a seleá±o  do  alfabeto,
+deve-se entrar a frase a ser escrita;
+     [BS] Apaga o £ltimo caracter e recua;
+     [RETURN] Inicia impress±o;
+     [SHAPES]  Imprime  shapes  na  faixa.  Ap¢s  a  escolha   do
+arquivo:
+
+          [SETAS] Escolhe o shape;
+          [1] Espelha na horizontal;
+          [2] Espelha na vertical;
+          [3] Inverte;
+          [4] Gira para a esquerda 90 graus;
+          [5] Gira para a direira 90 graus;
+          [ESPAÄO] Avanáa uma linha na impressora;
+          [RETURN] Inicia a impress±o  do  shape.  Dependendo  do
+tamanho  do  shape,  ele  ser†  impresso  em  tamanho  grande  ou
+pequeno;
+          [ESC] Volta ao men£.
+
+     [TELAS] Carrega uma tela  no  formato  "VRAM"  com  extens±o
+".GRP";
+     [RETURN] Inicia impress±o;
+     [ESC] Volta ao men£;
+
+     [FONTES NEWS-MASTER] Veja m¢dulo de letras;
+     [FONTES PRINT-SHOP] idem;
+     [FONTES PRINT-MASTER] idem;
+     [SHAPES PC] Veja m¢dulo desenhista;
+     [AVANÄA LINHA] Avanáa uma linha na impressora;
+     [MENU INICIAL] Volta ao menu principal.
+
+     UMA AMOSTRA DA PÑGINA
+
+     A opá±o "LAYOUT" do men£ inicial apresenta uma reproduá±o em
+miniatura da p†gina na  tela,  para  que  possamos  visualizar  a
+distribuiá±o do textos e figuras na mesma antes  de  imprimir  em
+papel.
+
+     [RETURN] Volta ao men£ inicial.
+
+     IMPRIMINDO UMA PÑGINA
+
+     Este m¢dulo Ç o respons†vel pela impress±o do nosso trabalho
+atravÇs de uma impressora gr†fica matricial. O aproveitamento  de
+todos  os  recursos  depender†  das  capacidades  da   impressora
+utilizada. As opáµes de impress±o s±o:
+
+     [DENSIDADE: n] Densidade da impress±o:  simples  (1),  dupla
+(2) ou plotter (3).
+
+     Nesta £ltima,  a  regi±o  da  remalina  tambÇm  Ç  impressa,
+permitindo a impress±o dos  8  quadrantes  em  sua  integralidade
+(incluindo as margens). Algumas  impressoras  menos  sofisticadas
+n±o aceitam esse modo.
+
+          [RETURN] ou [SPACE] Mudam a densidade;
+     [NãMERO DE  TOQUES:  n]  N£mero  de  passadas  do  carro  de
+impress±o, (de 1 a 9);
+          [RETURN] ou [SPACE] Incrementa;
+     [NãMERO DE CäPIAS: nn] N£mero de c¢pias, de 1 a 99;
+          [RETURN] Incrementa de 1 em 1;
+          [SPACE] Incrementa de 10 em 10;
+     [IMPRIME] Inicia a impress±o da p†gina;
+          [CONTROL]+[STOP] Interrompe a impress±o;
+
+     [MENU INICIAL] Volta ao men£ inicial.
+
+     EXECUTANDO OPERAÄ¥ES DE DISCO
+
+     Este m¢dulo, que  nada  mais  Ç  que  um  sub-men£  do  men£
+inicial, agrupa funáµes de manipulaá±o de arquivos:
+
+     [DIRETäRIO] Apresenta diret¢rio e o espaáo livre do disco de
+dados. S±o mostrados 10 arquivos por vez. Pressionando-se a [SETA
+PARA DIREITA] s±o apresentados os pr¢ximos 10 arquivos;
+
+          [ESC] Interrompe.
+
+     [Lç PÑGINA] Là p†gina do disco mestre;
+     [SALVA PÑGINA] Atualiza a p†gina no disco. Use  sempre  essa
+opá±o antes de entrar nos m¢dulos estilista e impress±o  e  antes
+de usar as opáµes "Lç PÑGINA" e  "COMPACTA/DESC. PÑGINA";
+     [COMPACTA/DESC.   PÑGINA]   Permite    a    compactaá±o    e
+descompactaá±o da p†gina, para fins de armazenamento;
+          [COMPACTA] Pega  a  p†gina  corrente  e  compacta  para
+arquivos ".CP1" a ".CP4" no disco de dados. Precisa de 48  kbytes
+livres no disco;
+          [DESCOMPACTA] Pega uma p†gina compactada num  disco  de
+da dos e a descompacta para arquivos ".PM1" a ".PM4" no disco  do
+programa, tornando-a a p†gina em uso. Precisa de 48 kbytes livres
+no disco do programa;
+          [MENU INICIAL] Volta ao men£ inicial.
+
+     [APAGA PÑGINA] Apaga uma p†gina do disco;
+     [CONVERTE TELA]  Faz  a  convers±o  de  telas  nos  formatos
+abaixo:
+
+          [SCR PARA GRP]
+          [GRP PARA SCR]
+          [LAY PARA GRP]
+          [GRP PARA LAY]
+     
+     O MSX PageMaker DeLuxe carrega diretamente apenas  telas  no
+formato "VRAM" com extens±o  ".GRP".  Se  a  tela  que  desejamos
+importar tem uma extens±o e formato diferentes,  ser†  necess†ria
+uma convers±o. Este men£ converte telas entre os formatos ".GRP",
+".SCR" e ".LAY". Para a convers±o de outros formatos  utilize  os
+utilit†rios "MSX  GRAPHIC  TOOLS"  ou  "MSX  DESK-TOP  TOOLS"  da
+Nemesis Inform†tica Ltda.
+     Ap¢s a convers±o e apresentaá±o da tela:
+
+          [RETURN] Grava a tela convertida;
+          [QUALQUER TECLA] Volta ao men£ sem gravar;
+
+     [MENU INICIAL] Volta ao men£ inicial.
+
+     Na convers±o para formato ".LAY" as cores  s±o  desprezadas.
+As  conversµes   para   ".GRP",   ".SCR"   e   ".LAY"   requerem,
+respectivamente, no m°nimo 15, 13 e 7 kbytes livres no disco.
+
+     [CONVERTE TEXTO] Filtra arquivos  gerados  por  editores  de
+texto:
+
+          [WORDSTAR (.DOC)] Filtra arquivos editados pelo  editor
+de  textos  "WORDSTAR"  (representado  no  Brasil  pela   empresa
+Brasoft), incluindo os acentos.  Alguns  caracteres  de  contrìle
+podem ser usados para serem tratados pelo m¢dulo de escrita;
+          [MSX-WORD 3.0 (.???)]  Filtra  arquivos  editados  pelo
+"MSXWORD  3.0"  (da  empresa   Cibertron),   eliminando   espaáos
+excedentes;
+
+     NOTA: Caso haja uma volta imediata ao men£ ap¢s a escolha do
+arquivo, Ç prov†vel que n±o tenha  sido  feita  a  convers±o  por
+falta de espaáo em disco. Para convers±o do "Wordstar" precisa-se
+de duas vezes o tamanho do  arquivo  original,  bastando  para  o
+"MSX-WORD 3.0" uma vez o tamanho do original.
+
+          [MENU INICIAL] Volta ao men£ inicial.
+
+     [MSX-DOS] Volta ao sistema operacional;
+     [ESC] Volta ao Men£ Principal.
+
+     UTILIZANDO O KIT DE COMPLEMENTOS
+
+     A  Nemesis  lanáou  diversos  discos  de  complementos  para
+utilizaá±o com o MSX PageMaker DeLuxe. S±o centenas  de  figuras,
+molduras, adìrnos e vinhetas e sensacionais alfabetos em diversos
+tamanhos e formas para incrementar ainda  m†is  as  suas  p†ginas
+gr†ficas.
+
+     Uma grande dica para quem tem apenas  um  disk-drive  e  n±o
+possui uma "MEGA-RAM DISK" Ç copiar os alfabetos  e  figuras  que
+ir† utilizar, para o disco do principal do MSX PageMaker  DeLuxe.
+Isso ir† agilizar tremendamente o  seu  trabalho.  Se  por  acaso
+utilizar 2 drives ou 1 drive com "MEGA-RAM DISK",  esta  operaá±o
+se tornar† desnecess†ria, pois o pr¢prio disco de acess¢rios ser†
+utilizado como disco de dados  (veja  maiores  detalhes  no  °tem
+"instalando o MSX PageMaker DeLuxe).
+
+     DISCO #01 - PRINT-SHOP FONTS
+
+     O primeiro  disco  de  acess¢rios  contÇm  14  alfabetos  em
+tamanho  gigante  no  padr±o   "Print-Shop".   Se   ligar-mos   o
+equipamento e inserirmos este disquete, ele ser†  automaticamente
+executado e imprimir† 2 p†ginas com demonstraá±o das  letras  que
+ele contÇm (a  impress±o  destas  duas  p†ginas  Ç  lenta,  tenha
+paciància). No padr±o "Print-Shop" cada alfabeto  equivale  a  um
+arquivo com extens±o ".DAT". Uma vez impressas estas  p†ginas  de
+demonstraá±o, j† conheceremos a forma de cada um dos alfabetos  e
+j† poderemos selec
+ionar aqueles que nos  interessam.  Vamos  supìr  que  se  deseje
+utilizar os  alfabetos  "ALEXIA"  e  "STARLET":  Copie  ent±o  os
+arquivos  "ALEXIA.DAT"  e  "STARLET.DAT"  para  o  disco  do  MSX
+PageMaker DeLuxe (lembre que esta operaá±o  n±o  ser†  necess†ria
+quando estivermos utilizando 2 drives ou 1 drive e uma  "MEGA-RAM
+DISK"). Use o sistema operacional para realizar esta c¢pia:
+
+A>COPY ALEXIA.DAT B: e depois A>COPY STARLET.DAT B:
+
+     Na operaá±o acima o disco de acess¢rios Ç o disco fonte (A:)
+e o disco do MSX PageMaker DeLuxe Ç o disco destino (B:).
+
+     Copiados os arquivos, execute o MSX PageMaker DeLuxe, use  a
+opá±o "ESTILIZA" para criar uma nova p†gina e v† finalmente  para
+a opá±o "LETRAS" para utilizarmos as mesmas. Leve a seta atÇ onde
+o texto dever† ser inserido, pressione [F5] para acessar  o  men£
+de opáµes. Utilize a opá±o "FONTES PRINT-SHOP". Ser†  apresentada
+uma janela com os alfabetos do formato "Print-Master"  que  est±o
+no disco ("ALEXIA" e "STARLET").  Selecione  "ALEXIA".  Aparecer†
+ent±o, uma janela no canto inferior. Nela escreveremos uma
+rase  que  ser†  colocada  na  p†gina.  Escreva  algo,  pressione
+[RETURN] e veja o resultado. Se  algo  deu  errado,  recomece  do
+princ°pio.
+
+     DISCO #02 - PRINT-MASTER FONTS
+
+     O disco 2  contÇm  mais  30  alfabetos  gigantes,  agora  no
+formato  "PRINT-MASTER".  Por  motivo  de  falta  de  espaáo   no
+disquete, n±o foi poss°vel implementar neste disco, um gerador de
+p†ginas de demonstraá±o. Para conhecer o nome dos  alfabetos  que
+compµem  este  pacote,  utilize  o  comando  "DIR"   do   sistema
+operacional. O formato dos alfabetos do "Print-Master" difere  do
+padr±o adotado pelo "Print-Shop". Temos  neste  segundo  disco  4
+bancos de alfabetos. Cada um destes 4 bancos possuem  4  arquivos
+de contrìle com as 
+extensµes ".FNM", ".FIC", ".FSZ" e ".NUM", alÇm dos arquivos  com
+extens±o ".FNT" que s±o os alfabetos pr¢priamente ditos.
+     Para utilizar ent±o o alfabeto "PARIS" que est† no 4ß grupo,
+deve-se copiar (se fìr o caso)  os  4  arquivos  "FONTS4.*"  e  o
+arquivo  "PARIS.FNT".  Depois  de  copiados  repita  a   operaá±o
+descrita para o disco anterior Ö partir da  utilizaá±o  do  disco
+MSX PageMaker DeLuxe com os acess¢rios j† copiados.  N±o  esqueáa
+de optar por padr±o "Print-Master".
+
+     DISCO #03 - NEWS-MASTER FONTS
+
+     Os alfabetos do padr±o "News-Master" s±o mais f†ceis  de  se
+utilizar. Todos os bancos dispon°veis se encontram em  apenas  um
+arquivo: "NEWS.FLB". Basta copi†-lo para o disco do MSX PageMaker
+DeLuxe e pronto! Mas h† um problema; este arquivo tem nada  menos
+que 225 kbytes. Se o seu £nico disk-drive n±o fìr de  720  Kbytes
+ser† dif°cil colocar este monstro junto com os outros arquivos do
+MSX PageMaker DeLuxe. Tente liberar o maior  espaáo  poss°vel  no
+disco e mande brasa!
+     NOTAS: - Este disco se auto-executa e imprime  duas  p†ginas
+com demostraáµes dos alfabetos que ele contÇm;
+            - Ao ser carregados os alfabetos aparecer† um men£  a
+mais para a seleá±o dos mesmos. Use  as  setas  direcionais  para
+selecionar o alfabeto desejado.
+
+     DISCOS #04 a #07 - FIGURAS E GALERIAS
+
+     Os discos de 4 a 7  trazem  milhares  de  figuras  de  mesmo
+tamanho no padr±o de  imagens  do  "Print-Master".  Estes  discos
+podem ser auto-executados para  produzir  amostras  impressas  (o
+processo Ç lento e lembre que  s±o  milhares  de  figuras).  Cada
+disco possui em media 4 bibliotecas de imagens (figuras 1 a  8  e
+galerias 1 a 9  no  total,  distribu°das  por  estes  4  discos).
+"FIGURAS1.SHP" e "FIGURAS1.SDR" s±o  os  arquivos  que  formam  a
+primeira biblioteca de imagens (FIGURAS1) do disco 4. O  processo
+de utilizaá±o Ç par
+ecido com o realizado com as letras. Copie os dois arquivos  para
+o disco do MSX PageMaker DeLuxe e utilize a opá±o "SHAPES PC"  do
+men£ de opáµes do m¢dulo desenhista para acess†-las e  aplic†-las
+em qualquer posiá±o da p†gina.
+
+     DISCOS #08 a #12 - NEW PRINT-SHOP TEMPLATES
+
+     Cada um destes discos contÇm 6 panos de fundo ("templates"),
+que nada  mais  s±o  que  bordas  sofisticadissimas  com  motivos
+variados para se trabalhar por cima. S±o fornecidos em formato de
+p†gina (4 arquivos para cada modàlo, com as extensµes  comuns  de
+p†gina: ".PM1" a ".PM4"). Basta copiar um conjunto para  o  disco
+do MSX PageMaker DeLuxe (como  j†  Ç  uma  p†gina  n±o  deveremos
+utilizar o m¢dulo estilista) e utilizar a opá±o  "Lç  PÑGINA"  em
+"DISCO E/S" e pronto! Quando auto-executados, os discos  imprimem
+demon
+straáµes do conte£do.
+
+     DISCO #13 - THE NEW PRINT-SHOP ARTS
+
+     Embora sejam oriundas do programa "The New  Print-Shop",  as
+figuras contidas neste disco  est±o  distribuidas  em  bancos  do
+formato "Print-Master". Para utiliz†-las siga  os  mesmos  passos
+descritos para os discos de 4 a 7.
+
+     DISCOS #14 a #16 - THE NEW PRINT-SHOP TOPFOLDS
+
+     Estes  discos  trazem  interessantes  figuras   para   serem
+colocadas no cabeáalho das p†ginas. Podem ser  utilizados  tambÇm
+com o programa "Logotipo & Footnote" da Nemesis Inform†tica Ltda.
+Cada figura Ç composta por duas telas no  formato  "VRAM"  e  com
+extens±o ".GRP". Estas duas telas devem ser carregadas  nos  dois
+primeiros quadrantes da p†gina, atravÇs da  opá±o  "Lç  TELA"  do
+men£ de opáµes do m¢dulo desenhista.
+
+     DISCO #17 - THE MAGIC PAINT CLIP ART
+
+     S±o figuras do editor "The Magic  Paint"  do  IBM/PC.  Est±o
+armazenadas no formato "Print-Master". Para  acess†-las  siga  os
+passos  executados  nos  discos  4  a  7.  Este  disco  pode  ser
+auto-executado para gerar cat†logo do seu conte£do.
+
+     DISCO #18 - DIGITIZED PICTURES
+
+     Cada figura Ç uma tela no  formato  "VRAM"  e  com  extens±o
+".GRP". Podem ser utilizadas tambÇm com o  programa  "Logotipo  &
+Footnote". Utilize a opá±o "Lç TELA" do men£ de opáµes do  m¢dulo
+desenhista para carreg†-las.
+
+     DISCOS #19 e #20 - MACINTOSH CLIP-ART
+
+     Assim como o disco anterior,  cada  figura  Ç  uma  tela  no
+formato "VRAM" e com extens±o ".GRP". Podem ser utilizadas tambÇm
+com o programa "Logotipo & Footnote". Utilize a opá±o  "Lç  TELA"
+do men£ de opáµes do m¢dulo desenhista para carreg†-las.
+
+     A Nemesis continua lanáando mais  complementos  para  o  MSX
+PageMaker DeLuxe, e lembramos que o programa Ç  ainda  compat°vel
+com os acess¢rios desenvolvidos para  as  versµes  anteriores  do
+mesmo ("FONTS KIT", "CARTOONS", "SQUARES" e  "TITTLES")  alÇm  de
+tudo que se produziu para programas similares.
+
+     A Nemesis  est†  tambÇm  fazendo  digitalizaá±o  de  imagens
+(fotos, emblemas, logotipos, etc.) para poderem ser utilizados no
+MSX PageMaker DeLuxe ou qualquer outro editor gr†fico.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+SOFTWARE INTEGRADO MSX
+
+(Planiha eletr“nica, Banco de dados,
+Editor de texto & Programa gr fico).
+
+Para carreg -lo digite:
+
+A>1-2-3MSX e pressione [RETURN]
+
+O programa se posicionar  na mem¢ria
+e se apresentar  sempre que o  micro
+for "resetado". A op‡±o [1] vai para
+o BASIC ou o Sistema Operacional.  A
+op‡±o [2] posiciona o m¢dulo integra
+do com as fun‡µes de planilha,  edi-
+tor de textos, banco de dados e gr -
+ficos que funcionam num mesmo plano.
+
+Quando selecionada, a op‡±o [2] apre
+senta um menu de op‡µes que   poder 
+ser utilizado atrav‚s da tecla  [RE-
+TURN] e das setas direcionais.  Para
+cancelar qualquer opera‡±o use [ESC]
+e para abortar o programa ou  recar-
+reg -lo novamente, basta "resetar" o
+microcomputador.
+
+PROGRAMA EM REGIME DE DEMONSTRA€°O !
+
+

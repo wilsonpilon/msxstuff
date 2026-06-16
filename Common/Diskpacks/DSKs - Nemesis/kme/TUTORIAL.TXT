@@ -1,0 +1,23 @@
+
+ABERTURA.COM (menu de abertura)
+	     P gina 1 do manual;
+
+M-DIRETA.COM (m¢dulo de MALA DIRETA)
+             P gina 2 do manual;
+
+FICHARIO.COM (fich rio eletr“nico)
+             P gina 4 do manual;
+
+E-TEXTOS.COM (m¢dulo EDITOR DE TEXTOS)
+	     P gina 5 do manual;
+
+TOOL-KIT.COM (m¢dulo de ferramentas)
+	     P gina 1O do manual.
+
+Antes de carregar e utilizar um destes
+m¢dulos, consulte o manual para evitar
+danos decorrentes de  utiliza‡ao inde-
+vida. Em caso de d£vida consulte nosso
+departamento t‚cnico.
+
+

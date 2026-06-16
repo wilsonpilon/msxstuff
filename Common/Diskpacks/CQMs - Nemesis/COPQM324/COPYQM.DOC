@@ -1,0 +1,1928 @@
+
+
+
+
+          Sydex
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                       CopyQM
+
+
+                   Quick Multiple Format/Copy/Verify for Diskettes
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  Sydex, Inc.
+                                                  P.O. Box 5700
+                                                  Eugene, OR  97405
+                                                  Voice:    (503)  683-6033
+                                                  FAX:      (503)  683-1622
+                                                  Data:     (503)  683-1385
+
+
+
+
+
+
+
+
+
+                                  Table of Contents
+
+            What is CopyQM?..............................................1
+            Requirements.................................................3
+            Getting Started..............................................5
+            CopyQM Operation.............................................7
+            CopyQM Command Line Syntax...................................8
+
+             Basic Operating Options....................................10
+             Specifying A Different Drive for Reading...................11
+             Display and Sounds.........................................11
+             Converting Between Formats.................................12
+             Memory Usage...............................................13
+             Formatting and Verifying...................................14
+             Diskette Image Files.......................................15
+             Blind Mode.................................................17
+             "Shelling Out" Between Copies..............................18
+             Miscellaneous Options......................................18
+             The COPYQM Environment Variable............................19
+             Locating Temporary Files...................................20
+             Command Examples...........................................20
+
+            Differences from Earlier Versions...........................21
+            Memory Usage................................................22
+            Diskette Image Files........................................23
+            Copying Modes...............................................24
+            Format Conversion...........................................25
+            Copy Verification...........................................25
+            Checking Copies.............................................26
+            Audible Signals.............................................26
+            "Smart" Formatting..........................................27
+            Quick Mode Copying..........................................27
+            Display Color Set...........................................28
+            Status Messages.............................................28
+            The ICOMMENT Utility........................................32
+            Specifying a Diskette Configuration.........................33
+
+
+
+
+                                       CopyQM
+                   A Quick Diskette Duplicator for Multiple Drives
+
+                                   Copyright 1993
+                                 Sydex, Incorporated
+                                    P.O. Box 5700
+                                  Eugene, OR 97405
+                                   (503) 683-6033
+
+
+          What is CopyQM?
+
+          If you're eager to get going with CopyQM,  skip  to  the  section
+          titled "Getting Started".
+
+          Basically, CopyQM duplicates diskettes in a single pass.
+
+          Introduced in 1987,  CopyQM has been continually improved and up-
+          dated.   It now boasts the largest number of features of any  PC-
+          based diskette duplicating package.
+
+          CopyQM  reads a master diskette and formats,  writes and verifies
+          duplicates of the master diskette.   Copying can be performed  on
+          up to six drives in a single session;  copies are written on only
+          one drive at a time.   "No Hands"  operation  is  featured--after
+          you've started things, you needn't touch the keyboard again; just
+          insert diskettes in drives as needed.
+
+          In addition to the basic operating mode, the basic CopyQM package
+          features the following:
+
+               1.   Conversion between different formats.  Unlike competing
+                    products  which  just copy the same format to different
+                    drives, CopyQM actually rebuilds the diskette format to
+                    match the drive.   It's possible to convert from a 360K
+                    format  to a 1.44M format.   And the result is a "real"
+                    1.44MB  diskette with 1.44MB worth of diskette space.
+
+               2.   Support of diskette image files.  An image file created
+                    by CopyQM is a complete description of the  information
+                    on  a diskette.   A comment may be included in the file
+                    with CopyQM's built-in editor.  The image file is check-
+                    summed with a 32-bit CRC.
+
+          _________________________________________________________________
+
+                                                            Introduction  1
+
+
+
+
+
+               3.   Copying of Apple Macintosh HD and DOS diskettes with no
+                    special processing.   CopyQM will copy most PC-readable
+                    diskettes regardless of format with the "Blind" option.
+                    However,  CopyQM will not copy low-density Apple Macin-
+                    tosh 800K diskettes.
+
+               4.   Formatting of diskettes only when needed  with  "SMART"
+                    mode option.
+
+               5.   Faster  copying  by copying only active data--the empty
+                    area on a partially-filled diskette is not copied.
+
+               6.   Verifying of copies can be performed in several  modes,
+                    ranging  from  none  to  a  byte-by-byte  comparison of
+                    copied data with the master diskette.
+
+               7.   Selection of menu or command-line interface  with  com-
+                    plete on-line help.
+
+               8.   Choice  of  direct hardware controller access or use of
+                    BIOS routines.
+
+
+          CopyQM is also offered in a commercial "Plus"  package  with  the
+          following features:
+
+               1.   Support of ASCII or binary serial numbering of copies.
+
+               2.   Insertion of copy-protection information into copies.
+
+               3.   Maintenance of a diskette usage log.
+
+               4.   Diskette maintenance utility.
+
+               5.   Creation of self-extracting diskette image files.
+
+               6.   Execution of DOS commands or custom code overlays after
+                    each  copy  for  support  of  labeling  or  auto-feeder
+                    devices.
+
+
+
+
+          _________________________________________________________________
+
+          2  Introduction
+
+
+
+
+
+          CopyQM will not:
+
+               *    Write copies on more  than  one  drive  simultaneously.
+                    However,  Sydex does offer SyDupe,  which will write on
+                    up to three diskette drives at the same time.  For more
+                    information on SyDupe, please contact Sydex.
+
+               *    Copy proprietary (e.g., Amiga, Apple ][,  Atari 820) or
+                    copy-protected formats.
+
+               *    Copy  individual files.   The smallest unit of informa-
+                    tion that CopyQM can deal with is an entire diskette.
+
+               *    Copy one hard disk to another.   CopyQM is a  diskette-
+                    copying utility.
+
+               *    Copy individual files from a hard disk to a diskette.
+
+          CopyQM  is  fast--in  most  cases  it  will copy at the best-case
+          theoretical speed.  The primary limitation in any diskette opera-
+          tion is the time that it  takes  the  diskette  to  complete  one
+          revolution.    Our timings indicate that CopyQM can format,  copy
+          and verify a full 360K diskette in  about  50  seconds.    Larger
+          capacity diskettes will, of course, require more time.
+
+
+          Requirements
+
+          At  a minimum,  the following four files are necessary for opera-
+          tion of CopyQM:
+
+
+               CINSTALL.EXE installs CopyQM.
+
+               COPYQM.EXE implements the primary functions needed for  dis-
+               kette copying.
+
+               CQMENU.EXE contains a menu interface and all on-line help.
+
+               VIEWCONF.EXE is a utility to display the diskette configura-
+               tion information being used by CopyQM.
+
+
+          _________________________________________________________________
+
+                                                            Introduction  3
+
+
+
+
+          Other  text  and  program files may be present which describe the
+          operation of CopyQM or support additional features,  but the four
+          files mentioned above are essential for successful operation.
+
+          In  almost  all cases,  CopyQM will be able to determine the con-
+          figuration of a system without any sort of intervention.  Unusual
+          or special disk drive configurations,  however,  may require that
+          the configuration be explicitly specified.   For more information
+          on how to construct a configuration file for all Sydex utilities,
+          consult the section titled "Specifying a Diskette  Configuration"
+          near the end of this document.
+
+          CopyQM  requires  the  following operating environment for execu-
+          tion:
+
+               1.   An IBM PC-compatible with  an  8088,  80286,  80386  or
+                    80486 processor.   Other system operating environments,
+                    such as PC emulation on non-PC systems (e.g., Commodore
+                    Amiga or Apple Macintosh) may work, but operation under
+                    them is not supported by Sydex.
+
+               2.   PC-DOS or MS-DOS Version 3.3 or later.  CopyQM has been
+                    successfully tested in a DOS session under IBM OS/2 Ver-
+                    sions 1.3 and 2.1, but  OS/2 operation is not supported
+                    by  Sydex.     Other  DOS-compatible  systems  such  as
+                    Novell's  DR-DOS  or  The  Software  Link's  PC-MOS may
+                    result in successful operation, but these have not been
+                    fully tested by Sydex.
+
+               3.   At least  256K  of  available  base  memory,  sometimes
+                    referred to as "RAM".
+
+               4.   A  hard  disk  with at least 2MB of free space for tem-
+                    porary files created by CopyQM.
+
+               5.   At least one diskette drive local to the system running
+                    CopyQM.  Network diskette drives are not supported.
+
+          CopyQM does not require, but can make use of the following:
+
+               1.   Extended memory that is managed  by  an  XMS-compatible
+                    memory   manager   such  as  Microsoft's  HIMEM.SYS  or
+                    Quarterdeck's QEMM.
+
+          _________________________________________________________________
+
+          4  Requirements
+
+
+
+
+
+               2.   Expanded memory,  or LIM (Lotus-Intel-Microsoft),  that
+                    is managed by a a driver that is compliant with EMS 4.0
+                    or later.
+
+               3.   Additional  diskette  adapters.    Sydex has tested the
+                    Micro Solutions Compaticard I, II and IV adapters.  Cer-
+                    tain non-standard diskette adapters,  such as  the  IBM
+                    PS/2  5.25"  Diskette  Adapter/A or the Micro Solutions
+                    Backpack tm drive may require that the  BIOS  interface
+                    option of CopyQM be selected.
+
+          CopyQM  will operate under Microsoft's Windowstm or Quarterdeck's
+          Desqviewtm.  However, because diskette copying is a time-critical
+          application, performance under any multi-tasking environment will
+          be degraded somewhat.   The  actual  amount  of  the  degradation
+          depends  on several factors,  including the scheduling algorithms
+          used by the multitasking software.  Use of the BIOS interface op-
+          tion is recommended.
+
+          Executing more than one copy of CopyQM under control of a  multi-
+          tasking  executive,  such as Windows is not recommended.   Severe
+          performance degradation will result.   If two  sets  of  diskette
+          copies  are  required,  running two CopyQM sessions consecutively
+          will result in significantly better performance  than  attempting
+          to  execute the sessions concurrently.   For efficient concurrent
+          operation on several diskette drives,  contact  Sydex  about  the
+          SyDupe duplicating package.
+
+          CopyQM  will  support  a total configuration of up to twelve dis-
+          kette drives.   A CopyQM session can make use of up to seven dis-
+          kette drives--one for reading and six for writing.
+
+          Getting Started
+
+          To install CopyQM,  execute the CINSTALL program.   CINSTALL will
+          copy all necessary files and perform several  system  checks  re-
+          lated to CopyQM execution.   For example,  if CopyQM is to be in-
+          stalled from drive A:,  enter the following command  at  the  DOS
+          prompt:
+
+                                     A:CINSTALL
+
+
+          _________________________________________________________________
+
+                                                            Requirements  5
+
+
+
+
+          If you're using a portable computer with an LCD display,  you may
+          want  to  select  a  monochrome  color  set  to  improve  display
+          readability:
+
+                                  A:CINSTALL /MONO
+
+          In most cases, this is all that will be required to get CopyQM up
+          and running.
+
+          First-time users should execute CopyQM through the menu interface
+          furnished by CQMenu.  Entering the following command at a DOS com-
+          mand prompt will initiate execution of CQMenu:
+
+                                       CQMENU
+
+          CQMenu displays a menu and translates the menu choices into a com-
+          mand  line  for  CopyQM.    After  all selections have been made,
+          COPYQM.EXE is located and read into memory overlaying CQMenu.
+
+          CQMenu also contains a full on-line  help  facility  for  CopyQM.
+          Help related to the current selected menu item can be obtained by
+          pressing  F1.    In  addition,  a  general  help  facility  which
+          describes command-line syntax and configuration file setup can be
+          displayed by pressing F1 a second time.
+
+          All of the features of CopyQM are not available through  CQMenu's
+          interface.    Some of the more obscure facilities  are accessible
+          only through the DOS command line interface to CopyQM.
+
+          On-line help is available for the command-line syntax  of  CopyQM
+          by entering the following command:
+
+                                    COPYQM /HELP
+
+
+
+
+
+
+
+
+
+
+
+          _________________________________________________________________
+
+          6  Getting Started
+
+
+
+
+          CopyQM Operation
+
+          Once  menu  selections  have been made from CQMenu or the command
+          line for CopyQM has been entered, CopyQM begins execution.  Opera-
+          tion of CopyQM is divided into two phases, reading the master dis-
+          kette or image file,  and writing the copies  or  diskette  image
+          file.
+
+          Because  CopyQM  continuously  accesses diskette drives to obtain
+          their operating status, diskette changes are permitted when drive
+          lights are illuminated.   In addition,  since CopyQM is sensitive
+          to  drive  changes,  it may be necessary to remove a diskette and
+          then re-insert it into the same drive to indicate to CopyQM  that
+          a change has occurred.
+
+          When a diskette or image file is being read,  a box corresponding
+          to the drive currently being accessed is shown containing a  mes-
+          sage indicating the status of the current operation.   If the ES-
+          Cape key is pressed before CopyQM is able to read the master dis-
+          kette, execution terminates and CopyQM exits to DOS.
+
+          A summary of information relating to the diskette is also  shown.
+          Sector   size  indicates  the  size  in  bytes  of  each  sector.
+          Sectors/track specifies the number of sectors that occur on  each
+          track.  Sides reports either 1 for single-sided formats, or 2 for
+          double-sided.   Density can show values of low for double-density
+          (360K and 720K),  high for high density (1.2M and 1.44M),  or ex-
+          tended  for 2.88M media.   Data cylinders indicates the number of
+          cylinders containing active data.    The amount of memory used to
+          hold the data from the diskette is also shown.
+
+          The DOS volume label name, or the first 11 characters of an Apple
+          Macintosh  volume  label  is  shown.    If no volume label can be
+          found, "** NONE **" is displayed.
+
+          If creation of a diskette image file has been requested, the file
+          is written after the diskette has been completed.  If the conver-
+          sion option has been specified,  a temporary diskette image  file
+          will be written and the requested conversion will be performed as
+          the image file is read back into memory.
+
+          If copying to diskettes has been requested,  the following prompt
+          will be displayed:
+
+          _________________________________________________________________
+
+                                                        CopyQM Operation  7
+
+
+
+
+
+                         Enter copy count (ESCape to exit) -
+
+          Between 1 and 9,999 copies may be requested;  after  the  desired
+          number is entered,  the Enter key is pressed.   If the ESCape key
+          is pressed instead, CopyQM will exit to DOS.
+
+          After the master  diskette  or  image  file  has  been  read  and
+          processed, CopyQM begins the writing phase.
+
+          Up  to  six  drives  can  be shown on the writing status display.
+          Note that only those drives which support the diskette format cur-
+          rently being copied are shown.   For example,  if a  high-density
+          5.25"  (1.2M)  master  diskette  were  being copied,  only drives
+          capable of high-density support would be displayed.
+
+          The "thermometer" bar displayed when writing diskettes shows  the
+          progress of the copy operation.   A solid, red bar indicates that
+          active data is being transferred; a hatched,  green bar indicates
+          that an inactive area is being formatted.
+
+          When all requested copies have been completed, the following mes-
+          sage appears:
+
+                   All copies done.  Press any key to continue...
+
+          If the ESCape key is pressed before all copies have been written,
+          the following message appears:
+
+                    ESCape pressed.  Press any key to continue...
+
+          If  the  ESCape key is pressed again,  CopyQM exits to DOS.   Any
+          other key causes CopyQM to request the next master  diskette  for
+          reading.
+
+          CopyQM Command Line Syntax
+
+          In order to get an idea of how to use CopyQM, consider the follow-
+          ing hypothetical PC setup:
+
+
+
+
+
+          _________________________________________________________________
+
+          8  CopyQM Operation
+
+
+
+
+                       Drive A: is a 1.44M 3.5" diskette drive
+                       Drive B: is a 1.2M 5.25" diskette drive
+                               Drive C: is a hard disk
+                       Drive D: is a 1.44M 3.5" diskette drive
+                       Drive E: is a 1.2M 5.25" diskette drive
+
+          The  following  commands  illustrate how to construct commands to
+          perform most common copying tasks:
+
+               1.   Copy a 3.5" diskette using one drive:
+
+                                        COPYQM A:
+
+               2.   Copy a 5.25" diskette using one drive:
+
+                                        COPYQM B:
+
+               3.   Copy a 5.25" diskette using two drives for writing:
+
+                                       COPYQM B: E:
+
+               4.   Copy a 5.25" 360K diskette to 3.5" 720K diskette:
+
+                             COPYQM A: SOURCE=B: CONVERT=720K
+
+               5.   Copy a 3.5" diskette using pre-formatted diskettes:
+
+                                     COPYQM A: SMART
+
+               6.   Make an image file (MYIMAGE) of a 3.5" diskette:
+
+                                COPYQM A: RECORD=C:MYIMAGE
+
+               7.   Make a 3.5" diskette from an image file (MYIMAGE):
+
+                               COPYQM A: PLAYBACK=C:MYIMAGE
+
+               8.   Make one copy each of a set of 3.5" diskettes:
+
+                                 COPYQM A: COUNT=1 REPEAT
+
+
+
+
+          _________________________________________________________________
+
+                                                     Command Line Syntax  9
+
+
+
+
+          In general, the format of a CopyQM command is:
+
+                              COPYQM <drives> <options>
+
+          Where <drives> are drive letters (each followed by a  colon)  and
+          <options> are either single words or a word followed by an equals
+          sign (=) and a value.
+
+          Many options are available with CopyQM. What follows is a descrip-
+          tion of all options,  grouped by function.   For more examples of
+          command lines, consult the section titled COMMAND LINE EXAMPLES.
+
+          Some options require a value; others do not.   A value may be as-
+          signed  to  an option by following the option with an equals sign
+          (=) and the value.  For example, the COUNT option, which controls
+          the number of copies to be made,  requires  a  value.    COUNT=10
+          specifies that 10 copies will be made.
+
+          Most  options also have an abbreviation which can be used instead
+          of the full spelling.  Thus, WRITEPROTECT, which causes CopyQM to
+          make sure that the master diskette is write-protected, can be ab-
+          breviated as WR.
+
+          Basic Operating Options
+
+          These options change, in a basic way,  the manner in which CopyQM
+          operates.
+
+
+               BIOS  specifies that the system BIOS should be used for dis-
+                    kette access.   Normally,  the controller  hardware  is
+                    directly  accessed by CopyQM,  but operation under some
+                    multi-tasking environments,  such as Microsoft  Windows
+                    may  require  that this option be specified.   The word
+                    BIOS can be abbreviated as BI.
+
+               BLIND specifies that CopyQM should not consider the  content
+                    of  the  diskette  to  be copied,  but only its format.
+                    This option is useful when the diskette  to  be  copied
+                    was not created on a DOS or Apple Macintosh system,  or
+                    has a non-standard boot sector.  Caution:  If a DOS dis-
+                    kette produces the Not a DOS  Diskette  error  message,
+                    this may indicate that the diskette contains a boot sec-
+
+          _________________________________________________________________
+
+          10  Command Line Syntax
+
+
+
+
+                    tor virus.   Before switching to BLIND copying, use any
+                    of the commercially available virus  scanning  packages
+                    to  determine  that  the  diskette  does  not contain a
+                    virus.
+
+               BLIND may be abbreviated as BL.  To control the way in which
+                    BLIND mode processes a diskette, see the section titled
+                    SPECIFYING DISKETTE PARAMETERS IN BLIND MODE.
+
+               CHECK disables the writing of copies and enables a  byte-by-
+                    byte comparison of copies with a master diskette.   Use
+                    CHECK to verify that a diskette is  a  true  unmodified
+                    copy of the original master.   CHECK may be abbreviated
+                    as CH.
+
+               HELP or /HELP gets this on-line help display.  H and /H will
+                    also activate the CopyQM help display.
+
+          Specifying A Different Drive for Reading
+
+          CopyQM normally uses the first drive specified to read the master
+          diskette.   However,  there are some situations where  the  drive
+          used for reading should not be used for writing the copies.
+
+               SOURCE specifies the drive to be used to read the master dis-
+                    kette.    For example SOURCE=A: indicates that drive A:
+                    should be used to read the master diskette.  Unless the
+                    same drive occurs in the  drive  list  portion  of  the
+                    CopyQM  command line,  it will not be used for writing.
+                    SOURCE may be abbreviated to SO.
+
+          Display and Sounds
+
+          These options control the appearance of the display or the use of
+          the PC's speaker:
+
+               MONO forces CopyQM to use a monochrome color set for all dis-
+                    plays.   Normally,  CopyQM will detect the presence  of
+                    monochrome-only  displays  and change its operation ac-
+                    cordingly.   However,  some lap-top systems with LCD or
+                    plasma  displays  may  give  a more readable display if
+                    this option is used.  MONO may be abbreviated as MO.
+
+
+          _________________________________________________________________
+
+                                                    Command Line Syntax  11
+
+
+
+
+                NAG activates a "wake-up!" audio signal.   If approximately
+                    20  seconds  of inactivity occur,  a short tone will be
+                    sounded every 20 seconds until  some  action  has  been
+                    taken.
+
+               SILENT specifies that no audible signaling should be used at
+                    all.    This is useful in environments where noise must
+                    be kept to a minimum,  such as  in  a  crowded  office.
+                    SILENT may be abbreviated as SIL.
+
+               NOPAUSE disables a "Press any key to continue" message after
+                    the  master diskette has been read and between each set
+                    of copies.   The pause is normally inserted to give the
+                    user  an  opportunity to read any important status mes-
+                    sages before the screen is erased.   NOPAUSE may be ab-
+                    breviated to NOP.
+
+          Converting Between Formats
+
+          The  CONVERT  option may be used to change the format of a master
+          diskette and may be used with all copying modes;  NORMAL,  RECORD
+          and PLAYBACK.
+
+               CONVERT specifies that the data on the master diskette is to
+                    be  converted  to a different format.   A target format
+                    must be specified with this option  and  can  be  360K,
+                    720K,  1.2M,  1.44M or 2.88M.   The diskette drive used
+                    for writing must be capable of  supporting  the  target
+                    format.    Thus,  specifying  CONVERT=360K when using a
+                    3.5" DSDD master diskette will cause the data from this
+                    diskette to be re-formatted for writing to a 5.25" DSDD
+                    (360K) diskette.
+
+                    The exact nature of the re-formatting operation depends
+                    on whether or not the BLIND option has been  specified.
+                    If a normal DOS-mode copy is being done,  the boot sec-
+                    tor and file allocation tables from the master diskette
+                    are modified to conform  to  the  new  format  and  the
+                    result  will be a readable DOS diskette.   It is impor-
+                    tant that the amount of data on the master diskette fit
+                    the new format.   In other words,  don't try to pour  a
+                    quart of data into a pint-sized diskette.
+
+
+          _________________________________________________________________
+
+          12  Command Line Syntax
+
+
+
+
+                    If,  on the other hand,  the BLIND copy option has been
+                    specified,  no alteration of the  data  read  from  the
+                    master  diskette  is  performed.    Data is simply "re-
+                    packed" into the appropriate-sized tracks on the target
+                    diskette.   In this context,  Apple Macintosh  HD  dis-
+                    kettes are considered to be "blind" copies.
+
+          Each target format has the following characteristics:
+
+               360K      40 tracks, 5.25" DSDD, 9 512-byte sectors
+               720K      80 tracks, 3.5" DSDD, 9 512-byte sectors
+               1.2M      80 tracks, 5.25" DSHD, 15 512-byte sectors
+               1.44M     80 tracks, 3.5" DSHD, 18 512-byte sectors
+               2.88M     80 tracks, 3.5" DSED, 36 512-byte sectors
+
+          CONVERT may be abbreviated as CON.
+
+          Memory Usage
+
+          Several options control how memory is used by CopyQM.   Normally,
+          CopyQM stores data from the master diskette first in main memory,
+          then,  after main memory has been used up,  XMS (extended memory)
+          is used if it is present.   If no XMS is present, or if it cannot
+          contain the remainder of the diskette data, EMS (expanded memory)
+          is used.   Finally,  a hard disk file is created to hold any  ex-
+          cess.    The location of this hard disk file can be controlled by
+          setting either the TEMP or CQTEMP environment  variables  to  the
+          drive and path name of a hard disk subdirectory.  For example, to
+          specify  that  CopyQM  should  create  its temporary files in the
+          directory called MYDIR on the C: drive,  the following DOS state-
+          ment could be placed in the AUTOEXEC.BAT file:
+
+                                 SET CQTEMP=C:\MYDIR
+
+          The  setting  of the CQTEMP environment variable takes precedence
+          over the setting of TEMP.
+
+               The NOEMS option specifies that EMS (expanded  memory)  must
+                    not  be  used by CopyQM.   This option can be used when
+                    EMS is to be reserved for use by other programs.
+
+               NOXMS specifies that XMS (extended memory) must not be  used
+                    by CopyQM.
+
+          _________________________________________________________________
+
+                                                    Command Line Syntax  13
+
+
+
+
+
+          If both NOEMS and NOXMS are specified, all data that will not fit
+          into  main memory is written to hard disk.   If hard disk storage
+          is not available, an Insufficient Memory error is displayed.
+
+          Formatting and Verifying
+
+          Several options are available to  control  the  manner  in  which
+          CopyQM formats and verifies diskettes.
+
+               SMART  indicates  that CopyQM should assume that the current
+                    diskette is formatted and bypass the formatting  opera-
+                    tion.    Should an error occur while writing or format-
+                    ting,  CopyQM will format the remainder of the diskette
+                    before writing to it.   SMART may be abbreviated as SM.
+                    If no errors in the existing format have been  detected
+                    at the point where the last cylinder of active data has
+                    been  written,  CopyQM  will end processing of the dis-
+                    kette without checking the remainder of the diskette to
+                    see if it is formatted.   However,  if CopyQM has begun
+                    formatting after detecting an error in the existing for-
+                    mat,  the area between the last cylinder of active data
+                    and the end of the diskette will  be  formatted  unless
+                    the   QUICK   option  (see  following)  has  also  been
+                    specified.
+
+               QUICK specifies that CopyQM should write copies only as  far
+                    as the last cylinder containing active data.   If QUICK
+                    is specified,  no formatting is performed  between  the
+                    last cylinder of data and the end of the diskette, even
+                    if  the diskette is not formatted.   This will normally
+                    not affect reading from the diskette,  but will inhibit
+                    writing  any large amount of data to the diskette if it
+                    has not been pre-formatted.   QUICK may be  abbreviated
+                    to QU.
+
+               COMPARE  changes  the  way  in  which  data  just written is
+                    verified.   Normally,  CopyQM simply reads the  written
+                    data back without inspecting its actual content.   If a
+                    computer system's hardware is operating correctly,  the
+                    probability of an undetected error is vanishingly small
+                    and  should  suffice for all but the most demanding ap-
+                    plications.  If COMPARE is specified, data is read back
+
+          _________________________________________________________________
+
+          14  Command Line Syntax
+
+
+
+
+                    from the copy and  compared  with  the  data  from  the
+                    master  diskette.    The  performance of CopyQM will be
+                    degraded somewhat if this option is  specified  because
+                    of  added CPU overhead.   COMPARE can be abbreviated as
+                    COM.
+
+               VERIFY specifies the extent and type of verification of writ-
+                    ten data that should be performed.    Normally,  CopyQM
+                    verifies  data  that lies between the start of the dis-
+                    kette and the last cylinder of data,  but  not  between
+                    the last cylinder of data and the end of the diskette.
+
+                    Specifying  VERIFY=ALL,  will cause the entire diskette
+                    to be verified by CopyQM.
+
+                    Specifying VERIFY=NONE  will  bypass  the  verification
+                    process for the entire diskette.
+
+                    VERIFY=DATA  is  the  default which specifies that only
+                    active data will be verified.
+
+                    VERIFY may be abbreviated as VE; ALL, NONE and DATA may
+                    be abbreviated as A, N and D, respectively.
+
+          Diskette Image Files
+
+          One of the unique features of CopyQM is its ability to  create  a
+          DOS file which represents the exact image of a diskette.  To make
+          a  DOS  file  from  a  diskette,  one records the diskette.   Re-
+          creating the diskette from an image file is called playback.  Any
+          diskette that can be read by CopyQM can be recorded.
+
+          In addition,  the ability to add a comment to the image  file  is
+          offered.    An  image  file's  integrity is assured by a cyclical
+          redundancy checksum (CRC) of the contents of the entire  diskette
+          image.
+
+          Diskette  image  files may be treated just as if they were master
+          diskettes.
+
+          They may be converted to other formats (see the CONVERT  option),
+          and may be serial-numbered (CopyQM Plus only).
+
+
+          _________________________________________________________________
+
+                                                    Command Line Syntax  15
+
+
+
+
+               The RECORD option specifies that a diskette image file is to
+                    be  created.    A file name must be given with this op-
+                    tion; for example, RECORD=MYFILE would cause a diskette
+                    image to be written to the file called MYFILE.   A spe-
+                    cial  case  occurs  when  the file name contains one or
+                    more question marks (?).  CopyQM starts by substituting
+                    the number zero (0) for each  question  mark.    Before
+                    each  diskette  image  file is recorded,  the rightmost
+                    question mark position is  increased  by  one  and  the
+                    resulting  file  name  used to record the next diskette
+                    image.  In other words,  a file name of A?B?C?D?  would
+                    result     in     image     files    named    A0B0C0D1,
+                    A0B0C0D2...A9B9C9D9.   Thus many diskette  image  files
+                    can  be created in a single session.   If the file name
+                    given for RECORD is /ASK, a prompt for a file name will
+                    be displayed after each master has been read.    RECORD
+                    may be abbreviated to REC.
+
+               PLAYBACK  does  exactly  the  opposite of what RECORD does--
+                    CopyQM creates diskettes from the diskette image  file.
+                    At  least one file name is required,  but more than one
+                    may be specified if the file names are separated by com-
+                    mas (,).  Thus, PLAYBACK=AFILE,BFILE,CFILE would result
+                    in diskettes being created from the files AFILE,  BFILE
+                    and CFILE.  File name "wild card" characters of "*" and
+                    "?"  are  permitted  to  specify  more  than  one file.
+                    CopyQM builds a list of all  matching  file  names  and
+                    sorts  the  list  by  file  name and extent.   Thus,  a
+                    specification of  PLAYBACK=B,A,D,C would result in read-
+                    ing the specified files in the order A, B, C and D.  If
+                    the file name given for PLAYBACK is /ASK, a prompt will
+                    appear onscreen for a file name whenever a master  dis-
+                    kette is required. PLAYBACK may be abbreviated to PL.
+
+               NOCOMMENT  suppresses both the prompt for and the display of
+                    the comment record associated with an image file.    In
+                    other words,  if NOCOMMENT is used,  a comment will not
+                    be requested when an image file is  created,  nor  will
+                    one  be  displayed when an image file is "played back";
+                    even if the image file has a  comment  associated  with
+                    it.  NOCOMMENT can be abbreviated to NOC.
+
+
+
+          _________________________________________________________________
+
+          16  Command Line Syntax
+
+
+
+
+                    Comment  entry  is not enabled with unregistered copies
+                    of CopyQM.  However, a comment may be added to an image
+                    file with the ICOMMENT utility which accompanies regis-
+                    tered copies of CopyQM.
+
+               NOSQUEEZE disables the run-length  encoding  used  on  image
+                    files.    If  a very slow (PC XT-class) system is being
+                    used,  this option may significantly improve the  speed
+                    at  which  a diskette image file is created.   However,
+                    any disk space benefits gained by compression  will  be
+                    lost.  NOSQUEEZE can be abbreviated to NOS.
+
+          Blind Mode
+
+          If  the BLIND copying option is specified,  (see "Basic Operating
+          Options" above),  CopyQM will attempt to determine the format  of
+          the master diskette automatically.  However, if the format of the
+          master  diskette  is  sufficiently  different  from "normal" dis-
+          kettes, it may not be possible to correctly determine the format.
+          There are several parameters which  can  be  used  to  explicitly
+          describe various aspects of a diskette format.
+
+               TRACKS  specifies  the  number  of tracks or cylinders to be
+                    copied.   Normally,  CopyQM assumes  either  40  or  80
+                    tracks,  depending  on  the  diskette density and drive
+                    type.   However,  there are some diskette formats which
+                    use  a  different  number  of  tracks.    For  example,
+                    TRACKS=41 specifies that 41 tracks are  to  be  copied.
+                    TRACKS may be abbreviated to TR.
+
+               SIDES  explicitly  specifies the number of diskette sides to
+                    be copied.   Often,  a single-sided format will contain
+                    unrelated  data from another system on its second side.
+                    SIDES=1 will override CopyQM's determination that a dis-
+                    kette is double-sided.   SIDES may  be  abbreviated  to
+                    SID.
+
+               FIRST  specifies  the number of the first sector on a track.
+                    Normally, this sector is assumed to be 1, but some dis-
+                    kette formats use non-standard values,  such as 0,  for
+                    the  first  sector.    FIRST=128 would specify that the
+                    first sector on a track is number 128.   FIRST  may  be
+                    abbreviated to FI.
+
+          _________________________________________________________________
+
+                                                    Command Line Syntax  17
+
+
+
+
+
+          "Shelling Out" Between Copies
+
+          For special processing of copies,  such as creation of labels, or
+          maintenance of a copy log,  CopyQM Plus offers facilities to  ex-
+          ecute DOS commands after each copy is written.
+
+          CopyQM  Plus  also  has a facility for serial numbering;  contact
+          Sydex for details about upgrading a standard  license  to  CopyQM
+          Plus.
+
+          CopyQM  Plus  offers  a method to insert copy-protection informa-
+          tion.  Contact Sydex for details.
+
+          Miscellaneous Options
+
+          Several  options  do  not  fit  neatly  into  any  of  the  above
+          categories and are described here:
+
+               CMD  specifies that a CopyQM command is continued in a named
+                    ASCII file.   Within such a file,  line boundaries  are
+                    ignored  and  a  statement  may be up to 512 characters
+                    long.  For example,
+
+                                  COPYQM A: CMD=MOREPARS
+
+                    indicates that extra command information  is  contained
+                    in  the  file MOREPARS.   A command file may itself in-
+                    clude a CMD option; however,  a "circular" command file
+                    structure  is not detected by CopyQM and will result in
+                    a never-ending loop.
+
+               RETRIES specifies that CopyQM writes be retried a  specified
+                    maximum  number  of  times.    For  example  RETRIES=13
+                    specifies  that  write  operations  that  fail  may  be
+                    retried up to 13 times.   Normally,  write failures are
+                    retried a maximum of three times.   RETRIES may be  ab-
+                    breviated to RET.
+
+
+
+
+
+
+          _________________________________________________________________
+
+          18  Command Line Syntax
+
+
+
+
+               VSN  requires  no  value  and  specifies  that random volume
+                    serial numbers should be placed in the boot  sector  of
+                    every  DOS diskette copy made by CopyQM.   For this op-
+                    tion to take effect, the boot sector of the master dis-
+                    kette must have been generated by a  DOS  system  later
+                    than 4.0.
+
+               WRITEPROTECT  ensures  that  every master diskette is write-
+                    protected.   If a master is read by CopyQM that is  not
+                    protected  (either  by adhesive tab for 5.25" diskettes
+                    or protect "slider" on 3.5" diskettes),  an error  mes-
+                    sage  is generated and the master diskette is rejected.
+                    WRITEPROTECT may be abbreviated to WR.
+
+               STATUS is used where diskette drives without hardware change
+                    status lines are used.  Drives without this feature are
+                    primarily 5.25" 360K  drives,  though  some  3.5"  720K
+                    drives also lack the change-detection capability.  If a
+                    copy  involving  drives  without change status lines is
+                    attempted and the BIOS option is specified,  a test for
+                    diskette  change  is not made until the completion of a
+                    copy.   STATUS can be used to  override  this  mode  of
+                    operation and specifies that drives must be checked for
+                    status  changes  after  a specified number of cylinders
+                    have been  written.    Thus,  STATUS=8  specifies  that
+                    status  checking  is  performed after every 8 cylinders
+                    have been written.
+
+          The COPYQM Environment Variable
+
+          Any of the above options may be assigned to the environment vari-
+          able "COPYQM"  for use by all CopyQM sessions.    However,  since
+          the  equal  sign  "=" is illegal inside of an environment string,
+          terms requiring values must use the semicolon ";" instead of  the
+          equal sign.  Thus, to specify by default that all CopyQM sessions
+          are  to  verify all data and sound a 20-second inactivity signal,
+          the following DOS command is used:
+
+                              SET COPYQM=NAG VERIFY;ALL
+
+
+
+
+
+          _________________________________________________________________
+
+                                                    Command Line Syntax  19
+
+
+
+
+          Locating Temporary Files
+
+          In addition to the  COPYQM  environment  variable,  the  variable
+          CQTEMP  can  be used to explicitly specify a drive and path to be
+          used to hold copy data that exceeds the  limit  of  memory.    If
+          CopyQM  cannot find the CQTEMP environment variable,  it searches
+          for one named TEMP.   If neither variable is  defined,  the  root
+          directory on the first hard disk is used.  The following DOS com-
+          mand  specifies  that  all hard disk overflow data be kept in the
+          TEMPFILE subdirectory on drive G:
+
+                               SET CQTEMP=G:\TEMPFILE
+
+          Command Examples
+
+          Here are some more examples of CopyQM command lines:
+
+                                       COPYQM A: B:
+
+               Reads the master diskette in A:, writes copies in A: and B:.
+
+                                   COPYQM SOURCE=B: A:
+
+               Reads the master in B:, writes copies in A:.
+
+                       COPYQM SOURCE=A: B: COUNT=1 REPEAT CONV=720K
+
+               Reads a set of master diskettes in A:,  converts it to  720K
+               format, writes one copy of each master in B:.
+
+                              COPYQM SOURCE=A: RECORD=MYFILE
+
+               Reads  a  master  diskette in A:,  produces a diskette image
+               file called MYFILE.
+
+                                     COPYQM A: CHECK
+
+               Reads a master diskette in A:,  reads and compares diskettes
+               read in A:.  No diskette writing is done.
+
+
+
+
+
+          _________________________________________________________________
+
+          20  Command Line Syntax
+
+
+
+
+
+                              COPYQM A: SMART COMPARE NOEMS
+
+               Reads a master diskette A:,  writes copies in A:, skips for-
+               matting of the copies if possible,  performs verification of
+               the  copies  by  reading  back copies and comparing the data
+               with the master.  Expanded Memory, if available, will not be
+               used.
+
+                           COPYQM A: PLAY=DISK* COUNT=3 REPEAT
+
+               Reads diskette image files  whose  names  satisfy  the  file
+               specification of DISK* and makes three copies of each file.
+
+
+          Differences from Earlier Versions
+
+          Users of previous versions of CopyQM will notice many differences
+          in  Version 3.1.   A few of the more significant ones are as fol-
+          lows:
+
+               1.   Improved display.   More information  has  been  incor-
+                    porated into an easier-to-read display.
+
+               2.   Image file embedded comments.  A comment can now be en-
+                    tered  at image file creation time or added later to an
+                    image file with the ICOMMENT utility.   Image file com-
+                    ments  are  displayed  when  the  image file is read by
+                    CopyQM.
+
+               3.   Choice of direct or BIOS interfaces.   All versions  of
+                    CopyQM prior to version 3.00 directly accessed the dis-
+                    kette controller hardware for operation.  Versions 3.00
+                    through  3.05  used the computer BIOS to accomplish the
+                    same thing.   Version 3.1 offers a choice of either the
+                    direct or BIOS interface, with the direct interface as-
+                    sumed  to  be the default.   Many users have found that
+                    the direct hardware interface provides superior perfor-
+                    mance over the BIOS interface.
+
+               4.   Persistent CQMenu options.  CQMenu now "remembers" many
+                    of the more common option choices made during  previous
+                    sessions.
+
+          _________________________________________________________________
+
+                                                    Command Line Syntax  21
+
+
+
+
+
+          This  represents  only  a  partial  list;  there  are  many other
+          changes, refinements and additions to CopyQM.
+
+
+          Memory Usage
+
+          CopyQM reads a master diskette or image file in one uninterrupted
+          pass.   Because most diskette formats can hold more data than can
+          be  contained  in conventional memory on a system,  CopyQM uses a
+          variety of methods to store the "overflow" data:
+
+               1.   As much data as can be contained in conventional memory
+                    is first read.  Sufficient memory must be available for
+                    CopyQM execution; this can be as little as 256K.
+
+               2.   A test for extended memory is then performed.  Extended
+                    memory, if it is to be used by CopyQM,  must be managed
+                    by   a   high  memory  manager,   such  as  Microsoft's
+                    HIMEM.SYS.   Unmanaged high memory will not be used  by
+                    CopyQM.    If  the  NOXMS  command line option has been
+                    specified, no check is made for extended memory.
+
+               3.   After extended memory has been filled,  or if  extended
+                    memory could not be located, a test for expanded memory
+                    is performed.  Expanded memory, or EMS, must conform to
+                    the Lotus/Intel/Microsoft Expanded Memory Specification
+                    level  4.0  or  later.    If  the NOEMS option has been
+                    specified on the command line, no check is made for ex-
+                    panded memory.
+
+               4.   Finally,  after expanded and extended memory have  been
+                    used,      a  search  for an environment variable named
+                    CQTEMP is performed.  If found,  it is taken to specify
+                    a  drive and directory on which a temporary file can be
+                    created.   If the CQTEMP variable cannot be located,  a
+                    search  for  an environment variable named TEMP is per-
+                    formed and the drive and path specified by it is  used.
+                    If  neither  environment  variable is found,  the first
+                    hard disk partition is used that has enough free  space
+                    available for the temporary file.
+
+
+
+          _________________________________________________________________
+
+          22  Differences
+
+
+
+
+               5.   If  sufficient  memory or disk space cannot be located,
+                    the master diskette or image file is rejected by CopyQM
+                    and a NOT ENOUGH MEMORY error message is displayed.
+
+          When converting between formats,  CopyQM writes a temporary image
+          file and then reads it back into memory.   A sufficient amount of
+          hard disk space must be available for the  temporary  image  file
+          and any overflow storage required for the master diskette image.
+
+
+          Diskette Image Files
+
+          CopyQM has the ability to save the information contained on a dis-
+          kette  in  the  form  of a hard disk file called a diskette image
+          file.  Diskette image files contain all of the data that would be
+          processed in the course of a diskette copy,  along with other in-
+          formation necessary to construct a copy.  After an image file has
+          been created, it can be read later by CopyQM to produce copies of
+          the original master diskette.
+
+          Diskette  image  files  are  unlike  "archive"  files in that in-
+          dividual diskette files cannot be manipulated.    However,  image
+          files of non-DOS diskettes can be created.
+
+          WHen CopyQM options are called out using the DOS command line in-
+          terface, the RECORD and PLAYBACK options respectively are used to
+          specify creation and reading of diskette image files.
+
+          Format conversion can be performed when creating a diskette image
+          file, as well when reading it as a master image.  In other words,
+          an  image  file  corresponding to a 2.88M diskette can be created
+          from a 360K diskette,  even though the system used to create  the
+          file does not support 2.88M diskettes.
+
+          An  on-screen  editor is provided for adding comments to an image
+          file.   Image files contain a 32-bit Cyclical Redundancy Checksum
+          (CRC)  which  is computed from the data read from the master dis-
+          kette.   This checksum is re-computed and verified when the  dis-
+          kette image file is read back.
+
+
+
+
+
+          _________________________________________________________________
+
+                                                           Memory Usage  23
+
+
+
+
+          Although a limited amount of data compression is performed within
+          a  diskette  image  file,  it is recommended that sufficient hard
+          disk space be reserved equal to the capacity of the  master  dis-
+          kette when diskette image files are created.
+
+
+          Copying Modes
+
+          CopyQM contains logic to optimize copying of DOS and Apple Macin-
+          tosh  high-density diskettes.   A master diskette is processed by
+          CopyQM only as far as  the  highest  cylinder  containing  active
+          data.   While this ensures that all active data is copied,  areas
+          of a diskette which contain erased data may not be copied.   Nor-
+          mally,  this  presents no problem and the result is a fully func-
+          tional diskette.    However,  some  copy-protected  products  may
+          record their protection information as erased data.
+
+          When  the  DOS  utility DISKCOMP is used to compare a master dis-
+          kette with a copy, it may report mismatches when erased data from
+          the master diskette is compared with the corresponding  areas  on
+          the copy.
+
+          If all areas of a diskette are to be copied, "blind" mode copying
+          may be specified.  In this mode of operation, CopyQM does not at-
+          tempt  to  interpret the data being copied and no "shortcuts" are
+          taken.   Usually,  "blind" mode is specified when a diskette  was
+          not created by a DOS or Apple Macintosh system.  However, "blind"
+          mode  may also be used for DOS and Macintosh diskettes when it is
+          desired that all data contained on a master  diskette  be  trans-
+          ferred to the copies.
+
+          Note  that  format  conversion,  described  below,  operates dif-
+          ferently in "blind" mode.
+
+
+
+
+
+
+
+
+
+
+
+          _________________________________________________________________
+
+          24  Image Files
+
+
+
+
+          Format Conversion
+
+          CopyQM can be used to translate one diskette format  to  another.
+          For  example,  a  360K  5.25" diskette can be converted to a 3.5"
+          1.44M diskette.   This conversion can be specified  by  a  CQMENU
+          menu choice or by the CopyQM CONVERT command-line option.
+
+          WHen  DOS diskettes are being copied,  CopyQM adjusts track sizes
+          and File Allocation Table (FAT) lengths and updates the  informa-
+          tion contained in the boot sector.   The resulting combination of
+          active data and new system tables must  fit  on  the  new  format
+          specified.   Thus,  a 1.44M diskette containing less than 360K of
+          data can be copied to a 360K diskette.
+
+          When non-DOS diskettes are being copied in "blind" mode,  conver-
+          sion is performed differently.   Data from the master diskette is
+          "re-packed" to fit the new track size;  no other adjustments  are
+          performed.
+
+          A  special  case  occurs  when  conversion of a DOS 1.2M or 1.44M
+          master to a 2.88M format is specified.  Because of limitations in
+          the conversion process,  the result will exhibit  only  2.04M  of
+          available data space, rather than the entire 2.88M.
+
+          CopyQM  also supports non-conversion copies between some formats.
+          This capability,  undocumented in previous versions, allows copy-
+          ing of some smaller formats to larger ones without any processing
+          of the data.  For example, a 1.2M 5.25" diskette can be copied to
+          a 1.44M 3.5" diskette.  The result is a 3.5" 1.2M diskette.
+
+
+          Copy Verification
+
+          Several methods of checking the accuracy of data are  offered  by
+          CopyQM.    CQMenu  offers  a menu selection for each verification
+          method.
+
+          By default, CopyQM checks the part of a diskette known to contain
+          active data for readability by reading the copy diskette and dis-
+          carding the data.   The part of the copy  not  containing  active
+          data is not checked.  This corresponds to the VERIFY=DATA command
+          line option.
+
+
+          _________________________________________________________________
+
+                                                      Format Conversion  25
+
+
+
+
+          An  entire  diskette can be checked for readability by specifying
+          the VERIFY=ALL option on CopyQM's command line.   Note  that  the
+          accuracy  of  the  copied  data  is  not  checked,  but  only the
+          readability of the data.
+
+          Read-back  checks  can  be  completely  disabled  by   specifying
+          VERIFY=NONE.    This option is usually selected when the speed of
+          the copy operation is more important than  the  accuracy  of  the
+          copy.
+
+          A  byte-by-byte  compare can also be specified by use of the COM-
+          PARE command-line option.   Comparison is performed only  on  the
+          part of the diskette containing active data.   Inactive areas can
+          be checked for readability only.
+
+
+          Checking Copies
+
+          An option not covered by a  CQMenu  selection  alters  the  basic
+          operation  of  CopyQM.    If the CHECK option is specified on the
+          CopyQM command line,  copies are not formatted or written.    In-
+          stead  each  copy  is compared with the data from the master dis-
+          kette.   This option is useful when the validity of a  number  of
+          copies needs to be checked against a master standard copy.
+
+
+          Audible Signals
+
+          CopyQM provides several audible "cues" during its operation:
+
+               1.   A  high-pitched  "warble" that indicates that an opera-
+                    tion has been successfully completed.    This  tone  is
+                    sounded  after  a master diskette has been read,  after
+                    after each copy has been written,  and  after  keyboard
+                    entries have been selected.
+
+               2.   A  low-pitched  "beep" that signals an error condition.
+                    This tone is sounded after unsuccessful  disk  read  or
+                    write operations,  and when an erroneous keyboard entry
+                    is made.
+
+
+
+
+          _________________________________________________________________
+
+          26  Verification
+
+
+
+
+               3.   A medium-pitched "warble" that signals a need for atten-
+                    tion.   This tone can be selected as an option  and  is
+                    sounded  after  intervals  of 20 seconds of inactivity.
+                    The command line option for this tone is NAG.
+
+          All audible signaling may be disabled by CQMenu menu selection or
+          by the SILENT command line option.
+
+
+          "Smart" Formatting
+
+          By default,  CopyQM  formats  all  copies  before  writing  data.
+          However,  it  is  possible  to  direct  CopyQM  to check for pre-
+          formatted media before writing.   This option is available  by  a
+          CQMenu choice, or by the SMART command line option.
+
+          "Smart"  mode  attempts  to write data without first formatting a
+          copy.  If writing and verification succeed,  the inactive area on
+          the copy is skipped.  However, if an error is detected while writ-
+          ing  active  data,  all remaining tracks on the diskette are for-
+          matted before being written.
+
+          "Smart" mode can result in substantial time savings  over  normal
+          format-then-write operation.
+
+
+          Quick Mode Copying
+
+          When  copies  of  partially  full DOS diskettes are made,  a con-
+          siderable increase in copying speed can be obtained by specifying
+          the QUICK command-line option.   When this  option  is  selected,
+          only the part of the master diskette that contains active data is
+          copied or formatted.
+
+          However,  when using unformatted blank diskettes, it is important
+          to realize that tracks at the end of each diskette  will  not  be
+          formatted.    This may make it impossible for users of the copies
+          to successfully write to the copies or duplicate them  using  the
+          DOS DISKCOPY utility.
+
+          This option is not available from within CQMenu.
+
+
+
+          _________________________________________________________________
+
+                                                        Audible Signals  27
+
+
+
+
+          Display Color Set
+
+          In  some  instances,  it may be desired that CopyQM show all dis-
+          plays with a black-and-white (monochrome) color  palette.    This
+          may be specified by means of the MONO command line option.   This
+          option is not available from CQMenu,  but if  CQMenu  is  started
+          with  the  "MONO"  command-line option,  the monochrome color set
+          will be used for CopyQM also.
+
+          A monochrome color set is particularly useful when portable  sys-
+          tems with liquid crystal displays (LCD) are used.   Many of these
+          systems support color as  shades  of  gray,  rather  than  actual
+          colors.  A monochrome color set will be found to be more readable
+          in this case.
+
+
+          Status Messages
+
+          CopyQM  displays the following status messages during the process
+          of reading and writing diskettes:
+
+                                     DRIVE NOT READY
+
+               Meaning:  The drive has become not ready during  reading  or
+               writing.    This  is usually the result of opening the drive
+               door or removing the diskette from the drive.   The  current
+               read  or  write  operation  is canceled and the operation is
+               retried from its beginning.
+
+                                      INSERT MASTER
+
+               Meaning:  CopyQM is awaiting insertion of  the  master  dis-
+               kette.    If  there  is  a  diskette already in the diskette
+               drive,  the diskette should be removed and re-inserted  into
+               the  drive  to signal that the correct diskette has been in-
+               serted.
+
+                                      READY TO WRITE
+
+               Meaning:  CopyQM has noticed that the last diskette  written
+               in this drive has been removed.  A blank diskette may be in-
+               serted  in the drive,  but the message will not change until
+               CopyQM is ready to write to the drive.
+
+          _________________________________________________________________
+
+          28  Quick Mode
+
+
+
+
+
+                                       INSERT BLANK
+
+               Meaning:  CopyQM is awaiting insertion  of  the  next  blank
+               copy  diskette.   This message persists after the blank dis-
+               kette has been inserted and is changed only when writing has
+               begun on the drive.
+
+                                       INSERT COPY
+
+               Meaning:  This message occurs only when CopyQM is being  run
+               with  the  CHECK  option.    The  next  diskette  copy to be
+               verified should be inserted.   This message is  not  removed
+               until verification of the copy has actually begun.
+
+                                        ANALYZING
+
+               Meaning:    CopyQM has begun reading the master diskette and
+               is evaluating its structure and contents.
+
+                                         READING
+
+               Meaning:  The structure of  the  master  diskette  has  been
+               determined and data is being read and stored for later writ-
+               ing.
+
+                                         WRITING
+
+               Meaning:    CopyQM is in the process of writing a copy.   No
+               formatting is being performed.
+
+                                   WRITING WITH FORMAT
+
+               Meaning:  CopyQM is formatting and writing a copy.
+
+                                        RECORDING
+
+               Meaning:  A diskette image file is being written to disk.
+
+
+
+
+
+
+          _________________________________________________________________
+
+                                                        Status Messages  29
+
+
+
+
+                                        CONVERTING
+
+               Meaning:  Diskette data is being converted to the  requested
+               format.
+
+                                         CHECKING
+
+               Meaning:  This message occurs only in CHECK mode.  CopyQM is
+               reading  a  diskette  copy  and  comparing the data with the
+               master.
+
+                                      REMOVE MASTER
+
+               Meaning:  CopyQM has finished reading the  master  diskette.
+               The diskette should be removed from the drive.
+
+                                     RE-INSERT MASTER
+
+               Meaning:    The  current diskette should be removed from the
+               drive and inserted again.   CopyQM is attempting  to  ensure
+               that the diskette in the drive is,  in fact, the diskette to
+               be copied.
+
+                                        READ ERROR
+
+               Meaning:  The master diskette did not read  without  errors.
+               Reading  of  the same diskette can be attempted again,  or a
+               new master diskette may be inserted.
+
+                                       NOT DOS DISK
+
+               Meaning:  The boot sector on the master  diskette  does  not
+               conform to any DOS standard layout.   If the diskette is not
+               a standard DOS format,  it may be possible to copy the  dis-
+               kette by specifying the BLIND option.  This message may also
+               occur  if the diskette contains a computer virus in its boot
+               sector.   Diskettes infected  with  the  so-called  "Stoned"
+               virus will cause this message to be displayed.
+
+
+
+
+
+
+          _________________________________________________________________
+
+          30  Status Messages
+
+
+
+
+
+                                      OUT OF MEMORY
+
+               Meaning:    Not enough memory and hard disk storage could be
+               located to contain the data from the master  diskette.    It
+               may be possible to avoid this message by explicitly specify-
+               ing the location of the overflow hard disk file.
+
+                                      READ COMPLETE
+
+               Meaning:    The specified diskette image file has been read.
+               A blank diskette can be inserted into the drive for copying.
+
+                                      NOT PROTECTED
+
+               Meaning:  The WRITEPROTECT option has been specified and the
+               master diskette is not write-protected.
+
+                                    COMPLETE - REMOVE
+
+               Meaning:  A diskette copy has  been  successfully  completed
+               and can be removed from the diskette drive.
+
+                                      DISK UNUSABLE
+
+               Meaning:    Writing  the  diskette  failed because of an un-
+               recoverable error.   Either the wrong media type (high  den-
+               sity  instead  of low density) has been used or the diskette
+               contains a permanent flaw.
+
+                                    VERIFIED - REMOVE
+
+               Meaning:  This message occurs only when CopyQM is being  run
+               with the CHECK option.   The diskette copy has been success-
+               fully verified and may be removed from the drive.
+
+                                   PROTECTED--TRY AGAIN
+
+               Meaning:  Writing has failed on a diskette because the  dis-
+               kette  was  write  protected.     The diskette should be re-
+               inserted after the diskette has been write-enabled.
+
+
+
+          _________________________________________________________________
+
+                                                        Status Messages  31
+
+
+
+
+
+                                      BAD IMAGE FILE
+
+               Meaning:  CopyQM has detected an error in the diskette image
+               file being read.   No recovery from the error  is  possible.
+               This  message can occur if a version of CopyQM prior to 2.10
+               was used to create the image file.
+
+                                       FILE WRITTEN
+
+               Meaning:  The requested diskette image file has been written
+               and the master diskette can be removed from the drive.
+
+                                    OUT OF FILE SPACE
+
+               Meaning:  There was not enough hard disk space  to  success-
+               fully  create the requested diskette image file.   This mes-
+               sage also occurs when there is insufficient hard disk  space
+               to  hold temporary files when format conversion has been re-
+               quested.
+
+                                    TARGETTE TOO SMALL
+
+               Meaning:  After the requested  format  conversion  was  per-
+               formed, CopyQM determined that the data from the master dis-
+               kette  would  not  fit on a single diskette of the requested
+               format.
+
+
+          The ICOMMENT Utility
+
+          ICOMMENT can be used to add comments to diskette image  files  or
+          edit  comments  already  contained in image files.   In addition,
+          ICOMMENT adds or  re-computes  the  Cyclical  Redundacy  Checksum
+          (CRC) for image file data.
+
+          To run ICOMMENT, the following command format is used:
+
+                                 ICOMMENT file-list
+
+
+
+
+
+          _________________________________________________________________
+
+          32  Status Messages
+
+
+
+
+          Where  "file-list"  represents  a diskette image file name or the
+          name of several diskette image files.   Wildcard file  specifiers
+          of "*" and "?" are allowed.   In addition, the switch "/MONO" can
+          be used.  For example, the command:
+
+                              ICOMMENT /MONO MYIMAGE.*
+
+          selects a monochrome color palette and processes all image  files
+          satisfying the file specification "MYIMAGE.*".
+
+          ICOMMENT  is  included  only with registered and Plus versions of
+          CopyQM.
+
+          Specifying a Diskette Configuration
+
+          Normally,  CopyQM can determine a system's configuration  without
+          intervention.    However,  there  are cases where add-on diskette
+          adapters make it impossible to accurately sense the system setup.
+
+          To determine if CopyQM has correctly sensed  your  system's  con-
+          figuration,  use  the  VIEWCONF  command  that  is  included with
+          CopyQM.
+
+          If necessary,  a text file,  named DISKETTE.CFG can  be  prepared
+          using  any text editor or word processing program in non-document
+          mode.  This file can be placed anywhere in the DOS command search
+          path and will be automatically located by CopyQM.
+
+          The layout of the configuration file is  straightforward.    Each
+          line  in  the  file  begins with the letter of the diskette drive
+          being described,  followed by a colon (:).   The rest of the line
+          contains keywords and numeric values which specify the configura-
+          tion  for that drive.   Each item on the line is separated by one
+          or more spaces.  In most cases, keywords can be abbreviated.
+
+          A configuration file  line  can  contain  any  of  the  following
+          keywords.   The minimum abbreviation for each keyword is shown in
+          parentheses:
+
+               360K (3) specifies a 5.25" 360K drive.
+
+               720K (7) specifies a 3.5" 720K drive.   Most utilities  also
+               support the less common 5.25" 720K quad-density drive.
+
+          _________________________________________________________________
+
+                                                  The ICOMMMENT Utility  33
+
+
+
+
+
+               1.2M (1.2) specifies a 5.25" 1.2M drive.
+
+               1.44M (1.4) specifies a 3.5" 1.44M drive.
+
+               2.88M (2.8) specifies a 3.5" 2.88M drive.
+
+               8INCH (8) specifies an 8" drive.
+
+               Note that the drive type must be specified.
+
+               BIOS (B) specifies the BIOS drive number for the drive.  The
+               word BIOS is followed by a  a  number  between  0  and  127.
+               This  number is also the same one used for the /D: parameter
+               when DRIVER.SYS is used to support the drive in the system's
+               CONFIG.SYS file.
+
+               PORT (P) specifies the base I/O port  of  the  adapter  con-
+               nected to the drive.  The first or primary adapter is always
+               described  by the number 3F0H (observe the "H" at the end of
+               a hexadecimal number.)  Secondary adapters are  usually  ad-
+               dressed  by  the  number 370H and sometimes by 360H or 3E0H.
+               If not specified, a PORT value of 3F0H is assumed.
+
+               UNIT (U) specifies the physical unit number of the drive  on
+               the adapter.  This unit number must be within the range of 0
+               to 3 and should not be confused with the BIOS unit number.
+
+               DMA  (DM)  specifies  the Direct Memory Access channel which
+               services the adapter.  If omitted, DMA channel 2 is assumed.
+
+               INTERRUPT (I) specifies the system interrupt which  services
+               the adapter. If omitted, interrupt 6 is assumed.
+
+               SEEK  (S)  specifies the track-to-track stepping time of the
+               drive in milliseconds.   If omitted,  6 milliseconds is  as-
+               sumed.
+
+               CHANGE  (CH)  specifies  that  the  drive possesses diskette
+               change detection circuitry.  If this term  is  omitted,  the
+               drive is assumed not to support change detection.   Usually,
+               1.2M,  1.44M and 2.88M drives  have  change  detection  cir-
+               cuitry; 360K, 720K and 8 inch drives do not.
+
+          _________________________________________________________________
+
+          34  Specifying a Configuration
+
+
+
+
+
+               DUAL (DU) is applicable for 1.2M 5.25"drives only. Some inex-
+               pensive  secondary adapters require that 1.2M drives be con-
+               figured for dual-speed operation in which the spindle  motor
+               spins  at 360 revolutions per minute for high-density opera-
+               tion and 300 revolutions per minute for  low-density  opera-
+               tion. If omitted, normal single-speed operation is assumed.
+
+               COMPATICARD  (CO) specifies that the drive is connected to a
+               MicroSolutions Compaticard Itm or Compaticard IItm  adapter.
+               If the Compaticard IVtm is being used,  this term should not
+               be specified.
+
+               DAA (DA) indicates that the drive is  connected  to  an  IBM
+               PS/2 Diskette Adapter/A. This adapter is present on external
+               drives on Microchannel systems only and is assumed not to be
+               present.
+
+          A number is required to follow the following words:
+
+                                        BIOS
+                                        PORT
+                                        UNIT
+                                         DMA
+                                      INTERRUPT
+                                        SEEK
+
+          A  number is assumed to be a decimal value unless suffixed by the
+          letter "H" which indicates a hexadecimal quantity.    Thus,  1000
+          and 3E8H refer to the same quantity.
+
+          Here is an example of a DISKETTE.CFG file:
+
+               A: BIOS 0 UNIT 0 1.44M CHANGE
+               B: BIOS 1 UNIT 1 1.2M CH
+               Q: BIOS 4 PORT 370H UNIT 0 360K
+
+          There are two other items which may start a configuration line.
+
+          DEFAULT:  initializes  the configuration to the values that would
+          be obtained if automatic configuration sensing were  to  be  per-
+          formed.    Use of DEFAULT is useful if automatic sensing has cor-
+
+
+          _________________________________________________________________
+
+                                             Specifying a Configuration  35
+
+
+
+
+          rectly sensed all but one or two  drives.  For  example,  suppose
+          that the configuration given above is correctly sensed,  with the
+          exception of drive Q:. The DISKETTE.CFG file could be stated as:
+
+               DEFAULT:
+               Q: BIOS 4 PORT 370H UNIT 0 360K
+
+          DEFAULT must appear as the only item on a line.
+
+          NOTE: causes the remainder of a line to be ignored.  Comments may
+          be  inserted into the DISKETTE.CFG file in this manner.   For ex-
+          ample:
+
+               NOTE:  Automatic sensing gets everything but
+               NOTE:  drive Q: connected to a special second
+               NOTE:  adapter.
+               DEFAULT:
+               Q: BIOS 4 PORT 370H UNIT 0 360K
+               NOTE:  This is the end of the configuration file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          ----------------------------------------------------------------
+          Certain terms used in this document are trade  marks  of  one  or
+          more of the following companies:  Apple Computer,  Microsoft Cor-
+          poration,  International Business Machines Corporation,  Quarter-
+          deck,  Inc.,  Microsolutions,  Inc.,  Digital Research Inc.,  The
+          Software Link, Inc.
+
+
+          _________________________________________________________________
+
+          36  Specifying a Configuration
+

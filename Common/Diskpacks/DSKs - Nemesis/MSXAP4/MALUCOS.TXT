@@ -1,0 +1,29 @@
+
+CUBOS MALUCOS
+
+Por Jo±o do Valle Paiva
+
+Para carregar:
+
+A>MALUCOS e pressione [RETURN]
+
+Para jogar:
+
+Seu objetivo ‚ colocar os quatro
+cubos na mesma posi‡±o em  menos
+de 100 movimentos.  Use as setas
+e a barra de espa‡os.
+
+Este programa foi   desenvolvido
+para o 1§ CONCURSO NACIONAL   DE
+PROGRAMAS PARA MSX realizado pe-
+la NEMESIS INFORMATICA LTDA   em
+Agosto de 1988.
+
+O programa vencedor foi o "Adven
+ture O CONDE DE MONTE CRISTO" de
+Carlos Fabiano do Rio de Janeiro
+
+COMERCIALIZA€°O PROIBIDA!
+
+

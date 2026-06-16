@@ -1,0 +1,39 @@
+
+PICTURE (Criador de "SHAPES")
+
+By DISCOVERY INFORM„TICA LTDA.
+
+A empresa Discovery criou o PI
+CTURE para ser utilizado   com
+suas cole‡µes de "SHAPES" para
+seus programas de DESK-TOP PU-
+BLISHING sem a   interferˆncia
+do editor gr fico GRAPHOS III.
+
+Para carregar digite:
+
+A>PICTURE e tecle [RETURN]!
+
+Para utiliz -lo:
+
+Carregue uma tela gr fica   do
+formato GRP, SCR ou LAY  e use
+a op‡±o CRIA SHAPES para criar
+o seu banco de figuras.   Para
+cri -las, leve a seta at‚ o la
+do superior esquerdo da figura
+e pressione [RETURN], e depois
+v  ao canto inferior do   lado
+direito e tecle [RETURN] nova-
+mente, e assim por diante. 
+
+Depois de criar os "SHAPES" v 
+ao menu inicial pressionando a
+tecla [ESC] e utilize a  op‡±o
+de GRAVAR os "SHAPES" para uti
+liz los posteriormente nos pro
+gramas PROFISSIONAL PUBLISHER,
+MSX PAGE MAKER ou GRAPHOS III.
+
+FreeWare - PROIBIDA A COMERCIALIZA€°O
+

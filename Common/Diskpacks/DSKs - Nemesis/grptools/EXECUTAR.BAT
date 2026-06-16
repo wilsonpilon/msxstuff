@@ -1,0 +1,4 @@
+ABRETELA
+MODE 40
+DIR/W
+

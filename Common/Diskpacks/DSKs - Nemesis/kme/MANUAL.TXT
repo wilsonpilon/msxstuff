@@ -1,0 +1,618 @@
+     KIT MICRO EMPRESA 1.2
+
+     Programadores: Equipe NEMESIS
+
+     O  KIT  MICRO  EMPRESA  Ç  uma   compilaá±o   de   programas
+profissionais  criados  para  microcomputadores  MSX,  que   aqui
+reunidos  formam  um   poderoso   pacote   integrado   capaz   de
+informatizar escrit¢rios, estabelecimentos comerciais de  pequeno
+porte, consult¢rios, etc.
+     O KIT MICRO EMPRESA Ç composto basicamente por cinco m¢dulos
+principais que s±o ABERTURA, MALA  DIRETA,  FICHÑRIO  ELETRéNICO,
+EDITOR DE TEXTOS e TOOL-KIT.  Vamos  passar  ent±o,  a  descrever
+detalhadamente o funcionamento de cada um destes m¢dulos:
+
+     MENU DE ABERTURA
+
+     Ao ligar o equipamento e inserir o disco  com  o  KIT  MICRO
+EMPRESA, automaticamente ser† mostrada uma tela  com  o  nome  do
+programa e logo ap¢s ser† carregado um menu de  abertura  com  as
+principais opáµes e os m¢dulos  disponiveis  do  pacote.  Bastar†
+pressionarmos a tecla com o n£mero correspondente Ö nossa opá±o:
+
+     [1] Mala direta
+
+     Carrega o m¢dulo de mala direta, ou cadastro de clientes. Ao
+ser carregado, o m¢dulo de mala direta apresentar† o seu  pr¢prio
+menu de opáµes.
+
+     [2] Editor de textos
+
+     Carrega o m¢dulo de ediá±o de textos para ser utilizado como
+uma  m†quina  de  escrever  eletrìnica.  Ao  ser  carregado,  ele
+apresentar† o seu pr¢prio menu de opáµes.
+
+     [3] Fich†rio eletrìnico
+
+     Carrega o fich†rio eletrìnico. Ao ser  carregado,  o  m¢dulo
+apresentar† o seu pr¢prio menu de opáµes.
+
+     [4] Arquivos no disco
+
+     Esta opá±o mostra o nome dos arquivos existentes no disco em
+utilizaá±o:  MSX-DOS.SYS  e  COMMAND.COM  (sistema  operacional),
+AUTOEXEC.BAT (auto-executor do sistema),  ABERTURA.COM  (menu  de
+abertura), M-DIRETA.COM  (m¢dulo  de  mala-direta),  E-TEXTOS.COM
+(m¢dulo  editor  de  textos),   FICHARIO.COM   (m¢dulo   fich†rio
+eletrìnico) e outros programas do sistema. Os arquivos de  texto,
+os de mala direta e as fichas possuem as respectivas terminaáµes:
+".TXT", ".MDT" e ".FCH". Para abortar a opá±o e retornar ao  menu
+inicial, pressione a tecla [ESC].
+
+     [5] Calculadora
+
+     Esta opá±o chama a calculadora para  ser  utilizada  com  as
+teclas numÇricas do teclado. A tecla [RETURN] zera os d°gitos,  a
+tecla [C] cancela o £ltimo n£mero digitado  e  [ESC]  retorna  ao
+menu inicial.
+
+     [6] Cìr de fundo
+
+     Com esta opá±o, podemos alterar a  cor  de  fundo  do  v°deo
+atravÇs  das  teclas  de  funá±o  [F1]  a  [F5].  As  cores   s±o
+respectivamente: azul, preto, verde, vermelho,  e  p£rpura.  Para
+sair pressione [ESC].
+
+     [7] Padr±o de impressora
+
+     Aqui podemos selecionar o  padr±o  da  impressora  utilizada
+(consulte o manual da sua impressora).
+
+     [8] Retorna ao DOS
+
+     Por esta opá±o, poderemos retornar  ao  sistema  operacional
+("A>"). Consulte o manual do  seu  disk-drive  para  conhecer  as
+possibilidades deste ambiente).
+     O m¢dulo de abertura (ABERTURA.COM) poder† ser recarregado a
+qualquer momento digitando-se no siatema operacional:
+
+     A>ABERTURA (n±o se esqueáa de pressionar [RETURN]).
+
+     [9] Tool-kit
+
+     Carrega o m¢dulo de apresentaá±o das ferramentas de apoio do
+sistema, que veremos adiante.
+
+     Vamos passar ent±o a descrever com mais detalhes cada um dos
+m¢dulos que compµem o KIT MICRO EMPRESA:
+
+     MALA DIRETA
+
+     O m¢dulo de MALA DIRETA  permite  o  cadastro  de  clientes,
+fornecedores ou qualquer grupo de pessoas f°sicas  ou  jur°dicas,
+visando  uma  r†pida  consulta,  impress±o   de   relat¢rios   ou
+etiquetas, lista telefìnica, etc.
+
+     CARREGAMENTO
+
+     Para executar a MALA DIRETA digite:
+
+     A>M-DIRETA e tecle [RETURN].
+
+     OPÄ¥ES INICIAIS
+
+     Antes de entrar no programa propriamente  dito  (opá±o  1  -
+editar arquivo), poderemos configurar as teclas especiais  (opá±o
+2 - redefinir as teclas),o tipo de impressora  utilizada  (Padrao
+MSX ou ABNT - opá±o 7) e a cor de fundo do v°deo (opá±o 6).
+     As teclas especiais consistem em programaáµes especiais para
+as  teclas  [SELECT]  e  [TAB]  para  que  as  mesmas   funcionem
+similarmente Ös teclas de funáµes de [F1] a [F1O]  existentes  no
+MSX.  Poderemos  programar   [TAB]   e   [A]   que   pressionadas
+sequencialmente escrevam a palavra "ANTONIO"  ou  outra  qualquer
+que possamos desejar.
+     Para programar tais teclas use a opcao  [2]  deste  menu  de
+entrada. Programe as teclas para uso com [SELECT] com os nomes de
+sua escolha e ao final tecle [ESC] para  sair.  Pode-se  imprimir
+tal programaá±o para  futura  consulta.  Programaremos  ent±o  as
+palavras para uso com a tecla [TAB] da mesma forma  como  fizemos
+com [SELECT]. Ao final poderemos gravar  esta  configuraá±o  para
+uso futuro.
+
+     CADASTRANDO CLIENTES
+
+     Este m¢dulo foi  desenvolvido  para  ser  utilizado  com  os
+recursos de ediá±o idànticos ao uso normal na  programaá±o  basic
+(setas, BS, return, insert, delete, etc). A  MALA  DIRETA  Ç  t±o
+simples de ser utilizado que torna estas instruáµes  praticamente
+desnecess†rias. Em pouco tempo de uso  e  mesmo  sem  pr†tica  ou
+treino,  o  usu†rio  estar†  a  par  de  todos  seus  pormenores.
+Entretanto trata-se de um programa sofisticado  e  poderoso,  com
+possibilidade de  armazenar  atÇ  7.OOO  nomes  por  disco.  Como
+arquivo do tipo aleat¢rio, ele  grava  as  fichas  em  disco  por
+"buffer"     automaticamente     conforme     sejam     digitadas
+(aproximadamente de 5 em 5). O arquivo ser† encerrado  ("closed")
+quando usarmos a opá±o de abandonar o programa (obrigat¢rio).
+     Na opá±o 1 do menu  de  entrada,  entraremos  na  ediá±o  do
+arquivo, que  inicia-se  apresentando  seu  menu  principal,  que
+descreveremos no pr¢ximo item.
+
+     MENU PRINCIPAL
+
+     Este menu apresenta as funáµes principais  do  programa  que
+podem ser acessadas pela posiá±o do  cursor  movido  pelas  setas
+(para cima e para baixo) e pressionando-se [RETURN].
+     As opáµes dispon°veis estar±o sendo descritas em seguida.
+
+     MODIFICAR REGISTRO
+
+     Por esta opá±o entraremos na ediá±o de  fichas  pr¢priamente
+dita: poderemos INSERIR uma  nova  ficha,  DELETAR  (APAGAR)  uma
+ficha  preenchida,  EDITAR  (MODIFICAR)  uma  ficha   preenchida,
+PROCURAR por uma determinada ficha, ou voltar ao MENU principal.
+     Para inserir dados na ficha basta digit†-los  e  em  seguida
+pressionar [RETURN]  para  passar  para  o  pr¢ximo  campo.  Para
+desistir pressione [ESC].
+     Proceda da  mesma  maneira  para  editar  ou  modificar  uma
+ficha.
+     Na opá±o "deletar" a ficha ser† apagada. Cuidado ao utilizar
+esta funá±o.
+     Em "procura" poderemos  listar  as  fichas  j†  preenchidas,
+"folhear" as  mesmas,  ou  procurar  por  uma  determinada  ficha
+digitando-se uma "guia" de procura  como  no  exemplo:  poderemos
+procurar a ficha da NEMESIS INFORMATICA LTDA. pelo  campo  "Nome"
+digitando a "guia": NEMESIS INFORMATICA LTDA. ou apenas "NEM"  ou
+ainda "ESIS", etc. Ser† localizada a primeira ficha que  contenha
+a sequància de caracteres digitada.
+
+     ORDENAR O ARQUIVO
+
+     Com mais de uma ficha preenchida, podemos orden†-las por  um
+de seus campos obedecendo o ordem alfabÇtica e numeral de  acordo
+com os padrµes do c¢digo "ASCII".
+     Em alguns casos, com arquivos  muito  extensos  a  ordenaá±o
+ser† efetuada com muita lentid±o. Recomenda-se gravar  o  arquivo
+com antecedància (para isso basta utilizar a opá±o para abandonar
+o programa) e carreg†-lo novamente em seguida.
+
+     IMPRIMIR O ARQUIVO
+
+     Por esta opá±o podemos reproduzir  uma  copia  em  papel  do
+arquivo introduzido. Sao 3 os formatos de  impress±o:  Etiquetas,
+Relat¢rios e Lista Telefìnica.
+     Pode-se tambÇm selecionar por campo e "guias" as fichas  que
+ser±o impressas.
+
+     VISUALIZAR AS FICHAS
+
+     Usa-se esta opá±o para a apresentaá±o das  fichas  na  tela.
+Pode-se selecion†-las sequencialmente utilizando-se as teclas  de
+direá±o (seta direita e  seta  esquerda).  Para  voltar  ao  menu
+principal pressione a tecla [ESC].
+
+     VOLTAR AO SISTEMA
+
+     Com   esta    opá±o    podemos    abandonar    o    programa
+(obrigat¢riamente depois da insers±o de novas fichas). Esta opá±o
+executa automaticamente o "close"  no  arquivo  aleat¢rio  e  nos
+permite  passar  para  um  outro  arquivo,  voltar   ao   sistema
+operacional de disco  (MSX-DOS)  para  passarmos  para  um  outro
+m¢dulo do KIT MICRO EMPRESA; ou em caso de desistància, voltar ao
+menu principal.
+
+     FICHÑRIO ELETRéNICO
+
+     Este m¢dulo foi desenvolvido para  facilitar  a  criaá±o  de
+fichas de contrìle ou identificaá±o  de  produtos,  equipamentos,
+matÇria prima, etc. Na  verdade  poderemos  utiliz†-lo  nas  mais
+diversas diversas aplicaáµes.
+
+     CARREGAMENTO
+
+     Para carregar o FICHÑRIO ELETRéNICO digite:
+
+     A>FICHARIO e tecle [RETURN].
+
+     MENU PRINCIPAL
+
+     No menu principal encontramos  as  diversas  opáµes  que  j†
+conhecemos de outros m¢dulos como diret¢rio, cor de fundo, apagar
+arquivo, sair para o editor de textos,  etc.  As  novidades  s±o:
+Editar ficha e Carregar ficha.
+
+     EDITAR FICHA
+
+     Nesta opá±o poderemos criar uma nova ficha com novos  dados.
+Ser±o mostradas os nomes das fichas existentes no  disco  (se  j†
+existirem) e ser† pedido um novo nome para a ficha Ö ser  criada.
+Se o nome j†  existir,  ser†  pedida  uma  nova  opá±o.  Em  caso
+contr†rio,  ser†  perguntada  a  data   (opcional)   no   formato
+"dd/mm/aaaa". Exemplo: 25/03/1991.
+     Aparecer†  ent±o  a  ficha  pr¢priamente  dita,   para   ser
+preenchida. Temos o espaáo central para a ediá±o do  nosso  texto
+(17 linhas por 38 colunas), onde podemos preencher da maneira que
+desejarmos.
+     Na parte superior est±o o nome e  a  data  (opcional)  e  na
+parte inferior, as funáµes correspondentes Ös teclas  de  [F1]  a
+[F5] que mostramos abaixo:
+
+[F1] SAVE - Grava a ficha no disco
+            (a tela piscar† em caso de erro);
+[F2] LOAD - Carrega uma ficha do disco
+            (caso j† exista alguma);
+[F3] KILL - Apaga uma ficha do disco
+            (caso exista alguma);
+[F4] FILE - Mostra as fichas existentes no disco
+            (se realmente existirem);
+[F5] PRINT - Imprime a ficha que est† sendo editada
+             no papel por intermÇdio de uma impressora.
+
+     A tecla [ESC] faz retornar ao  menu  principal.  Cuidado:  a
+ficha em uso ser† perdida. Procure grav†-la com a opá±o [F1] SAVE
+antes de retornar ao menu inicial.
+
+     CARREGAR FICHA
+
+     Como  o  pr¢prio  nome  j†  diz,  esta  funá±o  serve   para
+carregarmos uma determinada ficha do disco. Ser† pedido o nome da
+ficha  Ö  ser  carregada.  Ao  ser  carregada,  a   ficha   passa
+automaticamente para a etapa de  ediá±o,  podendo  ser  alterada,
+regravada ou impressa.
+
+     CAPACIDADE MÑXIMA
+
+     A capacidade m†xima est† por volta de 1OO fichas por  disco.
+Para orden†-las  podemos  usar  o  ordenador  que  faz  parte  do
+"TOOL-KIT".
+
+     EDITOR DE TEXTOS
+
+     O editor de textos Ç o m¢dulo respons†vel  pela  redaá±o  de
+documentos, cartas e os mais diversos textos. Com ele, fica muito
+mais f†cil e pr†tico criar excelentes trabalhos impressos do  que
+com as antiquadas m†quinas de escrever. Entre  as  possibilidades
+do editor de  textos  destacamos:  f†cil  correá±o  de  palavras;
+movimentos  de  palavras,  frases  ou   par†grafos;   busca   com
+possibilidade de  alteraá±o  autom†tica  de  palavras  no  texto;
+impress±o  formatada  a  gìsto  sem  precisar  alterar  o  texto;
+possibilidade de gravaá±o de umtexto ou fraá±o do mesmo para  uso
+posterior; etc.
+     ATENÄ∞O: O editor de textos do KIT MICRO EMPRESA  Ç  baseado
+no MSXWRITE da ASCII Corp. e Ç utilizado aqui sob autorizaá±o  da
+GRADIENTE  EQUIPAMENTOS  ELETRéNICOS  LTDA.,  autora  da   vers±o
+brasileira do mesmo.
+
+     CARREGAMENTO
+
+     Para executar o EDITOR DE TEXTOS digite:
+
+     A>E-TEXTOS e tecle [RETURN].
+
+     OPÄ¥ES INICIAIS
+
+     [1] Redige texto
+
+     Ao acessarmos esta opá±o, passaremos ao modo  de  ediá±o  de
+texto  pr¢priamente  dito.  Escreva  sem  se  preocupar   com   o
+posicionamento dos caracteres  na  tela.  O  resultado  no  papel
+depender†  da  formataá±o  desejada  na   etapa   de   impress±o,
+independente da ediá±o. Um quadradinho indica a posiá±o da  letra
+inicial da palavra Ö seguir. Existe na parte superior  uma  rÇgua
+que auxilia na contagem das colunas e  um  mostrador  da  mem¢ria
+restante.
+     Caso o seu texto ultrapasse a capacidade  do  editor,  passe
+para outro arquivo. Na hora da impress±o  ser†  perguntado  se  o
+arquivo Ö ser impresso Ç continuaá±o de algum outro.
+     Temos ainda na tela de  ediá±o,  algumas  palavras  com  cìr
+invertida, cujas funáµes veremos adiante.
+     Para retornar ao menu inicial do editor de textos  pressione
+a tecla [ESC]!
+     AlÇm das teclas normais  de  escrita  (alfabeto,  pontuaá±o,
+etc) temos algumas teclas com funáµes especiais que nos  auxiliam
+na criaá±o e visualizaá±o do texto:
+
+     Movimentos da janela de v°deo no texto:
+ Tecla principal: [F1]
+
+ [F1] + ^
+ move a janela de v°deo 18 linhas para cima.
+
+ [F1] + v
+ move a janela de v°deo 18 linhas para baixo.
+
+ [F1] + <
+ move a janela de v°deo 1 linha para cima.
+
+ [F1] + >
+ move a janela de v°deo 1 linha para baixo.
+
+ [F1] + I
+ move o cursor para o in°cio do texto.
+
+ [F1] + F
+ move o cursor para o fim do texto.
+
+     Operaáµes simples com linhas inteiras:
+ Tecla principal: [F2]
+
+ [F2] + [BS]
+ volta e apaga linha que est† antes do cursor.
+
+ [F2] +[DELETE]
+ apaga linha que est† sob o cursor.
+
+ [F2] + <
+ move o cursor uma linha para tr†s.
+
+ [F2] + >
+ move o cursor uma linha adiante.
+
+     Operaáµes simples com palavras:
+
+ Tecla principal: [F3]
+
+ [F3] + [BS]
+ volta e apaga a palavra que est† antes do cursor.
+
+ [F3] + [DELETE]
+ apaga palavra que est† sob o cursor.
+
+ [F3] + <
+ move o cursor uma palavra para tr†s.
+
+ [F3] + >
+ move o cursor uma palavra adiante.
+
+     Marcaá±o de bloco de texto:
+ Teclas principais: [F4] e [F5]
+
+ [F4]
+ marca/desmarca sinal de in°cio de bloco na posiá±o do cursor.
+
+ [F5]
+ marca/desmarca sinal de fim de bloco na posiá±o do cursor.
+
+ Obs.: Quando o bloco estiver com sinal de in°cio e de fim, todas
+as letras e sinais nele contidos passar±o a v°deo inverso,  e  os
+sinais de in°cio e de fim desaparecer±o, mas ao serem  usados  em
+outro bloco, o primeiro ser† desmarcado.
+
+     Operaáµes simples com caracteres:
+
+ [BS]
+ volta o cursor e apaga um caractere.
+
+ [DELETE]
+ apaga o caractere sob o cursor.
+
+ [TAB]
+ move o cursor para a pr¢xima posiá±o de tabulaá±o.
+
+ [INSERT]
+ chaveia modo Normal/Insere
+
+ [CAPS LOCK]
+ muda teclado de mai£sculas apenas para min£sculas e mai£sculas e
+vice-versa.
+ [SHIFT]
+ chaveia, enquanto  pressionada,  o  teclado  para  mai£sculas  e
+s°mbolos.
+
+     Operaáµes com blocos marcados de texto:
+ Teclas: [SELECT] e [F1] seguidas.
+
+ [SELECT],[F1],[F1]
+ copia bloca marcado para a posiá±o do cursor.
+
+ [SELECT],[F1],[F2]
+ move bloco marcado para a posiá±o do cursor.
+
+ [SELECT],[F1],[F3]
+ elimina bloco marcado do texto.
+
+ [SELECT],[F1],[F4]
+ grava no disco/cassete o bloco marcado.
+
+ [SELECT],[F1],[F5]
+ carrega do disco/cassete um bloco na posiá±o do cursor.
+
+     Pesquisa de sequància de caracteres:
+ Teclas: [SELECT] e [F2] seguidas.
+
+     Pesquisa e alteraá±o de sequàncias:
+ Teclas: [SELECT] e [F3] seguidas.
+
+     Operaáµes de formataá±o de texto:
+ Teclas: [SELECT] e [F4] seguidas.
+
+ [SELECT],[F4],[F1]
+ foráa, durante a impress±o, o avanáo de 1 p†gina.
+
+ [SELECT],[F4],[F2]
+ na impress±o, centraliza o texto na linha.
+
+ [SELECT],[F4],[F3]
+ tabula o par†grafo, ao lado esquerdo "n" caracteres distanciando
+da margem.
+
+ [SELECT],[F4],[F4]
+ tabula o par†grafo, ao lado direito "n"  caracteres  distanciado
+da margem.
+
+ [SELECT],[F4],[F5]
+ liga/desliga quebra de palavras ao fim da linha.
+
+     Operaáµes com a rÇgua de tabulaá±o:
+
+ [SELECT],[F5]
+ liga/desliga rÇgua de tabulaá±o.
+
+ [HOME/CLS]
+ possibilita marcaá±o de posiáµes de tabulaá±o.
+
+ [ESC]
+ retorna de qualquer operaá±o.
+
+     [2] Imprime texto
+
+     Ao selecionar os parÉmetros de  impress±o,  se  n±o  desejar
+mudar a seleá±o que estiver sob  o  cursor,  aperte  simplesmente
+[RETURN], e o parÉmetro n±o ser† alterado.  A  marcaá±o  original
+obedece Ö padronizaá±o de formul†rios cont°nuos de 8O colunas.
+
+Ex.: Linhas/P†gina (7-127)?        66
+
+     Se vocà  utilizar  p†ginas  com  66  linhas,  n±o  tecle  66
+novamente, apenas [RETURN].
+
+     Para voltar da seleá±o de parÉmetros, aperte [ESC].
+
+     [3] Gerància de arquivos:
+
+Aperte [1] para gravar o texto da mem¢ria
+           para o disco/cassete
+           (use extens±o ".TXT").
+       [2] para  ler  um texto do disco
+           ou cassete para  a  mem¢ria.
+       [3] para  listar  os  arquivos existentes
+           no disco.
+       [4] para apagar um arquivo do disco.
+       [5] para formatar (inicializar)
+           um disco.
+
+     Obs.: Quando for efetuada uma operaá±o de gravaá±o sobre  um
+arquivo j† existente no disco, este dever† ser  apagado  primeiro
+(opá±o 4), e o novo gravado em seguida (opá±o 1).
+
+     [4] Apaga texto:
+
+     A opá±o apaga todo o texto existente na mem¢ria.
+     Responda [S] na confirmaá±o, se vocà realmente quiser apagar
+o texto, caso contr†rio, responda [N].
+
+     [5] Anotaáµes:
+
+     A opá±o serve para redigir algum coment†rio ou anotaá±o  que
+n±o fica armazenada  na  mem¢ria  nem  pode  ser  gravada,  sendo
+impressa uma vez, e depois apagada.
+
+     Se vocà quiser alterar algum parÉmetro de impressora para  a
+impress±o  da  nota,  faáa-o  apertando   a   tecla   de   funá±o
+correspondente; mas somente quando n±o houver texto no quadro.
+     Se vocà terminar a linha antes do sinal de fim (um  quadrado
+vazio), aperte [RETURN].
+     Para voltar ao menu principal, pressione [ESC]!
+
+     [6] Cìr de Fundo:
+
+Aperte [F1] e o fundo de sua tela de v°deo ficar† Azul;
+       [F2] Preto;
+       [F3] Verde;
+       [F4] Vermelho;
+       [F5] P£rpura.
+
+     [7] Padr±o de impressora:
+
+     Ao pressionar a opá±o [7] do menu principal, vocà chaveia  o
+padr±o de impressora entre ABNT (Associaá±o Brasileira de  Normas
+TÇcnicas) e MSX (impressoras importadas.
+     O padr±o da opá±o [7] ser† o padr±o utilizado para todas  as
+impressµes do editor.
+
+     [8] Retorna ao DOS:
+
+     Retorna ao sistema operacional de disco ("A>").
+
+     TOOL-KIT
+
+     O Tool-kit Ç um m¢dulo que contÇm algumas funáµes auxiliares
+que poder±o ser £teis  no  dia-a-dia  com  o  uso  do  KIT  MICRO
+EMPRESA:
+
+     [1] Formatar disco
+
+     Todo disquete que vai ser utilizado  para  armazenamento  de
+fichas ou arquivos deve ser previamente formatado  obedecendo  as
+caracter°sticas do disk-drive utilizado (face simples  ou  dupla,
+4O ou 8O trilhas). Consulte o  manual  do  seu  equipamento  para
+fazer a escolha correta.
+     ATENÄ∞O: A formataá±o de um disco apaga todo o seu conte£do.
+Um disco deve ser  formatado  quando  estiver  virgem  ou  quando
+quizermos "zerar" todo o seu conte£do. ê claro que  NUNCA  dever†
+ser formatado o disco que contÇm o programa KIT MICRO EMPRESA.
+
+     [2] Troca nome do arquivo
+
+     Esta opá±o dedica-se a mudanáa do nome de uma ficha ou de um
+arquivo qualquer. O nome atual Ç o nome que o mesmo  possui  e  o
+novo nome Ç aquele pelo qual queremos cham†-lo daqui para frente.
+N±o pode haver dois arquivos com o mesmo nome num mesmo disco. Ao
+renomear um arquivo, mantenha a sua extens±o original, para ficar
+mais f†cil de identific†-lo em futuras utilizaáµes.
+
+     OUTRAS OPÄ¥ES
+
+     As  opáµes  de  [3]  a  [8]  s±o  idànticas  as  de  m¢dulos
+anteriores.
+
+     [9] Ordena o diret¢rio
+
+     A opá±o [9] ordena o diret¢rio do disco  em  utilizaá±o,  ou
+seja pµe em  ordem  alfabÇtica  crescente  todos  os  arquivos  e
+programas constantes naquele disquete. Esta opá±o  Ç  de  extrema
+utilidade para discos com muitas entradas. ê bom  lembrar  que  o
+n£mero m†ximo de  programas  ou  arquivos  num  disco  Ç  de  112
+entradas.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-OO1
+                  Rio de Janeiro - RJ - Brasil.
+
+MESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-OO1
+                  Rio de Janeiro 

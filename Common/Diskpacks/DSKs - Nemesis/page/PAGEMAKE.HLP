@@ -1,0 +1,1051 @@
+  >> MSX PAGEMAKER DELUXE <<
+  Reinaldo P. da Silva - 1993
+
+            MANUAL
+
+    Para  percorrer o  manual,
+use as seguintes teclas:
+
+ [seta p/baixo]   Vai  para  a
+      descriá±o   da   pr¢xima
+      opá±o do menu principal.
+ [ESC] Sai do manual.
+ [TAB] Imprime este manual
+       [ESC] Interrompe a  im-
+             press±o
+ [qq tecla] Prossegue a  apre-
+            sentaá±o   do  ma-
+            nual.
+
+    As opáµes derivadas de uma
+opá±o  principal s±o postas  Ö
+direita.
+
+         INSTALAÄ∞O:
+
+    O  MSX PAGE-MAKER pode ser
+executado nas seguintes confi-
+guraáµes de mem¢ria:
+
+1 - apenas um drive c/ CTRL
+2 - apenas um drive s/ CTRL
+3 - um drive e uma
+    megaram-disk em A: ou B:
+    c/ CTRL
+4 - dois drives
+
+    O  PAGE-MAKER DELUXE  deve
+ser executado no drive default
+e  os arquivos de dados  devem
+ser  colocados no outro drive.
+Haver†  troca  de  discos  nos
+casos 1 e 2.  No 2ß caso deve-
+se apertar uma tecla adicional
+toda vez que acessar um arqui-
+vo  de dados,  pois o  sistema
+pede  troca de  disco,  embora
+n±o  apareáa na tela  gr†fica.
+Para os casos 1,  2 e 4, o uso
+de formatadores especiais  po-
+der†  acelerar sensivelmente o
+acesso  ao  disco,  visto  que
+somente  metade  da  p†gina  Ç
+mantida  em mem¢ria.  Por  n±o
+dispor  de movimentos  mecÉni-
+cos,  o  uso  da  Megaram-disk
+acelera bastante a leitura e a
+gravaá±o da p†gina.
+    A  p†gina  n±o  compactada
+(.PM1  a  .PM4) deve estar  no
+mesmo disco do  programa,  po-
+dendo ser copiada ou compacta-
+da  para armazenagem em  outro
+disco. O programa PRNPAGPC.EXE
+imprime essa p†gina num IBM PC
+ou   compat°vel.   O  programa
+PRINTPAG.COM  faz o mesmo  num
+MSX.  Sob o sistema  operacio-
+nal,  execute-os  uma vez  sem
+argumentos,    para   que   as
+instruáµes de uso sejam forne-
+cidas.
+    Alguns m¢dulos solicitam a
+presenáa  do disco do programa
+para  o  seu  carregamento   e
+ativaá±o.  O  disco da  p†gina
+tambÇm  Ç necess†rio quando se
+percorre a p†gina na vertical.
+Caso  n±o  esteja no  drive  o
+disco adequado,  ou  aparecer†
+uma  mensagem dizendo o c¢digo
+do  erro ou a  opá±o  desejada
+n±o  ser†  executada.  O  erro
+mais  comum Ç o de arquivo n±o
+encontrado  (c¢digo  53).   Se
+outros erros inesperados acon-
+tecerem,  volte  imediatamente
+ao menu principal, o que pode-
+r†  normalizar a  situaá±o  na
+maioria dos casos.
+
+          EXECUÄ∞O:
+
+Casos 1,2 e 4:
+A ou B>PAGEMAKER
+
+Caso 3:
+- o  drive default deve ser  a
+  Megaram-disk,   e  ela  deve
+  estar vazia;
+- o  programa deve ser copiado
+  para  a  Megaram-disk   pelo
+  seguinte procedimento: copie
+  o  arquivo INSPMMEG.BAT para
+  a  Megaram-disk e  execute-o
+  assim:
+  A>INSPMMEG B:      ou
+  B>INSPMMEG A:
+  Desse modo,  somente os  ar-
+  quivos   necess†rios   ser±o
+  copiados,  liberando o maior
+  espaáo poss°vel.
+- a  p†gina  a ser  modificada
+  (se n±o estiver  compactada)
+  tambÇm deve ser copiada para
+  ela, se necess†rio;
+- executar o programa:
+  A> ou B> PAGEMAKER
+- colocar  os discos de  dados
+  no  drive,  sempre  que  for
+  preciso.
+
+    ESCOLHA DE ARQUIVOS:
+
+    Sempre  que houver escolha
+de arquivos para leitura, ser†
+apresentada a lista dos arqui-
+vos com o tipo de dado pedido,
+de  10  em  10.  As  seguintes
+teclas est±o dispon°veis:
+
+ [^v] Muda o arquivo
+ [->] Lista arquivos seguintes
+ [ESC] Sai sem escolher
+ [RET ou ESPAÄO] Seleciona   o
+                 arquivo
+
+       MENU PRINCIPAL:
+
+[ESTILIZA] Permite  a  criaá±o
+           de p†ginas com bor-
+           da,  divisµes e t°-
+           tulo.
+ MENU ([^v] escolhe opá±o;
+       [RET] executa opá±o):
+ [LAPIS] Desenha
+  [setas] Movimenta o l†pis
+  [SP] Acende/apaga ponto
+  [L] Linha da cruz ao l†pis
+  [R] RetÉngulo entre a cruz e
+      o l†pis
+  [E] Elipse  entre a cruz e o
+      l†pis
+  [A] Apaga retÉngulo entre  a
+      cruz e o l†pis
+  [TAB] Coloca a cruz na mesma
+        posiá±o do l†pis
+  [SELECT] Apresenta coordena-
+           das do l†pis em mm
+  [ESC] Volta ao menu
+ [BORRACHA]
+  [setas] Move ponto a ponto
+  [qq caracter imprim°vel]
+           Imprime caracter
+  [SP] Apaga regi±o sob o cur-
+       sor
+  [F6 a F9] Alfabeto  1 a 4 em
+            uso
+  [BS ^S ^Z ^W] Desloca 8 pon-
+                tos (<>v^)
+  [^X ^D] Ponto  a  ponto  (v>
+          mais lentamente)
+  [^Q] Coordenadas   m£ltiplas
+       de 8
+  [RET] In°cio da p†gina
+  [ESC] Volta ao menu
+ [BORDAS] Escolhe borda para a
+          p†gina
+  [RET] Muda a borda
+  [E] Edita a borda
+   [setas] Escolhe elemento  a
+           a ser editado
+   [SELECT] Copia  o  elemento
+            do  canto superior
+            esquerdo  para  os
+            demais elementos
+   [RET] Edita elemento
+    [setas] movimenta cursor
+    [SP] acende/apaga ponto
+    [RET] sai, salvando
+    [ESC] sai sem mudar
+   [ESC] Sai da ediá±o da bor-
+         da
+ [APAGA] Apaga a p†gina intei-
+         ra
+ [SALVA/LE] Sub-menu
+  [SALVA PAGINA] Salva  a  p†-
+                 gina
+   NOME:_       .PM?
+   Obs:  tudo o que foi desen-
+   hado  sobre a  p†gina  ser†
+   salvo  num tamanho ampliado
+   em 4 vezes,  com exceá±o da
+   borda.  O disco precisa ter
+   48 Kbytes livres.
+    [ESC] Volta  ao  menu  sem
+          salvar
+  [TROCA BORDA]  Troca a borda
+         de  uma p†gina j†  e-
+         xistente  pela  borda
+         selecionada.
+  [LE FONTES] Carrega  alfabe-
+              tos
+   NUMERO DO BUFFER: [1-3]
+    - digitar um n£mero de 1 a
+      3
+  [LE BORDAS] Carrega bordas
+    Obs:  s¢  aceita  arquivos
+    BORD*.ALF. As bordas est±o
+    contidas  na  metade supe-
+    rior  de  um  alfabeto  (a
+    partir do caracter 127), e
+    cada uma tem 8  elementos,
+    mesmo  que  sejam  iguais,
+    num  total de 16 bordas em
+    cada arquivo,  que est† no
+    formato de um alfabeto.  A
+    remalina est† definida nos
+    caracteres 28 a 31.
+  [SALVA TELA] Salva a tela do
+               estilista
+   NOME:_       .GRP
+    [ESC] Volta  ao  menu  sem
+          salvar
+    Obs:  Precisa de 15 kbytes
+    livres no disco, sem o que
+    a tela n±o Ç salva.
+  [LE TELA] Carrega  tela para
+            o estilista
+    Obs:   Estas  duas  opáµes
+    servem  para  carregar   a
+    tela   sobre  uma   p†gina
+    qualquer e editar o layout
+    com todos os demais recur-
+    sos do Page-Maker,  retor-
+    nando-a  ao estilista para
+    a construá±o da p†gina.
+  [ESC] Sai do sub-menu
+ [RETORNA] Volta ao menu prin-
+           cipal do Page-Maker
+
+[ESCREVE] Permite     escrever
+          sobre a p†gina.
+ [qq caracter] Imprime
+               caracter
+ [BS] Apaga sob cursor e recua
+      uma coluna,  respeitando
+      as margens
+ [RET] In°cio da linha seguin-
+       te,  de  acordo  com  a
+       margem esquerda
+ [INSERT] Inverso
+ [DELETE] Gira o alfabeto cor-
+          rente  em  90  graus
+          para a direita  (ex-
+          ceto alfabeto 4)
+ [setas] Movimenta o cursor
+ [SHIFT setas] Movimenta     a
+               p†gina
+ [CONTROL setas] Microdesloca-
+                 mento  (ponto
+                 a ponto)
+ [CTRL N] Normaliza  a posiá±o
+          do caracter
+ [CTRL Q] Redefine  os  carac-
+          teres "1" a "8"  com
+          os elementos da bor-
+          da escolhida. O for-
+          mato  Ç  o mesmo  do
+          m¢dulo     ESTILIZA.
+          Portanto deve-se an-
+          tes carregar um des-
+          ses   alfabetos.   A
+          correspondància Ç  a
+          seguinte:
+  "1" - canto superior
+        esquerdo
+  "2" - moldura superior
+  "3" - canto superior direito
+  "4" - moldura direita
+  "5" - canto inferior direito
+  "6" - moldura inferior
+  "7" - canto inferior esquer-
+        do
+  "8" - moldura esquerda
+    Pode-se  ent±o usar  esses
+  caracteres  para  montar   a
+  borda  de qualquer regi±o da
+  p†gina.   Esta   opá±o   n±o
+  funciona para o alfabeto 4.
+  [A a P] Seleciona uma das 16
+          bordas.
+ [CTRL S] Permite  a  superpo-
+          siá±o de caracteres
+ [CTRL T] Copia  a  tabela  de
+          caracteres   da  ROM
+          para o alfabeto 1
+ [CTRL U] Apaga  todas as  mu-
+          danáas   feitas   na
+          tela  (se n±o  movi-
+          mentou  a p†gina  ou
+          n±o entrou no menu)
+ [CTRL V] Mostra  em reduá±o a
+          parte da p†gina  que
+          est† sendo editada
+ [CTRL W] Mostra  a tabela  de
+          caracteres  do alfa-
+          beto em uso
+ [CTRL Z] Permite  a ediá±o de
+          um   caracter.   N±o
+          funciona para o  al-
+          fabeto 4.
+  [CARACTER: ] Digita-se o ca-
+               racter a ser e-
+               ditado
+   [setas] movimenta cursor
+   [SP] acende/apaga ponto
+   [RET] sai, salvando
+   [ESC] sai sem mudar
+ [F1] Muda  espaáamento  hori-
+      zontal (4->6->8->9->12->
+      16->18->4)
+      Obs:  A  partir de 12  a
+      largura Ç dobrada.
+ [F2] Muda  espaáamento verti-
+      cal   (8->10->12->16->20
+      ->8)
+      Obs:  A  partir de 16  a
+      altura Ç dobrada.
+ [F3] Margem esquerda
+ [F4] Margem direita
+ [F5] MENU (^v escolhe opá±o;
+      [RET] executa opá±o):
+  [ALFABETO: n] Apresenta    e
+                permite a  se-
+                leá±o do alfa-
+                beto em uso.
+  [ESPAÄO: 8x8] Espaáamento
+                horizontal   x
+                vertical
+   [RET] Muda  espaáamento ho-
+         rizontal
+   [SP] Muda espaáamento  ver-
+        tical
+  [INVERSO] Invertido
+  [MARCADORES] Habilita/desa-
+               bilita   margem
+               direita
+  [SUPERPOSIÄ∞O]   Permite   a
+            superposiá±o    de
+            caracteres
+  [INICIO] Vai  para o  in°cio
+           da p†gina
+  [FINAL] Vai  para o final da
+          p†gina
+  [Lç FONTES] Carrega alfabeto
+   NUMERO DO BUFFER [1-3]
+  [Lç  TEXTO] Là   um  arquivo
+   texto  em  ASCII.  Caso  se
+   esteja   usando  apenas  um
+   drive com CONTROL,  Ç acon-
+   selh†vel que o arquivo tex-
+   to esteja no mesmo disco da
+   p†gina.  A configuraá±o com
+   CONTROL n±o necessita  dis-
+   so,  mas  torna a  operaá±o
+   mais complicada e sujeita a
+   erros na troca dos discos.
+   Caracteres   especiais  que
+   podem ser usados no texto:
+    ^P (CTRL  P) - muda  espa-
+         áamento  entre carac-
+         teres
+    ^B - muda  espaáamento en-
+         tre linhas
+    ^R - inverso
+    ^S - superposiá±o
+    ^T, ^V, ^W ^Y - Alfabetos
+                    1 a 4
+    ^H - backspace
+   [SP]  Pausa. Quase todas as
+         teclas usadas na  di-
+         gitaá±o  de um  texto
+         est±o dispon°veis du-
+         rante a pausa.
+    [RET] Continua o texto
+    [ESC] Aborta  o  texto   e
+          volta ao menu
+  [MENU INICIAL] Volta ao menu
+                 principal
+  [ESC] Sai do menu
+ [F6 a F9] Alfabeto  1 a 4  em
+           uso
+ [F10] Habilita/desabilita
+       margem direita
+
+[DESENHA] Permite   a   ediá±o
+          gr†fica  da  p†gina,
+          com o uso de padrµes
+          e figuras (shapes).
+ [F1] Lapis (desenha)
+  [setas] Movimenta o lapis
+  [CTRL setas] Movimenta o l†-
+               pis   ponto   a
+               ponto
+  [LGRA setas] Movimenta o l†-
+               pis   ponto   a
+               ponto  e a cruz
+               no sentido con-
+               tr†rio
+  [RGRA setas] Movimenta o l†-
+               pis   ponto   a
+               ponto e a  cruz
+               no mesmo senti-
+               do
+  [SHIFT setas] Movimenta    a
+                p†gina
+  [SP] Acende/apaga ponto
+  [TAB] Coloca a cruz na mesma
+        posiá±o do l†pis
+  [A] Apaga  retÉngulo entre a
+      cruz e o l†pis
+  [B] Tranforma em shape a re-
+      gi±o  entre  a cruz e  o
+      l†pis
+  [C] C°rculo centrado na cruz
+      e passando pelo l†pis
+  [D] Apresenta distÉncia  en-
+      tre  a cruz e o l†pis em
+      mm
+  [E] Elipse  entre a cruz e o
+      l†pis
+  [F] Preenche  um   retÉngulo
+      entre  a cruz e o  l†pis
+      com  um dos  padrµes se-
+      lecionados
+  [I] Muda intervalo de avanáo
+      da  p†gina  com   [SHIFT
+      setas]: 32 ou 8 pontos
+  [L] Linha da cruz ao l†pis
+  [P] Pinta regi±o fechada com
+      o padr±o selecionado
+      Obs:  se a figura  tiver
+      furos, haver† vazamento,
+      o  que poder† manchar  a
+      p†gina.  Para  contornar
+      esse problema,  a tela Ç
+      salva antes da pintura e
+      pode  ser restaurada  u-
+      sando-se a op á±o [U].
+  [R] RetÉngulo entre a cruz e
+      o l†pis
+  [S] Semi-elipse entre a cruz
+      e  o l†pis,  partindo da
+      cruz no sentido trigono-
+      mÇtrico   e   orientaá±o
+      dependendo do  quadrante
+      do l†pis
+  [T] Troca a posiá±o do l†pis
+      com a da cruz
+  [U] Apaga  todas as mudanáas
+      feitas  na tela (se  n±o
+      movimentou   a   p†gina,
+      n±o entrou no menu,  n±o
+      escolheu  padr±o de pre-
+      enchimento,  n±o  entrou
+      no modo de shape ou  n±o
+      pintou)
+  [V] Mostra em reduá±o a par-
+      te  da p†gina  que  est†
+      sendo editada
+  [Z] Apaga a tela
+  [SELECT] Seleciona padr±o de
+           preenchimento
+   [setas] posiciona cursor no
+           padr±o
+   [RET] seleciona o padr±o  e
+         sai
+   [BS] seleciona o inverso do
+        padr±o e sai
+   [ESC] sai  sem mudar o  pa-
+         dr±o
+   [E] edita o padr±o
+    [setas] movimenta cursor
+    [SP] acende/apaga ponto
+    [RET] sai, salvando
+    [ESC] sai sem mudar
+ [F2] Borracha
+  [setas] Move ponto a ponto
+  [SHIFT setas] Movimenta    a
+                p†gina
+  [SP] Apaga regi±o sob o cur-
+       sor
+  [Z] Zoom
+   [setas] movimenta cursor
+   [SP] acende/apaga ponto
+   [RET] sai, salvando
+   [ESC] sai sem mudar
+ [F3] Pincel
+  [setas] Move ponto a ponto
+  [SHIFT setas] Movimenta    a
+                p†gina
+  [SP] Pinta  de acordo com  o
+       padr±o escolhido
+  [SELECT] Muda   formato   do
+           pincel
+ [F4] Shape
+  [setas] Movimenta   shape  a
+          cada 8 pontos
+  [SHIFT setas] Movimenta    a
+                p†gina
+  [CTRL setas] Muda shape: <-1
+               >+1 v-4 ^+4
+  [A-Z] Seleciona  diretamente
+        shapes 1 a 26
+  [a-z] Seleciona  diretamente
+        shapes 27 a 52
+  [SELECT] Muda  operaá±o  l¢-
+           gica com a tela, na
+           ordem: Sobreposiá±o
+           -> OR -> XOR -> AND
+           -> Sobreposiá±o
+  [CTRL T] Textura  de  acordo
+           com  o padr±o sele-
+           cionado  (o   shape
+           deve  estar de pre-
+           ferància executando
+           a  operaá±o  l¢gica
+           AND)
+  [CTRL O] Outline  (o   shape
+           deve  estar de pre-
+           ferància executando
+           a  operaá±o  l¢gica
+           XOR)
+  [1] Espelha na horizontal
+  [2] Espelha na vertical
+  [3] Inverte
+  [4] Gira  para a esquerda 90
+      graus
+  [5] Gira para a direira
+  [TAB] Avanáa  na  horizontal
+        de acordo com a largu-
+        ra do shape
+  [BS] Recua na horizontal  de
+       acordo com a largura do
+       shape
+  [HOME] Avanáa na vertical de
+         acordo  com a  altura
+         do shape
+  [CLS] Recua  na vertical  de
+        acordo com a altura do
+        shape
+  [RET] Carimba shape
+  [INSERT] Microdeslocamento
+           (sempre com OR)
+   [setas] Desloca um ponto
+   [RET] Carimba
+   [ESC] Sai do modo de micro-
+         deslocamento
+  [ESC] Sai do modo de shape
+ [F5] MENU (^v escolhe opcao;
+      [RET] executa opcao):
+  [LINHA: n] Altera  a largura
+             da linha, varian-
+             do  de 1 a  9,  e
+             afetando todos os
+             outros  traáados,
+             inclusive a  lar-
+             gura  do  outline
+             do shape
+  [FATOR VERTICAL: n] Fator de
+         ampliaá±o    vertical
+         para  o  carregamento
+         de shapes de PC, sen-
+         do 1 ou 2
+  [LE TELA] Carrega  uma  tela
+            GRP sobre a p†gina
+            desprezando     as
+            cores.
+            Obs: Ap¢s o carre-
+            gamento da tela  o
+            programa aguardar†
+            uma tecla:
+      [RET] fixa   a  tela  na
+            p†gina e volta  ao
+            menu
+      [ESC] volta  ao menu sem
+            fixar a tela
+      [SP] mantÇm  a tela  sem
+           fix†-la na p†gina e
+           volta direto para a
+           ediá±o,  permitindo
+           que se use um bloco
+           da  tela atravÇs da
+           opá±o [B] do  l†pis
+           e   se  restaure  a
+           p†gina com a  opcao
+           [U], ressalvadas as
+           condiáµes em que  a
+           tela   se  fixa  na
+           p†gina.
+  [SALVA TELA] Salva  a   tela
+               num arquivo
+    NOME:_       .GRP
+     [ESC] Volta  ao menu  sem
+           salvar
+     Obs: Precisa de 15 kbytes
+     livres  no disco,  sem  o
+     que a tela n±o Ç salva.
+  [Lç SHAPES] Carrega shapes
+              Obs:  o  tamanho
+              do  arquivo   de
+              shapes  n±o pode
+              exceder     6912
+              bytes, caso con-
+              tr†rio o  carre-
+              gamento  n±o  se
+              efetuara.
+  [Lç SHAPES PC] Carrega    as
+       figuras do Print-Master
+       ou News-Master
+       Apresenta n£mero e nome
+       da figura:
+       [<>] Figura   anterior/
+            seguinte   (uma  a
+            uma)
+       [v^] Figura   anterior/
+            seguinte  (de  dez
+            em dez)
+       [RET] Là a figura
+        Obs:   Caso  a  figura
+        tenha mais de 176  li-
+        nhas  ou  mais de  240
+        pontos por  linha,  ou
+        tenha  zero linhas  ou
+        zero colunas,  ela n±o
+        ser† carregada. Caso o
+        n£mero de linhas vezes
+        o   fator  vertical  2
+        exceda 240,  ent±o po-
+        de-se  optar pela  me-
+        tade superior ou infe-
+        rior  da  figura.   No
+        centro  da  tela  apa-
+        recer†:
+
+           METADE SUPERIOR
+
+        e  qualquer tecla  al-
+        ternar† com
+
+           METADE INFERIOR
+
+        Teclando-se [RET] car-
+        rega-se a metade dese-
+        jada.
+        A  figura aparecer† na
+        tela  ap¢s o  carrega-
+        mento,  e qualquer te-
+        cla  far†  voltar   ao
+        menu.
+
+       [ESC] Volta ao menu
+       Obs:   As   figuras  do
+       Print-Master s±o  guar-
+       dadas   em  um  arquivo
+       .SHP e os nomes corres-
+       pondentes em um arquivo
+       .SDR; algumas bibliote-
+       cas com figuras de  ta-
+       manho   vari†vel  devem
+       vir acompanhadas de  um
+       arquivo  .SDX  contendo
+       ponteiros com a finali-
+       dade  de agilizar o  a-
+       cesso.
+  [Lç PADR¥ES] Carrega padrµes
+       Obs: s¢ s±o listados os
+       arquivos PADR*.ALF, que
+       contÇm  os  padrµes  de
+       preenchimento.  Os  pa-
+       drµes  devem estar con-
+       tidos  a partir do  ca-
+       racter 192 de um  alfa-
+       beto e s±o em n£mero de
+       30.  Deve-se ter o cui-
+       dado  de  preservar  os
+       caracteres  252 a  255,
+       pois suas definiáµes na
+       realidade  contÇm  ins-
+       truáµes em linguagem de
+       m†quina   para  uso  do
+       programa.
+  [MENU INICIAL] Volta ao menu
+                 principal
+  [ESC] Sai  do menu e volta Ö
+        ediá±o
+
+[LETRAS] Permite  o uso de al-
+         fabetos do  PAGEMAKER
+         e   letras  dos  pro-
+         gramas   NEWS-MASTER,
+         PRINT-SHOP  e  PRINT-
+         MASTER PLUS do PC.
+ [setas] Movimenta a seta
+ [SHIFT setas] Movimenta a p†-
+               gina
+ [TAB] Coloca  a cruz na mesma
+       posiá±o da seta
+ [A] Apaga  retÉngulo entre  a
+     cruz e a seta
+ [M] Marca,  na posiá±o da se-
+     ta, a margem:
+  [E] Esquerda
+  [D] Direita
+ [N] Normaliza para a  posiá±o
+     vertical definida por [Y]
+ [P] Posiciona seta na margem
+  [E] Esquerda
+  [D] Direita
+ [R] Reinicializa as margens
+ [S] Define  as margens  sime-
+     tricamente ao centro
+ [T] Texto ser† alinhado
+  [C] Ao centro
+  [E] è esquerda
+  [D] è direita
+ [U] Apaga  todas as  mudanáas
+     feitas  na  tela (se  n±o
+     movimentou  a  p†gina  ou
+     n±o entrou no menu)
+ [V] Mostra em reduá±o a parte
+     da  p†gina que est† sendo
+     editada
+ [Y] Define o espaáamento ver-
+     tical como a distÉncia
+     entre a seta e a cruz
+ [F5] MENU (^v escolhe opcao;
+      [RET] executa opcao):
+  [FATOR VERTICAL: n] Fator de
+         ampliaá±o    vertical
+         para as letras do PC,
+         sendo 1 ou 2
+  [ESPACAMENTO: n] Espaáamento
+                   dos alfabe-
+                   tos,  sendo
+                   de 4 a 9
+  [ALFABETOS] Permite uso  dos
+              alfabetos    com
+              ampliaá±o  de  4
+              vezes.   Ap¢s  a
+              seleá±o do alfa-
+              beto,    deve-se
+              entrar a frase a
+              ser escrita.
+     [BS] Apaga  o £ltimo  ca-
+          racter e recua
+     [RET] Passa   a  imprimir
+           sobre a p†gina
+     [ESC] Volta ao menu
+  [FONTES NEWS-MASTER] Permite
+               uso  de  letras
+               do  News-Master
+               vers±o  1 ou  2
+               (*.FLB do PC)
+    Apresenta o tipo de letra:
+    [<>] Tipo anterior/seguin-
+         te (um a um)
+    [v^] Tipo anterior/seguin-
+         te (de dez em dez)
+    [RET] Seleciona o tipo
+    [ESC] Volta ao menu
+    Ap¢s a seleá±o do tipo  de
+    letra,  deve-se  entrar  a
+    frase a ser escrita.
+     [SP a ~] Caracteres  per-
+              mitidos
+     [BS] Apaga  o £ltimo  ca-
+          racter e recua
+     [RET] Passa   a  imprimir
+           sobre a p†gina
+     [ESC] Volta ao menu
+  [FONTES PRINT-SHOP]  Permite
+          uso  de  letras   do
+          Print-Shop (*.DAT no
+          PC).  Ap¢s a seleá±o
+          do  tipo  de  letra,
+          deve-se   entrar   a
+          frase a ser escrita.
+   [SP a ~] Caracteres  permi-
+            tidos
+   [BS] Apaga o £ltimo  carac-
+        ter e recua
+   [RET] Passa a imprimir  so-
+         bre a p†gina
+   [ESC] Volta ao menu
+  [FONTES PRINT-MASTER]   Per-
+          mite  uso de  letras
+          do Print-Master Plus
+          (*.FNM,   *.FSZ,   e
+          *.FNT no PC).  Apre-
+          senta o tipo de
+          letra:
+   [<>] Tipo anterior/seguinte
+        (um a um)
+   [v^] Tipo anterior/seguinte
+        (de dez em dez)
+   [RET] Seleciona o tipo
+   [ESC] Volta ao menu
+   Ap¢s  a seleá±o do tipo  de
+   letra,   deve-se  entrar  a
+   frase a ser escrita.
+    [SP a z] Caracteres permi-
+             tidos
+    [BS] Apaga o ultimo carac-
+         ter e recua
+    [RET] Passa   a   imprimir
+          sobre a p†gina
+   [ESC] Volta ao menu
+  [MENU INICIAL] Volta ao menu
+                 principal
+  [ESC] Sai do menu
+
+[FAIXAS] Imprime   faixas   na
+         impressora, com o uso
+         de alfabetos, shapes,
+         telas GRP, letras dos
+         programas       NEWS-
+         MASTER,  PRINT-SHOP e
+         PRINT-MASTER PLUS  do
+         PC e figuras do NEWS-
+         MASTER    e    PRINT-
+         MASTER.
+ [ALFABETOS] Faz   faixas  com
+             alfabetos
+  [LARGURA] Largura  da  letra
+            (1 a 9)
+  [ALTURA] Altura da letra  (1
+           a 9)
+  [ESPAÄCAMENTO] Espaáamento
+                 horizontal da
+                 letra (4 a 9)
+  [Lç FONTE] Carrega o alfabe-
+             to.  Ap¢s a sele-
+             á±o  do alfabeto,
+             deve-se entrar  a
+             frase  a ser  es-
+             crita.
+   [BS] Apaga  o £ltimo carac-
+        ter e recua
+   [RET] Inicia impress±o
+ [SHAPES] Imprime  shapes   na
+          faixa.  Ap¢s a esco-
+          lha do arquivo:
+  [setas] Escolhe o shape
+  [1] Espelha na horizontal
+  [2] Espelha na vertical
+  [3] Inverte
+  [4] Gira para a esquerda  90
+      graus
+  [5] Gira  para a direira  90
+      graus
+  [ESPAÄO] Avanáa uma linha na
+           impressora
+  [RET] Inicia  a impress±o do
+        shape.  Dependendo  do
+        tamanho do shape,  ele
+        ser† impresso em tama-
+        nho grande ou pequeno.
+  [ESC] Volta ao menu
+ [TELAS] Carrega uma tela
+         (.GRP)
+  [RETURN] Inicia impress±o
+  [ESC] Volta ao menu
+ [FONTES NEWS-MASTER] -   veja
+              m¢dulo LETRAS
+ [FONTES PRINT-SHOP] - idem
+ [FONTES PRINT-MASTER] - idem
+ [SHAPES PC] - veja     m¢dulo
+               DESENHA
+ [AVANÄA LINHA] Avanáa     uma
+                linha  na  im-
+                pressora
+ [MENU INICIAL] Volta  ao menu
+                principal
+
+[LAYOUT] Apresenta uma reduá±o
+         da p†gina na tela
+ [RETURN] Volta  ao menu prin-
+          cipal.
+
+[IMPRESS∞O] Permite a  impres-
+            s±o da p†gina.
+ [DENSIDADE: n] Densidade   da
+     impress±o:  simples  (1),
+     dupla (2) ou plotter (3).
+     Nesta £ltima a regi±o  da
+     remalina tambÇm Ç impres-
+     sa,  permitindo a impres-
+     s±o  de 8 telas inteiras.
+     Algumas  impressoras  n±o
+     aceitam esse modo.
+  [RET ou SP] Muda densidade
+ [NãMERO DE TOQUES:  n] N£mero
+         de passadas do  carro
+         de  impress±o,  sendo
+         de 1 a 9
+  [RET ou SP] Incrementa
+ [NãMERO DE COPIAS: nn] Numero
+       de copias, de 1 a 99
+  [RET] Incrementa de 1
+  [SP] Incrementa de 10
+ [IMPRIME] Inicia  a impress±o
+           da p†gina
+  [CTRL STOP] Interrompe a im-
+              press±o
+ [MENU INICIAL] Volta  ao menu
+                principal
+
+[DISCO E/S] Agrupa funáµes  de
+            manipulaá±o     de
+            arquivos.
+ [DIRETäRIO] Apresenta   dire-
+             t¢rio e o  espaáo
+             livre do disco de
+             dados
+  [->] Continua apresentando o
+       diret ¢rio
+  [ESC] Interrompe
+ [Lç PÑGINA] Là p†gina do dis-
+             co mestre
+ [SALVA PÑGINA] Atualiza a p†-
+        gina  no  disco.   Use
+        sempre essa opá±o  an-
+        tes  de entrar nos m¢-
+        dulos  ESTILIZA e  IM-
+        PRESS∞O  e  antes   de
+        usar  as opáµes Lç PÑ-
+        GINA e  COMPACTA/DESC.
+        PÑGINA.
+ [COMPACTA/DESC. PAGINA]  Per-
+           mite a  compactaá±o
+           e descompactaá±o da
+           p†gina,  para  fins
+           de armazenamento
+  [COMPACTA] Pega   a   p†gina
+             corrente  e  com-
+             pacta para arqui-
+             vos  .CP1 a  .CP4
+             no  disco de  da-
+             dos.  Precisa  de
+             48  kbytes livres
+             no disco.
+  [DESCOMPACTA]  Pega uma  p†-
+             gina   compactada
+             num disco de  da-
+             dos  e a  descom-
+             pacta para arqui-
+             vos .PM1 a PM4 no
+             disco   do   pro-
+             grama, tornando-a
+             a  p†gina em uso.
+             Precisa   de   48
+             kbytes livres  no
+             disco  do progra-
+             ma.
+  [MENU INICIAL] Volta ao menu
+                 principal
+ [APAGA PÑGINA] Apaga  uma p†-
+                gina do disco
+ [CONVERTE TELA] Faz a conver-
+                 s±o de  telas
+                 nos  formatos
+                 abaixo:
+  [SCR PARA GRP]
+  [GRP PARA SCR]
+  [LAY PARA GRP]
+  [GRP PARA LAY]
+  Obs:   Ap¢s  a  convers±o  e
+  apresentaá±o da tela:
+   [RETURN] Grava  a tela con-
+            vertida
+   [qq tecla] Volta  ao   menu
+              sem gravar
+  [MENU INICIAL] Volta ao menu
+                 principal
+  Obs:  Para conversµes de ou-
+  tros   formatos  execut†veis
+  para o formato GRP,  deve-se
+  usar as seguintes instruáµes
+  BASIC:
+
+     SCREEN 2:
+     BLOAD "NOMETELA.EXT",R:
+     BSAVE "NOMETELA.GRP",
+           0,&H37FF,S
+
+  Na  convers±o  para  formato
+  LAY  as cores s±o  despreza-
+  das. As conversµes para GRP,
+  SCR e LAY requerem,  respec-
+  tivamente,  no m°nimo 15, 13
+  e 7 kbytes livres no disco.
+ [CONVERTE TEXTO]  Filtra  ar-
+           quivos  gerados por
+           editores de texto.
+  [WORDSTAR (.DOC)] Filtra ar-
+            quivos    editados
+            pelo WORDSTAR, in-
+            cluindo  os  acen-
+            tos. Alguns carac-
+            teres  de controle
+            podem  ser  usados
+            para serem  trata-
+            dos   pelo  modulo
+            ESCREVE.
+  [MSX-WORD 3.0 (.   )] Filtra
+            arquivos  editados
+            pelo MSXWORD  3.0,
+            eliminando espaáos
+            excedentes
+     Obs:  Caso haja uma volta
+     imediata  ao menu ap¢s  a
+     escolha  do  arquivo,   Ç
+     provavel  que  n±o  tenha
+     sido  feita  a  convers±o
+     por  falta de  espaáo  em
+     disco.  Para convers±o do
+     Wordstar   precisa-se  de
+     duas  vezes o tamanho  do
+     arquivo original, bastan-
+     do  para o  MSX-WORD  3.0
+     uma   vez  o  tamanho  do
+     original.
+  [MENU INICIAL] Volta ao menu
+                 principal.
+ [MSX-DOS] Volta   ao  sistema
+           operacional
+ [ESC] Volta ao Menu Principal
+
+     * * *  F I M  * * *
+

@@ -1,0 +1,74 @@
+100 REM *************************
+110 REM *   INVERTE UMA FRASE   *
+120 REM *************************
+130 CLS : LOCATE 11,2
+140 PRINT "NEMESIS SOFTWARE"
+150 POKE &HD401,11 : ' COLUNA
+160 POKE &HD402,2 : ' LINHA
+170 POKE &HD400,18: ' COMPRIMENTO
+180 DEFUSR = &HCAE1 : U=USR(0)
+200 REM *************************
+210 REM * CRIA UM MENU PULLDOWN *
+220 REM *************************
+230 DATA FILES,ERASE,FORMAT,RENAME
+240 FOR C = 4 TO 7 : LOCATE 16,C
+250 READ A$ : PRINT A$ : NEXT C
+260 POKE &HD401,16 : ' COLUNA
+270 POKE &HD402,4 : ' LINHA
+280 POKE &HD400,8: ' COMPRIMENTO
+290 BEEP : U=USR(0)
+300 IF INKEY$ = "" THEN 300
+310 S = STICK(J)
+320 IF S = 0 THEN 310
+330 IF S=1 THEN U=USR(0) : L=L-1
+340 IF S=5 THEN U=USR(0) : L=L+1
+350 IF (SMOD2) = 0 THEN 310
+360 IFL<4 THEN L=4
+370 IFL>7 THEN L=7
+380 POKE &HD402,L
+390 U=USR(0) : GOTO 310
+400 REM *****************************
+410 REM *         POSICOES          *
+420 REM *****************************
+430 V=0  :' velocidade
+440 L=10 :' largura
+450 LI=20:' limite inferior
+460 LS=2 :' limite superior
+470 Y=LE :' linha  do cursor
+480 X=LS :' coluna do cursor
+490 LE=0 :' margem esquerda
+500 LD=30:' margem direita
+510 AV=1 :' avanco vertical
+520 AH=10:' avanco horizontal
+530 REM *****************************
+540 REM *       MONTA O MENU        *
+550 REM *****************************
+560 CLS : O=1 : PRINT"FACA A SUA OPCAO:"
+570 FOR N=LS TO LI : FOR I=LE TO LD STEP AH
+580 LOCATE I,N : PRINT "OPCAO" ; O
+590 O=O+1 : NEXT I : NEXT N : DEFUSR=&HCAE1
+600 POKE &HD400,L : POKE &HD401,Y
+610 POKE &HD402,X : U=USR(0)
+620 GOSUB 680
+630 LOCATE 0,22 : PRINT "Sua opcao:" ; N$
+640 GOTO 600
+650 REM *****************************
+660 REM *         PULL-DOWN         *
+670 REM *****************************
+680 IF INKEY$ = CHR$(13) THEN 810
+690 IF STRIG(J)<>0 THEN 810
+700 S=STICK(J) : IF S=0 THEN 680
+710 IF S=1 THEN U=USR(0) : X=X-AV : FOR N=1 TO V : NEXT : IF X<LS THEN FOR N=1TO V*99 : NEXT : X=LI
+720 IF S=7 THEN U=USR(0) : Y=Y-AH : FOR N=1 TO V*9 : NEXT : IF Y<LE THEN Y=LD
+730 IF S=5 THEN U=USR(0) : X=X+AV : FOR N=1 TO V : NEXT : IFX>LITHEN FOR N=1 TO V*99 : NEXT : X=LS
+740 IF S=3 THEN U=USR(0) : Y=Y+AH : FOR N=1 TO V*9 : NEXT : IF Y>LD THEN Y=LE
+750 IF (SMOD2) = 0 THEN 680
+760 POKE &HD401,Y : POKE &HD402,X
+770 FORN=1TOV*20:NEXT:U=USR(0):GOTO690
+780 REM *****************************
+790 REM *        LE A TARJA         *
+800 REM *****************************
+810 U=USR(0) : N$="" : FOR N = 0 TO L-1
+820 N$ = N$ + CHR$(VPEEK(Y+X*40+N))
+830 NEXT N : RETURN
+

@@ -1,0 +1,13 @@
+
+FAMILIAL BUDGET MSX2 (FAITES VOS COMPTES)
+
+By Michel (Fran‡a)
+
+Programa de controle or‡ament rio dom‚stico
+para a linha MSX2 no idioma francˆs.
+
+Para carregar digite:
+
+A>BUDGET e tecle [RETURN].
+
+

@@ -1,0 +1,14 @@
+
+MSX GAMES DESIGNER
+
+Vers±o MSX por NEMESIS
+
+Para carregar do DOS:
+
+A>GAMES e tecle [RETURN];
+
+Para carregar do BASIC:
+
+BLOAD"GAMES",R
+
+

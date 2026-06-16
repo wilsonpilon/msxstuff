@@ -1,0 +1,12 @@
+
+MSX LOTO
+
+Este programa auxilia na combina‡±o de
+dezenas para confec‡±o de cartµes da
+LOTO. Necessita de impressora conectada
+ao sistema!
+
+Para executar digite:
+A>LOTO e tecle [RETURN]!
+
+

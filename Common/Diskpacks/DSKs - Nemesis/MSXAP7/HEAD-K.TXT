@@ -1,0 +1,14 @@
+
+HEAD ALIGNMENT KIT
+  By AACKOSOFT
+
+Este programa serve para
+alinhar o "AZIMUTH" do seu
+gravador cassete. Quanto
+maior o n¡vel de sinal,
+melhor!
+
+Para executar:
+A>HEAD-K e [RETURN]!
+
+

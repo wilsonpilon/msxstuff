@@ -1,0 +1,15 @@
+
+FDDMON UNIVERSAL MEMORY CHECKER
+
+Para carregar:
+
+A>FDDMON e tecle [RETURN]
+
+Teclas de utiliza‡±o:
+
+[Q] Aborta
+[?] Mostra menu de comandos
+
+PROGRAMA CRIADO PARA DOMINIO PUBLICO
+
+

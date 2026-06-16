@@ -1,0 +1,148 @@
+
+
+    *******************************
+    *                             *
+    *     Speech - Vers±o 1.0     *
+    *                             *
+    *     Sintetizador De Voz     *
+    *                             *
+    *******************************
+
+
+    Este utilit rio permite, de  forma
+bastante simples,  colocarmos  voz  em
+programas BASIC. Ocupa  2176  bytes  …
+partir do endere‡o &HD000 e  apresenta
+a possibilidade de mudarmos sua  posi-
+‡±o na  mem¢ria.  Sua  liga‡±o  com  o
+BASIC ocorre atrav‚s da fun‡±o USR.
+
+    Para utiliz -lo em seus programas,
+proceda da seguinte forma:
+
+1) Inclua no in¡cio de seu programa  a
+   instru‡±o:
+
+   BLOAD "SPEECH.BIN"
+
+   Toda vez que seu programa for  exe-
+   cutado, a rotina ser  carregada  na
+   mem¢ria; mas vocˆ pode utilizar ou-
+   tros meios de acordo com suas neces
+   sidades.
+
+   O importante ‚ que a rotina  SPEECH
+   esteja corretamente posicionada  na
+   mem¢ria em local seguro,  antes  de
+   ser usada pelo seu programa.
+
+2) Defina uma das fun‡µes  USR  com  o
+   endere‡o inicial da rotina:
+
+   DEFUSRn = e
+
+   n = n£mero da fun‡±o (0 a 9)
+   e = endere‡o inicial em hexadecimal
+
+3) Sempre que quiser gerar voz,  basta
+   usar a fun‡±o USR da seguinte  for-
+   ma:
+
+   A$ = USRn ( B$ )
+
+   A$ = qualquer vari vel string
+   n  = n£mero da fun‡±o (0 a 9)
+   B$ = uma mensagem entre aspas
+        ou uma vari vel string
+
+    O programa  "SPEECH-D.BAS"  ‚  uma
+demonstra‡±o da rotina. Procure anali-
+s -lo para eliminar poss¡veis d£vidas.
+
+    Utilize apenas  letras  e  espa‡os
+quando chamar a rotina. Outros  carac-
+teres provocam o retorno ao BASIC.
+
+    A fun‡±o do  espa‡o  ‚  gerar  uma
+pausa. Esta pausa  ‚  proporcional  ao
+n£mero de espa‡os.
+
+    Para cada letra,  SPEECH  gera  um
+som espec¡fico. Sendo  assim,  devemos
+adaptar as palavras para que ele  pro-
+nuncie corretamente. Exemplo: na pala-
+vra "cebola" a letra "c" possui som de
+"s" e na palavra "casa" possui som  de
+"k", mas para SPEECH  vai  ter  sempre
+som de "k". Assim, para que  ele  fale
+"cebola", devemos escrever "sebola"  e
+para "casa" devemos usar "caza".
+
+    Algumas letras geram o mesmo  som,
+como C, K e Q. A letra H gera o  mesmo
+som da letra X, por isso elimine-a das
+palavras. Uma sugest±o ‚ aproveitar  o
+programa "SPEECH-D.BAS" e fazer diver-
+sos testes at‚ se familiarizar  com  o
+utilit rio.
+
+    Caso vocˆ queira mudar  a  posi‡±o
+para outro endere‡o, deve usar o  pro-
+grama "SPEECH-R.BAS".  Funciona  desta
+forma: vocˆ deve colocar no  drive  um
+disco contendo o arquivo "SPEECH.BIN",
+executar o relocador, fornecer o ende-
+re‡o inicial em hexadecimal e deixar o
+resto por conta do programa.  Ele  ir 
+alterar o arquivo no disco para funcio
+nar no novo endere‡o.  A  partir  da¡,
+quando carregar o SPEECH ele estar  em
+seu novo endere‡o.
+
+**************************************
+
+    Observa‡µes:
+    ------------
+
+    Este programa pode ser reproduzido
+livremente por qualquer usu rio da li-
+nha MSX, seja ele pessoa f¡sica ou ju-
+r¡dica.
+
+    Cr¡ticas e sugestµes para o  aper-
+fei‡oamento do programa ser±o bem rece
+bidas.
+
+    Para o exclarecimento  de  d£vidas
+ou maiores  informa‡µes,  envie  carta
+descrevendo sua d£vida ou a informa‡±o
+que deseja obter, acompanhada de selos
+para a resposta.
+
+**************************************
+
+    Endere‡o para correspondˆncia:
+    ------------------------------
+
+    MARCOS ANTONIO GAMBETA
+    CAIXA POSTAL 156
+    PROMISS°O - SP
+    CEP: 16370
+
+**************************************
+
+    Arquivos do SPEECH v1.0:
+    ------------------------
+
+    SPEECH.BAS   = montador
+    SPEECH.BIN   = bloco bin rio
+    SPEECH-D.BAS = demonstra‡±o
+    SPEECH-R.BAS = relocador
+    SPEECH.DOC   = documenta‡±o
+
+    Verifique sua c¢pia  para  ver  se
+est  completa. Bom proveito!
+
+**************************************
+
+

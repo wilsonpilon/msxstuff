@@ -1,0 +1,21 @@
+100 REM ****************************
+110 REM * CRIA E ARMAZENA 16 TELAS *
+120 REM ****************************
+130 KEYOFF : SCREEN 0 : WIDTH 39
+140 FOR C=1 TO 16 : FOR N=1 TO 22
+150 PRINT STRING$(38,64+C) : NEXT N
+160 POKE &HC157,0 : ' Armazena
+170 POKE &HC159,C : ' No da tela
+180 DEFUSR = &HC144 : U=USR(0)
+190 CLS : NEXT C : END
+200 REM ****************************
+210 REM * MOSTRA 16 TELAS GRAVADAS *
+220 REM ****************************
+230 KEYOFF : SCREEN 0 : WIDTH 39
+240 FOR C=1 TO 16
+260 POKE &HC157,1 : ' Mostra
+270 POKE &HC159,C : ' No da tela
+280 DEFUSR = &HC144 : U=USR(0)
+290 IF INKEY$ = "" THEN 290
+300 NEXT C : GOTO 240
+

@@ -1,0 +1,258 @@
+TURBOGRAPH 1.0
+
+     Autor: Ney Yurk Zuchelo
+
+Apresentaá±o:
+
+     O TURBOGRAPH Ç um novo  e  poderoso  editor  gr†fico  criado
+especialmente  para  desenhos  complexos  e  ediá±o  de   figuras
+detalhadas com extrema precis±o e rapidez. O TURBOGRAPH possui  o
+mais incr°vel "ZOOM"  para  ediá±o  j†  visto,  com  opáµes  para
+mistura de cores, ediá±o ponto-a-ponto e diversos outros recursos
+com muita simplicidade atravÇs de incr°vel sistema de °cones.  Um
+dos principais pontos  positivos  do  TURBOGRAPH  Ç  sua  inteira
+compatibilidade com todos os modelos nacionais  e  importados  de
+hardware MSX. O programa possui tambÇm a opá±o de  impress±o  com
+escalas de cinza para a maioria das impressoras  nacionais  (MTA,
+Lady, Ol°via, etc).
+
+Carregamento:
+
+     Para carregar o TURBOGRAPH,  ligue  o  disk-drive,  mantenha
+pressionada a tecla  [CONTROL],  ligue  o  computador,  insira  o
+disquete com o programa. Solte a tecla [CONTROL]  ao  aparecer  a
+tela de abertura do programa no v°deo.
+
+Concepá±o:
+
+     O TURBOGRAPH Ç um editor  gr†fico  projetado  exclusivamente
+para a ediá±o de telas ponto a ponto. Por esse motivo, dispµe  de
+um sistema inovador de ampliaá±o que apresenta os pontos da  †rea
+ampliada com as cores que eles assumem.  A  ediá±o,  sendo  feita
+ponto a ponto com suas cores,  exige  um  pouco  de  conhecimento
+sobre  os  funcionamentos  da  VRAM  (mem¢ria  de  v°deo)  e  VDP
+(processador de v°deo) do  MSX.  S±o  os  seguintes:  As  imagens
+apresentadas na tela correspondem aos dados  presentes  na  VRAM.
+Uma †rea da VRAM Ç destinada a  guardar  os  pontos,  e  outra  a
+guardar as cores. A cada  oito  pontos  horizontais  correspondem
+dois bytes da VRAM, um guarda  um  valor  que  informa  quais  os
+pontos (dentro daqueles oito)  ser±o  coloridos  com  a  "cor  de
+frente" e quais ser±o coloridos com a "cor  de  fundo".  O  outro
+byte guarda as cores, "de frente" e "de fundo".  Assim,  a  tela,
+que possui um total de 49152 (256 x 192) pontos, fica  armazenada
+em 12288 (49152 / 8 x 2) bytes. H†, alÇm desses, outros bytes  na
+VRAM, que ficam ocupados com valores que agora n±o nos  importam.
+O que queremos dizer Ç que, no MSX, cada  conjunto  de  8  pontos
+horizontais poder† ter pontos com apenas duas cores diferentes.
+
+     O TURBOGRAPH foi concebido tendo em vista  tal  limitaá±o  e
+informa claramente ao usu†rio  quais  as  cores  usadas  em  cada
+daqueles conjuntos (de 8 pontos  horiz.),  havendo,  Ç  claro,  a
+possibilidade de mud†-las. No programa, h†  opáµes  de  operaá±o,
+todas  em  MENUs,  que  variam  com  o  tipo  de  operaá±o:  MENU
+principal: as opáµes s±o: 
+
+ 1) Ampliaá±o (representada por uma lupa);
+ 2) Blocos (representada por quadrados superpostos);
+ 3) Cor da borda (rep. por um desenho da tela e bordas);
+ 4) Apagar (rep. por uma tela com um X );
+ 5) Cortar (rep. por uma tesoura) e 
+ 6) Entrada/sa°da (rep. por duas setas).
+
+1) Ampliaá±o:
+
+     Mostra na tela  um  bloco  piscando  e  num  dos  cantos  as
+coordenadas dele. ê a parte mais complexa do programa,  onde  s±o
+feitas as ediáµes. Para voltar ao MENU  principal,  basta  teclar
+[RETURN]. Teclando [ESPAÄO] a †rea da tela, selecionada com o uso
+das setas cursoras,  onde  estiver  o  bloco  ser†  ampliada.  A°
+aparecem os 576 (24 x 24) pontos ampliados,  com  suas  cores.  è
+direita aparecem, de cima para baixo: a parte ampliada  da  tela,
+em tamanho normal; dois "quadradinhos" brancos,  que  indicam  as
+cores de uso, sendo o superior referente Ö "cor de  frente"  e  o
+inferior Ö "cor de fundo";  dois  "quadradinhos"  vermelhos,  que
+indicam as cores atuais da posiá±o  onde  estiver  o  cursor  que
+pisca  entre  os  576  pontos,  com   funcionamento   igual   aos
+anteriores; a indicaá±o "Pres. F1", pressionando F1,  surgir†  um
+outro MENU (vamos cham†-lo MENU 2); o modo de ediá±o, podendo ser
+1, 2 ou 3; as coordenadas da †rea ampliada.
+     Numa primeira vez que se usa o TURBOGRAPH Ç natural que  n±o
+seja vista a parte da tela que foi ampliada, porque Ç quase certo
+que aind† n±o haver† nenhum desenho na  tela,  aparecendo  apenas
+pontos em preto. Haver† um cursor  piscante,  m¢vel  atravÇs  das
+setas cursoras, que indica o ponto a ser editado. ao pressionar a
+barra de espaáos, o  ponto  ser†  afetado  pelas  cores  de  uso,
+representadas  pelos  "quadradinhos"  brancos.  Se  as  cores  do
+conjunto de pontos onde estiver o cursor forem as mesmas  das  de
+uso, apenas o ponto sob o cursor ser† trabalhado, caso contr†rio,
+as cores do conjunto de 8  pontos  ser±o  igualadas  Ös  de  uso,
+trabalhando ainda o ponto sob o cursor. Se o modo de operaá±o for
+1, o ponto sob o cursor (quando se pressionar  espaáo)  assuimir†
+sempre a cor de fundo, se o modo for 2, assumir† sempre a cor  de
+frente, e se for 3, ser† invertido, assumindo cor de fundo ou  de
+frente dependendo se assumia antes, cor de frente  ou  de  fundo,
+respectivamente. Para selecionar o modo de operaá±o basta  teclar
+"1", "2" ou "3", conforme o modo desejado.
+
+     O MENU 2 consiste nas seguintes opáµes: 
+
+ a) AUTO
+ b) Movimentaá±o
+ c) Escolher cores
+ d) Igualar cores
+ e) Corte
+ f) Retornar
+
+     O "AUTO" faz com que  as  cores  de  uso  sejam  sempre
+iguais  Ös  j†  existentes  nos  pontos  onde  passar  o  cursor.
+Pressionado uma  vez,  apenas  a  cor  de  frente  ser†  afetada,
+pressionado  outra  vez,  apenas  a  cor  de  fundo,  pressionado
+novamente, as duas cores estar±o sob esse mecanismo,  pressionado
+ainda uma quarta vez, as cores voltar±o ao funcionamento  normal,
+sendo  alteradas  apenas  pelo  usu†rio.  Os   quadradinhos   que
+representam as  cores  de  uso,  ficar±o  vermelhos  ou  brancos,
+conforme estejam ou n±o afetados pelo "AUTO", respectivamente.
+
+     A opá±o "b"  permite  que  se  edite  outra  †rea  da  tela,
+selecionando-a com o uso das setas cursoras. Aparecer±o sempre no
+canto inferior direito as coordenadas para orientaá±o, e  a  †rea
+nessas coordenadas estar† sempre sendo mostrada na tela  ampliada
+(e tambÇm no canto  superior  direito,  em  tamanho  normal).  Ao
+selecionar a  nova  †rea  a  editar,  basta  teclar  [ESPAÄO]  ou
+[RETURN].
+
+     A opá±o "c" serve para escolher as cores que se  quer  usar,
+tanto a de frente quanto a de fundo. Usando  as  satas  cursoras,
+para a direita e esquerda, selecione uma cor, e com as setas para
+cima a para baixo, escolha se quer selecionar a cor de frente  ou
+a de fundo. Ao selecionar as duas cores, tecle [ESPAÄO].  Se  uma
+das cores estiver sob o efeito do "AUTO", continuar† assim, a n±o
+ser que a cor que representa seja mudada,  quando  o  quadradinho
+voltar† a ser branco.
+
+     A opá±o "d" faz com que as cores de uso sejam  igualadas  Ös
+cores da posiá±o atual do cursor.  N±o  ter†  nenhum  efeito  sob
+cores afetadas pelo "AUTO".
+
+     A opá±o "e", de corte, repµe a imagem inicial  da  †rea  que
+est† sendo ampliada, voltando a ser como era quando tal †rea  foi
+escolhida para ser ampliada (editada) pela £ltima vez.
+
+     A opá±o "f" faz retornar ao bloco piscando sobre toda a tela
+em  tamanho  normal.  Teclando  [ESPAÄO]  passa-se  novamente   Ö
+ampliaá±o e teclando-se [RETURN] volta-se ao MENU principal.
+
+ Obs: quando se faz  uma  seleá±o  num  MENU,  usam-se  as  setas
+cursoras
+      para escolher e a barra de espaáos para definir a opá±o.
+
+2) Blocos: 
+
+     Surge na tela,  piscando,  o  que  seria  o  canto  superior
+esquerdo de um retÉngulo. Ser†, ent±o o referido canto do bloco a
+ser marcado. Teclando [RETURN],  volta-se  ao  MENU  principal  e
+[ESPAÄO] posiciona o canto do bloco. Ent±o  usando  novamente  as
+setas cursoras  agora  se  posiciona  o  canto  oposto  (inferior
+direito) do bloco. Teclando [RETURN],  volta-se  a  selecionar  o
+primeiro canto do bloco e [ESPAÄO] marca finalmente o bloco todo,
+quando aparece o "MENU 3":
+
+ a) Invers±o
+ b) Fundo
+ c) Frente
+ d) Cores
+ e) C¢pia
+ f) Retorno
+ 
+     A opá±o "a" faz com  que  os  pontos  (do  bloco,  Ç  claro)
+assumam cor inversa Ö que assumiam anteriormente. A opá±o "b" faz
+com que os pontos assumam apenas a cor de fundo, ou seja,  apagam
+o desenho. A "c" faz  com  que  eles  assumam  a  cor  de  frente
+"preenchendo" o desenho. A  opá±o  "d"  permite  selecionar  duas
+cores (a da esquerda correspondendo Ö de frente e  a  da  direita
+correspondendo Ö de fundo) que ser±o impostas a todos  os  pontos
+(Ç claro que apenas no bloco marcado). A opá±o "e" permita que  o
+desenho dentro do bloco seja copiado em outra †rea  da  tela.  Um
+bloco im¢vel marcar† o bloco escolhido e um bloco  m¢vel  servir†
+para selecionar onde fazer a c¢pia. A opá±o "f" retorna  ao  MENU
+principal.
+
+3) Cor da borda: 
+
+     Apenas altera a cor das bordas da tela, passando de uma  cor
+para a seguinte. 
+
+4) Apagar:
+
+     Apaga a tela, permitindo selecionar  uma  cor  para  todo  o
+fundo dela.
+
+5) Cortar: 
+
+     Desfaz a £ltima operaá±o  com  blocos,  ou  repµe  a  imagem
+apagada  pela  opá±o  anterior.  Se  usarmos   a   opá±o   bloco,
+selecionarmos um bloco e fizermos algumas c¢pias dele,  apenas  a
+£ltima ser† afetada por esta  opá±o.  Se  ap¢s  apagar  uma  tela
+usarmos a opá±o "ampliar", e, logo ap¢s, a  opá±o  "cortar",  ela
+n±o ter† efeito nenhum, porque sua aá±o Ç apenas sobre  a  ãLTIMA
+operaá±o com blocos ou "apagar", e se  n±o  for  escolhida  outra
+opá±o, com exceá±o de "cor da borda" que n±o interfere.
+
+6) Entrada/sa°da:
+
+     Para operaáµes de leitura, gravaá±o e impress±o de telas.  O
+MENU 4 tem as opáµes:
+
+ a) Gravaá±o em FITA
+ b) Leitura de FITA
+ c) Gravaá±o em DISCO
+ d) leitura em DISCO
+ e) Impress±o
+ f) Retorno
+ 
+     A opá±o "a" permite gravar uma tela em FITA. Para carreg†-la
+e apresent†-la, deve-se comandar:
+
+            CLEAR200,&HAEFF:SCREEN2:BLOAD"CAS:nome",R 
+
+     ê importante saber que assim  a  †rea  BASIC  ser†  reduzida
+consideravelmente.
+     A opá±o seguinte faz a leitura, em fita, de uma tela gravada
+usando a opá±o anterior.
+
+     A opá±o "c" permite realizar gravaáµes em  disquetes,  dando
+duas opáµes de formato: o GRP e o TGR. O formato GRP Ç a gravaá±o
+da tela diretamente no disco,  sem  passar  pela  RAM  (mem¢ria).
+Neste formato, a tela Ç carregada (pelo BASIC) assim:
+
+                   SCREEN2:BLOAD"nome.GRP",S 
+
+     Ent±o a gravaá±o  ir†  do  disco  diretamente  para  a  VRAM
+(mem¢ria de v°deo) sem passar pela RAM. Essa opá±o n±o Ç poss°vel
+para FITA. O  outro  formato,  TGR,  Ç  idàntico  ao  usado  para
+gravaáµes em FITA. Tem a desvantagem de usar  parte  da  mem¢ria,
+mas ocupa uma †rea menor no disquete.
+
+     A  opá±o  "d"  faz  a  leitura  de  gravaáµes  de  telas  em
+disquetes. ê  importante  que  se  informe  corretamente  qual  o
+formato do arquivo a ler. Para tirar d£vidas ou mesmo procurar um
+arquivo, tecle [RETURN] ao invÇs de dar o  nome  de  um  arquivo,
+ent±o ser† fornecido o diret¢rio do disquete.
+
+     A  opá±o  "e"  imprime  a  tela  (s¢  se  houver  impressora
+conectada). A impress±o ter† 512 x 384 pontos, sendo que as cores
+da tela ser±o diferenciadas no papel. A opá±o "f" retorna ao MENU
+principal.
+
+ATENÄ∞O:
+
+     Ao inicializar o sistema, lembre  de  manter  pressionada  a
+tecla [CONTROL], pois  o TURBOGRAPH precisa  de  toda  a  mem¢ria
+dispon°vel;
+     Experimente  carregar  algumas  das  telas  de  exemplo  que
+acompanham o programa. Confira o diret¢rio com a opá±o  para  ler
+do DRIVE, teclando simplesmente [RETURN] em lugar do nome;
+     Tente mexer no desenho da tela  de  entrada.  Basta  usar  a
+opá±o "cortar" assim que o programa for carregado.
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

@@ -1,0 +1,2 @@
+10 BLOAD"TRANT0",R
+

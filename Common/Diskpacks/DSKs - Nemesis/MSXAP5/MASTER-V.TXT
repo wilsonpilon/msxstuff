@@ -1,0 +1,12 @@
+
+MSX MASTER VOICE by AAckosoft
+autor: Ronald Van der Putten
+
+Digitalizador de voz e sons.
+
+Instru‡µes em inglˆs no programa.
+
+Para carregar digite:
+A>MASTER-V e tecle [RETURN]!
+
+

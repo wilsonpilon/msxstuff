@@ -1,0 +1,21 @@
+10 KEYOFF:SCREEN0:WIDTH40:LOCATE0,23
+20 PRINT" XWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWY"
+40 PRINT" V      SOFT-O-MATIC PACK N§O4      V"
+60 PRINT" V  FreeWare, ShareWare & DemoWare  V"
+80 PRINT" ZWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW["
+220 PRINT " Suas op‡µes s±o:" : PRINT
+230 PRINT"A>GEN80    (FreeWare) mont. assembler"
+240 PRINT"A>MON80    (FreeWare) d. disassembler"
+250 PRINT"A>ALFABETO (FreeWare) p/GRAPHIC TOOLS"
+260 PRINT"A>DB-DATA  (FreeWare) banco  de dados"
+270 PRINT"A>SMACOPY2 (FreeWare) copia cartuchos"
+271 PRINT"A>ARTIST   (FreeWare) editor  gr fico"
+272 PRINT"A>M-EDITOR (FreeWare) editor  musical"
+273 PRINT"A>PICTURE  (FreeWare) criador  SHAPES"
+274 PRINT"A>SOLDIER  (FreeWare) jogo espacial" : PRINT
+280 PRINT " Digite uma das op‡µes acima:":PRINT
+290 PRINT "Obs: Os arquivos .TXT s±o os manuais"
+300 PRINT "     dos programas aqui apresentados;"
+301 PRINT "     Conhe‡a outros pacotes da s‚rie!"
+310 PRINT : CALL SYSTEM
+

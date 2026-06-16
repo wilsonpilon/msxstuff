@@ -1,0 +1,8 @@
+
+CONVSOL by MICROSOL
+
+Conversor CP/M > MSX-DOS
+
+A>CONVSOL e [RETURN] para rodar!
+
+

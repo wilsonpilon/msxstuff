@@ -1,0 +1,481 @@
+     MSX DESK-TOP TOOLS 1.0
+
+     Programadores: Equipe NEMESIS
+
+
+     INTRODUÄ∞O:
+
+     O MSX  DESK-TOP  TOOLS  1.0  Ç  uma  coletÉnea  de  diversos
+utilit†rios  voltados  para  a  †rea  gr†fica  e  ao  sistema  de
+editoraá±o eletrìnica ou "desk-top publishing". Entre os arquivos
+que compµem este programa, podemos  destacar  algumas  eficientes
+ferramentas que que fazem parte  da  lista  de  intrumentos  mais
+utilizados  por  nossos  programadores  na  elaboraá±o  dos  mais
+diversos softwares para MSX. O MSX DESK-TOP  TOOLS  1.0  traz  um
+editor gr†fico para telas do padr±o ".GRP", capturador de figuras
+do microcomputador IBM/PC para o MSX, conversor de telas do  MSX2
+(screen 8) para o MSX (screen 2) com  contrìle  de  luminosidade,
+redutor de telas para solucionar poss°veis  distoráµes  em  telas
+capturadas, "Screen  Blanker",  utilit†rios  para  impressµes  de
+p†ginas e cat†logos de figuras, etc.
+     Note que alguns dos aplicativos  foram  criados  para  serem
+executados em um micro da linha IBM/PC; e alguns  outros  possuem
+uma vers±o diferente para os micros daquela linha.
+     Sem d£vida alguma, o MSX DESK-TOP TOOLS 1.0 far† de agora em
+diante parte dos utilit†rios mais procurados pelos  programadores
+e usu†rios de MSX em geral, tornando-o um acess¢rio indispens†vel
+para todos os que possuem estas m†quinas.
+
+
+     CARREGAMENTO:
+
+     O MSX DESK-TOP  TOOLS  1.0  Ç  automaticamente  carregado  e
+executado ao ser colocado no disk-drive do computador MSX, ap¢s o
+mesmo ter sido ligado. Se tudo estiver correto, ser†  apresentada
+uma tela de abertura e logo ap¢s o conte£do do disco. Em caso  de
+n±o funcionamento acione o "reset"  do  seu  MSX.  Persistindo  o
+problema consulte nosso departamento tÇcnico.
+
+
+     EDITOR GRÑFICO:
+
+     O editor gr†fico  que  acompanha  o  MSX  DESK-TOP  TOOLS  Ç
+baseado no  famoso  "Aackodraw  &  Paint"  da  empresa  holandesa
+Aackosoft, e Ç uma poderosa ferramenta para desenho  desenvolvida
+exclusivamente para micros da linha MSX.
+     Este editor trabalha em disco com telas no formato  VRAM,  o
+mesmo do MSX PAGEMAKER da Nemesis Inform†tica Ltda. e  de  outros
+importantes editores existentes no mercado.
+     Para execut†-lo digite:
+
+A>EDITGRAF  e pressione [RETURN]
+
+     Ao  ser  carregado,  o  editor  gr†fico  apresenta  um  menu
+principal com as opáµes:
+
+[ESC] Edita (vai para a tela de desenho);
+[L] Load tela (carrega tela de fita ou disco);
+[S] Save tela (grava a tela desenhada em fita ou disco);
+[M] Modo de tela (seleciona modo de recuperaá±o de tela - UNDO ou
+BACK-UP);
+[R] Refaz a tela (restaura tela armazenada na mem¢ria);
+[I] Inicia a tela (limpa a tela);
+[E] Edita padrµes (vai ao sub-menu  de  ediá±o  de  caracteres  e
+texturas);
+[TAB] Ajuda (mostra durante a ediá±o de tela, uma p†gina de ajuda
+com as teclas das  principais  funáµes  gr†ficas  dispon°veis  no
+editor).
+
+     No modo de ediá±o de tela, acionado por intermÇdio da  tecla
+[ESC], notamos no canto superior esquerdo, uma nota auxiliar  que
+nos exibe:
+
+Modo (modo de tela utilizado);
+Frente (cor da tinta utilizado);
+Fundo (cor do papel utilizado);
+Xpos (posiá±o horizontal do cursor);
+Ypos (posiá±o vertical do cursor);
+
+     Para mudar tais parÉmetros, seguiremos abaixo  mostrando  as
+teclas principais para ediá±o de tela, desenho  ou  alteraá±o  de
+uma  tela  previamente  carregada  pela  funá±o  "load"  do  menu
+principal.
+
+     ATENC∞O: Para uma r†pida visualizaá±o das teclas de operaá±o
+do modo de ediá±o de tela gr†fica, pressione [TAB]!
+
+     Como pode se perceber,  basta  usar  as  teclas  de  direá±o
+(SETAS) para mover o cursor (L†pis, no momento). Para que o l†pis
+risque aperte [SPACE]. Apertando duas  vezes,  o  l†pis  funciona
+como borracha, apagando seu riscado.
+
+[L] Linha (traáa uma linha de um ponto a outro);
+[B] Quadrado ou retÉngulo (pode ser aumentado ou diminuido  pelas
+setas);
+[C] C°rculo (traáa um c°rculo);
+[S] Spray (desenha pontos aleat¢rios como um spray);
+[R] Raio (traca retas de um mesmo ponto a outros);
+[F] Fill ou Paint (preenche uma †rea com a cor especificada);
+[P]  Escreve  (muda  o  cursor  para  um   formato   de   escrita
+datilogr†fica);
+[G] Grid de mediá±o;
+
+[SELECT] Zoom (amplia 4 vezes a †rea onde esta o cursor,  podendo
+mostrar detalhes precisos dos desenhos. Pode-se deslocar  a  †rea
+visada por meio de "Scroll" em todas as direáµes);
+[HOME] Centraliza o cursor no meio da tela;
+
+[DELETE] Apaga o £ltimo movimento ou traáo realizado (UNDO);
+[INSERT] Volta ao £ltimo BACK-UP gravado (se estiver  gravado,  Ç
+         claro!);
+[STOP] Aborta o comando anterior (desliga a funá±o usada);
+
+[+] e [-] Aumenta ou diminui a velocidade do cursor;
+
+[0] a [9] Seleciona o padr±o de textura ser utilizado pela funá±o
+          "fill";
+
+[ESC] Volta ao menu principal.
+
+[F1] Seleciona modo de BACK-UP;
+[F2] Seleciona a cor da tinta;
+[F3] Seleciona a cor da tela;
+[F4] Seleciona a cor do cursor;
+[F5] Muda a posiá±o ou retira o menu;
+[F6] Volta ao modo inicial;
+[F9] Seleciona a cor da borda;
+[F1O] Arma janela para utilizaá±o com um dos  comandos  descritos
+      abaixo:
+
+[X] inverte cores no espaáo delimitado pela janela;
+[H] Inverte horizontalmente a tela ou o  espaco  delimitado  pela
+    janela;
+[V] Inverte verticalmente a tela  ou  o  espaáo  delimitado  pela
+    janela;
+[Y] Troca a cor da janela;
+[M] Move a tela ("scrool");
+[I] ObtÇm as cores da janela;
+[C] Copia a janela num outro local;
+[T] Move a janela de um local a outro;
+[D] Deleta cores da janela (atributos);
+[E] Apaga o conte£do da janela.
+
+     No modo de editaá±o de  padrµes  do  menu  inicial,  podemos
+escolher entre: Editar "fill" (pintura), editar "spray" ou editar
+o banco de caracteres.
+     A escolha poder† ser feita apertando uma  das  teclas:  [F],
+[S] ou [C]. Para voltar ao menu tecle [RETURN].
+     Dentro destas funáµes vocà pode editar os padrµes usando  as
+facilidades das operaáµes existentes: Para sair leve o cursor atÇ
+a posiá±o de "SAI" e pressione a [SPACE]. Entre as outras  opáµes
+temos "LOAD" e "SAVE" que respectivamente gravam e carregam os
+padrµes editados; "BOTA" que leva o padr±o editado  atÇ  a  linha
+inferior onde ele poder† ser colocado na posiá±o desejada; "RODA"
+e "INV." que rodam ou invertem o padr±o em ediá±o;  e  finalmente
+"E", "D", "C" e "B" que respectivamente giram  o  padr±o  editado
+para a Esquerda e Direita, e para Cima e para Baixo.
+
+
+     CAPTURADOR DE TELAS DO IBM/PC:
+
+     Como j† falamos  anteriormente,  existem  no  disco  do  MSX
+DESK-TOP  TOOLS  1.0,  alguns  utilit†rios  criados  para   serem
+executados em micros da linha IBM/PC para captura de imagens  dos
+mesmos, e que posteriormente possam ser carregadas  e  utilizadas
+no MSX, alÇm de outros utilit†rios interessantes. S±o eles:
+
+PICEM.EXE - Programa que mostra na  tela  (modos  CGA,  HÇrcules,
+EGA, VGA e SuperVGA) do IBM/PC, telas nos formatos  "GIF",  Lotus
+"PIC" e "PCX" para visualizaá±o. O "Picem" Ç o que chamamos de um
+"picture view utility". Ele foi desenvolvido por John Bridges e Ç
+comercializado como "shareware", o que possibilita sua  colocaá±o
+neste pacote;
+
+CAPTURE.EXE - ê o capturador de telas em  s°.  Com  ele,  podemos
+capturar uma tela  ou  parte  dela  para  o  formato  gr†fico  do
+"PRINT-MASTER" ou "NEWS-MASTER" que  s±o  reconhecidos  pelo  MSX
+PAGEMAKER DeLuxe;
+
+NEMESIS.PCX - ê uma tela gr†fica gerada num  IBM/AT  486,  com  o
+editor gr†fico "Microsoft Paintbrush" do ambiente "Windows",  que
+inclu°mos aqui para efeito de demostraá±o do nosso capturador;
+
+PMEPSOPC.EXE -  Utilit†rio  para  impress±o  de  um  cat†logo  de
+figuras contidas em uma biblioteca do padr±o "Print-Master" ou as
+capturadas pelo programa "Capture". Maiores detalhes  sobre  este
+programa  ser±o  descritos  mais  adiante  no  °tem  "Catalogando
+figuras";
+
+CLIPSCAT.EXE -  Utilit†rio  para  impress±o  de  um  cat†logo  de
+figuras contidas no pacote "CLIP-ART II" da  Nemesis  Inform†tica
+Ltda. Maiores detalhes sobre este programa ser±o  descritos  mais
+adiante no °tem "Catalogando figuras";
+
+     Como capturar uma tela do IBM/PC:
+
+     Descreveremos Ö seguir os passos necess†rios para  convers±o
+de uma tela do IBM/PC (NEMESIS.PCX) para o MSX. A operaá±o dever†
+ser efetuada em um micro da linha IBM/PC, XT,  AT  286,  386,  ou
+486; com monitor "CGA". Lembramos ainda, que  com  o  mÇtodo  que
+descreveremos Ö seguir, poder°amos usar uma tela qualquer do  PC,
+desde  que  estivesse  em  um  dos  formatos  compat°veis  com  o
+utilit†rio "Picem" (PCX, PIC ou GIF).
+
+1ß passo: Leve o disco do MSX DESK-TOP TOOLS e insira no drive do
+IBM/PC;
+
+2ß passo: Acione o programa "Capture"  para  que  o  mesmo  fique
+residente na mem¢ria e preparado para ser  utilizado.  Para  isso
+digite:
+
+A>CAPTURE e tecle [RETURN];
+
+3ß passo: Acione o programa "Picem" para que possamos observar  a
+tela "NEMESIS.PCX). Para isso digite:
+
+A>PICEM e tecle [RETURN] 2 vezes;
+
+4ß passo: Utilize as teclas direcionais para centralizar a figura
+no v°deo e pressione simultÉneamente  as  teclas  [ALT]+[G]  para
+ativar o capturador;
+
+NOTA - Podem aparecer algumas impurezas no video.
+
+5ß passo: Ser† mostrado na tela o men£ de opáµes  do  capturador.
+Certifique-se que o mesmo  est†  setado  no  modo  "Print-Master"
+(pois  no  modo  "News-Master"  ter°amos  algumas   opáµes   mais
+avanáadas  que  veremos  adiante).  Em  caso  negativo  pressione
+simultÉneamente as teclas [CONTROL]+[P];
+
+6ß passo: Pressione [SPACE] para sair do men£ e poder percorrer a
+tela com o cursor de captura (um grande quadrado) para a  seleá±o
+do desenho Ö ser capturado. Para mover o quadrado, use  as  setas
+direcionais;
+
+7ß  passo:  Quando  estiver  sobre  a  †rea  desejada,  pressione
+[RETURN];
+
+8ß passo: Responda com n±o ("N") quando surgir a opá±o da cor  de
+fundo pràta, e responda  que  quer  a  tela  alterada  para  como
+aparece no v°deo. Entre  ent±o  com  um  nome  para  a  figura  e
+pressione [RETURN]. A figura ser† gravada no disco e uma mensagem
+aparecer† no v°deo comentando o sucesso (ou n±o!) da operaá±o;
+
+9ß passo: Pressione 3 vezes a tecla [ESC] para sair do capturador
+e do programa "Picem". Digite ent±o:
+
+A>DIR e tecle [RETURN].
+
+     Se tudo foi feito da maneira correta, ser† mostrado no disco
+2 novos arquivos com  os  nomes  "CAPTURE.SHP"  e  "CAPTURE.SDR".
+Estes dois arquivos devem ser copiados para o disco mestre do MSX
+PAGEMAKER DeLuxe, para serem  posteriormente  carregados  no  MSX
+como "SHAPES PADR∞O PC" no men£ acionado pela tecla [F5] do bloco
+"desenhista" do MSX PAGEMAKER DeLuxe.
+
+     Observaáµes adicionais:
+
+a) O programa "Picem" e  a  tela  "NEMESIS.PCX"  foram  inclu°das
+neste pacote apenas para demonstraá±o. O programa "Capture" Ç por
+si s¢ capaz de permanecer  residente  na  mem¢ria  dos  IBM/PC  e
+capturar da mesma maneira qualquer  tela  que  desejarmos,  mesmo
+quando acionado ([ALT]+[G]) de dentro de outro aplicativo gr†fico
+qualquer. Lembramos porÇm que  o  utilit†rio  "Capture"  funciona
+somente no modo de v°deo "CGA". Para execut†-lo de modos de v°deo
+diferentes, ser† necess†ria a utilizaá±o de um "emulador de v°deo
+CGA";
+
+b) O capturador de telas quando utilizado  em  modo  simplificado
+(modo "Print-Master") tem a †rea de captura limitada  ao  tamanho
+do cursor  quadrado  (64x64  pontos).  Para  converter  uma  tela
+inteira (cuidado com as diferenáas entre as resoluáµes  dos  dois
+micros) ser† necess†ria a captura de diversas †reas  para  compìr
+uma tela;
+
+c) Os arquivos "CAPTURE.SHP", "CAPTURE.SDR" (e em  alguns  casos,
+"CAPTURE.SDX") n±o s±o uma simples tela, mas  uma  biblioteca  de
+figuras capturadas que poder±o ser  selecionadas  individualmente
+no pr¢prio MSX PAGEMAKER DeLuxe pelo bloco "desenhista";
+
+d) O modo "News-Master" permite a captura de uma  †rea  de  maior
+tamanho da tela, pois seu cursor quadrado Ç de tamanho  vari†vel.
+No  entanto,  o  MSX  PAGEMAKER  DeLuxe  ter†  problemas  com   o
+carregamento de figuras grandes que sobrecarregariam a mem¢ria do
+micro. Para usar o capturador  neste  modo  ser†  necess†ria  uma
+prÇvia experiància por parte do usu†rio.
+
+
+     IMPRESSORES DE CATALOGOS DE FIGURAS:
+
+     As bibliotecas de figuras que  compµem  os  pacotes  do  MSX
+PAGEMAKER DeLuxe KIT s±o extensas e a localizaá±o de determinados
+desenhos  seria  muito  dif°cil  se  n±o   dispusessemos   destes
+utilit†rios que imprimem um cat†logo com todas as figuras de cada
+biblioteca. S±o eles:
+
+PMEPSON.COM - Para ser utilizado no MSX. Ao ser  executado  (para
+isso basta digitar seu nome no ambiente do  sistema  operacional)
+pede o  nome  de  uma  biblioteca  Ö  ser  impressa.  Ele  aceita
+bibliotecas  no  padr±o  "Print-Master",  "News-Master"   ou   do
+utilit†rio "Capture". Bastar† ent±o digitar o nome da  biblioteca
+e ligar a impressora. Lembramos que o  processo  de  impress±o  Ç
+normalmente lento, dependendo da velocidade de impress±o  gr†fica
+da impressora utilizada;
+
+PMEPSOPC.EXE - Faz o mesmo que o utilit†rio descrito  acima,  mas
+deve ser executado em um micro da linha IBM/PC. Tem a vantagem de
+ser muito mais r†pido;
+
+CLIPSCAT.COM - Para ser utilizado no MSX. Ao ser executado  (para
+isso basta digitar seu nome no ambiente do  sistema  operacional)
+pede o nome de uma biblioteca Ö ser impressa. Ele somente  aceita
+bibliotecas no padr±o "CLIP-ART II". Bastar† ent±o digitar o nome
+da biblioteca e ligar a impressora. Lembramos que o  processo  de
+impress±o  Ç  normalmente  lento,  dependendo  da  velocidade  de
+impress±o gr†fica da impressora utilizada;
+
+CLIPSCAT.EXE  -  Faz  o   mesmo   que   o   utilit†rio   descrito
+anteriormente, mas deve  ser  executado  em  um  micro  da  linha
+IBM/PC. Tem a vantagem de ser muito mais r†pido.
+
+NOTA - H† uma biblioteca de exemplo neste pacote: "FANCYABC"!
+
+
+     IMPRESSORES ALTERNATIVOS DE PÑGINA:
+
+     Para quem n±o quer perder tempo entrando  no  MSX  PAGEMAKER
+para  simplesmente  imprimir  uma  p†gina,  os  utilit†rios   que
+descreveremos abaixo ser±o perfeitos para que  esta  tarefa  seja
+efetuada  com  mais  rapidez.  Fora   isso,   estes   utilit†rios
+permitir±o novos  e  melhores  recursos  que  os  dispon°veis  no
+pr¢prio bloco de impress±o do MSX PAGEMAKER. S±o eles:
+
+PRINTPAG.COM - Utilit†rio criado para executar  sob  a  linha  do
+sistema operacional, com a  finalidade  de  imprimir  uma  p†gina
+gravada num disco. O disco do MSX DESK-TOP TOOLS  1.0  traz  duas
+p†ginas de demostraá±o com os nomes "PAGINA1" e  "PAGINA2".  Para
+simplesmente  imprimir   uma   destas   p†ginas,   sem   recursos
+sofisticados digite:
+
+A>PRINTPAG PAGINA1 S  e tecle [RETURN]
+
+     Como vimos,  o  utilit†rio  "PRINTPAG"  foi  executado  para
+imprimir a p†gina  "PAGINA1"  que  est†  contida  no  disco  momo
+exemplo, no formato "S" (simples). No  entanto,  o  utilit†rio  Ç
+capaz de  imprimir  com  muitos  outros  recursos.  Verifique  as
+sintaxes dispon°veis:
+
+Sintaxe:  PRINTPAG  nomep†gina[/nomep†gina2]   [opá±o]   [nß   de
+passadas] [margem]
+onde:
+
+[opá±o] pode ser [S]imples, [D]upla,
+                 [C]omprimida,
+                 [R]eduzida ou
+                 [I]nversa reduzida.
+
+     As opáµes [C],[R] e [I] aceitam atÇ duas p†ginas  ou  margem
+esquerda. O default Ç [D].
+
+[passadas] pode ser um n£mero de 1 a 9. O default Ç 1.
+
+[margem] - Em pontos ou a letra "M" para imprimir no lado direito
+da folha.
+
+     Para  uma  demonstraá±o  dos  recursos   dispon°veis   neste
+utilit†rio, digite:
+
+A>DEMOPAGE  e tecle [RETURN]
+
+     Ser† impresso um cart±o de natal, utilizando os recursos  de
+p†gina invertida e multiplas passadas. Para montar  o  cart±o  de
+natal, dobre a folha 2 vezes pelo meio, formando assim a capa e a
+parte interna do cart±o.
+
+     ATENÄ∞O: As impressµes com resoluá±o  "plotter"  e  reduzida
+([R]) s¢ est±o dispon°veis para  impressoras  compat°veis  com  a
+"EPSON FX80+" ou superiores (EPSON LX810,  ACTION  PRINTER  2000,
+LADY 80/90, OLâVIA, etc).
+
+              O tempo para imprimir Ç de aproximadamente 30 minu-
+tos. Aguarde com paciància pois vale a pena esperar!
+
+     O  segundo  utilit†rio  para  impress±o  de  p†ginas   Ç   o
+"PRNPAGPC.EXE" que faz o mesmo  que  o  utilit†rio  anterior  num
+micro da linha IBM/PC e com maior velocidade.
+
+
+     REDUTOR DE FIGURAS:
+
+     Este utilit†rio permite reduzir o tamanho  de  uma  tela  na
+proporá±o de 1/4. ê extremamente interessante para aperfeiáoar as
+figuras importadas  do  IBM/PC  que  ficam  "agigantadas"  quando
+trazidas para o MSX. Para acion†-lo basta digitar:
+
+A>REDUTOR  e tecle [RETURN]
+
+     Ser±o mostradas as telas existentes no disco. Digite o  nome
+daquela que deseja que seja reduzida e pressione [RETURN].
+
+     ATENÄ∞O: N±o Ç necess†rio digitar a extens±o ".GRP" junto ao
+nome da tela. Isto se aplica aos demais utilit†rios  que  compµem
+este pacote.
+
+
+     SCREEN "BLANKER":
+
+     Este programa tem a finalidade  de  tirar  os  atributos  de
+cores de uma tela carregada, para obter uma simulaá±o no v°deo de
+como a mesma ser†  impressa  no  papel.  Ap¢s  a  tela  ter  sido
+carregada podemos pressionar [SPACE]  para  inverter  o  v°deo  e
+[RETURN] para grav†-la no disco  no  seu  novo  formato.  Se  fìr
+pressionada a tecla [ESC], o  programa  voltar†  ao  MSX-DOS  sem
+gravar a tela convertida.
+
+
+     CONVERSOR DE SCREEN 8 PARA SCREEN 2:
+
+     Com este utilit†rio, fica poss°vel passar uma tela em screen
+8 do MSX2 para a screen 2 do MSX, com contrìle  da  luminosidade;
+isto Ç, em uma escala de 1 para 20 podemos escolher uma opá±o que
+melhor se adapte Ö tela utilizada,  j†  que  256  cores  ir±o  se
+transformar em apenas duas. Usando  "1"  teremos  uma  tela  mais
+clara e com "20" teremos uma mais escura e com  maior  contraste.
+Depois de carregada a tela, que ter† de ser do padr±o  ".PIC"  do
+"Phillips Video-Graphics" ou outro  similar,  pressione  [RETURN]
+para gravar em formato ".GRP" ou  tecle  [ESC]  para  abortar  ou
+trocar o n°vel da luminosidade.
+
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                   NEMESIS INFORMATICA LTDA.
+               Caixa postal 4.583 Cep 2O.OO1-97O
+                 Rio de Janeiro - RJ - Brasil.
+
+
+
+

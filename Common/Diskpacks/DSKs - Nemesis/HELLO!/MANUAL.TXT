@@ -1,0 +1,247 @@
+     SISTEMA OPERACIONAL HELLO! Vs. 1.O
+     Autor: Eduardo Alberto Barbosa
+
+     Distribuiá±o exclusiva: NEMESIS INFORMÑTICA LTDA.
+
+     APRESENTAÄ∞O:
+
+     O Sistema Operacional HELLO! foi desenvolvido para facilitar
+aos usu†rios de micro-computadores MSX a  utilizaá±o  dos  mesmos
+com Disk-drive.
+     O Sistema Operacional HELLO! tambÇm mostra-se demasiadamente
+£til na localizaá±o e/ou  recuperaá±o  de  defeitos  a  n°vel  de
+hardware e na m°dia utilizada.
+     O  programa  foi   idealizado   levando-se   em   conta   as
+necessidades mais  frequentes  de  nossa  equipe  e  de  clientes
+consultados.  Agradeceriamos  tambÇm   se   vocà   fizesse   seus
+coment†rios e sugestµes, para que  possam  ser  acrescentadas  na
+medida do possivel em futuras versµes do mesmo. Todo comprador da
+vers±o original tem direito as atualizaáµes que possam vir a  ser
+lanáadas.
+     O Sistema Operacional HELLO! Ç dee muito simples utilizaá±o,
+pois Ç todo montado atravÇs de menus "pull-down", sem necessidade
+de grandes conhecimentos por parte do usu†rio.
+
+     CARREGAMENTO:
+
+     Ligue o disk-drive, ligue o computador e insira o disco  com
+o programa.  O  Sistema  Operacional  HELLO!  se  auto-executar†,
+mostrando em alguns  segundos  a  tela  inicial  com  o  nome  do
+programa.
+     Em caso  de  mal  funcionamento,  envie  o  disco  para  ser
+regravado pela  NEMESIS  INFORMÑTICA  LTDA.  O  software  Ç  1OO%
+garantido contra falhas de gravaá±o.
+     MENU INICIAL:
+
+     Depois de apresentada a tela de abertura, pressione a [BARRA
+DE ESPAÄOS] para ir ao Menu Inicial, com as principais funáµes do
+programa:
+Diret¢rio, Editar, Examinar, Formatar, Restaurar, Mapa,  Ordenar,
+Pesquisar,  Hardware,  Sistema,   Limpar,   Vers±o,   Back-up   e
+Retornar.
+     Para acessar a uma destas funáµes, leve a tarja branca  para
+a opá±o desejada com o aux°lio das  setas  direcionais  e  acione
+pressionando a [BARRA DE ESPAÄOS].
+     Veremos a seguir,  a  descriá±o  de  cada  uma  das  funáµes
+dispon°veis:
+
+     DIRETäRIO:
+
+     Ao  selecionar  esta  opá±o,  aparecer†  no  canto  inferior
+direito da tela, uma janela onde poder† se optar pela confirmaá±o
+da opá±o, selecionar  o  drive  usado  (A  ou  B,  dependendo  da
+configuraá±o utilizada),  ou  ainda  retornar  ao  menu  anterior
+(inicial).
+     Confirmando a opá±o "DIRETäRIO", abrir±o no lado esquerdo da
+tela, duas janelas: uma com o NOME DO DISCO ("LABEL") e outra com
+os arquivos  contidos  no  mesmo.  Pressionando-se  a  [BARRA  DE
+ESPAÄOS], pode-se selecionar atravÇs da tarja,  um  arquivo  para
+que outra janela seja aberta com um novo menu de sub-opáµes:
+
+EXECUTA - Faz rodar o arquivo  selecionado,  desde  que  o  mesmo
+esteja em formato "assembler absoluto" (.COM), ou que seja um dos
+modulos do MSX-DOS TOOLS (NEMESIS INFORMÑTICA LTDA.);
+RENOMEIA - Troca o nome do arquivo. O novo nome ser† pedido  pelo
+programa atravÇs de uma nova janela;
+APAGAR - Apaga o arquivo selecionado.  Cuidado  para  n±o  apagar
+acidentalmente  algum  arquivo  importante.  Em  caso  de   perda
+acidental, recupere o arquivo com o utilit†rio  "RECOVER.COM"  do
+MSX-DOS TOOLS (NEMESIS INFORMÑTICA LTDA.);
+EXIBE - Lista na tela o arquivo selecionado, desde  que  o  mesmo
+esteja no  formato  ASCII  (editado  num  processador  de  textos
+qualquer);
+CäPIA - Fornece uma c¢pia do arquivo selecionado  para  um  outro
+disco. A opá±o n±o dara um resultado  satisfat¢rio  com  arquivos
+bloqueados;
+LABEL - Muda o nome do disco. O novo nome ser† pedido  numa  nova
+janela. Ele n±o deve ultrapassar 8 caracteres;
+MENU ANTERIOR - Como em todas as funáµes, volta ao menu inicial.
+
+     EDITAR:
+
+     No menu de sub-opáµes poderemos  escolher  entre  EDITAR  UM
+ARQUIVO ou EDITAR  DIRETAMENTE  NO  DISCO,  funáµes  de  "ZAPPER"
+comuns a outros sistemas, mas com muitas  inovaáµes  que  veremos
+adiante. Ao acessar uma das opáµes, entraremos no modo de ediá±o.
+Inicialmente o cursor se colocar† sobre o c¢digo  em  hexadecimal
+do caracter a ser editado. Pressionando-se [SELECT] moveremos   o
+cursor para a †rea de ediá±o do  caracter  no  codigo  ASCII.  As
+setas movem o cursor movem o cursor sobre as tabelas.
+     Outros comandos:
+
+[CONTROL] + [A] - Avanáa uma p†gina;
+[CONTROL] + [R] - Retrocede uma p†gina;
+[CONTROL] + [G] - Grava as alteraáµes;
+[CONTROL] + [U] - Fundo "UNDO", recupera  o  estado  original  da
+p†gina, desde que a mesma n±o tenha  sido  gravada  em  sua  nova
+forma;
+[ESC] - Aborta a funá±o de ediá±o.
+
+     EXAMINAR:
+
+     Nesta funá±o, podemos examinar um disco setor por setor.  Ao
+localizar falha em algum setor, aparecer†  uma  janela  no  canto
+inferior direito da tela, onde teremos como  opáµes  RESTAURAR  O
+SETOR DANIFICADO, ou CONTINUAR o teste, ignorando a falha.
+     A recuperaá±o de setores defeituosos ("DEVICE I/O ERROR"  ou
+"ERRO DE E/S") tem sucesso em 7O% dos casos em que  o  disco  n±o
+apresentou   defeitos   f°sicos   (furos,   dobras,    arranhµes,
+desmagnetismo,  etc)  imposs°veis  de  se  consertar  mesmo   com
+mecanismos mais sofisticados.
+
+     FORMATAR:
+
+     Podemos escolher entre FORMATAÄ∞O SIMPLES  (18O  Kbytes)  ou
+DUPLA (36O Kbytes). A formataá±o corre um pouco mais r†pida que a
+normal no ambiemte MSX-DOS dou DISK-BASIC e Ç "inteligente":
+Encontrando defeito f°sico no disco que  normalmente  ocasionaria
+um "ERRO NA FORMATAÄ∞O", cria-se uma rede de isolamento  da  †rea
+afetada, informando a "FAT" que a †rea n±o estar† dispon°vel para
+gravaá±o. ê a formataá±o continua, preparando com um pouco  menos
+de espaáo que o normal, um disco antes irrecuper†vel!
+
+     RESTAURAR:
+
+     Um artif°cio muito inteligente  que  possui  o  HELLO!  e  a
+gravaá±o de um "s¢sia" da trilha "O" em uma †rea  n±o  utiliz†vel
+do disco. Em caso da perda ou dano no diret¢rio do disco, o mesmo
+poder† ser regravado com "RECUPERAR  A  TRILHA  O".  No  caso  de
+FORMATAÄ∞O ACIDENTAL, poderemos ao menos saber  o  que  havia  no
+disco, o que Ç muito £til em alguns casos.
+
+     MAPA:
+
+     Inicialmente aparecer† um quadro com as  informaáµes  vitais
+sobre o disco analisado. Com as  setas  de  movimentaá±o  latÇral
+poderemos observar o MAPA DE OCUPAÄ∞O dos  arquivos  gravados  no
+disco. Pressionando-se a [BARRA  DE  ESPAÄOS]  ser†  emitida  uma
+"HARD-COPY" na impressora. Use [ESC] para abortar a funá±o.
+
+     ORDENAR:
+
+     Poderemos  ordenar  pela  ordem   alfabÇtica   os   arquivos
+existentes num determinado disco  levando  em  conta  o  NOME  do
+arquivo ou sua EXTENS∞O. ê o sistema  de  ordenaá±o  mais  seguro
+existente atÇ o momento para linha MSX.
+
+     PESQUISAR:
+
+     Esta funá±o nos possibilita procurar  por  uma  "STRING"  ou
+sequància de caracteres num determinado  arquivo  ou  diretamente
+nos setores do disco. Depois de localizada poderemos edit†-la.
+
+     HARDWARE:
+
+     Neste bloco, temos uma variedade  de  testes  de  disk-drive
+como: VELOCIDADE de rotaá±o  do  motor,  ALINHAMENTO  RADIAL  dos
+cabeáote, e teste de LEITURA E  GRAVAÄ∞O.  Todos  os  testes  s±o
+acompanhados visualmente na tela por representaá±o simb¢lica.
+     Existe ainda o item "LIMPEZA",  que  aciona  o  cabeáote  do
+drive  em  movimentos  sequencialmente  corretos  e  de   duraá±o
+calculada  para  uso  com  discos  de  limpeza  (encontra-se  com
+facilidade em lojas de produtos eletrìnicos).
+
+     OBS: No item de verificaá±o de LEITURA E GRAVAÄ∞O, deve  ser
+usado o pr¢prio disco do  HELLO!  Um  disco  gravado  normalmente
+poder† ter seu conte£do alterado.
+
+     SISTEMA:
+
+     AlÇm de apresentar o n£mero  de  DRIVES  LäGICOS  e  FâSICOS
+existentes na configuraá±o utilizada (teste de "INTERFACE"), esta
+opá±o ainda verifica as MEMäRIAS RAM e  VRAM  do  microcomputador
+utilizado. O n°vel de precis±o Ç altamente confi†vel.
+
+     LIMPAR:
+
+     Limpar a tela das janelas  sobrepostas  e  retorna  ao  MENU
+INICIAL.
+
+     VERS∞O:
+
+     Limpa a tela das janelas  sobrepostas  e  exibe  a  TELA  DE
+ABERTURA do programa.
+
+     BACK-UP:
+
+     Neta opá±o, que somente pode ser ativada  com  o  uso  de  2
+drives, permite a c¢pia f°sica integral de  um  disco,  simulando
+sua pr¢pria formataá±o se necess†rio. N±o funciona  adequadamente
+com discos gravados fora do padr±o MSX-DOS.
+
+     RETORNAR:
+
+     Esta opá±o aborta o HELLO! e retorna ao MSX-DOS.
+
+     CONSIDERAÄ¥ES FINAIS:
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O:
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO:
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS:
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-OO1
+                  Rio de Janeiro - RJ - Brasil.
+
+
+
+

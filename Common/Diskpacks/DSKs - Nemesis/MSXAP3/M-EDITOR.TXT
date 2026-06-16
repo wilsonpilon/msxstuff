@@ -1,0 +1,186 @@
+                   "  E  M  U  "                                  
+                     =========                                    
+                                                                  
+                I N S T R U Ä ¥ E S:                              
+                -------------------                               
+                                                                  
+                                                                  
+                                                                  
+          1 -  Intruduza o diskete no drive e ap¢s pronto, ap     
+   ertar o CTRL e liga o  COMPUTADOR  -  aguarda...  na  tela     
+  aparece solicitaá±o de data,[n±o querendo basta  acionar  o     
+  RETURN]. Com  o  sinal  de  a>   digitar  o  comando  BASIC     
+  EMU.BAS- aguarda... aparece a tela do "EMU" use a BARRA  DO     
+  ESPAÄO - esta pronto a tela para voce montar  sua  abertura     
+  tonal,[clave,tonalidade  e  compasso].  Isto  feito,   pode     
+  comeáar a digitar a melodia ou arranjo programado. Voce tem     
+  3 pautas para digitar a melodia ou arranjo.                     
+           NB: O Ch,[chave] representa cada  pauta,  como  1@     
+  voz, 2@ e 3@ voz. A Ch 1 Ç a  mais  aguda,  mais  pode  ser     
+  alterada para uma  oitava  acima,[8Va.]  ou  abaixo,[8Va.-]     
+  com o 1Va. retorna a situaá±o anterior. A Ch 2 Ç uma  faixa     
+  mÇdia, tambem pode ser modificada conforme exemplo acima. A     
+  Ch 3 se obtem com o cursor sobre a Ch 1 ou Ch 2 e aciona  a     
+  BARRA DO ESPAÄO, conforme a necessidade  para  digitar.  Na     
+  Ch3 voce pode usar a clave de "F†",[4@ linha] para o baixo.     
+  Todavia, voce pode usar as 3 claves em  "Sol"  ou  "Fa"  se     
+  for necessario.                                                 
+                                                                  
+          2 -  Para escrever a melodia  ou  arranjo,  use  os     
+  seguintes NUMERAIS ou LETRAS para fixar na seguinte ordem:      
+                                                                  
+          NUMERAIS;[notas = sons]                                 
+                                                                  
+          1 - Semibreve                                           
+          2 - m°nima                                              
+          3 - Sem°nima                                            
+          4 - Colcheia                                            
+          5 - Semicolcheia                                        
+          6 - Fuzza,[n±o consta a semifuzza]                      
+          7 - M°nima   pontuada                                   
+          8 - Sem°nima    "                                       
+          9 - Colcheia    "                                       
+          0 - Semicolcheia "                                      
+          - - Fuzza       "                                       
+                                                                  
+          LETRAS;[PAUSAS = SILENCIO]                              
+                                                                  
+          Q - Semibreve                                           
+          W - M°nima                                              
+          E - Sem°nima                                            
+          R - Colcheia                                            
+          T - Semicolcheia                                        
+          Y - Fuzza                                               
+          U - M°nima    pontuada                                  
+          I - Sem°nima      "                                     
+          O - Colcheia      "                                     
+          P - Semicolcheia  "                                     
+                                                                  
+          ACIDENTES   OCORRENTES;[atua   apenas   dentro   do     
+  compasso] S±o o SUSTENIDO,[tecla = \] BEMäL,[tecla = ^  com     
+  o SHFT] e o BEQUADRO,[tecla = [].                               
+                                                                  
+          OB: Com estes acess¢rios  voce  pode  escrever  sua     
+  melodia ou arranjo sem problema.                                
+                                                                  
+          COMANDOS COM A TECLA "SLCT": [cada tela tem funáµes     
+                                                                  
+          ==========================                              
+  detalhadas ao fim que se destina]                               
+                                                                  
+                                                                  
+                                                                  
+    1@ TELA:                                                      
+    -------                                                       
+                                                                  
+           V = volume, entre 1 è 15,[cuidado com muito V]         
+           S = efeitos sonoros de 0 è 15,[timbres variado]        
+           M = efeitos prolongados ou  curtos  na  melodia  e     
+  com o uso do "S" se obtem sons eletrµnicos diferentes.          
+           T = tempo, entre 40 è 255  vocç  pode  escolher  o     
+  ANDAMENTO conforme seu gosto para m£sica digitada.              
+                                                                  
+           NB: Para obter o efeito destas letras,  coloque  o     
+  cursor sobre a letra desejada e use a barra do espaáo e  as     
+  teclas do cursor para mudar o numeral da tela.                  
+                                                                  
+           Na linha de baixo: varios sinais  gr†ficos  usados     
+  no decurso da melodia. Ex: Retorno, pulos etc...                
+           No final, chave com numeral para as casas antes  e     
+  depois do ritornello.                                           
+                                                                  
+                                                                  
+    2@ TELA:                                                      
+    -------                                                       
+                                                                  
+           a) Notas =  sons,  [semibreve,  m°nima,  sem°nima,     
+  colcheia, semicolcheia e fuzza. N±o consta è semifuzza],        
+           b)  Pausas  =   silçncio,   [n£mero   de   figuras     
+  correspondente as notas acima],                                 
+           c) Acidentes ocorrentes, seu  efeito  s¢  atua  no     
+  compasso  escrito,  no  compasso  seguinte,  apenas  o  que     
+  consta na tonalidade,                                           
+           d) Qui†lteras, se obtem seu efeito com o numeral 3     
+  sobre cada nota, mas n±o tem efeito nas pausas,                 
+           e)   Tesoura,   serve   para   eliminar   trechos,     
+  compassoso ou parte deste.                                      
+                                                                  
+                                                                  
+    3@ TELA:                                                      
+    -------                                                       
+                                                                  
+           a) Oitavas, 1Va.  =  normal,  8Va.  =  uma  oitava     
+  acima e 8Va.- Ç = uma oitava abaixo. Recurso muito £til.        
+           b) Fermata,[sustenta a nota] tambem funciona  como     
+  ligadura num trecho da melodia,                                 
+           c) Traáo e o Ponto, um prolonga e o outro corta  o     
+  valor real da nota. Uma quest±o de gosto ao usa-lo.             
+           d) P/F para  efeito  da  dim±nica  no  decurso  do     
+  trecho escrito. Varias opáµes de piano e forte.                 
+                                                                  
+                                                                  
+    4@ TELA:                                                      
+    -------                                                       
+                                                                  
+           Montagem tonal com  BEMäIS,[com  1  è  7  digitado     
+  direto  na  pauta].  NB:  Efeito  tonal  Ç   uma   situaá±o     
+  determinada  e   acidente   ocorrente   Ç   transit¢rio   e     
+  localizado apenas dentro do compasso em quest±o.                
+                                                                  
+                                                                  
+    5@ TELA:                                                      
+    -------                                                       
+                                                                  
+           Montagem  tonal  com  SUSTENIDOS,[com  1  è  7]  o     
+  procedimento Ç = ao anterior e as mesmas observaáµes.           
+                                                                  
+                                                                  
+    6@ TELA:                                                      
+    -------                                                       
+                                                                  
+           O BEQUADRO, suspende o efeito tanto  do  sustenido     
+  como do bem¢l.                                                  
+           NB: Quando houver mudanáa tonal Ç necess†rio o uso     
+  do bequadro para eliminar o efeito dominante e retornar  ao     
+  tom anterior. O simples fato de acrescentar  nova  armadura     
+  tonal n±o elimina o efeito do tom anterior. Muito cuidado.      
+                                                                  
+                                                                  
+    Na  primeira  tela  inicial,  ap¢s  o  comando  de  BASIC     
+  EMU.BAS aparece as seguintes opáµes:                            
+                                                                  
+           FILE = ver diret¢rio existente,[gravador ou drive]     
+           PLAY = executa a melodia solicitada,                   
+           PLAY = executa as 3 vozes ou uma de cada vez,          
+             All                                                  
+           NEW  = apaga trecho escrito, cuidado...                
+                                                                  
+           LOAD = ler o pgm solicitado ou com  RETURN  mostra     
+  arquivo existente,                                              
+           SAVE = salva trecho escrito,[grava no gravador  ou     
+  drive]. Ap¢s concluir uma parte grave-a como seguranáa. OK!     
+           VRFY =                                                 
+       DEV  = opá±o para gravador ou d    rive.                   
+              a:                                                  
+                                                                  
+    Com a tecla  SLCT  voce  obtem  a  segunda  tela  com  as     
+  seguintes funáµes;                                              
+                                                                  
+           a) Setas,[  <=   =>  ]  indicam  movimento  das  3     
+  pautas conforme orientaá±o da tela,                             
+           b) Play, executa trecho solicitado,                    
+           c)  Edit,   localiza,   fixar   e   facilita   sua     
+  verificaá±o, pelo numeral abaixo existente,                     
+           d) Goto,  executa  o  trecho  conforme  o  numeral     
+  existente ou coloado,                                           
+           e)  Ins/Off, indica  se  insere  esta  ligado   ou     
+  desligado,                                                      
+           f) Ch 1 = 1@ voz,[seta e b/esp opá±o p/3@ voz]         
+              Ch 2 = 2@ voz,[  "  "   "    "   p/1@ ou 3@ voz     
+                                                                  
+           Felicidades e boas composiáµes. OK!..                  
+                Adaptado por,                                     
+                                                                  
+           Adalberto Gonáalves dos Santos.                        
+                                                                  
+

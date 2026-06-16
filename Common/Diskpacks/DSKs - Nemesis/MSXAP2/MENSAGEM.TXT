@@ -1,0 +1,21 @@
+10 KEYOFF:SCREEN0:WIDTH40:LOCATE0,23
+20 PRINT" XWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWY"
+40 PRINT" V      SOFT-O-MATIC PACK N§O3      V"
+60 PRINT" V  FreeWare, ShareWare & DemoWare  V"
+80 PRINT" ZWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW["
+220 PRINT " Suas op‡µes s±o:" : PRINT
+230 PRINT"A>NEW-FILL (FreeWare) p/Graphic Tools"
+240 PRINT"A>KEYBOARD (FreeWare) teclado musical"
+250 PRINT"A>SUMARINE (FreeWare) jogo para MSX 2"
+260 PRINT"A>BOLTER   (DemoWare) copia. seletivo"
+270 PRINT"A>D-FINDER (FreeWare) editor de disco"
+271 PRINT"A>RELOGIO  (FreeWare) rel¢gio p/ MSX2"
+272 PRINT"A>GAMES    (FreeWare) fa‡a seus jogos"
+273 PRINT"A>PSGMUSIC (FreeWare) editor  musical"
+274 PRINT"A>MAPPY    (FreeWare) jogo de a‡±o" : PRINT
+280 PRINT " Digite uma das op‡µes acima:":PRINT
+290 PRINT "Obs: Os arquivos .TXT s±o os manuais"
+300 PRINT "     dos programas aqui apresentados;"
+301 PRINT "     Conhe‡a outros pacotes da s‚rie!"
+310 PRINT : CALL SYSTEM
+

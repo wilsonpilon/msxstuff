@@ -1,0 +1,341 @@
+                         What's New in CopyQM 3.24
+
+                                Sydex, Inc.
+                              P.O. Box 5700
+                            Eugene, OR  97405
+                              (541) 683-6033
+                            email: info@sydex.com
+
+                              March, 1996
+
+We've made some Windows 95 optimizations, using the Lock Physical Volume
+MS-DOS request to improve diskette access.  If you're running CopyQM in
+a DOS window, the application title now reflects copying progress.
+
+Plus owners should also note that the copy-protection feature has been
+slightly modified to make it more useful.  Please consult the on-line
+documentation for details.
+
+Another change is that the combination of GO and NOPAUSE options will
+cause immediate exit from CopyQM if a master read error occurs.
+
+Self-extracting files also use the Win95 drive management code for better
+performance.  If you're a heavy user of self-extracting image files, please
+note that Sydex offers alternative extractors for Windows and OS/2, as well
+as for Windows NT.  Contact us for more details.
+
+
+                         What's New in CopyQM 3.23
+
+A small tweak has been added for Plus creators of self-extracting files.  The
+self-extractor uses the original drive type as a basis for selecting the target
+drive.  Thus, if you've recorded a 1.2M format on a 1.44M drive, the self-
+extractor will attempt to use a 1.44M or 2.88M drive in preference to a
+1.2M drive.
+
+A second change was made in the situation where a record filespec is used
+with ? in certain positions.  The "Press any key." message after the file
+is written would slowly "shrink" starting with the end characters.  This
+has been fixed.
+
+                         What's New in CopyQM 3.22
+
+
+We often get asked about what kind of diskette is suitable for holding copies
+of DMF-formatted software.  The answer is that ordinary DSHD 1.44MB diskettes
+work just fine.
+
+                         What's New in CopyQM 3.21
+
+
+Some more small tweaks in DMF diskette copying were performed. If your system
+required more than about 3 minutes to make a DMF copy, try this version for
+better performance.
+
+                        What's New in CopyQM 3.20
+
+We took care of a small bug that would occasionally cause CopyQM to
+report 81 cylinders instead of 80 when reading certain formats.  The
+pricing currently in effect has also been extended to 1996.
+
+As projected, DMF files can now be made to be self-extracting when using
+CopyQM Plus.
+
+                         What's New in CopyQM 3.19
+
+             Self-Extracting Image Files (CopyQM Plus only)
+             ----------------------------------------------
+
+We've beefed up features in self-extracting image files, which now come
+in two distinct varieties.  The first uses DOS calls to extract the
+image and is the same as you've been accustomed to.  The second uses
+BIOS calls and can handle a very wide range of non-DOS formats.
+However, the BIOS version examines only the first two diskette drives
+for compatibility (i.e., only drives A: and B:).
+
+Either self-extracting file type now retains SKEW and INTERLEAVE infor-
+mation specified when the file was recorded.
+
+MAKESXD has also been adjusted to choose between the two self-extracting
+file types.
+
+You may suppress the password prompt during recording by specifying
+OMITPASSWORD (or just OM) on the CopyQM control line.  A "no password"
+case will be assumed.
+ 
+                          Image File COMMENTS
+                          -------------------
+
+By specifying IMPORTCOMMENT (or just IM), information from ASCII text
+files can now be imported as comment text when creating diskette images.
+The filename of each text file must have the type of "TXT", but
+otherwise have the same name as the image file being recorded.  Thus, to
+import comment text for the file MYFILE.IMG, simply edit an ASCII file
+with comment text and name it MYFILE.TXT and specify IMPORTCOMMENT on
+the command line.
+
+Imported comment text may be edited; to suppress the editing display,
+use IMPORTCOMMENT with the NOCOMMENT switch.  Imported text will be used
+"as is" with no operator intervention.
+
+The ICOMMENT utility will accept the /IMPORT command-line switch to
+produce the same effect.
+ 
+                          SKEW and INTERLEAVE
+                          -------------------
+
+INTERLEAVE and SKEW are now part of each image file, so if they've been
+specified when recording, they will be used when playing back or self-
+extracting (CQ+ only) the image.  Either INTERLEAVE or SKEW may be
+explicitly specified during playback, just as before, and the newly-
+specified values will override the ones in the image file.
+
+Microsoft DMF copiers need not specify SKEW=3 explicitly--CopyQM has
+"smartened up" when it comes to DMF diskettes and now assumes SKEW=3
+when a DMF diskette is copied.  This can be overridden, however, by
+explicitly specifying SKEW.
+
+There are a very (VERY) few double-sided formats in which skewing is
+performed on a side-by-side basis, rather than on a cylinder-by-cylinder
+basis.  To specify side skewing, rather than cylinder skewing, add ",S"
+to the SKEW specification.  For example,
+
+                                SKEW=3,S
+
+results in side 1, cylinder 0 being skewed by 3 sectors; side 0,
+cylinder 1 by 6 sectors; side 1, cylinder 1, by 9 sectors and so on.
+
+
+                       What's New in CopyQM 3.18
+
+                               October, 1994
+
+After getting a few calls from customers wanting to copy the new
+Microsoft DMF 1.68MB diskettes, we decided to come out with a CopyQM
+release to do this.  Although no special arguments are necessary, you'll
+probably want to specify SKEW=3 on the command line to optimize
+performance of the copy.
+
+Copying DMF diskettes is about 50 percoent slower than other "normal"
+formats, due to the implied 2:1 sector interleave.
+
+In connection with this, we've introduced two new command-line options:
+
+    INTERLEAVE (abbreviated IN) allows the specification of a physical
+        sector interleaving on all tracks.  Normally, INTERLEAVE=1 and
+        sector numbers follow consecutively.  However, if INTERLEAVE=2
+        were to be specified for a 9-sector format, the sector numbers
+        would be placed on each track thus:  1,6,2,7,3,8,4,9,5.  It can
+        be seen that two revolutions of the diskette are necessary to
+        consecutively read all sectors on a track.  When copying Microsoft
+        DMF distribution diskettes, INTERLEAVE=2 is implied.
+
+    SKEW (abbreviated SK) allows the specification of a track "skew". That
+        is, the track format is offset by a specified amount on each cylinder.
+        Specifying SKEW=3 with a 9-sector format would place sectors as
+        1,2,3,4,5,6,7,8,9 on the first cylinder, and 7,8,9,1,2,3,4,5,6 on
+        the second, 4,5,6,7,8,9,1,2,3 on the third and so on.  Note that the
+        CONTENT of the disk is not affected, but access time may be improved
+        somewhat.  SKEW normally defaults to zero (no skew).
+
+A new CONVERT format has been added:  1.68M or 1680M, which is similar to
+the Microsoft DMF, so now you can make your own DMF diskettes.
+
+CopyQM Plus users please note:  As yet, CopyQM does NOT support DMF in
+self-extracting image files.  We hope to have this handled in CopyQM 3.20.
+
+Please consult CopyQM's online help for more information.  Use the command
+
+            COPYQM /HELP
+
+to display detailed information.
+
+
+                        What's New in CopyQM 3.17
+
+
+CopyQM's diskette I/O routines now support IRQs from 2 through 15, instead
+the previous 2 through 8.  This allows 16-bit controller cards that can use
+the higher IRQ numbers, such as the Adaptec SCSI cards to operate as secondary
+controllers with CopyQM.
+
+A new command-line keyword, "GO" has been added.  This keyword will suppress
+the "Re-insert Master Diskette" message that appears when reading the first
+diskette of a session.  If a diskette is in the source drive, CopyQM will
+immediately begin processing it.  This is useful when a diskette has just
+been created and needs to be processed immediately without operator inter-
+vention.
+
+When the RECORD=/ASK keyword is used, a filename with "?" characters may
+be used in response to the file name prompt.  The effect is the same as
+if the filename were given directly with the RECORD=filename keyword.
+That is, for a file name of A???, files named A001, A002, A003... will
+be created.
+
+When the PLAYBACK=/ASK keyword is used, file names with "?" and "*"
+characters may be used in response to the file name prompt.  The effect
+is to play back all image files satisfying the file specification, then
+request a new file name.  Files are accessed in alphabetic order.
+
+A small bug in the self-extractor was corrected in CopyQM Plus.
+
+
+                        What's New in CopyQM 3.16
+
+You can now copy diskettes containing flawed areas by specifying the FLAW
+keyword on the CopyQM command line, or by selecting the "Ignore master data
+errors?" choice with CQMenu.  Please note that the data content of erroneous
+sectors is NOT repaired, but as much data as possible will be recovered from
+the bad sectors.  Consult the on-line help for more information.
+
+The self-extracting file processor in CopyQM Plus has a bug repair.  If
+an unusable destination diskette was used when executing a self-extracting
+image file, the "Make another copy?" processing would not recover correctly
+and an "Image file corrupt" message would result.  Note that the self-
+extracting file would operate correctly the next time it was executed.
+
+CopyQM Plus users can now invoke SHELL or OVERLAY procedures when an image
+file is being written.  The sequence of events is exactly the same as when
+diskette copies are being produced.
+
+                        What's New in CopyQM 3.15
+
+CopyQM now supports writing on up to twelve (!) destination drives.  You
+must have an EGA or VGA display card when more than six destination drives
+are being used.
+
+In RECORD= mode, CopyQM now checks for a pre-existing file of the same name
+as the image file to be written.  If one exists, a prompt is issued, giving
+you the opportunity to exit CopyQM before overwriting the file.
+
+The first master diskette in a session is prompted for with the message
+"Re-insert Master".  The second and succeeding masters are requested
+with the message "Insert Next Master".
+
+We've made a couple of bug fixes related to multi-drive copying.  One is
+an out-and-out goof--the display didn't correctly show which drive in a
+multi-drive set was really writing.  The other is a subtle one and is
+concerned only with 1.2M and 360K drives used to make the same 360K
+copy--not a good idea, but supported at any rate.
+
+CopyQM Plus users will note that the drive speed test now adds one more
+digit of significance to the reported spin rate.
+
+
+                     What's New in CopyQM 3.14
+
+
+If the BLIND option has not been specified and a non-DOS, non-Macintosh
+diskette is read, a prompt now appears allowing a change to BLIND copying
+mode.  However, you should be aware that the non-DOS error message can
+also appear when a DOS diskette is infected with a boot-sector virus,
+such as the "Stoned" virus.
+
+Auto-sense for E-Ten Chinese-language display software has been removed
+due to conflicts with some ATI Technologies VGA display cards.  If a
+restricted character set is desired, the "7BIT" command-line option
+should be used.
+
+                        What's New in CopyQM 3.13
+
+CopyQM Plus now creates self-extracting image files directly, without
+the use of MAKESXD.  The SELFEXTRACT (abbreviated SELF) keyword, when
+used with RECORD, causes a self-extracting file to be recorded.  When
+self-extracting files are produced, about 40K of additional base RAM
+is required for operation.  In general, CopyQM requires a base RAM
+space of at least 350K for execution.  Of course, the more memory the
+better--i.e., faster--operation.
+
+MAKESXD now does its work in a single pass, without any additional disk
+space required for temporary files.
+
+BIOS support has been improved to accomodate a few less-IBM-conforming
+BIOS sets.
+
+Code has been added to enabled interrupts at critical points.  We've seen
+some BIOS code that doesn't seem to re-enable interrupts after they've
+been disabled.
+
+Support has been improved for 2.88M drives and controllers.  However,
+CopyQM requires that 2.88M drives be jumpered for auto media-sensing
+to work with the DIRECT diskette controller access modes.  If your
+2.88M drives are not not jumpered in this manner, you can either reset
+the jumpers or use BIOS access.
+
+The SCANDISK utility in MS-DOS 6.2 sometimes reports a spurious boot-
+sector and/or FAT error on diskettes generated with the CONVERT= option,
+though MS-DOS CHKDSK finds no problem.  We've traced this to SCANDISK's
+insistence on a certain media byte for a given media type. Interestingly,
+in Microsoft's own words:  "Beginning with DOS 2.x, the usefulness of the
+disk ID byte in the FAT was reduced and it now considered meaningless..."
+Not being ones to argue a minor point, we now insert the proper media
+media byte in CONVERT-ed diskettes and SCANDISK is happy.  Sigh...
+
+
+                        What's New in CopyQM 3.12
+
+CopyQM 3.12 contains a few minor changes to version 3.11:
+
+        1.   Support for the E-Ten Chinese language system has been
+             incorporated.  Users who use other double-byte systems
+             can force the use of non-extended codes by means of the
+             /7BIT command-line switch on any of the CopyQM product
+             set.
+
+        2.   A bug occurred when a BLIND mode copy was attempted where
+             FIRST= did not equal 1.  Only one sector per track would
+             be seen when CopyQM was run in Direct hardware access mode.
+
+        3.   A few Windows API calls have been added to the Direct I/O
+             routines.  CopyQM should run as a background task in direct
+             hardware controller access mode  under Windows 3.1.  However,
+             IBM OS/2's implementation of Windows and their DOS box appear
+             to ignore these API calls, so running as a background task in
+             OS/2 will still result in occasional "DRIVE NOT READY" errors.
+
+        4.   Normally, CopyQM and its utilities will access the screen memory
+             directly in order to draw displays as quickly as is possible.
+             However, if the following switch is used, CopyQM and its
+             utilities will use the video BIOS to create screen displays:
+
+                     /CRTBIOS
+
+             This can be abbreviated to /CR.  For example, if a copy using
+             drives A: and B: is to be performed, the following command line
+             could be used:
+
+                     COPYQM A: B: /CRTBIOS
+
+             Similarly, all CopyQM utilities, including CQMENU, CINSTALL,
+             ICOMMENT, MAKESXD (CopyQM Plus only), DRMAINT (CopyQM Plus only)
+             will accept the /CRTBIOS switch.  The configuration viewer,
+             VIEWCONF, accepts this switch, but ignores it, as VIEWCONF
+             always uses the CRT BIOS.
+
+             Text-to-speech translator users may want to experiment with
+             the switches /7BIT and /MONO to reduce the number of non-text
+             characters on the screen.  The /7BIT switch forces the use of
+             the lower 128 codes in the ASCII set; that is, line-drawing and
+             character graphics are not used.  The /MONO switch forces use of
+             a monochrome display set.
+

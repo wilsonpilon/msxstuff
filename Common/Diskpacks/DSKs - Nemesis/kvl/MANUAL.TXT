@@ -1,0 +1,50 @@
+CONTROLE DE VIDEO LOCADORA
+
+        O Controle de Video Clube MSX foi desenvolvido com o objetivo de agilizar e simplificar as operacoes realizadas numa locadora ou clube de video.
+        A quantidade de informacoes (registros de clientes, fitas e distribuidoras) que pode ser armazedada e organizada pelo programa dependera da capacidade do disquete. Com 2 drives de 3 e 1/2 DF/DD, este numero gira em torno de 5000 fitas e 4600 clientes.
+        Dentro em breve, o Controle de Video Clube MSX devera estar disponivel tambem para PC XT aumentando a capacidade de armazenamento para algo em de 96000 registros, ou seja, 32000 clientes, 32000 fitas e 32000 distribuidoras.
+        O Controle de Video Clube MSX e um programa de rapido e facil apredizado nao exigindo praticas anteriores.
+        Antes de iniciarmos os nossos trabalhos facamos um BACKUP ou COPIA DE SEGURANCA do disco do Controle de Video MSX. Para isso, carregue o DOS e de um COPY *.* B: . Guarde o original para o caso de haver algum problema com o disco de trabalho. Procure fazer copias periodicas (se possivel, diarias) dos arquivos .DAT onde estao registrados os dados dos clientes, fitas e distribuidoras.
+        Apos ter feito a copia de seguranca, digite LOCADORA para ter o Controle de Video Clube MSX funcionando. Insira o disco que tera o ARQUIVO DE FITAS no drive B: antes de fazer sua opcao.
+        Se voce estiver trabalhando com apenas 1 drive, reset o micro e mantenha a tecla CONTROL pressionada durante o carregamento do sistema para, so entao, digitar LOCADORA.
+        Aguarde alguns segundos ate que o MENU PRINCIAPAL seja exibido e os trabalhos possam ser iniciados.
+        Antes de aceitar sua opcao o programa pedira o preco da fita (ou alocacao) e a data.
+        Fazendo a opcao por 1, 2 ou 3 surgira um pequeno menu no canto inferior esquerdo. Aguarde alguns segundos e os dados do ultimo cliente (se houver) ssurgirao na tela e as opcoes de Consulta, Inclusao, Alteracao, Exclusao e Registro estarao disponiveis. Abaixo as opcoes e seus usos. Para acessa-las pressione a primeira letra.
+
+A - Alteracao. Utilizada para atualizacao dos dados. Por exemplo:
+        Atualizar / Alterar o endereco do cliente de numero 189. Apos teclar 'A', pressione 'N' para que a procura seja feita utilizando-se o numero do cliente. Digite, entao, o numero do cliente procurado e tecle [RETURN]. Os dados do cliente serao exibidos e, para alterar o Endereco pressione 'E', digitando a seguir o novo endereco. No caso das iniciais coincidirem (caso de Cidade e CPF) pressione a letra seguinte ('P' no caso do CPF).
+
+E - Exclusao. Exclui/Retira o cliente, fita ou distribuidora indicado. Tambem pede que se escolha entre procura pelo nome ou numero. Exibe os dados e, se voce responder com 'S' a pergunta 'EXCLUIR (S/N)', o registro e "marcado" para delecao/exclusao.. A exclusao real so ocorrera se houver resposta positiva a pergunta 'CONFIRMA EXCLUSAO (S/N)' .
+
+I - Inclusao. Acrescenta dados ao arquivo numerando-os automaticamente. Faz a 'inscricao' de clientes, fitas e distribuidoras. Para agilizar o acesso aos dados, informe ao cliente o seu numero no arquivo e numere as fitas de acordo com a sua 'posicao' (ou numero).. Isto porque o processo de procura pelo numero e bem mais rapido.
+        Se houver fitas/filmes iguais, registre-os como se fossem diferentes e de o numero que for indicado na tela para cada um deles.. Explicacao: este procedimento torna o controle das fitas mais simples e eficiente  pois saberemos exatamente com que fita estamos 'trabalhando'. Explicaremos melhor daqui a pouco.
+
+C - Consulta. Utilize esta opcao quando desejar saber a 'posicao' de um determinado cliente, fita ou distribuidora. Apenas exibe os dados porcurados.
+
+R - Registrar. Este e a opcao mais importante do Controle de Video Clube MSX e esta disponivel apenas nos CADASTROS DE CLIENTES e FITAS. E atraves desta opcao que registraremos a entrada/saida das fitas e o valor que o cliente pagou quando pegou asss fitas. O controle na devolucao deve ser feito atraves do campo DATA que informa a ultima 'movimentacao' do cliente, isto e, se houver duvida no recebimento ou devolucao de alguma fita, basta conferir se o dia e o mes que ficam registrados no historico da fita
+sao diferentes do que esta sendo exibido na DATA. Esta informacao (DATA) e atualizada toda vez que um ciente 'vai a locadora' para pagamento, devolucao ou locacao de fitas. Se, por exemplo, um cliente alugou uma fita no dia 10/03/90 o historico da fita indicara 10/03 e a DATA sinalizara 10/03/90. Ocorrendo a devolucao da fita no dia 11/03/90 a DATA sera atualizada, registrando 11/03/90 mesmo que o cliente tenha devolvido a fita sem pagar/alugar outra(s) fita(s).
+
+        Para registrar as operacoes de um cliente, basta que voce (estando no CADASTRO DE CLIENTES) de o numero do cliente e, em seguida, o numero das fitas que o cliente esta levando. O programa se encarregara de 'preencher' o historico da fita com o numero do cliente e data.
+        No CADASTRO DE FITAS, desejando registrar o aluguel de uma fita basta que voce de o numero da fita e preencha o historico com o numero do cliente. Esta 'movimentacao' sera registrada automaticamente na fichas do cliente.
+        Desejando imprimir o que esta sendo exibido, pressione F1 (lembre-se de ligar a impressora) para que os dados sejam enviados a impressora.
+        Caso o numero de uma ficha nao conste na ficha do cliente quando o cliente a devolver, recorra ao CADASTRO DE FITAS para saber o dia que o cliente pegou a fita.
+        Se uma fita 'desaparecer' utilize o historico dela para saber quem e o provavel 'magico'.
+        Se houver erro na digitacao do numero de alguma fita, utilize F6 para cancelar esta ultima digitacao. F6 so cancela a ultima fita, por isso, se houver mais de uma fita, va para o CADASTRO DE FITAS e registre o cancelamento atreves da opcao REGISTRAR, informe o numero da fita e, surgindo a indicacao 'FITA NAO DISPONIVEL', pressione F6. Ocancelamento so e possivel atraves de F6 e atinge somente a ultima operacao realizada com a fita no dia. Os cancelamentos ssao indicados com 'CANCE' no historico da,
+fita, ficando registrado o numero do cliente cuja operacao foi cancelada.
+        A indicacao 'EXCLU' aparece quando foi realizada alguma exclusao no arquivo de fitas ou clientes e o numero indicado nao tem mais uma 'ficha' correpondente pois apos a exclusao o arquivo e renumerado.
+        RELATORIOS: sao varios os relatorios que o programa apresenta. Para velos no papel pressione o numero correpondente e deixe a impressora pronta para que, terminada a indexacao/organizacao dos dados, seja iniciada a impressao..
+
+OBSERVACOES:
+        Junto com as opcoes de Alteracao, Consulta, Exclusao, Inclusao e Registro tambem estao disponiveis as opcoes de exibir os registros anterior e posterior. Para exibir o registro anterior, utilize a tecla de cursor para a esquerda e, desejando examinar o proximo registro, presssione a tecla de cursor para a direita. Se voce estiver no final do arquivo e tentar visualizar o proximo registro, o programa exibira o primeiro registro.
+        Estando no primeiro registro e pressionada a tecla de cursor para esquerda, o registro exibido sera o ultimo.
+        A mensagem 'FITA NAO DISPONIVEL' indica que a ultima data no historico equivale a data atual e, portanto a fita ja foi alugada neste mesmo dia.
+        A mensagem 'DISCO CHEIO' indica que o disco atingiu sua capacidade maxima de armazenamento e a inclusao ou acrecimo de dados e impossivel se nao 'abrimos' espaco em disco deletando arquivos sem utilidade para o Controle de Video Clube MSX.
+        ESPACO INSUFICIENTE. INDEXACAO IMPOSSIVEL possui o mesmo significado de DISCO CHEIO, porem indica que nao ha espcao em disco para o arquivo .NDX que e criado durante a indexacao (para trabalhos nos relatorios)
+        Sempre que possivel retorne ao MENU PRINCIPAL. Isto garante os arquivos contra danos e perdas de dados por falhas na rede eletrica. Se voce estiver trabalhando somente com 'REGISTRAR', bastara que, apos fazer o(s) registro(s) desejado(s), voce retorne ao menu de opcoes (Alteracao, Consulta, Exclusao etc) para garantir a integridade dos dados.
+        A mensagem 'RECUPERANDO REGISTROS' indica que o programa esta retirando a 'marca de exclusao' dos registros. A recuperacao dos registros e feita quando voce responde com 'N' a pergunta 'CONFIRMA EXCLUSAO' ou quando nao ha espaco em disco para o trabalho completo de exclusoes. Quando ha uma exclusao o arquivo e renumerado e a mudanca na numeracao/posicao de clientes, fitas e distribuidoras pode gerar problemas no clontrole dass fitas.
+        Se voce optar pela procura pelo nome, poderao  existir nomes semelhantes ao que voce esta procuranpondente. A mensagem 'CONTINUA PROCURA' significa que foi encontrado um nome semelhante (mas nao igual) ao que voce digitou. Se o nome que voce esta na tela, digite 'S' para que a procura prossiga. Tomemos como exemplo o autor do CONTROLE DE VIDEO CLUBE MSX: ALEXANDRE LIMA DE REZENDE e semelhante (mas nao igual) a ALEXANDRE LIMA DE RESENDE.
+
+
+
+
+

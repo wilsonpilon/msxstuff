@@ -1,0 +1,109 @@
+     TALKER 3.1
+
+     Programador: Alexandre Pinhel
+
+     Tela de abertura: Marcelo V. Franco
+
+
+     Introduá±o:
+
+     O TALKER 3.1 Ç a nova vers±o do MSX-SAM VOICE SYNTETIZER,  o
+£nico SINTETIZADOR de voz atÇ ent±o j† programado  para  a  linha
+MSX. As principais inovaáµes do TALKER 3.1  em  relaá±o  Ös  suas
+versµes anteriores s±o:
+
+a) Compatibilidade com qualquer MSX nacional ou importado;
+b) Utilizaá±o e manuseio simplificadoses;
+c) Menor ocupaá±o na mem¢ria do micro;
+d) Reloc†vel para qualquer †rea livre da mem¢ria dos MSX.
+
+     Carregamento:
+
+     O carregamento Ç autom†tico. Basta ligar o disk-drive, ligar
+o micro e inserir o  disco  com  o  programa.  Inicialmente  ser†
+mostrada uma tela de apresentaá±o. Pressionando uma  tecla,  ser†
+carregado o programa de demonstraá±o.
+
+     O programa de demonstraá±o:
+
+     O programa de  demonstraá±o  (TALKER.COM)  que  Ç  carregado
+automaticamente, mostra um sinal ("T>") que indica  que  o  mesmo
+est† pronto para pronunciar qualquer letra, palavra ou frase  que
+o  usu†rio  digitar.  Procure  se  certificar  que  o  volume  da
+televis±o ou do micro est† na posiá±o correta.
+
+     Fazendo seus programas falarem:
+
+     Existe um programa no disco denominado TALKER.BIN, que  Ç  a
+rotina fundamental do TALKER  3.1.  Para  fazer  com  que  o  seu
+programa em BASIC possa "falar", esta rotina deve ser previamente
+carregada e o seu programa dever† acion†-la como  o  programa  de
+exemplo que listamos abaixo:
+
+10 REM * CARREGA A ROTINA PRINCIPAL *
+20 BLOAD "TALKER.BIN"
+30 REM *    IMPRIME UMA MENSAGEM    *
+40 CLS : PRINT "NEMESIS INFORMATICA"
+50 REM *    PRONUNCIA A MENSAGEM    *
+60 DEFUSR = &HC000
+70 U$ = USR ("NEMESIS INFORMATICA")
+80 REM *    ENTRAR COM UMA FRASE    *
+90 LINE INPUT "DIGITE UMA FRASE ? ";A$
+92 REM * PRONUNCIA A FRASE DIGITADA *
+98 DEFUSR = &HC000 : U = USR (A$)
+
+     Para obter outras informaáµes sobre este programa,  consulte
+o nosso departamento tÇcnico, que ter† o maior prazer em resolver
+o seu problema.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-OO1
+                  Rio de Janeiro - RJ - Brasil.
+
+MESIS INFORMATICA LTDA.
+                Caixa postal 4.583

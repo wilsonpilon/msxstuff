@@ -1,0 +1,15 @@
+
+MAPA-MUNDI no MSX1
+
+para carregar:
+
+A>MUNDIAL e [RETURN]
+
+op‡µes:
+
+[1] Mostra o mapa MERCANTIL;
+[2] Mapa ortogr fico;
+[3] Mapa Polar ortogr fico;
+[4] Muda as cores do v¡deo.
+
+

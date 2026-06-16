@@ -1,0 +1,1208 @@
+GRADIUS FILES #1
+
+GRADIUS SCROLL DOWN ROUTINE 1.0
+
+Arquivo: G-SLDW10.MLF (&hE0FF,&hE148,&hE0FF)
+
+Fun‡±o: Executa o efeito de "scroll" no sentido de cima para baixo.
+
+Aplica‡µes: Utilizado quando necessita-se deslocar a tela
+            para simular um movimento ou simplesmente limp -la.
+
+Endere‡os importantes: &hE0FF (Endere‡o inicial);
+                       &hE148 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de "scroll" para baixo ("scroll down") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hE0FF:u=usr(0)" para que todo o conte£do do v¡deo corra uma linha para baixo. Para que a tela toda corra para baixo, basta colocar o comando de acionamento num "loop" que o ative 24 vezes (o n£mero de linhas da tela).
+
+Exemplo:
+
+10 CLS
+20 FOR C = 1 TO 22
+30 LOCATE 1,C
+40 PRINT STRING$(30,182)
+50 NEXT C
+60 IF INKEY$ = "" THEN 60
+70 FOR C = 1 TO 23
+80 DEFUSR = &HE0FF : U=USR(0)
+90 NEXT C
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS SCROLL LEFT ROUTINE 1.0
+
+Arquivo: G-SLLF10.MLF (&hE150,&hE18F,&hE150)
+
+Fun‡±o: Executa o efeito de "scroll" no sentido da direita para a esquerda.
+
+Aplica‡µes: Utilizado quando necessita-se deslocar a tela
+            para simular um movimento ou simplesmente limp -la.
+
+Endere‡os importantes: &hE150 (Endere‡o inicial);
+                       &hE18F (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de "scroll" para a esquerda ("scroll left") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hE150:u=usr(0)" para que todo o conte£do do v¡deo corra uma linha para a esquerda. Para que a tela toda corra para a esquerda, basta colocar o comando de acionamento num "loop" que o ative 32 vezes (o n£mero de colunas da tela).
+
+Exemplo:
+
+10 CLS
+20 FOR C = 1 TO 22
+30 LOCATE 1,C
+40 PRINT STRING$(30,182)
+50 NEXT C
+60 IF INKEY$ = "" THEN 60
+70 FOR C = 1 TO 31
+80 DEFUSR = &HE150 : U=USR(0)
+90 NEXT C
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS EXPLODE WINDOW ROUTINE 1.0
+
+Arquivo: G-EXWD10.MLF (&hE2E0,&hE3FC,&hE325)
+
+Fun‡±o: Abre uma janela (window) baseado nas coordenadas pr‚-determidas.
+
+Aplica‡µes: Apresenta‡±o de menus;
+            Instala‡±o de plataforma;
+            Limpeza de uma determinada parte da tela;
+            Superposi‡±o, em geral, de ¡tens no v¡deo.
+
+Endere‡os importantes: &hE2E0 (In¡cio da rotina);
+                       &hE325 (Endere‡o de execu‡±o);
+                       &hE326 (Coordenada "Y");
+                       &hE327 (Coordenada "X");
+                       &hE329 (Altura);
+                       &hE32A (Largura);
+                       &hE3EE (Velocidade - 1 a 255);
+                       &hE3FC (Final da rotina).
+
+Utiliza‡±o:
+
+          As "janelas", como j  foi dito anteriormente, constituem um m‚todo sofisticado para apresenta‡±o atrav‚s de superposi‡µes no v¡deo, de informa‡µes em geral, destacando mensagens para melhor percep‡±o pelo usu rio.
+          Uma vez colocadas as coordenadas e a velocidade desejada nos endere‡os correspondentes atrav‚s dos comandos "poke", bastar  comandar "defusr=&hE325:u=usr(0)" para que a rotina seja ativada.
+
+PPP
+
+Exemplo:
+
+          O programa abaixo exemplifica o uso desta rotina:
+
+100 REM ***********************
+110 REM *   ALTERA POSI€´ES   *
+120 REM ***********************
+130 CLS
+140 FOR C = 1 TO 10 : V = 1
+150 X = 0 + C : Y = 0 + C
+160 H = 23 - C : L = 32 - C
+170 GOSUB 230 : NEXT C
+180 LOCATE 12,11
+190 PRINT "G-FILES1" : END
+200 REM ***********************
+210 REM *    ABRE A JANELA    *
+220 REM ***********************
+230 POKE &HE326,Y:POKE &HE327,X
+240 POKE &HE329,H:POKE &HE32A,L
+250 POKE &HE3EE,V
+260 DEFUSR = &HE325 : U=USR(0)
+270 RETURN
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina funciona fora do SISTEMA GRADIUS 1.O na "SCREEN0" e "SCREEN1", desde que sejam redefinidos os caracteres que compµem o lado direito e a parte inferior da janela. A rotina n±o funciona nos modos gr ficos do MSX1 como tamb‚m nos adicionais dos MSX2 e MSX2+.
+
+PPP
+
+GRADIUS 1st THIRD ROTATE ROUTINE 1.0
+
+Arquivo: G-STRT10.MLF (&hE190,&hE1FF,&hE190)
+
+Fun‡±o: Executa o efeito de rota‡±o lateral do 1§ ter‡o do v¡deo.
+
+Aplica‡µes: Utilizado para destacar um assunto na tela;
+            Respons vel pelo efeito de movimento em
+            jogos de a‡±o ("scroll paralax").
+
+Endere‡os importantes: &hE190 (Endere‡o inicial);
+                       &hE190 (Executa rota‡±o para esquerda);
+                       &hE198 (Executa rota‡±o para a direita).
+                       &hE1FF (Final da rotina);
+
+Utiliza‡±o:
+
+          Para rotacionar o 1§ ter‡o da tela em uma coluna … esquerda, basta executar "defusr=&hE190:u=usr(0)". Para fazer o mesmo no sentido inverso comande "defusr=&hE198:u=usr(0)". Para executar uma rota‡±o completa em qualquer um dos sentidos, basta repetir a opera‡±o 32 vezes (o n£mero de colunas da tela) atrav‚s de um "loop".
+
+PPP
+
+Exemplo:
+
+10 REM   ********************
+11 REM   *   MONTA A TELA   *
+12 REM   ********************
+13 CLS
+14 LOCATE 7,3
+15 PRINT "GRADIUS FILES #1"
+16 LOCATE 7,11
+17 PRINT "GRADIUS FILES #1"
+18 LOCATE 7,19
+19 PRINT "GRADIUS FILES #1"
+20 REM  *********************
+21 REM  * RODA PARA DIREITA *
+22 REM  *********************
+23 FOR C = 1 TO 33
+24 DEFUSR = &HE198 : U=USR(0)
+25 NEXT C : BEEP
+26 REM **********************
+27 REM * RODA PARA ESQUERDA *
+28 REM **********************
+29 FOR C = 1 TO 33
+30 DEFUSR = &HE190 : U=USR(0)
+31 NEXT C : BEEP
+32 GOTO 20
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.O desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS 2nd THIRD ROTATE ROUTINE 1.0
+
+Arquivo: G-NDRT10.MLF (&hE200,&hE26F,&hE200)
+
+Fun‡±o: Executa o efeito de rota‡±o lateral do 2§ ter‡o do v¡deo.
+
+Aplica‡µes: Utilizado para destacar um assunto na tela;
+            Respons vel pelo efeito de movimento em
+            jogos de a‡±o ("scroll paralax").
+
+Endere‡os importantes: &hE200 (Endere‡o inicial);
+                       &hE200 (Executa rota‡±o para esquerda);
+                       &hE208 (Executa rota‡±o para a direita).
+                       &hE26F (Final da rotina);
+
+Utiliza‡±o:
+
+          Para rotacionar o 2§ ter‡o da tela em uma coluna … esquerda, basta executar "defusr=&hE200:u=usr(0)". Para fazer o mesmo no sentido inverso comande "defusr=&hE208:u=usr(0)". Para executar uma rota‡±o completa em qualquer um dos sentidos, basta repetir a opera‡±o 32 vezes (o n£mero de colunas da tela) atrav‚s de um "loop".
+
+PPP
+
+Exemplo:
+
+10 REM   ********************
+11 REM   *   MONTA A TELA   *
+12 REM   ********************
+13 CLS
+14 LOCATE 7,3
+15 PRINT "GRADIUS FILES #1"
+16 LOCATE 7,11
+17 PRINT "GRADIUS FILES #1"
+18 LOCATE 7,19
+19 PRINT "GRADIUS FILES #1"
+20 REM  *********************
+21 REM  * RODA PARA DIREITA *
+22 REM  *********************
+23 FOR C = 1 TO 33
+24 DEFUSR = &HE208 : U=USR(0)
+25 NEXT C : BEEP
+26 REM **********************
+27 REM * RODA PARA ESQUERDA *
+28 REM **********************
+29 FOR C = 1 TO 33
+30 DEFUSR = &HE200 : U=USR(0)
+31 NEXT C : BEEP
+32 GOTO 20
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.O desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS 3rd THIRD ROTATE ROUTINE 1.0
+
+Arquivo: G-RDRT10.MLF (&hE270,&hE2DF,&hE270)
+
+Fun‡±o: Executa o efeito de rota‡±o lateral do 3§ ter‡o do v¡deo.
+
+Aplica‡µes: Utilizado para destacar um assunto na tela;
+            Respons vel pelo efeito de movimento em
+            jogos de a‡±o ("scroll paralax").
+
+Endere‡os importantes: &hE270 (Endere‡o inicial);
+                       &hE270 (Executa rota‡±o para esquerda);
+                       &hE278 (Executa rota‡±o para a direita).
+                       &hE2DF (Final da rotina);
+
+Utiliza‡±o:
+
+          Para rotacionar o 3§ ter‡o da tela em uma coluna … esquerda, basta executar "defusr=&hE270:u=usr(0)". Para fazer o mesmo no sentido inverso comande "defusr=&hE278:u=usr(0)". Para executar uma rota‡±o completa em qualquer um dos sentidos, basta repetir a opera‡±o 32 vezes (o n£mero de colunas da tela) atrav‚s de um "loop".
+
+PPP
+
+Exemplo:
+
+10 REM   ********************
+11 REM   *   MONTA A TELA   *
+12 REM   ********************
+13 CLS
+14 LOCATE 7,3
+15 PRINT "GRADIUS FILES #1"
+16 LOCATE 7,11
+17 PRINT "GRADIUS FILES #1"
+18 LOCATE 7,19
+19 PRINT "GRADIUS FILES #1"
+20 REM  *********************
+21 REM  * RODA PARA DIREITA *
+22 REM  *********************
+23 FOR C = 1 TO 33
+24 DEFUSR = &HE278 : U=USR(0)
+25 NEXT C : BEEP
+26 REM **********************
+27 REM * RODA PARA ESQUERDA *
+28 REM **********************
+29 FOR C = 1 TO 33
+30 DEFUSR = &HE270 : U=USR(0)
+31 NEXT C : BEEP
+32 GOTO 20
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.O desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS THIRD TRANSFER ROUTINE 1.0
+
+Arquivo: G-TRTF10.MLF (&hD400,&hD526,&hD400)
+
+Fun‡±o: Transfere formas e cores entre os
+            3 ter‡os de caracteres da VRAM;
+
+Aplica‡µes: Transfere as redefini‡µes dos caracteres
+            entre os 3 ter‡os da VRAM.
+
+Endere‡os importantes: &hD400 (In¡cio da rotina);
+                       &hD400 (1§ para 2§) e &hD431 (1§ para 3§);
+                       &hD462 (2§ para 1§) e &hD493 (2§ para 3§);
+                       &hD4C4 (3§ para 1§) e &hD4F5 (3§ para 2§);
+                       &hD526 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de transferˆncia entre formas e cores dos caracteres dos 3 ter‡os do v¡deo ("third transfer") deve ser utilizada quando se torna necess rio copiar de um dos 3 ter‡os em outro(s) ter‡o(s) a defini‡±o dos caracteres (formas e atributos de cores). Para copiar a defini‡±o dos 256 caracteres do 1§ ter‡o para os do 2§ ter‡o comande "defusr=&hD400:u=usr(0)".
+
+Exemplo:
+
+100 FILES : FOR C = &H2000 TO &H27FF
+110 VPOKE C , &HF1 : NEXT C : A$=INPUT$(1)
+120 DEFUSR = &HD400 : U=USR(0) : A$=INPUT$(1)
+130 DEFUSR = &HD431 : U=USR(0)
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina foi desenvolvida para funcionar apenas dentro do SISTEMA GRADIUS 1.0.
+          A rotina usa como "buffer" tempor rio, 2048 bytes … partir do endere‡o &hD530. Programas que utilizem esta  rea devem ser evitados quando a mesma ‚ utilizada.
+
+PPP
+
+GRADIUS CHARACTER LOADER ROUTINE 1.1
+
+Arquivo: G-CHLD11.MLF (&hA800,&hA86E,&hA800)
+
+Fun‡±o: Transporta da RAM para os 3 ter‡os da VRAM, um banco de caracteres.
+
+Aplica‡µes: Varia‡µes no desenho dos alfabetos, quando
+            utilizada juntamente com um banco de caracteres.
+
+Endere‡os importantes: &hA800 (Endere‡o inicial);
+                       &hA800 (Todos os caracteres);
+                       &hA825 (N£meros e alfabeto);
+                       &hA84A (Somente as mai£sculas);
+                       &hA86E (Final da rotina).
+
+Utiliza‡±o:
+
+          Esta rotina adapta um banco de caracteres alternativos do padr±o do MSX PAGE MAKER ou compat¡veis para o ambiente GRADIUS.
+          Basta carregar um banco de caracteres na mem¢ria do micro com a sintaxe BLOAD"NOME.ALF" e logo ap¢s comandar "defusr=&hA800:u=usr(0)" para redefinir a forma de todos os caracteres; ou digitar "defusr=&hA825:u=usr(0)" para mudar somente n£meros e o alfabeto; ou ainda "defusr=&hA84A:u=usr(0)" para redesenhar apenas as letras mai£sculas. Cumpre notar que apenas a forma dos caracteres ‚ alterada, os atributos de cores permanecem inalterados.
+          Recomendamos a utiliza‡±o dos pacotes de alfabetos da cole‡±o "FONTES" do MSX PAGE MAKER, com dezenas de op‡µes de formas de caracteres.
+
+Exemplo:
+
+100 REM **********************
+110 REM * MOSTRA BANCO ATUAL *
+120 REM **********************
+130 FOR N = 1 TO 3
+140 FOR C = 0 TO 31
+150 PRINT CHR$(1)+CHR$(64+C) ;
+160 NEXT C
+170 FOR C = 32 TO 255
+180 PRINT CHR$(C) ;
+190 NEXT C : NEXT N
+200 REM **********************
+210 REM * CARREGA O ALFABETO *
+220 REM **********************
+230 BLOAD "NOME.ALF"
+240 REM **********************
+250 REM *     MAIUSCULAS     *
+260 REM **********************
+270 DEFUSR = &HA84A : U=USR(0)
+280 FOR C = 1 TO 1000 : NEXT C
+290 REM **********************
+300 REM * NUMEROS E ALFABETO *
+310 REM **********************
+320 DEFUSR = &HA84A : U=USR(0)
+330 FOR C = 1 TO 1000 : NEXT C
+340 REM **********************
+350 REM *    TODO O BANCO    *
+360 REM **********************
+370 DEFUSR = &HA84A : U=USR(0)
+
+          No exemplo acima redefinimos os caracteres dos 3 ter‡os da VRAM para o novo desenho do bloco carregado na linha 230. O nome do banco depende de nossa escolha, dentro das op‡µes dispon¡veis no pacote de "FONTES" que utilizamos.
+
+Informa‡µes t‚cnicas:
+
+          A rotina G-CHLD11.MLF ‚ perfeitamente reloc vel para outras  reas da mem¢ria (manualmente ou com o aux¡lio do utilit rio G-MLMO10.TLS do GRADIUS TOOLS #1), desde que n±o coincida com regiµes reservadas para outras rotinas em utiliza‡±o (consulte a tabela de mapeamento da mem¢ria para maiores informa‡µes).
+          Esta rotina foi desenvolvida para funcionar apenas dentro do SISTEMA GRADIUS 1.0.
+          Os bancos de caracteres do padr±o do MSX PAGE MAKER tˆm como "header" os endere‡os "&h9200,&h99FF,&h9200", logo, quando um banco de caracteres ‚ carregado, ele pode destruir parte de um programa em BASIC que possua mais de 4 kbytes. Este problema pode ser resolvido de duas maneiras: Usa-se um bloco em BASIC comandando a rotina de carregamento de caracteres e um outro bloco que ser  a parte principal do programa; ou carrega-se o banco de caracteres com um deslocamento para outra parte da mem¢ria. N
+
+este £ltimo caso ser  necess rio modificar a presente rotina para atuar com os novos endere‡os da nova  rea.
+
+GRADIUS ROTATE LEFT ROUTINE 1.0
+
+Arquivo: G-RTLF10.MLF (&hA926,&hA966,&hA926)
+
+Fun‡±o: Executa o efeito de rota‡±o no sentido da direita para a esquerda.
+
+Aplica‡µes: Utilizado quando necessita-se deslocar a tela
+            para simular um movimento lateral.
+
+Endere‡os importantes: &hA926 (Endere‡o inicial);
+                       &hA966 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de rota‡±o para a esquerda ("rotate left") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hA926:u=usr(0)" para que todo o conte£do do v¡deo corra uma linha para a esquerda. Para que a tela toda corra para a esquerda, completando uma rota‡±o completa, basta colocar o comando de acionamento num "loop" que o ative 32 vezes (o n£mero de colunas da tela).
+
+Exemplo:
+
+100 REM **********************
+110 REM * ROTACIONA 96 VEZES *
+120 REM **********************
+130 CLS : LOCATE 7,10
+140 PRINT "GRADIUS FILES #1"
+150 FOR C = 1 TO 96
+160 DEFUSR = &HA926 : U=USR(0)
+170 NEXT C
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS ROTATE RIGHT ROUTINE 1.0
+
+Arquivo: G-RTRG10.MLF (&hA8A6,&hA8E6,&hA8A6)
+
+Fun‡±o: Executa o efeito de rota‡±o no sentido da esquerda para a direita.
+
+Aplica‡µes: Utilizado quando necessita-se deslocar a tela
+            para simular um movimento lateral.
+
+Endere‡os importantes: &hA8A6 (Endere‡o inicial);
+                       &hA8E6 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de rota‡±o para a direita ("rotate right") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hA8A6:u=usr(0)" para que todo o conte£do do v¡deo corra uma linha para a direita. Para que a tela toda corra para a direita, completando uma rota‡±o completa, basta colocar o comando de acionamento num "loop" que o ative 32 vezes (o n£mero de colunas da tela).
+
+Exemplo:
+
+100 REM **********************
+110 REM * ROTACIONA 96 VEZES *
+120 REM **********************
+130 CLS : LOCATE 7,10
+140 PRINT "GRADIUS FILES #1"
+150 FOR C = 1 TO 96
+160 DEFUSR = &HA8A6 : U=USR(0)
+170 NEXT C
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS CHARACTER COLOR ROUTINE 1.1
+
+Arquivo: G-CHCL10.MLF (&hA870,&hA87B,&hA870)
+
+Fun‡±o: Muda a cor dos caracteres dos 3 ter‡os da VRAM.
+
+Aplica‡µes: Varia a cor de apresenta‡±o das letras
+            impressas no v¡deo.
+
+Endere‡os importantes: &hA870 (Endere‡o inicial);
+                       &hA877 (Cont‚m as cores em uso); 
+                       &hA87B (Final da rotina).
+
+Utiliza‡±o:
+
+          Para mudar a cor dos caracteres do SISTEMA GRADIUS 1.0, simulando o comando "COLOR" do BASIC MSX, podemos utilizar esta simples rotina, cujo funcionamento ‚ instantƒneo.
+          As cores de frente e fundo poder±o ser selecionadas entre das 16 existentes. Para selecionar as novas cores comande "poke &hA877,&h19", onde a cor de frente (letras) ‚ preta (cor de numero 1) e a cor de fundo ‚ vermelha clara (cor de n£mero 9). Estes valores podem variar de "0" (transparente) a "F" (15 em hexadecimal, que equivale a cor branca). Para executar a mudan‡a de cor digite "defusr=&hA870:u=usr(0)".
+
+PPP
+
+Exemplo:
+
+100 REM **********************
+110 REM *  BRANCO COM PRETO  *
+120 REM **********************
+130 POKE &HA877 , &HF1
+140 DEFUSR = &HA870 : U=USR(0)
+150 A$ = INPUT$ (1)
+160 REM **********************
+170 REM *  ROXO COM AMARELO  *
+180 REM **********************
+190 POKE &HA877 , &HDA
+200 DEFUSR = &HA870 : U=USR(0)
+210 A$ = INPUT$ (1)
+220 REM **********************
+230 REM * VERMELHO COM CIANO *
+240 REM **********************
+250 POKE &HA877 , &H67
+260 DEFUSR = &HA870 : U=USR(0)
+
+Informa‡µes t‚cnicas:
+
+          A rotina G-CHCL11.MLF tem apenas 12 bytes e ‚ perfeitamente reloc vel para outras  reas da mem¢ria (manualmente ou com o aux¡lio do utilit rio G-MLMO10.TLS do GRADIUS TOOLS #1), desde que n±o coincida com regiµes reservadas para outras rotinas em utiliza‡±o (consulte a tabela de mapeamento da mem¢ria para maiores informa‡µes).
+          Esta rotina foi desenvolvida para funcionar apenas dentro do SISTEMA GRADIUS 1.0.
+
+PPP
+
+GRADIUS ACCEPT ROUTINE 1.1
+
+Arquivo: G-LNAC11.MLF (&hF000,&hF172,&hF000)
+
+Fun‡±o: Aceita a entrada via teclado de uma letra, palavra ou frase;
+
+Aplica‡µes: Utilizada quando necessita-se informar ao programa
+            um texto qualquer com at‚ 32 caracteres.
+
+Endere‡os importantes: &hF000 (Endere‡o inicial);
+                       &hF144 (Extens±o);
+                       &hF145 (Coordenada "Y");
+                       &hF146 (Coordenada "X");
+                       &hF153 (In¡cio do "buffer");
+                       &hF172 (Final da rotina).
+
+Utiliza‡±o:
+
+          Esta rotina de "accept" foi desenvolvida com a finalidade de evitar a utiliza‡±o dos comandos "input" ou "line input" do BASIC MSX, que n±o eram adequadas ao ambiente do SISTEMA GRADIUS. Com esta rotina, fica muito mais f cil criar em espa‡os de "janelas", campos de entrada de dados sem o problema de sobreposi‡±o indesejada de caracteres. Para acionar a rotina, basta colocar a coordenada "X" de coluna (0 a 32) no endere‡o "&hF146"; a coordenada "Y" de linha (0 a 24) no endere‡o "&hF145" e a extens
+
+±o (m ximo de 32 colunas) no endere‡o "&hF144" para finalmente comandar "defusr=&hF000:u=usr(0)" para executar a linha de entrada de dados ("accept").
+
+PPP
+
+Exemplo:
+
+100 REM **********************
+110 REM *    MONTA A TELA    *
+120 REM **********************
+130 CLS : LOCATE 2,4
+140 PRINT "Nome:"
+150 LOCATE 2,6
+160 PRINT "Endere‡o:"
+170 LOCATE 2,8
+180 PRINT "Telefone:"
+190 X=8 : Y=4 : L=20 : GOSUB260
+200 X=12 : Y=6 : L=16 :GOSUB260
+210 X=12 : Y=8 : L=8 : GOSUB260
+220 PRINT : PRINT : END
+230 REM **********************
+240 REM *  LINHA DE ENTRADA  *
+250 REM **********************
+260 POKE &HF144,L
+270 POKE &HF145,Y
+280 POKE &HF146,X
+290 DEFUSR = &HF000 : U=USR(0)
+300 RETURN
+
+          O programa abaixo mostra como recuperar da mem¢ria do micro-computador, o texto obtido pela rotina de "accept":
+
+10 FOR C = 1 TO PEEK(&HF144)
+20 B$ = B$ + CHR$(PEEK(&HF152)+C)
+30 NEXT C : PRINT B$
+
+Informa‡µes t‚cnicas:
+
+          A rotina G-LNAC11.MLF ‚ perfeitamente reloc vel para outras  reas da mem¢ria (manualmente ou com o aux¡lio do utilit rio G-MLMO10.TLS do GRADIUS TOOLS #1), desde que n±o coincida com regiµes reservadas para outras rotinas em utiliza‡±o (consulte a tabela de mapeamento da mem¢ria para maiores informa‡µes).
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos no modo de texto "SCREEN 1" do MSX.
+
+GRADIUS FILES #2
+
+GRADIUS ROTATE UP ROUTINE 1.1
+
+Arquivo: G-RTUP11.MLF (&hA900,&hA924,&hA900)
+
+Fun‡±o: Executa o efeito de rota‡±o no sentido de baixo para cima.
+
+Aplica‡µes: Utilizado quando necessita-se deslocar a tela
+            para simular um movimento vertical.
+
+Endere‡os importantes: &hA900 (Endere‡o inicial);
+                       &hA924 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de rota‡±o para cima ("rotate up") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hA900:u=usr(0)" para que todo o conte£do do v¡deo corra uma linha para cima. Para que a tela toda corra para cima, completando uma rota‡±o completa, basta colocar o comando de acionamento num "loop" que o ative 24 vezes (o n£mero de linhas da tela).
+
+Exemplo:
+
+100 REM **********************
+110 REM * ROTACIONA 72 VEZES *
+120 REM **********************
+130 CLS : LOCATE 7,10
+140 PRINT "GRADIUS FILES #1"
+150 FOR C = 1 TO 72
+160 DEFUSR = &HA900 : U=USR(0)
+170 NEXT C
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS ROTATE DOWN ROUTINE 1.1
+
+Arquivo: G-RTDW11.MLF (&hA880,&hA84A,&hA880)
+
+Fun‡±o: Executa o efeito de rota‡±o no sentido de cima para baixo.
+
+Aplica‡µes: Utilizado quando necessita-se deslocar a tela
+            para simular um movimento vertical.
+
+Endere‡os importantes: &hA880 (Endere‡o inicial);
+                       &hA84A (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de rota‡±o para baixo ("rotate down") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hA880:u=usr(0)" para que todo o conte£do do v¡deo corra uma linha para baixo. Para que a tela toda corra para baixo, completando uma rota‡±o completa, basta colocar o comando de acionamento num "loop" que o ative 24 vezes (o n£mero de linhas da tela).
+
+Exemplo:
+
+100 REM **********************
+110 REM * ROTACIONA 72 VEZES *
+120 REM **********************
+130 CLS : LOCATE 7,10
+140 PRINT "GRADIUS FILES #1"
+150 FOR C = 1 TO 72
+160 DEFUSR = &HA880 : U=USR(0)
+170 NEXT C
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS ACCEPT ROUTINE 1.0
+
+Arquivo: G-LNAC10.MLF (&hF000,&hF143,&hF000)
+
+Fun‡±o: Aceita a entrada via teclado de uma letra, palavra ou frase;
+
+Aplica‡µes: Utilizada quando necessita-se informar ao programa
+            um texto qualquer com at‚ 32 caracteres.
+
+Endere‡os importantes: &hF000 (Endere‡o inicial);
+                       &hF11F (Extens±o);
+                       &hF120 (Coordenada "Y");
+                       &hF121 (Coordenada "X");
+                       &hF143 (Final da rotina).
+
+Utiliza‡±o:
+
+          Esta rotina de "accept" foi desenvolvida com a finalidade de evitar a utiliza‡±o dos comandos "input" ou "line input" do BASIC MSX, que n±o eram adequadas ao ambiente do SISTEMA GRADIUS. Com esta rotina, fica muito mais f cil criar em espa‡os de "janelas", campos de entrada de dados sem o problema de sobreposi‡±o indesejada de caracteres. Para acionar a rotina, basta colocar a coordenada "X" de coluna (0 a 32) no endere‡o "&hF121"; a coordenada "Y" de linha (0 a 24) no endere‡o "&hF120" e a extens
+
+±o (m ximo de 32 colunas) no endere‡o "&hF11F" para finalmente comandar "defusr=&hF000:u=usr(0)" para executar a linha de entrada de dados ("accept").
+
+PPP
+
+Exemplo:
+
+100 REM *********************
+110 REM *  LINE ACCEPT 1.0  *
+120 REM *********************
+130 CLS : LOCATE 2,2
+140 PRINT "telefone:"
+150 X = 12 : Y = 2 : L = 8
+160 POKE&H9121,X : ' COORD. X
+170 POKE&H9120,Y : ' COORD. Y
+180 POKE&H911F,L : ' TAMANHO
+190 DEFUSR=&H9000 : U=USR(0)
+200 REM *********************
+210 REM * "SCREEN  SCANNER" *
+220 REM *********************
+230 A$ = "" : FOR C = 0 TO L
+240 A = (X+Y*32+(6144+C))
+250 B$ =  CHR$(VPEEK(A))
+260 IF B$<>"_" THEN A$ = A$+B$
+270 NEXT C : LOCATE 2,4
+280 PRINT "O telefone ‚ "; A$
+
+          As linhas compreendidas entre 200 e 280 mostram como recuperar o texto obtido pela rotina de "accept".
+
+Informa‡µes t‚cnicas:
+
+          A rotina G-LNAC10.MLF ‚ reloc vel para outras  reas da mem¢ria (manualmente ou com o aux¡lio do utilit rio G-MLMO10.TLS do GRADIUS TOOLS #1), desde que n±o coincida com regiµes reservadas para outras rotinas em utiliza‡±o (consulte a tabela de mapeamento da mem¢ria para maiores informa‡µes).
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos no modo de texto "SCREEN 1" do MSX.
+
+PPP
+
+GRADIUS SCREEN FILLER ROUTINE 1.1
+
+Arquivo: G-SCFI11.MLF (&hB180,&hB18C,&hB180)
+
+Fun‡±o: Preenche a tela com um caracter determinado pelo usu rio.
+
+Aplica‡µes: Utilizado quando necessita-se limpar a tela
+            ou preenchˆ-la com um determinado caracter.
+
+Endere‡os importantes: &hB180 (Endere‡o inicial);
+                       &hB187 (C¢digo do caracter);
+                       &hB18C (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de preenchimento da tela ("screen filler") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hB180:u=usr(0)" para que toda a tela seja preenchida com o caracter determinado por "poke&hB187,X", onde "X" ‚ o c¢digo ASCII do caracter desejado (um n£mero entre 0 e 255).
+
+Exemplo:
+
+10 REM *******************
+20 REM * "SCREEN FILLER" *
+30 REM *******************
+40 FOR C = 65 TO 90 : POKE &HB187 , C : DEFUSR=&HB180 : U=USR(0)
+70 IF INKEY$ = "" THEN 70
+80 NEXT C
+90 IF INKEY$ = "" THEN 90
+100 POKE &HB187 , 182 : DEFUSR=&HB180 : U=USR(0)
+120 IF INKEY$ = "" THEN 120
+130 GOTO 40
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS FLASH CURSOR ROUTINE 1.0
+
+Arquivo: G-FSCR10.MLF (&hDA75,&hDAD8,&hDAB2)
+
+Fun‡±o: Faz piscar o cursor interruptamente.
+
+Aplica‡µes: Utilizado para facilitar a digita‡±o de textos
+            em rotinas de "accept" ou na pr¢pria programa‡±o.
+
+Endere‡os importantes: &hDA75 (Endere‡o inicial);
+                       &hDAB2 (Endere‡o de entrada);
+                       &hDAD8 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de piscagem do cursor ("flash cursor") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hDAB2:u=usr(0)" para que o cursor (caracter n§ 255 do c¢digo ASCII) fique piscando interruptamente.
+
+Exemplo:
+
+10 REM *********************
+20 REM *  CURSOR PISCANTE  *
+30 REM *********************
+40 CLS : LOCATE 2,2
+50 PRINT"CURSOR "; : A$=INPUT$(1)
+60 DEFUSR = &HDAB2 : U=USR(0)
+60 GOTO 40
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1" ou "SCREEN 0".
+
+PPP
+
+GRADIUS ROLODEX DIRECTORY ROUTINE 1.0
+
+Arquivo: G-RXDY10.MLF (&hBA30,&hCA44,&hBB7C)
+
+Fun‡±o: Monta um menu rotativo com os arquivos existentes no disco.
+
+Aplica‡µes: Utilizado quando necessita-se ver o diret¢rio
+            de um disco ou selecionar um dos seus arquivos.
+
+Endere‡os importantes: &hBA30 (Endere‡o inicial);
+                       &hBAB3 (N§ do drive utilizado);
+                       &hBAB4 (Coordenada "Y" do menu);
+                       &hBAB5 (Coordenada "X" do menu);
+                       &hBAB6 (Altura do menu);
+                       &hBB7C (Endere‡o de entrada);
+                       &hCA44 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de "menu rolodex" ‚ mais r pida e eficiente do que a apresentada anteriormente nas primeiras p ginas do manual do GRADIUS BASIC 1.0. Para utiliz -la basta colocar o n£mero do disk-drive no endere‡o &hBAB3 ("poke&h0000,X", onde "X" ‚ um n£mero entre 0 e 6, dependendo do n£mero de drives conectado ao sistema); as coordenadas de posi‡±o do menu e sua altura pelo mesmo processo; e finalmente acionar "defusr=&hBB7C:u=usr(0)". Para mover o "menu rolodex" basta pressionar as setas para cima e pa
+
+ra baixo.
+
+PPP
+
+Exemplo:
+
+100 REM *********************
+110 REM *    COORDENADAS    *
+120 REM *********************
+130 D=1  :' DRIVE
+140 Y=2  :' COORDENADA Y
+150 X=2  :' COORDENADA X
+160 H=12 :' ALTURA
+161 REM *********************
+162 REM *    PLATAFORMA     *
+163 REM *********************
+170 CLS : FOR C = Y-1 TO H+2
+180 LOCATE X-1,C
+190 PRINT STRING$ (14,182)
+200 NEXT C
+201 REM *********************
+202 REM *      ROLODEX      *
+203 REM *********************
+210 POKE&HBAB3,D:POKE&HBAB4,Y
+220 POKE&HBAB5,X:POKE&HBAB6,H
+230 DEFUSR=&HBB7C : U=USR(0)
+
+          O exemplo acima cria um "menu rolodex" mostrando 12 arquivos simultƒneos do drive "A" nas coordenadas "X=2 e Y=2".
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1" ou "SCREEN 0".
+
+PPP
+
+GRADIUS MENU SHOW ROUTINE 1.1
+
+Arquivo: G-MNSH11.MLF (&hAFE0,&hCA4A,&hAFE0)
+
+Fun‡±o: Apresenta na parte inferior da tela um menu de op‡µes.
+
+Aplica‡µes: Utilizado quando necessita-se mostrar um menu
+            sem inutilizar o conte£do da tela.
+
+Endere‡os importantes: &hAFE0 (Endere‡o inicial);
+                       &hB04A (Posi‡µes do menu);
+                       &hB14A (Formas do menu);
+                       &hB94A (Atributos do menu);
+                       &hCA4A (Final da rotina).
+
+Utiliza‡±o:
+
+          Esta rotina (executada atrav‚s de "defusr=&hAFE0:u=usr(0)") faz com que o 3§ ter‡o da tela (formas, atributos e posi‡µes) sejam trocados por um outro ter‡o armazenado na mem¢ria. Quando a rotina ‚ novamente executada faz com que a troca seja refeita sem danificar o que havia anteriormente. O efeito obtido com esta rotina ‚ de muita utilidade quando criamos programas que necessitem informar dados ao usu rio sem comprometer o acabamento visual dos mesmos.
+
+PPP
+
+Exemplo de utiliza‡±o:
+
+100 REM **********************
+110 REM *    MONTA A TELA    *
+120 REM **********************
+130 CLS : FOR C = 1 TO 22
+140 LOCATE 1,C
+150 PRINT STRING$(30,182)
+160 NEXT C
+170 REM **********************
+180 REM *    MONTA O MENU    *
+190 REM **********************
+200 IF INKEY$="" THEN 200
+210 DEFUSR=&HAFE0 : U=USR(0)
+220 GOTO 200
+
+          O exemplo acima espera que uma tecla seja pressionada para mostrar o menu, e novamente pede uma tecla para restabelecer a tela original.
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina n±o pode ser utilizada fora do SISTEMA GRADIUS 1.0.
+          Para re-desenhar o menu, edite o 3§ ter‡o da tela manualmente ou com aux¡lio do "G-SCED10.TLS" do GRADIUS TOOLS #1, acione "defusr=&hAFE0:u=usr(0)" para armazenar a redefini‡±o na mem¢ria e regrave a rotina com novo desenho:
+
+CCCBSAVE"G-MNSH12.MLF",&hAFE0,&hCA4A,&hAFE0
+
+PPP
+
+GRADIUS FRAME ANIMATOR ROUTINE 2.0
+
+Arquivo: G-FRAN20.MLF (&hD000,&hD217,&hD000)
+
+Fun‡±o: Armazena at‚ 21 telas de caracteres com acesso aleat¢rio.
+
+Aplica‡µes: Anima‡±o gr fica (quadro a quadro);
+            Avan‡o e retrocesso em n¡veis de "janelas".
+
+Endere‡os importantes: &hD000 (0 armazena e 1 mostra);
+                       &hD001 (N£mero da tela - de 1 a 21);
+                       &hD002 (N£mero do efeito);
+                       &hD003 (Velocidade do efeito);
+                       &hD004 (Endere‡o inicial);
+                       &hD217 (Final da rotina).
+
+Utiliza‡±o:
+
+          A grande diferen‡a entre esta nova rotina de anima‡±o de quadros ("frame animator") e sua antecessora ‚ que nesta segunda vers±o, ‚ possivel selecionar 1 entre 5 efeitos de sobreposi‡±o entre cada uma das telas que aparecem no v¡deo e a velocidade de execu‡±o dos mesmos. O efeito final ‚ realmente deslumbrante, principalmente quando as telas armazenadas no banco possuem uma interliga‡±o entre s¡. Utilize-a identicamente a sua antecessora acrescentando apenas o n£mero do efeito desejado com "poke&h
+
+D002,N" onde "N" ‚ um n£mero entre 0 e 4. O mesmo ‚ feito com a velocidade, selecionando-se um valor entre 1 e 255; e sendo 1 mais r pido e 255 mais lento.
+
+PPP
+
+Exemplos:
+
+100 REM *********************
+110 REM *   CRIA 21 TELAS   *
+120 REM *********************
+130 CLS : FOR C = 1 TO 21
+140 FOR N = 0 TO 23:LOCATE 0,N
+160 PRINTSTRING$(32,64+C);:NEXTN
+180 REM *********************
+190 REM * GRAVA NA MEMORIA  *
+200 REM *********************
+210 POKE&HD001,C:POKE&HD000,0:DEFUSR=&HD004:U=USR(0):CLS:NEXTC
+
+          O programa acima cria 21 telas para preencher o "buffer".
+
+100 REM ***********************
+110 REM * Tela,Efeito,Veloci. *
+120 REM ***********************
+130 T=1 :E=0 :V=10 : GOSUB 230
+140 T=2 :E=1 :V=30 : GOSUB 230
+150 T=3 :E=2 :V=50 : GOSUB 230
+160 T=4 :E=3 :V=70 : GOSUB 230
+170 T=5 :E=4 :V=90 : GOSUB 230
+180 IF INKEY$=""THEN180 ELSE130
+200 REM ***********************
+210 REM *    MOSTRA A TELA    *
+220 REM ***********************
+230 POKE&HD000,1 : POKE&HD001,T : POKE&HD002,E : POKE&HD003,V
+240 DEFUSR=&HD004:U=USR(0):RETURN
+
+          O programa acima realiza uma anima‡±o com as 21 telas do "buffer", mostrando cada um dos efeitos poss¡veis.
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0 desde que estejamos em "SCREEN 1".
+
+PPP
+
+GRADIUS BUFFER SAVER ROUTINE 1.0
+
+Arquivo: G-BFSV10.MLF (&hB200,&hB30F,&hB200)
+
+Fun‡±o: Grava em disco um arquivo com as 21 telas do "buffer"
+        de anima‡±o de quadros.
+
+Aplica‡µes: Utilizado quando necessita-se gravar as telas
+            armazenadas na mem¢ria para uso posterior.
+
+Endere‡os importantes: &hB200 (Endere‡o inicial);
+                       &hB30F (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de grava‡±o do "buffer" de telas ("buffer saver") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hB200:u=usr(0)" para que todo o conte£do do "buffer" (21 telas) sejam gravadas em disco com o nome "G-FRAN11.DAT" para posterior utiliza‡±o. Para carreg -las de volta para a mem¢ria utiliza-se a rotina "G-BFLD10.MLF" que acompanha este pacote. Esta rotina ‚ fundamental para a cria‡±o de anima‡µes gr ficas mais complexas criadas atrav‚s das rotinas de anima‡±o de quadros ("frame ani
+
+mator") do SISTEMA GRADIUS 1.0.
+
+Exemplo:
+
+10 REM **********************
+20 REM *  GRAVA O "BUFFER"  *
+30 REM **********************
+40 DEFUSR=&HB200 : U=USR(0)
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0, e em qualquer ocasi±o que seja necess rio o armazenamento do conte£do da "p gina 1" da mem¢ria do micro-computador, local onde est±o armazenadas as telas pelas rotinas de anima‡±o de quadros.
+
+PPP
+
+GRADIUS BUFFER LOADER ROUTINE 1.0
+
+Arquivo: G-BFLD10.MLF (&hB000,&hB111,&hB000)
+
+Fun‡±o: Carrega do disco um arquivo com as 21 telas do "buffer"
+        de anima‡±o de quadros.
+
+Aplica‡µes: Utilizado quando necessita-se carregar o "buffer"
+            armazenado em disco pela rotina "G-BFSV10.MLF".
+
+Endere‡os importantes: &hB000 (Endere‡o inicial);
+                       &hB111 (Final da rotina).
+
+Utiliza‡±o:
+
+          A rotina de carregamento do "buffer" de telas ("buffer loader") ‚ muito f cil de se utilizar. Basta acion -la com "defusr=&hB000:u=usr(0)" para que o arquivo "G-FRAN11.DAT" gerado pela rotina "G-BFSV10.MLF" seja carregado do disco para a mem¢ria. Esta rotina ‚ fundamental para a cria‡±o de anima‡µes gr ficas mais complexas criadas atrav‚s das rotinas de anima‡±o de quadros ("frame animator") do SISTEMA GRADIUS 1.0.
+
+Exemplo:
+
+10 REM **********************
+20 REM * CARREGA O "BUFFER" *
+30 REM **********************
+40 DEFUSR=&HB000 : U=USR(0)
+
+Informa‡µes t‚cnicas:
+
+          Esta rotina pode ser utilizada fora do SISTEMA GRADIUS 1.0, e em qualquer ocasi±o que seja necess rio o carregamento do disco para a "p gina 1" da mem¢ria do micro-computador, local onde est±o armazenadas as telas pelas rotinas de anima‡±o de quadros.
+
+
+
+          GRADIUS MUSIC #1
+
+          Com o GRADIUS MUSIC #1 torna-se poss¡vel colocar m£sica e efeitos sonoros com extrema simplicidade nos seus programas em GRADIUS BASIC. As m£sicas podem tocar at‚ mesmo enquanto os programas s±o executados, sem interferir nos mesmos. Com o visual que o GRADIUS BASIC proporciona e ainda uma m£sica de fundo, seus programas ficar±o cada vez mais completos, como os mais fant sticos softwares japoneses.
+
+          CARREGAMENTO
+
+          O GRADIUS MUSIC #1 ‚ composto por 2 blocos de m£sica ("G-MUSIC1.001" e "G-MUSIC1.002"), um programa de demonstra‡±o dos efeitos sonoros composto por 2 blocos ("G-MUSIC1.PGM" e "G-MUSIC1.OVR") e um bloco de abertura ("AUTOEXEC.BAS") que avisa que o software deve ser executado atrav‚s do GRADIUS BASIC.
+
+          O programa de demonstra‡±o dos efeitos sonoros deve ser carregado e executado da seguinte maneira:
+
+a) Introduza o disco com o GRADIUS SYSTEM e deixe
+   que ele carregue o G-DESK automaticamente;
+b) Depois do G-DESK ser executado, pressione [F1O]
+   para ir ao GRADIUS BASIC;
+c) Uma vez no GRADIUS BASIC digite:
+   RUN"G-MUSIC1.PGM" e tecle [RETURN]!
+
+          O PROGRAMA "G-MUSIC1.PGM"
+
+          O programa de demonstra‡±o "G-MUSIC1.PGM" carrega automaticamente os blocos "G-MUSIC1.OVR" e "G-MUSIC1.002" quando executado. Para utiliz -lo basta pressionar as teclas direcionais para selecionar um dos 38 efeitos sonoros existentes no GRADIUS MUSIC #1. Pressionando a barra de espa‡os, o efeito sonoro ‚ executado (certifique-se que o som do seu MSX ou da TV est  no volume correto).
+          Para abortar o programa e ir ao GRADIUS BASIC (com fundo musical) pressione a tecla [ESC]. Note que a m£sica toca independente da digita‡±o de um programa ou sua execu‡±o (poder  haver uma distor‡±o na m£sica quando operarmos com o disk-drive, usando comandos como FILES, LOAD, SAVE, MERGE, etc; mas isto n±o causar  muitos transtornos). Para fazer a m£sica parar de tocar comande "POKE&HFD9F,&HC9:BEEP" e para reinici -la digite "POKE&HFD9F,&HC3".
+
+
+          O BLOCO "G-MUSIC1.001"
+
+          Este bloco consiste numa rotina em linguagem de m quina que corresponde a m£sica principal do super-game megarom "VAMPIRE KILLER" da produtora japonesa "KONAMI". Como no jogo, ela aqui poder  ser usada da mesma forma em seu programa escrito em GRADIUS BASIC ou at‚ mesmo no BASIC MSX.
+
+          Para carregar e executar esta rotina digite:
+
+100 REM **************************
+110 REM * GRADIUS MUSIC #1 DEMO1 *
+120 REM **************************
+130 CLS : LOCATE 1,1
+140 PRINT "GRADIUS MUSIC #1"
+150 CLEAR 200,&HD414 : POKE -1,0
+160 BLOAD "G-MUSIC1.001"
+170 POKE &HDE18,&H15
+180 POKE &HDE19,&HD4
+190 DEFUSR=&HDC00 : U=USR(0)
+200 OUT(&HD4),0 : LOCATE 1,3
+210 PRINT "Tecle algo p/ parar: ";
+220 A$ = INPUT$(1)
+230 POKE &HFD9F,&HC9 : BEEP
+
+          A  rea ocupada por este bloco vai de &hD415 a &hDDFE, logo, ‚ importante que nenhuma outra rotina seja carregada nesta  rea.
+          Caso a luz do disk-drive permane‡a acesa depois da utiliza‡±o da rotina, comande "OUT(&HD4),0" para apag -la (v lido somente para disk-drives controlados por interfaces do padr±o nacional).
+          Para utilizar esta rotina no seu programa, use o exemplo acima e escreva o seu programa … partir da linha 200.
+
+          O BLOCO "G-MUSIC1.002"
+
+          Este bloco cont‚m todas as m£sicas e efeitos sonoros do megarom "METAL GEAR". Estes sons poder±o ser utilizados em seus programas atrav‚s do exemplo que apresentaremos … seguir:
+PPP
+100 REM **************************
+110 REM * GRADIUS MUSIC #1 DEMO2 *
+120 REM **************************
+130 CLS : LOCATE 1,1 : POKE -1,0
+140 PRINT "GRADIUS MUSIC #1"
+150 BLOAD "G-MUSIC1.002",R
+160 OUT (&HD4),0 : BEEP
+170 POKE &HFD9F,&HC3
+180 FOR C = 1 TO 85
+190 U = USR (C)
+200 LOCATE 1,3
+210 PRINT "Efeito n§" C ;
+220 A$ = INPUT$(1) : NEXT C
+
+          A sele‡±o do efeito sonoro ou m£sica desejada ‚ feita pela instru‡±o "U=USR(C)" onde "C" ‚ um n£mero entre 1 e 85. Os valores 41, 47, 53, 59 e 65 correspondem …s 5 m£sicas existentes. Os valores de 1 a 39 correspondem a efeitos sonoros e os valores 68, 71, 76, 79, 83 e 85 correspondem aos efeitos sonoros especiais de 3 canais de som (o efeito 79, que pode ser acionado atrav‚s de "U=USR(79)", ‚ uma sirene fant stica). Os valores restantes tocam separadamente os canais sonoros das m£sicas e dos efei
+
+tos especiais.
+
+          O programa abaixo mostra as 5 m£sicas existentes no "G-MUSIC1.002":
+
+100 REM **************************
+110 REM * GRADIUS MUSIC #1 DEMO3 *
+120 REM **************************
+130 CLS : LOCATE 1,1 : POKE -1,0
+140 PRINT "GRADIUS MUSIC #1"
+150 BLOAD "G-MUSIC1.002",R
+160 OUT (&HD4),0 : BEEP
+170 POKE &HFD9F,&HC3 : N = 41
+180 U = USR (N) : C = 1
+190 LOCATE 1,3
+200 PRINT "Escolha a m£sica (1 a 5):"
+210 LOCATE 1,5
+220 PRINT "M£sica n§" C ;
+230 A$ = INPUT$(1) : C=VAL(A$)
+240 IF C<1 OR C>5 THEN 170
+250 ON C GOTO 260,270,280,290,300
+260 N = 41 : GOTO 310
+270 N = 47 : GOTO 310
+280 N = 53 : GOTO 310
+290 N = 59 : GOTO 310
+300 N = 65 : GOTO 310
+310 U = USR (N)
+320 GOTO 210
+
+          A  rea ocupada por este bloco vai de &h9800 a &hC090, logo, ‚ importante que nenhuma outra rotina seja carregada nesta  rea. Como podemos ver esta rotina ‚ extremamente extensa, logo, o programa em BASIC que funcionar  juntamente com ela n±o poder  ter mais de 6 Kbytes para n±o afetar a  rea destinada a mesma.
+
+          FORA DO SISTEMA GRADIUS
+
+          Embora tenha sido lan‡ado para funcionar em conjunto com o SISTEMA GRADIUS, o GRADIUS MUSIC #1 poder  ser utilizado fora deste sistema, isoladamente ou em programas escritos pelo usu rio em BASIC MSX desde que algumas regras sejam observadas:
+
+a) O programa "G-MUSIC1.PGM" de demonstra‡±o n±o poder  ser executado;
+b) Os exemplos constantes nestas fichas funcionar±o perfeitamente;
+c) O mesmo cuidado deve ser tomado quanto …s  reas que as rotinas ocupam na mem¢ria do micro-computador, para que outras rotinas em linguagem de m quina n±o as sobreponham.
+
+
+          GRADIUS MUSIC #2
+
+          Com o GRADIUS MUSIC #2 torna-se poss¡vel colocar m£sica e efeitos sonoros com extrema simplicidade nos seus programas em GRADIUS BASIC. As m£sicas podem tocar at‚ mesmo enquanto os programas s±o executados, sem interferir nos mesmos. Com o visual que o GRADIUS BASIC proporciona e ainda uma m£sica de fundo, seus programas ficar±o cada vez mais completos, como os mais fant sticos softwares japoneses.
+
+          CARREGAMENTO
+
+          O GRADIUS MUSIC #2 ‚ composto por 2 blocos de m£sica ("G-MUSIC2.001" e "G-MUSIC2.002"), um programa de demonstra‡±o dos efeitos sonoros composto por 2 blocos ("G-MUSIC2.PGM" e "G-MUSIC2.OVR") e um bloco de abertura ("AUTOEXEC.BAS") que avisa que o software deve ser executado atrav‚s do GRADIUS BASIC.
+
+          O programa de demonstra‡±o dos efeitos sonoros deve ser carregado e executado da seguinte maneira:
+
+a) Introduza o disco com o GRADIUS SYSTEM e deixe
+   que ele carregue o G-DESK automaticamente;
+b) Depois do G-DESK ser executado, pressione [F1O]
+   para ir ao GRADIUS BASIC;
+c) Uma vez no GRADIUS BASIC digite:
+   RUN"G-MUSIC2.PGM" e tecle [RETURN]!
+
+          O PROGRAMA "G-MUSIC2.PGM"
+
+          O programa de demonstra‡±o "G-MUSIC2.PGM" carrega automaticamente os blocos "G-MUSIC2.OVR" e "G-MUSIC2.002" quando executado. Para utiliz -lo basta pressionar as teclas direcionais para selecionar um dos 54 efeitos sonoros existentes no GRADIUS MUSIC #2. Pressionando a barra de espa‡os, o efeito sonoro ‚ executado (certifique-se que o som do seu MSX ou da TV est  no volume correto).
+          Para abortar o programa e ir ao GRADIUS BASIC (com fundo musical) pressione a tecla [ESC]. Note que a m£sica toca independente da digita‡±o de um programa ou sua execu‡±o (poder  haver uma distor‡±o na m£sica quando operarmos com o disk-drive, usando comandos como FILES, LOAD, SAVE, MERGE, etc; mas isto n±o causar  muitos transtornos). Para fazer a m£sica parar de tocar comande "POKE&HFD9F,&HC9:BEEP" e para reinici -la digite "POKE&HFD9F,&HC3".
+
+          O BLOCO "G-MUSIC2.001"
+
+          Este bloco consiste numa rotina em linguagem de m quina que corresponde a m£sica principal do super-game megarom "KING KONG" da produtora japonesa "KONAMI". Como no jogo, ela aqui poder  ser usada da mesma forma em seu programa escrito em GRADIUS BASIC ou at‚ mesmo no BASIC MSX.
+
+          Para carregar e executar esta rotina digite:
+
+100 REM **************************
+110 REM * GRADIUS MUSIC #2 DEMO1 *
+120 REM **************************
+130 CLS : LOCATE 1,1
+140 PRINT "GRADIUS MUSIC #2"
+150 CLEAR 40,&HB000 : POKE -1,0
+160 BLOAD "G-MUSIC2.001"
+170 POKE &HDE18,&H11
+180 POKE &HDE19,&HCE
+190 DEFUSR=&HDC00 : U=USR(0)
+200 OUT(&HD4),0 : LOCATE 1,3
+210 PRINT "Tecle algo p/ parar: ";
+220 A$ = INPUT$(1)
+230 POKE &HFD9F,&HC9 : BEEP
+
+          A  rea ocupada por este bloco vai de &hCE11 a &hDDFE, logo, ‚ importante que nenhuma outra rotina seja carregada nesta  rea.
+          Caso a luz do disk-drive permane‡a acesa depois da utiliza‡±o da rotina, comande "OUT(&HD4),0" para apag -la (v lido somente para disk-drives controlados por interfaces do padr±o nacional).
+          Para utilizar esta rotina no seu programa, use o exemplo acima e escreva o seu programa … partir da linha 200.
+
+          O BLOCO "G-MUSIC2.002"
+
+          Este bloco cont‚m todas as m£sicas e efeitos sonoros do megarom "HINOTORI" ("FIRE BIRD"). Estes sons poder±o ser utilizados em seus programas atrav‚s do exemplo que apresentaremos … seguir:
+PPP
+100 REM **************************
+110 REM * GRADIUS MUSIC #2 DEMO2 *
+120 REM **************************
+130 CLS : LOCATE 1,1 : POKE -1,0
+140 PRINT "GRADIUS MUSIC #2"
+150 BLOAD"G-MUSIC2.002"
+160 POKE &HFD9F,&HC3
+170 POKE &HFDA0,&H97
+180 POKE &HFDA1,&H94
+190 DEFUSR = &HC0FA
+200 FOR C = 1 TO 255
+210 POKE &HC0FB,C : U=USR(0)
+220 LOCATE 1,3
+230 PRINT "Efeito n§" C ;
+240 A$ = INPUT$(1) : NEXT C
+
+          A sele‡±o do efeito sonoro ou m£sica desejada ‚ feita pela instru‡±o "POKE&HC0FB,C" onde "C" ‚ um n£mero entre 1 e 106. Para executar o efeito comande "DEFUSR=&HC0FA:U=USR(0)". Os valores 55, 58, 61, 64, 67, 70, 97 e 103 correspondem …s 8 m£sicas existentes. Os valores de 1 a 54 correspondem a efeitos sonoros e os valores 80, 90, 100, 106, 109 e 112 correspondem aos efeitos sonoros especiais de 3 canais de som. Os valores restantes tocam separadamente os canais sonoros das m£sicas e dos efeitos es
+
+peciais.
+
+          O programa abaixo mostra as 8 m£sicas existentes no "G-MUSIC2.002":
+
+100 REM **************************
+110 REM * GRADIUS MUSIC #2 DEMO3 *
+120 REM **************************
+130 CLS : LOCATE 1,1 : POKE -1,0
+140 PRINT "GRADIUS MUSIC #2"
+150 BLOAD"G-MUSIC2.002"
+160 POKE &HFD9F,&HC3
+170 POKE &HFDA0,&H97
+180 POKE &HFDA1,&H94
+190 DEFUSR = &HC0FA : C=1
+200 POKE &HC0FB,55 : U=USR(0)
+210 LOCATE 1,3
+220 PRINT "Escolha a m£sica (1 a 8):"
+230 LOCATE 1,5
+240 PRINT "M£sica n§" C ;
+250 A$ = INPUT$(1) : C=VAL(A$)
+260 IF C<1 OR C>8 THEN 190
+270 ON C GOTO 280,290,300,310,320,330,340,350
+280 N = 55 : GOTO 360
+290 N = 58 : GOTO 360
+300 N = 61 : GOTO 360
+310 N = 64 : GOTO 360
+320 N = 67 : GOTO 360
+330 N = 70 : GOTO 360
+340 N = 97 : GOTO 360
+350 N = 103 : GOTO 360
+360 POKE &HC0FB,N : U=USR(0)
+370 GOTO 230
+
+          A  rea ocupada por este bloco vai de &h9400 a &hC0FF, logo, ‚ importante que nenhuma outra rotina seja carregada nesta  rea. Como podemos ver esta rotina ‚ extremamente extensa, logo, o programa em BASIC que funcionar  juntamente com ela n±o poder  ter mais de 5 Kbytes para n±o afetar a  rea destinada a mesma.
+
+          FORA DO SISTEMA GRADIUS
+
+          Embora tenha sido lan‡ado para funcionar em conjunto com o SISTEMA GRADIUS, o GRADIUS MUSIC #2 poder  ser utilizado fora deste sistema, isoladamente ou em programas escritos pelo usu rio em BASIC MSX desde que algumas regras sejam observadas:
+
+a) O programa "G-MUSIC2.PGM" de demonstra‡±o n±o poder  ser executado;
+b) Os exemplos constantes nestas fichas funcionar±o perfeitamente;
+c) O mesmo cuidado deve ser tomado quanto …s  reas que as rotinas ocupam na mem¢ria do micro-computador, para que outras rotinas em linguagem de m quina n±o as sobreponham.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

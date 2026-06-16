@@ -1,0 +1,31 @@
+
+AUTO-MENU by R.O.C para NEMESIS LTDA.
+
+Este programa gera um arquivo com   o
+nome de AUTOEXEC.BAS para carregamen-
+to autom tico de programas.
+
+Instru‡µes:
+
+Grave o programa AUTOMENU.BAS no dis-
+co que voce deseja instalar o sistema
+de autoexecu‡±o. Execute o   programa
+e pressione [RETURN] quando o   mesmo
+lhe pedir para inserir o disco com os
+programas. Responda qual os  arquivos
+que realmente s±o carregadores de pro
+gramas ("loaders") e finalizado  este
+processo, o programa comandar  a  sua
+pr¢pria instala‡±o no disquete.
+
+Aten‡±o:
+
+- Somente realize esta experiˆncia se
+  voce j  tiver pr ticado com  discos
+  de arquivos de teste;
+- O programa AUTOMEN1.BAS ‚ a  VERS°O
+  DE 3 1/2 do programa AUTOMENU.BAS !
+
+REPRODU€°O COMERCIAL PROIBIDA!
+
+

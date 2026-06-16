@@ -1,0 +1,281 @@
+          FLASH BASIC COMPILER 1.1
+
+          NEMESIS INFORMATICA LTDA.
+
+          Apresentaá±o
+
+          Um COMPILADOR BASIC Ç um utilit†rio que transforma  seu
+programa, em linguagem BASIC, em  um  programa  em  linguagem  de
+m†quina. A grande vantagem desta transformaá±o Ç que em linguagem
+de m†quina seu programa Ç  executado  com  uma  velocidade  muito
+superior.
+          O FLASH BASIC COMPILER 1.1 Ç um compilador extremamente
+simples de se operar, entretanto ser† necess†rio que o usu†rio  o
+manuseie com atená±o para que  n±o  ocorram  falhas  durante  sua
+utilizaá±o. Um dos pontos mais cr°ticos est† no que se  refere  a
+alguns comandos e funáµes que n±o s±o  aceitos  pelo  compilador.
+Neste caso tais comandos ou funáµes dever±o ser  substitu°dos  ou
+eliminados do seu programa em BASIC antes da compilaá±o do mesmo.
+Ao se tentar  compilar  um  programa  que  contenha  funáµes  n±o
+permitidas o processo ser† interrompido e o compilador acusar†  o
+n£mero da linha onde ela se encontra.
+          Entre os comandos e funáµes  n±o  aceitos  encontramos:
+ERR/ERL, BLOAD, BSAVE e os comandos de manipulaá±o de arquivos. O
+comando CLEAR  tambÇm  n±o  Ç  aceito  porque  o  mesmo  torna-se
+desnecess†rio com o  uso  do  compilador,  pois  ele  j†  reserva
+automaticamente  uma  †rea  espec°fica  para  as   vari†veis   na
+mem¢ria.
+          Entre  os  comandos   e   funáµes   permitidos   est±o:
+DEFUSR/USR, POKE/VPOKE  e  PEEK/VPEEK,  os  comandos  gr†ficos  e
+sonoros do  MSX  e  as  funáµes  matem†ticas  que  em  BASIC  s±o
+extremamente  lentas.  A  performance  do  compilador  pode   ser
+constatada  executando-se  os  exemplos   que   acompanham   este
+software. Caber† apenas ao usu†rio escolher a melhor oportunidade
+para utiliz†-lo.
+
+          Carregamento
+
+          O  carregamento  do  FLASH   BASIC   COMPILER   1.1   Ç
+autom†tico.  Basta  o  usu†rio  ligar  o  disk-drive,   ligar   o
+computador e inserir o disquete  fornecido.  Em  alguns  segundos
+aparecer† uma mensagem indicando que o compilador est†  instalado
+e pronto para utilizaá±o.
+
+          Utilizaá±o
+
+          O FLASH BASIC COMPILER 1.1 Ç muito f†cil  de  se  usar:
+Ap¢s o mesmo ter sido instalado (ver °tem anterior),  carregue  o
+seu programa em BASIC normalmente com o comando LOAD. Em  seguida
+comande CALL COMP e o processo de compilaá±o dever† iniciar. Cada
+linha do seu programa  ser†  analizada  (passo  1)  e  processada
+(passo 2). Se houver um erro no seu  programa  ou  ocorrer  algum
+erro durante a compilaá±o, uma  mensagem  ser†  apresentada  e  o
+processo ser† interrompido (consulte o °tem MENSAGENS DE ERRO).
+
+          Caso n±o haja erro,  em  alguns  segundos  aparecer†  a
+mensagem "Bem compilado!" e ser±o apresentados os endereáos  para
+gravaá±o do programa j† em bin†rio:
+
+     Programa:  XXXX a YYYY [???? bytes]
+     Vari†veis: WWWW a ZZZZ [???? bytes]
+
+          Os dados apresentados indicam que a †rea  ocupada  pelo
+seu  programa  (agora  em  linguagem  de  m†quina)  vai  de  XXXX
+(endereáo em hexadecimal) atÇ YYYY (°dem) e a †rea ocupada  pelas
+vari†veis do mesmo vai de WWWW (°dem) a ZZZZ (°dem). Cada uma das
+†reas com total de ???? bytes. Logo, para gravar  o  programa  em
+seu novo formato comande:
+
+     BSAVE "PROGRAMA.BIN",&HXXXX,&HYYYY
+
+          De  agora  em  diante  para  carregar  e  executar  seu
+programa ser† usada a seguinte sintaxe:
+
+     BLOAD "PROGRAMA.BIN",R
+
+          Ao executar seu programa em sua nova vers±o fica  f†cil
+de se constatar que o mesmo ficou mais r†pido e protegido  contra
+alteraáµes por parte de terceiros. A nova velocidade de  execuá±o
+pode variar  de  acordo  com  o  que  o  programa  faz.  C†lculos
+matem†ticos  complexos  e  plotagem  de  gr†ficos  inclusive  com
+utilizaá±o de SPRITES s±o os que ser±o  melhor  optimizados,  por
+outro lado, comandos simples como PRINT ou CLS  praticamente  n±o
+ser±o afetados.
+
+          Outros comandos
+
+          AlÇm do comando CALL COMPILE que funciona identicamente
+ao CALL COMP que j† foi comentado,  existem  ainda  os  comandos:
+CALL RUN (executa o programa compilado), CALL NEW (caso o usu†rio
+desista do programa recÇm compilado e queira compilar um outro) e
+CALL HELP ou CALL HLP (mostra os  endereáos  do  £ltimo  programa
+compilado).  Lembramos  ainda  que  o  comando  CALL   pode   ser
+substitu°do pelo caracter "_". Exemplo: _COMPILE.
+          Para que  o  programa  compilado  possa  ser  carregado
+atravÇs do Sistema Operacional, o  mesmo  dever†  ser  convertido
+atravÇs do utilit†rio BIN-COM.COM e para realizar  uma  c¢pia  de
+seguranáa do FLASH  BASIC  COMPILER  1.1  deve  ser  utilizado  o
+DISKCOPY.COM, ambos s±o parte integrante do pacote MSX-DOS  TOOLS
+4.O da NEMESIS INFORMATICA LTDA.
+
+          Mensagens de erro
+
+          As mensagens de erro  mais  comuns  que  podem  ocorrer
+s±o:
+
+Sem mem¢ria! - O programa em BASIC Ç muito grande. O ideal  seria
+compact†-lo retirando os espaáos entre os comandos e as linhas de
+coment†rios  (REM).  Em  £ltimo  caso  pode  ser   utilizado   um
+compactador como o Knight Commander da Knights Software;
+
+Linha inexistente! -  Falta  uma  linha  no  programa  em  BASIC.
+Verifique cuidadosamente o programa em BASIC e comande RENUM para
+certificar-se que n±o h† desvio para uma linha inexistente;
+
+Erros m£ltiplos! - Esta mensagem de erro Ç apresentada  quando  o
+programa definitivamente n±o  pode  continuar  a  ser  compilado.
+Provavelmente o programa  em  BASIC  foi  carregado  ou  digitado
+erradamente ou existe um outro programa j† compilado na  mem¢ria.
+Esta £ltima possibilidade poder† ser resolvida comandando-se CALL
+NEW;
+
+Erro! / Erro na linha ???? - Existe um erro na linha especificada
+do programa em BASIC. Verifique-o e reinicie a operaá±o;
+
+Dimens±o - Existe um comando ou conjunto de comandos que deve ser
+modificado para que o programa possa ser compilado corretamente;
+
+Next sem For - A mesma mensagem que  existe  no  BASIC  MSX:  Foi
+comandado o fechamento de um laáo sem o mesmo ter sido aberto.
+
+          Exemplo de utilizaá±o
+
+          O FLASH BASIC COMPILER 1.1 vem  acompanhado  de  alguns
+programas em BASIC para demonstraá±o de seu  funcionamento.  Para
+utiliz†-los proceda da seguinte maneira:
+
+a)  Carregue  o  compilador,  carregue  o  primeiro  exemplo  com
+LOAD"EXEMPLO1.BAS" e o execute com RUN;
+
+b) Em seguida comande CALL COMP e logo ap¢s comande CALL RUN para
+và-lo em sua nova performance;
+
+c) Se desejar, Grave-o em seu novo formato, com o comando "BSAVE"
+e os endereáos j† citados anteriormente.
+
+          Caso alguma coisa saia errada recomece novamente  desde
+o primeiro passo. Proceda da mesma maneira com os outros exemplos
+constantes no disco do FLASH BASIC COMPILER.
+
+          Truques de programaá±o
+
+          O FLASH BASIC COMPILER 1.1 da NEMESIS INFORMATICA LTDA.
+Ç um dos melhores programas que j† foram escritos  para  a  linha
+MSX. No entanto, como todo  compilador,  o  mesmo  n±o  reconhece
+alguns  poucos  comandos  da  linguagem  BASIC,  que  devem   ser
+substituidos. 
+
+           Para substituir o comando LOAD, troque:
+
+100 LOAD "PROGRAMA.BAS",R  (suposta linha do seu programa)
+
+          pelas linhas que seguem:
+
+100 REM ************************
+110 REM * LOAD"PROGRAMA.BAS",R *
+120 REM ************************
+130 DATA 21,07,D0,CD,5D,6B,C9,22
+140 DATA 50,52,4F,47,52,41,4D,41
+150 DATA 2E,42,41,53,22,2C,52,00
+160 FOR C = &HD000 TO &HD017
+170 READ A$ : POKEC,VAL("&H"+A$)
+180 NEXT C : DEFUSR = &HD000
+190 POKE &H8000,0 : U=USR(0)
+
+          A tÇcnica  utilizada  neste  exemplo  consiste  em  uma
+pequena rotina em linguagem de m†quina que ativa o comando "LOAD"
+diretamente na ROM do  microcomputador.  Lembramos  que  o  FLASH
+BASIC COMPILER 1.1 aceita os comandos  "POKE"  e  "DEFUSR",  logo
+pode-se inserir um programa em linguagem de m†quina pelo BASIC. E
+como todos  os  comandos  do  BASIC  podem  ser  simulados  desta
+maneira,  o  FLASH  BASIC  COMPILER  1.1  na  pr†tica,  n±o   tem
+limitaáµes desta espÇcie.
+
+          Disassemblando o programa acima ter°amos:
+
+     ORG 0D000H          ; Endereáo inicial
+     LD HL,NOME          ; Aponta para os parÉmetros
+     CALL 06B5DH         ; Chama o "LOAD" da ROM
+     RET                 ; Retorna para o BASIC
+NOME:DEFB 34             ; ParÉmetros
+     DEFM 'PROGRAMA.BAS'
+     DEFB 34,44,82,0
+     END                 ; Fim
+
+          A entrada do comando "LOAD" Ç &H6B5D. Esta entrada Ç  o
+conte£do  (LSB  e  MSB)  do  endereáo  obtido   com   a   f¢rmula
+E=(T-129)*2+&H392E, onde T Ç  o  n£mero  de  "TOKEN"  do  comando
+"LOAD". Consultando a tabela de "TOKENs" na p†gina  67  do  livro
+"APROFUNDANDO-SE NO MSX" da editora Aleph, constatamos que  todos
+os comandos do MSX podem ser ativados desta forma.
+          O programa abaixo mostra  o  endereáo  de  entrada  dos
+comandos e funáµes existentes no BASIC MSX:
+
+200 REM **********************
+201 REM * MOSTRA ENTRY POINT *
+202 REM **********************
+203 CLS : INPUT "Token " ; A
+204 E = ( A-129 ) * 2 + &H392E
+205 B$ = HEX$ ( PEEK ( E ) )
+206 A$ = HEX$ ( PEEK ( E+1 ) )
+207 PRINT "Endereáo = &h" A$+B$
+
+          Se quando executado o programa  nos  perguntar  qual  o
+n£mero de "TOKEN", digitarmos 207 ("TOKEN" do "BLOAD"),  ele  nos
+responder† que o endereáo de  entrada  deste  comando  Ç  &H6EC6.
+Logo,  se  em   nosso   primeiro   exemplo   quisermos   utilizar
+BLOAD"PROGRAMA.BAS" bastar† alterar a linha:
+
+130 DATA 21,07,D0,CD,C6,6E,C9,22
+
+          Ou trocar a  terceira  linha  da  vers±o  disassemblada
+por:
+
+     CALL 06EC6H         ; Chama o "BLOAD"
+
+          Esperamos ter  demonstrado  algumas  das  vantagens  do
+FLASH BASIC COMPILER 1.1 sobre os outros compiladores  existentes
+para a linha MSX.
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-970
+                  Rio de Janeiro - RJ - Brasil.
+
+
+
+

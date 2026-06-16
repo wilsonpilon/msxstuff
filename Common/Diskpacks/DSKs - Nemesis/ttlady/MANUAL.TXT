@@ -1,0 +1,1160 @@
+‘◊
+◊abertura.2-22
+‘
+
+                                                                 P†g.
+1)  Programas do sistema TEXTO TOTAL  . . . . . . . . . . . . . .  2
+
+2)  Instalaá±o dos discos de trabalho
+    2.1) Disco de processamento de textos em 80 colunas . . . . .  5
+    2.2) Disco de processamento de textos em 40 colunas . . . . .  5
+    2.3) Disco de preparaá±o de gr†ficos  . . . . . . . . . . . .  6
+    2.4) Disco de intercÉmbio de arquivos MSX <-> PC  . . . . . .  6
+
+3)  Digitaá±o e ediá±o de textos  . . . . . . . . . . . . . . . .  7
+ 
+4)  Recursos dispon°veis na impress±o
+    4.1)  Modos de impress±o  . . . . . . . . . . . . . . . . . .  8
+    4.2)  Caracteres semigr†ficos . . . . . . . . . . . . . . . .  9
+    4.3)  Caracteres redefinidos e em it†lico . . . . . . . . . .  9
+    4.4)  Paginaá±o autom†tica  . . . . . . . . . . . . . . . . . 10
+    4.5)  Notas de rodapÇ . . . . . . . . . . . . . . . . . . . . 10
+    4.6)  Conjuntos para impress±o em p†gina £nica  . . . . . . . 11
+    4.7)  Impress±o de gr†ficos . . . . . . . . . . . . . . . . . 11
+    4.8)  Inserá±o de textos pelo teclado . . . . . . . . . . . . 13
+    4.9)  Regulagem do salto de linha (Entrelinha)  . . . . . . . 14
+    4.10) Tabulaáµes  . . . . . . . . . . . . . . . . . . . . . . 14
+    4.11) Retrocesso (BS) . . . . . . . . . . . . . . . . . . . . 15
+    4.12) 2 espaáos . . . . . . . . . . . . . . . . . . . . . . . 15
+
+5)  Formataá±o de arquivos para a impress±o (ALINHA.COM)  . . . . 16
+
+6)  Tabela dos comandos TEXTO.COM . . . . . . . . . . . . . . . . 19
+
+7)  Convers±o de arquivos do e para o IBM-PC  . . . . . . . . . . 20
+
+8)  Redefiniá±o de caracteres
+    8.1)  Redefiniá±o de caracteres para impress±o  . . . . . . . 21
+    8.2)  Redefiniá±o de caracteres no v°deo  . . . . . . . . . . 21
+
+9)  Observaáµes finais  . . . . . . . . . . . . . . . . . . . . . 23€
+√a1) Programas do sistema TEXTO TOTAL√0
+
+     Com a Lady 80, a linha MSX passa a  dispor  de  uma  impressora  de
+custo relativamente baixo que, alÇm de permitir a impress±o de todos  os
+caracteres gerados no teclado, possui todos os  recursos  existentes  em
+impressoras   gr†ficas:   qualidade   carta;   expans±o,    condensaá±o,
+enfatizaá±o, negrito  e  elite;  sublinhado;  sobrescrito  e  subscrito;
+redefiniá±o de caracteres, regulagem do salto de linha e em  especial  o
+modo gr†fico de impress±o para a reproduá±o de telas.
+     Persiste, entretanto, o problema da falta de um  editor  de  textos
+capaz de aproveitar integralmente esses recursos, sem exigir do  usu†rio
+uma gin†stica de improvisaáµes que tornem o texto digitado ileg°vel para
+ele mesmo ou, pior ainda, que ele acabe abdicando  desses  recursos  por
+n±o conseguir acess†-los  (a  n±o  ser  com  a  abomin†vel  extiná±o  de
+cedilhas e acentos).
+     O conjunto de programas aqui apresentados serve exatamante  a  esse
+prop¢sito de permitir a digitaá±o de textos, possibilitando o uso direto
+de todos os recursos de impress±o da Lady 80,  acrescentando  ainda  uma
+sÇrie de recursos n±o dispon°veis nessa impressora ou nos  processadores
+de texto convencionais, como a combinaá±o de texto com  telas  gr†ficas.
+Com  isso,  torna-se  finalmente   realidade   o   uso   verdadeiramente
+profissional dos micros MSX na  elaboraá±o  de  textos, apresentando  um
+resultado antes s¢ poss°vel com equipamentos de custo desproporcional Ös
+disponibilidades t°picas daqueles  que  lidam  com  textos:  escritores,
+tradutores, pesquisadores e mesmo datil¢grafos autìnomos. Na verdade,  a
+combinaá±o desses programas,  um  MSX  com  80  colunas  e  drive,  e  a
+impressora LADY 80  Ç  mais  que  suficiente  para  o  aparelhamento  de
+qualquer  serviáo  de  elaboraá±o  de  textos,  mesmo  na  mais   pesada
+datilografia comercial.
+     Para um total  aproveitamento  das  potencialidades  de  uso  dessa
+combinaá±o quase ideal, Ç importante ler  cuidadosamente  as  instruáµes
+desse manual, que busca n±o sonegar qualquer  informaá±o,  j†  porque  o
+"usu†rio" t°pico de processadores de textos pretende dominar o  conjunto
+computador/impressora como sua velha m†quina de escrever, sem  sentir-se
+restringido por  limitaáµes  "tÇcnicas"  da  programaá±o,  ou  impotente
+frente Ö "caixa preta" do "computàs".
+
+- “TEXTO.COM—
+
+     O sistema TEXTO TOTAL oferece o seguramente mais poderoso  conjunto
+de recursos j† dispon°veis para o processamento de textos em  micros  da
+linha MSX. Sua versatilidade se deriva do fato dele  estar  centrado  na
+rotina de impress±o TEXTO.COM, que interpreta e imprime textos  editados
+e gravados com os editores de textos convencionais. Isso torna  poss°vel
+contornar as limitaáµes da mem¢ria dispon°vel nos micros MSX, permitindo
+ent±o a construá±o de subrotinas  complexas  para  a  impress±o,  usando
+ent±o literalmente  todos  os  recursos  dispon°veis  em  cada  tipo  de
+impressora, introduzindo ainda diversos outros recursos n±o  encontrados
+nas impressoras e nos processadores convencionais de texto.
+     O programa TEXTO.COM Ç espec°fico para cada tipo de  impressora,  e
+na presente vers±o ele est† adaptado Ö impressora LADY 80 da ELGIN.
+
+- “ALINHASC.COM—
+
+     O ambiente ideal para o trabalho  com  textos  Ç  o  v°deo  com  80
+colunas. O editor de textos para tanto recomend†vel Ç o SCED, que aceita
+linhas de atÇ 132 caracteres, produzindo uma rolagem horizontal da  tela
+a partir da 80¶ coluna. A £nica desvantagem do SCED Ç que ele n±o aceita
+uma definiá±o da margem direita, sendo  portanto  necess†rio  digitar  o
+retorno ao final de cada linha. Para  evitar  a  rolagem  da  tela,  que
+dificulta o acompanhamento do texto, esse retorno deve ser  feito  antes
+da 80¶ coluna. Com isso, o texto fica desalinhado Ö direita. O  programa
+ALINHASC.COM là o arquivo gravado pelo SCED e o  reformata,  gerando  um
+novo arquivo, cujo alinhamento Ö direita considera os  diferentes  tipos
+de caracteres usados na impress±o.
+
+- “ALINHAWR.COM—
+
+     Para quem trabalha sem a expans±o de 80  colunas,  a  digitaá±o  do
+texto com o SCED Ç  demasiadamente  incìmoda,  por  causa  do  constante
+rolamento da tela. Nesse caso ser† melhor trabalhar com o MSXWRITE. Como
+o padr±o de gravaá±o dos arquivos do MSXWRITE Ç  diferente  do  SCED,  a
+formataá±o do arquivo para  a  impress±o  ser†  efetuada  pelo  programa
+ALINHAWR.COM.
+
+- “PC-MSX—
+
+     Esse programa Ç uma espÇcie de "brinde" do  sistema   TEXTO  TOTAL,
+pois permite o intercÉmbio de arquivos de texto “em portuguàs— entre o  PC
+e o MSX.
+ Os arquivos MSX poder±o ser do formato SCED ou MSXWRITE.
+
+- “CONVGRAF.BAS, CONVGRA1.BIN e CONVGRA2.BIN—
+
+     Programas de convers±o de telas gr†ficas gravadas no padr±o SCR  ou
+GRP, gerando um arquivo da tela em formato apropriado Ö impressora. Tais
+telas convertidas poder±o ser ent±o importadas durante  a  impress±o  do
+texto pelo TEXTO.COM.
+
+- “FIMGRAF.SHP—
+
+     "Shape" gravada no padr±o usado pelo editor  gr†fico  GRAPHOS,  que
+dever† ser introduzida no gr†fico original para sua  impress±o  parcial,
+como no caso de logotipos, simulaá±o de papel timbrado, etc.
+
+- “TESTGRAF.COM—
+
+     Programa para testes de impress±o  de  telas  gr†ficas  convertidas
+para impress±o pelo TEXTO.COM.
+
+- “REDEFINE.LDY—
+
+     Arquivo de dados lidos no in°cio do processamento da impress±o  por
+meio do TEXTO.COM,  atravÇs  do  qual  s±o  introduzidos  os  caracteres
+redefinidos para a impress±o, assim como o  alfabeto  de  caracteres  em
+it†lico. Sem esse arquivo, ou pelo menos  suas  linhas  iniciais  atÇ  o
+ÔcopyrightÔ, a execuá±o do programa TEXTO.COM ser† interrompida.
+
+- “REDEFINE.BAS E REDEFINE.UDG—
+
+     O programa REDEFINE.BAS chama e processa  o  arquivo  REDEFINE.UDG,
+providenciando assim a redefiniá±o dos caracteres no v°deo de 40 colunas
+e no v°deo de 80 colunas das expansµes que seguem o padr±o  MICROSOL  ou
+SHARP. Isso compatibiliza os caracteres redefinidos para a impress±o com
+os caracteres mostrados na tela.
+
+- “MENU80.COM, MENU40.COM, MENUGRAF.COM, MENUPC.COM, MENU e WRITE—
+
+     Programas a serem instalados mos diferentes discos de trabalho,
+para automatizar o acesso a todo o sistema TEXTO TOTAL.
+
+
+- “CARTAO—
+
+      Arquivo  a  ser  impresso  pelo  programa  TEXTO.COM,  sem  margem
+esquerda, contendo o resumo dos comandos dos  programas  SCED,  TEXTO  e
+ALINHA, assim como sua localizaá±o nos teclados HOTBIT e  EXPERT.  Serve
+de guia b†sico como cart±o de referància  r†pida  durante  a  ediá±o  de
+textos.
+
+- “MANUAL, ABERTURA.SCR, ABERTURA.2-2, ABERTURA.1-1—
+ 
+    Arquivos desse manual que est† sendo impresso, e das telas gr†ficas
+por ele importadas.
+
+- “LEIA-ME—
+
+     Arquivo de texto para leitura na  tela,  atravÇs  do  comando  TYPE
+LEIA-ME do arquivo AUTOEXEC.BAT,  contendo  instruáµes  para  o  contato
+inicial com o sistema TEXTO TOTAL.€
+√a2) Instalaá±o dos discos de trabalho√0
+
+     Para facilitar o acesso aos  seus  diversos  programas,  o  sistema
+TEXTO TOTAL dever† ser instalado em “tràs— discos de  trabalho:  um  disco
+para ediá±o e impress±o  de  textos,  um  disco  para  a  preparaá±o  de
+gr†ficos a serem incorporados aos textos, e um disco para a convers±o de
+arquivos a serem intercambiados entre o MSX e o PC. O disco de ediá±o  e
+impress±o de textos dever† ser instalado para operaá±o em v°deo de 80 ou
+de 40 colunas, dependendo do equipamento a ser usado. O acesso  ao  MENU
+dos diversos discos de tabalho ser† autom†tico ao ligar-se o computador,
+ou ao trocar-se  discos  de  trabalho  atravÇs  dos  respectivos  MENUS.
+Estando no DOS esse acesso ser† feito atravÇs  do  comando  MENU,  e  no
+BASIC atravÇs do comando RUN "MENU".
+
+√H2.1) Disco de processamento de textos em 80 colunas√0
+
+     Inicialmente, faáa  um  teste  dos  programas  de  redefiniá±o  dos
+caracteres no v°deo, para verificar se eles funcionam  com  a  placa  de
+80 colunas por vocà utilizada. Se sua placa for da Microsol ou da Sharp,
+esse teste n±o ser† necess†rio: os programas de redefiniá±o foram feitos
+a partir delas. Proceda o teste da seguinte forma:
+     - Ligue o computador no sistema DOS em 80 colunas.
+     - Com o disco original do TEXTO TOTAL, chame BASIC REDEFINE.BAS.
+     - N±o se preocupe com a prov†vel mensagem de  erro  no  retorno  ao
+       DOS.
+     - Tecle GRAPH 8 no HOTBIT ou LGRA 8 no EXPERT.
+     - Examine o caractere impresso na tela. Se for um “Ï— ("a"  min£sculo
+       tremado), a redifiniá±o ter† funcionado. Caso contr†rio, n±o  use
+       os programas REDEFINE.BAS e REDEFINE.UDG.
+
+     Vamos agora Ö instalaá±o do disco de trabalho. Proceda da  seguinte
+forma:
+     - Copie para o disco de trabalho o sistema DOS por vocà usado.
+     - Se o teste da redefiniá±o  de  caracteres  no  v°deo  tiver  sido
+       positivo, copie os arquivos REDEFINE.BAS e REDEFINE.UDG.
+     - Copie o arquivo MENU80.COM e troque seu nome para MENU.COM.
+     - Instale no disco  de  trabalho  um  arquivo  AUTOEXEC.BAT  com  o
+       comando BASIC REDEFINE.BAS (se a redefiniá±o no v°deo  funcionar)
+       ou com o comando MENU (se a redefiniá±o no v°deo n±o funcionar ou
+       n±o for desejada).
+     - Copie os seguintes arquivos do  disco  do  sistema  TEXTO  TOTAL:
+       MENU, REDEFINE.LDY e TEXTO.COM.
+     - Copie o arquivo ALINHASC.COM e troque seu nome para ALINHA.COM.
+     _ Finalmente, copie o SCED.COM e o SCED.HLP (esse £ltimo apenas  se
+       consultas ao "HELP" forem necess†rias).
+
+√H2.2) Disco de processamento de textos em 40 colunas√0
+
+     Instale seu disco de processamento de textos da seguinte forma:
+     - Copie para o disco de trabalho o sistema DOS por vocà usado.
+     - Instale no disco  de  trabalho  um  arquivo  AUTOEXEC.BAT  com  o
+       comando BASIC REDEFINE.BAS.
+     - Copie o arquivo MENU40.COM e troque seu nome para MENU.COM.
+     - Copie os seguintes arquivos do  disco  do  sistema  TEXTO  TOTAL:
+       REDEFINE.BAS,  REDEFINE.UDG,   REDEFINE.LDY,   MENU,   WRITE,   e
+       TEXTO.COM.
+     - Copie o arquivo ALINHAWR.COM e troque seu nome paea ALINHA.COM.
+     - Finamente, copie a sua vers±o do programa MSXWRITE  em  linguagem
+       de m†quina. Atente para que o nome desse programa seja exatamente
+       MSXWRITE, sem qualquer extens±o.
+     - Para facilitar eventuais controles dos arquivos de textos para  a
+       impress±o, seria oportuno instalar nesse disco de trabalho tambÇm
+       o SCED.COM.
+
+√H2.3) Disco de preparaá±o de gr†ficos√0
+
+     Instale seu disco de trabalho para a preparaá±o de gr†ficos a serem
+inseridos na impress±o de textos, atravÇs dos seguintes procedimentos:
+     - Copie para o disco de trabalho o sistema DOS por vocà usado.
+     - Instale no disco  de  trabalho  um  arquivo  AUTOEXEC.BAT  com  o
+       comando MENU.
+     - Copie o arquivo MENUGRAF.COM e troque seu nome para MENU.COM.
+     - Copie os seguintes arquivos do  disco  do  sistema  TEXTO  TOTAL:
+       MENU, CONVGRAF.BAS, CONVGRA1.BIN,  CONVGRA2.BIN,  TESTGRAF.COM  e
+       FIMGRAF.SHP.
+     - Para facilitar a elaboraá±o de gr†ficos, seria oportuno  instalar
+       nesse mesmo disco de  trabalho  o  programa  por  vocà  usado  na
+       geraá±o  de  gr†ficos.  Uma  observaá±o:  use  preferentemente  o
+       GRAPHOS,  atÇ  porque  ele  permite  a  introduá±o   da   "shape"
+       FIMGRAF.SHP, para a impress±o parcial de gr†ficos.
+     Se vocà usa uma expans±o de 80 colunas, poder±o  ocorrer  problemas
+na passagem para o progama CONVGRAF.BAS, j† que ele roda no BASIC. Tente
+contornar esses problemas instalando um arquivo MENU.BAT que, depois dos
+ajustes  necess†rios,  chame  o  programa  MENU.COM  (renomeado).  Outro
+caminho Ç trocar o nome  do  programa  CONVGRAF.BAS,  e  instalar  outro
+programa em BASIC com esse nome e que, depois dos  ajustes,  chame  esse
+programa renomeado.
+
+√H2.4) Disco de intercÉmbio de arquivos MSX <-> PC√0
+
+     Para intercambiar arquivos entre o MSX e o PC, instale o seu  disco
+de trabalho da seguinte forma:
+     - Copie para o disco de trabalho o sistema DOS por vocà usado.
+     - Instale no disco  de  trabalho  um  arquivo  AUTOEXEC.BAT  com  o
+       comando MENU.
+     - Copie o arquivo MENUPC.COM e troque seu nome para MENU.COM.
+     - Copie os seguintes arquivos do  disco  do  sistema  TEXTO  TOTAL:
+       MENU, MSX-PC.COM e WRITE.
+     - Para facilitar o controle dos arquivos  convertidos,  copie  suas
+       versµes do SCED.COM e do programa  em  linguagem  de  m†quina  do
+       MSXWRITE. Atente para que o nome  desse  £ltimo  seja  exatamente
+       MSXWRITE, sem qualquer extens±o.€
+√a3) Digitaá±o e ediá±o de textos√0
+
+     O programa TEXTO.COM Ç uma rotina de impress±o que interpreta linha
+a linha arquivos gravados com um editor de textos. O  editor  de  textos
+utilizado como referància e recomendado para o usu†rio  Ç  o  SCED,  por
+tràs razµes b†sicas: alÇm de poder trabalhar em 40 ou 80 colunas, ele  Ç
+compat°vel com todos os tipos de cartuchos de 80 colunas dispon°veis  no
+Brasil, registrando ainda todos os caracteres do teclado dos micros MSX.
+Isso permite montar na tela o texto tal qual ele ser† impresso. A grande
+restriá±o do SCED como editor de textos se deve Ö inexistància  nele  de
+recursos de justificaá±o autom†tica da margem direita. Essa deficiància,
+entretanto, poder† ser superada, vantajosamente,  com  a  utilizaá±o  do
+programa ALINHA.COM, como ser† visto mais adiante.
+     O SCED aceita atÇ 132 caracteres por linha. Mas, a  partir  da  80¶
+coluna, ele passar† a rolar a tela a cada 8 colunas.  Para  evitar  esse
+desconforto, ser† oportuno interromper as linhas,  retornando  o  cursor
+(RETURN ou ENTER) antes de  atingir-se  a  80¶  coluna.  N±o  Ç  preciso
+preocupar-se com  o  alinhamento  na  margem  direita,  pois  isso  ser†
+providenciado pelo programa ALINHA.COM. As linhas  do  arquivo  original
+poder±o ser maiores ou menores que o desejado na impress±o:  o  programa
+ALINHA.COM providenciar† as compensaáµes necess†rias. O importante Ç que
+as palavras n±o sejam fracionadas  na  digitaá±o  do  arquivo  original:
+“interrompa a linha sempre imediatamente ap¢s uma palavra—.
+     Quem quiser trabalhar em 40 colunas, dever†  optar  preferentemente
+pelo editor MSXWRITE. Esse editor tambÇm permite a digitaá±o de todos os
+caracteres semigr†ficos do teclado do MSX, e tais caracteres s±o  usados
+para acionar as rotinas de impress±o no programa TEXTO.COM. ê exatamente
+por causa das possibilidades limitadas de reproduá±o  desses  caracteres
+semigr†ficos, que o editor MSXWORD, ou  outros  derivados  do  TASSWORD,
+devem ser evitados: depois de editado no MSXWORD, o texto teria que  ser
+lido  no  SCED  ou  no  MSXWRITE  para  a  introduá±o   dos   caracteres
+semigr†ficos necess†rios, duplicando assim o trabalho necess†rio.
+     Usando-se o  MSXWRITE  devem  ser  evitados  os  seus  recursos  de
+paginaá±o (centralizaá±o, margem  etc.), que  ser±o  substitu°dos  pelos
+recursos apresentados no TEXTO TOTAL. O texto assim digitado  e  gravado
+dever† ser  processado  pelo  programa  ALINHAWR.COM,  para  adquirir  o
+formato necess†rio  para  impress±o  atravÇs  do  TEXTO.COM.  O  arquivo
+reformatado ter† o mesmo nome que  o  arquivo  inicial  e  o  n£mero  de
+colunas no alinhamento como extens±o.
+     N±o se preocume se seu texto for maior que a mem¢ria do SCED ou  do
+MSXWRITE.  A  rotina  de  impress±o   TEXTO.COM   permite   a   perfeita
+concatenaá±o de arquivos na impress±o. O  texto  poder†,  portanto,  ser
+gravado em diversos arquivos.
+     No momento  da  conclus±o  desse  sistema,  ainda  n±o  tinha  sido
+poss°vel testar o novo editor de textos fornecido com o cartucho  de  80
+colunas da Gradiente. Tudo indica, porÇm, que  seus  arquivos  seguem  o
+padr±o do MSXWRITE, registrando os caracteres 13 [retorno  de  carro]  e
+10 [salto de linha] apenas ao final dos par†grafos e  n±o  ao  final  de
+cada linha, como no SCED.  Se  assim  o  for,  provavelmente  ser†  mais
+vantajoso us†-lo no lugar do SCED  -  e  nesse  caso  a  formataá±o  dos
+arquivos para impress±o deveria ser feita com o  programa  ALINHAWR.COM.
+Por ora, o pr¢prio  usu†rio  dever†  fazer  esse  teste;  logo  que  for
+poss°vel, apresentaremos as adaptaáµes eventualmente necess†rias para  o
+uso desse novo editor de textos.€
+√a4) Recursos dispon°veis na impress±o√0 
+
+     Para  facilitar  o  acompanhamento   das   indicaáµes   a   seguir,
+providencie uma c¢pia do arquivo CARTAO atravÇs do programa de impress±o
+TEXTO.COM. N±o  opte  pela  impress±o  padr±o,  nem  pela  numeraá±o  de
+p†ginas, e defina a margem esquerda como 0 (zero).
+     O CARTAO apresenta um resumo das teclas especiais  e  dos  comandos
+do programas TEXTO, ALINHA e do  editor  SCED,  e  sua  localizaá±o  nos
+teclados HOTBIT e EXPERT. A tecla √H\√0 no teclado  HOTBIT  e  √HT√0  no  EXPERT
+explicam a disposiá±o dos caracteres nas diversas teclas. A  seguir,  as
+teclas s±o referenciadas a partir do teclado HOTBIT. Se seu computador Ç
+um  EXPERT,  bastar†  considerar  que  as  teclas   √HGr√0  (GRAPH)  e   √HsGr√0
+(Shift/GRAPH) no HOTBIT produzem os mesmos caracteres que as teclas LGRA
+e Shift/LGRA, respectivamente,  no EXPERT.
+     Como pode ser observado, o programa  TEXTO.COM usa  basicamente  os
+caracteres  semigr†ficos  para  gerar  os  comandos   de   controle   da
+impressora. Com isso, Ç poss°vel incluir-se tais comandos no texto,  sem
+prejudicar exageradamente sua legibilidade. Essa funá±o de comando pode,
+entretanto, ser desligada atravÇs do  caractere  ◊◊ø  (sGr  P),  liberando
+assim os caracteres semigr†ficos (inclusive o ◊◊ø)  para  a  impress±o.  O
+retorno Ös funáµes de comando se d† atravÇs  do  caractere  √Hø√0  (CODE  ou
+RGRA 3). Os caracteres das quatro funáµes  que  n±o  s±o  acionadas  por
+caracteres semigr†ficos (It†lico, Numeraá±o de  p†ginas,  Incremento  de
+p†gina e Inserá±o de texto) s±o liberados para a impress±o  pela  funá±o
+Redefin- (sGr H).
+     Para adquirir uma noá±o geral das funáµes dispon°veis  no  programa
+TEXTO.COM, compare as informaáµes contidas  no  CARTAO  com  as  tabelas
+anexadas no fim desse manual.
+
+√H4.1) Modos de impress±o√0
+
+     O funcionamento da maior parte dos comandos de controle  dos  modos
+de impress±o Ç  auto-explicativo,  bastando  a  consulta  ao  manual  da
+impressora  para  eventuais  esclarecimentos  (principalmente  quanto  Ö
+compatibilidade e Ö prioridade entre os modos de impress±o). Os comandos
+dos modos espec°ficos de impress±o s±o  do  tipo  liga/desliga,  onde  a
+respectiva tecla GRAPH (LGRA no EXPERT) liga e a SHIFT/GRAPH desliga. As
+observaáµes a seguir se  referem  apenas  a  algumas  peculiaridades  do
+processamento de  certos  comandos  no  programa  TEXTO.COM. Apenas  uma
+observaá±o: o £nico  modo  de  impress±o  n±o  utilizado  pelo  programa
+TEXTO.COM Ç o da impress±o proporcional. Isso se explica  pelo  fato  de
+que a impressora certamente ser† ligada no  seu MODO II, que imprime  os
+caracteres  MSX,  e  nesse  modo  a  impress±o  proporcional  n±o   est†
+dispon°vel. AlÇm disso, esse modo Ç pouco pr†tico na ediá±o  de  textos,
+por dificultar (e quase impossibilitar)  o  alinhamento  Ö  direita.  De
+qualquer forma, esse modo poder† ser acessado atravÇs do Basic, antes de
+ser chamado o programa TEXTO.COM.
+
+4.1.1) ¿Modo expandido≈
+
+     O modo expandido acionado pelo caractere ◊Ãø (Gr Q)  “n±o—  Ç desligado
+com o salto de linha, tendo por isso que ser encerrado pelo caractere  ◊Àø
+(sGr Q). Ao ser encerrado o modo  expandido,  o  programa  processa  uma
+—compensaá±o— entre a linha na tela e a linha impressa: tratando-se de  um
+£nico caractere expandido Ç gerado um salto de coluna na impress±o e, no
+caso de √Hn√0 caracteres expandidos, s±o despezadas as √Hn-1√0 colunas de  v°deo
+seguintes. Isso permite montar na tela o texto diagramado  na  forma  em
+que ele ser† impresso. Quando essa diagramaá±o n±o for  importante,  n±o
+se esqueáa de saltar as √Hn-1√0 colunas de v°deo na digitaá±o da linha.
+     Desejando-se  evitar  essa  compensaá±o,  basta  acessar   o   modo
+expandido atravÇs dos  respectivos  comandos  nos  modos  combinados  de
+impress±o a seguir descritos.
+
+4.1.2) ¿Modos combinados de impress±o≈
+
+     A combinaá±o dos diversos modos  de  impress±o  (ver  p.  59-61  do
+Manual de Operaá±o da Lady 80) atravÇs de um £nico  comando  Ç  acessada
+atravÇs do caractere ◊√ø (sGr O) seguido por um caractere que pode  variar
+entre √H0√0 e √Ho√0 (c¢digos entre  48  e  111  na  tabela  MSX).  Esse  segundo
+caractere especifica a combinaá±o desejada, conforme a tabela na  p.  61
+do referido manual. O CARTAO apresentada uma lista,  exemplificada,  das
+combinaáµes poss°veis.
+
+√H4.2) Caracteres semigr†ficos√0
+
+     A impressora Lady 80  Ç  capaz  de  imprimir  todos  os  caracteres
+produzidos pelo teclado dos micros MSX. Para  aproveitar  esse  recurso,
+importante na elaboraá±o  de  gr†ficos,  tabelas  e  mesmo  desenhos  no
+pr¢prio  editor  de  textos,  Ç  poss°vel  ativar-se  a  impress±o   dos
+caracteres semigr†ficos atravÇs do caractere ◊◊ø (sGr  P:  "Graph+").  Uma
+vez ativada, a impress±o desses caracteres s¢ ser†  interrompida  com  o
+caractere √Hø√0 ("Graph-"), a partir do qual eles reassumir±o sua funá±o
+de controle  dos  comandos  da  impressora.  Uma  observaá±o  final:  os
+caracteres semigr†ficos “n±o— podem ser impressos no modo qualidade carta.
+
+√H4.3) Caracteres redefinidos e em it†lico√0
+
+     Um dos mais interessantes recursos da LADY 80 Ç a possibilidade  de
+total redefiniá±o dos caracteres a serem impressos. Para aproveit†-lo  o
+programa TEXTO.COM introduz  a  possibilidade  de  trabalhar-se  com  um
+conjunto de 15  caracteres  redefinidos  para  impress±o  direta,  e  um
+alfabeto de caracteres em it†lico que deve  ser  ativado  ou  desativado
+pelo caractere “÷Ô—  (Gr 4: "It†licoÒ").  Os  caracteres  redefinidos  para
+impress±o direta  tambÇm  poder±o  ser  redefinidos  no  v°deo:  ver  as
+respectivas observaáµes no final desse manual.
+     Os “caracteres redefinidos para impress±o direta—  n±o  precisam  ser
+ativados por qualquer tecla de controle. Eles se referem aos  caracteres
+÷‡ ÷· ÷Á ÷Î ÷È ÷‚ ÷Ê ÷ Ì ÷⁄ ÷„ ÷Ë ÷Í ÷Â ÷‰ (obtidos no teclado CODE/RGra) e ÷Ï  (Gr 8),
+imprimindo os caracteres assinalados com * no CARTAO: delimitadores para
+tabelas („ Ë Í ‰ ‚), setas para uso em gr†ficos (Ê Ì ⁄ Â), o s°mbolo  de
+Cruzado (‡), e cinco caracteres do alfabeto alem±o (· Ï Á Î È ). Havendo
+interesse na “impress±o dos caracteres originais—,  esses  dever±o  ser  a
+cada caso precedidos pelo caractere  ◊÷ø  (sGr  H:  "Redefine-");  ap¢s  a
+impress±o do caractere original, os caracteres  redefinidos  voltar±o  a
+ter prioridade na impress±o. [O caractere ◊⁄ø  s¢  ser†  impresso  se  for
+ativado como um caractere semigr†fico: precedido por ◊◊ø (sGr P) e seguido
+por ø.] Todos  esses  caracteres  poder±o  ser  definidos  pelo  pr¢prio
+usu†rio, como ser† mostrado na  descriá±o  do  arquivo  REDEFINE.LDY  no
+final desse manual (o mesmo se  aplica  Ö  sua  redefiniá±o  no  v°deo).
+Os caracteres redefinidos n±o s±o impressos no modo Qualidade Carta.
+             Ô1234567890
+             abcdefghijklm
+             nopqrstuvwxyz
+             ABCDEFGHIJKLM
+             NOPQRSTUVWXYZ
+             ±É†ÖàÇ°µì¢£Åá
+             ∞åÑèçêâ¥éäãöÄ
+             !"()?:;,Ô
+     O “alfabeto em it†lico— acima reproduzido, Ç ativado para a impress±o
+atravÇs do caractere “÷Ô— (Gr 4: "It†licoÒ"). Ele contÇm o alfabeto b†sico,
+as letras especiais do portuguàs, e os sinais de  pontuaá±o,  imprimindo
+ainda os caracteres usuais do restante teclado normal do  MSX.  A  volta
+aos caracteres normais tambÇm Ç feita atravÇs do caractere “÷Ô— (Gr 4).
+     O caractere “÷Ô— tambÇm pode ser impresso se precedido por ◊÷ø  (sGr H),
+do mesmo modo que tambÇm Ç poss°vel  a  redefiniá±o  desse  alfabeto  em
+it†lico, como ser† mostrado na descriá±o do arquivo REDEFINE.LDY.
+
+√H4.4) Paginaá±o autom†tica√0
+
+     Ao definir os parÉmetros para a impress±o,  o  programa  calcula  a
+mancha total de  pontos  verticais  que  podem  ser  impressos  em  cada
+p†gina. Com isso ele controla as alteraáµes da entrelinha, uniformizando
+o tamanho das p†ginas impressas.
+     Para  provocar  um  “salto  de  p†gina—,  por  exemplo  ao  final  de
+cap°tulos, basta registrar o  caractere  ◊€ø  (Gr  P),  correspondente  ao
+comando FF.
+     A numeraá±o de p†ginas, se desejada, ser† sempre impressa no  canto
+direito superior, aceitando n£meros atÇ 999.
+     O programa inclui  duas  funáµes  que  possibilitam  “interferir  na
+numeraá±o— autom†tica de p†ginas ao longo da  impress±o.  O  caractere  ÷
+(sGr =) aciona o comando "NumeraÒ", que ativa ou  desativa  a  numeraá±o
+autom†tica das p†ginas em qualquer momento da impress±o, dependendo dela
+estar ativada ou desativada.  Isso  pode  p.  ex.  ser  importante  para
+evitar-se a numeraá±o de p†ginas divis¢rias, contendo apenas o t°tulo do
+texto a seguir. J† o caractere “÷Ó— (CODE ou RGra -) permite incrementar em
+1 o n£mero da p†gina seguinte.  Esse  recurso  Ç  importante  quando  se
+pretende incluir no texto p†ginas  produzidas  de  outro  modo,  p.  ex.
+desenhos ou gr†ficos feitos por editores gr†ficos ou composiáµes do tipo
+"page maker". [Esses dois caracteres de controle s±o  liberados  para  a
+impress±o se precedidos pelo caractere ◊÷ø (sGr H: "Redefine-").]
+     Como o programa là o  arquivo  grav†
+nenhuma limitaá±o quanto ao tamanho do texto a ser impresso. Os arquivos
+de texto poder±o ser concatenados na impress±o, ou  atravÇs  do  comando
+COPY ARQ1 + ARQ2 + ARQn B:ARQDESTINO. A primeira forma Ç  mais  pr†tica,
+pois a manipulaá±o de arquivos  que  ultrapassam  a  mem¢ria  do  MSX  Ç
+trabalhosa, se bem que poss°vel no SCED.
+
+√H4.5) Notas de rodapÇ√0
+
+     Um recurso especialmente £til do programa TEXTO.COM Ç o  tratamento
+autom†tico  de  notas  de  rodapÇ.  As  notas  de  rodapÇ  dever±o   ser
+registradas  logo  abaixo  das  linhas  por  elas  referenciadasﬂ*¬.   Sua
+[[[
+* Exemplo de nota de rodapÇ automaticamente paginada.
+]]]
+paginaá±o ser† autom†tica, atÇ mesmo no caso da nota  ser  mais  extensa
+que o pÇ de p†gina restante: o trecho excedente ser† impresso na  p†gina
+seguinte. Poder±o ser acumuladas v†rias notas de  rodapÇ  em  uma  mesma
+p†gina. Sua anotaá±o dever† ser aberta com  uma  linha  contendo  “apenas—
+tràs  parànteses  quadrados   (“[[[—)  e  fechada  por  outra  linha   com
+parànteses quadrados invertidos (“]]]—). Quanto Ö definiá±o de margens  no
+corpo das notas, ver as instruáµes do programa ALINHA.COM. No corpo  das
+notas poder±o ser usados todos os recursos de  impress±o,  “exceto—  o  de
+regulagem do salto de linha: A entrelinha das notas sempre  ser†  de  10
+pontos.  Ao  usar-se  o  MSXWRITE  n±o  ser†  necess†rio  interromper  o
+par†grafo para registrar a abertura e o fechamento das notas de  rodapÇ,
+compo ser† visto nas instruáµes sobre o programa ALINHAWR.COM.
+     O programa TEXTO.COM prevà a impress±o das notas de rodapÇ no  modo
+comprimido, mas isso pode ser alterado no menu inicial do  programa.  De
+qualquer forma, sempre que for usado um modo de impress±o  diferente  do
+normal,  para  manter-se  o  alinhamento  Ö  direita  na  impress±o,   Ç
+necess†rio considerar que nos diversos modos de impress±o os  caracteres
+ocupam diferentes espaáos horizontais, como pode ser visto nos  exemplos
+contidos  no  CARTAO.  O   programa   ALINHA.COM   faz   esses   ajustes
+automaticamente, como ser† visto no item 5 desse manual.
+
+√H4.6) Conjuntos para impress±o em p†gina £nica√0
+
+     Trechos que n±o devem ser fracionados  com  um  eventual  salto  de
+p†gina (p. ex. tabelas),  dever±o  ser  delimitados  com  o  caractere ◊‘ø
+(sGr F: "Conjunto"). Na linha de delimitaá±o do in°cio do conjunto, esse
+caractere poder† ser seguido da definiá±o do salto de linha a ser  usado
+na impress±o do conjunto (registrar apenas o caractere que especifica  o
+nß de pontos do salto de linha - “ver regulagem do salto  de  linha—);  se
+n±o houver essa especificaá±o, ser† assumido que o salto de linha  usado
+no conjunto ser† o corrente. A linha de  delimitaá±o do fim do  conjunto
+dever† conter “somente— o caractere ◊‘ø (sGr F). Obviamente, o conjunto  n±o
+poder† exceder o n£mero m†ximo de 60 linhas por p†gina. A delimitaá±o de
+conjuntos dever† ser feita apenas ap¢s o  uso  do  programa  ALINHA.COM,
+caso seja desejado o alinhamento do conjunto por meio desse programa.
+     O conjunto ser† reservado para a p†gina seguinte,  sempre  que  n±o
+couber na p†gina atual restante.
+
+√H4.7) Impress±o de gr†ficos√0
+
+     Esse Ç o recurso que definitivamente destaca o sistema TEXTO  TOTAL
+dos demais processadores de textos dispon°veis para a linha MSX. Com ele
+torna-se poss°vel introduzir, em qualquer ponto do texto, telas  geradas
+com os diferentes editores gr†ficos dispon°veis para a linha  MSX.  Tais
+telas dever±o  ser  gravadas  separadamente,  e  s±o  importadas  quando
+referenciadas no arquivo do texto a ser impresso. Para tanto,  as  telas
+originais dever±o ser gravadas no padr±o SCR (usado p.  ex.  no  sistema
+GRAPHOS), ou no padr±o GRP (p. ex. no AACKODRAW). Para  imprimi-las,  no
+entanto, torna-se necess†rio criar um arquivo da tela  em  formato  para
+impress±o. Isso Ç feito atravÇs  do  programa  CONVGRAF.BAS.  Como  esse
+processo recomenda alguns cuidados, vamos segui-lo passo a passo.
+
+4.7.1) ¿Preparaá±o da tela original≈
+
+     A tela original dever† ser preferentemente  preparada  com  "tinta"
+preta sobre fundo  branco,  sem  uso  das  demais  cores.   Desejando-se
+aproveitar telas coloridas, ser† necess†rio pass†-las antes pela  funá±o
+"Retira atributos"  do  editor  GRAPHOS,  corrigindo  ent±o  no  pr¢prio
+GRAPHOS as eventuais distoráµes  da°  decorrentes.  Esses  cuidados  s±o
+necess†rios, pois caso contr†rio um gr†fico colorido poder† ser impresso
+como um grande retÉngulo preto.
+     A tela poder† ser impressa  apenas  parcialmente,  p.  ex.  para  a
+apresentaá±o de um logotipo. Para tanto  basta  introduzir,  atravÇs  do
+GRAPHOS, a "shape" FIMGRAF.SHP (inclu°da no sistema TEXTO TOTAL),  “junto
+Ö margem esquerda— da primeira linha a ser  desprezada  na  impress±o  da
+tela. Para ver como isso funciona, observe a  tela  ABERTURA.SCR,  usada
+como matriz para o gr†fico impresso no  in°cio  desse  manual.  Atená±o:
+“introduza a FIMGRAF.SHP apenas quando a tela  estiver  pronta—.  Qualquer
+"scroll" desativar† essa "shape" como controle da impress±o.
+
+4.7.2) ¿Convers±o de telas≈
+
+     Para  a  convers±o  de  telas  em  arquivos  para  a  impress±o,  Ç
+aconselh†vel reunir no  mesmo  disco  a  tela  a  ser  convertida  e  os
+programas CONVGRAF.BAS, CONVGRA1.BIN e CONVGRA2.BIN. Como Ç ¢bvio, antes
+de chamar-se o programa CONVGRAF.BAS ser† necess†rio passar do DOS  para
+o BASIC. Usando o  disco  de  trabalho  recomendado,  esse  acesso  ser†
+autom†tico. O programa CONVGRAF.BAS Ç auto-explicativo,  e  apresenta  a
+opá±o pela criaá±o de arquivos para a impress±o em escala normal (256  X
+192 pontos) ou em escala dupla (480 X 384 pontos). Os arquivos em escala
+normal obter±o a extens±o "1-1", e os em escala dupla  "2-2"; “n±o altere
+essas extensµes—, pois elas s±o cruciais para o  controle  da  impress±o.
+Observe que o n£mero de pontos horizontais imprim°veis em uma impressora
+de 80 colunas Ç de 80 X 6 pontos = 480. Por isso, a impress±o em  escala
+dupla ter† que desprezar as duas £ltimas colunas de  8  pontos  da  tela
+original.
+     Ao encerrar a convers±o,  o  programa  CONVGRAF.BAS  apresenta  uma
+sÇrie de opáµes  de  prosseguimento,  entre  as  quais  Ç  especialmente
+interessante a do teste de impress±o do gr†fico  convertido.  Tal  teste
+economizar† eventuais dissabores quando da inserá±o do gr†fico no texto,
+sendo portanto recomend†vel. Para testes de impress±o fora  desse  menu,
+basta chamar o programa TESTGRAF.COM. Se seu  teste  produziu  uma  mera
+mancha negra, experimente passar a tela  original  pela  opá±o  "Inverte
+tela" do GRAPHOS.
+
+4.7.3) ¿Impress±o de telas: parÉmetros≈
+
+     Como j† foi dito,  o  gr†fico  convertido  ser†  importado  para  a
+impress±o, quando referenciado no arquivo do texto a ser  impresso.  Por
+isso, ele sempre deve estar contido no mesmo  disco  que  o  arquivo  do
+texto, caso contr†rio o programa de impress±o ser† interrompido com  uma
+mensagem de erro.
+     Os gr†ficos em escala dupla ser±o  sempre  impressos  sem  qualquer
+margem  esquerda.  J†  os  gr†ficos  simples  ser±o  impressos  de  modo
+centralizado, entre a margem esquerda e o n£mero de colunas por linha de
+texto, definidos nos parÉmetros iniciais  para  a  impress±o  do  texto,
+segundo a f¢rmula: Ômargem do gr†fico = ((colunas no texto - 42) \  2)  +
+margem no textoÔ. Opcionalmente, o gr†fico simples  poder†  ser  impresso
+com a mesma margem esquerda que o texto.
+     Para uma impress±o mais firme, os gr†ficos  poder±o  ser  impressos
+com atÇ 9 passagens por linha.
+     Os gr†ficos ser±o impressos como um conjunto composto de linhas  de
+t°tulo, o gr†fico propriamente dito e linhas de pÇ de gr†fico. As linhas
+de t°tulo e de pÇ de gr†fico seguir±o as margens definidas para o texto,
+podendo conter redefiniáµes de modo de impress±o e de  salto  de  linha,
+que s¢ valer±o dentro desse conjunto.  Sua  paginaá±o  como  conjunto  Ç
+autom†tica, isso Ç o conjunto  gr†fico  ser†  reservado  para  a  p†gina
+seguinte se o espaáo restante na p†gina atual n±o for suficiente. Para o
+c†lculo do espaáo necess†rio ao conjunto gr†fico, as linhas de t°tulo  e
+de pÇ de  gr†fico  ser±o  consideradas  com  o  espaáamento  normal  (12
+pontos), n±o levando em conta evetuais redefiniáµes desse espaáamento no
+bojo do texto do conjunto gr†fico.
+     O programa de impress±o s¢ aceitar† a reserva de  1  conjunto  para
+impress±o em p†gina £nica e/ou 1 conjunto gr†fico: ao surgir um  segundo
+conjunto ou um segundo gr†fico, a p†gina atual ser† encerrada.
+
+4.7.4) ¿Impress±o de telas: procedimentos≈
+
+     J† que as  telas  ser±o  tratadas  como  conjuntos  gr†ficos,  elas
+dever±o   ser   delimitadas    por    caracteres   que   designem   essa
+circunstÉncia. Por isso, os conjuntos gr†ficos dever±o ser  abertos  por
+uma linha que contenha apenas o caractere sGr F: "Conjunto",  abrindo  o
+conjunto, e o caractere sGr P: "Graph+",  caracterizando  esse  conjunto
+como  conjunto  gr†fico.  A  combinaá±o  dos  caracteres  "Conjunto"   e
+"Graph+" definem, ent±o, o in°cio de um conjunto gr†fico.
+     Ap¢s  a  linha  de  abertura  do  conjunto  gr†fico   poder±o   ser
+opcionalmente inseridas as linhas de t°tulo.
+     A referància ao gr†fico a ser importado ser†  feita  em  uma  linha
+pr¢pria, que iniciar† obrigatoriamente com o caractere  Gr  P:  "Graph+"
+seguido  sem  espaáos  pelo  nome  da  tela   e   respectiva   extens±o.
+Desejando-se mais de uma passagem por linha  na  impress±o, esse  n£mero
+(atÇ 9) dever† ser anotado a seguir (tambÇm sem espaáos) e, no  caso  de
+telas 1-1, poder† ser tambÇm anotada a letra E,  caso  seja  desejado  o
+alinhamento Ö esquerda junto  Ö  margem  do  texto.  A  ordem  entre  as
+anotaáµes das passagens e da margem pode  ser  invertida;  o  crucial  Ç
+que n±o haja qualquer espaáo  entre  o  s°mbolo  "It†lico",  o  nome  do
+gr†fico e as demais anotaáµes.
+     Finalmente, poder±o ser anotadas as linhas de  pÇ  de  gr†fico,  se
+isso for desejado.
+     O  conjunto  gr†fico  Ç  encerrado  com  uma  nova  linha  contendo
+apenas o  s°mbolo  de  "Conjunto". N±o  esqueáa  esse  detalhe,  pois  a
+anotaá±o "Conjunto" e "Graph+"  provocar†  resultados  catastr¢ficos  na
+impress±o.
+
+     “Vizualizando—:
+
+◊‘◊
+    Exemplo de impress±o de um gr†fico
+    simples com t°tulo, pÇ de gr†fico,
+    duas  passagens  e  alinhamento  Ö
+       margem esquerda do texto.
+◊abertura.1-1e2
+       Tela de abertura do MANUAL,
+           em escala simples.
+‘ø
+
+     Essas  linhas  no  arquivo  de  impress±o  produzir±o  o   seguinte
+resultado:
+
+
+‘◊
+    Exemplo de impress±o de um gr†fico
+    simples com t°tulo, pÇ de gr†fico,
+    duas  passagens  e  alinhamento  Ö
+       margem esquerda do texto.
+◊abertura.1-1e2
+       Tela de abertura do MANUAL,
+           em escala simples.
+‘
+
+√H4.8) Inserá±o de textos pelo teclado√0
+
+     AtravÇs do caractere ÷˘ (sGr X) Ç possivel reservar-se  na  linha  o
+espaáo necess†rio para a inserá±o de textos durante  a  impress±o.  Isso
+permite,  por  exemplo,  personalizar   correspondàncias   padronizadas,
+atualizar datas ou dados na impress±o, sem ter que alterar os  arquivos.
+Ao encontrar o caractere ÷˘, o programa colocar† o cursor abaixo  de  sua
+primeira ocorrància na linha, e aguardar† a digitaá±o  do  texto  a  ser
+inserido. Ao encerrar-se a digitaá±o (com RETURN), o texto ser† inserido
+e a impress±o prosseguir† a partir do £ltimo caractere ÷˘.  Por  isso,  o
+espaáo a ser ocupado pelo texto inserido dever† ser marcado repetindo-se
+o caractere ÷˘, formando uma rÇgua para a digitaá±o. Se o texto  inserido
+for menor que o espaáo  previsto,  para  manter-se  o  alinhamento,  ele
+dever† ser complementado por  espaáos,  antes  do  RETURN.  Poder±o  ser
+digitados textos mais longos que o espaáo previsto para a  inseá±o,  mas
+isso  fatalmente  afetar†  o  alinhamento.  Os  textos  inseridos  podem
+incluir, a cada vez, atÇ 80 de todos os caracteres originais obtidos com
+o teclado MSX. (Isso exclui os caracteres redefinidos.)
+     O caractere ÷˘ Ç ativado para a impress±o  atravÇs  do  caractere  ◊÷ø
+(sGr H: "Redefin-").
+
+√H4.9) Regulagem do salto de linha (Entrelinha)√0
+
+     A regulagem do salto de linha Ç acionada pelo caractere ◊Œø  (sGr  E:
+"Entrelin"), seguido por um caractere  que  pode  variar  entre  √H1√0  e  √HÖ√0
+(c¢digos  entre  49  e  133  na  tabela  MSX).  Esse  segundo  caractere
+especifica o n£mero  de pontos do salto  de  linha  segundo  a  f¢rmula:
+Ôpontos = asc(caractere)- 48Ô. Na pr†tica,  s±o  relevantes  os  seguintes
+saltos de linha:
+     ◊Œø1  =  salta 1 ponto (eventualmente importante para a geraá±o  de
+              efeitos especiais na impress±o)
+     ◊Œø7  =  salta 7 pontos (imprime linhas cont°guas)
+     ◊Œø9  =  salta 9 pontos (as linhas n±o dever±o conter  sublinhados,
+              para n±o se tornarem cont°guas)
+     ◊Œø:  =  salta 10 pontos (salto  de  linha  reduzido  que  comporta
+              sublinhado)
+     ◊Œø<  =  salta 12 pontos (salto de linha normal)
+     ◊ŒøB  =  salta 18 pontos (1,5 do salto normal)
+     ◊ŒøH  =  salta 24 pontos (salto duplo)
+         “Obs—: A impress±o dos caracteres semigr†ficos exige no  m°nimo
+              o salto normal de linha (12 pontos).
+     No in°cio do processamento, o programa  TEXTO.COM  indaga  sobre  o
+espaáamento desejado. Se for desejado o in°cio da impress±o com um outro
+salto de linha, essa informaá±o ter† que constar na  primeira  linha  do
+texto.
+
+√H4.10) Tabulaáµes√0
+
+     As posiáµes das tabulaáµes horizontais poder±o ser (re)definidas em
+qualquer ponto do texto.  Para  tanto,  utiliza-se  uma  linha  contendo
+“apenas— o caractere ◊’ø (sGr V: "tabula+") nas colunas a serem marcadas
+como posiáµes de tabulaá±o. Uma redefiniá±o anula definiáµes anteriores.
+     O salto para o pr¢ximo ponto de tabulaá±o pode ser obtido  de  duas
+formas. O caractere ◊”ø (sGr N: "HT") provocar† o  avanáo  do  carro  da
+impressora atÇ a pr¢xima posiá±o  de  tabulaá±o,  prosseguindo  ent±o  a
+impress±o do resto da linha. Esse recurso Ç  importante  para  compensar
+situaáµes onde a linha na tela Ç mais extensa que na  impress±o  -  como
+por exemplo no caso de em uma tabela  ser  necess†rio usar-se um modo de
+impress±o reduzido para que  um  conte£do  mais  extenso  caiba  em  uma
+determinada cÇlula.
+     O salto Ö  pr¢xima  posiá±o  de  tabulaá±o  atravÇs  do caractere ◊Õø
+(Gr E: "HTht") diferencia-se do anterior, na medida em que  a  impress±o
+ignorar† todas as colunas de v°deo em  branco  imediatamente  a  seguir.
+Esse salto  Ç  indicado  para  situaáµes  em  que  se  deseje  manter  o
+alinhamento no v°deo, mesmo usando  modos  distintos  de  impress±o  nas
+diversas linhas.
+     Vejamos o exemplo a seguir:
+                 ’                ’                ’                ’
+|                |                |                |                |
+|impress±o normal|√4texto maior em comprimido√0”|√5texto maior comprimido elite√0”|impress±o normal|
+|√4comprimido√0Õ |normalÕ         |√1elite√0Õ      |√5c.elite√0Õ    |
+|”|”|”|”|
+     “OBS—.: Em linhas com tabulaá±o usar “apenas— os modos combinados de
+           impress±o.
+
+√H4.11) Retrocesso (BS)√0
+
+     O caractere ◊ƒø (Gr A)  provoca  o  retrocesso  de  um  caractere  na
+impressora. Normalmente esse recurso n±o ser† necess†rio, tendo em vista
+a disponibilidade de caracteres na tabela MSX  e  as  possibilidades  de
+redefiniá±o de caracteres na impressora. Mas eventualmente  pode  vir  a
+ser interessante a  “superposiá±o  de  caracteres—,  como  por  exemplo  a
+impress±o de um "zero" cortado operando no MODO  II  da  impressora:  0ƒ/.
+Outro uso desse caractere Ç o da redefiniá±o  da  margem  direita,  como
+ser† visto nas instruáµes do programa ALINHA.COM.
+
+√H4.12) 2 espaáos√0
+
+     O caractere ◊»ø (Gr L) provoca  a  "impress±o"  de  dois  espaáos  em
+branco. Esse recurso poder† ser interessante ao trabalhar-se com o  modo
+Elite, para obter-se a impress±o de mais que 80 colunas na impress±o,  e
+o tamanho da linha produzida pelo SCED n±o for suficiente, ou quando for
+necess†rio contornar  saltos  involunt†rios  de  linha,  provocados  por
+limitaáµes do sistema no qual o programa TEXTO.COM foi  compilado. Essas
+situaáµes s±o muito raras, mas se elas surgirem, uma consulta ao arquivo
+do CARTAO mostrar† como contorn†-las.
+     O  outro  uso  do  caractere ◊»ø  (Gr  L)  se  refere   ao   programa
+ALINHA.COM, e ser† visto adiante.€
+√a5) Formataá±o de arquivos para a impress±o
+   (ALINHA.COM)√0
+
+     A rotina de impress±o TEXTO.COM trabalha com arquivos cujas  linhas
+j† est±o formatadas para a impress±o. Essa "complicaá±o" foi necess†ria,
+para que a impress±o n±o se tornasse demasiadamente lenta. Por isso,  os
+arquivos originais devem ser reformatados antes da impress±o,  o  que  Ç
+efetuado pelo programa ALINHASC.COM no caso de  textos  editados  com  o
+SCED, e pelo ALINHAWR.COM em textos  do  MSXWRITE.  Os  aspectos  gerais
+desses programas est±o descritos no item sobre o ALINHASC.COM, enquanto
+que no item ALINHAWR.COM  s±o  apresentadas  apenas  as  especificidades
+dessa vers±o para arquivos no formato do MSXWRITE.
+
+¿ALINHASC.COM: reformatando arquivos SCED≈
+
+     Inicialmente foi dito que a grande deficiància do editor SCED  Ç  o
+fato dele n±o possuir recursos de  justificaá±o  autom†tica  de  linhas,
+alinhando-as Ö direita. Na verdade, a utilidade desse recurso em  outros
+editores de texto Ç question†vel, na medida em que se use os  diferentes
+modos de impress±o dispon°veis. Isso porque, como foi visto acima,  seus
+caracteres  ocupam  diferentes  espaáos  horizontais,  provocando  assim
+necessariamente um desalinhamento.
+     O programa ALINHASC.COM foi desenvolvido  exatamente  para  superar
+essas  deficiàncias:  ele  permite  o  alinhamento  dos  par†grafos   “na
+impress±o—, e n±o apenas na tela.
+     Para poder usar plenamente os recursos desse programa, Ç importante
+ter uma noá±o do seu modo de processamento. Inicialmente ele indaga pelo
+arquivo a ser formatado, e em quantas colunas por linha na impress±o ele
+deve ser formatado. A partir da° ele là cada linha do texto digitado,  e
+reformata as linhas de  cada  par†grafo,  gravando  concomitantemente  o
+texto reformatado em um arquivo com o mesmo nome do arquivo original,  e
+tendo como extens±o o  n£mero  de  colunas  informado  inicialmente.  Ao
+reformatar as linhas, o programa considera  as  alteraáµes  no  modo  de
+impress±o ao longo do texto e os eventuais efeitos dos diversos comandos
+na impress±o. Obviamente, os caracteres semigr†ficos s¢ s±o considerados
+quando ativados para a impress±o. O resultado disso Ç que o novo arquivo
+aparecer† desalinhado na tela, mas o que importa Ç  seu  alinhamento  na
+impress±o.
+     Havendo “notas de rodapÇ—, o programa solicitar† a  especificaá±o  do
+seu  modo  de  impress±o.  Com  essa  informaá±o,  essas   notas   ser±o
+reformatadas para manter o mesmo alinhamento do texto principal.
+     A “reformataá±o— Ç feita par†grafo “por par†grafo— (semelhante Ö funá±o
+de acertar par†grafos nos editores derivados do  TASSWORD).  O  programa
+considera como fim de par†grafo (e  in°cio  de  um  novo  par†grafo)  as
+seguintes situaáµes:
+     - linha em branco;
+     - 5 espaáos (ou mais) no in°cio de uma linha;
+     - n£mero no in°cio de uma linha.
+     AlÇm disso, as linhas ou os conjuntos de linhas precedidos por  uma
+linha contendo “apenas— o caractere ◊»ø (Gr L: "§Al" = n±o alinha),  que  no
+programa  TEXTO.COM  provoca  o  salto  de  dois  espaáos,   “n±o   ser±o
+reformatadas— (isto Ç, permanecer±o inalteradas),  fazendo  ainda  que  a
+linha imediatamente anterior seja interpretada como final  do  par†grafo
+precedente. As linhas voltar±o a ser  reformatadas  somente  ap¢s  outra
+linha contendo “apenas— o caractere ◊»ø (Gr L). Essas linhas com o caractere
+◊»ø (Gr L) ser±o apagadas no arquivo reformatado. Essa exlus±o de  trechos
+da reformataá±o Ç importante, p. ex., para  salvaguardar-se  tabelas  j†
+montadas na sua forma definitiva, ou para a formataá±o apenas de trechos
+inseridos em um texto j† formatado para a impress±o.
+     Uma grande vantagem do programa reformatador Ç a  possibilidade  de
+alterar-se as margens ao longo do texto. A “margem direita— Ç alterada com
+uma linha contendo o caractere ◊ƒø (Gr A: "MargemD"), seguido pelo  n£mero
+de colunas (em ar†bico) do recuo desejado na margem  direita.  A  partir
+da°, todas as linhas ser±o formatadas com esse recuo na margem  direita.
+Para voltar Ö  margem  direita  original,  basta  introduzir  uma  linha
+contendo apenas o caractere ◊ƒø (Gr A).
+     A “margem esquerda— Ç alterada com uma linha contendo o  caractere  ◊…ø
+(sGr L: "MargemE"), seguido pelo  n£mero  de  colunas  (em  ar†bico)  do
+avanáo desejado na margem esquerda. A partir da°, as primeiras linhas de
+cada par†grafo ser±o formatadas com o mesmo alinhamento  Ö  esquerda  de
+sua digitaá±o, mas as linhas  seguintes  incluir±o  esse  avanáo.  Novas
+redefiniáµes s±o permitidas a qualquer momento.  Para  voltar  Ö  margem
+esquerda na primeira coluna, basta introduzir uma linha contendo  apenas
+o caractere “sGr L—. Observaá±o: os caracteres Gr A  e  sGr  L  podem  ser
+alterados no v°deo (pelo REDEFINE.UDG), para melhor visualizaá±o  dessas
+funáµes.
+     A redefiniá±o da “margem  esquerda  nas  notas  de  rodapÇ—  Ç  feita
+acescentando-se Ö linha de sua abertura ([[[) o n£mero  (em ar†bico)  de
+colunas do avanáo desejado. Essa nova margem  funciona  como  foi  acima
+descrito, mas vale apenas para o corpo de cada nota assim definida.  Ela
+“n±o— pode ser alterada nem anulada no corpo da mesma nota,  e  Ç  anulada
+com a delimitaá±o do fim dessa nota (]]]). N±o Ç poss°vel redefinir-se a
+margem direita nas notas de rodapÇ.
+     Um cuidado importante Ç o de evitar  a  digitaá±o  de  mais  de  um
+espaáo entre as palavras. Esses espaáos  excedentes  ser±o  considerados
+como integrantes da palavra seguinte, e surgir±o no in°cio da linha caso
+na reformataá±o essa palavra se tornar a primeira da  linha.  Por  causa
+disso n±o se deve usar um arquivo reformatado como fonte para  uma  nova
+reformataá±o: Ç mais seguro guardar a vers±o  originariamente  digitada,
+para futuras reformataáµes.
+     Para acelerar o processamento, o programa n±o analisa as linhas que
+contenham  menos  caracteres  que  o  n£mero  de  colunas  desejado   na
+impress±o, e que sejam seguidas pelas situaáµes que caracterizam fim  ou
+in°cio de par†grafo, ou exclu°das da reformataá±o com o caractere ◊»ø  (Gr
+L). Se estas linhas contiverem informaáµes relevantes para o controle do
+tamanho  das  linhas  seguintes  (p.  ex.  a  ativaá±o  dos   caracteres
+semigr†ficos, ou a introduá±o de um novo modo de impress±o), o  programa
+n±o as registrar†.
+     Normalmente os t°tulos e entret°tulos s±o  digitados  sem  qualquer
+recuo. Para evitar que sejam considerados como integrantes do  par†grafo
+anterior, eles devem ser  intercalados  por  linhas  em  branco.  Ali†s,
+cuidado com os t°tulos no modo expandido: o programa  n±o  controlar†  o
+espaáo ocupado na impress±o se eles contiverem menos  caracteres  que  o
+n£mero de colunas desejado na impress±o. Por isso, esse controle  dever†
+ser feito no momento da digitaá±o, ou na revis±o do texto reformatado.
+     Uma observaá±o final: como o  programa  ALINHASC.COM  considera  as
+linhas iniciadas com n£meros como in°cio  de  par†grafo,  nenhuma  linha
+dentro do par†grafo poder† ser digitada comeáando com um  n£mero.  Mesmo
+significando uma complicaá±o da digitaá±o, essa instruá±o  foi  mantida,
+para permitir a reformataá±o de textos que adotem a forma  de  seqÅància
+de itens. A verificaá±o desse detalhe nos arquivos antes da reformataá±o
+Ç sempre conveniente.
+
+¿ALINHAWR.COM: reformatando arquivos MSXWRITE≈
+
+     As  especificidades  do  programa  ALINHAWR.COM  se   derivam   das
+diferenáas no padr±o da gravaá±o dos arquivos do MSXWRITE. Como  j†  foi
+dito, o MSXWRITE registra os caracteres de c¢digo 13 (retorno de  carro)
+e 10 (salto de linha) apenas ao fim de par†grafos - e n±o, como no SCED,
+ao fim de cada linha de v°deo. Essa forma de gravaá±o, alÇm de seguir um
+padr±o mais usual, acarreta uma grande facilidade  na  reformataá±o  dos
+arquivos para a impress±o, j† que torna  desnecess†ria  a  definiá±o  de
+critÇrios para a caracterizaá±o do fim  ou  in°cio  de  par†grafos.  Tal
+facilidade se traduz tambÇm  na  simplificaá±o  da  interpretaá±o  e  da
+digitaá±o de alguns comandos usados na reformataá±o.
+     Isso diz respeito especificamente ao registro das notas de  rodapÇ.
+O registro  dos  tràs  parànteses  quadrados  de  sua  abertura  ([)  ou
+fechamento (]) n±o mais deve ser feito em linhas espec°ficas, mas dentro
+do par†grafo, exatamente ap¢s o ponto ao qual aquela nota de rodapÇ est†
+referenciada. O programa ALINHAWR.COM se encaregar† de criar  as  linhas
+de abertura e fechamento automaticamente, sem prejudicar a  continuidade
+do  texto  no par†grafo. [O eventual registro da margem esquerda na nota
+continuar† a ser feito  imediatamente ap¢s os tràs parànteses  quadrados
+de sua abertura, sem qualquer espaáo.  Os  espaáos  ap¢s  essa  anotaá±o
+ser±o considerados como pertencentes Ö  primeira  palavra  da  nota.]  ê
+claro que o texto da nota ser† digitado normalmente, entre sua  abertura
+e seu fechamento com os parànteses quadrados, como parte  integrante  do
+par†grafo em curso.
+     Outra facilidade diz respeito ao  fato  de  que  dificilmente  ser†
+necess†rio isolar  trechos  da  reformataá±o.  Isso  porque  o  programa
+ALINHAWR.COM, ao ler  par†grafos  e  n±o  linhas,  respeitar†  todas  as
+linhas de v°deo interrompidas com RETURN antes do limite  definido  como
+coluna do alinhamento Ö direita. Mesmo  assim,  a  delimitaá±o  de  tais
+trechos atravÇs do caractere  "n±o  Alinha"  (Gr  L)  Ç  oportuna,  pois
+acelerar† em muito o processamento da reformataá±o.
+     Os outros comando devem ser anotados na  forma  j†  descrita  nesse
+manual.
+     ê claro que esse programa funciona com qualquer  outro  editor  que
+trabalhe no mesmo padr±o de gravaá±o do MSXWRITE: caracteres registrados
+com o c¢digo da tabela de caracteres MSX e "carriage return"  [chr$(13)]
+e "line feed" [chr$(10)] apenas ao final de par†grafos. Isso  se  aplica
+a todos os editores derivados do MSXWRITE e, pelo que  tudo  indica,  ao
+novo  editor  inclu°do  no  cartucho  de  80  colunas  da  Gradiente.  O
+importante Ç que os  arquivos  originais  n±o  contenham  caracteres  de
+controle espec°ficos ao editor que for usado  na  digitaá±o,  pois  seus
+efeitos na impress±o atravÇs do TEXTO.COM poder±o ser catastr¢ficos.€
+√a6) Tabela dos comandos TEXTO.COM√0
+TECLA | CäDIGOS EMITIDOS | DESCRIÄ∞O DO FUNCIONAMENTOŒ:
+=======================================================================
+ Gr Q | 27,87,1          | Liga o modo expandido de impress±o
+-----------------------------------------------------------------------
+ sGr Q| 27,87,0          | Desliga o modo expandido de impress±o
+-----------------------------------------------------------------------
+ Gr W | 15               | Liga o modo comprimido de impress±o
+-----------------------------------------------------------------------
+ sGr W| 18               | Desliga o modo comprimido de impress±o
+-----------------------------------------------------------------------
+ Gr E | subrotina        | Avanáa na tabulaá±o e salta espaáos a seguir
+-----------------------------------------------------------------------
+ sGr E| 27,65,n (pontos) | Regula salto de linha (n=1,7,9,:,<,B ou H)
+-----------------------------------------------------------------------
+ Gr U | 27,45,1          | Liga sublinhado cont°nuo
+-----------------------------------------------------------------------
+ sGr U| 27,45,0          | Desliga sublinhado cont°nuo
+-----------------------------------------------------------------------
+ Gr I | 27,83,1          | Liga modo subscrito de impress±o
+-----------------------------------------------------------------------
+ sGr I| 27,83,0          | Liga modo sobrescrito de impress±o
+-----------------------------------------------------------------------
+ Gr O | 27,84            | Desliga subscrito e sobrescrito
+-----------------------------------------------------------------------
+ sGr O| 27,33,n          |Liga modos combinados de impress±o (v.CART∞O)
+-----------------------------------------------------------------------
+ Gr P | 12               | Avanáa p†gina (FF)
+-----------------------------------------------------------------------
+ sGr P| subrotina        | Habilita impress±o de caracteres gr†ficos
+-----------------------------------------------------------------------
+ Gr A | 8 / (subrotina)  | Retrocesso / (margem direita no ALINHA)
+-----------------------------------------------------------------------
+ Gr S | 27,69            | Liga modo enfatizado de impress±o
+-----------------------------------------------------------------------
+ sGr S| 27,70            | Desliga modo enfatizado de impress±o
+-----------------------------------------------------------------------
+ Gr D | 27,71            | Liga modo negrito de impress±o
+-----------------------------------------------------------------------
+ sGr D| 27,72            | Desliga modo negrito de impress±o
+-----------------------------------------------------------------------
+ sGr F| subrotina        | Delimita conjunto: impress±o em p†gina £nica
+-----------------------------------------------------------------------
+ sGr H| subrotina        | Desativa caractere redefinido seguinte
+-----------------------------------------------------------------------
+ Gr J | 27,77            | Liga modo elite de impress±o
+-----------------------------------------------------------------------
+ sGr J| 27,80            | Desliga modo elite de impress±o
+-----------------------------------------------------------------------
+ Gr K | 27,120,1         | Liga impress±o em qualidade carta
+-----------------------------------------------------------------------
+ sGr K| 27,120,0         | Desliga impress±o em qualidade carta
+-----------------------------------------------------------------------
+ Gr L | 32,32/(subrotina)| Dois espaáos / (exclui formataá±o no ALINHA)
+-----------------------------------------------------------------------
+ sGr L| (subrotina)      | (fixa margem esquerda no ALINHA)
+-----------------------------------------------------------------------
+ sGr V| subrotina        | Marca pontos de tabulaá±o horizontal
+-----------------------------------------------------------------------
+ sGr X| subrotina        | Permite inserá±o de textos pelo teclado
+-----------------------------------------------------------------------
+ sGr N| subrotina        | Avanáa na tabulaá±o horizontal
+-----------------------------------------------------------------------
+ Gr  4| 27,37,1/0,0      | Liga ou desliga caracteres em it†lico
+-----------------------------------------------------------------------
+ sGr =| subrotina        | Liga/desliga numeraá±o autom†tica de p†ginas
+-----------------------------------------------------------------------
+CODE -| subrotina        | Incrementa em 1 o n£mero da p†gina seguinte
+-----------------------------------------------------------------------Œ<
+Gr = GRAPH (HOTBIT) / LGRA (EXPERT)          sGr = SHIFT/(L)GRAPH€
+√a7) Convers±o de arquivos do e para o IBM-PC√0
+
+     O  programa  PC-MSX.COM  permite  a  convers±o  de  arquivos   para
+intercambiar textos editados pelo SCED ou pelo MSXWRITE em micros MSX  e
+arquivos gravados no IBM-PC  no  formato  ASCII,  segundo  a  tabela  de
+caracteres do padr±o ABNT. O padr±o ABNT foi  o  usado  como  referància
+para o PC, pois esse Ç o padr±o adotado  pelo  editor  de  textos  CARTA
+CERTA. Tal editor, por seu lado, Ç o ambiente ideal para  o  intercÉmbio
+de arquivos de texto com o MSX, pois  seus  comandos  de  formataá±o  do
+texto s±o anotados normalmente,  atravÇs  de  caracteres  alfanumÇricos,
+isto Ç sem usar os caracteres obtidos com a tecla CONTROL.
+
+     As conversµes efetuadas s±o de duas ordens. A  primeira  se  refere
+aos c¢digos  ASCII  dos  caracteres  especiais  do  portuguàs,  que  s±o
+diferentes na tabela MSX e na tabela ABNT. Tal  convers±o  Ç  feita  nas
+adaptaáµes entre arquivos do PC e arquivos MSX em geral. O  conjunto  de
+caracteres da tabela ABNT possui  ampla  correspondància  na  tabela  de
+caracteres do MSX. Nos raros casos (que na pr†tica s±o irrelevantes)  de
+n±o  existir  essa  equivalància,  Ç  mantido  o  caractere  do  arquivo
+original. Por isso, ao  digitar  textos  no  MSX,  evite  os  caracteres
+semigr†ficos e do alfabeto grego, pois estes n±o  est±o  dispon°veis  na
+tabela ABNT.
+
+     A outra diz respeito ao fato de que  o  SCED  trabalha  com  linhas
+sempre finalizadas pelos caracteres de "retorno" e de "salto  de  linha"
+[chr$(13) e chr$(10)], enquanto que os arquivos do IBM-PC,  em  especial
+os do CARTA CERTA, trabalham no mesmo formato que o MSXWRITE, isto Ç com
+esses caracteres apenas no final de par†grafos. Essa segunda convers±o Ç
+f†cil no sentido PC Ì SCED: basta fracionar os par†grafos em linhas.  No
+sentido inverso, torna-se necess†rio definir os par†grafos. Por isso,  o
+fim de par†grafo foi definido de  modo  an†logo  ao  usado  no  programa
+ALINHASC.COM: linha em branco,  linha  iniciada  com  5  espaáos,  linha
+iniciada com n£mero.  A  esses  critÇrios  foi  acrescido  o  de  linhas
+iniciadas com o sinal de menor (<), j† que esse Ç o delimitador  inicial
+de comandos para a formataá±o de textos no Carta Certa. ê claro que essa
+adaptaá±o se aplica apenas Ös conversµes entre arquivos do PC e arquivos
+do SCED.€
+√a8) Redefiniá±o de caracteres√0
+
+√H8.1) Redefiniá±o de caracteres para impress±o√0
+
+     O  arquivo  REDEFINE.LDY  contÇm  dados  para  a   redefiniá±o   de
+caracteres da impressora, conforme as instruáµes do Manual  de  Operaá±o
+da impressora (p. 79-84). Esses dados  s±o  apresentados  em  grupos  de
+cerca de 20 caracteres, delimitados por linhas contendo apenas os  dados
+"255,255". Essa subdivis±o dos  dados  Ç  necess†ria,  para  evitar  sua
+"contaminaá±o", se os dados excederem a capacidade de  armazenamento  do
+"buffer" do sistema. Ela Ç  a  causa  dos  "trancos"  na  impressora  ao
+inciar-se o processamento do programa de impress±o, e  que  correspondem
+t±o-s¢ ao sinal de avanáo  em  um  ponto  vertical  na  impress±o,  para
+liberar o "buffer" do sistema.
+
+     O “primeiro grupo— de dados se refere aos “caracteres redefinidos para
+impress±o direta—, que correspondem aos c¢digos ASCII 218 e  224-237.  Os
+grupos seguintes se referem ao alfabeto em it†lico.  [Por  alguma  raz±o
+atÇ agora misteriosa, n±o foi poss°vel redefinir o caractere "†"  (160).
+Por isso ele Ç redefinido na  £ltima  linha  do  arquivo,  no  lugar  do
+aparentemente in£til caractere "uƒª" (183), deixando que o programa TEXTO.
+COM administre esse desvio.]
+
+     Outros caracteres poderiam ser redefinidos e acionados  pela  tecla
+"It†licoÒ", e atÇ mesmo os  dados  do  arquivo  REDEFINE.LDY  podem  ser
+alterados, editando-se o arquivo REDEFINE.LDY atravÇs do SCED. Com  isso
+poder±o ser criados outros caracteres especiais, e  alfabetos  inteiros,
+adequados Ös necessidades individualizadas de cada usu†rio.
+
+     Alguns cuidados, entretanto, devem ser tomados, pois um erro  neste
+arquivo bloquear† o processamento do  programa  principal.  Por  isso  Ç
+oportuno que, antes de efetuar modificaáµes, seja  feita  uma  c¢pia  de
+seguranáa do arquivo original. AlÇm disso, ao efetuar  as  modificaáµes,
+cuide para que o novo  arquivo   continue   apresentando  as  linhas  do
+cabeáalho na sua forma original. “N±o tente alterar o copyright—. AlÇm  da
+falta de Çtica desse procedimento,  isso  tambÇm  bloquear†  o  programa
+principal. Se n±o  se  desejar  trabalhar  com  caracteres  redefinidos,
+bastar† manter o arquivo REDEFINE.LDY apenas com o seu cabeáalho.
+
+     Finalmente, se surgirem "sujeiras" inexplic†veis na sua redefiniá±o
+de caracteres, experimente subdividir o respectivo grupo  de  dados  com
+aquela misteriosa linha "255,255".
+
+√H8.2) Redefiniá±o de caracteres no v°deo√0
+
+     O  programa  REDEFINE.BAS  processa  o  arquivo  REDEFINE.UDG,  que
+redefine no v°deo os caracteres  redefinidos  para  a  impress±o  direta
+atravÇs do arquivo REDEFINE.LDY. Para ativar essa redefiniá±o no  v°deo,
+basta chamar BASIC  REDEFINE.BAS (ou incluir esse comando em um  arquivo
+AUTOEXEC.BAT): uma vez efetuada a transformaá±o, o  MENU  do  respectivo
+disco de trabalho ser† ativado.
+
+     O arquivo REDEFINE.UDG foi gravado utilizando  o  programa  MSXUDG,
+elaborado por Jo±o Marques Gonáalves  e  publicado  em  ¿Micro  Sistemas≈,
+ano VII nß 82 (janeiro 1989), p. 34. Para  compatibilizar  o  v°deo  com
+alteraáµes nos caracteres redefinidos para impress±o,  basta  usar  esse
+programa, criando um novo arquivo REDEFINE.UDG.
+
+     A redefiniá±o de caracteres no v°deo funciona  no  MSXWRITE,  assim
+como nas expansµes de 80 colunas que seguem o padr±o MICROSOL ou  SHARP.
+Por falta de acesso ao  equipamento,  ela  ainda  n±o  foi  testada  nas
+expansµes de 80 colunas Cibertron, Gradiente e DDX.
+
+     O  programa  REDEFINE.BAS  apresenta  ainda,  nas  linhas  1  a  5,
+sugestµes para as 10 teclas de funá±o do seu micro, adequando-as ao  uso
+do sistema TEXTO TOTAL. Para ativar essas teclas de funá±o basta retirar
+o ap¢strofo (') no in°cio do texto dessas linhas, e verificar se  o  seu
+sistema DOS aceita as redefiniáµes das teclas  de  funá±o  a  partir  do
+BASIC.€
+√a9) Observaáµes finais√0
+
+     A essa altura, vocà deve estar tonto com todas  as  opáµes  abertas
+pelo sistema TEXTO TOTAL. Na verdade,  esse  sistema  foi  fruto  de  um
+amadurecimento ao longo de mais de dois anos. Ele n±o  foi  desenvolvido
+por um progamador  profissional,  mas  por  um  usu†rio  aflito  com  as
+precariedades  dos  sistemas  dispon°veis  no  mercado.  Como  professor
+universit†rio,  cientista  social  e  tradutor,  minha  necessidade   de
+produá±o e reproduá±o de textos sempre  foi  grande,  e  a  datilografia
+manual era um verdadeiro supl°cio. O uso  dos  programas  comercialmente
+dispon°veis significava um  al°vio  no  primeiro  momento,  mas  acabava
+evidenciando  que  o  potencial   da   combinaá±o   MSX/impressora   era
+precariamente explorado.
+
+     Finalmente desisti de esperar  iniciativas  mais  consistentes  por
+parte do sistema comercial de "software" e,  na  base  da  autodid†tica,
+resolvi  enveredar  pelo  dif°cil,  mas  sempre  instigante  caminho  da
+programaá±o por conta pr¢pria. O resultado saiu melhor que o esperado, e
+a cada  etapa  atingida,  novas  possibilidades  de  desenvolvimento  se
+abriam. A partir de um certo est†gio, n±o me achei mais  no  direito  de
+continuar monopolizando esses programas egoisticamente, j† que  eles  se
+mostravam  bastante   eficientes.  Cedidos  Ö  NEMESIS  -   que   aposta
+seriamente no uso profissional do  MSX  -  as  versµes  iniciais  desses
+programas foram comercializadas como SPECIAL TEXT, voltadas para a MTA e
+para a LADY 80. Agora, principalmente com a introduá±o de rotinas para a
+importaá±o de gr†ficos, o  conjunto  parece  ter  atingido  um  grau  de
+maturidade que exige um acabamento sistematizado, da° a  troca  de  nome
+para TEXTO TOTAL (sem medo de assumir a nacionalidade) e seu  tratamento
+como sistema de processamento de textos.
+
+     O interesse do autor na divulgaá±o desse sistema n±o  Ç  comercial.
+Pode soar falso, mas a comercializaá±o foi cedida Ö NEMESIS sem qualquer
+contrapartida financeira. Sequer espero um amplo reconhecimento, pois no
+fundo toráo para que esse sistema aguce  o  interesse  de  programadores
+profissionais  pelo  desenvolvimento  de  sistemas   mais   potentes   e
+eficientes. Enquanto isso n±o acontece espero, porÇm, a cumplicidade dos
+usu†rios para o seu aperfeiáoamento. Em primeiro lugar, por mais  que  o
+sistema tenha sido testado, poder±o existir  situaáµes  espec°ficas  nas
+quais ele falhe.  AlÇm  disso,  devem  existir  necessidades  ainda  n±o
+contempladas  pelo  sistema.  Os  problemas  encontrados   e   eventuais
+sugestµes  de  aperfeiáoamento  poder±o  ser   comunicados   Ö   “NEMESIS
+INFORMÑTICA LTDA, Rua Sete de Setembro 92 c. 2.404, Caixa Postal  4.583,
+Centro, 20.001 Rio de Janeiro - RJ—. No caso de problemas, seria oportuna
+a remessa de um disquete com o texto processado para os devidos  testes.
+Garanto  que  uma  vez  identificado  o  problema,  esse  disquete  ser†
+devolvido com a soluá±o encontrada.
+
+                                            Gustavo F. Bayer - fev. 1990
+

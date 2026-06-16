@@ -1,0 +1,2 @@
+10 BLOAD"GAMES",R
+

@@ -1,0 +1,12 @@
+
+SPRITE STUDIO by Alexandre Cruz
+
+O Sprite Studio ‚ um utilit rio
+que auxilia na cria‡±o de "spri
+tes" para uso posterior em  ou-
+tros programas.
+
+Para carreg -lo digite:
+A>STUDIO e tecle [RETURN]!
+
+

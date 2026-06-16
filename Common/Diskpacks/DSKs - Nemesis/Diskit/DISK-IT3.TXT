@@ -1,0 +1,211 @@
+          DISK-IT VERS°O 3.OO
+
+          Programado por FILOSOFT (HOLANDA) em 1987
+          Tradu‡±o e adapta‡±o: SOFT-O-MATIC em 1991
+
+          APRESENTA€°O
+
+          O multi-utilit rio DISK-IT ‚ um programa indispens vel a todos os usu rios de micro-computadores MSX com disk-drives, principalmente aos usu rios de interfaces controladoras do padr±o internacional (SHARP, HOBBY/TRADECO, LEOPARD, MICRO-SAN, DDX 2.0, e importadas) e possuidores de EXPERTs DD-PLUS, j  que este programa ‚ at‚ o momento, o £nico desta modalidade que trabalha perfeitamente nestes aparelhos.
+          O DISK-IT possui COPIADOR SETORIAL para programas travados, RECUPERADOR de discos e programas, ORDENADOR de diret¢rio, FORMATADOR especial, recurso de SUB-DIRETORIO com SENHA para utiliza‡±o de arquivos, editor de "LABELS" de disco, "ZAPPER" completo de trilhas e setores (de 180 at‚ para 720 KB), RELŠGIO de tempo real, 80 colunas na tela (MSX2 ou MSX1 com placa), "DUMP" de arquivos na impressora, e muito mais...
+
+          CARREGANDO O PROGRAMA
+
+          Inicialmente ser  necess rio carregar o programa para a mem¢ria do micro-computador. Para isso, ligue o disk-drive, ligue o micro-computador e insira o disquete fornecido neste pacote. Aparecer  uma tela de apresenta‡±o. Pressione alguma tecla para prosseguir com o carregamento do programa.
+          Logo ap¢s o carregamento, ser  pedida a data e a hora, caso seja do interesse do usu rio gravar os programas editados no DISK-IT com estes dados. Em caso contr rio, basta pressionar [RETURN]. Nos MSX2 e em micro-computadores com rel¢gio interno n±o ser  necess rio alterar a data e a hora, pois isto ser  feito automaticamente.
+          Depois de inseridas a data e a hora, aparecer  o sinal de "prompt" do DISK-IT que mostra o disk-drive em uso e pede a digita‡±o de um comando. Podemos notar que a parte superior do v¡deo est  ocupada por indica‡µes de hora, data, vers±o do programa, n£mero de drives do sistema, etc. Caso se utilize um MSX2 ou um cartucho especial, a tela ser  automaticamente mostrada em 80 colunas.
+
+          ATEN€°O
+
+- Ap¢s o carregamento ser completamente efetuado, podemos retirar o disco com o programa DISK-IT do disk-drive;
+- Para realizar suas primeitas experiˆncias ser  recomendado utilizar um disquete com informa‡µes n±o importantes, pois o usu rio que ainda n±o tem pr tica com o programa pode perder ou alterar dados do disco de teste;
+- Seria interessante que o usu rio procurasse conhecer algumas informa‡µes t‚cnicas sobre disquetes e disk-drives antes de utilizar algumas das fun‡µes que compµem este programa ("ZAPPER", duplo diret¢rio, etc). Para os usu rios que pretendem utilizar a fundo este programa, seria £til algum conhecimento sobre SETORES, FAT, CLUSTERS, TRILHAS, FORMATA€°O, etc. Estas informa‡µes podem ser facilmente obtidas na literatura especializada. Por outro lado, os usu rios que pretendem utilizar o DISK-IT para simples duplica‡±o de discos, tradu‡±o de programas, etc, n±o ser  necess rio praticamente nenhum conhecimento aprofundado.
+
+          USANDO O PROGRAMA
+
+          Quando ‚ carregado o DISK-IT apresenta seu sinal de "prompt" (Comando?) que chamamos de MODO DIRETO, por bastar escrever um de seus comandos para que ele execute uma de suas fun‡µes. Experimente escrever: DIR e tecle [RETURN]. Ser  mostrado o diret¢rio do disco que est  inserido no disk-drive.
+          Se no lugar de escrever DIR, escrevermos MENU, ser  apresentado um menu de op‡µes que facilitar  a vida dos usu rios iniciantes. Neste menu, cada uma das op‡µes dispon¡veis do programa est  associada com um n£mero ou letra que ao ser pressionada ativar  aquela op‡±o com mais simplicidade e rapidez. E o que chamamos de MODO INDIRETO, ou via menu de op‡µes.
+
+          OP€´ES DISPON‰VEIS
+
+          Vamos descrever ent±o, o funcionamento e a utilidade de cada uma das op‡µes que compµem o DISK-IT:
+
+0 - ARQUIVOS NO DISCO
+
+Esta op‡±o lista na tela os arquivos que est±o gravados no disco que est  inserido no disk-drive, na ordem em que eles se encontram;
+
+1 - DIRETORIO
+
+Mostra o diret¢rio do disco com os setores ocupados pelo mesmo;
+
+2 - ORDEM ALFABETICA
+
+Nesta op‡±o, seram mostrados os nomes dos arquivos constantes no disco, mas ordenados pela ordem alfab‚tica. Ao ser acessada a op‡±o, o programa perguntar  se o usu rio quer gravar esta nova ordem no disco. Pressione [J] para confirmar ou outra tecla qualquer para mostrar os arquivos nesta ordem, mas sem alterar o disco;
+
+3 - PELO TAMANHO
+
+Esta op‡±o se assemelha a op‡±o n£mero 2, mas ordena os arquivos pelo seu tamanho (em "KBYTES");
+
+4 - POR ORDEM DE DATA
+
+Esta op‡±o se assemelha a op‡±o n£mero 2, mas ordena os arquivos pela ordem crescente da data de cria‡±o do arquivo;
+
+5 - PELA EXTENS°O
+
+Esta op‡±o se assemelha a op‡±o n£mero 2, mas ordena os arquivos pela extens±o do nome do arquivo (aquelas 3 letras depois do ponto);
+
+6 - ARQUIVO UNICO
+
+Pede o nome de um dos arquivos do disco e lista somente o mesmo;
+
+7 - OUTROS ARQUIVOS
+
+Ao contr rio da op‡±o anterior, pede o nome de um arquivo e lista somente os outros arquivos;
+
+8 - ARQUIVOS APAGADOS
+
+Mostra os arquivos apagados do disco, se houverem. Estes arquivos tem a primeira letra do seu nome substitu¡da por um s¡mbolo. Alguns dos arquivos rec‚m-apagados poder±o ser recuperados pela op‡±o "O" deste programa;
+
+9 - NOTAS DO ARQUIVO
+
+Mostra todas as informa‡µes importantes sobre os arquivos, como data e hora em que foi criado, setores que o mesmo ocupa no disco, n£mero de setores ocupados, n£mero de bytes, tipo de arquivo (bin rio, BASIC ou CP/M) e o seu "HEADER" (endere‡os inicial, final e de entrada) caso o mesmo seja bin rio;
+
+A at‚ D - DRIVE EM USO
+
+As teclas [A], [B], [C] e [D] especificam qual o disk-drive que deve ser utilizado para qualquer uma das aplica‡µes do DISK-IT;
+
+E - OCULTAR ARQUIVO
+
+Esta op‡±o permite esconder um arquivo no disco, sem que o nome do mesmo apare‡a no diret¢rio. Para fazˆ-lo reaparecer, ser  necess rio que o usu rio digite uma SENHA, previamente relacionada. Para ocultar um determinado arquivo, digite seu nome, e a senha destinada ao mesmo. Ser  pedida ainda uma confirma‡±o para a opera‡±o;
+
+F - ABRIR ARQUIVO
+
+Por esta op‡±o, podemos abrir um arquivo oculto, desde que seja digitada a sua SENHA correspondente;
+
+G - APAGAR UM ARQUIVO
+
+Quando um arquivo j  n±o ‚ importante, devemos apag -lo do disco para que n±o fique ocupando espa‡o. Esta op‡±o realiza esta opera‡±o com incr¡vel facilidade;
+
+H - RENOMEIA UM ARQUIVO
+
+Serve para trocar o nome de um arquivo. Inicialmente ‚ pedido o nome atual do arquivo e logo depois o seu novo nome;
+
+I - COPIA DE ARQUIVO
+
+Esta op‡±o ‚ utilizada quando queremos copiar um determinado arquivo para um outro disco. Escrevemos o nome do arquivo e colocamos o disco de destino para que a op‡±o seja realizada;
+
+J - LABEL DE DISCO
+
+Os discos podem ter um nome de identifica‡±o com at‚ 8 caracteres. Inicialmente ‚ mostrado o nome atual do disco e logo em seguida ‚ pedido o novo nome que o usu rio deseja colocar. Se teclarmos simplesmente [RETURN] no lugar de um novo nome, a opera‡±o ‚ abortada;
+
+K - DISK-IT ZAPPER
+
+O "ZAPPER" que integra o DISK-IT ‚ um de seus pontos fortes. Com ele, o usu rio pode copiar, editar ou alterar qualquer um dos setores do disco em utiliza‡±o. Isto ‚ de incr¡vel utilidade quando queremos traduzir, bloquear ou desbloquear, consertar defeitos e recuperar erros de E/S, etc. Basta saber que setores o programa ocupa no disco (ver op‡±o 9) e mandar que o ZAPPER examinar aqueles setores. Ele ainda procura textos automaticamente, altera os setores de FAT e DIRETŠRIO, etc.
+
+          Sub-comandos do DISK-IT ZAPPER:
+
+[L] Escolhe um setor para leitura;
+[S] Grava o setor em edi‡±o;
+[Z] Procura um texto selecionado;
+[<] e [>] Retrocede ou avan‡a dentro do setor;
+[ESC] Aborta a op‡±o de ZAPPER;
+
+L - MUDA DIRETORIO
+
+No caso de disco formatado com duplo-diret¢rio, esta op‡±o troca o diret¢rio em utiliza‡±o;
+
+M - FORMATAR
+
+Formata um disco virgem para utiliza‡±o. S±o oferecidas duas op‡µes de formata‡±o: NORMAL e com DUPLO DIRETŠRIO. Depois de escolhido o tipo de formata‡±o, ‚ pedido o nome do arquivo (LABEL - ver op‡±o [J]) e logo depois a formata‡±o ‚ iniciada tendo como base o tipo do disco utilizado;
+
+N - COPIA O DISCO
+
+Esta op‡±o nos permite realizar uma c¢pia completa de um determinado disco. Esta c¢pia se dar  de forma SETORIAL, ou seja, ser  feita uma c¢pia perfeitamente igual a original e de cada um de seus setores. Este processo somente n±o duplicar  discos com bloqueios que ultrapassem o n£mero de setores normais do disco ou tenham formata‡±o diferente da convencional. Isto poder  ser solucionado utilizando-se o ZAPPER para editar e regravar os setores diferentes do normal.
+A formata‡±o do disco de destino deve ser realizada antes do processo de c¢pia, e deve ainda ser idˆntica a do disco original;
+
+O - RECUPERA ARQUIVO
+
+Alguns arquivos deletados do disco por engano poder±o ser recuperados por esta op‡±o. Em caso contr rio ela ‚ automaticamente abortada;
+
+P - INFORMA€´ES SOBRE O DISCO
+
+Esta op‡±o informa os atributos do disco em utiliza‡±o;
+
+Q - MODO DIRETO
+
+Sai do MENU e volta para opera‡±o em MODO DIRETO;
+
+R - RESETA O DRIVE
+
+Provoca uma nova leitura do "BOOT" do disco em uso;
+
+S - MODO DO DIRETORIO
+
+Nesta op‡±o podemos mudar o estilo de apresenta‡±o dos arquivos das op‡µes 1, 2, 3, 4, 5, 6, 7 e 8. Pode ser apresentado desde o NOME puro, at‚ NOME+DATA+EXTENS°O;
+
+T - PARAMETROS DO ZAPPER
+
+Podemos mudar algumas das op‡µes do ZAPPER, proteger  reas fundamentais do disco contra altera‡µes acidentais, etc. Recomendamos cuidado com esta op‡±o;
+
+U - MUDA A HORA
+
+Esta op‡±o serve para acertar o rel¢gio do DISK-IT;
+
+V - MUDA A DATA
+
+Esta op‡±o serve para acertar o calend rio do DISK-IT;
+
+W - TYPE NO V‰DEO
+
+Mostra na tela o conte£do de um arquivo de texto;
+
+X - TYPE NA IMPRESSORA
+
+Imprime um arquivo de texto na impressora;
+
+[ESC] - Aborta o DISK-IT. Ser  preciso confirmar com [RETURN] se
+        o usu rio pretende mesmo resetar o micro-computador.
+
+          USANDO O MODO DIRETO
+
+          Podemos tamb‚m utilizar todas as op‡µes descritas acima pelo MODO DIRETO. Basta responder ao "prompt" com um dos comandos abaixo:
+
+DIR     - Ver op‡±o 0;
+FILCOM  - Ver op‡±o 1;
+FILALFA - Ver op‡±o 2;
+ALFAFIL - Op‡±o 2 com altera‡±o no disco;
+FILTAM  - Ver op‡±o 3;
+TAMFIL  - Op‡±o 3 com altera‡±o no disco;
+FILDATA - Ver op‡±o 4;
+DATAFIL - Op‡±o 4 com altera‡±o no disco;
+FILEXT  - Ver op‡±o 5;
+EXTFIL  - Op‡±o 5 com altera‡±o no disco;
+FILPROG - Ver op‡±o 6;
+FILSEM  - Ver op‡±o 7;
+HEADER  - Ver op‡±o 9;
+COD     - Ver op‡±o E;
+STCOD   - Ver op‡±o F;
+DEL     - Ver op‡±o G;
+RENAM   - Ver op‡±o H;
+LABEL   - Ver op‡±o J;
+FILCOP  - Ver op‡±o I;
+DISCOP  - Ver op‡±o N;
+ZAP     - Ver op‡±o K;
+FLIP    - Ver op‡±o L;
+FORMAT  - Ver op‡±o M;
+DISINF  - Ver op‡±o P;
+HORA    - Ver op‡±o U;
+DATAS   - Ver op‡±o V;
+TYPE    - Ver op‡±o W;
+PRINT   - Ver op‡±o X;
+HELP    - Lista as op‡µes do MODO DIRETO;
+MENU    - Vai ao MODO INDIRETO (menu de op‡µes);
+PARA    - Aborta o multi-utilit rio DISK-IT 3.0.
+
+          SOFT-O-MATIC
+
+          A est  distribuindo programas in‚ditos e novas versµes de programas consagrados da linha MSX. S±o programas de DOM‰NIO P‹BLICO ou LIVRE CIRCULA€°O, sem "copyright" no BRASIL, e portanto, livres para serem copiados e passados adiante sem preju¡zos para seus criadores.
+          Pedimos no entanto que as c¢pias sejam realizadas sem altera‡±o do conte£do do programa (nome do autor, tradutor, etc) e sem desmembramento do mesmo.
+          Para receber uma lista completa dos programas distribu¡dos pela SOFT-O-MATIC, escreva para o endere‡o:
+CCCCAIXA POSTAL 2.515 CEP 2O.OO1 - RIO DE JANEIRO - RJ.
+
+

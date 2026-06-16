@@ -1,0 +1,94 @@
+                                 M I N O S
+
+       MINOS e' muito mais que um jogo, e' um desafio !
+       Imagine que voce tenha 5 quadradinhos.
+       Eles podem ser arranjados,lado a lado,formando diversas figuras
+       diferentes.
+       Existem 12 (e so' 12 !) figuras assim formadas.
+       Elas formam as figuras basicas do MINOS.
+
+       Agora repare: para formar as 12 figuras,cada uma com 5 quadradinhos,
+       foram usados 60 quadradinhos.
+       Uma area retangular formada por 6 linhas de 10 quadradinhos cada
+       tambem totaliza os 60 quadradinhos.
+       Assim, parece logico que as 12 figuras possam caber nesta area
+       retangular.
+
+       De acordo com o livro "Scientific American Book of
+       Mathematical Puzzles and Diversions" de Martin Gardner, existem
+       2339 formas de se conseguir isto.
+
+       O que MINOS propoe e' que voce descubra uma delas!
+
+       MINOS dispoe de duas modalidades de uso :
+            JOGO   e   TENTATIVA DE SOLUCAO.
+
+       Na modalidade JOGO, podem disputar de 1 a 4 jogadores, onde cada um,
+       na sua vez, ira' escolher uma peca no Quadro de Estoque e coloca'-la
+       no seu Quadro de Jogo.
+       Uma vez escolhida a peca, nao ha' possibilidade de troca.Caso nao
+       haja posicao para ela, o jogador passa a vez e fica fora da disputa.
+       Ganhara' aquele que colocar mais pecas no seu Quadro de Jogo.
+
+       Na modalidade TENTATIVA DE SOLUCAO, podem ser usados os quatro quadros
+       pelo operador.
+       Nesta modalidade fica disponivel uma serie de recursos para ajudar na
+       busca de uma das solucoes.
+
+                             I N I C I O
+
+       Este programa tem carregamento automatico. Ligue o micro e insira o
+       disco MINOS.
+       O programa sera' carregado e aparecera' a tela de apresentacao.
+       Nesta tela, a opcao de jogo e' escolhida deslocando-se
+       o tijolinho com as setas do teclado. A opcao de 0(zero) jogadores ativa
+       o modo de TENTATIVA DE SOLUCAO. Depois de escolhida a opcao, aperte a
+       barra de espaco para iniciar.
+       Nesta tela, a tecla M ativa e desativa a execucao da musica durante
+       o jogo e a tecla F termina o jogo.
+
+                           C O M A N D O S
+
+       1. Modalidade JOGO
+
+       a. Comandos no Quadro de Estoque
+          - SETAS           : movem cursor.
+          - Barra de espaco : escolhe a peca sob o cursor.
+          - " ESC "         : passa a vez e sai do jogo.
+       b. Comandos no Quadro de Jogo
+          - SETAS           : movem a peca.
+          - Barra de espaco : fixa a peca.
+          - " V "           : vira a peca 90 graus no sentido horario.
+          - " R "           : rebate a peca em relacao ao seu eixo vertical.
+          - " ESC "         : passa a vez e sai do jogo.
+
+       2.Modalidade TENTATIVA DE SOLUCAO
+
+       a. Comandos no Quadro de Estoque
+          - SETAS           : movem cursor.
+          - Barra de espaco : escolhe a peca sob o cursor.
+          - " ESC "         : vai para o Quadro Ativo escolher uma
+                              peca para trazer de volta.
+          - " M "           : muda o Quadro Ativo.
+          - " C "           : copia o Quadro Ativo no quadro seguinte.
+          - " A "           : apaga o Quadro Ativo.
+          - " S "           : salva a situacao atual em disco.
+          - " L "           : le do disco a situacao gravada.
+          - " B "           : vai para o Quadro Ativo e move todas as
+                              pecas em bloco.
+          - " J "           : volta para a tela de apresentacao
+          Fazendo o cursor sair do Quadro de Estoque pela moldura inferior,
+          faz com que ele va' para o Quadro Ativo escolher uma peca para
+          trazer de volta ( Equivale ao " ESC " ).
+       b. Comandos no Quadro Ativo
+          - SETAS           : movem a peca, cursor ou bloco.
+          - Barra de espaco : fixa a peca ou escolhe a que vai ser retirada.
+          - " V "           : vira a peca 90 graus no sentido horario.
+          - " R "           : rebate a peca em relacao ao seu eixo vertical.
+          - "ESC"           : volta para o Quadro de Estoque.
+          Fazendo o cursor (ou peca) sair do Quadro Ativo pela moldura
+          superior, faz com que ele va' para o Quadro de Estoque ( Equivale
+          ao " ESC " ).
+       Agora, use sua intuicao,seu raciocinio e ...
+       Boa sorte !
+

@@ -1,0 +1,21 @@
+10 KEYOFF:SCREEN0:WIDTH40:LOCATE0,23
+20 PRINT" XWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWY"
+40 PRINT" V      SOFT-O-MATIC PACK N§O2      V"
+60 PRINT" V  FreeWare, ShareWare & DemoWare  V"
+80 PRINT" ZWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW["
+220 PRINT " Suas op‡µes s±o:" : PRINT
+230 PRINT"A>ZZSOURCE (FreeWare) disassembla Z80"
+240 PRINT"A>G-MASTER (FreeWare) editor  gr fico"
+250 PRINT"A>DSKPRESS (FreeWare) analisa o disco"
+260 PRINT"A>YAMSGAME (FreeWare) jogo para MSX 2"
+270 PRINT"A>MUNDIAL  (FreeWare) faz  mapa-mundi"
+271 PRINT"A>SPEECH   (FreeWare) sintetiza a voz"
+272 PRINT"A>ARGOS    (FreeWare) editor de disco"
+273 PRINT"A>B-STREET (FreeWare) editor de texto"
+274 PRINT"A>TURMOIL  (FreeWare) jogo espacial" : PRINT
+280 PRINT " Digite uma das op‡µes acima:":PRINT
+290 PRINT "Obs: Os arquivos .TXT s±o os manuais"
+300 PRINT "     dos programas aqui apresentados;"
+301 PRINT "     Conhe‡a outros pacotes da s‚rie!"
+310 PRINT : CALL SYSTEM
+

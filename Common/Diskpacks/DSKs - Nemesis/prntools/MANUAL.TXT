@@ -1,0 +1,447 @@
+     MSX PRINTER TOOLS 1.1
+
+     Programadores: Equipe NEMESIS
+
+
+     Introduá±o
+
+     O MSX PRINTER TOOLS 1.1 Ç um conjunto de "ferramentas"  para
+aux°lio no uso de impressoras com os microcomputadores  da  linha
+MSX. Entre os arquivos que compµem este programa podemos destacar
+algumas  eficientes  rotinas  que  fazem  parte   da   lista   de
+instrumentos  mais  utilizados  por   nossos   programadores   na
+elabraá±o dos mais diversos softwares para MSX.
+     Entre  as  funáµes  dispon°veis  do  programa,   encontramos
+FILTROS UNIVERSAIS que permitem que qualquer impressora existente
+possa imprimir corretamente a acentuaá±o  da  l°ngua  portuquesa;
+rotinas para IMPRESS∞O DE TELAS GRÑFICAS,  GERADOR  DE  ETIQUETAS
+("LABELS"), GERADOR DE FAIXAS  GIGANTES  ("BANNERS")  e  diversas
+ferramentas auxiliares na utilizaá±o de impressoras  nacionais  e
+importadas.
+     Sem d£vida alguma, o MSX PRINTER TOOLS 1.1 far† de agora  em
+diante parte dos utilit†rios mais utilizados pelos  programadores
+e usu†rios de MSX em geral e ser† um acess¢rio indispens†vel para
+todos os que possuem impressoras ligadas em seus sistemas.
+
+     Carregamento
+
+     Ao inserir o disco com o MSX PRINTER TOOLS 1.1, uma tela  de
+apresentaá±o  com  o  nome  do   programa   Ç   apresentada.   Ao
+pressionarmos uma tecla, Ç mostrado o diret¢rio do disco  com  os
+arquivos que compµem o  pacote.  Em  caso  de  n±o  funcionamento
+acione o "RESET" do seu  MSX.  Persistindo  o  problema  consulte
+nosso departamento tÇcnico.
+
+     Existem 4 tipos de programas no MSX PRINTER TOOLS 1.1:
+
+     a) Programas em formato "DOS" (.COM): para carreg†-los basta
+digitar seu nome e pressionar [RETURN].
+Ex: ETIQUETA.COM - digite A>ETIQUETA e tecle [RETURN];
+
+     b) Programas em formato bin†rio (.BIN): escreva  A>BASIC  (e
+tecle [RETURN]) para ir  ao  BASIC  DE  DISCO  e  use  o  comando
+"BLOAD", muito utilizado em jogos.
+Ex:  ROTINA-1.BIN  -   digite   BLOAD"ROTINA-1.BIN",R   e   tecle
+[RETURN];
+
+     c) Programas em  BASIC  (.BAS):  para  carreg†-los,  escreva
+A>BASIC e tecle [RETURN] para ir  ao  BASIC  DE  DISCO  e  use  o
+comando "RUN".
+Ex: HARDCOPY.BAS - disgite RUN"HARDCOPY.BAS" e tecle [RETURN];
+
+     d) Programas em formato ASCII (.ASC): Est±o  gravados  neste
+formato para facilitar operaáµes de  "MERGE"  e  associ†-los  aos
+seus programas. Consulte o manual de seu computador para  maiores
+detalhes sobre este comando.
+
+     Passaremos ent±o a descrever cada  um  dos  utilit†rios  que
+compµem o MSX PRINTER TOOLS 1.1:
+
+     ECO NA IMPRESSORA (ECO-IMPR.COM)
+
+     Ap¢s ser  carregado  conforme  foi  exemplificado  acima,  o
+gerador de ECO NA IMPRESSORA faz com  que  todos  os  textos  que
+apareáam na tela sejam repetidos (eco) na  impressora.  A  rotina
+funciona  tanto  no  Sistema  Operacional  quanto  no  BASIC  sem
+importunar outros programas que estejam em operaá±o desde que  os
+mesmos n±o sobreponham sua †rea de mem¢ria.
+     Para deslig†-lo utilize o arquivo ECO-DESL.COM.  Se  estiver
+no BASIC commande: POKE &HEO11,2O1
+
+     ZERO CORTADO (ZERO.COM)
+
+     Acionando este arquivo, fazemos com que a impressora imprima
+um "O" toda vez que um "0" for enviado.
+
+     IMPRESS∞O DUPLA (NEGRITO.COM)
+
+     Este   utilit†rio   Ç   principalmente   interessante   para
+impressoras que n±o  possuem  o  recurso  de  NLQ  ("near  letter
+quality" - impress±o em qualidade carta) ou quando  usamos  fitas
+desgastadas; faz com que o cabeáote da  impressora  imprima  duas
+vezes a mesma linha, conseguindo assim um maior contraste  com  o
+efeito de "negrito".
+
+     IMPRESSOR DE LISTAGENS (PROGIMPR.COM)
+
+     Este  arquivo  destina-se  a  controlar  o  "LLIST"   quando
+imprimimos um programa extenso, pulando o "picote" do  formul†rio
+cont°nuo.
+     Atená±o: Este utilit†rio  funciona  apenas  com  formul†rios
+padr±o de 66 linhas e impressora de 8O colunas.
+
+     HEXA SCREEN (HEXA-SCR.COM)
+
+     Ap¢s ser executado, este  programa  faz  com  que  todos  os
+c¢digos enviados para a impressora sejam impressos  no  v°deo  na
+base hexadecimal.
+
+     HEXA PRINTER (HEXA-PRN.COM)
+
+     Faz o mesmo que o programa acima, mas imprime em hexadecimal
+os c¢digos na impressora. Este utilit†rio Ç usado na adaptaá±o de
+programas que n±o operam convenientementes na impress±o  de  seus
+dados.
+
+     SEM ACENTUAR (S-ACENTO.COM)
+
+     Depois de carregado, este arquivo faz com que  a  impressora
+automaticamente n±o imprima acentos. O "Ä" ser†  substituido  por
+"C", o "†" por "a" e assim por diante.
+
+     Acentuando na impressora
+
+     Acontece com certos incautos que quando viajam  ao  exterior
+resolvem trazer uma impressora boa e barata que por l† encontram.
+Ao chegar no Brasil e lig†-la  ao  computador,  descobrem  que  a
+mesma n±o acentua corretamente. Como resolver este problema ?
+     O primeiro passo Ç saber se a   mesma  possui  um  banco  de
+caracteres acentuados em sua mem¢ria. Basta  dar  uma  olhada  na
+tabela de caracteres do manual que a acompanha. Se n±o h† manual,
+teremos que tentar as duas opáµes seguintes:
+
+     1¶ opá±o - N±o existem caracteres acentuados:
+     
+     Se a impressora foi produzida nos Estados Unidos apenas para
+consumo interno, n±o h† necessidade da mesma possuir  acentos  ou
+cedilhas, pois os mesmos n±o s±o usados na l°ngua inglesa.
+     Neste caso teremos que "criar" acentuaá±o, pois n±o  podemos
+passar por analfabetos em nossos impressos. Basta juntar um " a "
+com um " ' " para criarmos um "†" ou um " C  "  com  uma  v°rgula
+para gerar um "Ä".
+     Mas  n±o  se  preocupe,  o  programa  GERADOR   DE   ACENTOS
+(IMPORTED.COM) depois de acionado se  encarrega  de  fazer  estes
+malabarismos automaticamente.
+
+     2¶ opá±o - Existem caracteres acentuados:
+
+     Existe a acentuaá±o, mas n±o corresponde ao  que  desejamos.
+Um "Ç" digitado corresponde a um "!" ou qualquer outra loucura do
+gànero. ê um caso cl†ssico de  impressora  deselvolvida  para  um
+determinado tipo de computador que est† sendo  utilizada  por  um
+outro. Para resolver este problema  ser†  necess†rio  conhecer  a
+tabela de caracteres da impressora e substituir seus  c¢digos  na
+hora de imprimir.
+     Os FILTROS de  impress±o  s±o  utilit†rios  que  depois  que
+instalados, interceptam os dados que  o  computador  emite  e  os
+converte para os que dever±o ser impressos. O programa GERADOR DE
+FILTROS (CRIA-FIL.COM) prepara semi-automaticamente um filtro  de
+impress±o espec°fico para sua impressora, baseado  na  tabela  de
+caracteres existente na  mesma.  Ap¢s  o  CRIA-FIL.COM  ter  sido
+carregado, ligue a impressora e  deixe  que  o  mesmo  imprima  a
+tabela  de  caracteres  com  seus  respectivos  c¢digos.  N±o  se
+preocupe se forem impressos caracteres intelig°veis ou se pularem
+p†ginas  em  branco  (existem  c¢digos  respons†veis  por   estas
+tarefas). Depois de impressa a tabela, o programa pedir†  que  se
+digite o c¢digo obtido para cada caracter acentuado existente.  O
+programa  criar†  ent±o,  uma  tabela  de  convers±o   que   ser†
+automaticamente manipulada pelo filtro  criado  (FILTRO.BIN).  De
+agora em diante sempre que utilizar sua  impressora,  carregue  o
+filtro de impress±o com o comando:
+
+     BLOAD"FILTRO.BIN",R
+
+     Sua impressora passar†  a  acentuar  corretamente.  Em  caso
+contr†rio recomece a operaá±o desde o in°cio.
+     Existem  no  disco  diversos  filtros  j†  prontos  para  as
+impressoras mais comuns utilizadas com os MSX:
+
+ABICOMP.COM - Para impressoras  do  padr±o  ABICOMP  (Ex.  Praxis
+2O);
+ABNT-MSX.COM - Para impressoras do padr±o ABNT (Ex. Lady 8O/9O);
+EPSON81O.COM - Para impressora importadas EPSON LX 81O; etc...
+
+     Nota: Para  passar  o  filtro  criado  (FILTRO.BIN)  para  o
+formato ".COM", visando facilitar seu carregamento principalmente
+na execuá±o de arquivos "BATCH", utilize o utilit†rio BIN-COM.COM
+do MSX-DOS TOOLS da NEMESIS INFORMATICA LTDA.
+
+     Melhorando programas em BASIC
+
+     Existem ainda no pacote MSX PRINTER TOOLS 1.1,  3  programas
+com  extens±o  ".ASC",  gravados  assim  para  facilitar  a   sua
+utilizaá±o com o comando "MERGE" e  junt†-los  aos  programas  em
+BASIC criados pelo usu†rio:
+
+     HARDCOPY.ASC
+
+     Ao ser executado, este programa faz uma  c¢pia  da  tela  de
+texto na impressora.
+
+     IMPRSCR2.ASC
+
+     Ao ser executado, este programa espera  que  a  tecla  [ESC]
+seja  pressionada  para  gerar  uma  c¢pia  de  tela  gr†fica  na
+impressora (v†lido somente para impressoras gr†ficas);
+
+     LPRINT.ASC
+
+     Ao ser adicionado a um programa em BASIC (Ö partir da  linha
+65000) e ser executado com o comando  RUN  65000,  ele  tranforma
+todos os  PRINTs  encontrados  no  programa  por  LPRINTs.  Desta
+maneira, tudo que seria transmitido para o v°deo  passar†  a  ser
+impresso no papel.
+
+     Etiquetas personalizadas
+
+     Com o aplicativo GERADOR DE ETIQUETAS (ETIQUETA.COM) podemos
+editar a mensagem desejada em 5 linhas de texto  com  38  colunas
+cada uma (Padr±o da ETIQUETA POSTAL de 83 x 23,4 mm - 1  carreira
+em  formul†rio  cont°nuo),  e  imprimir  em  diversas   etiquetas
+auto-adesivas.
+
+     Mensagens em faixas gigantes
+
+     Usando o aplicativo GERADOR DE FAIXAS (FAIXAS.COM), editamos
+um texto de uma linha de 38 colunas que ser† impresso em  sentido
+vertical  com  letras  garrafais  no  formul†rio  cont°nuo.  Este
+aplicativo Ç ideal para criaá±o de  avisos,  propagandas,  faixas
+comemorativas, etc. Para editar um texto com mais de 38  colunas,
+utilize a opá±o "[C]ontinua" depois da primeira impress±o.
+
+     Imprimindo telas gr†ficas
+
+     O disco com o MSX PRINTER TOOLS 1.1 contÇm 3 rotinas b†sicas
+de  impress±o  de  telas  gr†ficas  (ROTINA-1.BIN,  ROTINA-2.BIN,
+ROTINA-3.BIN) e  um  programa  completo  com  todos  os  recursos
+imagin†veis para a impress±o de desenhos  e  figuras  ("HARDCOPY"
+vers±o 1.5):
+
+     ROTINA-1.BIN
+
+     Carregue a rotina com  o  comando:  BLOAD"ROTINA-1.BIN",R  e
+digite o programa abaixo:
+
+1000 SCREEN 2
+1010 DEFINT A-Z
+1020 FOR V = 1 TO 3
+1030 FOR W = 2 TO 15
+1040 X = INT (255*RND(TIME))
+1050 Y = INT (191*RND(TIME))
+1060 Z = INT (50*RND(TIME))
+1070 CIRCLE (X,Y),Z,W
+1080 PAINT (X,Z),Z,W
+1090 NEXT W : NEXT V
+1100 BEEP : GOTO 1100
+
+     Execute o programa com o comando RUN e ap¢s ser acionado  um
+BEEP, prepare a  impressora  e  pressione  a  tecla  [ESC].  Ser†
+impressa uma c¢pia gr†fica da tela com o mesmo n£mero  de  pontos
+(resoluá±o gr†fica) que aparece no v°deo.
+
+     ROTINA-2.BIN
+
+     Funciona de maneira idàntica a ROTINA-1.BIN, mas  imprime  a
+tela dobrando o n£mero de pontos e simulando as cores com tons de
+cinza.   Experimente-a   com   o   mesmo   exemplo    apresentado
+anteriormente.
+
+     ROTINA-3.BIN
+
+     Imprime telas gr†ficas como a ROTINA-2.BIN, mas funciona por
+intermÇdio da tecla [HOME] e imprime com cores invertidas.
+
+     "HARDCOPY" vers±o 1.5 (HARDCOPY.BAS e HARDCOPY.BIN)
+
+     O programa HARDCOPY 1.5 Ç usado exclusivamente para imprimir
+c¢pias gr†ficas em impressora. ê o £nico programa do  gànero  que
+permite o uso de qualquer impressora  gr†fica  com  o  MSX,  pois
+possui tabela de c¢digos reprogram†vel. Uma das suas funáµes mais
+£teis Ç o multiplicador de passadas, que faz com que o  carro  da
+impressora imprima um n£mero determinado de vezes uma mesma linha
+antes do "carriage return", finalizando  com  uma  impress±o  com
+alto contraste mesmo com o uso de uma fita desgastada.
+     Depois de instalado ele ficar† livre para que uma tela  seja
+gerada ou carregada.
+
+     Exemplo de carregamento de uma tela:
+
+a) coloque um disco que possua uma tela;
+b) digite:
+
+10 SCREEN 2
+20 BLOAD"NOMETELA.GRP",S
+30 GOTO 30
+
+c) pressione [SELECT] para que  o  programa  HARDCOPY  1.5  fique
+pronto para funcionar;
+
+d) preencha os requisitos  de  acordo  com  a  c¢pia  que  deseja
+imprimir (tamanho, tabulaá±o, texturas, passadas, etc);
+
+e) selecione a opá±o IMPRIMIR, ligue  a  impressora  e  pressione
+[RETURN].   O   desenho   sair†   impresso   com   as   condiáµes
+estabelecidas.
+
+     Atená±o: Caso sua impressora imprima apenas n£meros e letras
+sem sentido e ela seja realmente gr†fica, ser† necess†rio adaptar
+o programa para as caracteristicas da mesma. Use a opá±o "tipo de
+impressora" com a  tabela  de  c¢digos  em  anexo  ao  manual  de
+instruáµes da sua impressora.
+
+     Outras opáµes do HARDCOPY 1.5:
+
+     Sair
+
+     Sai  do  programa  HARDCOPY  1.5  e  volta  a  tela  gr†fica
+prÇ-carregada;
+
+     Ver
+
+     Mostra a tela gr†fica prÇ-carregada;
+
+     Mostra formato atual
+
+     Mostra um "box" com  o  formato  da  impress±o  estabelecido
+(tamanho, n£mero de passadas, inverso, etc);
+
+     Imprimir
+
+     Imprime a tela carregada;
+
+     Selecionar tamanho
+
+     Seleciona entre impress±o NORMAL (tamanho original - 1/8  da
+p†gina de formulario de 8O colunas), DUPLA (tamanho  duplicado  -
+1/2 da pagina de formulario de 8O colunas) e SIMULAÄ∞O (duplicado
+na vertical - 1/1 da p†gina de formulario de 8O colunas);
+
+     Tipo de impressora
+
+     Permite    selecionar    impressoras    no    padr±o     MSX
+(ASCII/MICROSOFT japonàs), EPSON  (Elgin  Lady  8O/9O)  e  OUTRAS
+(permite a  programaá±o  direta  com  os  c¢digos  da  impressora
+utilizada);
+
+     N£mero de passadas
+
+     Seleciona o n£mero de "PASSADAS" com o carro  da  impressora
+antes de avanáar uma linha no papel  (carriage  return).  Recurso
+indispens†vel para gerar c¢pias mais contrastantes;
+
+     Fundo
+
+     Os planos de v°deo podem ser impressos separadamente.  Nesta
+opá±o podemos selecionar ou n±o a impress±o do fundo;
+
+     Sprites
+
+     Os planos de v°deo podem ser impressos separadamente.  Nesta
+opá±o podemos selecionar ou n±o a impress±o dos sprites;
+
+     Inverso
+
+     A tela pode ser impressa no modo inverso, ou seja, o que era
+escuro passa a ser claro e o que era claro passa a ser escuro;
+
+     Margem
+
+     Pode-se definir por pontos, o tamanho da margem esquerda  no
+papel onde ser† impressa a tela;
+
+     Tom das cores
+
+     Permite aumentar ou diminuir o tom das  cores  representadas
+pelas  texturas  proporcionalmente  com  o  n£mero  de   passadas
+selecionado;
+
+     Texturas
+
+     Permite a criaá±o dos pontos que  simular±o  as  cores  (por
+textura, ret°cula ou granulagem) na impress±o em branco e preto.
+
+
+     Atená±o: Se a sua impressora  n±o  tiver  resoluá±o  gr†fica
+suficiente  para  imprimir  toda  a  tela  em  formato  DUPLO  ou
+SIMULAÄ∞O (como a  GRAFIX  MTA  que  "come"  um  pedaáo  da  tela
+impressa), ao  final  das  linhas  de  gr†ficos  ser±o  impressos
+caracteres sem sentido atÇ o "carriage return". Para evitar  este
+tipo de problema, leve a tela ao editor  gr†fico  e  diminua  seu
+tamanho em 16 pontos no lado direito para a  impressao  DUPLA  ou
+acima para impress±o tipo SIMULAÄ∞O.
+
+     C¢digos para a GRAFIX MTA:
+
+     Selecione a  funá±o  "tipo  de  impressora"  e  com  a  seta
+indicadora digite os seguintes codigos:
+
+013 000 000 000 000 000 - RETORNO DO CARRO (carriage return);
+027 065 008 010 000 000 - AVANÄO DE LINHA (line feed);
+027 075 000 001 000 000 - IMPRESS∞O (256 pontos);
+027 075 224 001 000 000 - IMPRESS∞O (512 pontos);
+027 075 224 001 000 000 - IMPRESS∞O (576 pontos).
+
+     CONSIDERAÄ¥ES FINAIS
+
+     Esperamos que este manual de instruáµes tenha cumprido o seu
+papel de orientar o  usu†rio  na  utilizaá±o  deste  software.  E
+esperamos ainda mais, que o pr¢prio programa tenha  alcanáado  as
+suas espectativas. Em todo  caso,  gostar°amos  de  receber  suas
+cr°ticas e sugestµes que nos ajudar±o a incrementar ainda mais as
+futuras versµes do mesmo, e de outros lanáamentos da linha.
+
+     ATENÄ∞O
+
+     O  NOME  deste  software  Ç  MARCA  REGISTRADA  da   NEMESIS
+INFORMATICA LTDA. O programa  est†  registrado  no  Instituto  da
+Propriedade Industrial (INPI) e este  texto  de  instruáµes  est†
+registrado no Departamento de  Direitos  Autorais  da  Biblioteca
+Nacional.
+     Os  direitos  de  reproduá±o  est±o  limitados   Ö   NEMESIS
+INFORMÑTICA LTDA. Fornecedores e receptadores de  c¢pias  ilegais
+deste software e seus acess¢rios est±o  sujeitos  Ös  penalidades
+previstas em lei.
+
+     GARANTIA E SUPORTE TêCNICO
+
+     A NEMESIS INFORMATICA LTDA. garante por  5  (cinco)  anos  o
+perfeito funcionamento deste software e de seus  acess¢rios,  bem
+como de outros produtos desenvolvidos pela empresa, desde que  as
+c¢pias estejam corretamente registradas junto Ö mesma. O  suporte
+tÇcnico Ç gratuito. Pedimos o favor de n±o solicitar  informaáµes
+tÇcnicas por telefone. Consultas dever±o ser  feitas  atravÇs  de
+carta registrada, onde o cliente dever†  mencionar  o  n£mero  de
+registro de sua c¢pia, data e local de aquisiá±o.
+
+     CäPIAS N∞O REGISTRADAS
+
+     A NEMESIS INFORMATICA LTDA. n±o se responsabiliza  pelo  mal
+funcionamento ou danos causados por c¢pias n±o registradas  deste
+programa.  Se  vocà,  de  alguma  maneira,   obteve   uma   c¢pia
+n±o-oficial do mesmo, mas deseja registr†-la para poder  usufruir
+da  garantia  e  do  suporte  tÇcnico,  escreva  para  a  NEMESIS
+INFORMATICA LTDA. no endereáo abaixo, solicitando  o  "PEDIDO  DE
+REGISTRO". N±o se esqueáa  de  informar  a  data  e  o  local  de
+aquisiá±o de sua c¢pia.
+
+          Toda correspondància dever† ser enviada para:
+
+                    NEMESIS INFORMATICA LTDA.
+                Caixa postal 4.583 Cep 2O.OO1-97O
+                  Rio de Janeiro - RJ - Brasil.
+
+
+
+
+
+
