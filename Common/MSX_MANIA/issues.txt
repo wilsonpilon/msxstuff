@@ -1,0 +1,25 @@
+These are the known issues of the MSX-1-MANIA archive:
+
+005 Barbarian 			Game does not run if you start it with the menu.
+060 Bee & Flower		Game does not run properly on a MSX-2 or above.
+079 Blockade Runner		Game only runs on a MSX-1.
+010 Chase HQ 			Game only runs on a MSX-1.
+128 Crux 			This is actually a MSX-2 game.
+062 Cutdown 			This is actually a MSX-2 game.
+098 Dimension Omega 		Game is somehow allergic to ram in subslots.
+055 Dizzy Dice 			Game only runs on a MSX-1.
+008 Double Dragon 		Game is somehow allergic to ram in subslots.
+065 Espacial 			Game only runs on a MSX-1.
+080 Fighting Rider 		Game only runs on a MSX-1.
+077 Hypsys 			Game only runs on a MSX-1.
+116 King and Balloon 		Game does not run properly on a MSX-2 or above.
+115 Midway 			Game does not run properly on a MSX-2 or above.
+124 Mr. Wongs Loopy Laundry i	Game fails at level 2 on a MSX-2 or above.
+093 Panda 			Game does not run if you start it with the menu.
+050 Pegasus 			Game does not run properly on a MSX-2 or above.
+037 Skramble 			Game is somehow allergic to ram in subslots.
+089 Trivial Pursuit 		Game only runs on a MSX-1.
+
+
+
+
