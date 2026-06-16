@@ -1,0 +1,574 @@
+MuSiX 
+
+MuSiX - "the speech of angels"
+(as Carlyle might have said, had he lived to see MuSiX) 
+
+
+Chapter 1 
+LOADING INSTRUCTIONS 
+
+Put your MuSiX tape into the recorder. If necessary , switch to BASIC and then
+type: 
+RUN"CAS:" 
+Subsequently press <RETURN>. Make sure the tape is running: press <PLAY> on
+your recorder.
+Now that the program is loading, you will have time to carefully read this
+manual (from the moment you start practising you will have to put this manual
+aside because both your hands will be needed for pressing keys). Turn on the
+volume control of your television and, as soon as the program has loaded,
+MuSiX will fill your room. 
+N.B. As soon as you see the message 'Loading BOLERO.MUS, the program is
+running. Loading the Bolero is rather time-consuming. If you prefer starting
+at once either press <CTRL><STOP> or press the STOP key on the cassette
+recorder. A prompt will appear: 'Load error'. Ignore this. 
+
+
+Chapter 2 
+INTRODUCTION 
+
+MuSiX; the Renaissance of the Street-Organ 
+
+MUSIX not only enables you to compose the most wonderful music on your
+computer but it also takes away the mystery from this self-same computer. A
+musical computer is nothing but that good old street-organ. 
+The engine or sling of the street-organ is represented by the computer's
+energy and the scanners that read the cardboard by the microprocessor that 
+gets its instructions one by one from the computer. The cardboard, punched 
+with holes of various sizes, is represented by the computer's memory. 
+
+The punched holes themselves are the organ's instructions; their form and 
+place on the "cardboard" decide as to which notes are (or will be) played. 
+The holes that are in the same row (horizontally) create notes that sound at
+the same time, whereas holes that are on the same vertical position result
+in a repetition of one and the same note. A lengthened vertical hole makes for
+a lengthened sound; in other words: time is measured vertically and the pitch
+of the notes is determined horizontally. 
+
+
+Chapter 3 
+MuSiX - Its Extras as Compared to the Street-Organ.
+
+Your MuSiX offers you the chance not only to become a great composer of music
+but also to save, load and endlessly change your arrangements.
+This is the way to go about your first-hesitant-étude: 
+The "engine" can be switched on and off by pressing <STOP>. If the engine is
+running the cardboard will be played. 
+The engine speed can be controlled with the cursor keys for up and down. You
+will undoubtedly hear the difference!
+
+The two green lines in the middle of the screen represent the scanner. Each
+punched hole that finds itself in between the lines will be played. At the 
+same time this note will be represented on the stave below the "cardboard".
+Their place in the stave corresponds with their place between the green lines.
+The four positions on the extreme right of both the stave and the scanner are
+reserved for your capricious percussionist (who smiles broadly when you play
+the music fast and gets bored when it is played adagio). 
+If you stop the "engine" you will be able to make changes in your arrangement.
+By means of the cursor keys you can control the card and the notes. The left
+and right cursor keys move the little hand from left to right on the piano
+keyboard. Cursor-up moves the cardboard up, and cursor-down moves the
+cardboard down. With the help of the left and right cursor keys, you can
+choose a note. Press <INS> and a hole will be punched, straight underneath the
+little hand. Furthermore, apart from being represented, the note will be
+played. By pressing <DEL> you can remove the hole both from the cardboard and
+from the memory. 
+
+
+Chapter 4 
+HOW TO USE YOUR MuSiX 
+
+The program operates in two modes: PLAY mode and EDIT mode. In PLAY mode the
+computer plays music and in the EDIT mode you can create, i.e. insert notes,
+delete them, etc. The <STOP> key switches from one mode to the other. 
+
+USE OF KEYS IN PLAY MODE 
+When you are in PLAY mode you can use the following keys: 
+<STOP>       - change back to EDIT mode 
+cursor-up    - increase speed
+cursor-down  - decrease speed
+cursor-left  - decrease volume
+cursor-right - increase volume
+You cannot change the volume of the drumsounds. 
+So in fact, by pressing the left and right cursor keys, you can vary the
+balance between drums and tones.
+
+USE OF KEYS IN EDIT MODE 
+cursor-up   - UP in memory: card will move up. adds 1 to note counter.
+cursor-down - DOWN in memory: card will go down, subtracts 1 from counter.
+the UP and DOWN keys will repeat after a while, at the same speed as that at
+which the music is played, when <STOP> is pressed. you can adjust this speed
+in PLAY-mode. 
+cursor-left - move keyboard pointer (hand) left for selecting notes and drums. 
+cursor-right- move keyboard pointer right for selecting notes and drums.
+N.B. Above listed keys will repeat after a short while. so if you want a
+single step, press shortly.
+<STOP> switch to PLAY mode 
+<HOME> go to the beginning of the music
+<ESC>  delete melody notes 
+<BS>   delete drum notes 
+<CTRL><HOME>  delete rest of memory (from lines to end). Be careful.
+<CTRL><ESC>   delete rest of melody (from green lines to end) 
+<CTRL><BS>    delete rest of drums (from green lines to end).
+<DEL>  deletes the note the hand is pointing at on the line
+<INS>  inserts the note the hand is pointing at on the line 
+<CTRL><DEL>   delete all notes between the green lines.
+You can combine above three procedures with the up and down cursor keys. 
+A tune can also be played backwards: first press down keep it depressed and
+then, simultaneously, hit <STOP>.
+
+EXERCISE I 
+Press <HOME>. Now you are at the beginning of the music memory, the first
+lines of the cardboard. In the upper right corner of the screen you can see
+that the first note is to be inserted: the counter says 1. Above the green
+lines no notes are visible. Simultaneously press <CTRL> and <HOME>. The
+cardboard is empty now and waiting to be punched.
+- Manoeuvre the hand to the high e on the piano keyboard on the screen (see
+  also the reference card): 
+
+  [ picture of finger pressing e on keyboard ]
+
+- Press <INS>. A hole will appear between the green lines and, as long as you
+  keep <INS> depressed, the note will be heard. The note or notes between the
+  green lines can be made both visible and audible by pressing the spacebar. 
+- Try it: press the spacebar! 
+  The counter above Cas shows 2. 
+- Press the cursor-up key. The note that you just made, appears directly above
+  the green lines now (see figure 1). 
+- Press the cursor-left key. The hand is now on the dis. 
+
+  [ picture of finger pressing dis on keyboard ]
+
+  Press <INS>. The second note has been introduced now (see figure 2). 
+  These are the first two notes of Ludwig von Beethoven's "Für Elise". 
+- Press the cursor-up again. The counter shows 3 now. 
+- Press the cursor-right key shortly, so you are on e again:
+
+  [ picture of finger pressing e on keyboard ] 
+
+- Press <INS> to insert. Now proceed as above. Below you will find the exact
+  key movements and their effects. 
+- cursor-up: counter shows 4. 
+- cursor-left: the hand is on the dis. 
+
+  [ picture of finger pressing dis on keyboard ]
+  
+- Press <INS>: the note appears between the green lines.
+- cursor-up: counter shows 5.
+- cursor-down: hand on e. 
+
+  [ picture of finger pressing e on keyboard ] 
+
+- <INS>: the hole is punched.
+- cursor-up: the counter shows 6. 
+- Press the cursor-left key 5 times: the hand is on the B now. 
+
+  [ picture of finger pressing B on keyboard ] 
+
+- <INS>: the note is inserted.
+- cursor-up: the counter shows 7. 
+
+  [Figure 1 t/m 4: screenshots]
+
+- Press the cursor-right key 3 times: the hand is on d now. 
+
+  [ picture of finger pressing d on keyboard ] 
+
+- Press <INS>. 
+- cursor-up: the counter shows 8. 
+- Press cursor-left 2 times: the hand is on c.
+
+  [ picture of finger pressing c on keyboard ] 
+
+- Press <INS>. 
+- cursor-up: the counter shows 9. 
+- Press cursor-left 3 times: the hand is on A. 
+
+  [ picture of finger pressing A on keyboard ] 
+
+- Press <INS>. 
+- cursor-up: the counter shows 10.
+- Press <INS>. 
+- cursor-up: the counter shows 11.
+- Press <INS>. 
+- cursor-up: the counter shows 12.
+- Press <INS>. 
+
+Now that all notes are inserted, you can compare your achievements on the
+screen with Fig. 3. ldentical? Then press <HOME>. The counter reads 1 (Fig. 4).
+Press <STOP>. The melody will be played. If it is played too fast. then play
+it a couple of times while holding the cursor-down key: press <STOP>. The
+music is played. Press cursor-down, and <STOP> simultaneously. The music will
+be played backwards. Repeat this until the music is played slower. 
+Now do not change any more if you wish to do exercise II and III as well,
+because those use the results of this one. 
+
+
+Chapter 5 
+PREFIXED RHYTHMS 
+
+For the user's convenience a number of prefixed rhythms are supplied. You can
+use them wherever and whenever you like in order to perfect your arrangements.
+These rhythms will not be played instantly. but they will be inserted into the
+memory. Should there already be a rhythm, the two will be mixed. In order to
+avoid this. use <CTRL> and <BS> to clear previous rhythms. 
+
+        Name        Length   Crotchet    Time
+<Fl>  - Bossanova     32      8 x 4      4/4
+<F2>  - Swing         24      8 x 3      4/4
+<F3>  - Shuffle       24      4 x 6      4/4
+<F4>  - Disco         64      8 x 8      4/4
+<F5>  - Waltz         18      3 x 6      3/4
+
+<F6>  - Reggae        64      8 x 8      4/4 
+<F7>  - Funk          32     16 x 2      4/4
+<F8>  - Rock          32      8 x 4      4/4
+<F9>  - Samba         64     16 x 4      4/4
+<F10> - Bolero        72      6 x 12     4/4 
+
+Prefixed rhythms (possib1y together with the subdivision feature) are an aid 
+to get your notes rhythmically right. If your computer is equipped with a CAPS
+lamp this will light up on the first beat of the bar. Note that with the
+Reggae rhythm, there is no drum sound on the very first beat. 
+
+
+Chapter 6 
+USE OF JOYSTICK 
+
+Some of the basic control functions of the program may be performed with the
+joystick as well as with the keyboard. UP and DOWN function in the same way as
+the cursor keys up and down. LEFT and RIGHT move the hand-pointer on the
+keyboard to the desired note on the keyboard or to Cas's instruments. 
+Pressing the fire button will insert a note, or, if it is already there,
+delete it. In other words, the fire button will altemately insert and 
+delete/punch and "depunch" a hole between the green lines on the cardboard. 
+A long note can be inserted by pressing FIRE and holding the joystick UP at
+the same time. It can be deleted by pressing FIRE and holding the joystick 
+DOWN. The hand should be pointing at the note that you want to get rid of.
+On the extreme left of the screen you will find the words HOME and STOP. If
+you place the hand under HOME and press FIRE the cardboard will be reset to
+the beginning of the music, whereas placing it under STOP will enable you to
+switch between PLAY and EDIT mode (the same functions as the respective <HOME>
+and <STOP> keys). 
+When using the joystick, all keyboard functions remain available.
+
+
+Chapter 7 
+ADVANCED FEATURES: 
+
+These are all obtained as follows: press <SELECT>. keep it depressed, then
+press one of the foIlowing keys/combinations: 
+
+<L>   for loading music from disk or tape
+<S>   for saving music onto disk or tape 
+      Music win be loaded and saved trom the green lines up until the end of 
+      the file. 
+<INS> insert by making more room, shifting the contents of the memory upward.
+<DEL> delete by compressing, shifting the contents of memory downwards. 
+<HS>  the same, but backwards 
+<R>   reserve all memory. In PLAY mode, music will not stop at the last line
+      edited, but continue until <STOP> is pressed or the 'hard' end of memory
+      is reached.
+<E>   set end-of-music mark just af ter last melody note.
+<.>   set end-of-music mark at the green lines; with 
+<SELECT> and <E> the music can be restored. This comes in handy if you want to
+      set a temporary end-of-music, e.g. when you want to use the load/save
+      feature to copy parts of the music. 
+cursor-up   wind; fast forward 
+cursor-down rewind; fast backward 
+      During wind/rewind no screen output will happen but when you release the
+      cursor key, the note counter will immediately show where you are. So, to
+      keep track while winding, keep <SELECT> depressed and tap cursor-up or
+      repeatedly. 
+<Y>   synchronise stepping through memory with subdivision in effect.
+      Insertion of long notes is now possible by pressing <INS> or notes on 
+      keyboard and pressing cursor-up simultaneously. 
+<U>   Undo synchronisation. 
+<K>   Deactivate keyboard. 
+<K><B> activate keyboard 
+      upper row: black keys (1=As, 2=bes, ....\=Eis)
+      second row: white keys (Q=A, W=B, ....]=E) third and fourth row: drum
+      sounds 
+      <ESC> + 2 octaves (16ma) 
+      <TAB> + 1 octave  ( 8va) 
+      <CTRL> -1 octave  ( 8va bassa) 
+      <SHIF> -2 octaves (16ma bassa) 
+
+
+To fix an octave, i.e. to set the keyboard to a higher or lower register press
+<SELECT> together with one of above keys. <SELECT> and <CODE> will
+re-establish the middle register. <SEL><X> Transposition. You will be asked
+"TRANSPOSE:", whereupon you enter a number between -36 to +36. Press <RETURN>.
+Now all notes from the green lines down will be decreased/increased with the
+desired number of half notes. E.g. transposing from C to A: +9 or -3. One 
+octave up: +12, one octave down: -12.
+
+
+Chapter 8 
+DIVISIONS 
+
+The cardboard on the screen may be subdivided into equal parts in order to get
+a clearer view on the lengths of notes on the screen. The lines that appear
+can also serve as bar-lines. You can reset any subdivision by pressing
+<SELECT> and <0>. Any number pressed together with <SELECT> will multiply by 
+the subdivision already present. So if you press <SELECT> and 2 four times,
+you will get a division of 2 x 2 x 2 x 2=16. If you want real odd
+subdivisions, you can use <SELECT> and <+> to add 1 and <SELECT> and <-> to
+subtract 1 from division count (who told you computers are easy to handle?)
+Another example: Suppose you wish to divide the cardboard into sections of, 
+say, 24. This can be accomplished in a number of ways: press <SELECT> and 4,
+which will divide the cardboard into sections of four. Subsequently, press
+<SELECT> and 6. Now the cardboard will be divided into sections of 4 x 6 = 24.
+The same can be achieved with the keys 3 and 8 instead of 4 and 6, or 2, 3,
+and 4. 
+2 - 9: multiply subdivision by this number
+0 - make subdivision 1 (= no subdivision)
+1 - change fore/background subdivision 
+
+
+Chapter 9 
+NOTES ON LOADING AND SAVING 
+
+When you press <SELECT> together with <L> or <SELECT> together with <S> a
+prompt for the file will appear at the top of the screen. Should you press 
+<RETURN> at this moment then the operation would be cancelled. First enter a 
+filename, consisting of letters and/or digits. The maximum number of
+characters for a filename is 8. However, a name can be lengthened with 3
+characters by use of the "." (period). If you omit the period then .MUS is 
+assumed to be the extension. So either you make your own extension or the 
+program automatically adds .MUS to your filename. 
+When loading a file from tape, you can also enter an "*" (asterisk) for the
+rest of the f1lename or extension or an "?" (question mark) for any other
+character. 
+Suppose you wish to load a file called UGLY.MUS, then you could type: U?L?
+or UG*.* or ?G*.MUS or ???? or *. You should not type: ????? or U?Y or ?. 
+Use a special cassette to store your finished compositions on and another one
+for working and copying
+Try the following exercise: 
+
+EXERCISE II- LOADING AND SAVING 
+Assumed is, that you still have the music created in exercise I in memory. 
+Press <HOME>. Put a tape (WITHOUT data that you wish to keep!) in the
+recorder. Press <SELECT> together with <S>. At the top of the screen the
+message 'Save as:' appears. Enter the filename, say, ELISE. Press <RETURN>.
+The message 'Saving ELISE.MUS' appears. When it disappears, your program is 
+saved. Rewind the tape. Press <STOP> to play your melody. At the end, press
+cursor-up a couple of times until the counter reads 17. Subsequently press 
+<SELECT> together with <L>. 
+The message 'Load file:' asppears at the top of the screen. Enter an "*"
+(asterisk) and press <RETURN>. 
+
+The message 'Searching *.MUS' is given. 
+After a while the message 'Loading ELISE.MUS' should appear (if not, repeat
+the procedure. Make sure that you do not attempt to save on the tape leader). 
+When the message disappears, the music is copied into memory and becomes 
+visible on the screen. 
+Now press <HOME> and then <STOP>. 
+You have the same piece of music twice now! 
+
+
+Chapter 10 
+COPYING MUSIC 
+
+The SAVE and LOAD feature can be used ta copy parts of your music to other
+spots or even into other pieces. You do not have ta save the complete piece.
+If you wish to copy a part of the music then put the last note of the piece
+you want to copy between the green lines and press <SELECT><.>. The music
+below the green lines will disappear from the screen. Now put the first note
+of the piece you want to copy between the lines. Be careful: do not use a tape
+with data that you wish to keep! 
+Now save the piece under any name; e.g. TMP1. When saving is finished, press
+<SELECT><E> in order to have your complete composition retrieved. Manoeuvre
+the cardboard in such a way that the green lines mark the beginning of the 
+place where you want your music stored and then load it. Be precise: the music
+that will now be loaded overwrites existing music! 
+
+
+Chapter 11 
+NOTES ON RHYTHM 
+
+When you are used to conventional musical notation, you might have problems
+storing a musical score in this program. Here are some suggestions that might
+make life easier: Keep in mind, that you are programming a card for a 
+barrel-organ. If you want to program a musical score, look up the smallest
+rhythmic unit in it. Use that as 1 step (memory unit) in the program. Maybe
+you can find a prefixed rhythm that suits the measure. Anyway, you will be
+able to subdivide the cardboard according to the number of steps in a bar.
+E.g. if the smallest unit is a sixteenth note: in a 3/4 time, this means that
+you have 4 steps in a crotchet, which is 12 steps a bar. If you have a as well
+as a third of a crotchet, you must be able ta divide a quarter note in 3 as
+well as in 4, so you will need 12 steps for a crotchet. Now to subdivide the
+cardboard into crotchets press <SELECT> together with 4 to subdivide into 4,
+then once more press <SELECT> together with 3 in order to subdivide into 
+4 x 3=12. If you need a triplet, you can count out 3 times 4 steps. A
+sixteenth will be 3 steps. Now have a go at the following exercise: 
+
+EXERCISE III - PLAYING AROUND WITH RHYTHM
+Now let us get Cas excited! Press <HOME> together with any of the function
+keys, with or without <CTRL>. Holes will appear in the cardboard, just under
+Cas, the drummer. Press <STOP>. Does this rhythm fit in with the melody? If
+not, press <HOME>. Press <CTRL> together with <BS> and the rhythm will be 
+cleared.
+Now try any other function key, or put 2 rhythms on top of one another by
+pressing a function key without deleting the previous rhythm. Should no 
+rhythm be in accordance with your taste, then you are right; modern rhythms
+should not be added to classical music. Anyway, by moving the pointer off the
+piano keyboard and to Cas, you can insert drumsounds yourself, in the same way
+as you inserted tones. 
+
+
+Chapter 12
+NOTES ON USING THE KEYBOARD 
+
+As all the advanced features are sometimes slightly incompatible with the
+basic features, note the following: 
+1) When the keyboard is active <ESC> cannot be used to delete notes. 
+2) To invoke keyboard you should press <SELECT>, keep it depressed, then
+   press <K>, and subsequently <B> and only then release <SELECT>. Releasing
+   <SELECT> in between <K> and <B> will not work. 
+3) To deactivate the keyboard press <SELECT> with <K> only. This is advised
+   specifically in case of loading or saving music.
+4) Two possibilities exist to insert music using the keyboard.
+ a) in PLAY mode: 
+       i    - reserve all of memory with <SELECT><R> 
+       ii   - choose a prefixed rhythm for support, if you like. (later you
+              can delete it with <CTRL><BS>, if desired.) 
+       iii  - select desired octave 
+       iiii - press <STOP>, set desired tempo and play! Everything you play 
+              will be recorded immediately and represented on the screen. It 
+              will not be exact, unless you are a real virtuoso, but it can be
+              edited afterwards in EDIT mode. It is added to or mixed with
+              what is already there, so you can, step by step, 'dub in'
+              different voices or improvise on a previously recorded
+              accompaniment.
+ b) in EDIT mode: 
+       i    - make a handy subdivision, if you like 
+       ii   - To insert, press the note(s) you wish to insert, keep depressed,
+              and at the same time press the up or down cursor key (shortly if
+              you want just one step) 
+5) It is possible to press more than one key at the same time, but there are
+   some restrictions. Using two keys simultaneously will always be perfectly
+   safe, but the MSX hardware cannot handle more keys at the same time. you
+   might get undesired effects like the insertion of a sound or note or even
+   rhythm you did not intend to insert. Most of the time 3 or 4 keys will
+   work, but there is no guarantee.
+ 
+
+Chapter 13 
+THE FINAL EXERCISE (IV) 
+
+On the MuSiX tape, just after the Bolero, you will find a 2-voiced piece of
+Bach, known as a Bourree. Go to the beginning of the memory by pressing
+<HOME>. Clear the cardboard. Load: BOURREE. Play it. You will probably have to
+slow it down. Having listened to the entire piece, it may have struck you that
+something is missing. The piece consists of two sections. both of which are
+repeated. The second time, however, only the accompaniment is played. Now it
+is up to you to complete the score. If you are familiar with musical notation
+and the piano keyboard you will not have much trouble inserting the right
+note at the right place with the aid of Fig. 5. If you are not, consult the
+reference page (last pages of this booklet) as many times as needed. You may
+have some difficulties, but taking into account that you are not only learning
+this program's workings, but are learning musical notation as well. the
+trouble most certainly will be worth your while. 
+To insert a note, go about as follows: make sure the number on the note
+counter is right. Look up the note on the stave on the diagram. Put the hand
+on the piano keyboard on the screen to a corresponding position using left and
+right cursor keys. Press <INS>. If you press the spacebar, the note on the
+stave on the screen, right below the pointer, should appear at the same
+position as in Fig. 5. 
+The keyboard option can also be used: Be sure the keyboard feature is switched
+on by <SELECT><KB>. Look up the note on the diagram. Find the corresponding
+key on the computer keyboard below. Press it, and while keeping it depressed,
+press UP. Now the note will be inserted, and you can put in the next one. If
+you are a piano player, this way of inserting probably will appeal to you.
+Above and below the bar in Fig. 5 numbers are written. The numbers above the
+bars correspond to the part of the Bourree that is completed already. The
+numbers below the bars tell you at which note counter number the notes should
+be inserted. So you start inserting by moving the cardboard in such a way that
+the note counter above Cas's head reads 71. Move the hand to the e on the 
+piano keyboard (yes, the same one as in exercise I) and press <INS>. Two notes
+will sound together now. Move the cardboard up 1 step. The counter reads 72.
+Now move two places to the right, to the black key called "fis" and press
+<INS>. One of the rules of musical notation is that a sharp (#) or flat (b) at
+the start of a stave applies to the whole line, and to all octaves. So the
+lower F (like note 29) is also heightenend to a Fis. If you place a sharp or a
+flat in a measure, then these symbols will only affect the notes in this
+measure and on this particular height. A sharp or a flat can be undone by a
+natural, as you will find with notes 23 and 24. Starting from 81, this is what
+is denoted: B cis dis e d c B. You are advised to use the hand (keyboard
+pointer) for the first part (71 - 133) and the keyboard feature for the last
+(263 - 385). 
+
+  [Figure 5: Music score for Bourree]
+
+  [Figure 6: Keyboard reference map for keyboard mode]
+
+
+
+MuSiX quick reference 
+
+In PLAY mode 
+------------
+<STOP> - Switch between play and edit mode
+Up     - play faster
+Down   - play slower
+Right  - play louder
+Left   - play softer
+
+In EDIT mode
+------------
+Left   - move keyboard pointer left
+Right  - move keyboard pointer right
+
+Moving through memory
+---------------------
+Up           - move up
+Down         - move down
+<HOME>       - to start
+<SELECT>Up   - move up, fast
+<SELECT>Down - move down, fast
+<STOP>       - play backwards
+<SELECT>Y    - synchronise stepping
+<SELECT>U    - undo synchronisation
+<SELECT>E    - last melody note = end of memory
+<SELECT>.    - Green lines = end of memory
+<SELECT>R    - reserve all of memory
+
+Making changes
+--------------
+<INS>         - insert note pointed at
+<DEL>         - delete note pointed at
+<CTRL><DEL>   - delete all notes between lines
+<ESC>         - delete melody between lines
+<BS>          - delete drum between lines
+<CTRL><ESC>   - delete rest of melody
+<CTRL><BS>    - delete rest of drumsounds
+<CTRL><HOME>  - delete rest of music
+<SELECT><INS> - make room by shifting upwards
+<SELECT><DEL> - delete forwards by shifting
+<SELECT><BS>  - delete backwards by shifting
+<F1> to <F10> - insert prefixed rhytms
+<SELECT>X     - transpose
+
+Keyboard feature
+----------------
+<SELECT>KB      - activate keyboard feature
+<SELECT>K       - deactivate keyboard
+<SELECT><ESC>   - set keyboard 2 octaves higher
+<SELECT><TAB>   - set keyboard 1 octave higher
+<SELECT><CTRL>  - set keyboard 1 octave lower
+<SELECT><SHIFT> - set keyboard 2 octaves lower
+
+Subdivision
+-----------
+<SELECT>n (n=<2>,<3>...<9>)
+          - multiply subdivision by n.
+<SELECT>0 - undo subdivision
+<SELECT>1 - invert background colour
+<SELECT>+ - add 1 to subdivisor
+<SELECT>- - substract 1 from subdivisor
+
+Loading and saving
+------------------
+<SELECT>L - load music file from tape
+<SELECT>S - save music file to tape
+

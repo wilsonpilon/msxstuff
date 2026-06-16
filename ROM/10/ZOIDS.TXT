@@ -1,0 +1,8 @@
+ZOIDS: Chuuou Tairiku no Tatakai
+(zoids: battle at the continent's center)
+
+MSX2 MegaROM 128kb  (MegaROM type 5: ASCII 16kb)
+dumped by enjoy_maracuja
+
+run it on brmsx with: 
+brmsx zoids.rom -msx2 -roma 5

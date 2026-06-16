@@ -1,0 +1,58 @@
+FRENCH IS FUN
+
+THE PROGRAM
+When the program has loaded the main menu (selection procedure) is 
+displayed:
+1. House scene
+2. Countryside
+3. Seaside
+4. Cafe scene
+5. Street scene
+6. School scene
+7. All Picture scenes, demonstration
+8. Numbers - Counting
+9. Telling the Time
+0. To EXIT the program
+To select a particular section of the program press the appropriate
+number key. If you select one of the seven pictorial sections the 
+program will display a second menu to allow you to decide which mode 
+to run in.
+
+MODE
+1. The picture will be built up and as it does so the corresponding 
+   Englisch and French words will be displayed.
+2. Text mode. This mode will allow you to test your spelling or 
+   translation of French vocabulary. Any wrong letters typed in will 
+   be reflected in the mistakes counter, shown at the end of the 
+   section. You may also reset this counter when the scene has 
+   finished. Typing a ? during this mode will automatically display 
+   the next letter.
+3. Phrases. This is the phrases only mode which will run through a 
+   series of ten general phrases.
+4. Selection of this mode causes mode 1 and 3 to be run 
+   simultaneously.
+
+PRESSING ENTER AT ANY TIME IN THE SECTIONS WILL RETURN YOU TO THE 
+MAIN MENU.
+
+
+INSTRUCTIONS FOR USE
+The audio cassette has the following sections recorded in sequence.
+A. The vocabulary for the demonstration mode of the program .... SECTION 7
+B. The vocabulary for .......................................... SECTION 1
+C. The vocabulary for .......................................... SECTION 2
+D. The vocabulary for .......................................... SECTION 3
+E. The vocabulary for .......................................... SECTION 4
+F. The vocabulary for .......................................... SECTION 5
+G. The vocabulary for .......................................... SECTION 6
+H. The vocabulary for .......................................... SECTION 8
+I. The vocabulary for .......................................... SECTION 9
+
+At the beginning of each audio section there is a tone to allow 
+synchronisation of the tape and the program. Select which SECTION 
+of the program you require, by typing the appropriate number key, 
+and on hearing the tone select the MODE key. This will ensure the 
+synchronization of audio and program, however, different models of 
+recorders do vary slightly in running speeds and you occasionally 
+have to adjust the audio cassette positioning.
+

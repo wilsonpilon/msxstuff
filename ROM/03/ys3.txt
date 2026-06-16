@@ -1,0 +1,12 @@
+Press [SPACE] in the beginning of the game to use the user disk
+
+YS3JSC.DSK - Scenario Disk - [CTRL]+[ALT]+[1]
+YS3JUSER.DSK - User Disk - [CTRL]+[ALT]+[2]
+YS3JD1 - Disk 1 - [CTRL]+[ALT]+[3]
+YS3JD2 - Disk 2 - [CTRL]+[ALT]+[4]
+YS3JD3 - Disk 3 - [CTRL]+[ALT]+[5]
+
+To make an user disk, press [RETURN]:
+
+Remember to change the scenario disk with the user disk.
+  

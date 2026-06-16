@@ -1,0 +1,52 @@
+ALPHA BLASTER
+
+
+GAME DESCRIPTION
+
+A sixteen screen fast-action classic arcade battle between
+alien forces from the planet Alpha and a lone Federation
+battle cruiser with it's supply consort. As commander of
+the battle cruiser, your survival depends on your ability
+to out-wit and out-gun the Alpha. If you survive the first
+two stages of the battle, you will be forced to negotiate
+an asteroid belt in order to reach your supply ship. You
+must then manoeuvre your craft into position for docking,
+in order to take on fresh supplies of ammunition and fuel.
+Once the supplies are on board, you are ready to do battle
+once more but each time you return to the fight you will
+find the Alpha even more tenacious.
+
+
+LOADING INSTRUCTIONS
+
+Insert cassette into recorder and type: - RUN"CAS:"
+Press RETURN key then press PLAY on recorder.
+N.B. The program has been recorded on both sides of the
+tape at different volume levels. Select the side which
+gives best loading results with your recorder.
+
+
+GAME CONTROLS
+
+Your craft can be controlled by either joystick or left and
+right cursor keys. Use fire button or Space Bar to fire.
+Press P to pause game. Press P again to continue.
+
+
+POINTS TABLE
+Each alien destroyed (1st wave) .......... 100 points
+Each alien destroyed (2st wave) .......... 200 points
+Fuelballs destroyed (in asteroid belt) ... 100 + extra fuel
+Docking with supply ship ................. Mystery points
+
+
+NOTES
+
+Indiscriminate firing of your laser can cause it to become
+overheated with the result that you will be defenceless
+for a short time. So choose your targets ans shoot true.
+Each game starts with 3 lives. You loose a life each time
+you are hit. If you run out of fuel all lives are lost.
+
+
+

@@ -1,0 +1,35 @@
+6 Computer Hits
+
+1. BIAN JACKS SUPERSTAR   ---   RUN"CAS:"
+   Sport Simulation/Martech
+   Try and beat Brian Jacks in a series of 8 physically
+   demanding tests.
+   
+2. DISC WARRIOR   ---   RUN"CAS:"
+   Arcade Adventure/Alligata
+   Travel the 3-D computer complex alone on constant
+   alert for android guards and canine robots.
+
+3. HUSTLER   ---  BLOAD"CAS:",R
+   Sports Simulation/Bubblebus
+   Play pool. A perfect blend of six pool games. With
+   superb graphics and sound.
+
+4. CHUCKIE EGG   ---   BLOAD"CAS:",R
+   Arcade/AnF
+   Collect 12 eggs and corn, but watchout for the nasty
+   looking ducklings.
+
+5. LES FLICS   ---   BLOAD"pss",R
+   Arcade/PSS
+   Wanna buy a diamond? A great big one? I've been
+   through Locksmiths, Bakers and Banks and even the
+   sewers to get it.
+
+6. SPECIAL OPERATIONS   ---   RUN"CAS:"
+   Adventure/Strategy War Game/Lothlorien
+   A great adventure/strategy game incorporating features
+   not commonly found in adventures. 18 different maps, 7
+   levels of play.
+
+

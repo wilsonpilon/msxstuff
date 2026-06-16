@@ -1,0 +1,105 @@
+                        C&R SOFTWARE MSX
+                                                        FT80
+               SCREENDUMP MET GRITINTEN EN SPRITES      VW0030 
+
+
+Laad het programma bij een bestaand programma met Bload"CAS:",R
+Tijdens het draaien van Uw programma zijn dan de volgende 
+opties beschikbaar:
+Toets [ESC] : afdruk in kleinformaat (1:1) zwart/wit
+Toets [TAB] : afdruk in grootformaat (4:1) grijstinten
+
+KLEIN FORMAAT: Deze optie geeft een snelle afdruk van het 
+grafisch scherm (SCREEN 2). De ACHTERGRONDKLEUR wordt als WIT
+weergegeven, alle andere kleuren worden als ZWART weergegeven.
+
+GROOT FORMAAT: Deze optie maakt een vergrote afdruk van het
+grafisch scherm (schaal 4:1). De 16 MSX-kleuren worden als
+grijspatronen weergegeven. (Zie de kleurtabel) Ook de achter-
+grondkleur wordt als kleur weergegeven. (Zie OPMERKING #1)
+
+SPRITES: Standaard worden alle sprites die op het scherm
+zichtbaar zijn mee afgedrukt. (Zie OPMERKING #2)
+--------------------------------------------------------------
+OPMERKING #1: Bij het maken van tekeningen voor de printer is
+het raadzaam om spaarzaam met kleuren te werken. Het vergt
+enig experimenteren met kleur om het beste resultaat te ver-
+krijgen. Het wordt aanbevolen om WIT of een andere lichte
+kleur als achtergrond te kiezen, dit voor duidelijkheid van de
+tekening en voor de levensduur van het printerlint.
+
+OPMERKING #2: In bepaalde gevallen kan het wenselijk zijn dat
+de sprites NIET mee afgedrukt worden, zoals bij tekenprogram-
+ma's. (potloodjes etc.) Toets in na het laden: Poke &HC006,0
+voor sprites UIT. (terug inschakelen met POKE &HC006,1)
+
+OPMERKING #3: Voor sommige printers is het mogelijk de breedte
+van de afdruk te wijzigen.
+Verbrede afdruk in groot formaat:
+In:  DEFUSR=&HC000:A=USR(0)   Uit:  DEFUSR=&HC008:A=USR(0)
+Verdichte afdruk in klein formaat:
+In:  DEFUSR=&HC010:A=USR(0)   Uit:  DEFUSR=&HC018:A=USR(0)
+LET OP: Bij de verbrede afdruk in groot formaat worden Links
+en Rechts een kolom van 8 pixels breed weggelaten in verband
+met de maximale afdrukbreedte van de printer.
+
+OPMERKING #4: Om met een oud inktlint toch een mooi resultaat
+te verkrijgen kan in geheugenplaats &hC005 het aantal
+herhalingen gepoked worden.
+Bijv. POKE &hC005,1 zal de tekening 2x over elkaar heen af-
+drukken.
+
+OPMERKING #5: Het screendumpprogramma blijft intact na: CLOAD,
+LOAD en NEW. Alleen een RESET vernietigt het programma.
+
+
+
+                        C&R SOFTWARE MSX
+
+         RICHTLIJNEN VOOR GEBRUIK BIJ TEKEN-PROGRAMMA'S
+
+Het screendump programma is ontworpen voor probleemloos
+gebruik bij vele soorten programma's. Voorwaarde hiervoor is
+dat het benodigde geheugengebied, van &HC000 t/m &HC580 niet
+reeds door het andere programma gebruikt wordt en dat de ESC
+en TAB toets vrij zijn onder SCREEN 2.
+
+In de praktijk geven Basicprogramma's tot 16K die een normaal
+gebruik van variabelen maken geen problemen. Ook machinetaal
+programma's of machinetaalroutines hoeven geen problemen te
+geven als ze geen geheugen conflicten veroorzaken.
+
+Enige voorbeelden:
+
+Het programma "EDDY2" (cartridge) geeft geen problemen.
+Tekeningen groter dan 5000 stappen eerst saven.
+
+Teken programma "VSTEKE" reserveert veel geheugenruimte d.m.v
+DIM-instructies. Verander in regel 100 de waardes 500 in 
+400. (of in 300 bij gebruik van een diskdrive.)
+
+Tekenprogramma "MSX-SIGN" copieert het schermgeheugen (12K)
+naar het werkgeheugen. Daardoor blijft er geen ruimte vrij
+voor het screendumpprogramma. Ook met programma's die een
+schermbeeld laden vanaf cassette kan dit probleem optreden,
+afhankelijk van de gebruikte methode.
+
+In veel tekenprogramma's wordt een sprite als cursor
+gebruikt. (potlood etc.) Schakel dan de sprite optie uit
+na het laden d.m.v POKE &HC006,0 (zie ook gebruiksaanwijzing)
+
+De volgorde bij het laden van de programma's is meestal niet
+belangrijk. Bij twijfel kan het screendumpprogramma het beste
+als laatste geladen worden.
+
+De snelheid wordt in hoofdzaak bepaald door de gebruikte
+printer maar kan eventueel iets opgevoerd worden door de
+Sprite optie uit te schakelen. (zie gebruiks aanwijzing).
+
+Het printen kan onderbroken worden door CTRL/STOP kort in te
+drukken.
+
+Saven naar Disk   : Eerst laden met BLOAD"CAS:" (zonder,R)
+daarna saven met  : BSAVE"C&RMSX",&HC000,&HC700,&HC00C
+Laden van Disk met: BLOAD"C&RMSX",R
+

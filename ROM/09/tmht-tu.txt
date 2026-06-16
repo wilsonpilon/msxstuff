@@ -1,0 +1,21 @@
+About Teenage Mutant Hero Turtles for turboR
+
+Teenage Mutant Hero Turtles is the MSX game which
+normally requires complex password input (see
+http://www.msxnet.org/gtinter/tmht-pa.htm for
+passwords), and known to fail to run on turboR
+machines.
+
+turtles.rom ... Rom file cracked by JAM. Password
+input is not necessary, and can run on turboRs.
+loadrom.com ... MSX-DOS utility (by Trunks) necessary
+to run .rom files on real MSX.
+rom-sort.dsc ... Configuration file which supplies
+information to loadrom.com.
+
+You can run turtles.rom on MSX emulators.
+Or, copy all three files plus MSX-DOS files to a 720KB
+diskette, boot the diskette on an MSX with large RAM (128KB+),
+then type in LOADROM and press return. Choose
+"Teenage Mutant Hero Turtles" and press return.
+

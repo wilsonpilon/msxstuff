@@ -1,0 +1,530 @@
+	30 MSX Hits
+
+
+Loading instructions cassette:  RUN"CAS:" <RETURN>
+
+
+
+Tape 1   A: Star Fighter, Speedboat Racer
+         B: Oh Shit!, The Heist, Spy Story
+------------------------------------------------------------------------
+Star Fighter
+------------
+Controls: Use either cursor keys or joystick to control Cruise Shuttle
+manoeuvring sights (see: Meteorites), flashing on-screen cursors
+(Galactic chart), entry of digits (Secret code) and dummy directing
+ (Grid): Left = left   Right = right
+         Up   = up     Down  = down
+
+The Action
+Galactic chart: Move flashing cursor to desired position and press fire
+to engage warp. The coloured diamond-shaped figure indicates a refueling
+depot. Squares indicate enemy space stations.
+Warp: Hold the vibrating sight above the static computer navigator in
+order to warp to the correct quadrant in space.
+Refueling: Once at the refueling station, automatic computer control
+takes over and gives you a little breather.
+Meteorites: Fire your laser (fire button or space bar), using cursor
+keys or joystick to aim your sight. If a meteorite hits your vessel your
+defence shield is weakened. Should your shield be nulified completely
+and any new impact is sustained, Starfighter will be terminated, ending
+your mission.
+Fighters: Wipe out the Urnuth fighters in the same way you blasted the
+meteorites. But be careful: they fire back!
+Secret code: Decipher the encrypted sequence of digits to crack the
+code. Mode your cursor keys or joystick up or down to increment or
+decrement digits, and left or right for next digit. The higher your
+CRO-display is, the closer to the correct entry code you are. When
+countdown reaches zero, one of the three sabotage crew is lost. If at
+any time all members are lost, your quest is over.
+
+
+
+Speedboat Racer
+---------------
+Object of the game: Cover the section, which is outlined with 2 buoys on
+a lake, as fast as you can. Pay attention to the strength and direction
+of the wind, you can read this on the "WIND" indicator; when you sail at
+high speed you take the risk of flying up in the air. Also reckon with
+the wash of the waves, visible on the "WATER" indicator; adjust your
+speed if necessary. Avoid crashes with competitors.
+Joystick/cursor keys: Left = left, Right = right, Upwards = accelerate,
+Downwards = brake.
+
+
+
+Oh Shit!
+--------
+Controls: Joystick controls correspond with cursor key controls.
+Left = left, Right = right, Up = up, Down = down.
+The one and only arcade game classic. Run, run run... for the ghosts.
+Eat, eat, eat... the vitamins you find in the labyrinth, as you gobble
+your way through the maze faster, faster and... OH SHIT!!! Music and
+speech add to the enjoyment!
+
+
+
+The Heist
+---------
+Controls: During the game you can make use of the following keys:
+<M> music on/off
+<S> sound on/off
+<R> start game again
+To get onto the escalator press the cursor "right" and "up" 
+simultaneously. By using the elevator you can also change from one floor
+to the next. Place Graham in the elevator and press <1>, <2> or <3>.
+
+
+
+Spy Story
+---------
+Controls: Determine the direction you want to go, using the following
+keys:
+<N> = North
+<E> = East
+<S> = South
+<W> = West
+In addition the program will respond to the following commands:
+INV  = Inventory, to see which objects you are carrying with you.
+LOOK = To take a close look at various situations.
+HELP = Will provide you with helpful hints.
+STOP = to quit or to pause.
+After you enter "STOP", the program will ask you if you want to save the
+adventure so far: <Y> = YES
+Hit any other key, if you do not want to save.
+NOTE: Do not forget to give <RETURN> after each text or command you
+entered.
+
+
+
+Tape 2   A: Beach Head, MuSiX
+         B: Skooter, Mazes Unlimited, Hard Boiled
+------------------------------------------------------------------------
+Beach Head
+----------
+Option Menu: Options can be selected only by using space-bar and cursor
+keys. After "commence battle" type your name and press <RETURN>.
+Controls: Joystick controls correspond with cursorkeys. 
+Firebutton/space-bar = fire
+
+The Game
+Aerial Reconnaissance: The overview shows a clear image of the
+battlefield. Top left: the secret passage, flashing white. Top right:
+the main channel. If we move to engage the enemy head-on, move the fleet
+-the four white dots at the top- directly through the main channel, in
+the direction of the flashing beach. Howeverm we can also opt for a
+surprise attack: manoeuver your fleet to the secret passage. The
+advantage of this tactic is that the enemy will be caught off-guard. The
+disadvantage: the passage is studded with mines and automatically
+launched torpedoes.
+
+
+
+MuSiX
+-----
+Play
+<STOP> = Switch between play and edit mode
+Up     = play faster
+Down   = play slower
+Right  = play louder
+Left   = play softer
+
+Edit
+Left   = move keyboard pointer left
+Right  = move keyboard pointer right
+
+Moving through Memory
+Up           = move up
+Down         = move down
+<HOME>       = to start
+<SELECT>Up   = move up, fast
+<SELECT>Down = move down, fast
+<STOP>       = play backwards
+<SELECT>Y    = synchronise stepping
+<SELECT>U    = undo synchronisation
+<SELECT>E    = last melody note = end of memory
+<SELECT>.    = Green lines = end of memory
+<SELECT>R    = reserve all of memory
+
+Making changes
+<INS>         = insert note pointed at
+<DEL>         = delete note pointed at
+<CTRL><DEL>   = delete all notes between lines
+<ESC>         = delete melody between lines
+<BS>          = delete drum between lines
+<CTRL><ESC>   = delete rest of melody
+<CTRL><BS>    = delete rest of drumsounds
+<CTRL><HOME>  = delete rest of music
+<SELECT><INS> = make room by shifting upwards
+<SELECT><DEL> = delete forwards by shifting
+<SELECT><BS>  = delete backwards by shifting
+<F1> to <F10> = insert prefixed rhytms
+<SELECT>X     = transpose
+
+Keyboard feature
+<SELECT>KB      = activate keyboard feature
+<SELECT>K       = deactivate keyboard
+<SELECT><ESC>   = set keyboard 2 octaves higher
+<SELECT><TAB>   = set keyboard 1 octave higher
+<SELECT><CTRL>  = set keyboard 1 octave lower
+<SELECT><SHIFT> = set keyboard 2 octaves lower
+
+Subdivision
+<SELECT>n (n=<2>,<3>...<9>)
+          = multiply subdivision by n.
+<SELECT>0 = undo subdivision
+<SELECT>1 = invert background colour
+<SELECT>+ = add 1 to subdivisor
+<SELECT>- = substract 1 from subdivisor
+
+Loading and saving
+<SELECT>L = load music file from tape
+<SELECT>S = save music file to tape
+
+
+
+Mazes Unlimited
+---------------
+Controls: Cursor keys correspond with joystick movements. Left = left,
+Right = right, Up = up, Down = down.
+To fire use either fire button or space bar.
+
+
+
+Skooter
+-------
+Control: Joystick movements correspond to control with the cursor keys.
+Fire button/space bar = blast bricks.
+<F1> = Music on/off
+<F2> = Sound effects on/off
+<F3> = Pause
+<F4> = Unpause
+<F5> = Self-destruct
+Use the bricks also to close your unpleasant and persevering pursuers
+in. At least until you find the heart to destry them. The heart is
+hidden in certain bricks. Green bricks can be blasted.
+
+
+
+Hard Boiled
+-----------
+Object of the game: the world of HardBoiled consists of a planet surface
+and 4 sectors: alpha, beta, gamma and delta. Object: to reach the end of
+the long corridor in sector delta, where a surprise is waiting for you;
+each sector consists of 50 rooms. There are a number of doors between
+the rooms. Look for keys with which you can open the doors: behind each
+door there will be an object which can help you in the maze (e.g. a new
+key). There is a symbol on the keys; you can only use the keys at doors
+with the same symbol; you can only reach the admittance of a new sector
+by way of the planet surface, you must make use of the key card, where
+you are looking for in each sector; there are many enemies in all
+sectors. Destroy them or avoid them.
+Objects: you can carry only 2 objects at one time; as soon as you pick
+up a third one you will lose one of the two you had. Note: not all
+objects are usefull: by pressing key O you can get information about the
+object.
+Joystick/cursor keys: left = left; right = right; upwards = upwards;
+downwards = pick up object/float. To go down: set free the control;
+firebutton/spacebar = fire.
+Keys: 1=use object 1; 2=use object 2; O=information about the object you
+picked up and the ones you carry. By pressing the <P> key, the game will
+continue.
+
+
+
+Tape 3   A: Break In, Mastervoice, Chopper 1
+         B: Pico Pico, Sorcery, Traingame
+------------------------------------------------------------------------
+Break In
+--------
+Controls: joystick/cursorkeys & space bar.
+Bonus pills appear and give bonusses when the bat is moved over the
+pills. Results can be:
+    - a shooting Bat
+    - an enlarged Bat
+    - a sticky Bat (release ball with firebutton/spacebar)
+    - 2 extra balls
+    - extra life
+When a ball hits the alarm-chime, the alarm goes off; and the Private
+Eye will start to hunt you down. Points are collected by hitting bricks
+and converted into money when you hit a credit-card.
+
+
+
+Mastervoice
+-----------
+Sound sources: Microphone, connected via amplifier to cassette in port
+               on your computer.
+               Cassetteplayer, connected to the cassette port on your
+               computer.
+Control: Joystick
+
+Upon loading, the control MENU will appear:
+
+MENU   RECORD         JOYSTICK UP/DOWN
+       CREATE MVFILE  AND THEN RIGHT
+       PLAY BACK      TO EXECUTE COMMAND
+
+RECORD:
+Stores sounds to user RAM (32K max.). Sounds can be stored as blocks. A
+RECORDing start when the firebutton is pressed and end when the
+firebutton is released. After USER RAM area is filled-up the program
+returns to the MENU.
+
+CREATE MVFILE:
+This option stores digital data to tape; select the option, press
+record/play on the tape player, then press the fire button. Escape from
+this option by moving joystick to the left.
+
+PLAY BACK:
+Play in USER RAM stored SOUND DATA.
+To use MVFiles into user's Basic programs:
+MVFile data is loaded into BASIC program by using BLOAD"CAS:",R
+Once a file is loaded, it can be played by executing the basic program
+line A=USR(n%), where N is a numeric value indicating the Nth recorded
+Data Block. 0 for N plays all blocks.
+
+
+
+Chopper 1
+---------
+Controls: Joystick/Cursorkeys & Space Bar to go Left/Right or Up/Down
+Firebutton/spacebar+Up   = increase speed in northerly direction
+Firebutton/spacebar+Down = increase speed in southerly direction
+Firebutton/spacebar      = fire guns
+
+
+
+Pico Pico
+---------
+Controls: Joystick/Cursorkeys & Space Bar
+          SELECT = Filler Block
+Build a place for your princess by killing the giant Spiders and moving
+blocks around. Put extra blocks in by using SELECT, but don't forget the
+entrance.
+
+
+
+Sorcery
+-------
+Game controls:   keyboard  joystick  action
+                 Z         left      move left
+                 X         right     move right
+                 enter     up        rise
+                 shift     fire      use/swap object & spell's
+
+to pause, press <DEL>, to restart press fire/space bar.
+
+
+
+The Traingame
+-------------
+DUTCH fast Passenger Train simulator; SPRINTER 2.
+Controls: joystick/cursorkeys & keyboard
+
+DRIVE/BRAKE CONTROLLER:
+handle forward:      ok to change speed
+handle middle pos.:  neutral brak/speedsettings; ok to change 
+                     speedsetting.
+handle 1/2 back:     brakes on lightly
+handle back full:    full brake pressure
+
+SPEED SECTOR:
+Push keyboardbuttons 0 to 9 to select speedsetting; 4=40 km/h;
+0=100 km/h; 1 = 110 km/h, etc...
+
+CENTRAL PASSENGER DOORS CONTROL:
+To close doors, push <D>
+To open doors, push <O>
+
+AUTOMATIC TRAIN CONTROL (ATC):
+Dictates desired save driving status.
+ATC is indicated by bells and chimes soundings.
+green      ok to drive 120 km/h
+green+8    ok to drive 80 km/h
+green+6    ok to drive 60 km/h
+yellow     slow down to 40 km/h, next signal may be red;
+yellow+8   slow down to 80 km/h, next signal may be red;
+yellow+6   slow down to 60 km/h, next signal may be red;
+red        full stop
+
+ATTENTION SIGNAL < 40 km/h:
+Below 40 km/h with drive controller in neutral or forward position, a
+signal will sound. Push <Q> to acknowledge.
+
+*STOPPING AT STATIONS:
+Bring the Train to a full stop as close as possible to the red signal at
+the end of the platform.
+
+
+
+Tape 4   A: Boulderdash 1, Life In The Fast Lane
+         B: Robot Wars, Police Academy 1, Miner Machine
+------------------------------------------------------------------------
+Boulderdash 1
+-------------
+Collect as many jewels as you possibly can as you move from one cave to
+another, and always avoid and remove the threat of danger and obstacles.
+Rockford can  move through 16 caves (A to P) and each cave has 5 levels.
+You can start with 3 lives but each cave succesfully conquered will give
+an extra life.
+Controls: Choose the number of joysticks with <J>, and the number of
+players with <P>. Choose a cave (A,B,E,I or M) with left/right. Choose a
+level by moving joystick up/down. Confirm choice and start game by 
+pressing fire-button/spacebar. Use the fire-button and joystick or
+spacebar and cursorkeys to make Rockford remove a rock or take a jewel
+lying under a rock.
+
+
+
+Life In The Fast Lane
+---------------------
+Race on the road, through underwater passages and space tunnels as fast
+as you can. Avoid all obstacles on your way, destroy enemies and collect
+bonus to obtain your highest possible score. Left = left; right = right;
+upwards = accelerate; downwards = brake; firebutton/spacebar = jump. If
+you fall into a black hole you will arrive at an Underwater passage. Hit
+the white bonus balls in the Space tunnel. Avoid bats and projectiles
+they fire off or shoot them. Firebutton/spacebar = shoot. If FIRE and
+JUMP is 0 you cannot shoot or jump anymore.
+
+
+
+Robot Wars
+----------
+Shoot down the droids. Using a joystick simply point in the direction
+you want to go. To move diagonally using the keyboard, you have to hold
+down two cursorkeys simultaneously. F.i., if you want to move to your
+upper right, press both <UP> and <RIGHT>. To fire use either firebutton
+or spacebar.
+
+
+
+Police Academy 1
+----------------
+Controls: left   = to move gun left
+          right  = to move gun right
+          up     = to move gun up
+          down   = to move gun down
+Use either firebutton or spacebar to fire. Aim your six-shooter and
+blast the bad guys into oblivion! But be careful not to waste the
+innocent kids smiling at the Arm of the Law: the higher ups would not
+quite agree, costing you points and status.
+
+
+
+Miner Machine
+-------------
+Objective: collect all the square lumps of gold before your time (shown
+in the upper right corner of the screen) runs out. Watch out for the
+bats!
+Controls: After loading the game press the firing button or space bar to
+start play. The question 'which cave?' then appears on the screen. Press
+key <1> or <2> to start play in an existing cave, or key <0> if you wish
+to create a screen yourself. Joystick/cursorkeys: left = left; right =
+right; up = up; down = down; <STOP> = suicide; <ESC> = pause.
+
+
+
+Tape 5   A: Spy Versus Spy, Jet Bomber
+         B: Boulderdash 2, Polar Star, Happy Fret
+------------------------------------------------------------------------
+Spy Versus Spy
+--------------
+Controls: Cursorkeys/joystick: left/right/up/down/
+<F5> = Return to optionscreen.
+
+
+
+Jet Bomber
+----------
+Controls: Cursorkeys/Joystick left/right and up/down.
+Press firebutton or spacebar to drop bombs or to launch projectiles.
+
+
+
+Boulderdash 2
+-------------
+Controls: Cursorkeys/Joystick left/right and up/down
+Press firebutton or spacebar to push, dig or take without moving your
+position.
+<ESC>     = To commit suicide.
+<RETURN>  = To pause. To go on; press <RETURN>.
+<P>       = change number of players
+<J>       = to alter number of joysticks.
+Goal      = To collect as many jewels to open the secret exit for the
+            next cave.
+Ennemies  = Falling boulder, the firefly, the butterfly and the amoeba.
+
+
+
+Polar Star
+----------
+Controls: Cursorkeys/Joystick left/right and up/down. Press firebutton
+or spacebar to fire.
+
+
+
+Happy Fret
+----------
+Controls: Cursorkeys/Joystick left/right and up/down
+Press firebutton or spacebar to jump.
+Functionkeys: Confirm you choice with <RETURN>
+      F1 Pick up tools
+      F2 Use tools
+      F3 Open doors
+      F4 Overview aquired objects
+      F5 Save or Load (S) or (L)
+Hint: It is absolutely necessary to find out the exact location and
+content of the secret password.
+
+
+
+Tape 6   A: Sky Vision, Boardello
+         B: Oil's Well, Confused?
+------------------------------------------------------------------------
+Sky Vision
+----------
+Controls: left = left, right = right, firebutton/spacebar = fire
+Hall of Fame: Use cursor keys left/right to select letter, firebutton or
+spacebar to enter letter. All positions must be filled to continue.
+
+
+
+Boardello
+---------
+The well-known board game of Othello on your computer. After loading
+select from the option screen the desired options.
+To play: move the piece from the bottom of the screen to the desired
+position with the cursor or the joystick. Press firebutton/spacebar to
+release. Pressing <M> will always return you to the main menu.
+
+
+
+Oil's Well
+----------
+Drill for oil, but avoid dangerous objects like land mines.
+Controls: joystick left = left etc. Firebutton = retract. Select playing
+speed.
+   = Drill Bit: get 3 to start with, one extra for every 10.000 points.
+     life span of 990 ticks.
+   = Oil Pellets: Get them all to advance to the next field.
+   = Oozies: Will destroy your pipe, but your drill bit will get them.
+   = Petromins: Slow down the oozies.
+   = Super-rich oil pellets.
+
+
+
+Confused?
+---------
+Solve the puzzle. Pick up a piece by putting the cursor arrow on top of
+it and hitting the spacebar. Move the cursor to where you think the
+piece should be and hit space bar again.
+Options: First put your cursor on the desired option and hit spacebar to
+select or activate. Choose the number of pieces, which puzzle (file) and
+which competition mode. Then activate play.
+During the game: in invert mode selecting a piece will invert the
+movement of that piece.
+
+
+
