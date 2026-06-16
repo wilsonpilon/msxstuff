@@ -1,0 +1,53 @@
+BMP Saver "BMPS.COM"
+
+Version 1.11 - Apr 94
+Copyright (c) 1994, by Kawasaki Yuusuke. All rights reserved.
+
+
+Description:
+
+BMPS.COM converts MSX's BSAVE format graphic file to BMP format, 
+often used as Windows' desktop patern and so no. BMPS.COM can 
+handle following formats of graphic file:
+
+    .SC5     SCREEN 5 BSAVE FILE (256*212,with pallet)
+    .SC7     SCREEN 7 BSAVE FILE (512*212,with pallet)
+    .SC8     SCREEN 8 BSAVE FILE (256*212,no pallet)
+    .SCA/SCB SCREEN 10/11 BSAVE FILE (256*212,with pallet)
+    .SCC     SCREEN 12 BSAVE FILE (256*212,no pallet)
+    .SC0+SC1 SCREEN 7 INTERLACED BSAVE FILE (512*424,with pallet)
+
+BMPS.COM would load pallet table in .SC? or by .PL?.
+
+
+System Requirements:
+
+BMPS.COM requires MSX-DOS(1) or later. And Displaying the graphic 
+files, ofcorse MSX must be able to use the display mode.
+
+
+Usage:
+
+A>BMPS [loadfile [writedrive:]] [/X]
+
+     loadfile - BSAVE filename, or wild-cards, to convert.
+  writedrive: - Drive name to put BMP file created.
+           /X - Auto convertion without any key inputs.
+
+
+conveted BMP file's format:
+
+         Source mode  Pixels   Colors     Filesize
+            SCREEN 5  256*212  pallet*16    27,254
+            SCREEN 7  512*424  pallet*16   108,662
+            SCREEN 8  256*212  pallet*256   55,350
+        SCREEN 10/11  256*212  16million   162,870
+           SCREEN 12  256*212  16million   162,870
+ SCREEN 7 Interlaced  512*424  pallet*16   108,662
+
+
+Contacting the author:
+
+Send bug report, suggestion of new features or other to:
+
+E-mail: ariakira@creator.club.or.jp (Kawasaki Yuusuke)

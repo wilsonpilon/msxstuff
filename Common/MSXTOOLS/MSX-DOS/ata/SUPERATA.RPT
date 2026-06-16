@@ -1,0 +1,737 @@
+Project Information                             c:\work\orcad\ata\superata.rpt
+
+MAX+plus II Compiler Report File
+Version 7.2 2/21/97
+Compiled: 05/31/97 23:46:31
+
+Copyright (C) 1991-1997 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was successful
+
+
+Untitled
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+superata  EPM7032LC44-15   13       7        16     32      1           100%
+
+User Pins:                 12       6        16 
+
+
+
+Project Information                             c:\work\orcad\ata\superata.rpt
+
+** PROJECT COMPILATION MESSAGES **
+
+Warning: GLOBAL primitive on node 'wr' feeds logic -- non-global signal usage may result
+Info: Trying to find new partition/fit after discarding assignments as requested with the Partitioner/Fitter Status dialog box
+
+
+Project Information                             c:\work\orcad\ata\superata.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'wr' chosen for auto global Output Enable
+
+
+Project Information                             c:\work\orcad\ata\superata.rpt
+
+** MULTIPLE PIN CONNECTIONS **
+
+
+For node name '~206~2' (Same as node '~PIN001')
+For node name '~206~1' (Same as node '~PIN002')
+Connect: {superata@2,   superata@4}
+
+
+Project Information                             c:\work\orcad\ata\superata.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+superata@40                       a0
+superata@41                       a1
+superata@43                       a2
+superata@1                        a3
+superata@5                        a4
+superata@6                        a5
+superata@7                        a6
+superata@8                        a7
+superata@13      superata@14      busdir
+superata@19                       b0
+superata@20                       b1
+superata@21                       b2
+superata@24                       b3
+superata@25                       b4
+superata@26                       b5
+superata@27                       b6
+superata@28                       b7
+superata@14      superata@9       csxfx
+superata@16      superata@18      cs1fx
+superata@17      superata@11      cs3fx
+superata@39                       d0
+superata@38                       d1
+superata@37                       d2
+superata@36                       d3
+superata@34                       d4
+superata@33                       d5
+superata@32                       d6
+superata@31                       d7
+superata@9       superata@29      iorq
+superata@18      superata@12      latchon
+superata@29      superata@17      oe245
+superata@2                        ~PIN001
+superata@4                        ~PIN002
+superata@11      superata@13      rd
+superata@12      superata@16      slotsl
+superata@44                       wr
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+***** Logic for device 'superata' compiled without errors.
+
+
+
+
+Device: EPM7032LC44-15
+Turbo: ON
+Security: OFF
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** ERROR SUMMARY **
+
+Info: Chip 'superata' in device 'EPM7032LC44-15' has less than 10% of logic cells available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+Info: Chip 'superata' in device 'EPM7032LC44-15' has less than 20% of pins available for future logic changes -- if your project is likely to change, Altera recommends using a larger device
+                   ~     ~                    
+                   P     P                    
+                   I     I                    
+                   N     N                    
+                   0  V  0           G        
+             a  a  0  C  0  a  w  a  N  a  a  
+             5  4  2  C  1  3  r  2  D  1  0  
+           -----------------------------------_ 
+         /   6  5  4  3  2  1 44 43 42 41 40   | 
+     a6 |  7                                39 | d0 
+     a7 |  8                                38 | d1 
+  csxfx |  9                                37 | d2 
+    GND | 10                                36 | d3 
+  cs3fx | 11                                35 | VCC 
+latchon | 12         EPM7032LC44-15         34 | d4 
+     rd | 13                                33 | d5 
+ busdir | 14                                32 | d6 
+    VCC | 15                                31 | d7 
+ slotsl | 16                                30 | GND 
+  oe245 | 17                                29 | iorq 
+        |_  18 19 20 21 22 23 24 25 26 27 28  _| 
+          ------------------------------------ 
+             c  b  b  b  G  V  b  b  b  b  b  
+             s  0  1  2  N  C  3  4  5  6  7  
+             1           D  C                 
+             f                                
+             x                                
+                                              
+                                              
+
+
+N.C. = Not Connected.
+VCC = Dedicated power pin, which MUST be connected to VCC.
+GND = Dedicated ground pin or unused dedicated input, which MUST be connected to GND.
+RESERVED = Unused I/O pin, which MUST be left unconnected.
+
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16    16/16(100%)  16/16(100%)   1/16(  6%)  24/36( 66%) 
+B:    LC17 - LC32    16/16(100%)  16/16(100%)   0/16(  0%)  19/36( 52%) 
+
+
+Total dedicated input pins used:                 4/4      (100%)
+Total I/O pins used:                            32/32     (100%)
+Total logic cells used:                         32/32     (100%)
+Total shareable expanders used:                  1/32     (  3%)
+Total Turbo logic cells used:                   32/32     (100%)
+Total shareable expanders not available (n/a):   0/32     (  0%)
+Average fan-in:                                  3.28
+Total fan-in:                                   105
+
+Total input pins required:                      13
+Total output pins required:                      7
+Total bidirectional pins required:              16
+Total logic cells required:                     32
+Total flipflops required:                       10
+Total pterms required:                          56
+Total logic cells lending parallel expanders:    0
+Total shareable expanders in database:           1
+
+Synthesized logic cells:                         0/  32   (  0%)
+
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  40   (18)  (B)      INPUT              0      0   0    0    0    1    0  a0
+  41   (17)  (B)      INPUT              0      0   0    0    0    1    0  a1
+  43      -   -       INPUT              0      0   0    0    0    1    0  a2
+   1      -   -       INPUT              0      0   0    0    0    2    0  a3
+   5    (2)  (A)      INPUT              0      0   0    0    0    3    0  a4
+   6    (3)  (A)      INPUT              0      0   0    0    0    3    0  a5
+   7    (4)  (A)      INPUT              0      0   0    0    0    3    0  a6
+   8    (5)  (A)      INPUT              0      0   0    0    0    3    0  a7
+  19     14    A      BIDIR              0      0   0    0    3    1    0  b0
+  20     15    A      BIDIR              0      0   0    0    3    1    0  b1
+  21     16    A      BIDIR              0      0   0    0    3    1    0  b2
+  24     32    B      BIDIR              0      0   0    0    3    1    0  b3
+  25     31    B      BIDIR              0      0   0    0    3    1    0  b4
+  26     30    B      BIDIR              0      0   0    0    3    1    0  b5
+  27     29    B      BIDIR              0      0   0    0    3    1    0  b6
+  28     28    B      BIDIR              0      0   0    0    3    1    0  b7
+  39     19    B      BIDIR              0      0   0    0    1    1    1  d0
+  38     20    B      BIDIR              0      0   0    0    1    1    1  d1
+  37     21    B      BIDIR              0      0   0    0    1    1    1  d2
+  36     22    B      BIDIR              0      0   0    0    1    1    1  d3
+  34     23    B      BIDIR              0      0   0    0    1    1    1  d4
+  33     24    B      BIDIR              0      0   0    0    1    1    1  d5
+  32     25    B      BIDIR              0      0   0    0    1    1    1  d6
+  31     26    B      BIDIR              0      0   0    0    1    1    1  d7
+  29   (27)  (B)      INPUT              0      0   0    0    0    3    0  iorq
+   2      -   -       INPUT   s          0      0   0    0    0    0    0  ~PIN001
+  13    (9)  (A)      INPUT              0      0   0    0    0    5    0  rd
+  16   (11)  (A)      INPUT              0      0   0    0    0    1    0  slotsl
+  44      -   -       INPUT              0      0   0    0    0    3    0  wr
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  14     10    A     OUTPUT     t        0      0   0    1    2    0    0  busdir
+  19     14    A        TRI     t        0      0   0    0    3    1    0  b0
+  20     15    A        TRI     t        0      0   0    0    3    1    0  b1
+  21     16    A        TRI     t        0      0   0    0    3    1    0  b2
+  24     32    B        TRI     t        0      0   0    0    3    1    0  b3
+  25     31    B        TRI     t        0      0   0    0    3    1    0  b4
+  26     30    B        TRI     t        0      0   0    0    3    1    0  b5
+  27     29    B        TRI     t        0      0   0    0    3    1    0  b6
+  28     28    B        TRI     t        0      0   0    0    3    1    0  b7
+   9      6    A     OUTPUT     t        0      0   0    8    0    0    0  csxfx
+  18     13    A     OUTPUT     t        0      0   0    8    0    4    1  cs1fx
+  11      7    A     OUTPUT     t        0      0   0    8    0    2    0  cs3fx
+  39     19    B        TRI     t        0      0   0    0    1    1    1  d0
+  38     20    B        TRI     t        0      0   0    0    1    1    1  d1
+  37     21    B        TRI     t        0      0   0    0    1    1    1  d2
+  36     22    B        TRI     t        0      0   0    0    1    1    1  d3
+  34     23    B        TRI     t        0      0   0    0    1    1    1  d4
+  33     24    B        TRI     t        0      0   0    0    1    1    1  d5
+  32     25    B        TRI     t        0      0   0    0    1    1    1  d6
+  31     26    B        TRI     t        0      0   0    0    1    1    1  d7
+  12      8    A         FF     t !      0      0   0    3    2    2    1  latchon
+  17     12    A     OUTPUT     t        0      0   0    0    3    0    0  oe245
+   4      1    A     OUTPUT     t        1      0   0    1    3    0    0  ~PIN002
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+ (16)    11    A       DFFE     t        0      0   0    0    2    1    0  dreg0
+  (7)     4    A       DFFE     t        0      0   0    0    2    1    0  dreg1
+  (8)     5    A       DFFE     t        0      0   0    0    2    1    0  dreg2
+  (6)     3    A       DFFE     t        0      0   0    0    2    1    0  dreg3
+ (13)     9    A       DFFE     t        0      0   0    0    2    1    0  dreg4
+ (41)    17    B       DFFE     t        0      0   0    0    2    1    0  dreg5
+ (40)    18    B       DFFE     t        0      0   0    0    2    1    0  dreg6
+ (29)    27    B       DFFE     t        0      0   0    0    2    1    0  dreg7
+  (5)     2    A       DFFE     t        0      0   0    0    2   10    8  tdelay
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                                         Logic cells placed in LAB 'A'
+        +------------------------------- LC10 busdir
+        | +----------------------------- LC14 b0
+        | | +--------------------------- LC15 b1
+        | | | +------------------------- LC16 b2
+        | | | | +----------------------- LC6 csxfx
+        | | | | | +--------------------- LC13 cs1fx
+        | | | | | | +------------------- LC7 cs3fx
+        | | | | | | | +----------------- LC11 dreg0
+        | | | | | | | | +--------------- LC4 dreg1
+        | | | | | | | | | +------------- LC5 dreg2
+        | | | | | | | | | | +----------- LC3 dreg3
+        | | | | | | | | | | | +--------- LC9 dreg4
+        | | | | | | | | | | | | +------- LC8 latchon
+        | | | | | | | | | | | | | +----- LC12 oe245
+        | | | | | | | | | | | | | | +--- LC1 ~PIN002
+        | | | | | | | | | | | | | | | +- LC2 tdelay
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'A'
+LC      | | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'A':
+LC13 -> * - - - - - - - - - - - * * * * | * - | <-- cs1fx
+LC7  -> * - - - - - - - - - - - - - * - | * - | <-- cs3fx
+LC11 -> - * - - - - - - - - - - - - - - | * - | <-- dreg0
+LC4  -> - - * - - - - - - - - - - - - - | * - | <-- dreg1
+LC5  -> - - - * - - - - - - - - - - - - | * - | <-- dreg2
+LC8  -> - - - - - - - - - - - - * * - * | * - | <-- latchon
+LC2  -> - * * * - - - * * * * * - * * - | * * | <-- tdelay
+
+Pin
+40   -> - - - - - - - - - - - - * - - - | * - | <-- a0
+41   -> - - - - - - - - - - - - * - - - | * - | <-- a1
+43   -> - - - - - - - - - - - - * - - - | * - | <-- a2
+1    -> - - - - - * * - - - - - - - - - | * - | <-- a3
+5    -> - - - - * * * - - - - - - - - - | * - | <-- a4
+6    -> - - - - * * * - - - - - - - - - | * - | <-- a5
+7    -> - - - - * * * - - - - - - - - - | * - | <-- a6
+8    -> - - - - * * * - - - - - - - - - | * - | <-- a7
+29   -> - - - - * * * - - - - - - - - - | * - | <-- iorq
+2    -> - - - - - - - - - - - - - - - - | - - | <-- ~PIN001
+13   -> * - - - * * * - - - - - - - * - | * - | <-- rd
+16   -> - - - - * - - - - - - - - - - - | * - | <-- slotsl
+44   -> - - - - * * * - - - - - - - - - | * - | <-- wr
+LC19 -> - * - - - - - * - - - - - - - - | * - | <-- d0
+LC20 -> - - * - - - - - * - - - - - - - | * - | <-- d1
+LC21 -> - - - * - - - - - * - - - - - - | * - | <-- d2
+LC22 -> - - - - - - - - - - * - - - - - | * * | <-- d3
+LC23 -> - - - - - - - - - - - * - - - - | * * | <-- d4
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC32 b3
+        | +----------------------------- LC31 b4
+        | | +--------------------------- LC30 b5
+        | | | +------------------------- LC29 b6
+        | | | | +----------------------- LC28 b7
+        | | | | | +--------------------- LC17 dreg5
+        | | | | | | +------------------- LC18 dreg6
+        | | | | | | | +----------------- LC27 dreg7
+        | | | | | | | | +--------------- LC19 d0
+        | | | | | | | | | +------------- LC20 d1
+        | | | | | | | | | | +----------- LC21 d2
+        | | | | | | | | | | | +--------- LC22 d3
+        | | | | | | | | | | | | +------- LC23 d4
+        | | | | | | | | | | | | | +----- LC24 d5
+        | | | | | | | | | | | | | | +--- LC25 d6
+        | | | | | | | | | | | | | | | +- LC26 d7
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B |     Logic cells that feed LAB 'B':
+LC32 -> - - - - - - - - - - - * - - - - | - * | <-- b3
+LC31 -> - - - - - - - - - - - - * - - - | - * | <-- b4
+LC30 -> - - - - - - - - - - - - - * - - | - * | <-- b5
+LC29 -> - - - - - - - - - - - - - - * - | - * | <-- b6
+LC28 -> - - - - - - - - - - - - - - - * | - * | <-- b7
+LC17 -> - - * - - - - - - - - - - - - - | - * | <-- dreg5
+LC18 -> - - - * - - - - - - - - - - - - | - * | <-- dreg6
+LC27 -> - - - - * - - - - - - - - - - - | - * | <-- dreg7
+LC22 -> * - - - - - - - - - - - - - - - | * * | <-- d3
+LC23 -> - * - - - - - - - - - - - - - - | * * | <-- d4
+LC24 -> - - * - - * - - - - - - - - - - | - * | <-- d5
+LC25 -> - - - * - - * - - - - - - - - - | - * | <-- d6
+LC26 -> - - - - * - - * - - - - - - - - | - * | <-- d7
+
+Pin
+43   -> - - - - - - - - - - - - - - - - | * - | <-- a2
+1    -> - - - - - - - - - - - - - - - - | * - | <-- a3
+2    -> - - - - - - - - - - - - - - - - | - - | <-- ~PIN001
+44   -> - - - - - - - - - - - - - - - - | * - | <-- wr
+LC14 -> - - - - - - - - * - - - - - - - | - * | <-- b0
+LC15 -> - - - - - - - - - * - - - - - - | - * | <-- b1
+LC16 -> - - - - - - - - - - * - - - - - | - * | <-- b2
+LC3  -> * - - - - - - - - - - - - - - - | - * | <-- dreg3
+LC9  -> - * - - - - - - - - - - - - - - | - * | <-- dreg4
+LC2  -> * * * * * * * * - - - - - - - - | * * | <-- tdelay
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                    c:\work\orcad\ata\superata.rpt
+superata
+
+** EQUATIONS **
+
+a0       : INPUT;
+a1       : INPUT;
+a2       : INPUT;
+a3       : INPUT;
+a4       : INPUT;
+a5       : INPUT;
+a6       : INPUT;
+a7       : INPUT;
+iorq     : INPUT;
+rd       : INPUT;
+slotsl   : INPUT;
+wr       : INPUT;
+~PIN001  : INPUT;
+
+-- Node name is 'busdir' 
+-- Equation name is 'busdir', location is LC010, type is output.
+ busdir  = LCELL( _EQ001 $  rd);
+  _EQ001 =  cs1fx &  cs3fx & !rd;
+
+-- Node name is 'b0' 
+-- Equation name is 'b0', location is LC014, type is bidir.
+b0       = TRI(_LC014, GLOBAL(!wr));
+_LC014   = LCELL( _EQ002 $  GND);
+  _EQ002 =  dreg0 &  tdelay
+         #  d0 & !tdelay;
+
+-- Node name is 'b1' 
+-- Equation name is 'b1', location is LC015, type is bidir.
+b1       = TRI(_LC015, GLOBAL(!wr));
+_LC015   = LCELL( _EQ003 $  GND);
+  _EQ003 =  dreg1 &  tdelay
+         #  d1 & !tdelay;
+
+-- Node name is 'b2' 
+-- Equation name is 'b2', location is LC016, type is bidir.
+b2       = TRI(_LC016, GLOBAL(!wr));
+_LC016   = LCELL( _EQ004 $  GND);
+  _EQ004 =  dreg2 &  tdelay
+         #  d2 & !tdelay;
+
+-- Node name is 'b3' 
+-- Equation name is 'b3', location is LC032, type is bidir.
+b3       = TRI(_LC032, GLOBAL(!wr));
+_LC032   = LCELL( _EQ005 $  GND);
+  _EQ005 =  dreg3 &  tdelay
+         #  d3 & !tdelay;
+
+-- Node name is 'b4' 
+-- Equation name is 'b4', location is LC031, type is bidir.
+b4       = TRI(_LC031, GLOBAL(!wr));
+_LC031   = LCELL( _EQ006 $  GND);
+  _EQ006 =  dreg4 &  tdelay
+         #  d4 & !tdelay;
+
+-- Node name is 'b5' 
+-- Equation name is 'b5', location is LC030, type is bidir.
+b5       = TRI(_LC030, GLOBAL(!wr));
+_LC030   = LCELL( _EQ007 $  GND);
+  _EQ007 =  dreg5 &  tdelay
+         #  d5 & !tdelay;
+
+-- Node name is 'b6' 
+-- Equation name is 'b6', location is LC029, type is bidir.
+b6       = TRI(_LC029, GLOBAL(!wr));
+_LC029   = LCELL( _EQ008 $  GND);
+  _EQ008 =  dreg6 &  tdelay
+         #  d6 & !tdelay;
+
+-- Node name is 'b7' 
+-- Equation name is 'b7', location is LC028, type is bidir.
+b7       = TRI(_LC028, GLOBAL(!wr));
+_LC028   = LCELL( _EQ009 $  GND);
+  _EQ009 =  dreg7 &  tdelay
+         #  d7 & !tdelay;
+
+-- Node name is 'csxfx' 
+-- Equation name is 'csxfx', location is LC006, type is output.
+ csxfx   = LCELL( _EQ010 $  slotsl);
+  _EQ010 = !a4 & !a5 &  a6 & !a7 & !iorq &  slotsl & !wr
+         # !a4 & !a5 &  a6 & !a7 & !iorq & !rd &  slotsl;
+
+-- Node name is 'cs1fx' = 'fhit' from file "superata.tdf" line 16, column 1
+-- Equation name is 'cs1fx', location is LC013, type is output.
+ cs1fx   = LCELL( _EQ011 $  VCC);
+  _EQ011 = !a3 & !a4 & !a5 &  a6 & !a7 & !iorq & !wr
+         # !a3 & !a4 & !a5 &  a6 & !a7 & !iorq & !rd;
+
+-- Node name is 'cs3fx' = 'xhit' from file "superata.tdf" line 17, column 1
+-- Equation name is 'cs3fx', location is LC007, type is output.
+ cs3fx   = LCELL( _EQ012 $  VCC);
+  _EQ012 =  a3 & !a4 & !a5 &  a6 & !a7 & !iorq & !wr
+         #  a3 & !a4 & !a5 &  a6 & !a7 & !iorq & !rd;
+
+-- Node name is 'dreg0' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg0', location is LC011, type is buried.
+dreg0    = DFFE( d0 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'dreg1' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg1', location is LC004, type is buried.
+dreg1    = DFFE( d1 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'dreg2' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg2', location is LC005, type is buried.
+dreg2    = DFFE( d2 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'dreg3' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg3', location is LC003, type is buried.
+dreg3    = DFFE( d3 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'dreg4' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg4', location is LC009, type is buried.
+dreg4    = DFFE( d4 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'dreg5' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg5', location is LC017, type is buried.
+dreg5    = DFFE( d5 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'dreg6' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg6', location is LC018, type is buried.
+dreg6    = DFFE( d6 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'dreg7' from file "superata.tdf" line 20, column 5
+-- Equation name is 'dreg7', location is LC027, type is buried.
+dreg7    = DFFE( d7 $  GND,  tdelay,  VCC,  VCC,  VCC);
+
+-- Node name is 'd0' 
+-- Equation name is 'd0', location is LC019, type is bidir.
+d0       = TRI(_LC019, GLOBAL(!~PIN001));
+_LC019   = LCELL( b0 $  GND);
+
+-- Node name is 'd1' 
+-- Equation name is 'd1', location is LC020, type is bidir.
+d1       = TRI(_LC020, GLOBAL(!~PIN001));
+_LC020   = LCELL( b1 $  GND);
+
+-- Node name is 'd2' 
+-- Equation name is 'd2', location is LC021, type is bidir.
+d2       = TRI(_LC021, GLOBAL(!~PIN001));
+_LC021   = LCELL( b2 $  GND);
+
+-- Node name is 'd3' 
+-- Equation name is 'd3', location is LC022, type is bidir.
+d3       = TRI(_LC022, GLOBAL(!~PIN001));
+_LC022   = LCELL( b3 $  GND);
+
+-- Node name is 'd4' 
+-- Equation name is 'd4', location is LC023, type is bidir.
+d4       = TRI(_LC023, GLOBAL(!~PIN001));
+_LC023   = LCELL( b4 $  GND);
+
+-- Node name is 'd5' 
+-- Equation name is 'd5', location is LC024, type is bidir.
+d5       = TRI(_LC024, GLOBAL(!~PIN001));
+_LC024   = LCELL( b5 $  GND);
+
+-- Node name is 'd6' 
+-- Equation name is 'd6', location is LC025, type is bidir.
+d6       = TRI(_LC025, GLOBAL(!~PIN001));
+_LC025   = LCELL( b6 $  GND);
+
+-- Node name is 'd7' 
+-- Equation name is 'd7', location is LC026, type is bidir.
+d7       = TRI(_LC026, GLOBAL(!~PIN001));
+_LC026   = LCELL( b7 $  GND);
+
+-- Node name is 'latchon' = 'tmode' from file "superata.tdf" line 18, column 1
+-- Equation name is 'latchon', location is LC008, type is output.
+latchon  = tmode~NOT;
+tmode~NOT = DFFE( _EQ013 $  VCC, !cs1fx,  VCC,  VCC,  VCC);
+  _EQ013 = !a0 & !a1 & !a2 &  latchon;
+
+-- Node name is 'oe245' 
+-- Equation name is 'oe245', location is LC012, type is output.
+ oe245   = LCELL( _EQ014 $  VCC);
+  _EQ014 = !cs1fx &  latchon &  tdelay;
+
+-- Node name is 'tdelay' from file "superata.tdf" line 19, column 1
+-- Equation name is 'tdelay', location is LC002, type is buried.
+tdelay   = DFFE(!latchon $  GND,  cs1fx,  VCC,  VCC,  VCC);
+
+-- Node name is '~206~1' 
+-- Equation name is '~206~1', location is LC001, type is output.
+ ~PIN002 = LCELL( _EQ015 $  VCC);
+  _EQ015 = !rd & !tdelay &  _X001;
+  _X001  = EXP( cs1fx &  cs3fx);
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--     (none)
+
+
+
+
+Project Information                             c:\work\orcad\ata\superata.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Standard
+
+   Default Synthesis Style                = NORMAL
+
+      Logic option settings in 'NORMAL' style for 'MAX7000' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = on
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = off
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = on
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = on
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic I/O Cell Registers        = off
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = on
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = off
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interface Menu Commands
+-----------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:00
+   Database Builder                       00:00:01
+   Logic Synthesizer                      00:00:00
+   Partitioner                            00:00:02
+   Fitter                                 00:00:18
+   Timing SNF Extractor                   00:00:00
+   Assembler                              00:00:00
+   --------------------------             --------
+   Total Time                             00:00:21
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 2,537K

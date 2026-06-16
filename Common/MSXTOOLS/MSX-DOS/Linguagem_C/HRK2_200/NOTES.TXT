@@ -1,0 +1,61 @@
+HI-TECH C Resource kit #2 リリースノート
+By Tatsuhiko Syoji 1995-
+
+V1.0 1997/01/18
+発表場所:元・赤い風船,K.Y-Network
+  MSXの機能を利用したディスク入出力ルーチン、文字・文字列処理ライブラリ、
+MS-DOSで間違えて走らせても安心なスタートアップモジュールといったもので、
+HI-TECH C Resource kit #2を構成。
+
+V1.1 1997/02/25-27
+発表場所:元・赤い風船,K.Y-Network
+  MSXの機能を利用したディスク入出力ルーチンのDOS2版を製作。msxio.hの中の
+creat関数の宣言を改良すると共に、宣言の一部見直しを行なう。
+  MSXの機能を利用したディスク入出力ルーチンのDOS1版の一部のファイル名、
+アーカイブファイル名の変更(DOS2版との区別のため)
+  MSXの機能を利用したディスク入出力ルーチンのDOS1版のchmod関数をDOS2版と
+同じ仕様に変更する。
+
+V1.11 1997/03/03
+発表場所:元・赤い風船,K.Y-Network(共に差分で提供)
+  DOS1用ディスク入出力ルーチンのread関数のコンソール入力のバグを取る。
+  BDOSの01Hって改行は返さないのね。
+  DOS2用ディスク入出力ルーチンのマニュアルにmain関数の仕様に関する記述を追加。
+
+V1.12 1997/03/14,15,29,31,07/08
+  MSX-DOS2用プログラム向けのスタートアップモジュールを製作。
+  chmod関数についてマニュアルを加筆。
+  オリジナルのライブラリの中のモジュールの並びに起因する私のせいではない
+バグによるMSX-DOS2専用ディスク入出力ルーチンを利用した際のリンカ実行時の
+Undefined Symbol: wrelop というエラーの発生に対する対策をMSX-DOS2用
+プログラム向けのスタートアップモジュールでとる。
+含まれる関数の種類に関する記述を正確にする。(ETCLIB.DOC)
+
+V1.13 1997/9/14,15,28
+(ヤクルトスワローズセリーグ優勝バージョン←このネタ前にもやったような気がする)
+  CRT2.Oのバージョンチェックに関するバグを取る。
+  MSX-DOSファンクションコール代行関数_dos_getver,_dos_getftime ,_dos_setftime
+関数を追加する。(DOS.H,DOS1.H,DOS2.H,DOS1.L,DOS2.L,LIBD1.LIB,LIBD2.LIB)
+  plxset,plxpal関数を追加。(LIBT.L,LIBT.LIB,UTY2.H,ETCLIB.DOC)
+
+V1.20
+1997/11/19:nrsort,bloads関数を追加。(LIBT.*,ETCLIB.DOC,UTY2.H)
+1998/02/04:nrsort,bloads関数を追加。(LIBT.*,ETCLIB.DOC,UTY2.H)
+1998/02/26:setheaptop,getheaptop関数を追加
+(SBRK.AS,SBRK.OBJ,MEMUTIL.H.MEMUTIL.DOC)
+1998/03/07-08:MPK制御関数パッケージを追加(MPKLIB.LZH)
+
+V1.21
+1998/09/07-10
+　勤労5号制御関数パッケージを追加(KINLIB.LZH)
+1998/09/16,17
+　HI-TECH C用MSX-DOS汎用関数ライブラリパッケージを追加(MDOSLIB.LZH)
+1998/09/20
+  setkmode,getkmode関数を追加。(LIBT.*,ETCLIB.DOC,UTY2.H)
+
+V2.00
+2000/06/11
+　勤労5号制御関数パッケージ、MPK制御関数パッケージ、ユーティリティー関数
+の一部をHI-TECH C Resource kit #3に分割。
+　本パッケージがオリジナルのHI-TECH Cの関数・ヘッダファイルからの改良モ
+ジュールとなったためライセンスをHI-TECH Cのライセンスに変更する。

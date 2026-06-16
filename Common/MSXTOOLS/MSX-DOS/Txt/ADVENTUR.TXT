@@ -1,0 +1,38 @@
+A LENDA DA GAVEA         PD 360
+ABRACADABRA 1            E- 33
+AKERNAAK                 P- 15
+ALCATRAZ                 PD 9
+AMAZONIA                 PD 17
+ARQUIMEDES XXI           ED 25
+AV. PAULISTA             P- 10
+AVENTURA ORIGINAL 1      E- 34
+CASTELO NEGRO            P- 16
+CLASSIC ADVENTURE        I- 19
+COBRA'S ARC              ED 25
+COLOSSAL ADVENTURE       I- 44
+CONDE DE MONTE CRISTO    PD 13
+CROM CALABOUCO DA MORTE  P- 15
+DIOSA DE COZUMEL 1       E- 40
+DIOSA DE COZUMEL 2 (*)   E- 38
+DON QUIJOTE 1            E- 31
+DON QUIJOTE 2            E- 30
+EMERALD ISLE             I- 36
+FRACTA                   P- 10
+HORROR EM AMITYVILLE     PD 9
+JOURNEY CENTRE EARTH     I- 50
+MATAGAL                  AD 16
+MEAN STREETS             ID 12
+MENPHIS                  PD 46
+MUNDO PERDIDO 3 DIMENSAO P- 10
+O CEU E O LIMITE         P- 14
+O MANTO SAGRADO          P- 19
+PLATOON PARTE 1          PD 27
+PROFISSAO PERIGO         ID 6
+RETURN TO EDEN           I- 33
+SHADOW OF THE BEAR       ID 11
+SPY STORY                I- 16
+THE HOBBIT               I- 52
+VIETNAM                  ID 8
+VILA SINISTRA            P- 21
+ZAKIL WOOD (*)           I- 26
+

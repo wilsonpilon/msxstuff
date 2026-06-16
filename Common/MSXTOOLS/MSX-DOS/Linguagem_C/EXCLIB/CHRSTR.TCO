@@ -1,0 +1,154 @@
+Xstrncpy	R	F
+P11	R
+P12	R
+P13	I
+{
+}
+Xstrncat	R	F
+P20	R
+P21	R
+P22	I
+{
+}
+Xstrncmp	I	F
+P27	R
+P28	R
+P29	I
+{
+}
+Xscmpi	I	F
+P36	R
+P37	R
+{
+}
+Xstrchr	R	F
+P41	R
+P42	C
+{
+}
+Xstrstr	R	F
+P47	R
+P48	R
+{
+}
+Xsncmpi	I	F
+P53	R
+P54	R
+P55	I
+{
+}
+Xstrrev	R	F
+P61	R
+{
+}
+Xstrrchr	R	F
+P67	R
+P68	C
+{
+}
+Xstrupr	R	F
+P74	R
+{
+}
+Xstrlwr	R	F
+P78	R
+{
+}
+Xstrtok	R	F
+P82	R
+P83	R
+{
+}
+Xstrpbr	R	F
+P101	R
+P102	R
+{
+}
+Xstrnse	R	F
+P109	R
+P110	C
+P111	I
+{
+}
+Xstrset	R	F
+P115	R
+P116	C
+{
+}
+Xstrdup	R	F
+P120	R
+{
+}
+Xstpcpy	R	F
+P123	R
+P124	R
+{
+}
+Xmemccpy	R	F
+P127	R
+P128	R
+P129	C
+P130	N
+{
+}
+Xmemchr	R	F
+P134	R
+P135	C
+P136	N
+{
+}
+Xmemcmp	I	F
+P140	R
+P141	R
+P142	I
+{
+}
+Xmemicmp	I	F
+P147	R
+P148	R
+P149	I
+{
+}
+Xstrspn	N	F
+P154	R
+P155	R
+{
+}
+Xstrcspn	N	F
+P164	R
+P165	R
+{
+}
+Xispunct	C	F
+P173	C
+{
+}
+Xisprint	C	F
+P174	C
+{
+}
+Xisgraph	C	F
+P175	I
+{
+}
+Xiscsmf	C	F
+P176	C
+{
+}
+Xiscsym	C	F
+P177	C
+{
+}
+Xtoascii	C	F
+P178	C
+{
+}
+X_tolower	C	F
+P179	C
+{
+}
+X_toupper	C	F
+P180	C
+{
+}
+

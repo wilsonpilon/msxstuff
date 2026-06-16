@@ -1,0 +1,153 @@
+InterNestor Suite beta 1 - Por Nestor Soriano (Konami Man), 7-2001
+------------------------------------------------------------------
+
+
+1. ¨QUE ES ESTO?
+
+InterNestor Suite es un programa residente, m s un conjunto de utilidades, 
+que permiten la conexi¢n a Internet mediante un ordenador MSX dotado de DOS 
+2, al menos 256K RAM, y RS-232/ACCNET+modem.
+
+
+2. FILOSOFIA
+
+La parte residente de InterNestor Suite constar  de cuatro m¢dulos, cada uno 
+residente en un segmento de RAM y cada uno con su propia rutina de atenci¢n a 
+la interrupci¢n del reloj. Cada m¢dulo consta de unos puntos de llamada 
+estandarizados, accesibles a los otros m¢dulos y al usuario. El intercambio 
+de paquetes de datos entre m¢dulos se realiza a trav‚s de listas de 
+NestorMan, que act£an como colas. NestorMan tambi‚n se encarga de reservar 
+los segmentos necesarios para los m¢dulos, as¡ como de informar al usuario, a 
+trav‚s de la BIOS extendida, de la localizaci¢n exacta (slot y n£mero de 
+segmento) de cada m¢dulo.
+
+Los cuatro m¢dulos tienen la siguientes funcionalidades:
+
+- Nivel 1: Acceso al medio f¡sico. Por ejemplo, acceso al puerto serie 
+mediante el driver Fossil (disponible en esta beta).
+- Nivel 2: Control del enlace. Por ejemplo, protocolo PPP (disponible en esta 
+beta).
+- Nivel 3: M¢dulo IP (no disponible a£n)
+- Nivel 4: M¢dulo TCP/UDP (no disponible a£n)
+
+Las utilidades ser n las t¡picas: telnet, FTP, e-mail, etc. En esta beta s¢lo 
+est  disponible un PING sencillo.
+
+
+3. OPERACION
+
+C¢mo usar esta beta de InterNestor Suite:
+
+1) Instalar el driver Fossil y NestorMan. Usar esta versi¢n de NestorMan, NO 
+usar la que viene con PPPAT.
+
+2) Instalar e inicializar los m¢dulos, esto se hace con:
+
+INSINS I NFOSSIL NPPP-x
+
+donde x=A para NPPP-A.INM, m¢dulo PPP con apertura activa (el MSX inicia el 
+env¡o de paquetes de configuraci¢n), y x=P para NPPP-P.INM, m¢dulo PPP con 
+apertura pasiva (el MSX espera a recibir paquetes de configuraci¢n antes de 
+enviarlos). Es necesario que haya cuatro segmentos libres en un mismo 
+mapeador.
+
+INSINS.COM tiene m s opciones; ejecut ndolo sin par metros aparece 
+informaci¢n.
+
+3) Si la conexi¢n no es null-modem, marcar el n£mero del ISP:
+
+ECHOCOM ATDTnumero, o: ECHOCOM ATDPnumero para marcar por pulsos.
+
+4) Una vez que el modem detecta la portadora, abrir la conexi¢n PPP. Se puede 
+hacer de dos formas:
+
+PPPC O usuario password
+
+En esta forma, el programa PPPC.COM finalizar  inmediatamente y la conexi¢n 
+se establecer  como tarea de fondo (siempre se puede ver el estado de la 
+conexi¢n con PPPC S). La otra forma es:
+
+PPPC V usuario password
+
+Esta es la forma "verbose": el programa no terminar  inmediatamente, sino que 
+ir  mostrando informaci¢n en pantalla hasta que la conexi¢n se realice o 
+hasta que falle.
+
+5) Una vez estamos conectados, lo £nico que se puede hacer de momento es un 
+PING a alguna direcci¢n IP que conozcamos:
+
+NPING direccion-IP
+
+Por ejemplo: NPING 147.83.68.1 enviar  paquetes de eco al servidor de correo 
+de la escuela de Telecomunicaciones de la UPC en Barcelona. Este programa de 
+ping es muy sencillo; dado que no a£n no hay m¢dulo IP, simplemente env¡a un 
+paquete IP prefabricado que a su vez contiene un paquete ICMP de eco.
+
+6) Para cerrar la conexi¢n:
+
+PPPC C
+
+El modem deber¡a desconectarse al cabo de unos segundos. Por cierto, PPPC 
+tambi‚n muestra informaci¢n al ejecutarse sin par metros.
+
+
+4. FICHEROS
+
+Los ficheros que componen esta beta son:
+
+ECHOCOM.COM: Env¡a una cadena al puerto serie. Necesario para ordenarle al 
+modem que marque el n£mero del ISP (no es necesario para conexiones 
+null-modem, claro).
+
+NESMAN.COM: NestorMan 1.12. La versi¢n de NestorMan destribuida en PPPAT.LZH, 
+aunque tambi‚n est  marcada como 1.12, debe ser descartada.
+
+INSINS.COM: Instalador de los m¢dulos de InterNestor Suite. Permite tambi‚n 
+desinstalarlos, as¡ como pausar INS (impide que las rutinas de atenci¢n a la 
+interrupci¢n del reloj de los m¢dulos se ejecuten).
+
+NFOSSIL.INM: M¢dulo de nivel 1 para acceso al medio f¡sico (puerto RS-232), 
+requiere el driver Fossil.
+
+NPPP-x.INM: M¢dulo de nivel 2 para conexiones PPP. x=A: conexi¢n activa, x=P: 
+conexi¢n pasiva (ver la secci¢n "operaci¢n").
+
+DRIVER.COM: Driver Fossil para acceso al RS-232.
+
+PPPC.COM: Programa de control de la conexi¢n PPP. Permite abrir una conexi¢n, 
+cerrarla, mostrar el estado actual y mostrar las direcciones IP negociadas.
+
+NPING.COM: Programa de PING sencillo. Se ha de especificar directamente la 
+direcci¢n IP (no tiene resolver) y los paquetes de eco se han de enviar a 
+mano pulsando ENTER.
+
+
+5. QUE ES LO QUE PIDO
+
+Betatesteo, o sea, que probeis esta beta y me informeis de si funciona o si 
+no, si hace cosas raras, etc. Yo por ejemplo me he encontrado con dos 
+problemas que a£n no he sabido resolver, y me gustar¡a saber si alguien m s 
+los tiene:
+
+1) La conexi¢n activa (usando NPPP-A.INM) no funciona si la conexi¢n se abre 
+inmediatamente despu‚s de que el modem detecte la portadora (cuando se 
+enciende el led CD), es decir, cuando realmente el MSX es el primero que 
+env¡a paquetes de configuraci¢n. En concreto, MSX e ISP intercambian paquetes 
+en un bucle infinito, hasta que el ISP se cansa y corta la comunicaci¢n.
+
+2) Cuando INS est  reci‚n instalado, el MSX no detecta los paquetes entrantes 
+hasta que no se hace un DIR desde el DOS y aparece el espacio libre en disco. 
+Confieso que estoy totalmente perplejo ante este error.
+
+Tambi‚n me interesa saber si la conexi¢n se realiza bien con diferentes ISPs, 
+qu‚ mensajes muestra el modo "verbose", etc.
+
+Y una £ltima cosa: INS ralentiza el ordenador sensiblemente. Quisiera 
+saber vuestra opini¢n sobre si el ralentizamniento es exagerado, o 
+si es soportable, o c¢mo, en especial en ordenadores MSX2/2+.
+
+Podeis encontrarme en: konamiman@konamiman.com, mi p gina web es: 
+http://www.konamiman.com. Muchas zenkius.
+
+
+

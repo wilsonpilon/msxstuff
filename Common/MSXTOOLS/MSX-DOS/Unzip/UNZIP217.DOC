@@ -1,0 +1,57 @@
+
+                              UNZIP 1.7
+
+  Oorspronkelijke CP/M versie (c) 1990,1991 David P. Goodenough.
+  Voor MSXDOS-2 aangepast en uitgebreid door Pierre Gielen, 1992
+
+
+UNZIP pakt archives uit die met de MSDOS (PC) utility PKZIP of PAK
+(0.9-compressie) zijn gemaakt. Versie 1.7 werkt net als versie 1.6
+alleen onder MSXDOS-2.
+
+NIEUW:
+
+- Record-teller vervangen door betekenisvoller percentage-display
+
+- Als geen outputfiles opgegeven zijn, wordt een inhoudsopgave van
+  het archief met volledige informatie getoond. Hierbij wordt de
+  CRC-32 van afzonderlijke files niet gecontroleerd, wat de snelheid
+  ten goede komt.
+
+- Het is nu mogelijk het programma te onderbreken met CTRL-C of
+  CTRL-STOP. Als het uitpakken van een archief met CTRL-C wordt
+  afgebroken, wordt een eventueel gedeeltelijk uitgepakte file
+  gewist. CTRL-STOP stopt UNZIP meteen, zonder gedeeltelijk
+  uitgepakte files te wissen.
+
+
+
+GEBRUIK
+
+Het gebruik is rechttoe- rechtaan:
+
+        A:\>UNZIP inputfile outputfile
+
+De inputfile is het ZIP archief. Als geen extensie opgegeven wordt,
+vult UNZIP daar automatisch .ZIP voor in. Het is ook mogelijk een
+andere extensie op te geven voor zover dat nodig is (bijvoorbeeld
+door XRS ingepakte 'mailbags'). De outputfile is de naam van een
+(of meer) uit te pakken file(s). Deze mag wildcards (* en ?)
+bevatten. Komt een file in het archief niet overeen met de
+outputfile- specificatie, dan wordt de CRC ervan wel gecontroleerd.
+Waar hierboven een filenaam werd genoemd, kan ook te allen tijde een
+drive\path\filenaam ingevuld worden.
+
+
+        A:\>UNZIP inputfile /C
+
+De CRC-32 van alle files in het ZIP archief wordt gecontroleerd.
+
+        A:\>UNZIP inputfile
+
+Toont de inhoudsopgave van het ZIP archief. De CRC wordt hierbij
+niet gecontroleerd.
+
+
+
+Pierre Gielen, Nijmegen 26-04-92.

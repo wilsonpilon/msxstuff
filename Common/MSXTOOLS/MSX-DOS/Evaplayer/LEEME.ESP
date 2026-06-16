@@ -1,0 +1,159 @@
+		    EVA Player for Sunrise ATA-IDE ver 0.07
+		    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Descripci¢n:
+~~~~~~~~~~~~
+
+ El EVA es el formato de v¡deo ideado por ESE Artist's Factory para mediante
+un MSX Turbo R, un digitalizador Sony HB-V1 y su interfaz MegaSCSI grabar
+secuencias animadas en screen 12, 128x106 pixels, a 10 o 12 fps y con sonido
+digital a 15,75 KHz. Para reproducirlas es en principio necesario (hasta ahora)
+un MSX Turbo-R y un interfaz MegaSCSI.
+
+Requisitos:
+~~~~~~~~~~~
+
+ Esta versi¢n para el interfaz Sunrise ATA-IDE soporta aparte del MSX Turbo-R
+tambi‚n los MSX2+ acompa¤ados del cartucho Music Module de Philips o una
+tarjeta Covox en el puerto de la impresora para obtener el sonido.
+
+ El programa ha sido dise¤ado para funcionar en Z80 a 3,57 Mhz, en los MSX2+
+Panasonic A1-WX y en los Turbo-R no es necesario cambiar el modo del
+procesador, lo hace autom ticamente y lo reestablece al salir, pero en otros
+MSX adaptados a 7Mhz habr  que bajar la frecuencia a 3,57Mhz.
+
+ Es recomendable un disco duro LBA r pido. Aunque el player soporta
+perfectamente el modo CHS, normalmente los discos CHS suelen ser
+excesivamente lentos y la reproducci¢n deja de ser fluida, sobretodo el
+sonido se ve perjudicado.
+
+ En principio el programa debe funcionar con cualquier bios IDE.
+
+Ejecucuci¢n y opciones:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+ El programa se ejecuta desde la linea de comandos de la siguiente forma:
+
+EVAIDE [unidad:][ruta\]evafile [opciones]
+
+ donde los par metros entre corchetes "[]" son opcionales.
+ Es IMPRESCINDIBLE que la unidad donde se encuentra el EVA no est‚
+fragmentada, si lo est  el programa no lo detectar  y reproducir  basura.
+
+ Las opciones son las siquientes:
+
+	/V -> Desactiva la sincronizaci¢n con el refresco de la pantalla.
+	      Usa esta opci¢n si notas que la reproducci¢n es demasiado lenta.
+
+	/W -> Desactiva la sincronizaci¢n del sonido. Esta opci¢n solo
+	      funciona con el PCM de los MSX Turbo-R y permite ganar algo de
+	      velocidad a costa de perder calidad en el sonido.
+
+	/A -> Fuerza el uso del Music Module. Esta opci¢n solo funciona en
+	      los MSX Turbo-R puesto que en el resto de MSX es autom tico.
+
+	/X -> Fuerza el uso de Covox como dispositivo de salida del sonido.
+	      Por defecto sigue us ndose el Music Module para evitar
+	      conflictos con la impresora.
+
+	/C -> Fuerza el modo de 12fps.
+
+	/8 -> Fuerza el modo de pantalla screen 8.
+
+	/M -> Usa el modo R800 ROM o 6Mhz en los MSX2+ A1-WX en vez del modo
+	      Z80 a 3,57Mhz.
+
+	/L -> Al finalizar la reproducci¢n volver  a empezar sin salir del
+	      programa. Se mantienen los par metros de inicio y final.
+
+	/Snn -> Especifica el cuadro de inicio de la reproducci¢n.
+
+	/Enn -> Especifica el cuadro final de la reproducci¢n.
+
+
+Notas y agradecimientos:
+~~~~~~~~~~~~~~~~~~~~~~~~	
+
+ He creado este programa para ser distribuido exclusivamente de forma
+gratuita. No est  permitido incluirlo en CDs u otras recopilaciones de
+software que no sean estrictamente gratuitos, o sea que cuesten como m ximo
+el precio del soporte, y jam s sin incluir este fichero de texto.
+
+ El reproductor lo he programado yo desde cero, sin usar ninguna parte del
+c¢digo del player de MegaSCSI.
+
+ Por favor, para cualquier sugerecia contacta conmigo en:
+
+  Internet:
+	sergio.guerrero@ctv.es
+	sergio@aamsx.org
+
+  Fidonet:
+	2:343/168.4
+
+ Para actualizaciones u otros programas mios:
+
+	http://www.ctv.es/USERS/beelzebub/	  
+
+
+ Quiero dar las gracias a Manuel Pazos, Jon De Schrijder y Francisco Alvarez
+por ayudarme y animarme a programar este player, muchas gracias.
+
+
+Notas de esta versi¢n:
+~~~~~~~~~~~~~~~~~~~~~~
+
+versi¢n 0.07:
+
+   - Peque¤a modificaci¢n en las rutinas de reproducci¢n del modo 12fps.
+   - A¤adido soporte para Covox.
+   - A¤adida opci¢n loop.
+   - A¤adidos mensajes al abortar y finalizar la reproducci¢n. 
+
+versi¢n 0.06:
+
+   - A¤adido soporte para EVAs de 12fps.
+   - A¤adida sincronizaci¢n con el PCM en los MSX Turbo-R.
+   - A¤adidas opciones en la linea de comandos.
+   - He vuelto a activar la sincronizaci¢n con el retrazado en discos CHS,
+     se tiene que desactivar en la linea de comandos.
+   - Probado en varios MSX y discos duros con ‚xito.
+
+versi¢n 0.05 beta:
+
+   - Optimizadas las rutinas de reproducci¢n.
+   - Eliminado el chequeo del tama¤o del fichero, ahora aunque el tama¤o del
+     EVA no sea correcto no mostrar  ning£n error y lo reproducir .
+
+versi¢n 0.04 beta:
+
+   - Corregido fallo al reproducir dos veces seguidas el mismo EVA. Al
+     intentar reproducirlo por segunda vez reproduc¡a basura.
+   - El reproductor ya no requiere ninguna versi¢n de la bios IDE en
+     particular. No lo he probado con las bios de Henrik Gilvad pero deber¡a
+     funcionar puesto que el programa no usa la bios.
+   - Corregida falta de sincronismo con la interrupciones, esto hac¡a ir
+     demasiado r pida la reproducci¢n en discos duros r pidos
+     (r pido=moderno=LBA). En discos CHS no se sincroniza para ganar velocidad.
+
+versi¢n 0.03 beta:
+
+   - Ya est  probado y corregidos los fallos en discos LBA.
+   - Corregida ralentizaci¢n en el Panasonic A1-WX MSX2+ a 6Mhz.
+
+versi¢n 0.02 beta:
+
+   - Esta es una versi¢n beta, puede tener fallos o no funcionar, por
+     favor si tienes alg£n problema contacta conmigo.
+   - Es imprescindible que el disco est‚ desfragmentado antes de
+     ejecutar el reproductor.
+   - Todav¡a no est  implementado el soporte para EVAs de 12fps.
+   - El modo de direccionamiento LBA usado en discos grandes (>512Mb)
+     no est  probado, aunque en principio deber¡a funcionar correctamente.
+   - En discos duros muy viejos y lentos se puede ralentizar la reproducci¢n
+     y/o distosionarse excesivamente el sonido.
+   - El reproductor £nicamente soporta discos duros, no soporta ni CD-ROM ni
+     dispositivos ATAPI de acceso directo.
+
+
+

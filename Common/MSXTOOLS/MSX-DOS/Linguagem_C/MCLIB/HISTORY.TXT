@@ -1,0 +1,4 @@
+2000/06/03 Tatsuhiko Syoji
+@‰”ÅŠ®¬
+2000/07/04 Tatsuhiko Syoji
+@calpat(),calatr(),sprite(),colspr(),putspr()ŠÖ”‚ğ’Ç‰ÁB

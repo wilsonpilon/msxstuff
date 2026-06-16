@@ -1,0 +1,71 @@
+ATLANTIDA                -- 3
+BANHO DE PALAVRAS        -- 3
+BATALHA NAVAL            -- 3
+BLACKJACK                -- 5
+BLITZ                    -- 2
+BOWLING                  -- 11
+BR-116                   -- 3
+BUMERANGUE               -- 5
+CAMINHO ASSOMBROSO       -- 2
+CAPLE                    -- 16
+CONSTRUTOR               -- 5
+CUB'HERT                 -- 20
+CUBIK                    -- 4
+DART MASTER              -- 9
+DEFUZE                   -- 4
+DEMOLIDOR                -- 4
+DISCO HIT                -- 13
+DOMINO                   -- 15
+DRAUGHTS                 -- 8
+EMERGENCY LANDING        -- 4
+ESGRIMA                  -- 12
+EXPLODING ATOMS          -- 6
+FORAJIDOS                -- 14
+FORCA                    -- 4
+GALAXY RANGERS           -- 8
+GOLF 3D                  -- 16
+HEIDI BALL               -- 10
+HELIWAR                  -- 12
+JACKPOT                  -- 5
+JAKE IN THE CAVES        -- 19
+JAWBREAKER               -- 5
+JOGO DO EXECUTIVO        -- 21
+KING DONG                -- 5
+KRYPTON                  -- 16
+LETTER PUZZLE            -- 8
+M-47                     -- 11
+MINERA€AO                -- 8
+MSXLORDS                 -- 6
+MUITO LOCO               -- 7
+OTELO                    -- 5
+OTHELLO II               -- 9
+PACIENCIA                -- 4
+PENGY                    -- 11
+PERIGO ESPACIAL          -- 4
+PESCA PIRANHA            -- 5
+POKER DE DADOS           -- 4
+POKER PROFISSIONAL       -- 14
+POLARIS 2                -- 6
+POPULAR CYCLOPS #        -- 9
+RAMBO 2                  -- 14
+ROTORS                   -- 23
+SANTA PARAVIA            -- 19
+SENHA 1 MCC              -- 4
+SENHA 2                  -- 3
+SETE E MEIO              -- 6
+SHERLOCK HOLMES          -- 15
+SIMMON'S                 -- 3
+SOBRA UM                 -- 5
+SPDICE                   -- 6
+SPEED RACE               -- 2
+STAR TREK 2              -- 7
+TANK ATTACK              -- 10
+THE 7TH DIMENSION        -- 8
+UFO [AZ]                 -- 10
+VEGAS GAMBLER #          -- 10
+VINTE E UM 1             -- 4
+VINTE E UM 2             -- 10
+WORDS GAME               -- 22
+XADREZ 2 JOGADORES       -- 13
+ZAPATA                   -- 14
+

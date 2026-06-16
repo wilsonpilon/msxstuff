@@ -1,0 +1,332 @@
+ MSX-C Version 1.1日本語化セット（拡張機能セット）マニュアル
+ By Tatsu(庄子達彦) 1995
+
+本パッケージに含まれるファイルの内容です。
+JSTRING .REL :文字列処理ライブラリ本体
+JSTRING .H   :文字列処理ライブラリヘッダーファイル
+JSTRING .TCO :文字列処理ライブラリFPC用パラメーターファイル
+JSTRING .C   :文字列処理ライブラリソースファイル
+JCTYPE  .REL :文字処理ライブラリ本体（CHRSTR.REL使用時用）
+JCTYPE  .H   :文字処理ライブラリヘッダーファイル（CHRSTR.REL使用時用）
+JCTYPE  .TCO :文字処理ライブラリFPC用パラメーターファイル（CHRSTR.REL使用時用）
+JCTYPE  .C   :文字処理ライブラリソースファイル（CHRSTR.REL使用時用）
+JCTYPEA .REL :文字処理ライブラリ本体（CHRSTR.REL未使用時用）
+JCTYPEA .H   :文字処理ライブラリヘッダーファイル（CHRSTR.REL未使用時用）
+JCTYPEA .TCO :文字処理ライブラリFPC用パラメーターファイル（CHRSTR.REL未使用時用）
+JCTYPEA .C   :文字処理ライブラリソースファイル（CHRSTR.REL未使用時用）
+JLIB    .REL :文字、文字列処理ライブラリ本体（CHRSTR.REL使用時用）
+JLIB    .TCO :文字、文字列処理ライブラリFPC用パラメーターファイル（CHRSTR.REL使用時用）
+JLIBA   .REL :文字、文字列処理ライブラリ本体（CHRSTR.REL未使用時用）
+JLIBA   .TCO :文字、文字列処理ライブラリFPC用パラメーターファイル（CHRSTR.REL未使用時用）
+JPNKIT2 .DOC :今あなたが読んでいるファイルです。
+MSXCJP  .BAT :MSX-C Library及びMSX-C Version 1.1日本語化セット（基本、拡張機能セット）を使ってプログラムを作成するためのバッチファイル
+
+本ライブラリの対象
+MSX-C Ver1.1及びMSX-C Ver1.2（持ってないのでテストしてない^^;）
+
+使い方
+　このライブラリの関数を使うには、まず、ソースファイルで各関数の属するヘッダーファイルをインクルードしてください。
+例１）
+#include	<jctype.h>
+（略）
+	if (iskana(c)){
+（略）
+
+例２）
+#include	<jstring.h>
+（略）
+	jstrncpy(buf,"凄いライブラリがやってきた！",8);
+（略）
+
+　次にMSX-C Version 1.1日本語化セット（基本機能セット）のCPPPP.COM,ＭＳＸ－ＣのCF.COMを通して下さい。
+
+　次に、FPC.COMにパラメーターファイルjlib.tcoを読み込ませてください。
+例）
+FPC test jlib mlib lib
+
+　その後、CG.COM,M80.COMを通します。
+
+　最後に、ライブラリ本体（jlib.REL）のファイルをCLIB.REL の前に /Sオプション付きでリンクしてください。
+例）
+l80 ck,%1,jlib/s,mlib/s,clib/s,crun/s,cend,%1/n/y/e:xmain
+
+以上の手順で充実した日本語処理関数を利用することが出来ます。
+
+配布について
+　本ライブラリはフリーソフトウェアとします。配布は自由です。著作権は放棄しておりません。（日本では放棄できない。）本ライブラリを使ったソフトの配布については使用する処理系の規約に準じます。
+
+日本語文字処理関数リファレンス
+ stdio.hのインクルードの後で、jctype.hをインクルードすることにより使用できる関数のリファレンスを示します。ＭＳＸひらがな関連以外の関数はLSI C-86 Ver.3.30 試食版の同名関数と同じように使うことが出来るので、LSI C-86 Ver.3.30 試食版のユーザーは違和感なくこれらのライブラリの関数を利用できるでしょう。また、このライブラリでは、ASCII文字の文字種の判定のMSX-C Ver.1.1の関数に無い関数で他の処理系では用意されているであろうと思われる関数を用意し、他の処理系と同等に近い文字処理関数を使ったプログラミングを実現します。
+
+int chkctype(c,type)
+char c;
+int type;
+　文字cと１つ前の文字の状態typeを与えて、文字cの種類を判定します。
+文字cの種類にはこれらのものがあります。
+CT_ANK　cは１バイトコードです。
+CT_KJ1　cはシフトＪＩＳコードの１バイト目です。
+CT_KJ2　cはシフトＪＩＳコードの２バイト目です。
+CT_ILGL cは不正な文字です。
+返された値は次の呼び出しに利用してください。
+
+int nthctype(s,n)
+char *s;
+int n;
+　１バイト、２バイト文字が混在する文字列のn 文字目の種類をchkctype関数と同様に判定します。
+
+BOOL iskana(c);
+BOOL iskpun(c);
+BOOL iskmoji(c);
+BOOL isalkana(c);
+BOOL ispnkana(c);
+BOOL isalnmkana(c);
+BOOL isprkana(c);
+BOOL isgrkana(c);
+BOOL iskanji(c);
+BOOL iskanji2(c);
+char c;
+　これらの関数は文字c が以下の条件を満たすとき真を、満たさないときは偽を返します。
+iskana(c);
+１バイトカタカナかどうか
+iskpun(c);
+カタカナの区切り文字かどうか
+iskmoji(c);
+カタカナの文字かどうか
+isalkana(c);
+アルファベットもしくはカタカナかどうか
+ispnkana(c);
+ASCII文字及びカタカナの区切り文字かどうか
+isalnmkana(c);
+アルファベットもしくはカタカナもしくは数字かどうか
+isprkana(c);
+印字可能なASCII文字及びカタカナの区切り文字かどうか
+isgrkana(c);
+目にみえるASCII文字及びカタカナの区切り文字かどうか
+iskanji(c);
+シフトＪＩＳの１バイト目かどうか
+iskanji2(c);
+シフトＪＩＳの２バイト目かどうか
+
+BOOL jiszen(c);
+BOOL jisl0(c);
+BOOL jisl1(c);
+BOOL jisl2(c);
+BOOL jisalpha(c);
+BOOL jisupper(c);
+BOOL jislower(c);
+BOOL jisdigit(c);
+BOOL jiskata(c);
+BOOL jishira(c);
+BOOL jiskigou(c);
+BOOL jisspace(c);
+unsigned c;
+　これらの関数は２バイト文字c が以下の条件を満たすとき真を、満たさないときは偽を返します。c は上位８バイトに１バイト目が、下位８バイトに２バイト目がセットされている必要があります。
+BOOL jiszen(c);
+全角文字かどうか
+BOOL jisl0(c);
+漢字以外の文字かどうか
+BOOL jisl1(c);
+ＪＩＳ第一水準かどうか
+BOOL jisl2(c);
+ＪＩＳ第二水準かどうかどうか
+BOOL jisalpha(c);
+全角のアルファベットかどうか
+BOOL jisupper(c);
+全角のアルファベット大文字かどうか
+BOOL jislower(c);
+全角のアルファベット小文字かどうか
+BOOL jisdigit(c);
+全角の数字かどうか
+BOOL jiskata(c);
+全角カタカナかどうか
+BOOL jishira(c);
+全角ひらがなかどうか
+BOOL jiskigou(c);
+全角の記号かどうか
+BOOL jisspace(c);
+全角のスペースかどうか
+
+unsigned jtolower(c);
+unsigned jtoupper(c);
+unsigned jtohira(c);
+unsigned jtokata(c);
+unsigned hantozen(c);
+unsigned zentohan(c);
+unsigned jmstojis(c);
+unsigned jistojms(c);
+unsigned mstojis(c);
+unsigned jistoms(c);
+unsigned h2zen2(c);
+unsigned z2han2(c);
+unsigned c;
+　これらの関数は２バイト文字c が以下の条件を満たすとき、対応する文字に変換し、そうでない時はそのまま返します。以下の説明では（条件：変換後の文字種）の形式で説明します。
+unsigned jtolower(c);
+全角英大文字：全角英小文字
+unsigned jtoupper(c);
+全角英小文字：全角英大文字
+unsigned jtohira(c);
+全角カタカナ：全角ひらがな
+unsigned jtokata(c);
+全角ひらがな：全角カタカナ
+unsigned hantozen(c);
+半角文字：全角文字
+unsigned zentohan(c);
+全角文字：半角文字
+unsigned jmstojis(c);
+シフトＪＩＳコード：ＪＩＳコード
+unsigned jistojms(c);
+ＪＩＳコード：シフトＪＩＳコード
+unsigned mstojis(c);
+シフトＪＩＳコード：ＪＩＳコード
+unsigned jistoms(c);
+ＪＩＳコード：シフトＪＩＳコード
+unsigned h2zen2(c);
+MSX半角文字(ひらがな、カタカナ含む)：全角文字
+unsigned z2han2(c);
+全角文字：MSX半角文字(ひらがな、カタカナ含む)
+
+BOOL ishira(c);
+BOOL isalhira(c);
+BOOL iskatahira(c);
+BOOL isalkanahira(c);
+char c;
+　これらの関数は文字c が以下の条件を満たすとき真を、満たさないときは偽を返します。
+BOOL ishira(c);
+ＭＳＸ１バイトひらがなかどうか
+BOOL isalhira(c);
+ＭＳＸ１バイトひらがなかアルファベットかどうか
+BOOL iskatahira(c);
+ＭＳＸ１バイトひらがなか１バイトカタカナかどうか
+BOOL isalkanahira(c);
+ＭＳＸ１バイトひらがなか１バイトカタカナかアルファベットかどうか
+
+BOOL ispunct(c);
+BOOL isprint(c);
+BOOL isgraph(c);
+BOOL iscsymf(c);
+BOOL iscsym(c);
+BOOL isalnum(c);
+BOOL isascii(c);
+BOOL isxdigit(c);
+　これらの関数は文字c が以下の条件を満たすとき真を、満たさないときは偽を返します。
+BOOL ispunct(c);
+ASCII区切り文字かどうか
+BOOL isprint(c);
+ASCII文字で印字できる文字かどうか
+BOOL isgraph(c);
+ASCII文字でスペースを除く印字できる文字かどうか
+BOOL iscsymf(c);
+Ｃ言語の識別子の１文字目かどうか
+BOOL iscsym(c);
+Ｃ言語の識別子の２文字目以降かどうか
+BOOL isalnum(c);
+ASCII文字のアルファベット及び数字かどうか
+BOOL isascii(c);
+ASCII文字かどうか
+BOOL isxdigit(c);
+１６進数の数字かどうか
+
+日本語文字列処理関数リファレンス
+ stdio.hのインクルードの後で、jstring.h をインクルードすることにより使用できる関数のリファレンスを示します。LSI C-86 Ver.3.30 試食版の同名関数と同じように使うことが出来るので、LSI C-86 Ver.3.30 試食版のユーザーは違和感なくこれらのライブラリの関数を利用できるでしょう。
+
+int btom(s,n);
+char *s;
+int n;
+　1バイトコードと2バイトコードがまざった文字列sの初めのnバイト中の文字数を数えて文字数を返します。
+
+int mtob(s,n);
+char *s;
+int n;
+　1バイトコードと2バイトコードがまざった文字列sの初めのn文字中のバイト数を数えてバイト数を返します。
+
+char *jstradv(s,n);
+char *s;
+int n;
+　文字へのポインタsをn文字分進めた位置のポインタを返します。
+
+char *jstrchr(s,c);
+char *s;
+unsigned c;
+　文字列sの中の文字cを先頭から探し、見つかった位置のポインタを返します。
+
+char *jstrrchr(s,c);
+char *s;
+unsigned c;
+　文字列sの中の文字cを後ろから探し、見つかった位置のポインタを返します。
+
+int jstrcmp(s,t);
+char *s;
+char *t;
+　日本語文字列sとtを全角文字を１文字として比較します。
+　文字列の大小関係は
+　ASCII文字＜１バイトカタカナ、ひらがな＜全角文字　です。
+ s > tの時は正の数を
+ s = tの時は０を
+ s < tの時は負の数を
+　返します。
+
+int jstrncmp(s,t,n);
+char *s;
+char *t;
+int n;
+　日本語文字列sとtを全角文字を１文字としてn文字分比較します。
+　文字列の大小関係は
+　ASCII文字＜１バイトカタカナ、ひらがな＜全角文字　です。
+ s > tの時は正の数を
+ s = tの時は０を
+ s < tの時は負の数を
+　返します。
+
+int jstrlen(s);
+char *s;
+　日本語文字列sを全角文字を１文字として総文字数を返します。
+
+char *jstrmatch(s1,s2);
+char *s1;
+char *s2;
+　文字列s2中の任意の１文字が文字列s1中で最初に現れる文字の場所のポインタを返します。文字列s2中の文字が見つからないときはNULLを返します。文字は全角文字にも対応します。
+
+char *jstrncat(s,t,n);
+char *s;
+char *t;
+int n;
+　文字列sの後ろに文字列tをn文字付加します。全角文字も１文字と数え、最後には必ず'\0'を付加します。
+　sをそのまま返します。
+
+char *jstrncpy(s,t,n);
+char *s;
+char *t;
+int n;
+　s文字列tをn文字コピーします。全角文字も１文字と数えます。
+　sをそのまま返します。
+
+char *jstrrev(s); /* ｽｺﾞｸ ｸﾛｳ ｼﾀ */
+char *s;
+　文字列ｓを文字単位で反転し、文字列ｓのアドレスを返します。
+ex)"01２2345"->"5432２10"
+　文字列を直接書き換えるのでご注意ください。
+
+char *jstrskip(s1,s2);
+char *s1;
+char *s2;
+　文字列s1中で文字列s2中の文字に含まれない最初の文字の場所のポインタを返します。その様な文字が見つからない場合はs1の最後の'\0'の場所のポインタを返します。
+
+char *jstrstr(s,t);
+char *s;
+char *t;
+　文字列sから文字列tを検索します。見つかった時は文字列中の見つかった位置のアドレスを返します。見つからなかった時はNULLを返します。s,t の文字には全角文字を使用する事ができます。
+
+char *jstrtok(buf,mask);
+char *buf;
+char *mask;
+　文字列mask に含まれる文字をトークンの区切りとして、文字列bufからトークンを切り出します。２度目からはbuf にNULLを入れることで１つの文字列から次々とトークンを切り出すことができます。文字列maskは呼び出す毎に変わっても構いません。トークンが見つからなかったときはNULLを返します。文字には全角文字を使用することができます。
+
+最後に
+　本パッケージにより、日本語対応のプログラムを組む事についてはようやく他の処理系に追い付いたと思います。（少なくともLSI C-86 Ver.3.30 試食版とは関数等で同等）ヘッダーファイルはシンボルテーブルを圧迫しないよう、２つに分けております。また、ヘッダーファイルは二重に読みこんでも弊害が出ないように対策を取っております。それでは、皆さんも色々なライブラリを作って、MSX-C を他の処理系に負けない、魅力有る処理系にしていきましょう！！
+
+参考文献
+MSX-Magagine 1991年４月号
+MSX-FAN 1994年12月号
+MSXテクニカルガイドブック第四版
+LSI C-86 Ver.3.30 試食版マニュアル及びヘッダーファイル
+

@@ -1,0 +1,141 @@
+-- Single chip MSX IDE controller
+-- EPM7064LC68
+-- Suport for 128K 16K/page MegaROM BIOS
+-- (C) 1999, SOLiD
+-- Based on FPGA code by Max Vlassov
+
+
+
+subdesign IDE
+(
+a[7..0]	:	input;
+wr		:	input;
+rd		:	input;
+iorq	:	input;
+d[7..0]	:	bidir;
+cs1fx, cs3fx:	output;
+busdir	:	output;
+b[15..0]:	bidir;
+slotsl	:	input;
+roma[2..0]:	output;
+romw	:	output;
+reset	:	input;
+
+hdrd	:	output;
+hdwr	:	output;
+ha[2..0]:	output;
+)
+
+variable
+
+fhit	:	lcell;
+xhit	:	lcell;
+tmode	:	tff;
+tdelay	:	dff;
+dreg[7..0]	:	dff;
+dmux[7..0]	:	node;
+dout[15..0]	:	tri;
+bout[7..0]	:	tri;
+ra[2..0]:dff;
+rw:dff;
+fixmap:dff;
+oe245:node;
+
+lwr,lrd:latch;
+lc1,lc3:latch;
+lha[2..0]:latch;
+
+
+
+--!! Внимание !! Сигнал /WR задержан относительно данных на 100 ns. 
+
+begin
+-- Декодировать попадание в пространство контроллера
+!fhit	=	!iorq & (!rd # !wr) & !a7&a6&!a5&!a4&!a3;
+!xhit	=	!iorq & (!rd # !wr) & !a7&a6&!a5&!a4&a3;
+
+-- Сигнал управления 3-им состоянием на внешних буферах MSX
+!busdir	=	!fhit&!rd # !xhit&!rd;
+
+
+-- Mapper control
+
+fixmap.d	=	d7;
+fixmap.clk	=	!xhit & !wr & !a0 & !a1 & !a2 & !fixmap;
+fixmap.clrn	=	reset;
+
+
+
+-- FlashROM mapper
+ra[].d=d[2..0] # fixmap;
+ra[].clk = !slotsl & !wr & !a0 & !a1 & !a2 & !a3 & !a4 & !a5 & !a6 & !a7;
+roma[]=ra[].q;
+ra[].clrn=reset;
+
+
+-- FlashROM write enable
+rw.d=!d0;
+rw.clk=!xhit & !wr & !a0 & !a1 & !a2 & fixmap;
+rw.prn=reset;
+romw=rw.q # wr ;
+
+
+-- Finite state machine: 
+tmode.clk	=	!fhit;
+tmode.t		=	!a0&!a1&!a2&!tmode # tmode;
+
+
+-- High/low byte select
+!oe245		=	!fhit&tdelay&!tmode;
+
+-- Данные переписываются в регистр по заднему фронту
+tdelay.clk	=	fhit;
+tdelay.d	=	tmode.q;
+
+dreg[].clk	=	tdelay.q;
+dreg[].d	=	d[];
+
+dmux[]		=	dreg[].q & tdelay.q # d[] & !tdelay.q;
+dout[].oe	=	!wr;
+dout[7..0].in	=	dmux[];
+dout[15..8].in	=	d[];
+b[]			=	dout[];
+
+
+-- Read low/high logic
+
+bout[].oe	=	!busdir&!tdelay;
+bout0.in	=	(b0 & oe245) # (b8  & !oe245);
+bout1.in	=	(b1 & oe245) # (b9  & !oe245);
+bout2.in	=	(b2 & oe245) # (b10 & !oe245);
+bout3.in	=	(b3 & oe245) # (b11 & !oe245);
+bout4.in	=	(b4 & oe245) # (b12 & !oe245);
+bout5.in	=	(b5 & oe245) # (b13 & !oe245);
+bout6.in	=	(b6 & oe245) # (b14 & !oe245);
+bout7.in	=	(b7 & oe245) # (b15 & !oe245);
+d[]			=	bout[];
+	
+
+-- HDD control signals latch
+
+lrd.ena		=	!tmode;
+lwr.ena		=	!tmode;
+lc1.ena		=	!tmode;
+lc3.ena		=	!tmode;
+lha[].ena	=	!tmode;
+
+lrd.d		=	rd;
+lwr.d		=	wr;
+lc1.d		=	fhit;
+lc3.d		=	xhit;
+lha[].d		=	a[2..0];
+hdrd		=	lrd.q;
+hdwr		=	lwr.q;
+cs1fx		=	lc1.q;
+cs3fx		=	lc3.q;
+ha[]		=	lha[];
+
+
+end;
+
+

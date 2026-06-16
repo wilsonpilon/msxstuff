@@ -1,0 +1,82 @@
+;char bdos(),int bdosh(),char *getdpb((char)drive)
+;With error Handling
+;By Tatsu 1994
+;
+
+diskve	equ	0f323h
+
+bdosz@::
+bdoszh@::
+	ld		h,b ;ld hl,bc
+	ld		l,c
+	ld		c,a
+	push	hl
+	ld		hl,(diskve)
+	ld		(vesav),hl
+	ld		hl,ERRV
+	ld		(diskve),hl
+	ld		hl,bdstat
+	ld		(hl),a
+	ld		hl,eflag
+	ld		(hl),0
+	pop		hl
+	ld		(spsav),sp
+	call	05h
+	jr		dgood
+error:
+	push	bc
+	call	0f36bh
+	pop		bc
+	push	hl
+	ld		hl,eflag
+	ld		(hl),1
+	ld		hl,etype
+	ld		(hl),c
+	pop		hl
+	ld		sp,(spsav)
+	ld		a,c
+	ld		(bdstat),a
+dgood:
+	push	hl
+	ld		hl,(vesav)
+	ld		(diskve),hl
+	pop		hl
+	ret
+
+PUBLIC	GETDPB@
+
+getdpb@:
+		ld		e,a
+		ld		d,0
+		ld		bc,0
+		ld		a,1bh ;Emulate bdos((char)0x1b,drive,0);
+		call	bdosz@
+		cp		0ffh		;if drive offline	goto bad
+		jp		z,bad
+good:	PUSH	IX
+		POP		HL
+		RET
+bad:	ld		hl,0	;NULL pointer
+		ret
+		
+derror@::
+	ld		hl,eflag
+	ld		a,(hl)
+	ret
+	
+wherr@::
+	ld		hl,etype
+	ld		a,(hl)
+	ret
+	
+
+errv:
+	dw		error
+spsav:ds	2
+vesav:ds	2
+bdstat::ds	1
+eflag::ds	1,0
+etype::ds	1,0
+
+	end
+

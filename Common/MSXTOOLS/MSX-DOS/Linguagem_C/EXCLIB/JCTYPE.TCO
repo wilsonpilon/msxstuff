@@ -1,0 +1,155 @@
+Xiskan	C	F	E
+P11	C
+{
+}
+Xiskan2	C	F	E
+P12	C
+{
+}
+Xchkctype	I	F	E
+P13	C
+P14	I
+{
+}
+Xnthctype	I	F	E
+P26	R
+P27	I
+{
+}
+Xiskana	C	F	E
+P34	C
+{
+}
+Xiskpun	C	F	E
+P35	C
+{
+}
+Xiskmoji	C	F	E
+P36	C
+{
+}
+Xiak	C	F	E
+P37	C
+{
+}
+Xipnk	C	F	E
+P38	C
+{
+}
+Xisank	C	F	E
+P39	C
+{
+}
+Xiprk	C	F	E
+P40	C
+{
+}
+Xigk	C	F	E
+P41	C
+{
+}
+Xjiszen	C	F	E
+P42	N
+{
+}
+Xjisl0	C	F	E
+P43	N
+{
+}
+Xjisl1	C	F	E
+P44	N
+{
+}
+Xjisl2	C	F	E
+P45	N
+{
+}
+Xjisupper	C	F	E
+P46	N
+{
+}
+Xjislower	C	F	E
+P47	N
+{
+}
+Xjisalpha	C	F	E
+P48	N
+{
+}
+Xjisdigit	C	F	E
+P49	N
+{
+}
+Xjiskata	C	F	E
+P50	N
+{
+}
+Xjishira	C	F	E
+P51	N
+{
+}
+Xjiskigou	C	F	E
+P52	N
+{
+}
+Xjisspace	C	F	E
+P53	N
+{
+}
+Xjtoupper	N	F	E
+P54	N
+{
+}
+Xjtolower	N	F	E
+P56	N
+{
+}
+Xjtohira	N	F	E
+P58	N
+{
+}
+Xjtokata	N	F	E
+P62	N
+{
+}
+Xhantozen	N	F	E
+P67	N
+{
+}
+Xzentohan	N	F	E
+P70	N
+{
+}
+Xmstojis	N	F	E
+P75	N
+{
+}
+Xjistoms	N	F	E
+P83	N
+{
+}
+Xishira	C	F	E
+P91	C
+{
+}
+Xiah	C	F	E
+P92	C
+{
+}
+Xikh	C	F	E
+P93	C
+{
+}
+Xiakh	C	F	E
+P94	C
+{
+}
+Xh2zen2	N	F	E
+P12	N
+{
+}
+Xz2han2	N	F	E
+P15	N
+{
+}
+

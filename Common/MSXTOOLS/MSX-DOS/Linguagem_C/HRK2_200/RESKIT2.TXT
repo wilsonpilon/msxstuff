@@ -1,0 +1,74 @@
+HI-TECH C Resource kit #2 Version 2.00 Manual
+By Tatsuhiko Syoji 1995-2000
+
+[構成ファイル]
+-スタートアップモジュールアップデート
+CRT     .AS  :改良を加えた、スタートアップモジュールのソースです。
+CRT     .DOC :改良を加えた、スタートアップモジュールのマニュアルです。
+CRT     .O   :改良を加えた、スタートアップモジュールです。
+
+-メモリ管理ユーティリティー関数
+SBRK    .AS  :改良を加えたsbrk関数及び、setheaptop,getheaptop関数の
+              ソースです。
+SBRK    .OBJ :改良を加えたsbrk関数及び、setheaptop,getheaptop関数の
+              オブジェクトです。
+MEMUTIL .H   :setheaptop,getheaptop関数のヘッダーファイルです。
+MEMUTIL .TXT :setheaptop,getheaptop関数のマニュアルとメモリ管理に
+              関する解説です。
+
+-Suppliment Library for HI-TECH C V3.09
+SUPLIB  .LZH :ヘッダファイルにはあるがライブラリになかった関数や
+              他処理系にはあるがHI-TECH Cにない関数の
+              ソース、ヘッダファイル、オブジェクトです。
+
+-MSX-DOS1/2用ディスク入出力関数
+MDOS1LIB.LZH :MSX-DOSのBDOSファンクションを利用したディスク入出力関数の
+              ソースとオブジェクトです。
+MDOS2LIB.LZH :MSX-DOS2のBDOSファンクションを利用したディスク入出力関数の
+              ソースとオブジェクトです。
+
+-HI-TECH C用MSX-DOS汎用関数ライブラリ
+MDOSLIB .LZH :MSX-DOS汎用のディスク操作関数ソース、ヘッダファイル、
+              オブジェクトです。
+
+-ドキュメント
+NOTES   .TXT :改版履歴
+RESKIT2 .TXT :このマニュアルです。
+
+[使い方]
+  このアーカイブを解凍したら、各自必要なファイルを各ライブラリのマニュア
+ルにしたがってセットアップを行ってください。
+
+[本ライブラリについて]
+　HI-TECH C Resource kit #2は他の処理系にはあるけれどもHI-TECH Cにない関
+数やヘッダファイルに書いてあるけれどもライブラリの中にはない関数を実装す
+ることによって他処理系からの移植性を向上します。
+　また、HI-TECH Cの低水準入出力関数をMSX-DOS,MSX-DOS2のファンクションを
+利用したものに置き換えることでファイルサイズが128バイト単位になるという
+制限をなくし(代わりにCP/M上ではプログラムが動作しなくなりますが)MSX用の
+ツールを組むのに便利な環境を提供します。
+
+[著作権他]
+　本ライブラリはオリジナルのHI-TECH Cからソースファイルやヘッダファイル
+の一部を改変して構築しているので、ライセンスはHI-TECH C for CP/M Version
+ 3.09のものに従います。
+
+オリジナルのZ80READ.MEより引用
+The HI-TECH Z80 CP/M C compiler V3.09 is provided free of charge for any
+use, private or commercial, strictly as-is. No warranty or product
+support is offered or implied.
+
+You may use this software for whatever you like, providing you acknowledge
+that the copyright to this software remains with HI-TECH Software.
+
+　追加した関数については作者であるTatsuが著作権を所有しています。
+
+[作者]
+庄子 達彦(Tatsu)
+@nifty :RXK16664 ray-net    :RAY113
+MTC-NET:MTC0067  K.Y-Network:KYN00115 NetComplex Net:NAT28347
+Official E-mail Address rxk16664@nifty.ne.jp
+Private  E-mail Address tatsu_syo@geocities.co.jp
+My Homepage 1st. http://www.geocities.co.jp/SiliconValley/7512/
+My Homepage 2nd. http://member.nifty.ne.jp/Tatsu/
+------------------------------------------------------------------------

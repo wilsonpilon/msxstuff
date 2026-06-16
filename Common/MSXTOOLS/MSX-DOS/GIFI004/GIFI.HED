@@ -1,0 +1,22 @@
+MX/MSX/GRPH/GIFI004.LZH/GIFi-0.04
++-----------------------------------------------------------------------------
+| タイトル | ＧＩＦｉ ver0.04				GIF image viewer
+|ファイル名| GIFI004.LZH   {GIFI.COM, GIFI.DOC, GIFI.HED, GIFI.HIS}
+| カテゴリ | GRPH: 画像ローダ [GIF]
+|前提ソフト| MSX-DOS2
+| 動作機種 | MSX2+/turboR  [MMS : 1seg or over]
+| 圧縮方式 | -lh5-
+|転載の可否| free
++-----------------------------------------------------------------------------
+
+　GIF87a 準拠の、GIF 画像ローダです。
+　GIF89a に属する、Interlace-GIF や Animation-GIF には対応してません。
+
+
+[履歴]
+
+・1998-04-05  ver0.04
+	・一部のデータで暴走するバグの修正
+
+[ file-name : GIFI004 .LZH ]					ＡＰｉ
+

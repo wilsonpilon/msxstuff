@@ -1,0 +1,48 @@
+X_boxtit	C	F
+P34	R
+P35	R
+{
+}
+X_winclose	C	F
+P36	R
+{
+}
+Xmenuwin	I	F
+P37	R
+P38	R
+P39	I
+P40	I
+P41	I
+P42	I
+P43	I
+{
+}
+Xynwin	I	F
+P66	R
+P67	I
+P68	I
+{
+}
+X_bkdel	C	F
+P93	R
+P94	I
+P95	I
+{
+}
+Xjinputw	R	F
+P99	R
+P100	I
+P101	I
+P102	I
+P103	R
+{
+}
+Xinputw	R	F
+P139	R
+P140	I
+P141	I
+P142	I
+P143	R
+{
+}
+

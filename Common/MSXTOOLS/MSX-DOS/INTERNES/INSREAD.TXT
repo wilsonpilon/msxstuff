@@ -1,0 +1,148 @@
+InterNestor Suite beta 1 - By Nestor Soriano (Konami Man), 7-2001
+------------------------------------------------------------------
+
+
+1. WHAT IS THIS?
+
+InterNestor Suite is a resident program, plus a set of utilidades, which 
+allow Internet connection with a MSX computer having DOS 2, at least 256K 
+RAM, and RS-232/ACCNET+modem.
+
+
+2. PHILOSOPHY
+
+The resident part of InterNestor Suite will consist on four modules, each one 
+residing in a RAM segment and each one with his own timer interrupt service 
+routine. Each module has a set of standarized call entries, which can be 
+accessed by the other modules and by the user. Data packets exchange between 
+modules is performed by using NestorMan lists, acting as queues. NestorMan 
+also reserves the segments for the modules, and informs the user about the 
+exact location (slot+segment number) of each module via extended BIOS.
+
+The four modules will have the following functionalities:
+
+- Level 1: Physical medium access. For example, serial port access via Fossil 
+driver (available in this beta).
+- Level 2: Link control. For example, PPP protocol (available in this beta).
+- Level 3: IP module (not available yet).
+- Level 4: TCP/UDP module (not available yet).
+
+The utility programs will provide the typicial functionalities: telnet, FTP, 
+e-mail, etc. In this beta only a simple PING program is available.
+
+
+3. OPERATION
+
+How to use this InterNestor Suite beta:
+
+1) Install Fossil driver and NestorMan. Use this NestorMan version, do NOT 
+use the one supplied with PPPAT.
+
+2) Install and initialize the modules, this is achieved by doing:
+
+INSINS I NFOSSIL NPPP-x
+
+where x=A for NPPP-A.INM, PPP module with active opening (MSX starts to 
+send configuration packets immediately), and x=P for NPPP-P.INM, PPP module 
+with passive open (MSX waits for incoming configuration packets before sendig 
+its packets). Four free segments are needed, all four in the same mapper 
+slot.
+
+INSINS.COM has more options; executing it without parameters more information 
+is shown.
+
+3) If connection is not null-modem, dial your ISP number:
+
+ECHOCOM ATDTnumber, or: ECHOCOM ATDPnumber for pulse dialing.
+
+4) Once the modem has detected carrier, open the PPP connection. This may be 
+done by two ways:
+
+PPPC O user password
+
+In this way, PPPC.COM program will finish immediately, and connection 
+stablishment will be performed as background task (you can always check 
+connection status with PPPC S). The other way is:
+
+PPPC V user password
+
+This is the verbose mode: program will not finish immediately, but 
+information will be shown until connection is either completed or it fails.
+
+5) Once we are connected, the only thing we can do currently is to PING any 
+IP address we know:
+
+NPING IP-address
+
+For example: NPING 147.83.68.1 will send echo packets to the mail server of 
+the Telecommunication school of UPC on Barcelona. This ping program is very 
+simple; since there is not IP module yet, simply a prebuilt IP packet is 
+send; this IP packet contains an ICMP echo packet.
+
+6) To close connection:
+
+PPPC C
+
+The modem should disconnect in few seconds. By th way, PPPC also shows 
+information when executed without parameters.
+
+
+4. FILES
+
+The files which compose this beta are:
+
+ECHOCOM.COM: Sends an string to the serial port. It is needed to order the 
+modem for dialing the ISP number (it is not needed for null-modem 
+connectionsm, of course).
+
+NESMAN.COM: NestorMan 1.12. The NestorMan version distributed with PPPAT.LZH, 
+although is also marked as 1.12, must be discarded.
+
+INSINS.COM: InterNestor Suite modules installer. It allows also to uninstall 
+them, as well as to pause INS (inhibits the modules' timer interrupt service 
+routines execution).
+
+NFOSSIL.INM: Level 1 module for phyisical medium access (RS-232 port), 
+requires Fossil driver.
+
+NPPP-x.INM: Level 2 module for PPP connections. x=A: active connection, x=P: 
+passive connection (see "operation" section).
+
+DRIVER.COM: Fossil driver for RS-232 access.
+
+PPPC.COM: PPP connection control program. Allows to open a connection, to 
+close it, to show the current state and to show the negotiated IP addresses.
+
+NPING.COM: Simple PING program. Direct IP address must be specified (it has 
+no resolver) and echo packets must be sent by hand, pressing ENTER.
+
+
+5. WHAT AM I ASKING FOR
+
+Betatesting, that is, test this beta and inform me about if either it works 
+or nor, if it has strange behaviors, etc. For example, I have found two 
+problems which I could not solve yet, and I would like to know if someone 
+else has also these problems:
+
+1) Active connection (using NPPP-A.INM) does not work if connection is opened 
+immediately after the modem detects the carrier (when CD led lights up), that 
+is, when MSX is actually the one who first sends configuration packets: MSX 
+and ISP then exchange configuration packets in an infinite loop, until ISP 
+gives up and closes connection.
+
+2) After INS is installed, MSX can't detect the incoming packets until a DIR 
+is made from DOS and the free space on disk appears. I'm completely 
+astounished by this error.
+
+I also would like to know if connection is completed successfully with 
+various ISPs, what are the messages shown in verbose mode, etc.
+
+And finally: INS slows down the computer, and I want to know your opinion 
+about this speed loss: it is reasonable, it is too big, or how it is? Mainly 
+for MSX2/2+ users.
+
+You can find me at: konamiman@konamiman.com, my web page is: 
+http://www.konamiman.com. Thank you a lot.
+
+
+

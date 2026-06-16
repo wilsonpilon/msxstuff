@@ -1,0 +1,21 @@
+other/msx/prog
+--------------------
+
+hrk1_200.lzh --- 000521    49K ƒt       HI-TECH C Resource kit #1: HI-TECH CŠÖ
+                                        ˜A‚Ìƒ†[ƒeƒBƒŠƒeƒB[AƒeƒLƒXƒgW
+hrk2_200.lzh --- 000611    70K ƒt       HI-TECH C Resource kit #2: HI-TECH C—p
+                                        ‚Ìƒtƒ@ƒCƒ‹ŠÖ˜A‚â•¶šE•¶š—ñŠÖ˜A‚È‚Ç‚Ì
+                                        ƒ‰ƒCƒuƒ‰ƒŠ
+hrk3_200.lzh --- 000612    93K ƒt       HI-TECH C Resource kit #3: HI-TECH C—p
+                                        ‚ÌMSX‚Å‚ÌƒvƒƒOƒ‰ƒ~ƒ“ƒO‚É•Ö—˜‚Èƒ‰ƒCƒu
+                                        ƒ‰ƒŠ
+mclib   .lzh --- 000704    69K ƒt       MSX-C LibraryŒİŠ·ƒ‰ƒCƒuƒ‰ƒŠ for HI-TEC
+                                        H C: MSX-C Library‚ÆŒİŠ·«‚Ì‚ ‚éƒOƒ‰ƒt
+                                        ƒBƒbƒN‹y‚ÑBIOSƒ‰ƒCƒuƒ‰ƒŠ
+sc_mclib.lzh --- 000722    66K ƒt       MSX-C LibraryŒİŠ·ƒ‰ƒCƒuƒ‰ƒŠ for SOLID
+                                         C: MSX-C Library‚ÆŒİŠ·«‚Ì‚ ‚éƒOƒ‰ƒt
+                                        ƒBƒbƒN‹y‚ÑBIOSƒ‰ƒCƒuƒ‰ƒŠ
+exclib  .lzh --- 970615   111K ƒt       MSX-C Ver1.1‹­‰»ƒZƒbƒg: MSX-C Version
+                                         1.1—p‚Ìƒ‰ƒCƒuƒ‰ƒŠW
+srk3_100.lzh --- 000624    45K ƒt       SOLID C Resource kit #3: SOLID C—p‚Ì©
+                                        ìƒ‰ƒCƒuƒ‰ƒŠ[

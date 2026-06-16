@@ -1,0 +1,58 @@
+subdesign SUPERATA
+
+(
+
+a[7..0], iorq, rd, wr	:	input;
+d[7..0]	:	bidir;
+cs1fx, cs3fx, latchon, oe245	:	output;
+busdir	:	output;
+b[7..0]	:	bidir;
+csxfx	:	output;
+slotsl	:	input;
+)
+
+variable
+
+fhit	:	lcell;
+xhit	:	lcell;
+tmode	:	tff;
+tdelay	:	dff;
+dreg[7..0]	:	dff;
+dmux[7..0]	:	node;
+dout[7..0]	:	tri;
+bout[7..0]	:	tri;
+
+--!! Внимание !! Сигнал /WR задержан относительно данных на 100 ns. 
+
+begin
+-- Декодировать попадание в пространство контроллера
+!fhit	=	!iorq & (!rd # !wr) & !a7&a6&!a5&!a4&!a3;
+cs1fx	=	fhit;
+!xhit	=	!iorq & (!rd # !wr) & !a7&a6&!a5&!a4&a3;
+cs3fx	=	xhit;
+!csxfx	=	!iorq & (!rd # !wr) & !a7&a6&!a5&!a4 # !slotsl;
+-- Сигнал управления 3-им состоянием на внешних буферах MSX
+!busdir	=	!fhit&!rd # !xhit&!rd;
+-- Конечный автомат типа пересылки. Работает по переднему фронту сигнала выборки. Когда 1 
+-- Начало 16-ти разрядной перелачи.
+tmode.clk	=	!fhit;
+tmode.t		=	!a0&!a1&!a2&!tmode # tmode;
+latchon		=	!tmode;
+-- Разрешение 16-ти разрядного буфера данных. Всегда разрешается во второй фазе
+!oe245		=	!fhit&tdelay&!tmode;
+-- Данные переписываются в регистр по заднему фронту
+tdelay.clk	=	fhit;
+tdelay.d	=	tmode.q;
+dreg[].clk	=	tdelay.q;
+dreg[].d	=	d[];
+
+dmux[]		=	dreg[].q & tdelay.q # d[] & !tdelay.q;
+dout[].oe	=	!wr; --!fhit&!wr # !xhit&!wr;
+dout[].in	=	dmux[];
+b[]		=		dout[];
+bout[].oe	=	!busdir&!tdelay;
+bout[].in	=	b[];
+d[]			=	bout[];
+	
+end;
+

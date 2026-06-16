@@ -1,0 +1,545 @@
+S1	(
+M2	C
+M3	C
+M4	R
+M5	I
+M6	R
+M7	I
+M8	N
+)
+V9	S1	#10
+V10	I	#2
+Xbtom	I	F
+P11	R
+P12	I
+{
+A13	I
+A14	I
+A15	C
+	A14	#0	:I
+	A15	#0	CI	:C
+	A13	#0	:I
+	d
+	j	L16	A13	P12	<I	n
+	j	L18	A15	#0	!C	n
+	j	L19	Xiskan2	P11	A13	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A14	#1	;+I
+	j	L20
+L19
+	A14	#2	:+I
+L20
+	A15	#0	CI	:C
+	j	L21
+L18
+	j	L22	Xiskan	P11	A13	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A15	#1	CI	:C
+	j	L23
+L22
+	A14	#1	;+I
+L23
+L21
+L17
+	A13	#1	;+I
+	b
+L16
+	yI	A14
+}
+Xmtob	I	F
+P24	R
+P25	I
+{
+A26	I
+A27	I
+A28	C
+	A27	#0	:I
+	A28	#0	CI	:C
+	A26	#0	:I
+	d
+	j	L29	A26	P25	<I	n
+	j	L31	Xiskan	P24	@	pC	cC	F1	#0	!C	n
+	P24	#C	;+R
+	A27	#1	;+I
+	j	L32	Xiskan2	P24	@	pC	cC	F1	#0	!C	n
+	P24	#C	;+R
+	A27	#1	;+I
+L32
+	j	L33
+L31
+	P24	#C	;+R
+	A27	#1	;+I
+L33
+L30
+	A26	#1	;+I
+	b
+L29
+	yI	A27
+}
+Xjsadv	R	F
+P34	R
+P35	I
+{
+	yR	P34	Xmtob	P34	pR	P35	pI	cI	F2	RI	#C	*R	+R
+}
+Xjschr	R	F
+P36	R
+P37	N
+{
+A38	N
+A39	C
+	d
+	j	L40	P36	@	#0	!C	n
+	A39	#0	CI	:C
+	A38	P36	@	NC	:N
+	j	L42	Xiskan	P36	@	pC	cC	F1	#0	!C	n
+	j	L43	Xiskan2	P36	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A38	A38	#8	NI	lN	P36	#1	RI	#C	*R	+R	@	NC	+N	:N
+	A39	#1	CI	:C
+L43
+L42
+	j	L44	A38	P37	=N	n
+	yR	P36
+L44
+	P36	#C	;+R
+	j	L45	A39	#0	!C	n
+	P36	#C	;+R
+L45
+L41
+	b
+L40
+	yR	#0	RI
+}
+Xjsrchr	R	F
+P46	R
+P47	N
+{
+A48	N
+A49	I
+A50	I
+	A50	Xstrlen	P46	pR	cN	F1	IN	:I
+	d
+	j	L51	P46	#1	RI	#C	*R	+R	@	#0	!C	n
+	P46	#C	;+R
+L52
+	b
+L51
+	A49	#0	:I
+	d
+	j	L53	A49	A50	<I	n
+	A48	P46	@	NC	:N
+	j	L55	Xiskan	P46	@	pC	cC	F1	#0	!C	n
+	j	L56	Xiskan2	P46	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A48	A48	#8	NI	lN	P46	#1	RI	#C	*R	+R	@	NC	+N	:N
+L56
+L55
+	j	L57	A48	P47	=N	n
+	yR	P46
+L57
+	P46	#C	;-R
+L54
+	A49	#1	;+I
+	b
+L53
+	yR	#0	RI
+}
+Xjscmp	I	F
+P58	R
+P59	R
+{
+A60	N
+A61	N
+	d
+	j	L62	P58	@	#0	!C	n
+	A60	P58	@	NC	:N
+	j	L64	Xiskan	P58	@	pC	cC	F1	#0	!C	n
+	j	L65	Xiskan2	P58	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A60	A60	#8	NI	lN	P58	#1	RI	#C	*R	+R	@	NC	+N	:N
+	P58	#C	;+R
+L65
+L64
+	A61	P59	@	NC	:N
+	j	L66	Xiskan	P59	@	pC	cC	F1	#0	!C	n
+	j	L67	Xiskan2	P59	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A61	A61	#8	NI	lN	P59	#1	RI	#C	*R	+R	@	NC	+N	:N
+	P59	#C	;+R
+L67
+L66
+	j	L68	A60	A61	>N	n
+	yI	A60	A61	-N	IN
+L68
+	j	L69	A61	A60	>N	n
+	yI	A61	A60	-N	IN	_I
+L69
+	P58	#C	;+R
+	P59	#C	;+R
+L63
+	b
+L62
+	yI	#0
+}
+Xjsncmp	I	F
+P70	R
+P71	R
+P72	I
+{
+A73	N
+A74	N
+	d
+	j	L75	P70	@	#0	!C	P72	#0	!I	m	n
+	A73	P70	@	NC	:N
+	j	L77	Xiskan	P70	@	pC	cC	F1	#0	!C	n
+	j	L78	Xiskan2	P70	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A73	A73	#8	NI	lN	P70	#1	RI	#C	*R	+R	@	NC	+N	:N
+	P70	#C	;+R
+L78
+L77
+	A74	P71	@	NC	:N
+	j	L79	Xiskan	P71	@	pC	cC	F1	#0	!C	n
+	j	L80	Xiskan2	P71	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A74	A74	#8	NI	lN	P71	#1	RI	#C	*R	+R	@	NC	+N	:N
+	P71	#C	;+R
+L80
+L79
+	j	L81	A73	A74	>N	n
+	yI	A73	A74	-N	IN
+L81
+	j	L82	A74	A73	>N	n
+	yI	A74	A73	-N	IN	_I
+L82
+	P70	#C	;+R
+	P71	#C	;+R
+L76
+	P72	#1	;-I
+	b
+L75
+	yI	#0
+}
+Xjslen	I	F
+P83	R
+{
+A84	I
+	A84	#0	:I
+	d
+	j	L85	P83	@	#0	!C	n
+	j	L87	Xiskan	P83	@	pC	cC	F1	#0	!C	n
+	j	L88	Xiskan2	P83	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	P83	#C	;+R
+	A84	#1	;+I
+	j	L89
+L88
+	A84	#1	;+I
+L89
+	j	L90
+L87
+	A84	#1	;+I
+L90
+	P83	#C	;+R
+L86
+	b
+L85
+	yI	A84
+}
+Xjsmat	R	F
+P91	R
+P92	R
+{
+A93	N
+A94	N
+A95	C
+A96	R
+	d
+	j	L97	P91	@	#0	!C	n
+	A95	#0	CI	:C
+	A93	P91	@	NC	:N
+	j	L99	Xiskan	P91	@	pC	cC	F1	#0	!C	n
+	j	L100	Xiskan2	P91	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A93	A93	#8	NI	lN	P91	#1	RI	#C	*R	+R	@	NC	+N	:N
+	A95	#1	CI	:C
+L100
+L99
+	A96	P92	:R
+	d
+	j	L101	A96	@	#0	!C	n
+	A94	A96	@	NC	:N
+	j	L103	Xiskan	A96	@	pC	cC	F1	#0	!C	n
+	j	L104	Xiskan2	A96	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A94	A94	#8	NI	lN	A96	#1	RI	#C	*R	+R	@	NC	+N	:N
+	A96	#C	;+R
+L104
+L103
+	j	L105	A93	A94	=N	n
+	yR	P91
+L105
+	A96	#C	;+R
+L102
+	b
+L101
+	P91	#C	;+R
+	j	L106	A95	#0	!C	n
+	P91	#C	;+R
+L106
+L98
+	b
+L97
+	yR	#0	RI
+}
+Xjsncat	R	F
+P107	R
+P108	R
+P109	I
+{
+A110	R
+	A110	P107	:R
+	d
+	j	L111	A110	@	#0	!C	n
+	A110	#C	;+R
+L112
+	b
+L111
+	d
+	j	L113	P109	#0	!I	P108	@	#0	!C	m	n
+	A110	@	P108	@	:C
+	j	L115	Xiskan	P108	@	pC	cC	F1	#0	!C	n
+	j	L116	Xiskan2	P108	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A110	#C	;+R
+	P108	#C	;+R
+	A110	@	P108	@	:C
+L116
+L115
+	A110	#C	;+R
+	P108	#C	;+R
+L114
+	P109	#1	;-I
+	b
+L113
+	A110	@	#0	:C
+	yR	P107
+}
+Xjsncpy	R	F
+P117	R
+P118	R
+P119	I
+{
+A120	R
+	A120	P117	:R
+	d
+	j	L121	P119	#0	!I	P118	@	#0	!C	m	n
+	A120	@	P118	@	:C
+	j	L123	Xiskan	P118	@	pC	cC	F1	#0	!C	n
+	j	L124	Xiskan2	P118	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A120	#C	;+R
+	P118	#C	;+R
+	A120	@	P118	@	:C
+L124
+L123
+	A120	#C	;+R
+	P118	#C	;+R
+L122
+	P119	#1	;-I
+	b
+L121
+	j	L125	P119	#0	>I	n
+	A120	@	#0	:C
+L125
+	yR	P117
+}
+Xjsrev	R	F
+P126	R
+{
+A127	N
+A128	I
+A129	I
+A130	I
+A131	I
+A132	I
+A133	R
+A134	R
+A135	R
+A136	C
+	A134	P126	:R
+	A135	P126	:R
+	d
+	j	L137	A134	#1	RI	#C	*R	+R	@	#0	!C	n
+	A134	#C	;+R
+L138
+	b
+L137
+	A130	Xjslen	P126	pR	cI	F1	:I
+	A132	Xstrlen	P126	pR	cN	F1	#1	NI	-N	IN	:I
+	A131	#0	:I
+	A128	#0	:I
+	d
+	j	L139	A128	A130	#1	-I	<I	n
+	A136	#0	CI	:C
+	A133	Xjsadv	P126	pR	A130	#1	-I	pI	cR	F2	:R
+	A127	A133	@	NC	:N
+	j	L141	Xiskan	A133	@	pC	cC	F1	#0	!C	n
+	j	L142	Xiskan2	A133	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A127	A127	#8	NI	lN	A133	#1	RI	#C	*R	+R	@	NC	+N	:N
+	A136	#1	CI	:C
+L142
+L141
+	A129	A132	:I
+	d
+	j	L143	A129	A131	>I	n
+	P126	@	A129	RI	#C	*R	'	P126	@	A129	#1	-I	RI	#C	*R	'	:C
+L144
+	A129	#1	;-I
+	b
+L143
+	A131	#1	;+I
+	j	L145	A136	#0	!C	n
+	A129	A132	:I
+	d
+	j	L146	A129	A131	>I	n
+	P126	@	A129	RI	#C	*R	'	P126	@	A129	#1	-I	RI	#C	*R	'	:C
+L147
+	A129	#1	;-I
+	b
+L146
+	A131	#1	;+I
+	A135	@	A127	#8	NI	rN	CN	:C
+	A135	#C	;+R
+	A135	@	A127	CN	:C
+	A135	#C	;+R
+	j	L148
+L145
+	A135	@	A127	CN	:C
+	A135	#C	;+R
+L148
+L140
+	A128	#1	;+I
+	b
+L139
+	yR	P126
+}
+Xjsskip	R	F
+P149	R
+P150	R
+{
+A151	N
+A152	N
+A153	C
+A154	R
+	d
+	j	L155	P149	@	#0	!C	n
+	A153	#0	CI	:C
+	A151	P149	@	NC	:N
+	j	L157	Xiskan	P149	@	pC	cC	F1	#0	!C	n
+	j	L158	Xiskan2	P149	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A151	A151	#8	NI	lN	P149	#1	RI	#C	*R	+R	@	NC	+N	:N
+	A153	#1	CI	:C
+L158
+L157
+	A154	P150	:R
+	d
+	j	L159	A154	@	#0	!C	n
+	A152	A154	@	NC	:N
+	j	L161	Xiskan	A154	@	pC	cC	F1	#0	!C	n
+	j	L162	Xiskan2	A154	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A152	A152	#8	NI	lN	A154	#1	RI	#C	*R	+R	@	NC	+N	:N
+	A154	#C	;+R
+L162
+L161
+	j	L163	A151	A152	=N	n
+	j	L159
+L163
+	A154	#C	;+R
+L160
+	b
+L159
+	j	L164	A154	@	#0	=C	n
+	yR	P149
+L164
+	P149	#C	;+R
+	j	L165	A153	#0	!C	n
+	P149	#C	;+R
+L165
+L156
+	b
+L155
+	yR	P149
+}
+Xjsstr	R	F
+P166	R
+P167	R
+{
+	d
+	j	L168	P166	@	#0	!C	n
+	j	L170	Xjsncmp	P166	pR	P167	pR	Xjslen	P167	pR	cI	F1	pI	cI	F3	#0	=I	n
+	yR	P166
+L170
+	P166	#C	;+R
+L169
+	b
+L168
+	yR	#0	RI
+}
+Xjstok	R	F
+P171	R
+P172	R
+{
+T173	R
+A174	R
+A175	R
+A176	C
+A177	N
+A178	N
+	j	L179	P171	#0	RI	!R	n
+	T173	P171	:R
+L179
+	d
+	j	L180	T173	@	#0	!C	n
+	A177	T173	@	NC	:N
+	j	L182	Xiskan	T173	@	pC	cC	F1	#0	!C	n
+	j	L183	Xiskan2	T173	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A177	A177	#8	NI	lN	T173	#1	RI	#C	*R	+R	NR	+N	:N
+	A176	#1	CI	:C
+L183
+L182
+	A174	P172	:R
+	d
+	j	L184	A174	@	#0	!C	n
+	A178	A174	@	NC	:N
+	j	L186	Xiskan	A174	@	pC	cC	F1	#0	!C	n
+	j	L187	Xiskan2	A174	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	A178	A178	#8	NI	lN	A174	#1	RI	#C	*R	+R	NR	+N	:N
+	A178	#1	;+N
+L187
+L186
+	j	L188	A177	A178	=N	n
+	j	L184
+L188
+L185
+	A174	#C	;+R
+	b
+L184
+	j	L189	A174	@	#0	=C	n
+	A175	T173	:R
+	j	L180
+L189
+	j	L190	A176	#0	!C	n
+	T173	#C	;+R
+L190
+L181
+	T173	#C	;+R
+	b
+L180
+	j	L191	T173	@	#0	=C	n
+	yR	#0	RI
+L191
+	T173	Xjsmat	T173	pR	P172	pR	cR	F2	:R
+	j	L192	T173	#0	RI	!R	n
+	j	L193	Xiskan	T173	@	pC	cC	F1	#0	!C	n
+	T173	@	#0	:C
+	j	L194	Xiskan2	T173	#1	RI	#C	*R	+R	@	pC	cC	F1	#0	!C	n
+	T173	#C	;+R
+L194
+	j	L195
+L193
+	T173	@	#0	:C
+L195
+	T173	#C	;+R
+L192
+	yR	A175
+}
+

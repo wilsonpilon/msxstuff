@@ -1,0 +1,7 @@
+CPP -DCPM -DHI_TECH_C -Dz80 -I %1.c $C1.T
+P1 $C1.T $C2.T $C3.T
+CGEN $C2.T $C1.T
+OPTIM $C1.T $C2.T
+ZAS -J -N -o%1.O $C2.T
+DEL $C1.T
+DEL $C2.T

@@ -1,0 +1,24 @@
+R-Type (c) IREM 1988
+--------------------
+
+Optimization patch v1.0 by FRS
+
+This patchfile provides several bugfixes and optimizations for
+this game.
+
+- New FMPAC detection routine
+     The old one was braindamadged and even mishandled the stack,
+     FMPAC was only detected if installed on slot1, now any MSX-Music
+     is detected on any slot.
+
+- Fixed MSX2 detection routines
+     They used a nonstandard method to detect MSX2 by checking the
+     amount of VRAM avaiable. Now it uses the standard 002Dh check.
+
+- Optimized HTIMI handler
+     Very ligher than the original one.
+
+- Optional invulnerability (only for game-testing  ;)
+
+Warning: There are many bad dumps of the R-type cartridge on the net.
+This patch requires a well dumped rom with 3megabits of size (384KB).

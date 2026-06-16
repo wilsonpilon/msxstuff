@@ -1,0 +1,20 @@
+-----------------------------------------------------------------------------
+THE MAZE OF GALIOUS - KNIGHTMARE II  (The musics of game)
+-----------------------------------------------------------------------------
+
+KM2-01.MID  11.692  THE MAZE OF GALIOUS - STORY
+KM2-02.MID  95.407  THE MAZE OF GALIOUS - CASTLE
+KM2-03.MID  67.330  THE MAZE OF GALIOUS - WORLD
+KM2-04.MID  12.574  THE MAZE OF GALIOUS - SHRINE
+KM2-05.MID  14.878  THE MAZE OF GALIOUS - STONE MONUMENTS
+KM2-06.MID  13.305  THE MAZE OF GALIOUS - DEVIL'S ROOM
+KM2-07.MID  22.516  THE MAZE OF GALIOUS - GREAT DEMONS
+KM2-08.MID   5.565  THE MAZE OF GALIOUS - TAKE BACK !
+KM2-09.MID  13.114  THE MAZE OF GALIOUS - ENDING
+
+-----------------------------------------------------------------------------
+All of this midi files, were found in various Japanese web sites.
+Except the file KM2-07.MID, was created with fMSX 2.5 Windows.
+You found them in Knightmare Saga:
+http://www.terra.es/personal2/valley/galious
+-----------------------------------------------------------------------------

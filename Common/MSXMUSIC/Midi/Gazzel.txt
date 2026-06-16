@@ -1,0 +1,16 @@
+Xak: Tower of Gazzel music pack
+From www.rpgfan.demon.co.uk
+
+Xak Gazzel on MSX contains MIDI music that will be played back during the introdemo instead
+of the usual PSG/FM music. This only works on MSX-Turbo R GT with MIDI output port. This
+pack consists of this MIDI music. It is taken straight from the disk (not recorded) so there
+loss of data. The files have been converted from RCP to the more usual MID format.
+
+This MIDI music is composed for use with the Roland MT-32. All GS compatible instruments
+Have the sounds of MT-32, but in order to use this sounds, you will have to run mt32.mid.
+mt32.mid switches your instrument into GS mode, sets reverb, and switches all instruments
+to MT-32. You can download mt32.mid from my page.
+
+Hope you like 'em!
+--
+locke

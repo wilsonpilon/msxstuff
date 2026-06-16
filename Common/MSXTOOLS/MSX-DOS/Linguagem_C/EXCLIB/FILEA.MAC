@@ -1,0 +1,68 @@
+	MODULE phread
+	public phread@
+
+	.z80
+exptbl	equ	0fcc1h
+PHYDIO	equ	0ffa7h
+CALSLT	equ	001ch
+
+iysav:	ds	2
+
+phread@:pop	ix
+	pop	iy ;4th param.
+	
+	ld	(iysav),iy
+	push	iy
+	push	ix
+	ld	hl,(iysav)
+
+	ld	iy,(exptbl-1)
+	ld	ix,0144h
+	or	a	;cy reset
+	call	CALSLT	;CALSLT
+
+	jp	c,cantrd
+
+	ld	a,0
+	ret
+
+cantrd:	ld	a,1
+	ret
+	
+	ENDMODULE
+
+	MODULE phwrit
+	public phwrit@
+
+	.z80
+exptbl	equ	0fcc1h
+PHYDIO	equ	0ffa7h
+CALSLT	equ	001ch
+
+iysav:	ds	2
+
+phwrit@:pop	ix
+	pop	iy ;4th param.
+	
+	ld	(iysav),iy
+	push	iy
+	push	ix
+	ld	hl,(iysav)
+
+	ld	iy,(exptbl-1)
+	ld	ix,0144h
+	scf		;cy set
+	call	CALSLT	;CALSLT
+	
+	jp	c,cantwt
+	
+	ld	a,0
+	ret
+	
+cantwt:	ld	a,1
+	ret
+
+	ENDMODULE
+
+
+	end

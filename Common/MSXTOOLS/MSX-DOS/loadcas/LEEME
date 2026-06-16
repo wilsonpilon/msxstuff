@@ -1,0 +1,19 @@
+LOADCAS 1.0
+-----------
+
+Este programilla sirve para cargar ficheros CAS (el formato est ndar de
+im genes de cinta para emuladores) en un MSX2 con 128K RAM. B sicamente, lo que
+hace es copiar la bios en memoria ram y redirigir los vectores 00E1, 00E4 y
+00E7, logrando que el sistema lea el fichero CAS desde disco como si se tratase
+de una cinta real.
+
+Para utilizarlo, simplemente se copia al mismo disco o directorio donde est‚ el
+fichero CAS, renombrandolo para que se llame igual que ‚ste. Por ejemplo, si
+tenemos el ZARTH.CAS, el cargador podr¡a llamarse ZARTH.BIN o simplemente ZARTH
+(la extensi¢n es indiferente). Luego se ejecuta con BLOAD"ZARTH",R. El programa
+preparar  el sistema, e iniciar  la carga autom ticamente con la instrucci¢n
+correcta.
+
+Su efectividad es limitada: en general s¢lo puede asegurarse su funcionamiento
+con programas que requieran 32K o menos de memoria ram. Del resto, algunos
+cargar n correctamente y otros no. Tampoco es posible realizar grabaciones.

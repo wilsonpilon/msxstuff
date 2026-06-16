@@ -1,0 +1,154 @@
+		    EVA Player for Sunrise ATA-IDE ver 0.07
+		    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Description:
+~~~~~~~~~~~~
+
+EVA is the video format design by ESE Artist's Factory. With MSX TurboR +
+MegaSCSI interface through a Sony HB-V1 digitizer you can record animated
+sequences in screen 12, 128*106 pixels, 10 or 12 fps and digital sound with
+15,75 KHz. For see and play the EVAS was necessary a MSX TurboR and a MegaSCSI
+interface.
+
+System Requeriments:
+~~~~~~~~~~~~~~~~~~~~
+
+EvaIDE doesn't use MegaSCSI interface. This version only works with Sunrise
+ATA-IDE interface. It works fine with MSX TurboR, but also works perfectly
+with MSX2+. To get sound with MSX2+, it plays through Philips Music Module
+cartridge or a Covox card.
+
+This program has been designed to work with Z80 (3,57 MHz). MSX2+ Panasonic
+A1-WX (WSX) and TurboR have Z80A and R800 processors (6 and 28 MHz); in this
+case (if they are enable) it doesn't matter: the program will change the
+processor automatically. The owners of a MSX with Z80H (7 MHz) must change
+the mode of the processor manually.
+
+Is recommended to use a fast LBA Hard Disk. In spite of that, the player
+supports perfectly CHS mode of HDs (but the video will lose smoothness, and
+sound will lose quality).
+
+EvaIDE should work with any Bios from ATA-IDE interface.
+
+
+Execution and options:
+~~~~~~~~~~~~~~~~~~~~~~
+
+From command line:
+
+EVAIDE [letter:][\path\]evafile.eva [/V] [/W] [/A] [/C] [/8] [/M] [/Snn] [/Enn]
+
+where [/x] are optional.
+It's necessary that the letter (where EVA is) must be defragmented.
+
+Options:
+
+	/V -> Disable the syncronization with the screen refresh.
+	      Use this option if you realize that the play is slow.
+
+	/W -> Disable the sync. of the sound.
+	      This option only works with PCM of MSX TurboR and allow to win
+	      speed althoughyou lose sound quality.
+
+	/A -> Force the use of Music Module. This option only works with MSX
+	      TurboR.
+
+	/X -> Force the use of Covox. By default sound plays through Music
+	      Module on MSX2+ machines.
+
+	/C -> Force 12fps mode.
+
+	/8 -> Force screen 8.
+
+	/M -> Force R800 ROM mode in MSX TurboR or 6 MHz in Panasonic
+	      A1-WX/WSX instead Z80 standard (3,57 MHz)
+
+	/L -> Loop mode. Playback restarts at end.
+
+	/Snn -> Specify the first frame of the EVA.
+
+	/Enn -> Specify the final frame of the EVA.
+
+
+Greetings and notes:
+~~~~~~~~~~~~~~~~~~~~
+
+This program has been created for his free distribution. It's illegal to sell
+this program and include it in any CD or any recopilation of software (unless
+that you sell it at the same price that you pay for it). And this text must
+be included always with EvaIDE. If you don't obey it you will be punished ;).
+
+This player has been enterely created for me. I don't use nothing of the
+MegaSCSI player code.
+
+Please, for any suggestion contact me in:
+
+  Internet:
+	sergio.guerrero@ctv.es
+	sergio@aamsx.org
+
+  Fidonet:
+	2:343/168.4
+
+For new versions or other programs I made:
+
+	http://www.ctv.es/USERS/beelzebub/
+
+Thanks to: Manuel Pazos, Jon De Schrijder and Francisco Alvarez for helping me
+and give me courage to make this player.
+
+Changes in time:
+~~~~~~~~~~~~~~~~
+
+0.06 -> 0.07:
+
+	- Little improvement on 12fps mode routines.
+	- Added Covox support.
+	- Added loop option.	    
+	- Added end and abort messages. 
+
+0.05b -> 0.06:
+
+	- Added support for 12fps EVAS.
+	- Added synchronization with PCM in MSX TurboR.
+	- Added options in command line.
+	- Added (again) synchronization with the retrace in CHS HD.
+	  It can be disable in command line.
+	- Program used with several MSX and HDs with success.
+
+0.04b -> 0.05b:
+
+	- Improved playback routines.
+	- Removed the check of the file lenght.
+
+0.03b -> 0.04b:
+
+	- Fixed a bug when playing twice the same EVA.
+	- Player doesn't need new Bios version from IDE because player
+	  does't use the Bios. (No tested with Henrik Gilvad Bios).
+	- Fixed no-sync with interrupts. (In LBA HDs reproduction was
+	  faster than normal).
+	- No sync in CHS HDs to improve the speed.
+
+0.02b -> 0.03b:
+
+	- Tested and fixed bugs in LBA HDs.
+	- Fixed slow motion in Panasonic A1WX MSX2+ with 6 MHz.
+
+0.01b -> 0.02b:
+
+	- Beta version. It can have many bugs or not working.
+	- HD must be defragmented.
+	- Not implemented support for 12 fps EVAS yet.
+	- Not tested LBA (>512MB) HDs.
+	- In older and slower HDs... slow motion sure! and distorsions in
+	  sound!
+	- Player only support HDs. It doesn't support CD-ROMS and neither
+	  ATAPI devices with direct access.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Translation into english by Francisco Alvarez:
+
+alucardsaeba@jazzfree.com
+

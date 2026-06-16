@@ -1,0 +1,111 @@
+HI-TECH C Resource kit #1 リリースノート
+By Tatsuhiko Syoji 1995-
+
+V1.0以前は資料が無いので省略。
+
+V1.1 1996/09/19
+発表場所:赤い風船 Lib7
+  HITECH-4.PMA付属のLIBG.LIBに余りにもバグが多いので、自前でバグをとったり
+高速化を図ったりしたLIBX.LIBを収録。こんな所でもアンチG。
+
+V1.2 1996/10/20
+発表場所:G-Net 情報バンク
+前版からの追加・変更ファイル:GLIB.H,MSXBIOS.H,CPPPP.COM
+LIBX.LIB用ヘッダファイルGLIB.H,MSXBIOS.Hを追加、完全にLIBGの代わりになる
+ようにする。
+CPPPP.COM追加
+マニュアル加筆
+
+V1.3 1996/11/01
+発表場所:赤い風船 Lib7
+本文追加(Notes.DOC,HTRESKIT.DOC)
+LIBX.LIBに関して、スプライト関連の関数のデバッグ(REIICHI氏
+(赤い風船:AKFU0080)の指摘による。)
+(LIBX.LIB,LIBX.L)、ヘッダファイルの二重インクルード防止の為の記述のミスを
+訂正(GLIB.H)。まさにミイラ取りがミイラになったという奴である。
+HI-TECH Cを256倍(!?)使うドキュメントを加筆(HITECTEC.TXT)
+
+V1.31 1996/11/09
+発表場所:なし
+前版からの変更ファイル:uty.h,htreskit.hed,notes.doc
+  LIBX.LIBにはrndx関数はないのに、uty.hではrndx関数の定義を行っていた
+ミスを訂正(1行削除しただけだけどね。)
+
+V1.32 1996/11/18
+発表場所:赤い風船 Lib7(V1.30からの差分)
+前版からの変更ファイル:libx.l,libx.lib,notes.doc,htreskit.hed
+  LIBX.LIBのsetplt,paintが誤動作するとのREIICHI氏の指摘を受け、デバッグ。
+原因は、サブROM呼び出しルーチンで、BIOSのENASLT(0024H)を呼び出した際、
+レジスタの値が破壊されていたにもかかわらず、然るべき処置を行なわなかった
+ために生じたバグ。スロット構成によっては、正常動作する可能性が有り、
+厄介なバグになるところだった。
+
+V1.33 1996/11/21
+発表場所:G-Net 情報バンク,K.Y-Network
+変更ファイル:libx.l,libx.lib,notes.doc,htreskit.hed,msxbios.h,uty.doc
+  MSXBIOS.Hのヘッダファイルの注釈を修正、型チェック用宣言の誤りの修正、
+LIBX.LIBの著作権を明確にする。
+  LIBX.LIBのcalsltでコールするスロットの設定がうまくいっていなかったバグを
+修正。callxの余計なjp命令を削除。libx.lにrdvstsを2つ書いてどうするんだろう？
+単なる容量の無駄。rdvstsのインプリメントをMSX規格に沿ったものにする。
+  LIBX.LIBの各関数に対し、動作確認を行なう。
+
+V1.34 1996/12/03
+発表場所:なし
+変更ファイル:insthc.txt,notes.doc,htreskit.hed
+  insthc.txtの記述で、MSX-DOS2の人のパッチの手順に関して、文章の手直しを
+行なう。K.Y-NetworkのU-mexさんに感謝。
+
+V1.40 1996/12/9,12/13,1996/12/30
+発表場所:赤い風船,K.Y-Network
+変更ファイル:
+  NOTES.DOC,HTRESKIT.HED,LIBX.L,LIBX.LIB,HITECTEC.TXT,HTRESKIT.DOC,HTRESKIT.DOC
+  OPTIONSJ.TXT,INSTHC.TXT,AREL.BAT,CREL.BAT,ELIBR.DOC,LIBJ.L,LIBJ.LIB,
+  JCTYPE.H,JSTRINGS.H,CPPPP.EXE
+  スプライト関連の関数のバグ取りと、実行速度向上を図る。(LIBX.*)
+  ELIBR用のコンパイルからライブラリの結合までの手順を記述した
+サンプルファイルを添付(AREL.BAT,CREL.BAT,ELIBR.DOC)
+  char型の符号をunsignedに統一する。(LIBJ.L,LIBJ,LIB)
+  ヘッダファイルの関数宣言を改良。エラー対策に役立つ。(JCTYPE.H,JSTRING.H)
+  HI-TECH Cをマクロアセンブラとして使おう!を追加(HITECTEC.TXT)
+  CPPPP.EXEを追加。MS-DOS上でクロス開発している人用。
+  作者名の記述を統一して、メンテナンスしやすくする。
+  文字列を右端で折り返さないエディタ対策として、テキストファイルに
+改行を加えて、半角文字で80桁の環境では、文字列を右端で折り返さない環境
+でも読みやすくする。(EDP0070(K.Y-Network:KYN00138)氏の指摘による。)
+  その他、テキストの記述を直す。
+
+V1.5 1997/1/22,2/28,3/1,3/15,21,22,4/29
+変更ファイル:
+  HITECTEC.TXT,NOTES.DOC,INSTHC.TXT,EZINST.LZH,OPTIONSJ.DOC
+  HI-TECH C Resource kit #2の完成により、128バイト単位でのディスクアクセスの
+問題が消えた。それに伴い、HITECTEC.TXTの内容を変更。
+  HITECTEC.TXTのライブラリの乗っ取りに関して、研究が進んだので、加筆を
+行なう。
+  HI-TECH C Easy Patcherを製作し、バイナリエディタやモニターを使った
+面倒な作業をなくす。
+  HI-TECH C自体のインストールの説明をHI-TECH C Easy Patcherを使う事を
+前提としたものに書き換える。
+  スピード重視の最適化を行なうためのコンパイラドライバオプションについて加筆
+  任意のモジュールを特定のアドレスに配置する方法について書く。
+  作者名関連の記述を修正。
+
+V1.51 1997/07/11,20,26,8/31,9/23
+変更ファイル:LIBX.L,LIBX.L,ELIBR.EXE,AYAKA.COM
+発表場所:ray-net,NetComplex Net,K.Y-Network
+  IX,IYレジスタの保存し忘れによるchgcpu関数のバグを取る。
+  ELIBR MS-DOS版をLSI-C V3.3C試食版で再コンパイルし、ライブラリに起因する
+バグを取る。
+  HI-TECH C Easy Patcherに含まれるAYAKA.COMのバグを取る。(V1.04 for DOS1)
+
+V1.51' 1998/03/10,11
+変更ファイル:HITECTEC.TXT
+HI-TECH Cを256倍(!?)使うドキュメントを加筆。
+
+Version 2.00 2000/05/02,21
+　日本語(Shift-JIS)関連関数をアーカイブから削除する。拙作のシフトJIS日本
+語文字・文字列処理関数等を利用して下さい。
+　ELIBRは単体で公開したため、本アーカイブからは削除する。
+　従来のLIBX.LIB関連ファイルは合法性に疑問が残るため、MSX-C Library下位互換ライブラリに移行した上で本アーカイブから削除する。
+　AREL.BAT,CREL.BATはELIBR Version 1.11用にする。
+　HI-TECH Cを256倍(!?)使うドキュメントを加筆。

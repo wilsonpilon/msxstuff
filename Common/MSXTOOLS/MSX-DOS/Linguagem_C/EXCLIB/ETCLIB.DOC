@@ -1,0 +1,188 @@
+ MSX-C Ver1.1 各種関数拡張セットマニュアル
+ By Tatsu(庄子達彦) 1995
+
+本パッケージに含まれるファイルの内容です。
+ETCLIB  .C   :各種関数（Ｃ）ソースファイル
+ETCLIBA .MAC :各種関数（アセンブラ）ソースファイル
+ETCLIB  .REL :各種関数ライブラリ本体
+ETCLIB  .TCO :各種関数FPC 用パラメーターファイル
+ETCLIB  .H   :各種関数ヘッダーファイル
+ETCLIB  .DOC :今、あなたが読んでいるファイルです。
+MKELIBA .BAT :ライブラリ再構築用バッチファイル
+MKELIBC .BAT :ライブラリ再構築用バッチファイル
+
+本ライブラリの対象
+　MSX-C Ver1.1
+
+このライブラリは何者か？
+　 MSX-C Ver.1.1にはないが、他の処理系には存在すると思われる関数を、 MSX-C Ver.1.1に合わせた形で移植した関数のパッケージです。
+
+本ライブラリの再構築法
+　本ライブラリはＣで書かれた関数と、アセンブラで書かれた関数が混在しているので、下記の手順に従ってコンパイル等をすることで、本パッケージと同じ内容を再構築できます。
+CF etclib
+mx etclib
+mkelibc
+mx etcliba
+mkeliba
+lib80 etclib2.rel=etclib.LIB,etcliba.LIB/E
+fpc -c etclibp etclib
+del etclib.tco
+ren etclibp.tco etclib.tco
+ren etclib2.rel etclib.rel
+　再構築後は「本パッケージに含まれるファイルの内容です。」の項にあるファイル以外は消してしまってかまいません。また、中間ファイルが多めなので、ディレクトリに十分な余裕を持ったディスクで再構築を行ってください。
+
+使い方
+　ソースファイル作成時には、#includeを使ってヘッダーファイルETCLIB.Hを読み込ませてください。FPC.COM 使用時にはETCLIB.TCOを読み込ませてください。最後に、リンク時にETCLIB.RELをMLIB.REL及び、CLIB.RELの前にリンクするようにしてください。これで、本セットを利用したプログラムが可能となります。ＭＳＸ－Ｃ　Ｖｅｒ１．２を使うときはソースファイルを見て、使える関数を自分のライブラリに加えるようにするとよいでしょう。
+
+配布について
+　本ライブラリはフリーソフトウェアとします。配布は自由です。著作権は放棄しておりません。（日本では放棄できない。）本ライブラリを使ったソフトの配布については使用処理系の規約に準じます。
+
+ライブラリ関数リファレンス
+
+unsigned rotl(val,cnt)
+unsigned val;
+char cnt;
+　valをcnt回左にローテートした数を返します。
+
+unsigned rotr(val,cnt)
+unsigned val;
+char cnt;
+　valをcnt回右にローテートした数を返します。
+
+char *getdpb(drive)
+char drive;
+　 driveで指定したドライブ（0=カレント 1=A 2=B ...）の DPBのアドレスを返します。 DPBには下記の構造体を使ってアクセスできます。成功時には DPBのアドレスを、失敗時はNULLを返します。
+typedef struct dpb{
+        char drive;   /* ドライブ番号 */
+        char id;      /* メディアＩＤ */
+        int sec_s;    /* セクタサイズ */
+        char d_mask;  /* ディレクトリ・マスク */
+        char d_sft;   /* ディレクトリ・シフト */
+        char c_mask;  /* クラスタ・マスク */
+        char c_sft;   /* クラスタ・シフト（セクタ数によるクラスタサイズ-1） */
+        int fi_fat;   /* ＦＡＴの先頭セクタ */
+        char fat_c;   /* ＦＡＴのコピー数 */
+        char ents;    /* ルートディレクトリエントリ数 */
+        int fi_dat;   /* データ領域の先頭セクタ */
+        int la_cls;   /* 最終クラスタ番号（そうクラスタ数+1） */
+        char si_fat;  /* ＦＡＴサイズ（セクタ単位） */
+        int fi_dir;   /* ディレクトリ領域の先頭セクタ */
+        char *fatbuf; /* ＦＡＴバッファのアドレス（システム・メモリ） */
+} DPB;
+　この関数までがアセンブラを使った関数です。
+
+VOID getdate(date)
+struct dosdate_t *date;
+　システムの現在の日付を得て*dateにセットします。dosdate_t型構造体は<etclib.h>で次のように定義されています。
+struct  dosdate_t       {
+	char   day;       /* 日(1-31)        */
+	char   month;     /* 月(1-12)        */
+	unsigned int    year;      /* 年(1980-2099)   */
+	char   dayofweek; /* 曜日(0:日曜...) */
+};
+
+STATUS setdate(date)
+struct dosdate_t *date;
+　システムの現在の日付を *dateにセットします。成功すると０、失敗すると0xffを返します。
+
+VOID gettime(time)
+struct dostime_t *time;
+　システムの現在の日付を得て*timeにセットします。dostime_t型構造体は<etclib.h>で次のように定義されています。
+struct  dostime_t       {
+	char hour;    /* 時(0-23) */
+	char minute;  /* 分(0-59) */
+	char second;  /* 秒(0-59) */
+	char hsecond; /* 1/100秒(0-99) */
+};
+
+STATUS settime(time)
+struct dostime_t *time;
+　システムの現在の時刻を *timeにセットします。成功すると０、失敗すると0xffを返します。
+
+char findfirst(mask,dir)
+char *mask;
+DIR *dir;
+　maskの条件に合うファイルを検索します。ファイルが見つかったときは０を、見つからなかった時は0xffを返します。maskにはワイルドカードを使用することができます。見つかったファイルの情報は第２引数で指定した構造体に入ります。
+
+char findnext(dir)
+DIR *dir;
+　findfirst 関数の指定にマッチした複数のファイルの検索に使用し、単独での使用はできません。ファイルが見つかったときは０を、見つからなかった時は0xffを返します。見つかったファイルの情報は引数で指定した構造体に入ります。
+
+findfirst(),findnext()関数で使う構造体の内容
+typedef struct dirs{
+	char drive; /* ドライブ番号　*/
+	char name[8];/*　ファイル名　*/
+	char ext[3];/*　拡張子　*/
+	char atr;/*　属性　*/
+	char dummy[10];/**/
+	int time;/*　更新時　*/
+	int date;/*　更新日　*/
+	int clst;/*　先頭クラスタ番号　*/
+	int size[2];/*　ﾌｧｲﾙｻｲｽﾞ　*/
+} DIR;
+
+char *calloc(n,s)
+unsigned n,s;
+　callocは高レベルのメモリ管理を行う関数です。n個のsバイトのメモリブロックをヒープ領域から切り出し、切り出されたブロックの先頭へのポインタを関数の値として返します。もし、ヒープ領域に十分なメモリが無いときや､nかsが０のときには、NULLを関数の値として返します。このメモリの開放はfree関数で行って下さい。
+
+VOID getdrive(drive)
+unsigned *drive;
+　カレントドライブの内容を *driveにセットします。（A=0 B=1 ...）
+
+VOID setdrive(drive,drives)
+unsigned drive;
+unsigned *drives;
+　カレントドライブをdriveにセットし（A=0 B=1 ...）、 *drivesに論理ドライブ数をセットします。あまり関係ありませんが、物理ドライブ数を調べるのには MSXテクニカルガイドブックにあるような面倒な手順が必要な上、あまり意味がないので作る気はありません。
+
+char putch(c)
+char c;
+　コンソールに文字cを出力します。
+
+STATUS cprintf(format,arg1,arg2,...)
+char *format;
+int cscanf(format,arg1,arg2,...)
+char *format;
+　MSX-C Ver1.1の内部関数を利用したprintf(),scanf()の必ずコンソールに出力するバージョンです。詳しくは、MSX-C Ver1.1のマニュアルを見てください。
+
+char *cgets(s)
+char *s;
+　コンソールから、文字列を入力し、 sに格納します。s[0]には入力される最大文字数を入れてください。s[1]には入力された文字数が入ります。CR/LF は'\0'に変換されます。リターン値として、入力された文字列へのポインタ、つまり&s[2]を返します。
+
+VOID cputs(s)
+char *s;
+　コンソールに文字列sを出力します。'\n'のCR/LF への展開は行われません。
+
+VOID swab(s,t,n)
+char *s;
+char *t;
+int n;
+　sからtへnバイト２バイトを一組として順番を入れ替えながらコピーします。nは偶数である必要があります。
+
+unsigned getdiskfree(device,diskspace)
+unsigned device;
+struct diskfree_t *diskspace;
+　ディスクドライブdevice（0=カレント 1=A 2=B ...）の情報を得ます。得られた情報は*diskspaceにセットされます。diskfree_t型構造体は<etclib.h>で次のように定義されています。成功すると０、失敗すると１を返します。
+struct  diskfree_t      {
+	unsigned total_clusters;      /* 総クラスタ数             */
+	unsigned avail_clusters;      /* 使用可能クラスタ数       */
+	unsigned sectors_per_cluster; /* クラスタあたりのセクタ数 */
+	unsigned bytes_per_sector;    /* セクタあたりのバイト数   */
+};
+
+#pragma recursive
+char *bsearch(key,base,membs,size,compar)
+char *key;
+char *base;
+unsigned membs;
+unsigned size;
+int     (*compar)();
+　sizeバイトの要素が membs個ある昇順にソートされた配列baseの中の keyと等しい要素を２分探索法で探し、そのアドレスを返します。比較には２つのポインタxとyを引数にして、次の値を返すcomparの指す関数を使います。
+*x > *yの時 正
+*x = *yの時 0
+*x < *yの時 負
+　返す値として、 keyと等しい要素のアドレスを返し、見つからないときはNULLを返します。
+　簡潔さを重視して再帰呼び出しを利用しますので、十分な大きさのフリーエリアを用意してください。
+
+最後に
+　今回もLSI C-86 Ver.3.30 試食版の関数を参考にしたので、 MSX-Cから見ると幾分不自然な仕様があるかもしれません。他のライブラリと合わせることで MSX-Cの関数ラインナップも満更悪くはないところまで来ると思います。ライブラリを作る上で、苦労するのは、MSX-DOS1の制限により、アンダーバーが扱いずらい事と、L80,Lib80 の制限で、シンボルの文字数が少なく、切り捨て後のシンボル名が重複しないことを考えなければならないところです。他にも、ディレクトリエントリ数や、 MSX2+のスピードなど、厄介な点はいくつもありますが、 MSX-Cの処理系が手に入れやすいので許してやりましょう。それでは、今回はこの辺で失礼します。
+

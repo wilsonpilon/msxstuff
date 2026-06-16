@@ -1,0 +1,836 @@
+10 TH FRAME              -- 16
+10 YARD FIGHT            -- 14
+1942 (D)                 A- 360
+1942 (M)                 A- 36
+4X4 OFF ROAD RACING      -- 35
+737 FLIGHT SIMULATOR     -- 12
+747 FLIGHT SIMULATOR     -- 16
+A VIEW TO A KILL         AD 24
+ABU SIMBEL PROFANATION   AD 23
+ACE OF ACES              -- 25
+ACROBATAS                X- 4
+ACTION (*)               X- 19
+ACTMAN                   B- 12
+ADDICTA BALL             X- 17
+ADEL                     X- 23
+ADONIS / GRADIUS         XD 11
+AFRICAN TRAIL SIMULATOR  X- 26
+AFTER BURNER (D)         A- 360
+AFTER THE WAR 1 #        AD 32
+AFTER THE WAR 2          AD 31
+AFTEROIDS                X- 30
+AGUIA DE FOGO/INTRUDER   B- 8
+ALBATROSS                X- 22
+ALCAZAR                  XD 13
+ALE HOP                  X- 21
+ALIBABA AND 40 THIEVES   BD 10
+ALIEN EIGHT              XD 19
+ALIEN SYNDROME #         XD 25
+ALIENS COMPUTER GAME     BD 26
+ALPHA ROID               AD 22
+ALPHA SQUADRON           BD 12
+ALPINE SKI               X- 10
+AMAUROTE                 X- 23
+AMERICAN TRUCK (*)       X- 15
+AMIDA                    X- 4
+AMO DEL MUNDO            X- 31
+AMOTO'S PUF              XD 13
+ANGEL NIETO POLE 500     -- 29
+ANGLE BALL #             X- 13
+ANIMAL BASKET            -- 17
+ANIMAL WARS              X- 19
+ANTARTIC ADVENTURE       B- 12
+ANTY                     X- 11
+AQUAPOLIS SOS            X- 7
+ARAMO                    XD 23
+ARKANOID                 AD 21
+ARKANOID REVENGE         X- 8
+ARKOS 1                  AD 23
+ARKOS 2                  AD 25
+ARKOS 3                  AD 27
+ARMY MOVES 1             AD 26
+ARMY MOVES 2             AD 27
+ASPAR GP MASTER          X- 30
+ASTEROIDS #              B- 2
+ASTRO MARINE CORPS 1     A- 33
+ASTRO MARINE CORPS 2     AD 33
+ASTRO PLUMBER            X- 7
+ATHLETIC BALL [ASCII]    X- 8
+ATHLETIC LAND            BD 11
+ATTACK MOSQUITON #       X- 5
+ATTACKED                 X- 27
+AUF WIEDERSEHEN MONTY    AD 39
+AUTOCRAS                 X- 28
+AVENGER                  AD 30
+AVERNO                   X- 8
+BACK TO THE FUTURE       AD 16
+BANANA (*)               BD 11
+BANK PANIC               BD 23
+BARBARIAN #              AD 27
+BARN STORMER             X- 17
+BASEBALL CRAZE           -- 22
+BATALLA ESPACIAL         X- 20
+BATMAN                   AD 32
+BATMAN THE MOVIE (D)     AD 360
+BATTLE CHOPPER           X- 21
+BATTLE CROSS #           X- 10
+BATTLE FOR MIDWAY        X- 17
+BC'S QUEST               AD 18
+BEACH HEAD               A- 20
+BEAMRIDER                XD 11
+BEE & FLOWER             X- 9
+BESTIAL WARRIOR (*)      AD 32
+BINARY LAND              X- 6
+BLASTEROIDS              X- 31
+BLOCKADE RUNNER #        X- 13
+BLOODY                   X- 15
+BMX SIMULATOR            -- 33
+BOARDELLO                -- 7
+BOGGY '84                XD 6
+BOING BOING              X- 6
+BOKOSUKA WARS            A- 8
+BOMBERMAN                BD 6
+BOMBERMAN 3D             X- 9
+BOMBERMAN SPECIAL        X- 13
+BOOGABOO                 X- 11
+BOOGIE WOOGIE JUNGLE #   XD 9
+BOSCONIAN                BD 11
+BOUKEN ROMAN             XD 20
+BOULDER DASH 1           X- 9
+BOULDER DASH 2           X- 8
+BOUNDER                  AD 31
+BOXEO POLI DIAZ          -- 27
+BOXING #                 -- 24
+BREAK IN                 BD 20
+BRIAN JACK'S             -- 17
+BRUCE LEE                X- 19
+BUBBLER                  X- 28
+BUCANEER / BLACK BEARD   AD 27
+BUCK ROGERS              BD 13
+BUGBUSTER #              X- 3
+BURAN                    X- 41
+BUTA MARU PANTS          X- 7
+BUZZ OFF                 X- 17
+CABBAGE PATCH KIDS       B- 12
+CAMELOT WARRIORS #       AD 20
+CAN OF WORMS             -- 14
+CANDOO NINJA             BD 11
+CANNON FIGHTER           X- 8
+CAPITAN SEVILLA 1        AD 35
+CAPITAN SEVILLA 2        AD 35
+CAPTAIN CHEF             X- 5
+CAPTURE OS MONGAS        X- 3
+CAR FIGHTER              -D 10
+CAR JAMBOREE             BD 12
+CAR RACE                 -- 5
+CARLOS SAINZ RALLY       -- 28
+CASANOVA                 AD 30
+CAT [CASIO]              X- 19
+CAVERN OF DEATH          XD 7
+CENTIPEDE #              X- 10
+CETUS                    X- 8
+CHACK'N POP              X- 12
+CHAMPION BOXING          -- 18
+CHAMPION ICE HOCKEY      -- 18
+CHAMPION PRO WRESTLING   -- 19
+CHAMPION SOCCER #        -- 9
+CHAMPIONS HORSE          -D 13
+CHASE H. Q. (D)          X- 59
+CHECKMATE                -- 12
+CHESS                    -- 8
+CHICAGO '30              AD 24
+CHILLER                  XD 11
+CHIMA CHIMA              X- 17
+CHOPLIFTER #             -- 19
+CHOROQ                   BD 11
+CHOY LEE FUT KUNG FU     X- 36
+CHUBBY GRISTLE #         X- 29
+CHUCK YEAGER'S AFT       -- 37
+CHUCKIE EGG              BD 8
+CHUMY HUSTLE             BD 10
+CIRCUS                   X- 11
+CIRCUS CHARLIE           BD 13
+CITY CONNECTION          BD 17
+CLAPTON 2                XD 4
+CLUEDO                   -- 28
+COASTER RACE             -- 25
+COLISEU                  AD 28
+COLOR BALL               X- 5
+COLOSSUS 4 CHESS         -- 27
+COLT 36                  AD 14
+COMANDO 4                AD 38
+COMANDO TRACER           A- 30
+COMBLOT                  -- 9
+COME ON PICOT            X- 21
+COMET TAIL               X- 9
+COMIC BAKERY             B- 12
+CONDORMAN                X- 5
+CONGO BONGO              X- 12
+CONTINENTAL CIRCUS (*)   -- 32
+CONTRA                   AD 22
+CORSARIOS 1              AD 28
+CORSARIOS 2              AD 26
+COSA NOSTRA              AD 22
+COSME ESTIBLE            XD 14
+COSMIC SHERIFF           X- 28
+COSMO EXPLORER           X- 20
+COSMO TRAVELLER          BD 3
+CRAZE (M)                X- 75
+CRAZY CARS #             X- 16
+CRAZY TRAIN              BD 7
+CROSSBLAIM (M)           AD 38
+CRUSADER                 AD 22
+CURRO JIMENEZ            XD 28
+CYBERBIG                 XD 34
+CYBERUN                  XD 29
+CYRUS 2                  -- 15
+DAIVA STORY 4 (M)        AD 144
+DAMSPEL                  -- 4
+DANGER MOUSE #           X- 18
+DANGER X 4               BD 8
+DAWN PATROL              -- 24
+DE GROTTEN VAN OBERON    X- 23
+DEATH WISH 3             BD 38
+DECATHLON                -- 13
+DEFCOM 4 (*)             X- 14
+DEMAND                   X- 6
+DEMONIA #                XD 29
+DESCUBRIMIENTO AMERICA   X- 25
+DESOLATOR #              BD 11
+DESPERADO (D)            A- 86
+DEUS EX MACHINA 2        X- 16
+DIAMOND MINE II          X- 8
+DIG DUG                  BD 10
+DIGITAL DEVIL STORY (M)  XD 74
+DIMENSION OMEGA 1        AD 26
+DIMENSION OMEGA 2        AD 29
+DIP DIP                  XD 10
+DISC WARRIOR             XD 13
+DONKEY KONG              BD 21
+DONPAN                   X- 8
+DORODON                  X- 10
+DOUBLE DRAGON (D) (I)    X- 30
+DOUBLE DRAGON 2 (D)      A- 106
+DOUBLE ROTATION          X- 13
+DR. ARCHIE               AD 19
+DR. JACKLE & MR. WIDE #  X- 15
+DRACULA                  X- 8
+DRAGON ATTACK            B- 7
+DRAGON QUEST (M) (*)     X- 61
+DRAGON SLAYER 4 (M)      XD 102
+DRAZEN PETROVIC BASKET # -- 32
+DREAM RUNAWAY            X- 9
+DROIDS                   X- 9
+DROME                    BD 22
+DUCKY                    X- 5
+DUELO DE CHARADAS        X- 9
+DUNGEON MASTER #         X- 23
+DUNK SHOT #              -- 23
+DUSTIN #                 AD 33
+DYNAMITE DAN             AD 33
+EAGLE                    X- 16
+EDDIE KIDD JUMP          -- 12
+EGGERLAND MYSTERY        AD 23
+EGGERLAND MYSTERY 2 (M)  X- 67
+EGGY #                   X- 12
+EL CAPITAN TRUENO 1      AD 34
+EL CAPITAN TRUENO 2      AD 35
+EL CID                   X- 21
+EL MISTERIO DEL NILO     XD 32
+EL MUNDO PERDIDO         AD 36
+ELEVATOR ACTION (D)      BD 22
+ELIDON                   X- 19
+ELITE (D)                -D 360
+ELITE [GRAVA EM FITA]    X- 44
+EMILIO BUTRAGUENO 1 (*)  -- 23
+EMILIO BUTRAGUENO 2      -- 26
+EMILIO SANCHEZ VICARIO   -- 25
+EPISODE 4                X- 12
+EUROPEAN GAMES           -- 14
+EWOKS                    X- 14
+EXA INNOVA               BD 10
+EXCHANGER                X- 7
+EXERION 1                BD 9
+EXERION 2                BD 9
+EXOIDE Z                 BD 11
+EXTERMINATOR             X- 8
+EYE                      -- 21
+F-15 STRIKE EAGLE        -- 15
+F-16 FIGHTING FALCON     -- 11
+F1 SPIRIT (M)            AD 84
+FAIRY                    X- 11
+FANKY PUNKY              X- 17
+FANTASY ZONE (M)         AD 61
+FERNANDO MARTIN          -- 18
+FERNANDO MARTIN EXEC.VS. -- 23
+FEUD / HALOWEEN #        AD 27
+FINAL COUNTDOWN (D)      X- 31
+FINAL JUSTICE            BD 12
+FINAL WAR                -- 22
+FINAL ZONE (M)           AD 63
+FINDERS KEEPERS          AD 22
+FIRE RESCUE #            X- 6
+FIRE STAR                XD 14
+FLAPPY                   XD 12
+FLASH SPLASH             XD 7
+FLICKY                   X- 15
+FLIGHT DECK              A- 39
+FLIGHT SIMULATOR (M)     -- 48
+FLIPER SLIPPER           X- 9
+FLY BOAT                 X- 26
+FOOTBALL MANAGER W. CUP  -- 40
+FOOTBALLER OF THE YEAR   -- 23
+FOOTVOLLEY               -- 8
+FORMATION Z              AD 17
+FORMULA 1                X- 12
+FREDDY HARDEST 1         AD 30
+FREDDY HARDEST 2         AD 32
+FREDDY HARDEST 3         AD 38
+FROGGER                  BD 7
+FRONT LINE               AD 16
+FRUIT PANIC              BD 9
+FRUITY FRANK #           X- 17
+FUNKY MOUSE              BD 8
+FUTBOL                   -- 9
+FUTURE KNIGHT            AD 32
+FUZZBALL                 X- 21
+FX-15                    X- 15
+GALAGA 1                 BD 13
+GALAGA 2                 X- 12
+GALAXIAN #               XD 6
+GALL FORCE (M)           AD 72
+GAME OVER 1              AD 28
+GAME OVER 2              AD 28
+GAMES DESIGNER           X- 14
+GANG MAN                 BD 5
+GARY L.SUPER STAR SOCCER -- 26
+GAUNTLET (D) (*)         X- 122
+GEMINI WING (D)          X- 95
+GENGHIS KHAN             XD 29
+GHOST BUSTERS            AD 23
+GHOST BUSTERS 2 (D) (*)  X- 101
+GHOST TIME               XD 23
+GIRLS AND RATS           X- 6
+GLASS #                  X- 21
+GLIDER                   X- 10
+GODZILA                  B- 11
+GODZILAR                 XD 17
+GOLDEN BASKET            -- 27
+GOLVELLIUS (M)           AD 138
+GONZZALEZZ 1             AD 28
+GONZZALEZZ 2             XD 26
+GOODY                    AD 32
+GP WORLD #               -- 18
+GREEN BERET              X- 25
+GREMLINS 2 (D)           AD 90
+GROG'S REVENGE           XD 21
+GUARDIC                  BD 23
+GUERRA DAS FAMILIAS      -- 8
+GULKAVE                  XD 21
+GUN FRIGHT               BD 20
+GUTT BLASTER             BD 23
+GYRO ADVENTURE           BD 11
+GYRONDINE                BD 20
+HABILIT #                X- 15
+HAMMER BOY 1             X- 28
+HAMMER BOY 2             X- 28
+HANG ON (*)              -- 18
+HAPPY FRET               X- 11
+HARD BOILED              X- 27
+HAUNTED BOY              AD 20
+HAUNTED HOUSE (D)        AD 27
+HE-MAN                   AD 31
+HEAD OVER HEELS #        AD 32
+HEAVY BOXING             -- 7
+HELYTANK                 XD 9
+HERCULES (*)             XD 40
+HERO                     BD 12
+HIGH WAY ENCOUNTERS      A- 19
+HIGH WAY STAR            X- 7
+HIPERTRONIC              X- 5
+HOLE IN ONE #            -D 12
+HOLE IN ONE PROFESS. #   -D 25
+HOSTAGES (I)             X- 28
+HOT SHOE #               X- 9
+HOWARD THE DUCK          X- 27
+HUGH                     X- 5
+HUMPHREY (*)             AD 31
+HUNCH BACK               BD 7
+HUNDRA                   AD 32
+HUNT FOR RED OCTOBER     X- 35
+HURRICANE                X- 15
+HYDLIDE                  XD 17
+HYPE                     BD 15
+HYPER BALL #             -- 6
+HYPER OLYMPIC 1          -- 12
+HYPER OLYMPIC 2          -- 13
+HYPER RALLY              AD 13
+HYPER SPORTS 1           -- 12
+HYPER SPORTS 2           -- 13
+HYPER SPORTS 3           -D 24
+ICE                      X- 25
+ICE BREAKER (I)          XD 30
+ICE WORLD                XD 14
+ICICLE WORKS             X- 22
+INCA I                   AD 15
+INDIAN NO BOUKEN         X- 10
+INDIANA J. TEMPLE DOOM   BD 22
+INDIANA JONES L.C. (I)   AD 35
+INDY 500                 -- 24
+INFERNAL MINER #         X- 8
+INSPECTEUR Z             XD 19
+INTERNATIONAL KARATE     B- 29
+INVADERS REVENGE (*)     X- 13
+ITALIA 90                -- 22
+ITASUNDOURIOUS           X- 6
+JACK THE NIPPER 1        AD 36
+JACK THE NIPPER 2        AD 39
+JACKIE CHAN POLICE STORY XD 16
+JACKIE CHAN PROTECTOR    XD 9
+JACKIE CHAN SPARTA X     X- 15
+JAGUR (M)                AD 97
+JAWS #                   XD 26
+JET ALF STRIKES BACK     X- 14
+JET BOMBER               XD 25
+JET FIGHTER              X- 33
+JET SET WILLY            XD 27
+JOE BLADE (*)            AD 13
+JP WINKLE                X- 18
+JUMP COASTER #           X- 6
+JUMPING RABBIT           XD 5
+JUMPJET #                -- 11
+JUMPLAND                 BD 9
+JUNGLE WARRIOR           X- 40
+JUNO FIRST               BD 6
+KAERU SHOOTER            X- 5
+KALEIDOSCOPE SPECIAL     AD 22
+KENDO                    -- 20
+KEYSTONE KAPERS          BD 9
+KILLER STATION           X- 6
+KIMPO #                  X- 12
+KINASAI                  XD 5
+KING & BALLOON           X- 21
+KING KNIGHT (M)          X- 47
+KING'S VALLEY            A- 13
+KING'S VALLEY 2 (M)      AD 73
+KING'S VALLEY PLUS (D)   AD 34
+KLAX                     X- 21
+KNIGHT LEON [CASIO]      AD 19
+KNIGHT LORE              AD 20
+KNIGHT MARE              AD 25
+KNIGHT NINJA PRINCESS    XD 20
+KNIGHT TYME              X- 28
+KNOCKOUT                 X- 14
+KONAMI'S BASEBALL        -- 13
+KONAMI'S GOLF            -- 12
+KONAMI'S PING PONG       -- 13
+KONAMI'S SOCCER          -- 24
+KONAMI'S TENNIS          -- 13
+KRAKOUT                  X- 25
+KUNG FU (ITALIAN) #      BD 11
+KUNG FU (NINJA) #        B- 14
+KUNG FU MASTER           AD 20
+LA ABADIA DEL CRIMEN     AD 55
+LA ESPADA SAGRADA 1-2    XD 36
+LA ESPADA SAGRADA 3      AD 17
+LA HERANCIA (D)          XD 360
+LAS TRES LUCES GLAURUNG  XD 30
+LAZY JONES #             B- 15
+LE MANS 1                -- 22
+LE MANS 2 #              -- 20
+LEGEND OF RADORA         X- 130
+LEGION (*) (D)           XD 11
+LEONARD                  XD 18
+LES FLICS #              X- 9
+LEUCOCIT #               X- 7
+LICENCE TO KILL          A- 24
+LIVINGSTONE 1            X- 24
+LIVINGSTONE 2 - 1        AD 33
+LIVINGSTONE 2 - 2        XD 33
+LODE RUNNER 1            X- 8
+LODE RUNNER 2 #          X- 16
+LONESOME TANK #          XD 7
+LOS INHUMANOS            X- 46
+LOTUSCAR                 B- 1
+LORNA                    X- 90
+MACADAM BUMPER           -- 22
+MACATTACK                X- 18
+MACH 3                   X- 23
+MACHINEGUN JOE VS. MAFIA BD 9
+MACROSS #                X- 20
+MADFOX                   X- 10
+MADMIX 1                 BD 25
+MADMIX 2                 BD 33
+MAGIC PINBALL            -- 11
+MAGICAL KID WIZ          XD 19
+MAGICAL TREE             AD 13
+MALTESE JOE'S POOL CHAL. -- 13
+MAMBO                    X- 33
+MANCHESTER UNITED        -- 23
+MANIC MINER #            AD 15
+MAPPY                    BD 11
+MARTIANOIDS              XD 18
+MASK 2 (D)               X- 360
+MASTER OF THE LAMPS      X- 16
+MATCH DAY 2              -- 25
+MAXIMA #                 X- 9
+MAXSINUCA                X- 7
+MAZE MASTER #            X- 10
+MAZES UNLIMITED #        X- 14
+MAZYACS                  -- 9
+MECANO OASIS             X- 7
+MECON MEGANOVA           XD 25
+MEGALOPOLIS SOS          X- 7
+MEGAPHOENIX              X- 20
+MEMORY GAME #            X- 5
+METROPOLIS               AD 31
+MICHEL FUTBOL MASTER     -- 27
+MICHEL SUPER SKILLS      -- 23
+MIDNIGHT BROTHERS        X- 18
+MILK RACE                -- 21
+MIRAI (M)                X- 67
+MITSUME GATORU (M)       X- 76
+MOBILE PLANET            X- 19
+MOBILE SUIT GUNDAM       X- 10
+MOLE MOLE 2 #            X- 18
+MONKEY ACADEMY #         B- 12
+MONSTER'S FAIR #         X- 21
+MOON PATROL #            B- 10
+MOON SWEEPER             X- 13
+MOPIRANGER               BD 13
+MORTADELO 1              X- 33
+MORTADELO 2 - 1          A- 31
+MORTADELO 2 - 2          A- 31
+MOT 1                    X- 30
+MOT 2                    AD 30
+MOT 3                    AD 30
+MOTORBIKE MADNESS        X- 31
+MOUNTAIN BIKE RACER (*)  -- 25
+MOVING PACMAN #          XD 3
+MR. CHIN (*)             XD 7
+MR. DO! V.S UNICORNS     B- 12
+MR. GOMOKU #             X- 4
+MSX BASEBALL             -- 11
+MSX SHOGI GAME           -- 9
+MUNDIAL                  -- 52
+MURDER ON ATLANTIC (I)   X- 25
+MUTAN ZONE 1             AD 35
+MUTAN ZONE 2             AD 33
+MUTANT MONTY             XD 13
+MYTHOS                   X- 33
+NAVY MOVES 1 #           AD 33
+NAVY MOVES 2 #           AD 32
+NEMESIS (D)              AD 360
+NEMESIS (M)              AD 55
+NEMESIS 2 (M)            AD 91
+NEMESIS 3 (M)            AD 169
+NEO                      X- 18
+NICK NEAKER              X- 7
+NIGHT FLIGHT             X- 7
+NIGHT SHADE              X- 19
+NINJA #                  XD 18
+NINJA [ CASIO ]          A- 17
+NONAMED                  X- 27
+NORTH SEA HELICOPTER     X- 32
+NUCLEAR BOWLS            X- 28
+NUTS AND MILK            X- 9
+O OGRO #                 X- 8
+O'MAC FARMER             X- 10
+OBLITERATOR              XD 33
+OCEAN CONQUEROR          -- 33
+OH MUMMY ! #             X- 8
+OH NO ! #                X- 16
+OH SHIT!                 XD 18
+OIL'S WELL #             X- 8
+OPERATION WOLF (D)       A- 78
+ORION #                  X- 2
+ORMUZ                    X- 23
+ORPHEUS DRAUGHTS         -- 6
+OTHELLO [SONY]           -- 9
+OUTROYD                  X- 18
+OUTRUN                   -- 32
+PACLAND                  XD 37
+PACMAN                   BD 8
+PACMANIA                 BD 24
+PAIRS #                  X- 10
+PANZER ATTACK #          X- 13
+PARIS DAKAR              -- 44
+PARODIUS (M)             AD 89
+PASTFINDER / GALAX       XD 12
+PAY LOAD #               -D 21
+PEGASUS (*)              X- 18
+PENGUIN ADVENTURE (M)    AD 83
+PENGUIN LAND [ SEGA ]    XD 19
+PENTAGRAM #              X- 21
+PERICO DELGADO           -- 68
+PETER B. INT. FOOTBALL # -- 38
+PHANTIS 1                AD 29
+PHANTIS 2                AD 29
+PHARAO'S REVENGE         XD 25
+PINBALL BLASTER          -- 25
+PINBALL MAKER #          -- 11
+PINE APPLIN              AD 9
+PINK PANTHER             X- 29
+PIPPOLS                  AD 13
+PITFALL 1                XD 10
+PITFALL 2                A- 11
+PLANET EARTH             X- 15
+PLAY BALL #              -- 19
+POLAR STAR #             BD 10
+POLICE ACADEMY 1         B- 23
+POLICE ACADEMY 2         B- 16
+POOYAN #                 X- 10
+POWER AND MAGIC          X- 37
+POWER DRIFT              -- 39
+POWER OF DARKNESS #      AD 29
+PREDIO ASSOMBRADO #      BD 8
+PSYCHO PIG U.X.B #       X- 29
+PUZZLE # (CONFUSED)      -- 13
+PYROMAN                  X- 18
+QBERT                    X- 22
+QUEEN'S GOLF             -- 10
+RAID ON BUNGELING BAY    A- 19
+RALLY X                  BD 9
+RAM                      X- 33
+RAMBO                    AD 19
+RANSACK                  B- 2
+RASTER SCAN #            X- 22
+RATH-THA                 X- 20
+RED ZONE (*)             BD 11
+REFLEX                   X- 10
+RENEGADE 3 (D)           AD 50
+RESCATE ATLANTIDA (D)    XD 360
+REX HARD #               X- 25
+RISEOUT #                XD 10
+RIVER RAID               BD 11
+ROAD FIGHTER             B- 13
+ROAD WARS                X- 28
+ROBOCOP                  AD 53
+ROBOCOP (D)              AD 360
+ROBOT WARS               X- 26
+ROCK'N ROLLER #          XD 30
+ROCKY                    -- 24
+ROLLER BALL              -D 13
+SABOTAJE (*)             X- 14
+SABRINA                  AD 21
+SAFARI X                 BD 6
+SAILORS DELIGHT          X- 13
+SAINT DRAGON             X- 36
+SALAMANDER (M)           AD 89
+SAMANTHA FOX 2           -- 13
+SAMURAI (M) (*)          X- 72
+SASA                     X- 10
+SATAN 1                  XD 34
+SATAN 2                  X- 31
+SCARLET 7                X- 17
+SCIENCE FICTION          XD 17
+SCION #                  BD 11
+SCOPE ON                 X- 9
+SCRAMBLE EGGS            XD 4
+SEA KING                 X- 7
+SECRET MISSION           X- 7
+SENJYO                   B- 11
+SEWER SAM                X- 18
+SHALOM (M)               X- 168
+SHARK HUNTER             X- 23
+SILENT SHADOW            AD 80
+SIMULADOR DE VOO 2 #     -- 5
+SIR FRED                 X- 40
+SIR WOOD                 X- 34
+SITO PONS                -- 31
+SKATE DRAGON             X- 7
+SKI COMMAND              X- 10
+SKOOTER                  A- 13
+SKY GALDO                X- 16
+SKY HAWK                 X- 11
+SKY JAGUAR               AD 12
+SKY VISION               X- 13
+SLAPSHOT                 X- 8
+SLOT MACHINE             -- 4
+SMALL JONES #            X- 7
+SNAKE IT (D)             XD 17
+SOL NEGRO 1 #            X- 29
+SOL NEGRO 2 #            XD 29
+SOLDIER OF LIGHT         X- 30
+SORCERY                  X- 24
+SOUL OF A ROBOT          X- 20
+SOVIET MISSION           X- 29
+SPACE BUSTERS            X- 20
+SPACE COMBAT             XD 9
+SPACE MAZE ATTACK        X- 6
+SPACE RESCUE (*) #       XD 11
+SPACE SHUTTLE #          -- 23
+SPARKIE                  XD 7
+SPEED BOAT RACER         -- 16
+SPEED KING               -- 13
+SPELUNKER                AD 19
+SPIRITS                  X- 28
+SPITFIRE '40             -- 22
+SPOOKS & LADDERS #       X- 14
+SPY X SPY 2              -- 22
+SQUARE DANCER #          -- 9
+STAR AVENGER #           X- 12
+STAR BLAZER #            XD 10
+STAR BYTE                X- 22
+STAR DUST                AD 34
+STAR FORCE               XD 21
+STAR QUAKE               AD 32
+STAR SHIP SIMULATOR      A- 11
+STAR SOLDIER             BD 23
+STAR TREK                X- 15
+STAR WARS                B- 22
+STOCK FISCAL #           X- 13
+STOP BALL #              X- 8
+STOP THE EXPRESS         AD 9
+STRANGE LOOP             XD 23
+STREAKER                 X- 23
+STRIKE F. HARRIER (D)    -- 96
+SUPAROBO                 XD 14
+SUPER BILLIARDS          -- 6
+SUPER BOY II (D) (*)     XD 15
+SUPER CHESS              -- 14
+SUPER COBRA #            B- 7
+SUPER DOMINOES #         -- 10
+SUPER GALLO #            X- 16
+SUPER LAYDOCK (D)        A- 360
+SUPER LAYDOCK (M)        AD 130
+SUPER RACER              -- 9
+SUPER SOCCER #           -- 21
+SUPER TENNIS             -- 10
+SURVIVOR                 AD 30
+SWING                    X- 11
+TAI PAN (I)              X- 29
+TAN TAN                  XD 11
+TANK BATTALION           XD 7
+TAROT                    -- 11
+TEENAGE MUTANT H.TURTLES A- 32
+TELE BUNNIE              X- 11
+TEMPTATION (*) #         AD 21
+TENSAI RABBIAN           BD 16
+TENSION                  XD 14
+TERMINUS #               XD 27
+TERRAMEX                 A- 33
+TERRORPODS               X- 28
+TEST DRIVE 2             -- 25
+TETRIS                   -- 8
+THE A TEAM               X- 19
+THE APEMAN               A- 26
+THE CASTLE               AD 22
+THE CASTLE EXCELLENT     AD 23
+THE CHESSMASTER 2000     -- 23
+THE DAM BUSTERS          -- 22
+THE FLINTSTONES          A- 42
+THE GOONIES              AD 25
+THE HEIST                X- 15
+THE LAST MISSION         AD 22
+THE LEGEND OF KAGE       XD 20
+THE LIGHT CORRIDOR       XD 31
+THE LIVING DAYLIGHTS     X- 32
+THE MAZE OF BLACK SPIDER XD 12
+THE MAZE OF GALIOUS (M)  AD 91
+THE MUNSTERS             A- 39
+THE RAMPART #            X- 6
+THE RUNNING MAN (I)      X- 27
+THE STONE OF THE WISDOM  AD 18
+THE TRAIN GAME SPRINTER  -- 9
+THE UNTOUCHABLES         X- 30
+THE WALL (*)             XD 10
+THE WAY OF THE TIGER     X- 73
+THEXDER                  AD 22
+THEZEUS                  XD 10
+THING BOUNCES BACK       X- 31
+THOR                     X- 23
+THUNDER BLADE (D)        X- 66
+THUNDER BOY              X- 21
+TIME BANDITS             X- 6
+TIME BOMB                X- 13
+TIME CURB                X- 30
+TIME PILOT               BD 11
+TIME TRAX                X- 31
+TITANIC 1                AD 25
+TITANIC 2                AD 26
+TOI ACID GAME 1          AD 28
+TOI ACID GAME 2          AD 30
+TOI ACID GAME 3          AD 30
+TOI ACID GAME 4          AD 30
+TOM & JERRY              X- 35
+TONIGHT AT THE PUB       -- 18
+TOOBIN                   XD 32
+TOPPLE ZIP #             X- 24
+TOURNAMENT SNOOKER       -- 13
+TRAFFIC                  X- 16
+TRAIL BLAZER #           -- 12
+TRANTOR (*)              AD 21
+TRICK BOY                -D 8
+TRIPLE COMANDO           X- 36
+TRITON / REAL TIME       X- 21
+TRIVIAL PURSUIT          -- 32
+TT RACER                 -- 17
+TUAREG                   X- 30
+TUMA 7                   XD 28
+TURBO GIRL               AD 34
+TURBOAT #                X- 11
+TURMOIL                  XD 6
+TUXY                     X- 7
+TWIN BEE                 BD 21
+TZR                      BD 17
+UCHIMATA                 X- 25
+ULISES                   AD 29
+ULTRA CHESS              -- 11
+ULTRA MAN #              B- 11
+UNA'S LAIR               X- 20
+UNDERGROUND              X- 30
+VALIS (M)                AD 61
+VALKYR                   BD 28
+VAMPIRE                  XD 30
+VAMPIRE'S EMPIRE         X- 28
+VAXOL (M)                AD 65
+VENGANZA                 X- 22
+VENOM STRIKES BACK       AD 29
+VERA CRUZ                X- 16
+VESTRON                  X- 7
+VIAJE AO CENTRO TIERRA   X- 82
+VIDEO HUSTLER            -- 7
+VIDEO POKER              -- 10
+VOID RUNNER #            X- 9
+VOLGUARD                 XD 19
+VOLLEY BALL #            -- 16
+VORTEX RAIDER (D)        X- 29
+WAR IN MIDDLE EARTH      X- 33
+WARHEAD                  X- 7
+WARP-X                   XD 7
+WARROID                  -D 18
+WATER DRIVER #           -- 7
+WEC LE MANS              -- 33
+WEDDING BELLS            XD 10
+WELLS AND FARGO (*)      AD 36
+WEST                     B- 9
+WESTBANK #               X- 24
+WHO DARES WINS 2         AD 12
+WINTER GAMES 1           -- 26
+WINTER GAMES 2           -- 32
+WINTER HAWK              XD 20
+WINTER OLIMPICS          -- 10
+WIZARD'S LAIR #          XD 34
+WONDER BOY               XD 17
+XENON #                  X- 36
+XYBOTS                   XD 37
+YAYAMA                   A- 18
+YESOD #                  X- 5
+YIE AR KUNG FU 1         BD 13
+YIE AR KUNG FU 2         AD 25
+YOUNG SHERLOCK (M)       X- 87
+ZAIDER                   X- 22
+ZANAC 1                  AD 24
+ZANAC 2                  AD 23
+ZANAC 3                  XD 25
+ZAXXON 1                 X- 19
+ZAXXON 2                 X- 16
+ZEXAS                    X- 8
+ZEXAS LIMITED            BD 19
+ZIPPER                   X- 12
+ZOIDS                    X- 20
+ZOOM 909                 X- 20
+ZOOT                     X- 19
+ZORAX (D)                X- 360
+

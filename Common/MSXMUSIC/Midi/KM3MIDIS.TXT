@@ -1,0 +1,24 @@
+-----------------------------------------------------------------------------
+SHALOM - KNIGHTMARE III  (The musics of game)
+-----------------------------------------------------------------------------
+
+KM3-01.MID  13.790  SHALOM - VILLAGE OF STAFF
+KM3-02.MID  24.308  SHALOM - SAVE ADMINISTRATORS
+KM3-03.MID  12.736  SHALOM - TALKING WITH HEROINE 
+KM3-04.MID  10.460  SHALOM - GREEK CASTLE
+KM3-05.MID  34.008  SHALOM - GREEK KINGDOM
+KM3-06.MID  35.826  SHALOM - MOUNTAIN RANGE
+KM3-07.MID  39.061  SHALOM - EVIL PHENOMENA
+KM3-08.MID   9.303  SHALOM - HEROES ON THE CLOUD
+KM3-09.MID  10.274  SHALOM - SAILING THE OCEAN
+KM3-10.MID  30.120  SHALOM - DANGER!
+KM3-11.MID  12.255  SHALOM - ANCIENT RELICS IN THE DESERT
+KM3-13.MID  21.039  SHALOM - REQUIEM
+KM3-17.MID  18.856  SHALOM - TRAPS OF THE ENEMIES
+KM3-19.MID  47.087  SHALOM - THEME OF KNIGHTMARE
+
+-----------------------------------------------------------------------------
+All of this midi files, were found in various Japanese web sites.
+You found them in Knightmare Saga:
+http://www.terra.es/personal2/valley/shalom
+-----------------------------------------------------------------------------

@@ -1,0 +1,87 @@
+BEER-202  IDE HDD Controller BIOS
+
+Technical manual.
+-----------------
+
+     IDE HDD BIOS supports IDE hard drives, divided  into  5
+partitions  32  Mbytes  each  (max).  You  can  handle  more
+partitions with a special partition switching program.
+
+     IDE HDD BIOS supports DOS1 mode as well as  DOS2  mode.
+However if you use both modes, root directory  on  each  HDD
+partition must *NOT* exceed 255 entries. DOS1 mode is booted
+by default, if no DOS2 ROM is present.  In  DOS1  mode  boot
+sequence is the following: A: C:(first  HDD  partition).  If
+SELECT is pressed during boot procedure, hard disk  boot  is
+not performed. If CTRL is held during boot, HDD ROM is *NOT*
+activated.
+
+     When HDD BIOS is active, no need is to  hold  CTRL  for
+large memory size. Due to dynamic FAT  switching  technology
+DOS buffers for all possible 8 drives occupy almost the same
+space as ONE diskdrive with standard BIOS.
+
+     IDE HDD BIOS uses the following system variables:
+
+     FD0Bh	byte	head count of HDD
+     FD0Ch	byte	sectors per track on HDD
+     FFD9h	byte	drive which FAT is in the buffer
+     FFDAh	byte	number of FAT portion in the buffer
+
+
+     IDE HDD BIOS has the following array  of  data  pointed
+from the SLTWRK area of system variables:
+
+	+0	word	starting track for 1 partition
+	+4	word	starting track for 2 partition
+	+8	word	starting track for 3 partition
+	+12	word	starting track for 4 partition
+	+16	word	starting track for 5 partition
+	+20	byte	active partition number
+
+     HDD partition table is  located  on  the  sector  0:0:1
+(CHS) on the HDD and its format is following:
+
+     256 bytes - any bootstrap program; loaded to 9000h
+     then 5 records of 16 bytes each, containing:
+     2 bytes - starting track of partition;
+     1 byte - boot flag; NZ for boot partition
+     1 byte - File system code: must be 00 for FAT12 MSXDOS
+     12 bytes unused; set to zero
+
+
+     IDE HDD BIOS has the following BIOS extension at 7F80h:
+
+     7F80h string: 'SOLIDSOFT XBIOS '
+
+     7F90h XBIOS_ver
+	returns version in HL, 180h for ver 1.8
+
+     7F93h Format track (currently unused)
+     	output: CY if error
+
+     7F96h Identify drive
+	input: HL -> buffer (512 bytes)
+	output: buffer filled.
+
+     7F99h currently unused
+     	output: CY if error
+
+     7F9Ch seek to track
+	input: HL = track number
+     	output: CY if error
+
+     7F9Fh absolute read one sector
+	input:	HL -> buffer;
+		A = sector no,
+		C = head,
+		DE = cylinder
+     	output: CY if error
+
+     7FA2h absolute write one sector
+	input:	HL -> buffer;
+		A = sector no,
+		C = head,
+		DE = cylinder
+     	output: CY if error
+

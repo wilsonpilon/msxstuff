@@ -1,0 +1,330 @@
+	MODULE	GINIT
+	PUBLIC	ginit@
+	EXPTBL	equ	0FCC1h
+	
+;void ginit()
+;
+
+	cseg
+
+GINIT@:
+	DI
+	ld	hl,6
+	ld	a,(EXPTBL)
+	call	000Ch
+	ld	(VDPIO@),a
+
+	ld	hl,7
+	ld	a,(EXPTBL)
+	call	000Ch
+	ld	(VDPO@),a
+	ei			;*** make sure interrupts are enabled
+	ret
+
+		dseg
+
+VDPIO@::	defb	98h
+VDPO@::		defb	98h
+
+; This initial value is for ill-behaviored
+; programs
+
+	cseg
+
+	ENDMODULE
+
+	MODULE	FSETRD
+	PUBLIC	fsetrd@
+
+extrn	VDPIO@	;in ginit()
+extrn	VDPO@	;in ginit()
+
+;void fsetrd(char bit16,unsigned bitf-0)
+;FSETWT@ In: A:DE-VRAM Address
+;Use AF,BC,DE
+
+FSETRD@:
+	OR	A
+	JR	Z,SETRD2
+	LD	A,4
+SETRD2:	
+	LD	(SETRD1+1),A
+	LD	A,(VDPIO@)
+	INC	A
+	LD	C,A
+	XOR	A
+	DI
+	OUT	(C),A
+	LD	A,45+80H
+	OUT	(C),A
+	LD	A,D
+	RLCA
+	RLCA
+	AND	00000011B
+SETRD1:	
+	OR	0
+	OUT	(C),A
+	LD	A,14+80H
+	OUT	(C),A
+	OUT	(C),E
+	LD	A,D
+	AND	3FH
+	OUT	(C),A
+	EI
+	RET
+
+	ENDMODULE
+
+	MODULE	FSETWT
+	PUBLIC	fsetwt@
+
+extrn	VDPIO@	;in ginit()
+extrn	VDPO@	;in ginit()
+
+;void fsetwt(char bit16,unsigned bitf-0)
+;FSETWT@ In: A:DE-VRAM Address
+;Use AF,BC,DE
+
+FSETWT@:
+	OR	A
+	JR	Z,SETWT1
+	LD	A,4
+SETWT1:
+	LD	(SETWT2+1),A
+	LD	A,(VDPO@)
+	INC	A
+	LD	C,A
+	XOR	A
+	DI
+	OUT	(C),A
+	LD	A,45+80H
+	OUT	(C),A
+	LD	A,D
+	RLCA
+	RLCA
+	AND	00000011B
+SETWT2:
+	OR	0
+	OUT	(C),A
+	LD	A,14+80H
+	OUT	(C),A
+	OUT	(C),E
+	LD	A,D
+	AND	3FH
+	SET	6,A
+	OUT	(C),A
+	EI
+	RET
+
+	ENDMODULE
+
+	MODULE	RNDX
+
+	extrn	_MUL32
+;
+rndx@::
+	push	hl		; save range
+	ld	hl,(rndseed)
+	ld	e,l
+	ld	d,h
+	add	hl,hl
+	ld	c,l
+	ld	b,h
+	jr	nc,rnd1
+	inc	bc
+rnd1:
+	add	hl,de
+	ld	(rndseed),hl
+	ld	hl,(rndseed+2)
+	ld	e,l
+	ld	d,h
+	adc	hl,hl
+	add	hl,de
+	add	hl,bc
+	ld	(rndseed+2),hl
+	pop	de		; restore range
+	jp	_MUL32
+
+	dseg
+rndseed::	dw	1235h,7f3bh
+	cseg
+
+	ENDMODULE
+
+	MODULE srand
+
+	extrn	rndseed
+
+srand@::
+	ld	(rndseed),hl
+	ret
+
+	ENDMODULE
+
+	MODULE gstex
+
+	.z80
+
+	cseg
+
+public	gstex@
+EXPTBL	equ	0FCC1h		;slot address of BIOS ROM
+GTSTCK	equ	00D5h
+CALSLT	equ	001Ch
+
+;char gstex(char port)
+;Return A:押された方向 (0-8,9:Run,10:Select)
+;Use register AF,BC,HL INT.=on
+
+cout:	db	0,0,0,9,0,4,2,3,0,6,8,7,10,5,1,0
+
+kanast	equ	0fcach		;かなランプの状態
+
+gstex@:
+	or	a
+	jp	z,getkb
+
+	ld	b,0		;Port-1=x1xxxxxxB
+	cp	2
+	jp	nz,setkr
+	ld	b,01000000B	;Port-2=x1xxxxxxB
+
+setkr:
+	ld	a,(kanast)	;PSG#15=x0101111b
+	or	a
+	jp	z,kanach	;つけるときBit 7=0
+	ld	a,128
+kanach:	
+	xor	128
+	add	a,2fh
+	add	a,b		;Port select
+	ld	h,a
+	ld	a,15
+	di
+	out	(0a0h),a	;#15
+	ld	a,h
+	out	(0a1h),a
+	ld	a,14		;H=A=PSG#14
+	out	(0a0h),a
+	in	a,(0a2h)
+	ei
+	and	0fH
+	ld	c,a
+	ld	b,0
+	ld	hl,cout
+	add	hl,bc
+	ld	a,(hl)
+	ret
+
+getkb:	;キーボード用(おまけ)
+	ld	ix,GTSTCK
+	ld	iy,(EXPTBL-1)
+	call	CALSLT
+	ei
+	ret
+
+	ENDMODULE
+
+	MODULE chgcpu
+
+	public	chgcpu@
+	.z80
+	cseg
+
+chgcpu@:
+	push	af
+	ld	a,(0fcc1h)
+	ld	hl,002dh
+	call	000ch		;RDSLT
+	cp	3
+	jp	nc,chgcpu_go
+	pop	af
+	ret
+chgcpu_go:
+	pop	af
+	ld	ix,0180H	;CHGCPU
+
+	ld	iy,(0fcc1h-1)
+	call	001ch		;CALSLT
+	ei			;*** make sure interrupts are enabled
+	ret
+
+	ENDMODULE
+
+	MODULE	getcpu
+	public	getcpu@
+	.z80
+	cseg
+
+getcpu@:
+	ld	a,(0fcc1h)
+	ld	hl,002dh
+	call	000ch		;RDSLT
+	cp	3
+	jp	nc,getcpu_go
+	ld	a,0ffH
+	ret
+getcpu_go:
+	ld	ix,0183H	;GETCPU
+
+	ld	iy,(0fcc1h-1)
+	call	001ch		;CALSLT
+	ei			;*** make sure interrupts are enabled
+	ret
+
+	ENDMODULE
+	
+	MODULE vdpcom
+	
+	extrn	VDPO@
+	public	vdpcom@
+
+;hl:vdp data buffer pointer(15 Bytes)
+vdpcom@:
+	ld	a,(VDPO@)
+	ld	c,a
+
+	inc	c	;Port #1
+	di
+	ld	a,02h
+	out	(c),a
+	ld	a,8fh
+	out	(c),a	;R#15 = 2
+vwait2:	in	a,(c)
+	rra
+	jp	c,vwait2
+vcomst:	ld	de,2091h
+	out	(c),d
+	out	(c),e	;R#17 :32
+	inc	c
+	inc	c	;Port #3
+	outi		;1(#32)
+	outi		;
+	outi		;
+	outi		;
+	outi		;5(#36)
+	outi		;
+	outi		;
+	outi		;
+	outi		;9(#40)
+	outi		;10(#41)
+	outi		;
+	outi		;
+	outi		;
+	outi		;14(#45)
+	outi		;15(#46) VDP Command start!!
+	dec	c
+	dec	c	;Port #1
+vend:	xor	a
+	out	(c),a
+	ld	a,8fh
+	out	(c),a	;R#15 = 0
+	ei
+	ret
+
+	end
+
+	ENDMODULE
+
+
+	END

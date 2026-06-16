@@ -1,0 +1,60 @@
+Xinkey	C	F
+{
+}
+Xmaxpos	I	F
+P19	I
+P20	I
+{
+}
+Xkbcom	C	F
+P24	R
+{
+}
+Xkbcomr	C	F
+P28	R
+{
+}
+Xbsaves	C	F
+P32	R
+P33	N
+P34	N
+{
+}
+Xbloads	C	F
+P49	R
+{
+}
+Xfsetrd	C	F	E
+P11	C
+P12	N
+{
+}
+Xfsetwt	C	F	E
+P13	C
+P14	N
+{
+}
+Xrndx	N	F	E
+P11	N
+{
+}
+Xsrand	C	F	E
+P12	N
+{
+}
+Xgstex	C	F	E
+P1	C
+{
+}
+Xchgcpu	C	F	E
+P11	C
+{
+}
+Xgetcpu	C	F	E
+{
+}
+Xvdpcom	C	F	E
+P12	R
+{
+}
+

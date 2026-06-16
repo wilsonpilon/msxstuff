@@ -1,0 +1,46 @@
+ANIMATOR PRO 1.0         G- 132
+ANMA'S A.D. 92 FM        Y- 254
+BIOS RAM EXTENDER        A- 2
+BITSOFT ON LINE #01      Y- 47
+BK 1.00                  CM 19
+CAD-3D 1.1               GH 20
+CHARACTER EDITOR         G- 9
+CIRCUIT DESIGNER         G- 12
+COMPACTADOR PIC SCR8     Z- 2
+COMPUTER WAR DEMO FM     Y- 36
+DISK PROFESSIONAL 2.1    DM 25
+DISKVIEW 1.1.1           D- 5
+DISPLAY MODE FM          Y- 47
+DOT DESIGNER'S CLUB      G- 101
+DYNAMIC PUBLISHER        I- 91
+FIGURAS DYNAMIC PUBLISH. I- 91
+FILE CONTROLLER 1.02     BM 19
+FMB DEMO FM              Y- 37
+FORMULA DI WATERHOUSE    A- 4
+GIFDUMP                  G- 11
+GRAPHIC EDITOR           G- 15
+IMAGE KIT 1.0            G- 25
+IOD GIF DEMO #1          Y- 256
+LHARC 1.02 / LHX         ZM 45
+LIPSTICK                 Y- 95
+MEGA DEMO STOP GAME      Y- 136
+MEGA REPORT FCS          A- 12
+MEMMAN 1.1               LM 12
+METALLICA DEMO FM        Y- 97
+MOUS MASTER 1.0          G- 37
+MPW 1.0                  TM 29
+MSX 2 DEMO PHILIPS #     Y- 84
+MSX GIF DECODER 0.5      GM 10
+PHILIPS VIDEO GRAPHICS   G- 20
+PIXEL 2                  G- 74
+PLAYBOY SCREENS DEMO     Y- 69
+PMM 1.06                 ZH 11
+PRINT SHOP 2             I- 98
+SALAS FREEHAND           G- 38
+STAR TREK TNG DEMO       Y- 28
+TASWORD 2                TH 45
+TEMPO TYPEN              A- 15
+TITULADOR FITAS VIDEO    AH 15
+TOOLS HOLANDES           A- 157
+TOPOGRAFIE WERELD        A- 22
+

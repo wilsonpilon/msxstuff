@@ -1,0 +1,109 @@
+Xphread	C	F	E
+P1	C
+P2	N
+P3	N
+P4	R
+{
+}
+Xphwrit	C	F	E
+P5	C
+P6	N
+P7	N
+P8	R
+{
+}
+Xfgets2	R	F
+P11	R
+P12	I
+P13	R
+{
+}
+Xfread	I	F
+P28	R
+P29	N
+P30	N
+P31	R
+{
+}
+Xfwrite	I	F
+P42	R
+P43	N
+P44	N
+P45	R
+{
+}
+Xgetw	I	F
+P55	R
+{
+}
+Xputw	I	F
+P65	I
+P66	R
+{
+}
+Xfeof	C	F
+P76	R
+{
+}
+Xferror	C	F
+P77	R
+{
+}
+Xclearerr	C	F
+P78	R
+{
+}
+Xfcloal	I	F
+{
+}
+Xfileno	I	F
+P87	R
+{
+}
+Xfflush	I	F
+P88	R
+{
+}
+Xflushall	I	F
+{
+}
+Xfseek	I	F
+P106	R
+P107	I
+P108	C
+{
+}
+Xrewind	C	F
+P114	R
+{
+}
+Xeof	I	F
+P115	I
+{
+}
+Xrdsec	C	F
+P119	R
+P120	I
+P121	N
+P122	I
+{
+}
+Xwtsec	C	F
+P124	R
+P125	I
+P126	N
+P127	I
+{
+}
+Xseekl	C	F
+P34	I
+P35	R
+P36	C
+{
+}
+Xtelll	R	F
+P43	R
+P44	I
+{
+}
+

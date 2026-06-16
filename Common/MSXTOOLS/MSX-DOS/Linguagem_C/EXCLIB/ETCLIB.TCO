@@ -1,0 +1,114 @@
+Xrotl	N	F
+P79	N
+P80	C
+{
+}
+Xrotr	N	F
+P81	N
+P82	C
+{
+}
+Xgetdpb	R	F
+P83	C
+{
+}
+Xgetdate	C	F
+P84	R
+{
+}
+Xsetdate	C	F
+P86	R
+{
+}
+Xgettime	C	F
+P88	R
+{
+}
+Xsettime	C	F
+P90	R
+{
+}
+X_setmk	C	F
+P92	R
+P93	R
+{
+}
+Xfindfirst	C	F
+P126	R
+P127	R
+{
+}
+Xfindnext	C	F
+P136	R
+{
+}
+Xcalloc	R	F
+P137	N
+P138	N
+{
+}
+Xgetdrive	C	F
+P145	R
+{
+}
+Xsetdrive	C	F
+P147	N
+P148	R
+{
+}
+Xputch	C	F
+P155	C
+{
+}
+X_cputx	C	F
+P158	C
+P159	R
+{
+}
+Xcprintf	C	F
+P162	I
+P163	R
+{
+}
+X_cgetx	I	F
+P164	R
+{
+}
+X_nungc	I	F
+P165	C
+P166	R
+{
+}
+Xcscanf	I	F
+P167	I
+P168	R
+{
+}
+Xcgets	R	F
+P169	R
+{
+}
+Xcputs	C	F
+P175	R
+{
+}
+Xswab	C	F
+P178	R
+P179	R
+P180	I
+{
+}
+Xgetdiskfree	N	F
+P183	N
+P184	R
+{
+}
+Xbsearch	R	F	E
+P187	R
+P188	R
+P189	N
+P190	N
+P191	R
+{
+}
+

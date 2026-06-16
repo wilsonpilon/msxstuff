@@ -1,0 +1,711 @@
+Xphread	C	F	E
+P1	C
+P2	N
+P3	N
+P4	R
+{
+}
+Xphwrit	C	F	E
+P5	C
+P6	N
+P7	N
+P8	R
+{
+}
+Xfgets2	R	F
+P11	R
+P12	I
+P13	R
+{
+}
+Xfread	I	F
+P28	R
+P29	N
+P30	N
+P31	R
+{
+}
+Xfwrite	I	F
+P42	R
+P43	N
+P44	N
+P45	R
+{
+}
+Xgetw	I	F
+P55	R
+{
+}
+Xputw	I	F
+P65	I
+P66	R
+{
+}
+Xfeof	C	F
+P76	R
+{
+}
+Xferror	C	F
+P77	R
+{
+}
+Xclearerr	C	F
+P78	R
+{
+}
+Xfcloal	I	F
+{
+}
+Xfileno	I	F
+P87	R
+{
+}
+Xfflush	I	F
+P88	R
+{
+}
+Xflushall	I	F
+{
+}
+Xfseek	I	F
+P106	R
+P107	I
+P108	C
+{
+}
+Xrewind	C	F
+P114	R
+{
+}
+Xeof	I	F
+P115	I
+{
+}
+Xrdsec	C	F
+P119	R
+P120	I
+P121	N
+P122	I
+{
+}
+Xwtsec	C	F
+P124	R
+P125	I
+P126	N
+P127	I
+{
+}
+Xinkey	C	F
+{
+}
+Xmaxpos	I	F
+P19	I
+P20	I
+{
+}
+Xkbcom	C	F
+P24	R
+{
+}
+Xkbcomr	C	F
+P28	R
+{
+}
+Xbsaves	C	F
+P32	R
+P33	N
+P34	N
+{
+}
+Xbloads	C	F
+P49	R
+{
+}
+Xfsetrd	C	F	E
+P11	C
+P12	N
+{
+}
+Xfsetwt	C	F	E
+P13	C
+P14	N
+{
+}
+Xrotl	N	F
+P79	N
+P80	C
+{
+}
+Xrotr	N	F
+P81	N
+P82	C
+{
+}
+Xgetdpb	R	F
+P83	C
+{
+}
+Xgetdate	C	F
+P84	R
+{
+}
+Xsetdate	C	F
+P86	R
+{
+}
+Xgettime	C	F
+P88	R
+{
+}
+Xsettime	C	F
+P90	R
+{
+}
+X_setmk	C	F
+P92	R
+P93	R
+{
+}
+Xfindfirst	C	F
+P126	R
+P127	R
+{
+}
+Xfindnext	C	F
+P136	R
+{
+}
+Xcalloc	R	F
+P137	N
+P138	N
+{
+}
+Xgetdrive	C	F
+P145	R
+{
+}
+Xsetdrive	C	F
+P147	N
+P148	R
+{
+}
+Xputch	C	F
+P155	C
+{
+}
+X_cputx	C	F
+P158	C
+P159	R
+{
+}
+Xcprintf	C	F
+P162	I
+P163	R
+{
+}
+X_cgetx	I	F
+P164	R
+{
+}
+X_nungc	I	F
+P165	C
+P166	R
+{
+}
+Xcscanf	I	F
+P167	I
+P168	R
+{
+}
+Xcgets	R	F
+P169	R
+{
+}
+Xcputs	C	F
+P175	R
+{
+}
+Xswab	C	F
+P178	R
+P179	R
+P180	I
+{
+}
+Xgetdiskfree	N	F
+P183	N
+P184	R
+{
+}
+Xbsearch	R	F	E
+P187	R
+P188	R
+P189	N
+P190	N
+P191	R
+{
+}
+X_boxtit	C	F
+P34	R
+P35	R
+{
+}
+X_winclose	C	F
+P36	R
+{
+}
+Xmenuwin	I	F
+P37	R
+P38	R
+P39	I
+P40	I
+P41	I
+P42	I
+P43	I
+{
+}
+Xynwin	I	F
+P66	R
+P67	I
+P68	I
+{
+}
+X_bkdel	C	F
+P93	R
+P94	I
+P95	I
+{
+}
+Xjinputw	R	F
+P99	R
+P100	I
+P101	I
+P102	I
+P103	R
+{
+}
+Xinputw	R	F
+P139	R
+P140	I
+P141	I
+P142	I
+P143	R
+{
+}
+Xbtom	I	F
+P11	R
+P12	I
+{
+}
+Xmtob	I	F
+P24	R
+P25	I
+{
+}
+Xjsadv	R	F
+P34	R
+P35	I
+{
+}
+Xjschr	R	F
+P36	R
+P37	N
+{
+}
+Xjsrchr	R	F
+P46	R
+P47	N
+{
+}
+Xjscmp	I	F
+P58	R
+P59	R
+{
+}
+Xjsncmp	I	F
+P70	R
+P71	R
+P72	I
+{
+}
+Xjslen	I	F
+P83	R
+{
+}
+Xjsmat	R	F
+P91	R
+P92	R
+{
+}
+Xjsncat	R	F
+P107	R
+P108	R
+P109	I
+{
+}
+Xjsncpy	R	F
+P117	R
+P118	R
+P119	I
+{
+}
+Xjsrev	R	F
+P126	R
+{
+}
+Xjsskip	R	F
+P149	R
+P150	R
+{
+}
+Xjsstr	R	F
+P166	R
+P167	R
+{
+}
+Xjstok	R	F
+P171	R
+P172	R
+{
+}
+Xiskan	C	F	E
+P11	C
+{
+}
+Xiskan2	C	F	E
+P12	C
+{
+}
+Xchkctype	I	F	E
+P13	C
+P14	I
+{
+}
+Xnthctype	I	F	E
+P26	R
+P27	I
+{
+}
+Xiskana	C	F	E
+P34	C
+{
+}
+Xiskpun	C	F	E
+P35	C
+{
+}
+Xiskmoji	C	F	E
+P36	C
+{
+}
+Xiak	C	F	E
+P37	C
+{
+}
+Xipnk	C	F	E
+P38	C
+{
+}
+Xisank	C	F	E
+P39	C
+{
+}
+Xiprk	C	F	E
+P40	C
+{
+}
+Xigk	C	F	E
+P41	C
+{
+}
+Xjiszen	C	F	E
+P42	N
+{
+}
+Xjisl0	C	F	E
+P43	N
+{
+}
+Xjisl1	C	F	E
+P44	N
+{
+}
+Xjisl2	C	F	E
+P45	N
+{
+}
+Xjisupper	C	F	E
+P46	N
+{
+}
+Xjislower	C	F	E
+P47	N
+{
+}
+Xjisalpha	C	F	E
+P48	N
+{
+}
+Xjisdigit	C	F	E
+P49	N
+{
+}
+Xjiskata	C	F	E
+P50	N
+{
+}
+Xjishira	C	F	E
+P51	N
+{
+}
+Xjiskigou	C	F	E
+P52	N
+{
+}
+Xjisspace	C	F	E
+P53	N
+{
+}
+Xjtoupper	N	F	E
+P54	N
+{
+}
+Xjtolower	N	F	E
+P56	N
+{
+}
+Xjtohira	N	F	E
+P58	N
+{
+}
+Xjtokata	N	F	E
+P62	N
+{
+}
+Xhantozen	N	F	E
+P67	N
+{
+}
+Xzentohan	N	F	E
+P70	N
+{
+}
+Xmstojis	N	F	E
+P75	N
+{
+}
+Xjistoms	N	F	E
+P83	N
+{
+}
+Xishira	C	F	E
+P91	C
+{
+}
+Xiah	C	F	E
+P92	C
+{
+}
+Xikh	C	F	E
+P93	C
+{
+}
+Xiakh	C	F	E
+P94	C
+{
+}
+Xstrncpy	R	F
+P11	R
+P12	R
+P13	I
+{
+}
+Xstrncat	R	F
+P20	R
+P21	R
+P22	I
+{
+}
+Xstrncmp	I	F
+P27	R
+P28	R
+P29	I
+{
+}
+Xscmpi	I	F
+P36	R
+P37	R
+{
+}
+Xstrchr	R	F
+P41	R
+P42	C
+{
+}
+Xstrstr	R	F
+P47	R
+P48	R
+{
+}
+Xsncmpi	I	F
+P53	R
+P54	R
+P55	I
+{
+}
+Xstrrev	R	F
+P61	R
+{
+}
+Xstrrchr	R	F
+P67	R
+P68	C
+{
+}
+Xstrupr	R	F
+P74	R
+{
+}
+Xstrlwr	R	F
+P78	R
+{
+}
+Xstrtok	R	F
+P82	R
+P83	R
+{
+}
+Xstrpbr	R	F
+P101	R
+P102	R
+{
+}
+Xstrnse	R	F
+P109	R
+P110	C
+P111	I
+{
+}
+Xstrset	R	F
+P115	R
+P116	C
+{
+}
+Xstrdup	R	F
+P120	R
+{
+}
+Xstpcpy	R	F
+P123	R
+P124	R
+{
+}
+Xmemccpy	R	F
+P127	R
+P128	R
+P129	C
+P130	N
+{
+}
+Xmemchr	R	F
+P134	R
+P135	C
+P136	N
+{
+}
+Xmemcmp	I	F
+P140	R
+P141	R
+P142	I
+{
+}
+Xmemicmp	I	F
+P147	R
+P148	R
+P149	I
+{
+}
+Xstrspn	N	F
+P154	R
+P155	R
+{
+}
+Xstrcspn	N	F
+P164	R
+P165	R
+{
+}
+Xispunct	C	F
+P173	C
+{
+}
+Xisprint	C	F
+P174	C
+{
+}
+Xisgraph	C	F
+P175	I
+{
+}
+Xiscsmf	C	F
+P176	C
+{
+}
+Xiscsym	C	F
+P177	C
+{
+}
+Xtoascii	C	F
+P178	C
+{
+}
+X_tolower	C	F
+P179	C
+{
+}
+X_toupper	C	F
+P180	C
+{
+}
+Xrndx	N	F	E
+P11	N
+{
+}
+Xsrand	C	F	E
+P12	N
+{
+}
+Xh2zen2	N	F	E
+P12	N
+{
+}
+Xz2han2	N	F	E
+P15	N
+{
+}
+Xgstex	C	F	E
+P1	C
+{
+}
+Xchgcpu	C	F	E
+P11	C
+{
+}
+Xgetcpu	C	F	E
+{
+}
+Xvdpcom	C	F	E
+P12	R
+{
+}
+Xseekl	C	F
+P34	I
+P35	R
+P36	C
+{
+}
+Xtelll	R	F
+P43	R
+P44	I
+{
+}
+

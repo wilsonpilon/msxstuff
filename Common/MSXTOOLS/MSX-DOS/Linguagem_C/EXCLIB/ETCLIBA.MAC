@@ -1,0 +1,43 @@
+	.z80
+
+;hl:val e:cnt
+
+	MODULE rotl
+	PUBLIC rotl@
+	
+rotl@:	SLA	L
+	RL	H
+	DEC	E
+	JP	NZ,rotl@
+	RET
+	ENDMODULE
+
+	MODULE rotr
+	PUBLIC rotr@
+	
+rotr@:	SRL	H
+	RR	L
+	DEC	E
+	JP	NZ,rotr@
+	RET
+	ENDMODULE
+
+;char *getdpb(char drive)
+;get dpb address
+	MODULE getdpb
+	PUBLIC getdpb@
+
+getdpb@:
+	LD	E,A
+	LD	C,1BH
+	CALL	0005H
+	cp	0ffh		;if drive offline	goto bad
+	jp	z,bad
+good:	PUSH	IX
+	POP	HL
+	RET
+bad:	ld	hl,0	;NULL pointer
+	ret
+	ENDMODULE
+
+	END

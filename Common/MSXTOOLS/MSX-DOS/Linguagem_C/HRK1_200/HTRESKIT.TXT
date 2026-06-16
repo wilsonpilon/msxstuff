@@ -1,0 +1,76 @@
+HI-TECH C Resource kit #1 Version 2.00 Manual
+By Tatsuhiko Syoji 1995-2000
+
+[構成ファイル]
+テキスト類
+HTRESKIT.TXT :このファイルです。
+HITECTEC.TXT :HI-TECH Cに関する技術的な事柄を書いたドキュメントです。
+INSTHC  .TXT :HI-TECH Cのインストール法の日本語版です。まず、これを見ましょう。
+OPTIONSJ.TXT :HI-TECH CのコンパイラドライバC.COMの日本語説明書です。
+              とりあえずは、これを見れば、何とか使えるようになると思います。
+HTRESKIT.HED :転載用のヘッダです。
+NOTES   .TXT :これまでのバグ修正などに関するテキストです。
+
+ユーティリティー類
+CCA     .BAT :HI-TECH Cのコンパイル手順を
+CCC     .BAT :記したバッチファイルです。
+CCCO    .BAT :大抵の処理は、このバッチファイルで出来るので、
+CCO     .BAT :C.COMを使うより、容量を節約できます。
+ELVCLR  .COM :HI-TECH Cの使う、前回のコンパイル結果をクリアする物です。
+PATCH1  .BAT :HI-TECH CのMSX用パッチにある同名のファイルの正しい物です。
+AREL    .BAT :ELIBR V1.11用テンプレートファイルサンプル(アセンブリ言語用)
+CREL    .BAT :ELIBR V1.11用テンプレートファイルサンプル(C言語用)
+CPPPP   .COM :プリプロセッサです。普通にコンパイルすると正しく処理されない
+              文字の変換等を行います。(実はこれ、私のMSX-C用ライブラリを
+              作ったときの奴を持ってきただけだったりして。)
+CPPPP   .EXE :CPPPP.COMをMS-DOSに移植したものです。
+CPPPP   .DOC :CPPPP.COM/CPPPP.EXEのマニュアルです。
+EZINST  .LZH :HI-TECH C Easy Patcherです。インストール時に使います。
+
+[使い方]
+  このアーカイブを解凍したら、INSTHC.TXTを読んで、HI-TECH Cを
+インストールして下さい。その際、MSX-DOS1の人は、PATCH1.BATは本アーカイブの
+物を使うようにして下さい。
+  その後は、各自必要なファイルをHI-TECH Cをインストールしたディスクに
+コピーします。これで、本キットを使う準備が整いました。
+
+[説明の無い各プログラムの説明]
+CC*.BAT
+  コンパイルする時の手順を記したのが、CCC.BAT,CCCP.BAT,CCO.BAT,CCA.BATで
+それぞれ、COMファイルを作る、コードオプティマイザを使ってCOMファイルを作る、
+OBJファイルを作る、アセンブラソースを出力するという事を行います。
+  使い方は、
+各バッチファイル ソースファイル名
+  という使い方を行います。C.COMを使うときより、ディスク容量を
+節約できます。HI-TECH Cの各モジュールは、数・容量共に大きいので、
+ディスク容量を節約するにこしたことはありません。
+
+ELVCLR.COM:
+  これは、HI-TECH Cの各コマンドを単体で使う際、前回に、何等かのエラーが
+出た際に、出るメッセージを表示させないようにする物です。前回に、何等かの
+エラーが出た際に、出るメッセージは本来、バッチファイルを使った実行に
+使う物で、単体で使う際は、邪魔です。そこで、本ツールができました。
+  使い方は、
+ELVCLR [RET]
+  でOkです。
+  本ソフトは、MSX用にパッチを当てたHI-TECH Cを利用する環境でないと
+意味がありません。
+
+[著作権他]
+  このソフトは、著作権が私(Tatsu)に存在するフリーソフトウェアです。
+転載、配布は自由ですが、必要経費以外での金銭の授受は行わないで下さい。
+感想・意見・バグレポートといった物は、必須ではありませんが、作者に
+送ってくださると誠にありがたいです。
+  文章・ライブラリに関する意見、感想、誤り、バグの指摘、その他、
+HI-TECH Cに関する情報等がありましたら、下記の電子メールアドレスなどで、
+作者までお寄せ下さい。
+
+[作者]
+庄子 達彦(Tatsu)
+@nifty :RXK16664 ray-net       :RAY113
+MTC-NET:MTC0067  NetComplex Net:NAT28347 K.Y-Network:KYN00115 
+Official E-mail Addr. rxk16664@nifty.ne.jp
+Private  E-mail Addr. tatsu_syo@geocities.co.jp
+My Homepage 1st. http://www.geocities.co.jp/SiliconValley/7512/
+My Homepage 2nd. http://member.nifty.ne.jp/Tatsu/
+------------------------------------------------------------------------

@@ -1,0 +1,42 @@
+HI-TECH C用スタートアップモジュール改について
+By Tatsuhiko Syoji 1996
+
+関係ファイル一覧
+CRT     .AS  :改良を加えた、スタートアップモジュールのソースです。
+CRT     .DOC :改良を加えた、スタートアップモジュールのマニュアルです。
+CRT     .O   :改良を加えた、スタートアップモジュールです。
+
+本ライブラリの対象
+CP/M,MSX-DOS用HI-TECH Cが動作する環境
+
+何これ？
+  このファイルは、HI-TECH C付属のCRT.Oに改良を加え、間違って、MS-DOS上で
+このモジュールをリンクして作成したプログラムを実行しても、何もしないで
+コマンドラインに戻るようにしたものです。
+
+使い方
+  HI-TECH Cをインストールした後、CRT.Oを本パッケージの物に差し替えてください。
+
+なぜ、これを作ったか？
+  私は、MS-DOS上で、CP/Mエミュレータを使って、HI-TECH Cを動かし、テストする
+ことが多いのですが、できたCOMファイルを間違って、MS-DOS上で動かすと、
+暴走して、悲惨な目に遭うので、あらかじめ防ぐために作ってみました。
+  種明かしをすると、80x86 CPUでは、オブジェクトコードがC3の時は、RET命令に
+なっていて、MS-DOS上で動かすと、何もせずに、MS-DOSに戻るのに対し、
+Z80CPUでは、JP nnnn 命令になっているので、CP/M,MSX-DOS上で動かすと、本来の
+スタートアップルーチンに実行を移すようにしたというそれだけのことです。
+
+著作権他
+　本ライブラリのライセンスはHI-TECH C for CP/M Version 3.09のソースファイルを
+改変しているためHI-TECH C for CP/M Version 3.09のライセンスに従います。
+
+オリジナルのZ80READ.MEより引用
+The HI-TECH Z80 CP/M C compiler V3.09 is provided free of charge for any
+use, private or commercial, strictly as-is. No warranty or product
+support is offered or implied.
+
+You may use this software for whatever you like, providing you acknowledge
+that the copyright to this software remains with HI-TECH Software.
+
+　改変部分については作者であるTatsuが著作権を所有しています。
+

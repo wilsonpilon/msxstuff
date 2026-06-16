@@ -1,0 +1,230 @@
+AACKODRAW & PAINT 1.00   GH 13
+ACCPACK 3.0              ZH 9
+ALIEN DOS                D- 6
+APRENDENDO A CONTAR (*)  E- 7
+AQUARELA 1.0             G- 31
+ARK 1.1 / UNARC 1.6      ZM 32
+ASTROCALC                E- 8
+ASTROLOGIA NO MSX        A- 10
+AZTEC C 1.06B            L- 118
+BANDEIRAS DA EUROPA      E- 11
+BDS C 1.44               L- 89
+BDS C 1.50a              L- 98
+BERNARD IN COUNTRY       E- 9
+BKP                      C- 4
+BKP DISCO 1.0            D- 28
+BKP DOS 2.5 (*)          D- 66
+BOOZ 2.01                ZH 9
+BRASIL GEOGRAFICO 1.0    E- 75
+BUC COMPOSER             T- 67
+C/80 3.0                 L- 148
+CAD MSX (3D)             G- 69
+CALEND/BIORRITMO DOS     A- 9
+CALENDARIO BASIC         A- 1
+CALENDARIO DOS           A- 5
+CARTOON                  G- 12
+CHAVE MESTRA 1.1         C- 4
+CHAVE MESTRA 2.0         C- 4
+CHAVE MESTRA 3.0         C- 11
+CHEESE                   G- 8
+COBOL 80 4.01            L- 94
+CODIGO DE BARRAS         A- 3
+COMPACTO                 Z- 7
+COMPOSITOR               S- 7
+CONTAS PAG/REC           P- 5
+CONTAS PAG/REC GAMA      P- 7
+CONTROL NUNCA MAIS       D- 1
+CONTROLE BANCARIO        P- 6
+CONTROLE SOFTWARE MCC    B- 5
+CONVSCAN                 G- 1
+COPY BAIXARIA            C- 8
+COPY GTS                 C- 3
+COPY GTS PLUS            C- 3
+COPYSCR ALEPH            I- 2
+CORAL SIMPLE ASM 2.0     L- 9
+CRC 1.1                  D- 2
+CRUNCH/UNCR 2.4          Z- 9
+CURSO DE BASIC ENGESOFT  E- 31
+DATA FINDER              DH 7
+DATA MANAGER             B- 2
+DATAGEN                  L- 1
+DATILOGRAFIA             A- 5
+DBASE 2 2.4              L- 44
+DBASE 2+ 1.0 40 COLUNAS  L- 61
+DBASE 2+ 1.0 80 COLUNAS  L- 61
+DDXDOS 1.20              D- 6
+DE-LBR                   Z- 4
+DEMO NATAL PSG           A- 8
+DESPROTEGEDOR MEGAROM    C- 2
+DEVPAC 80 HI-SOFT        L- 44
+DISKIT 2.00              D- 13
+DMXDOS 1.20              DM 11
+DOS HELP PHILIPS         D- 20
+E.C.M. 4.1               C- 6
+E.V.A.                   GM 58
+EASYGRAPH 1.0            G- 50
+EDARQ 2.0                DH 6
+EDDY 2                   G- 12
+EDISK                    D- 5
+EDIT 1.1                 DH 7
+EDITCAR ALEPH            G- 5
+EL CUERPO HUMANO S.R.    E- 11
+EMULADOR ZX-81           A- 10
+EMU                      S- 11
+ESTOQUE CIBERTRON        B- 7
+ESTOQUE GAMA             B- 6
+EVERYCOPY 5.0            C- 4
+EXECUTOR 1.1             D- 2
+EXPERT LOGO DISCO        E- 10
+EXPERT LOGO FITA         E- 10
+FASTCOPY 360 Kb          C- 6
+FINAN€AS DOMESTICAS      P- 8
+FUNKEY ALEPH             A- 2
+GAMEMASTER               A- 11
+GERADORES DE FRACTAIS    G- 3
+GRAF-MASTER II           G- 5
+GRAPHIC MASTER 1.2       G- 21
+GRAPHOS III 1.2          G- 15
+GRAPHOS PRO 3.0          G- 360
+HALL                     A- 7
+HB 8000                  A- 9
+HELLO 1.0                D- 12
+HI-SOFT PASCAL COMPILER  L- 14
+HI-TECH C COMPILER 3.09  L- 194
+HIMEM                    D- 1
+HOT DATA 1.1             B- 11
+HOT MUSIC                S- 6
+HOT TEXTO                T- 9
+I CHING MCC              A- 8
+IDEABASE                 B- 9
+INTERMEGA 2.0            C- 6
+KIT MICRO EMPRESA        B- 47
+LA CELULA 1-2            E- 22
+LANI 1.0 DEMO            I- 36
+LINK-80 3.43             L- 8
+LINK/UNLINK              Z  12
+LINKER 1.25              Z- 9
+LOTO II                  A- 6
+LT29                     Z- 10
+LZH 1.1                  Z- 16
+M-CALC                   P- 11
+MACRO 80                 LM 120
+MALA DIRETA MCC          B- 10
+MALA DIRETA MISTERSOFT   B- 3
+MASTER CRUNCHER          Z- 17
+MASTER VOICE 1.3         S- 3
+MBASIC 5.03 CP/M         L- 18
+MED                      TH 10
+MEGA MUSIC 1 METAL GEAR  S- 8
+MEGA MUSIC 2 PENGUIN     S- 21
+MEGA MUSIC 3 SALAMANDER  S- 22
+MEGA MUSIC 4 PENGUIN 2   M- 24
+MEGA MUSIC 5 FIREHAWK    MM 28
+MEGACOPY 1.0             C- 2
+MERLIN ANIMACAO          G- 6
+MERLIN QUIMICA           E- 8
+MID 3.0                  L- 7
+MILCARAS                 E- 6
+MISION RESCATE           E- 14
+MISTICOM                 A- 10
+MOTORISTA SIDERAL 2      E- 14
+MSX ANSI 1.5 TELCOM      M- 21
+MSX BUG 4.0              L- 5
+MSX C ASCII 1.10P        L- 307
+MSX COM TELCOM           M- 4
+MSX DEBUG 1.0            L- 6
+MSX DESIGNER 1.3         G- 11
+MSX DOS 1.03             D- 6
+MSX DOS TOOLS 2          D- 194
+MSX DOS TOOLS PLUS 1.3   D- 81
+MSX FLOW CHART           G- 51
+MSX GEOS 1.0             D- 9
+MSX GRAPHIC TOOLS 1.0    G- 27
+MSX MIX #01              LH 126
+MSX MIX #02              LH 89
+MSX MUSIC                S- 9
+MSX PAGEMAKER 1.5        I- 39
+MSX PLAN                 P- 5
+MSX PRESS 1              A- 43
+MSX PRINTER TOOLS 1.0    I- 65
+MSX PROGRAM TOOLS 1.0    A- 32
+MSX PROJECT TOOLS 1.0    A- 42
+MSX TOP SECRET 1.0       D- 360
+MSX WORD 3.0             TM 24
+MSX WRITE                T- 12
+MULTI DISPLAY SYSTEM     G- 360
+MUSIC STUDIO G7          S- 22
+MUSICAS EMU (90)         S- 45
+MUSICAS FM               S- 7
+MUSICAS PSG              S- 26
+MUSIWRITER PSG           S- 12
+MVFDOS 1.0               C- 2
+ORCAMENTO DOMESTICO      P- 10
+OTICA                    E- 9
+PIRATA                   C- 4
+PLANILHA TOPOGRAFICA     A- 4
+PMARC 2.00 / PMEXT 2.22  Z- 16
+POPCOM 1.00              ZH 4
+PRINT -X- PRESS          I- 41
+PROF.PUBLISHER ADV. 1.0  I- 91
+PROFESSIONAL CALCULATION E- 7
+PROFESSIONAL PAINT 1.0   G- 360
+PROKIT FORMAT            D- 7
+PROKIT SCANNER 3.0       GM 360
+PROKIT ZAPPER (.BIN)     D- 11
+PROKIT ZAPPER 3.1        DM 360
+PROKIT ZAPPER PLUS       D- 10
+PROPAGANDA ELETRONICA    A- 3
+RAMDISK PLAYCON 1.1      D- 18
+RELOGIO SCREEN 0         A- 1
+RMAC 1.1                 L- 9
+SCED                     TH 9
+SCENE                    G- 3
+SCREEN 4                 A- 6
+SENA                     A- 6
+SOLXDOS 1.2              D- 6
+SONY CALC                P- 10
+SOUND                    S- 23
+SPECTRO                  S- 5
+SPEEDSAVE                C- 360
+SQ 1.11 / USQ 1.20       Z- 6
+SSC                      A- 2
+STAR SEEKER              E- 17
+SUBDIRETORIOS            D- 2
+SUPER PRINTER 1          I- 8
+SUPER SYNTH              S- 11
+SUPER ZAPPER 1.2         D- 10
+SUPERCALC 2 1.00         P- 43
+SUPERCOM 1.0 DEMO        M- 54
+TALKER                   A- 15
+TECLADO INTELIGENTE      A- 2
+TESTES DE BIOLOGIA       E- 10
+TEXTO TOTAL MTA          T- 164
+THE DESIGNER'S PENCIL    G- 10
+THE DISK MECHANIC 2.00   D- 55
+THE FARM KIT             G- 17
+TITULOS A PAGAR/RECEBER  P- 5
+TOP FORMAT II            D- 4
+TOP PIRATE II            C- 5
+TOPCAD                   I- 360
+TOPOGRAFIA ENGESOFT      A- 7
+TOQUE                    S- 5
+TRABALHO GEOGRAFIA EUA   E- 32
+TRANSFER III PLUS        C- 4
+TURBO BASIC              L- 56
+TURBO COPY 2.03          C- 9
+TURBO PASCAL 3.00 A      L- 23
+TURBO PASCAL 3.00 B      L- 23
+UNARJ 1.10               ZH 6
+UNARJ 2.30               Z- 11
+UNZIP 0.99               Z- 11
+UUENCODE / UUDECODE 1.2  ZH 15
+VERSOR 1.0               C- 6
+VIDEOTEXTO TELCOM        M- 17
+VOX 1.0                  S- 17
+WHAM! +4 m£sicas         S- 7
+WORDSTAR 64 COLUNAS      TH 76
+YAMAHA GRAPHIC ARTIST    G- 20
+ZMP 1.5 TELCOM           M- 56
+ZZSOURCE 2.3             L- 16
+
