@@ -1,0 +1,107 @@
+Menphis
+
+Menphis é um adventure 100% nacional, em português, que aproveita grande parte do potencial gráfico do MSX.
+É um adventure cheio de surpresas e que vai dar bastante trabalho para ser solucionado.
+
+Objetivo
+
+O objetivo do jogo é encontra uma máquina, que o levará a ilha Menphis, onde terá que caminhar pelo deserto escaldante para encontrar a pirâmide e o tesouro.
+
+O Jogo
+
+O jogo se passa em três partes completamente diferentes.
+A primeira consiste em, dentro da casa, encontrar a máquina transportadora que o levará a ilha Menphis.
+Na segunda, você está na Ilha Menphis, e tem que enfrentar os perigos da floresta para encontrar o bote que o levará ao deserto.
+E finalmente, na terceira, você tem que encontrar a pirâmide, enfrentando a sua maldição, para assim conseguir chegar ao tesouro.
+
+A Solucao
+
+Se você realmente não conseguiu solucionar Menphis, aí vai a solução:
+LESTE
+NORTE
+LESTE
+EXAMINE
+PEGUE PA
+OESTE
+EXAMINE CAPACHO
+PEGUE CHAVE
+DESTRANQUE PORTA
+ABRA PORTA
+ENTRE CASA
+SUBA
+EXAMINE CAMA
+LARGUE CHAVE
+PEGUE BOTA
+DESÇA
+EXAMINE
+LARGUE RELOGIO
+PEGUE BALDE
+PEGUE TAPETE
+EXAMINE LAREIRA
+PEGUE FOSFOROS
+ABRA ALÇAPÃO
+DESÇA
+EXAMINE ESTANTE
+LARGUE PA
+PEGUE MANUAL
+LEIA MANUAL
+LARGUE MANUAL
+PEGUE PA
+EMPURRE ESTANTE
+LESTE
+ACENDA TOCHA
+LESTE
+EXAMINE
+LARGUE FOSFOROS
+PEGUE AMULETO
+EXAMINE MESA
+EXAMINE MESA
+LARGUE PA
+PEGUE MAPA
+EXAMINE MAPA
+LARGUE MAPA
+PEGUE PA
+ENTRE MAQUINA
+DIGITE ENERGY ACTION
+SAIA
+CALCE BOTA
+SUBA
+SUBA
+LESTE
+ENTRE CABANA
+EXAMINE
+TROQUE TAPETE
+FACAO
+SAIA
+OESTE
+DESÇA
+DESÇA
+LESTE
+CORTE FLORESTA
+SUL
+SUL
+SUL
+BEBA AGUA
+ENTRE BOTE
+ESVAZIE BOTE
+REME
+NORTE
+LESTE
+LESTE
+SUL
+CAVE
+EXAMINE
+LARGUE PA
+PEGUE ESPELHO
+EXAMINE PIRAMIDE
+ENTRE PIRAMIDE
+OESTE
+OESTE
+NORTE
+LESTE
+LESTE
+COLOQUE ESPELHO
+TUMBA
+
+E acabou !!!
+Observação: As palavras podem ser abreviadas como, por exemplo, LARGUE TAPETE = LARG TAP

@@ -1,0 +1,408 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0060)http://personales.mundivia.es/mpazos/konami/Metal/Metal.html -->
+<HTML><HEAD><TITLE>Metal Gear 2, Solid Snake: Menú del programador</TITLE>
+<META content=text/html;charset=iso-8859-1 http-equiv=content-type>
+<META content="MSHTML 5.00.2314.1000" name=GENERATOR><BGSOUND loop=infinite 
+src=""></HEAD>
+<BODY background=Metal_arquivos/konami.gif bgColor=#fffefe>
+<H2></H2>
+<H2><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Metal Gear 2, Solid 
+Snake:&nbsp;Menú del programador</FONT></H2>
+<H2></H2>
+<H2><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular></H2>
+<HR SIZE=1>
+</FONT>
+<P><FONT 
+face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>INTRODUCCIÓN:</B></FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Durante el desarrollo 
+de un videojuego es muy útil, o incluso necesario si se trata de un gran 
+proyecto, disponer de un menú del programador que nos permita comprobar y 
+modificar determinados valores de nuestro programa. Un claro ejemplo de estos 
+menús lo podemos encontrar en varios juegos de Microcabin como el Illusion City, 
+The Tower of Gazzel, Xak, etc... Konami no parece que los usase mucho, o al 
+menos no los dejaba en las versiones definitivas de sus programas, que se sepa. 
+Sin embargo parece que con el Metal Gear 2: Solid Snake hicieron una excepción 
+(en parte).</FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>
+<HR>
+</FONT>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>CÓMO SE ACCEDE AL 
+MENÚ:</B></FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>A este tipo de menús 
+se accede normalmente mediante una combinación de teclas, un password o algo 
+así. Pero ese no es nuestro caso; a pesar de que el cartucho contiene el menú, 
+no hay manera 'legal' de acceder a él, porque el programador lo anuló en el 
+último momento poniendo un RET (una instrucción de código máquina que nos indica 
+que una rutina ha terminado) justo al comienzo del menú, impidiendo de esta 
+forma su ejecución. Así que la única forma de hacerlo es "a lo bestia", quitando 
+ese RET del programa (Hay otras formas de hacerlo, pero en todas hay que 
+modificar de una u otra manera el codigo original).</FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>
+<HR>
+</B></FONT>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>MODIFICAR LA 
+ROM:</B></FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>La rutina que nos 
+interesa se encuentra en la última página del cartucho (#3F) en la posición 
+#B800, y basta con poner un 0 (NOP) en #B801, lugar donde se encuentra el RET. 
+Se puede hacer directamente sobre un cartucho que contenga la ROM, como puede 
+ser una MegaRAM o un ESE SCC Disk, o bien sobre el propio fichero ROM con un 
+editor hexadecimal (offset #7F801).</FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Aquí está la ROM para 
+los que no se hacen cargo: <A 
+href="http://personales.mundivia.es/mpazos/konami/Metal/SS-E12P.zip">Metal Gear 
+2 (Inglés)</A></FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>Nota: </B>No se 
+puede hacer sobre la versión en disco de Martos (ni sobre las traducciones 
+basadas en ella), ya que esas rutinas fueron quitadas al hacer la 
+conversión.</FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>
+<HR>
+</FONT>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>EL 
+MENÚ:</B></FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Si todo ha ido bien, 
+al ejecutar la ROM dispondremos de una serie de opciones en función de la tecla 
+que pulsemos:</FONT></P>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>
+<TABLE bgColor=black border=4 cellPadding=0 cellSpacing=2 width=753>
+  <TBODY>
+  <TR bgColor=#b7fffe>
+    <TD bgColor=#f9d1ff noWrap width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Tecla</FONT></TD>
+    <TD bgColor=#f9d1ff><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Descripción</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>X</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Todas las 
+      tarjetas.</FONT> 
+      <P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><IMG height=140 
+      hspace=10 src="Metal_arquivos/tarjetas.gif" vspace=10 
+    width=182></FONT></P></TD></TR>
+  <TR vAlign=top>
+    <TD bgColor=#b8acff vAlign=center width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>R</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Todas las ratio. Los 
+      tres tipos con 20, 40 y 60 unidades respectivamente.</FONT> 
+      <P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><IMG height=212 
+      hspace=10 src="Metal_arquivos/ration.gif" vspace=10 
+    width=296></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>Z</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Todas las armas con 
+      munición al máximo y todos los objetos.</FONT> 
+      <P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><IMG align=top 
+      height=212 hspace=10 src="Metal_arquivos/armas.gif" vspace=10 
+      width=255><IMG align=top height=212 hspace=10 
+      src="Metal_arquivos/objetos.gif" vspace=10 width=255></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>INS</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Modo invisible: Ni los 
+      guardas ni las cámaras pueden vernos, pero si los tocamos nos descubrirán 
+      y podrán vernos hasta que pase la alarma.</FONT> 
+      <P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><IMG align=top 
+      height=212 hspace=10 src="Metal_arquivos/invisible.gif" vspace=10 
+      width=255></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>DEL</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Desactiva modo 
+      invisible.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>BS</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Conoces el camino de la 
+      selva sin tener que seguir al boina verde.<IMG align=top height=118 
+      hspace=10 src="Metal_arquivos/mapaselv.gif" vspace=10 
+  width=354></FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>P</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Muestra las coordenadas 
+      de Snake.<IMG align=top height=182 hspace=10 src="Metal_arquivos/xy.gif" 
+      vspace=10 width=505></FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>;</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Sube un nivel (Max. 8). 
+      No se ve reflejado en la barra de energía.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>`</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Baja un 
+  nivel.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>=</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Ver final del 
+      juego.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>T</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Provoca que el broche de 
+      Natasha se transforme en la llave del armario del Dr. Petrovich Madnar. Si 
+      el broche está seleccionado no se producirá la transformación.</FONT> 
+      <P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><IMG align=top 
+      height=51 hspace=10 src="Metal_arquivos/llave.gif" vspace=10 
+      width=246></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>.</B> 
+      (teclado numérico)</FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Se salta la primera 
+      parrafada de Roy Kyanbel, en la que nos explica la misión.<IMG height=212 
+      hspace=10 src="Metal_arquivos/start.gif" vspace=10 width=708></FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>2 </B>(teclado 
+      numérico)</FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Nos desplaza una 
+      pantalla hacia abajo.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>4 </B>(teclado 
+      numérico)</FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Nos desplaza una 
+      pantalla hacia la izquierda.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>6 </B>(teclado 
+      numérico)</FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Nos desplaza una 
+      pantalla hacia la derecha.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>8 </B>(teclado 
+      numérico)</FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Nos desplaza una 
+      pantalla hacia arriba.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>STOP</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Detiene el juego y entra 
+      en STOP MODE</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#ffd7ff colSpan=2>
+      <CENTER><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>STOP 
+      MODE</B></FONT></CENTER></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>Arriba</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Mueve la pantalla hacia 
+      arriba.</FONT> 
+      <P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><IMG align=top 
+      height=212 hspace=10 src="Metal_arquivos/scroll.gif" vspace=10 
+      width=299></FONT></P></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>Abajo</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Mueve la pantalla hacia 
+      abajo.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>0 1 2 
+      3</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Cambia la página 
+      visualizada.<IMG height=106 hspace=10 src="Metal_arquivos/pages.gif" 
+      vspace=10 width=512></FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>TAB</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Muestra en la zona de 
+      arma/objeto los sprites actualmente usados, mediante cursor ARRIBA y 
+      ABAJO.<IMG align=left height=157 hspace=10 src="Metal_arquivos/sprite.gif" 
+      vspace=10 width=166></FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>HOME</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Aparece un punto que nos 
+      permitirá saber las coordenadas de un determinado lugar de la pantalla. Se 
+      mueve con los cursores.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>ESC</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Salir del STOP 
+      MODE.</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#ffd7ff colSpan=2>
+      <CENTER><B>CAMBIO DE ZONA</B></CENTER></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>0</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Inicio 
+juego</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>1</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 1 - 
+  1F</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>2</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 1 - 2F (hay que 
+      desplazarse una pantalla arriba)</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>3</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 1 - 
+  3F</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>4</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 1 - 
+  4F</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>5</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 1 - B1 (hay que 
+      desplazarse una pantalla arriba)</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>6</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 1 - B2 (hay que 
+      desplazarse una pantalla arriba)</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>7</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Selva</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>8</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 1 - 
+  B3</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>9</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 2 - Parte sur 
+      (Entrada)</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>A</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 2 - Parte 
+      norte</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>B</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 2 - 1F (hay que 
+      desplazarse una pantalla arriba)</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>C</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 2 - 
+  xF</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>D</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 2 - 
+  xF</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>E</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 2 - 
+  xF</FONT></TD></TR>
+  <TR>
+    <TD align=middle bgColor=#b8acff width=149><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>F</B></FONT></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Puerta azotea (hay que 
+      desplazarse una pantalla arriba)</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>G</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Edificio 2 - 
+  xF</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>H</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Selva final de 
+      juego</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>I</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Frente al Metal 
+      Gear</FONT></TD></TR>
+  <TR>
+    <TD bgColor=#b8acff width=149>
+      <CENTER><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>J</B></FONT></CENTER></TD>
+    <TD bgColor=#ffe6e0><FONT 
+      face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Barracones - 
+  B1</FONT></TD></TR></TBODY></TABLE></FONT>
+<P><FONT face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular><B>Nota:</B> 
+Dependiendo del modelo de ordenador algunas teclas pueden no coincidir con las 
+anteriormente citadas. Por ejemplo en un turbo R para ver el final hay que 
+pulsar <B>^</B> y no <B>=</B><EMBED height=34 hidden=true src=gear2-4.mid 
+width=34 loop="1"></FONT></P>
+<P>
+<HR>
+
+<BLOCKQUOTE>
+  <P><A href="http://personales.mundivia.es/mpazos/index.html" 
+  target=_top><I>Volver a la página principal</I></A></P>
+  <P><A href="mailto:mpazos@mundivia.es"><FONT 
+  face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular>Manuel Pazos</FONT></A><FONT 
+  face=Arial,Helvetica,Geneva,Swiss,SunSans-Regular> 
+</FONT></P></BLOCKQUOTE></BODY></HTML>

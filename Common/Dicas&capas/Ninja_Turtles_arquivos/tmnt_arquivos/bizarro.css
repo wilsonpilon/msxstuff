@@ -1,0 +1,21 @@
+BODY {
+	BACKGROUND: white; COLOR: black; FONT-FAMILY: arial,sans-serif; MARGIN: 1em 0em 0em
+}
+H1 {
+	FONT-SIZE: 2.5em; TEXT-ALIGN: center
+}
+H2 {
+	BACKGROUND: #c0c0f0; COLOR: black; FONT-SIZE: 1.7em; PADDING-BOTTOM: 0.2em; PADDING-LEFT: 0.4em; PADDING-TOP: 0.2em
+}
+DIV {
+	PADDING-BOTTOM: 0.1em; PADDING-LEFT: 1em; PADDING-TOP: 0.1em
+}
+DIV.final {
+	BACKGROUND: #c0c0f0; COLOR: black; MARGIN-BOTTOM: auto; MARGIN-TOP: 1em; PADDING-BOTTOM: 1em; PADDING-TOP: 1em
+}
+DIV.text {
+	PADDING-LEFT: 3em; PADDING-RIGHT: 3em
+}
+IMG.imgcenter {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: auto; TEXT-ALIGN: center
+}

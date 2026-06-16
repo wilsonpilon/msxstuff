@@ -1,0 +1,102 @@
+A Lenda da Gávea
+
+O Adventure A Lenda da Gávea é um jogo 100% nacional, "escrito" em português, usando o sensacional potencial gráfico dos computadores MSX 1.
+Este adventure foi adaptado do TK para o MSX, tendo várias melhorias tanto na parte gráfica como na parte de programação.
+Os autores são Renato Degiovani (programação) e Luis F. Moraes (gráficos).
+
+Observações
+
+Como este adventure foi totalmente desenvolvido por programadores nacionais, cabem-lhes todos os direitos autorais.
+As mais modernas técnicas de programação foram empregadas para a construção deste adventure que apresenta novidades inéditas como:
+O jogador pode mover-se através das teclas cursoras e podem ser usadas frases abreviadas e muito simples. 
+É interessante que se leia a introdução do jogo para que você saiba de todos os fatos em que este adventure está compreendido.
+
+O Objetivo
+
+O objetivo deste jogo é o de comprovar a existência de uma nave alienígena no interior da Pedra da Gávea, abandonada por extraterrestres há milhões de anos.
+Mas não será nada fácil, em virtude de vários problemas, como: sede, fome, agentes da CIA na sua cola, entre outros.
+
+O Jogo
+
+O jogo se passa nas proximidades da pedra da Gávea, onde podem ser observados locais bem realistas como a estrada de Joá e a rampa de asa-delta.
+Lembre-se: no jogo você não deve atender chamados de estranhos e também não deve confiar no seu próprio computador.
+Se você deseja ganhar este adventure, aí vai a solução, mas antes vale tentar sozinho algumas vezes, para que você possa desfrutar dos sensacionais gráficos.
+
+O Roteiro
+
+CURSOR PARA BAIXO 
+ENTRE 
+PEGUE FACA 
+CURSOR PARA CIMA 
+CURSOR PARA ESQUERDA 
+CURSOR PARA BAIXO 
+CURSOR PARA A DIREITA 
+CORTE JACA 
+PEGUE JACA 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA BAIXO 
+CURSOR PARA BAIXO 
+CURSOR PARA A DIREITA 
+CURSOR PARA A DIREITA 
+CURSOR PARA CIMA 
+PEGUE NYLON 
+CURSOR PARA A DIREITA 
+PEGUE HASTE 
+CURSOR PARA A DIREITA 
+PEGUE TACO 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA BAIXO 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA BAIXO 
+GRITE 
+CURSOR PARA A ESQUERDA 
+PEGUE CANTIL 
+CURSOR PARA A DIREITA 
+CURSOR PARA CIMA 
+CURSOR PARA A DIREITA 
+CURSOR PARA CIMA 
+CURSOR PARA CIMA 
+ENCHA CANTIL 
+CURSOR PARA BAIXO 
+CURSOR PARA BAIXO 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA BAIXO 
+CURSOR PARA BAIXO 
+CURSOR PARA A DIREITA 
+CURSOR PARA A DIREITA 
+CURSOR PARA A DIREITA 
+PEGUE ISQUEIRO 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA BAIXO 
+CURSOR PARA A ESQUERDA 
+CURSOR PARA BAIXO 
+CURSOR PARA A DIREITA 
+EMPURRE ROCHA COM HASTE 
+EXAMINE CAVIDADE 
+PEGUE PAPIRO 
+CURSOR PARA BAIXO 
+CURSOR PARA A DIREITA 
+CURSOR PARA A DIREITA 
+CURSOR PARA CIMA 
+CURSOR PARA CIMA 
+CURSOR PARA A ESQUERDA 
+QUEIME PAPIRO 
+BEBA ÁGUA 
+CURSOR PARA BAIXO 
+CUBRA ARANHAS COM NYLON 
+COMA JACA 
+BEBA ÁGUA 
+CURSOR PARA A DIREITA 
+PUXE ARGOLA COM TACO
+
+Atenção
+
+Fiz um mapa do jogo para que você possa se orientar melhor pela "Gávea".
+No mapa há uma seta que liga a fissura Bip-Bip a uma mata.
+Esta seta quer dizer que só há passagem no sentido da fissura para a mata.
+Onde escrevi CURSOR PARA ... na solução do jogo quer dizer que você deve movimentar-se através das setas cursoras (esquerda, direita, cima e baixo).

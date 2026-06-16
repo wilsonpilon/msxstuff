@@ -1,0 +1,275 @@
+POKES
+--------------------------------------------------------------------------------
+1942 Part "005"
+Poke &H90F0, X Number of lives 
+
+Aleste  Part "001"
+Poke &H8084, S:
+Poke &H80EC, S:
+Poke &H80ED, S Stage (1t/m8)
+Poke &H8474, 0:
+Poke &H8B2E, 0 Immortal 
+
+Alibaba  Part 1 - &H87CA
+Poke &H8C95, X Number of lives 
+Poke &H96CE, 9 No trouble with green enemy 
+
+Alpharoid Part 1 - &H87D7 
+Poke &H92E8, 0 Immortal overground
+Poke &H97BB, X Number of lives
+Poke &HB492, 200 More fighting power underground 
+
+Antartica  Part 1 - &H87E4
+Poke &H9A04,0 Nothing (?) 
+
+Arkanoid  Part 1 - &H8598
+Poke &HB614,0 Next level instead of dead 
+
+Army Moves Part 1
+Poke 35739, 1 Acces code after phase 1
+Poke 35206, 201 Immortal
+Part 2
+Poke 34964, 201 Immortal 
+
+Arsene Lupin Part "001"
+Poke &H844E, 0:
+Poke &H8C1C, 0:
+Poke &H8C1D, 0 Immortal 
+
+Batman  Part 2 - &HE00C
+Poke &HA999,0 Immortal 
+
+Beamrider Part x
+Poke &HB427, X Number of bombs 
+
+Billiards Part x - &H8702
+Poke &H97A5,0 No loss of balls 
+
+Blagger  Part 2 - &H8700
+Poke &H9254,255 (Sorry, I forgot) 
+
+Bosconian Part 1 - &H87A0 File : 8800, C7FF, 87A0 
+Poke &H8ABB, X Number of lives 
+
+Boxing (Konami)  Part 1 File : 8800, C7FF, 87A0
+Poke &H964D,9 2x not K.O.
+Poke &H8A06, 90:
+Poke &H8B37, 90:
+Poke &H8B96, 90 Continue with  
+
+Breaker  Part 4
+Poke &HAA9D, X Number of lives 
+
+Buck Rogers  Part 1 - &H8400
+Poke &H854D, X Number of lives 
+
+Child parc  Part 1 - &H87D7
+Poke &H8A71, 0 Immortal
+Poke &HA9D4, 0 No low balls
+Poke &HA9D5, 0 No bouncing balls
+Poke &HA9D6, 0 No high balls
+Poke &H8CF2, X Number of lives
+Poke &H8CF3, X Start Stage
+Poke &H8CF6, X Start Scene 
+
+Circus Charlie Part 1 - &H87D7
+Poke &H8BB4, X Number of lives
+Poke &H8BB5, X Stage
+Poke &H896B, 0 Immortal 
+
+City connection Part 1 - &H87D7
+Poke &HA37D, X Speed car
+Poke &H88B9, X Number of cars
+Poke &HA3D7, 9 Small number of enemies 
+
+Clapton II Part x
+Poke &HA069, X Number of lives 
+
+Comic bakery Part 1 - &H87D7
+Poke &H89BD, 0 Immortal
+Poke &H8CCA, X Number of lives
+Poke &H8CCB, X Begin stage 
+
+Crazy Train Part x
+Poke &H8AEE, X Number of lives 
+
+D-Day  Part x
+Poke &H93AC, X Number of lives 
+
+Deep Forest Part 1 - &HC000
+Poke &H[9200..9300], 201 Invulnerable 
+
+Demand Part x
+Poke &HC8C9, X Number of lives 
+
+Eggerland Part 1 - &H87A0
+Poke &H88F7, &HX &HNumber of lives (till &H99)
+Poke &H94A6, 63 Enemies don't return after being killed
+Poke &HA004, 201 Medusa won't shoot
+Poke &HA088, 201 Skull and brown animals won't walk 
+
+Eggerland 2 Part "000" - None
+Poke &HB545, 201 Firethrowers won't be activated
+Poke &HB531, 201 Shooters won't shoot L-R
+Poke &HB7D9, 201 Skulls won't be activated
+Poke &HB8D1, 201 Walking shooters won't walk
+Poke &HBC3C, 201 Enemies won't walk but also cloak
+In combination with previous pokes:
+Poke &HAA51, 16 Walk though all the screen 
+
+Eric & Floaters  Part 1 - &HC000
+Poke &HC061, X Level
+Poke &HC066, X Number of lives 
+
+Exa Inova Part 1 - &H87D7
+Poke &H9102, X Number of lives
+Poke &H9299, 9 Everything blows up automatically 
+
+Exerion Part x
+Poke &H9859, S Speed [1..9] 
+
+Flappy  Part x
+Poke &H8C6F, 99 You survive when hit by stone 
+
+Frogger Part 1 - &HD000
+Poke &H93EC, X Number of lives 
+
+Frontline  Part 1 - ???
+Poke &H80E3, X Number of lives 
+
+Fruit Panic Part 1 - ???
+Poke &HABBD, X Number of lives
+Poke &HABC8, X Number of fruitpoints * 10
+Poke &HABE0, X Number of bombs 
+
+Galaga  Part 1 - &H87A0
+Poke &H93F6, 0 2 Enemies in one
+Poke &HA1C3, X Hi-Score in tenthousands
+Poke &HA25F, X Number of lives
+Poke &HA3C3,9 1e Round = Bonusround 
+
+Gongo Bongo Part 1 - &H8400
+Poke &H8BB2, 201 Walk through screen (field 1)
+Poke &H86FC, X Jumping distance (Eg 9) (field 2) 
+
+Goonies Part 1 - &H87D7
+Poke &HBFC9, 9 No bullets 
+
+Green Beret Part 2 - ???
+Poke &HAA1F, 0 No enemies 
+
+Higemaru  Part 1 - &HC000
+Poke &H8BE4, 0 Walk through screen
+Poke &H8E3E, 201 Big enemies won't shoot 
+
+Hunchback Part 1 - &H9000
+Poke &H912E, X Number of lives
+Poke &HBEB6, S Stick number
+Poke &HBEE7, S Strig number 
+
+Hyper Rally Part 1 - &H87CA
+Poke &HAF62, 0 No slipping in curves
+Poke &H8B5B, &Hh,
+Poke &H8B5C, &Htt Rank : &Hhtt 
+
+Hyper Sports I Part x
+Poke &H9212, S
+Poke &H9213, S-1 Stage 
+
+Keystone Kapers Part x
+Poke &HA0C7, X Number of lives 
+
+Kings Valley Part 1 - &H87D7
+Poke &H8B23, X Number of lives
+Poke &H8B27, X-1 Level -1,
+Poke &H8B28, X Level, Only levels : 1, 2, 3, 6, 7, 8, 10, 11, 13
+Poke &H916C, 0 Immortal
+Poke &HA484, 201 Invulnerable 
+
+Kingsvalley II Part 4 - &HE000
+Poke &H9AB1, 201:
+poke &H9AF3, 201:
+poke &H9B64, 201 Invulnerable 
+
+Knightmare  Part 1 - &H87D7
+Poke &H89CA,0 Immortal
+Poke &H8AA9, X Number of lives
+Poke &H8AAA, BS: Beginstage,
+Poke &H8AAB, BS-1 Beginstage-1
+Part 2 - &HC800
+Poke &H8B3C,0 Rampoke 
+
+Kung fu masters Part 1 - &H87E0
+Poke &H983B, 63 Easier
+Poke &HC496,201 Invulnerable
+Poke &HC7E3, X Number of lives
+Poke &HC7E8, (1) Extra lives in tenthousands 
+
+Lazy Jones Part 2 - ???
+Poke &HC96D, X Number of lives 
+
+Magical tree Part 1 - ???
+Poke &H99C1, X Number of lives
+Poke &H99C2, X Stage
+Poke &H99C6, X Hight:16 
+
+Magical Wiz Kid  Part 1 - &H87D7
+Poke &H948E, 0       Invulnerable (Immortal)
+Poke &H99D1, T       Time of 'hour-glass'
+Poke &H99DD, T       Time of 'extra speed'
+Poke &H9A36, T       Time of 'fire'
+Poke &H9A4C, T       Time of 'bird'
+Poke &H9D19, 0       Invulnerable (for ghosts)
+Poke &H9D4C, 201     Invulnerable for 'sick making bullets'
+Poke &H9EF0, 201     Invulnerable for 'hand'
+Poke &H9ED0, 201     Imposible to get 'Purple skull'
+Poke &H9ED6, 201     Imposible to get 'L. blue skull'
+Poke &HA198, X       Number of hits to break wall
+Poke &HA1F6, 20      Choice of what you can get
+Poke &HA321, 15      Ghosts get weaker
+Poke &HA3CF, 15      Dragon gets weaker
+Poke &HB966, X       Number of lives
+Poke &HC48B, 4:
+Poke &HC48C, 7       Castle is on the lower level
+Part 2 - &HC800
+Poke &H8AA4, X       Number of magic sticks
+Poke &H8AA5, X       Number of boomerangs
+Poke &H8AA7, X       Number of poisons
+Poke &H8AA8, X       Number of explosions
+Poke &H8AA9, X       Number of fire shields
+Poke &H8AAB, X       Number of bottles of healing poison
+Poke &H8AAC, X       Number of keys
+Poke &H8AAD, X       Number of diamants
+Poke &H8E48, T       Time in hundreds               (0-99)
+Poke &H8E49, T       Time in tens                   (0-99)
+Poke &H8E4A, T       Time in tenthousands           (0-09)
+Poke &H8E4B, T       Time in hundredthousands       (0-09)
+Poke &H8E4C, T       Time in millions               (0-09) 
+
+Maze of Galious Part "001" - &HE000  
+(Primary slot - &H4000)
+Poke &HA12C, 201     Immortal
+Poke &HB1E9, 201     No walls or doors
+Part "002" - &HC000  (Out &HFE,3)
+Poke &H9234, 201     No decrease of arrows or coins
+Poke &HB1FD, 201     Invulnerable, with exception of water 
+
+Metal Gear Part "001" - &HC000
+Poke &H80DB,201:
+Poke &H80DC,201      Walk through screen
+Part "005" - &HC000
+Poke &HB77B, 201     All doors open, play it as fair as possible
+Part "006" - &HC000
+Poke &H8A0E,201      Invulnerable concerning enemies/Bullets
+Poke &H8C27,201      Invulnerable concerning gas- or voltchambers
+Poke &H8F17,201      Invulnerable concerning roller
+Poke &H8F8A,201      Maximum when getting power item
+Poke &HA82D,201      Enemies dom't shoot 
+
+Merlin  Part x - ???
+Poke &HD323, X       Number of lives 
+
+Mutant Monty  Part x
+Poke &H9321, 201     Immortal 
+
+--------------------------------------------------------------------------------

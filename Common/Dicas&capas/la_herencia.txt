@@ -1,0 +1,135 @@
+La Herencia
+
+Provavelmente, se você sabe espanhol e tem uma paciência de cão, chegou perto do final deste jogo, assim como eu.
+La Herencia ou A Herança é um jogo que não exige muita habilidade do jogador, mas sim muito raciocínio sistemático.
+É daquele tipo de jogo que está sempre te desafiando a chegar mais longe do que na jogada passada.
+Mas vamos logo ao que interessa.
+
+Objetivo do Jogo
+
+Você recebeu um telegrama avisando que aquela tia que você odiav...adorava tanto, aquela dos milhões, faleceu e você tem que ir a Las Vegas falar com o senhor
+Trucmuche, que lhe mandou o telegrama junto com a passagem de avião para Las Vegas, para cuidar do problema da herança da velh... tia.
+Para isso, tem que passar as três fases do jogo: no edifício, no aeroporto e em Las Vegas.
+As teclas que tem função no jogo são apenas a barra de espaço e os cursores.
+
+Os seguintes comandos valem para todo o jogo:
+
+Andar: Atirar no meio da tela (um passo à frente); 
+Virar: andar com o cursor para o lado até depois do fim da tela (90 graus no sentido desejado); 
+Abrir portas: atirar nas maçanetas; 
+Descer: ficar de frente para o elevador, atirar no botão, quando o sinal párar de piscar, atire duas vezes no meio da porta e, depois, no botão ON (te deixa no próximo andar); 
+Subir: entra no elevador e, em vez de apertar o botão ON atirar no número do andar desejado (exemplo: atirar no 1 e depois no 7 = andar 17); 
+Dar: atirar na maleta no canto inferior direito da tela e, depois, no objeto pedido.
+Para dar dinheiro, atirar nos números após o cifrão (indicam quanto dinheiro lhe sobra).
+
+Fase I
+
+Estamos no décimo andar do seu prédio. São 11:10 da manhã e a passagem está marcada para as 11:20.
+Você tem 10 minutos para arrumar sua mala, descer, pegar o taxi e ir ao aeroporto.
+Agora que você está acordado, lembrou-se que pediu um monte de coisas emprestadas aos seus vizinhos e precisa devolver tudo.
+Pegue, então sua maleta (ponha o cursor sobre ela e atire).
+Ela apareceu no lado direito do vídeo, ampliada e, em cima da cômoda, onde ela estava antes, apareceu um prato, que agora deve ter aparecido em baixo da maleta, atire nele de novo.
+Agora você tem US$ 200.
+Atire nas maçanetas superiores da cômoda e as respectivas gavetas vão aparecer na parte inferior da tela.
+Pegue o relógio; o revólver e a caneta, atirando neles.
+Eles têm que ter aparecido dentro da maleta!
+Abra uma das portas inferiores da cômoda (atirando na maçaneta) e pegue: um cactus, um candelabro, uma corneta, um ferro de passar e um colar.
+Como na maleta só cabem oito objetos, você tem que por os que vão aparecendo e depois tirar da maleta aqueles que você não vai precisar, atirando neles dentro da maleta.
+Quando tiver tudo isso dentro da maleta, atire no zipper e depois na maçaneta da porta.
+Agora estamos fora do quarto. Ande para frente. Deve ter dado de cara com algum vizinho.
+Então, aí vai a lista de seus vizinhos e o que você tem que dar ou o quê ele te darão:
+
+Uma velha: devolver o ferro de passar roupa; 
+Uma nariguda de chapéu: ela te dá US$ 100; 
+Uma jovem: ela te leva ao taxi (tecle 1 para ir à fase 2 ou 2 para jogar a fase 1 novamente); 
+Um cara mau: devolver o revólver; 
+Um gordo: devolver o cactus; 
+Um chinês: devolver sua candelabro; 
+Um cara bocão: devolver sua corneta; 
+Um magro careca de bigode: devolver o colar; 
+Um gordo de bigode: devolver a caneta; 
+Um senhor de chapéu: pagar US$ 50; 
+Um senhor de óculos: pagar US$ 20; 
+
+Como seus vizinhos não tem nome no jogo, tive que dar as características mais acentuadas de cada um.
+Se você não conseguir devolver o objeto porque a maleta fechou no meio da operação, vire 180 graus e você estará conversando de novo com ele.
+Se isso acontececer muitas vezes, é porque há alguma característica trocada: observe-o de novo e veja que ele caberá num outro personagem.
+Depois de devolver qualquer objeto que não seja dinheiro, volte ao décimo sétimo andar e ao seu quarto (170) para pegar os documentos, que estão na gaveta superior esquerda da cômoda - uma agenda com as iniciais P.S. na capa.
+Importante: sempre que você sai do elevador, sai virado para o lado maior do corredor.
+
+Como você é o síndico desse condomínio, as pessoas sempre lhe devem favores, e, se você precisar ou quiser alguns trocados, entre nos quartos 
+171, 168, 156, 142, 137, 128, 116, 98, 84, 76, 67, 58, 44, 35, 27 ou 18, abrindo as respectivas portas e as gavetas das mesas que aparecerem.
+Em cada andar há só um vizinho e, como não temos tempo a perder, desça logo. A única exceção é no caso da nariguda de chapéu; se você econtrá-la
+num andar e der 180 graus, vai encontrar outro vizinho e se entrar diretamente no elevaodr vai encontrá-lo no andar seguinte. Recomendo 
+encontrá-lo no mesmo andar. Não adianta chamar o elevador e depois entrar num quarto para pegar dinheiro, pois quando você voltar, ele não estará lá.
+Se você não conseguir chegar ao térreo com seus documentos antes das 11:17:40, vai ter que pedir a algum amigo para pegar a herança para você, 
+já que você estará muito ocupado - falando com Deus, de perto. 
+Chegando ao térreo, telefone para a companhia de táxi - pagando US$ 1 - atirando nos números 13920 (um de cada vez).
+Se você tiver tempo de olhar, vai perceber que este é o número que está escrito na porta do táxi.
+Foi a passada mais difícil de descobrir no jogo inteiro.
+
+Atenção: não adianta tentar entrar no táxi sem os documentos, é morte certa.
+As portas do edifício abrem como as do aeroporto: atirando no vidro.
+Chegamos ao final desta fase. Escolha se quer ir para a próxima fase (1) ou jogar novamente esta fase (2).
+Caso escolha a primeira opção, vai receber um código.
+Anote-o, pois ser-lhe-á útil no futuro.
+E, se você não conseguiu chegar ao final desta fase na primeira, segunda ou terceira tentativa, não se preocupe; eu nunca disse que ia se fácil.
+
+Fase II
+
+Após dar o código, você deve estar de frente do aeroporto. Entre por qualquer porta. 
+O diagrama do aeroporto é muito fácil, você está no meio de um pentagono - o outro.
+Você está de frente para A, rodando para a esquerda, chega a E e para a direita, à B.
+Aí vão as salas e o que você deve fazer nelas:
+      
+A : Quadro de vôos com horários, destino, portão de embarque, etc.. Nele, você verá, se tiver paciência, que há mais de um vôo para Las Vegas com intervalo de um minuto. 
+B : Recepção de viajantes. Se você <I>atirar</I> na moça da esquerda, ela lhe informará sobre seu vôo. 
+C : Lanchonete. A garçonete não lhe parece conhecida? Vamos fazer uma boquinha? Atire na placa SANDWICH 2$. Calma, um só é o suficiente.
+E já que temos mais um minuto e meio, vamos ler um pouco. Compre um jornal sobre seu esporte preferido: tricô. 
+D : Um mendigo no aeroporto. Como você é uma pessoa solidária vai lhe dar uns trocados e, como ele tambem é uma boa pessoa, vali devolver-lhe seus documentos
+que você; nem tinha notado que haviam caído. 
+E : Alfândega. Não tente passar correndo. Pare, mostre seus documentos e, após as 11:19:21, entre no avião pelo portão 5.
+Siga este roteiro se não quiser morrer de fome ou deixar que um terrorista exploda o avião por falta de novelos de lã verde ou morrer numa prisão suja ou ainda, pegar o avião para o mundo perdido.
+Após uma longa, longa, longa viagem, você finalmente chegou a Lãs Vegas, mas como você está indo ao enterro da única pessoa que conhecia lá, vai ter que pegar um ônibus, por isso, não vá nem para a direita e nem para a esquerda - você não quer ser assaltado e morto por um punguista barato - apenas espere que o ônibus com um número 9 bem grande, escrito embaixo de onde os outros números aparecem, para finalmente passar para a terceira e última fase desse jogo.
+      
+Obviamente, você não deve deixar de anotar a senha para a próxima fase.
+
+Fase III
+
+Bem-vindo a Las Vegas.
+Você está vendo o mapa da noite com algumas casas em evidência:
+
+Desks Center - Está subdividida em 3 estações:
+
+Notary: escritório do notário que lhe enviou o telegrama da primeira fase. Ele lhe dirá que você tem até as 8 horas da manhã para ganhar um milhão de dólares nos cassinos da cidade.
+Agora são 8 da noite, então você tem umas 12 horas, já que o jogo é em real time play, ou seja, tempo de jogo real.
+Sob nenhuma circunstância tente afanar os objetos que estão em cima da estante, nem mesmo tente olhá-los mais de perto porque ele interpretará qualquer comando nesse sentido como uma tentativa de roubo e, como qualquer pessoa poderosa, simplesmente vai assinar seu atestado de óbito e adeus!
+ 
+Loan: uma velha tradição da cidade: a roleta russa. Pegue o revólver e também de uma a cinco balas e puxe o gatilho.
+Se tiver sorte vai receber US$ 30,000 por cada bala, senão ... 
+
+Bank: Volta à noite de Las Vegas. 
+Dunes ou Sandes - jogo de dados (Craps) Aladin ou Silver 
+Slipper - caça-níqueis (slot machines)
+Tropica ou Frontiers - roleta comum
+BC - show e striptease com sua amiga aeromoça que vai pagar US$ 1,500 para que você não espalhe a profissão dela por aí.
+
+Regras dos jogos 
+      
+Craps - Caindo um número morto, você; ou perde ou ganha o mesmo total apostado. Caindo um número vivo, os dados serão jogados novamente até que caia o mesmo nú duas vezes ou um número morto. No primeiro caso você ganha a sua aposta vezes o número de vezes que os dados foram jogados (descontando a primeira jogada) e, no segundo, você perde o total apostado.
+
+Roleta - jogando num só número você ganha sete vezes o total da aposta. Qualquer outro jogo, uma vez o total da aposta (pares, baixos, cor, etc.).
+ 
+Slot - atire na pilha de moedas que vai apostar (até 5), atire na alavanca.       Para apostas nos dois primeiros jogos, dirija o cursor até a palavra APUESTA e, com a barra de espaço pressionada, aperte o para cima ou para baixo. 
+Nos Craps, depois de chegar ao total de sua aposta, tire o cursor dali e atire.
+Na roleta, ponha o cursor no jogo desejado (número simples, cor, etc.) e depois atire. 
+Em ambos a aposta máxima é US$ 9,990.
+
+A ordem dos jogos que mais dão dinheiro é a seguinte:
+
+Roleta Russa (mas é a mais perigosa) ROLETA maxima) aposta a chegar para demora (mais comum)
+Craps (idem) 
+Striptease (apenas uma vez) 
+Slot machines (ganhos miseráveis mas grande diversão)
+Depois de ler todas as instruções, de consultar todas as figuras, de jogar as 3 fases e de ganhar US$ 1,000,000, talvez você fique frustrado porque o dinheiro não pode se retirado. Mas, o que fazer? É a vida!!! Até 
+a próxima, que espero seja menos funesta!!!

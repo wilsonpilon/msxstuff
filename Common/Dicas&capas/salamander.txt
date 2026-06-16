@@ -1,0 +1,27 @@
+Cheat!
+Here's an excellent cheat. It's taken from the Dutch MSX Computer Magazine, issue 45 (without the bugs). You can use it on a real MSX if you have the original cartridge or in Virtual MSX (not in fMSX or any other emulator!). 
+
+SALAMCHT.BAS
+
+10 ' Cheat Salamander
+20 ' EHBO MCM 45
+30 ' By: Nico Steendam
+40 '
+50 FOR I=&HC000 TO &HC031
+60   READ A$:POKE I,VAL("&H"+A$)
+70 NEXT I
+80 DEFUSR=&HC000:X=USR(0)
+90 DATA 3E,01,26,40,CD,24,00,3E,C3,21
+100 DATA 7F,F8,32,9A,FD,22,9B,FD,21,20
+110 DATA C0,11,7F,F8,01,12,00,ED,B0,C3
+120 DATA E8,40,3E,03,32,F5,F0,3E,C9,32
+130 DATA A7,FF,21,02,E2,CB,B6,C3,69,40
+
+
+How to use with real MSX
+Start your computer without the cartridge in it. When you are in BASIC, insert the cartridge in slot 1. (this isn't without risk, but not my risk. ^^;) Run the program, and enjoy... 
+
+How to use with Virtual MSX
+It won't work with any other emulator because you have to insert cartridges after the MSX has started up. 
+Start Virtual MSX without the cartridge in it. When you are in BASIC, go to the cartridges dialog (Setup - Cartridges) and select the Salamander ROM file in cart A. Press OK and then select No. (Yes restarts the MSX, No changes the cartridges and lets the MSX continue.) Next, run the program above and enjoy... 
+

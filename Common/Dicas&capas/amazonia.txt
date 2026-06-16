@@ -1,0 +1,146 @@
+Solução do Adventure Amazônia
+
+O adventure Amazônia, de Renato Degiovani, provavelmente é o jogo mais famoso já produzido no Brasil, porque teve versões lançadas para praticamente todas as grandes famílias de microcomputadores que fizeram parte do mercado brasileiro na saudosa década de 80.
+Devido à pequena memória e baixa capacidade gráfica dos micros onde foi originalmente programado (Sinclair ZX-81), o jogo infelizmente não possui musica e gráficos.
+Ele poderia ter sido melhorado em suas versões mais novas, mas talvez o autor tenha optado por manter total fidelidade a versão original.
+A versão MSX sofreu vários problemas adicionais com a incompatibilidade inicial da tabela de caracteres dos dois MSX brasileiros, a não existência de caracteres acentuados nos MSX importados, e também devido a incompatibilidade do tipo de acesso entre as interfaces brasileiras e ao recomendado pelas normas de compatibilidade do padrão MSX, que são seguidas pelos fabricantes estrangeiros.
+Mas tudo isso foi contornado e hoje podemos desfrutar desse jogo em qualquer tipo de micro MSX.
+Não sei se outros micros tiveram esse privilegio, mas curiosamente, durante o período em que o MSX dominou o mercado e as revistas, a solução completa do jogo nunca foi publicada.
+Renato, que foi editor da revista Micro Sistemas durante longo período, limitou-se a publicar o mapa do jogo e a fornecer dicas esporadicamente em diferentes seções da revista.
+Alguns elementos aleatórios que fazem parte do jogo impedem que seja produzida uma solução única para este adveture.
+O Maximo que podemos fazer é fornecer o mapa, algumas dicas e um roteiro para que o jogador possa terminar o jogo com maior facilidade...
+
+O mapa foi originalmente publicado na revista Micro Sistemas.
+A movimentação do jogador é executada através dos comandos N(norte), S(sul), L(leste), O (oeste), E (entre),SA (saia), SUB (suba) e D(desça).
+Uma linha simples ligando dois locais indica que a movimentação entre eles é efetuada apenas por um comando de direção (N,S,L,O).
+Note que a disposição dos locais não é plana, e por isso nem sempre sair de uma sala pelo Sul fará com que você entre em outra pelo Norte, por exemplo.
+Uma linha dupla ligando dois locais indica que a movimentação entre eles e efetuada apenas por um comando de ação, (E,SA,SUB,D).
+Finalmente uma linha dupla com uma seta ligando dois locais indica que a movimentação entre eles e efetuada por comandos de ação (E, SA, SUB, D), mas no sentido indicado pela seta pode ser efetuada com um comando de direção (N,S,L,O).
+
+Os Objetos
+
+A seguir uma lista com todos os objetos do jogo e os locais onde podem ser inicialmente encontrados:
+
+Ampola - dentro da cabana
+Balde - acampamento
+Baú - antigo deposito
+Bússola - dentro do avião
+Canoa - aldeia
+Chave - dentro do vaso
+Colar - sala de tesouros
+Corda - posto da FUNAI
+Documentos - dentro do avião
+Espelho - dentro do avião
+Espingarda - posto da FUNAI
+Facão - dentro da oca
+Garrafa - dentro do baú
+Jeep - acampamento
+Lanterna - clareira ao lado dos destroços
+Livro - dentro do bau
+Machado - sala ao norte do altar
+Mala - clareira ao lado dos destroços
+Mapa - sala de tesouros
+Medalha - dentro do baú
+Munição - no acampamento
+Pilhas - dentro do radio
+Radio - dentro do avião
+Relógio - dentro do avião
+Revolver - dentro do avião
+Tabua - final da galeria
+Vaso - dentro do templo
+
+Objetos especiais:
+
+Bambu - no bambuzal quando cortamos bambu com o facão
+Tronco - no desmatamento quando cortamos uma arvore com o machado
+Jangada - fazer com corda, tronco e machado
+Cristal - aparece aleatoriamente apos matarmos a onça
+Cobra - aparece aleatoriamente
+Onça - aparece aleatoriamente, mas somente na mata
+
+O Roteiro
+
+É só seguir o seguinte roteiro, que relaciona apenas o indispensável para se concluir o jogo:
+Tirar as pilhas do radio e coloca-las na lanterna.
+Pegar a corda e o machado.
+Cortar a arvore no local do desmatamento e pegar o tronco.
+Construir a jangada em uma das margens do lago.
+Pegar a munição e coloca-la no revolver.
+Matar o cacique com o revolver e pegar o facão, ou trocar alguma coisa por ele.
+Disparar o revolver ate restar apenas 1 bala.
+Entrar na mata e atirar na onça.
+Procurar o cristal e coloca-lo no ídolo.
+Pegar a bússola e os documentos.
+Abrir uma trilha para o pântano com o facão, e entrar nele.
+Seguir o que diz o mapa: LLLNNNLLLLNN 
+
+Dicas
+
+Lendo o roteiro acima, ate parece que é fácil de se chegar ao final, mas não e...
+Para isso é que servem as dicas:
+
+Você pode dar 50 comandos sem morrer de sede.
+Quando estiver faltando 5 comandos para a morte,o computador avisa que esta ficando com sede.
+Você só pode beber água na nascente, no lago e em suas margens, na cachoeira ou da garrafa cheia de água de um desses locais.
+A água do pântano esta contaminada e é letal.
+Você só pode carregar 5 objetos.
+Você pode colocar 4 objetos dentro da mala e carrega-la com você, levando assim 8 objetos ao todo, mas os objetos que estão dentro da mala não podem ser usados diretamente.
+Você tem que abrir a mala primeiro e pegar o objeto desejado.
+Para explorar o fundo do fosso, a mina, a gruta atrás da cachoeira e a caverna, você precisa estar carregando a lanterna acesa.
+A lanterna só pode ser acesa 3 vezes.
+Na quarta vez a lâmpada queima.
+Se ela for deixada acesa, a lâmpada queima apos um certo tempo.
+Mas é tempo mais do que suficiente para se terminar o jogo.
+Para atravessar para a parte norte do lago você precisa usar a jangada.
+Mas se você atravessar carregando a lanterna acesa os canibais te pegam.
+Se você não puder mais apagar a lanterna, coloque-a dentro da mala e feche a mala.
+Para abrir a passagem secreta na esplanada, amarre a corda na pedra e puxe a corda.
+Depois desamarre a corda da pedra.
+Se você mexer no ídolo um desabamento fechar a passagem.
+Para passar pelo corredor você tem que abrir a porta com a chave.
+A porta sempre se fecha novamente. Se você deixar a chave na porta, ela desaparece quando a porta se fecha e você fica preso.
+Para pegar a chave você deve quebrar o vaso.
+Para poder atravessar o abismo, coloque a tábua no abismo, fazendo assim uma pinguela.
+Quando você encontra a cobra em um local, as únicas coisas que você pode fazer sem ser picado são: sair do local ou matar a cobra com o machado ou revolver.
+Se você for picado, morrer em 5 comandos se não beber o soro da ampola.
+Quando a onça aparecer, você tem cerca de 5 segundos para sair do local ou mata-la com o revolver.
+Se demorar a digitar ela te mata.
+Você só acerta o tiro com a ultima bala do revolver.
+Quando a onça é morta, o cristal aparece em um dos seguintes locais: nascente, acampamento, final da galeria (mina) ou antigo deposito (caverna).
+Você tem que pegá-lo e coloca-lo no ídolo.
+Para pegar o facão você tem 3 alternativas: matar o cacique com o revolver, entrar na oca e trocar algum objeto pelo facão ou dar 6 presentes para o cacique.
+O cacique não aceita o relógio e fecha a aldeia se você lhe der o espelho ou roubar a canoa, que esta furada e não serve para nada, assim como o balde.
+Para entrar no pântano você precisa antes fazer uma trilha com o facão.
+Para que a seqüência do mapa funcione, você precisa estar carregando a bússola.
+Para que você não seja preso pela policia, você precisa estar com os documentos.
+Se você não estiver com os documentos, você tem alguns segundos para voltar pelo pântano seguindo o caminho inverso, antes que os policiais lhe vejam e prendam.
+A seguir, a abreviação de alguns comandos úteis:
+
+gastar a munição do revolver: DI R
+matar o cacique com o revolver:M CACI R
+presentear o cacique:PRES CACI objeto
+trocar algo pelo facão:TR objeto F
+matar a cobra:M COB MAC ou M COB R
+matar a onça: AT ON
+colocar o cristal no olho do ídolo:PO CR Í 
+fazer trilha com o facão:F TRI F
+fazer a pinguela no abismo:PO TA AB
+encher a garrafa com água:PO ÁG G
+abrir a porta:AB POR CH
+lista de verbos:VERB
+objetos no local:EX L
+dica do jogo:DIC
+objetos que carrega:T
+instruções:INS
+Local Para entrar/Para sair
+altar SUB AL D AL
+avião E AV SA AV
+cabana E CAB SA CAB
+caverna E CA N
+fosso E FO SA FO
+gruta E CAC O
+mina E MI O
+oca E OC SA OC
+passagem E PASS SUB ESC
+sarcófago E SAR N
+templo E T SA T

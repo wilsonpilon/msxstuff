@@ -1,0 +1,36 @@
+¦ήΊΜ}tκκκκκκκκκκMENU  ¦ήΊΜ}t5 KEYOFF
+10 CLS
+11 COLOR 1,9,9
+20 GOSUB 1000
+30 PRINT
+40 PRINT"      MSX COMPUTER HITS"
+50 PRINT
+60 PRINT
+70 PRINT"TITLE ------------ TAPE COUNT"
+80 PRINT
+90 PRINT"1 BRIAN JACKS SUPERSTAR  011"
+100 PRINT
+110 PRINT"2 DISC WARRIOR           088"¦ήΊΜ}t
+120 PRINT
+130 PRINT"3 HUSTLER                214"
+140 PRINT
+150 PRINT"4 CHUCKIE EGG            247"
+160 PRINT
+170 PRINT"5 LES FLICS              292"
+180 PRINT
+190 PRINT"6 SPECIAL OPERATIONS     347"
+200 GOTO200
+1000 PRINT
+1010 PRINT"        INS¦ήΊΜ}tTRUCTIONS"
+1020 PRINT
+1030 PRINT
+1040 PRINT"Rewind the cassette and zero the tape counter.
+1050 PRINT
+1060 PRINT"Use fast forward to position tape at the start of the gameyou wish to load."
+1070 PRINT
+1080 PRINT"Approxamate tape counts are  given on¦ήΊΜ}t the menu page"
+1090 PRINT:PRINT:PRINT
+1100 PRINT"      ANY KEY FOR MENU"
+1110 A$=INKEY$:IF A$="" GOTO 1110
+1120 CLS:RETURN
+

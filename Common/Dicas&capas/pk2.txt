@@ -1,0 +1,239 @@
+-------------------------------------------------------------------------------------------
+
+Dicas, pokes, senhas e mais - by softnew informatica
+(se voce tem drive, altere o primeiro "cas" pelo nome do primeiro bloco do jogo, e assim su-
+cessivamente) 
+
+1)Back to the future -> *vidas infinitas*
+BLOAD"CAS:":POKE&H908B,255:POKE&H90C9,255:DEFUSR=&HD000:?USR(0):BLOAD"CAS:",R
+
+2)Thexder -> *menos inimigos*
+BLOAD"CAS:":POKE&H90E4,0:POKE&HA112,0:POKE&HABA4,0:DEFUSR=&HD000:U=USR(0):BLOAD"CAS:",R
+
+3)Cat Adventure -> *imune*
+PARA COMECAR APERTE SELECT, SETAS P/OS LADOS E P/CIMA E ESPACO. MANTENHA AS TECLAS APERTADAS
+ATE O JOGO COMECAR.
+
+4)Trick Boy -> *varias bolas*
+BLOAD"CAS:":POKE&H93AA,99:DEFUSR=&H9000:U=USR(0)
+
+5)HydLide I -> *mais energia*
+DIGITE A COMBINACAO: WJHUBJDNOQ
+
+6)Ninja I -> *infinitas vidas*
+BLOAD"CAS:":POKE&H83A7,&H39:POKE&H83AB,&H39:DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF):
+?USR(0):BLOAD"CAS:",R
+
+7)Crusader -> *qualquer tela*
+NA TELA DE APRESENTACAO C/O NOME 'CRUSADER' PRESSIONE JUNTAS AS TECLAS:
+SELECT E INSERT = AVANCA 1 TELA
+SELECT E DELETE = RETROCEDE 1 TELA
+BARRA DE ESPACO = COMECA JOGO NA TELA INDICADA
+
+8)Circus Charlie -> *infinitas vidas*
+BLOAD"CAS:":POKE&H916B,0:DEFUSR=&HD002:U=USR(0)
+
+9)Buck Rogers -> *idem*
+BLOAD"CAS:":POKE&H8677,0:DEFUSR=&H8400:U=USR(0)
+
+10)Elevator Action -> *idem*
+BLOAD"CAS:":POKE&H91BD,0:DEFUSR=&HD000:U=USR(0):BLOAD"CAS:",R
+
+11)Demonia -> *energia infinita*
+FORI=1TO5:BLOAD"CAS:",R:NEXT:BLOAD"CAS:":POKE&HA775,0:DEFUSR=&H8100:U=USR(0)
+
+12)Scion -> *80 vidas*
+NA APRESENTACAO PRESSIONE JUNTAS AS TECLAS 1, 5 E 0.
+
+13)Girodine -> *imune*
+BLOAD"CAS:":POKE&-25648,0:DEFUSR=&HD000:U=USR(0):BLOAD"CAS:",R
+
+14)Who Dares 2 -> *vidas infinitas*
+BLOAD"CAS:":POKE&H8A30,0:DEFUSR=&HDFC0:U=USR(0)
+
+15)T. Protector -> *qualquer fase*
+APERTE SIMULTANEAMENTE AS TECLAS P/ MUDAR A FASE: 1, T, O.
+
+16)Army Moves 1 -> *infinitas vidas*
+10 SCREEN2:FORI=1TO3:BLOAD"CAS:",R:NEXT:BLOAD"CAS:":POKE&H898A,0
+20 DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF):U=USR(0)
+
+17)Army Moves 2 -> *idem*
+USE O PROGRAMA DO ARMY MOVES 1 MUDANDO O POKE DA LINHA 10 P/ POKE&H88AB,0
+
+18)Pippols -> *idem*
+BLOAD"CAS:":POKE&H914A,&H3C:DEFUSR=&HD101:?USR(0)
+
+19)Hunchback -> *usando o teclado*
+BLOAD"CAS:":POKE&HBEB6,0:POKE&HBEE7,0:DEFUSR(0)=&H9000:U=USR(0)
+
+20)Zanac -> *infinitas vidas*
+BLOAD"CAS:":POKE&H9654,0:DEFUSR=&HD000:U=USR(0):BLOAD"CAS:",R
+
+21)Zanac 2 -> *idem*
+BLOAD"CAS:":POKE&H98CF,0:DEFUSR=&HD000:U=USR(0):BLOAD"CAS:",R
+              *99 vidas*
+P/ COMECAR TECLE SETA P/BAIXO, ESQ., DIR. E ESPACO. DURANTE O JOGO TECLE DE 1 A 8
+P/USAR A ARMA CORRESPONDENTE.
+              *round 11*
+TECLE ESC, TAB E ESPACO P/ COMECAR NO ROUND 11. P/ PASSAR P/ O ROUND 12 ATIRE NO
+SEGUNDO TOTEN DA ESQ. P/ DIR. E QUANDO O CIRCULO AMARELO FICAR PRETO ENCOSTE NELE.
+
+22)Cosmo Travel -> *vidas infinitas*
+BLOAD"CAS:":POKE&HD345,0:DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF):U=USR(0)
+
+23)Funk Mouse -> *sem inimigos*
+BLOAD"CAS:":POKE&H8028,&H3E:POKE&H808A,&H3C:POKE&80AE,&H3C:POKE&H808B,&H31:
+POKE&H80AF,&H31:DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF):U=USR(0)
+
+24)Goonies -> *senhas*
+PRESSIONE CTRL+K E DIGITE:
+GOONIES = STAGE 1
+MR. SLOTH = STAGE 2 (VERSAO TRADUZIDA: SR. SLOTH) 
+GOON DOCKS = STAGE 3 (O CORSARIO)
+DOUBLOON = STAGE 4 (FRATELLI)
+ONE EYED WILLY = STAGE 5 (WILLY O CAOLHO)
+
+25)Yiear KungFu 2 -> *95 vidas*
+NA TELA C/ A INSCRICAO EM JAPONES TECLE: E S S C C C F F F F (UMA DE CADA VEZ)
+
+26)Ghostbusters -> *mais dinheiro*
+QUANDO APARECER A PERGUNTA N.DA CONTA ENTRE C/ OS NUMEROS: 614 = $300.000
+                                                           31222646 = 999.900
+27)Valkyr -> *explodir no topo da tela*
+P/ COMECAR APERTE JUNTAS: ESC, TAB, CONTROL, SHIFT, SETAS P/ ESQ., CIMA, BAIXO E ESPACO.
+
+28)Warroid -> *qualquer fase*
+TECLE ESC DEPOIS SELECT, BS E SEM SOLTA-LAS APERTE INSERT (AVANCA FASE)
+OU DELETE (RECUA FASE)
+              *transformar robo em bola*
+TECLE ESC E EM SEGUIDA SELECT E B JUNTAS
+
+29)Knightmare -> *invisivel*
+P/ COMECAR APERTE JUNTAS AS TECLAS SELECT, SETAS P/DIR. E ESQ. E Y. SO SOLTE-AS QUANDO
+O VIKING APARECER. DURANTE O JOGO TECLE SELECT OU APERTE O BOTAO SUPERIOR P/ FICAR INVISIVEL
+
+30)Hyper Rally -> *em primeiro lugar*
+BLOAD"CAS:":POKE&H935C,1:POKE&H935B,0:DEFUSR=&HD000:U=USR(0)
+
+31)Leon -> *infinitas vidas*
+TECLE JUNTAS P/ COMECAR CAPS LOCK, ESPACO
+
+32)Dynamite Dan -> *idem*
+ANTES DE COMECAR APERTE JUNTAS AS TECLAS W, E, S, D, C, X, E LGRA
+                   *aparece no cofre*
+DURANTE APERTE AS TECLAS TAB, CTRL, SHIFT, CAPS LOCK.
+
+33)Journey Erath -> *senhas*
+FASES = 2: CENT, 3:ADRIFT, 4:RETURN.
+
+34)Mopiranger -> *sem inimigos*
+BLOAD"CAS:":POKE&H9914,0:POKE&H9915,0:POKE&H9916,0:DEFUSR=&HD000:U=USR(0)
+
+35)Nemesis I -> *palavras chave*
+FASES: 1=LUCIEN, 2=IARA, 3=DIANA, 4=NOCAI, 5=ANDREA, 6=GISELE, 7=TANIA, 8=VALERIA.
+FASES SECRETAS: 1=SUMAIA, 2=THEIA, 3=RENATA, 4=CARLA.
+QUALQUER FASE: FIM (TERMINA O JOGO), HYPER (TODAS ARMAS), MISSILE, DOUBLE, LASER,
+OPTION, SHIELD.
+PARA USAR A PALAVRA APERTE F1 DURANTE O JOGO E DIGITE-A SEGUIDA DA TECLA RETURN (ENTER).
+ATENCAO: AS PALAVRAS SO PODEM SER USADAS NO ESTAGIO INDICADO E APENAS UMA VEZ CADA.
+
+36)Magical K.Wiz -> *aumenta vidas*
+JOYSTICK B P/DIR., BOTAO E ESPACO.
+                    *todas magias*
+JOYSTICK B P/CIMA, BOTAO E ESPACO.
+					*tempo*
+JOYSTICK B P/ BAIXO, BOTAO, ESPACO.
+
+-------------------------------------------------------------------------------------------
+
+EXTRA:
+
+Abu Simbel -> *vidas infinitas*
+
+10 SCREEN 2
+20 OPEN"GRP:"AS#1:PRESET(29,97):
+PRINT#1,"CARREGANDO: ABU SIMBEL"
+30 BLOAD"ABU-1",R:BLOAD"ABU-2",R:
+BLOAD"ABU-3",R:POKE &HC0B4,240:
+BLOAD"ABU-4",R::BLOAD"ABU-5",R
+
+Arkanoid -> *vidas infinitas*
+
+PRESSIONE AS TECLAS UP E DOWN JUNTAS
+E TECLE CODE(HOTBIT) OU LGRAPH(EXPERT)
+4 VEZES E EM SEGUIDA TECLE ESPACO.
+ULTIMA FASE JOGADA IDEM, SO QUE COM
+AS SETAS LEFT E RIGHT.
+
+Star Force -> *sem inimigos*
+
+BLOAD"CAS:":POKE&H909B,0
+DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF)
+:A=USR(0)
+BLOAD"CAS:",R
+
+Star Soldier -> *vidas infinitas*
+
+10 BLOAD"SOLDIER1"
+20 POKE &H9088,0
+30 DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF)
+40 A=USR(0)
+50 BLOAD"SOLDIER2",R
+
+Galaga -> *vidas infinitas*
+
+10 BLOAD"GALAGA1",R
+20 BLOAD"GALAGA2"
+30 POKE &H91,52,0
+40 DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF)
+50 A=USR(0)
+
+Twin Bee -> *todos poderes*
+
+NA TELA DE OPCOES, PRESSIONE JUNTO Z, TAB, SHIFT, CTRL.
+
+ChoroQ -> *vidas eternas*
+
+BLOAD"CAS:":POKE&HA564,&HC9
+DEFUSR=&H8004:Z=USR(0)
+
+Head Over Heels -> *idem*
+
+10 BLOAD"CAS:":BLOAD"CAS:"
+20 POKE&HBC86,0:DEFUSR=&HD8OO:A=USR(0)
+30 BLOAD"CAS:":DEFUSR=&HD81F:A=USR(0)
+40 BLOAD"CAS:":DEFUSR=&HD83E:A=USR(0)
+
+Exoid-Z -> *idem*
+
+BLOAD"CAS:":POKE&H9923,0
+DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF):A=USR(0)
+
+Penguin Adv. -> *megarom msx*
+
+COM ESTA DICA VOCE RECOMECA O JOGO ONDE TERMINOU, JA QUE IRA APARECER
+A MENSAGEM "F5 KEY FOR CONTINUE" NO FINAL DO JOGO. QUANDO APARECER
+A MENSAGEM "LEVEL 1" OU "LEVEL 2", DIGITE "NORIKO" E COMECE O GAME.
+
+Stones of Wisdom -> *vidas eternas*
+
+NA TELA "CASIO" PRESSIONE JUNTAS CTRL, Y, SELECT E ESPACO. SEM SOLTA-LAS
+PRESSIONE ESPACO REPETIDAS VEZES, ATE QUE O JOGO COMECE E O BONECO FIQUE
+LIBERADO.
+
+Athletic Land -> *idem*
+
+BLOAD"CAS:",200:POKE&H8333,0:POKE&HC0DF,200
+DEFUSR=PEEK(&HFCC0)*256+PEEK(&HFCBF):A=USR(0)
+
+-------------------------------------------------------------------------------------------</noscript><script language="JavaScript">
+if (navigator.appName.indexOf("Netscape")!=-1)
+{
+window.open("http://furacao.terravista.pt/pub/pubbanner.html","Pub","width=480,height=60,resizable=no,scrollbars=no,menubar=no,toolbar=no,directories=no,location=no,status=no");	
+}
+else
+{
+window.open("http://furacao.terravista.pt/pub/pubbanner.html","Pub","width=470,height=60,resizable=no,scrollbars=no,menubar=no,toolbar=no,directories=no,location=no,status=no");
+}
+</script>

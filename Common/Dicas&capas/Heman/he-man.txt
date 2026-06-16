@@ -1,0 +1,101 @@
+He-Man - Masters Of The Universe
+M rio Batista Cƒmara Filho
+Revista MSX Micro N§19
+
+Mapa:           NORTE
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXX   XXXXXXXX 
+XXXXXXXX       1 XXXXXXXXX XXXXXXXXXX
+XXXXXXXX XXXXXXX XXXXX XXX XXXXXXXXXX
+XXXXXXXX XXXXXXX XXXXX XXX XXXXXXXXXX
+XXXXXXXX             X        XXXXXXX
+XXX XXXX XXXXXX XXXX X XXXXXX3XXXXXXX
+XXX X    XXXXXX XXXX   XXXXXX XXXXXXX
+XXX X XXXXXXXXX XXXXXX XXXXXX XXXXXXX
+XXX X XXXXXX            XX    XXXXXXX
+XXX X XX2XXX XX XXXXXXX    XX XXXXXXX
+XXX X X       X iXXXXXX XX XX XXXXXXX
+XXX X X XXXX XXXXXXXXXX XXXXX    XXXX  
+X       XXXX       XXcX XXXXXXXX XXXX
+XXX XXXXXXXXXXXXXX XX X XX XXX X XXXX
+XXX         XX XXX         XXX      X
+XXX XXXXXXX XX XXX XXXXXXX XXX XX XXX
+XXXrXXXXXXX        XXXXXXX XXX XX XXX
+XXXXXXXXXXX XX XXX     XXX     X   sX
+XXXXXXXXXXX        XXXXXXXX XX XX XXX
+XXXXXXXXXXXXXX XXXXXXXXXXXXXXX XX XXX
+XXXXXXXXXXXXXX4XXXXXXXXXXXXXXXXXX XXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+Legenda:
+
+1 - Nota 1
+2 - Nota 2
+3 - Nota 3
+4 - Nota 4
+i - In¡cio
+c - Charlie's
+r - Rooftops
+s - Scrapyard
+
+Seu objetivo no jogo ‚ coletar as 7 notas que est±o espalhadas pela cidade,
+libertar seus amigos e derrotar o Esqueleto, em apenas 9 minutos.
+
+Teclas:
+O, cursor ^ - subir
+K, cursor v - descer
+Z, cursor < - esquerda
+X, cursor > - direita
+Barra de espa‡os - atirar
+H - pausa (halt)
+Q - abortar o jogo (quit)
+
+A tela de jogo:
+Espada de Greyskull - sua energia
+Cetro do Esqueleto - energia dos inimigos
+Seta ao lado da letra N - dire‡±o Norte
+Score - placar
+Chord - notas encontradas
+N£mero de vidas restantes
+Tempo restante
+
+Durante o jogo vocˆ receber  trˆs mensagens, dizendo onde est±o as trˆs notas
+que, somadas as quatro que est±o espalhadas pela cidade, permitir±o derrotar
+o Esqueleto e terminar o jogo.
+
+No decorrer do jogo, vocˆ deve procurar recolher as 4 notas que est±o
+espalhadas pela cidade, nos locais marcados de 1 a 4 no mapa.
+
+A primeira mensagem ser  recebida aos 8:40, dizendo que vocˆ deve ir para o
+dep¢sito de lixo (Scrapyard) na perte leste da cidade. Ao chegar l  vocˆ
+dever  derrotar dois inimigos para receber uma nota.
+
+Nesta parte do jogo, e no final, a tecla O serve para esquivar-se, a tecla
+K serve para socar e a barra de espa‡os serve para chutar. As teclas Z e X
+continuam movendo para a esquerda e para a direita.
+
+A segunda mensagem ser  recebida aos 6:30, dizendo que vocˆ deve ir para a
+loja de artigos eletr“nicos do Charlie (Charlie's), no centro da cidade. Ao
+chegar l  vocˆ dever  destruir 70 rob“s enviados pelo Esqueleto, para conseguir
+outra nota.
+
+A terceira mensagem ser  recebida aos 4:30, dizendo para vocˆ apanhar a £ltima
+nota no teto dos pr‚dios (Rooftops) na parte oeste da cidade. Ao chegar l  vocˆ
+apanhar  um disco que permitir  a vocˆ voar e destruir mais rob“s para que
+receber outra nota.
+
+Ao apanhar a £ltima nota, vocˆ receber  uma mensagem do Esqueleto,
+ordenando a sua rendi‡±o. Lhe ser±o dadas duas op‡µes:
+1 - Vir calmamente
+2 - Ficar e lutar
+
+Escolha a op‡±o 1, que lhe permitir  voltar a Et‚rnia e lutar com o Esqueleto.
+Tendo feito isto, vocˆ dever  derrubar o Esqueleto no po‡o para vender o jogo.
+Mas cuidado ! Se vocˆ cair, o jogo termina e vocˆ perde.
+
+Usando a dica, vocˆ come‡a o jogo com 12 minutos, o numero de rob“s que vocˆ
+deve matar se reduz a 2 e as vidas n±o diminuem quando a energia termina.
+Aprenda a se locomover usando o mapa. A cada vez que vocˆ entra por um novo
+caminho e muda de dire‡±o, a orienta‡±o tamb‚m muda. Preste aten‡±o na
+b£ssola, que sempre indica o Norte.
+

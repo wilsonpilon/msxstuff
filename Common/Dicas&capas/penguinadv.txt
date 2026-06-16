@@ -1,0 +1,31 @@
+RC743  PENGUIN ADVENTURE
+
+En la pantalla de selecciæn de nivel escribiremos:
+
+NORIKO -. << CONTINUE F5 >> con objetos.
+KAZUMI -. << CONTINUE F5 >> sin objetos.
+
+En la  sexta pantalla  entre los 300  y  290  Kms daremos con una
+tienda donde Santa Claus nos obsequiarﬂ  con uno  de  los objetos
+que se nos ofrecen.
+
+CORAZONES
+
+ROSA        PUNTOS
+VERDE       TIEMPO
+AZUL        NUVE
+AMARILLO    INMUNIDAD
+
+Y ya tienes de sobra para "pasarte" el juego :)
+
+Sacado de un txt escrito segun pone por Alberto Orante.
+
+  FASE   DISTANCIA APROX.   FASE A DONDE SE LLEGA
+-------------------------------------------------
+     1               240                        6
+     6               140                        9
+     9               335                       12
+    13               357                       15
+    16                78                       18
+    18               420                       21
+

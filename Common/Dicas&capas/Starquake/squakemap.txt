@@ -1,0 +1,32 @@
+
+Utilize o mapa
+
+O mapa consiste nas 512 telas do jogo (16 colunas por 32 linhas) agrupadas em 32 quados com 16 telas cada (4 linhas por 4 colunas).
+
+É recomendável que você useo o Internet Explorer 4.0 ou superior e resolução mínima e 800X600, pois o mapa é exibido em tela cheia.
+
+ 
+Códigos de teletransporte
+
+Veja na tabela abaixo os códigos utilizados para se teleportar através do labirinto.
+
+De quebra, além dos códigos da versão MSX, os de algumas outras versões:
+
+ MSX Coordenadas 
+razon P2 
+voax I3 
+taraq C5 
+antio G10 
+dulan C11 
+kwake F14 
+angor B19 
+ercot H22 
+kranz M24 
+uplan B28 
+indle J29 
+optin N29 
+snool G30
+zodia D32 
+argol K32
+     
+ 

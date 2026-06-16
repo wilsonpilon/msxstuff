@@ -1,0 +1,46 @@
+ 
+Nemesis is the first in a fantastic sequence of Konami shoot 'em ups. The game is not an original MSX game, but it was released before in the arcades. Nevertheless, it's fun on the MSX. 
+
+Nemesis was the first MSX megarom of Konami. The memory in the cartridge is larger than what would normally in a cartridge slot. The cartridge contains memory mapping logic to fit it in the cartridge. It's one megabit, that's 128Kb. Later Nemesis was released again with the Game Collection 3. This version has SCC music (better than the arcade!) but you'll need a SCC+. I've made a crack which does not need a SCC+, but will work with a normal SCC. 
+
+ 
+
+Story
+The planet Nemesis, a peaceful Earth-like world, is now under an all-out space attack from its old enemies, beings from the sub-space star cluster of Bacterion. The people of Nemesis are in danger of being completely destroyed by the amoeboid Bacterions.
+To save them, you have just launched the prototype hyper-space fighter, the Warp Rattler. The entire galaxy awaits your duel to the death with the evil Bacterions.
+Your objective is the Bacterion superfortress, Xaerous. To reach this, you must steal the enemy power capsules along your route and boost the Warp Rattler's hyper powers.
+You are the last hope for the gentle people of Nemesis! You will need all your courage and concentration to win. Get ready to blast off! 
+
+Playing Tips
+If you put Twin Bee in another slot, your ship will be a Twinbee and the energy pods are Bells. Player two even has the other ship! Make sure that you have a good copy of the Twin Bee ROM image. 
+There are a lot of passwords for this game. Note that they won't work on the Game Collection 3 version. To enter, press <F1>, type the password and <ENTER>. 
+
+In every stage, you can enter a password to get all weapons. It'll only work once in every stage. 
+
+Stage 1: MOMOKO 
+Stage 2: CHIE 
+Stage 3: AKEMI 
+Stage 4: SYUKO 
+Stage 5: CHIAKI 
+Stage 6: NORIKO 
+Stage 7: SATOE 
+Stage 8: YASUKO 
+Bonus Stage 1: KINOYO 
+Bonus Stage 2: HISAE 
+Bonus Stage 3: MIYUKI 
+Bonus Stage 4: YOHKO 
+Simply entering the name of the weapon also works fine: 
+SPEEDUP 
+MISSLE 
+DOUBLE 
+LASER 
+OPTION 
+SHIELD 
+And there are some passwords which will always work: 
+All Weapons: HYPER 
+Speed Down: DOWN 
+Game Over: BAKA 
+Game Over: AHO 
+
+ 
+There are four bonus stages in this game. They are in stage 2, 3, 4 and 6. For the one in stage 4, you must have gone through all the holes in mountians in stage 1 and 4. Notice that stage 4 is simply stage 1 upside-down. The locations of the bonus stages: 

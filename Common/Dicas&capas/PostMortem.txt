@@ -1,0 +1,43 @@
+Post Mortem
+
+Um jogo realmente sui generis.
+Você estava programando seu Spectrum (resquícios da transformação) quando morreu eletrocutado.
+Seu objetivo é conseguir voltar para terminar o jogo que você estava programando, chamado Post Mortem.
+Boa Sorte!
+
+Os comandos são introduzidos por um cursor em forma de rato.
+
+O Jogo
+
+Você está deitado no caixão - Para cima
+Você está num túnel com uma forte luz - Para direita
+Você está no céu - Para cima
+Você está na sala do anjo-da-guarda - Para direita 
+Você está no mundo dos pesadelos - Para cima 
+Você encontra Einsten. Ele pergunta se você quer conversar um pouco.
+Diga Sim. (Demorará cerca de 2:36 minutos) - Para cima
+Você está no céu - Para cima
+Você está defronte à arca dos 10 mandamentos. Lupa duas vezes.
+(Você receberá um objeto), e depois Para esquerda
+Você encontra Noé - Para cima 
+Você está no céu - Para direita
+Instituto Celestial de Azar e Casualidade - Para direita
+Receptor de Súplicas Variadas - Não (você receberá uma fita - Para cima
+Mensagem - Não - Para esquerda 
+Controle meteorológico - Para cima
+Mundo Invisível dos Santos Inocentes - Não - Para esquerda
+Reis Magos - Lupa - Para esquerda
+
+Se você fez tudo sem perder muito tempo, parabéns.
+Aparecerá uma mensagem de felicitações.
+Caso contrário, tente ser mais rápido.
+
+Considerações finais
+As teclas usadas são:
+
+O - Esquerda
+P - Direita
+Espaço - Escolhe
+
+É válido, também, que após conseguir terminar o jogo você jogue algumas vezes fazendo caminhos errados.
+As maneiras de perder são extremamente interessantes.

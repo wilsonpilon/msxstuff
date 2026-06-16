@@ -1,0 +1,103 @@
+Matagal
+
+Este é realmente um dos adventures mais originais (e malucos) para MSX.
+Ele faz uma paródia do famoso jogo Amazônia.
+Você é Tadeu Nuco e estava sobrevoando o Matagal quando sua lata de lixo voadora caiu, devido a sua incapacidade de remá-la corretamente.
+Você encontra-se em um local estranho e hostil e a única saída é o retorno a civilização.
+
+A Solucao
+
+Abaixo vai a solução do jogo, passo a passo:
+SUL
+PEGUE CASACO
+PEGUE REGUA
+NORTE
+NORTE
+NORTE
+OESTE
+OESTE
+SUL
+PEGUE BANANA
+SUL
+OESTE
+OESTE
+OESTE
+NORTE
+USE REGUA
+OESTE
+USE CASACO
+OESTE
+OESTE
+TIRE CASACO
+OESTE
+SUL
+SUL
+PEGUE GOIABA
+NORTE
+NORTE
+LESTE
+USE CASACO
+LESTE
+LESTE
+LESTE
+USE REGUA
+SUL
+LESTE
+LESTE
+LESTE
+SOLTE CASACO
+SOLTE REGUA
+ENTREGUE GOIABA PARA ARARA
+CONVERSE COM ARARA (Memorize a palavra que ela falar)
+SUL
+PEGUE PEDRAS
+NORTE
+NORTE
+NORTE
+LESTE
+LESTE
+SUL
+SUL
+SUL
+PEGUE FLAUTA
+PEGUE BOTAS
+NORTE
+NORTE
+NORTE
+LESTE
+USE FLAUTA
+LESTE
+SOLTE FLAUTA
+PEGUE VELA
+SUL
+SUL
+LESTE
+ACENDA VELA COM PEDRAS
+SOLTE VELA
+SOLTE PEDRAS
+PEGUE CHUPETA
+LESTE
+USE CHUPETA
+USE BOTAS
+LESTE
+SUL
+LESTE
+SOLTE CHUPETA
+SOLTE BOTAS
+PEGUE PLAYBOY
+LESTE
+ENTREGUE PLAYBOY AO TARADO
+NORTE
+LEIA LIVRO
+LESTE
+LESTE
+COMA BANANA
+LESTE
+LESTE
+SUL
+LESTE
+Escreva a palavra que a arara tinha dito
+LESTE
+E chegamos ao final...
+Atenção: Durante o jogo, tente examinar e ler objetos, animais e outras coisas.
+Entre também em outras salas. Acontecerão coisas que você nem imagina. 

@@ -1,0 +1,39 @@
+BODY {
+	BACKGROUND-COLOR: black; COLOR: white; FONT-FAMILY: helvetica, arial, sans-serif; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; PADDING-TOP: 10px
+}
+A:link {
+	COLOR: rgb(0,240,0)
+}
+A:visited {
+	COLOR: rgb(0,200,0)
+}
+A:active {
+	COLOR: rgb(0,255,0)
+}
+A:hover {
+	COLOR: rgb(190,255,0)
+}
+H1 {
+	COLOR: gray; FONT-WEIGHT: normal
+}
+H2 {
+	COLOR: gray; FONT-WEIGHT: normal
+}
+H3 {
+	COLOR: gray; FONT-WEIGHT: normal
+}
+TD {
+	COLOR: white; FONT-FAMILY: helvetica, arial, sans-serif
+}
+TH {
+	COLOR: white; FONT-FAMILY: helvetica, arial, sans-serif
+}
+TD.header {
+	BACKGROUND: black; BORDER-BOTTOM-COLOR: black; BORDER-LEFT-COLOR: black; BORDER-RIGHT-COLOR: black; BORDER-TOP-COLOR: black; COLOR: white; FONT-FAMILY: helvetica, arial, sans-serif; MARGIN: 5px
+}
+TD.msg {
+	BACKGROUND: white; BORDER-BOTTOM-COLOR: black; BORDER-LEFT-COLOR: black; BORDER-RIGHT-COLOR: black; BORDER-TOP-COLOR: black; COLOR: black; FONT-FAMILY: helvetica, arial, sans-serif; MARGIN: 5px; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.center {
+	TEXT-ALIGN: center
+}

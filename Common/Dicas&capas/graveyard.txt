@@ -1,0 +1,7 @@
+Você tem que eliminar um determinado número de inimigos consecutivamente pra
+avançar de fase.
+
+Pra facilitar, tente com um desses pokes.
+
+009f: 00 número de vidas não diminui
+4250: xx número inicial de vidas

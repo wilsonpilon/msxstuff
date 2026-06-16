@@ -1,0 +1,25 @@
+Profissão Perigo
+
+Neste jogo você é McGyver e está preso dentro do Centro de Investigação.
+Existe uma contaminação de um vírus biológico letal e você precisa achar o antídoto para salvar o mundo.
+      
+Roteiro Completo
+
+SOUTH
+EAST
+EAST
+EAST
+SOUTH
+TAKE BOX
+EMPTY BOX
+TAKE ANTIDOTE 
+NORTH
+WEST
+WEST
+WEST
+WEST
+SOUTH
+WEST
+BREAK RAIL
+
+Congratulations! You save the Earth.

@@ -1,0 +1,123 @@
+THE GAME MASTER 1 
+The Game Master 1 works with almost all MSX1 Konami cartridges except Synthesizer, Shalom and most of the Sony Konami Games (Juno First, Computer Billiards, Sparkie, Crazy Train). 
+
+It is important that the Game Master cartridge is in a lower slot than the game you want to play. Just put the Game Master in slot 1 (or A) and the game in slot 2 (or B). 
+
+The Game Master 1 also operates with some MSX2 games. You can use it with Goemon, Vampire Killer and Hinotory (Firebird). To do this, insert the Game Master 1 in a higher slot than the game. Now you can select stage and lifes when you start the game. In the game, you can at any time press <STOP> to interrupt the game. Now you can press <:> to advance a frame (see below) or press <STOP> again to go back to the game.
+Actually, it isn't The Game Master which is operating here. The game detects whether The Game Master is there and has special routines if is. The Game Master itself is never executed. 
+ 
+If you choose "Game", the game will start but you'll start in the first stages as normal. If you choose "Modify", you can select a different starting stage, more lifes, and enable ranking mode (sort of hi scores list with names that can be saved). Choose "Self" if you wish to load a screen shot. 
+
+Not with all games support all options. For example, in F1 Spirit lifes do not exist. 
+
+In the game itself, you can press <STOP> at any time to pause the game. The CAPS lock led will turn on. Now you can: 
+
+To advance one frame, press <:>. 
+To enable slow motion, press <ESC>. Now use <DEL> and <INS> to adjust the speed of the slow motion. 
+To save or load stuff (the game (this can be done at any point, even in a demo), the screen, ranking data or hi scores) press <CTRL>. A menu will appear. 
+To make a screen dump, press <F3>. You'll need a MSX printer or Virtual MSX. In Virtual MSX, select "MSX Printer" and when it is ready, choose "Save Printer Queue" from the menu. Select Write file type, and the file will contain the screen dump. 
+To restart the Game Master and the game, set the cursor (the arrow) at "END" in the menu, keep <CTRL> and <SHIFT> depressed while you press <SPACE>. The Konami logo of the Game Master now appears, after which you go to the main menu. 
+To go back to the game or end slow motion, press <STOP> again. The CAPS led will turn off. 
+Please note that when you save the game, you can only use the file on the same computer model as you saved it on. The file is a dump of system memory and video memory, so it contains a lot of system specific data. 
+
+The files have the following extensions: (xx denotes the RC number of the game - RC 7xx.) 
+
+Hi Score Data is named .Hxx 
+Game Data is named .Gxx 
+Screen Data is named .Sxx 
+Ranking Data is named .Rxx 
+
+Skipping The Game Master
+If there is a game in slot 2 which the Game Master can detect, you go directly to the game by keeping <ESC> depressed while the Game Master starts. This has the same effect as choosing 'Game' from the menu in the Game Master. So you can still use the Game Master features (like <STOP>).
+In stead of pressing <ESC>, you can also press <SHIFT>, but then you can't use the Game Master features. 
+
+Converting Screen Data files
+The screen data files cannot be loaded in BASIC, because they are in a different format. It is possible to convert them BLOAD format, to do this do the following: (thanks to Klaas de Wind.) 
+
+Save the screen in the game (see above) 
+Go to the Game Master (by resetting your computer) 
+Choose self, and then load screen data (and select the file you wish to convert) 
+Set the cursor (the arrow) at END 
+Press <CRTL> and <SHIFT> and then press <SPACE> (without releasing <CRTL> and <SHIFT>) 
+The Game Master saves the file as "filename.VRM", filename is the same as the screen data file you've just loaded. 
+Next, in BASIC, type the following program: 
+10 COLOR 15,0,0:SCREEN 2,2
+20 BLOAD "filename.VRM",S
+30 A$=INPUT$(1)
+
+
+Using Ranking Mode
+If Ranking Mode is enabled, every time someone starts a game he must enter his name. His score will be stored along with his name in a list. You can view this list by pressing <STOP> in the game, then <CTRL> and select Ranking Mode, View. 
+To enable Ranking Mode you must clear it before you start the game. In the Game Master main menu, select Modify, Ranking Mode, Clear Ranking Data. Then start the game. 
+
+
+THE GAME MASTER 2 
+The Game Master 2 operates with almost all Konami cartridges except Synthesizer, Contra, Majutsushi (Mah-Jong 2) and most of the Sony Konami Games (Juno First, Computer Billiards, Sparkie, Crazy Train). The Game Master 2 has some more interesting features (the cartridge is also know as "the new 10 features"). There are some small games in it. (Hockey, Tennis and Biorythm.) Also, the cartridge has some SRAM. Some games allow you to make savings in this SRAM. For example, King's Valley 2 can save custom stages in this SRAM. 
+
+The Game Master 2 operates in the same as The Game Master 1. There are some minor differences: 
+
+You can't make screen dumps (you can still save the screen though.) 
+You can't load/save from tape 
+If you want use The Game Master 2 with Vampire Killer, Goemon or Hinotory (Firebird) do not reverse the slot order 
+Disk files are incompatible with The Game Master 1 
+Hi scores and Ranking Data are not supported 
+
+Converting Screen Data files
+You can use the same method as for the Game Master 1 (see above) but you must use a different BASIC program to load the file into BASIC if it is a MSX2 game (because it is screen 5). 
+10 COLOR 15,0,0:SCREEN 5,2
+20 BLOAD "filename.VRM",S
+30 COLOR=RESTORE
+40 A$=INPUT$(1)
+
+
+Skipping The Game Master
+You can use the same keys as for the Game Master 1 (see above) but you can also press <SPACE> or <GRAPH>. This will always work, even if there isn't another Konami game in another slot. So you can go to BASIC or DOS in this way. 
+
+Emulation Problems
+Due to an error in fMSX, The Game Master 2 doesn't work with konami4 type megaROMs. Also, fMSX does not emulate the SRAM in the cartridge. I have modified the sources of fMSX such, that fMSX does emulate the SRAM and operates correctly with konami4 type megaROMs. 
+You can find the patches for fmsx here. 
+
+Virtual MSX emulates the SRAM, and also works correctly with the konami4 type megaROMs. But due to another bug, disk emulation doesn't work with the Game Master 2 in Virtual MSX 1.0. Use Virtual MSX 1.1 and all will work well. Choose the "2 Cartridges, Disk emulation, 32Kb RAM" memory option. 
+
+
+Using SRAM
+To see the technical details of the SRAM, click here. 
+Before the SRAM can be used, it must be formatted. To do this, Select "Self" at the main menu of the Game Master 2, then "SRAM disk utility" and "format". Here you can also see what files are stored in the SRAM, and delete them. 
+
+Possible reasons for an SRAM save to fail: 
+
+SRAM unformatted. Before you can use the SRAM, you must format it. 
+Bad emulation on an emulator. Format would fail in this case. 
+Out of space. There only is 8Kb SRAM, so it quickly gets filled up. You can delete files to make space or format it. 
+SRAM corrupted. Format it again. 
+The following Konami games can use the SRAM: 
+
+Shalom (filename: SHALM) 
+Save the game 
+
+Pennant Race (filename: PENAN) and Pennant Race 2 (filename: PENA2) 
+Save team information 
+
+Parodius (filename: PARO) 
+Save the game: press <F1> to pause the game, and press <S> to save and <L> to load from SRAM. 
+
+King's Valley 2 - both MSX1 and MSX2 (filename: FILE1, FILE2, FILE3) 
+Save custom stages 
+
+Contra (filename: CONTR) 
+Save the game: press <F1> to pause the game, and press <S> to save and <L> to load from SRAM. 
+
+Nemesis 3 (filename: GOFE1, GOFE2) 
+Save the game: press <F1> to pause the game, and press <S> to save and <L> to load from SRAM. 
+
+Majutsushi (filename: MAJAH) 
+I only know this game uses the SRAM by looking at the code. I am puzzled by the game itself. 
+
+Solid Snake (filename: SNAK1, SNAK2, SNAK3) 
+Save the game 
+
+In order to use the SRAM, The Game Master 2 doesn't need to be in a lower slot than the game; if you have the game in slot 1 and the Game Master 2 in slot 2, you can't use the Game Master 2, but you can use the SRAM. 
+You can also just put the Game Master 2 in slot 1 and the game in slot 2. Just keep the <SPACE> or <GRAPH> depressed so the Game Master 2 doesn't start. 
+
+Contra and Majutsushi do not work with the Game Master 2 (The Game Master hangs if you start Contra from it and The Game Master cannot detect Majutsushi), but if you bypass the Game Master 2 by pressing <SPACE> or <GRAPH> or reverse the slot order, you can use the SRAM. 
+

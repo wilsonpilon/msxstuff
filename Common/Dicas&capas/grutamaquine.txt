@@ -1,0 +1,166 @@
+Gruta de Maquiné
+
+A Gruta de Maquiné é um dos melhores adventures já feitos, sendo todo em português.
+Foi feito por Carlos Fabiano Ramos de Oliveira, o mesmo autor de O Conde de Monte Cristo e Menphis.
+
+O Básico
+
+No jogo, você precisará apanhar alguns objetos dentro da sua casa, levar os objetos corretos ao heliporto, saltar, cainda em uma pedra, entrar na gruta, passear na floresta,
+retornar a gruta e terminar o jogo. E só !!
+Vamos ver o que devemos fazer para terminar o jogo:
+
+Devemos levar os seguintes objetos ao heliporto: ingresso, óculos, corneta, bota, lanterna e livro.
+Os demais objetos são desnecessários.
+Entre no helicóptero. O piloto adora futebol!
+Arremesse todos os objetos (inclusive os que tiverem dentro do helicóptero), com excessão do paraquedas.
+Entre na gruta levando a lanterna, óculos, bota, corneta e livro.
+Decifre os hieroglifos da parede.
+Saia da gruta levando bote, óculos, bota e corneta.
+Entre na cachoeira, pegue o ovo e retorne a gruta.
+Coloque o ovo, apanhe o diamante e use a pistola sinalizadora.
+FIM!
+
+De um modo geral esta é a solução do jogo.
+Se mesmo assim você ainda não conseguir terminar, siga o roteiro a seguir.
+ 
+O Roteiro completo
+
+NORTE 
+EXAMINE ESTANTE 
+PEGUE LIVRO 
+SUL 
+OESTE 
+PEGUE OCULOS 
+PEGUE CORNETA 
+LESTE 
+SUL 
+EXAMINE CAMA 
+PEGUE BOTA 
+EXAMINE COMODA 
+PEGUE INGRESSO 
+NORTE 
+LESTE 
+LESTE 
+SOLTE BOTA 
+SOLTE LIVRO 
+SOLTE INGRESSO 
+SOLTE OCULOS 
+SOLTE CORNETA 
+OESTE 
+OESTE 
+SUL 
+EXAMINE COMODA 
+PEGUE LANTERNA 
+NORTE 
+LESTE 
+LESTE 
+NORTE 
+PEGUE PA 
+SUL 
+CAVE 
+EXAMINE PEDRA 
+LEIA PEDRA 
+SOLTE PA 
+PEGUE BOTA 
+PEGUE LIVRO 
+PEGUE INGRESSO 
+PEGUE OCULOS 
+SUL 
+LESTE 
+LESTE 
+SUL 
+DE INGRESSO 
+NORTE 
+OESTE 
+OESTE 
+NORTE 
+PEGUE CORNETA 
+SUL 
+LESTE 
+LESTE 
+SUL 
+ENTRE HELICOPTERO 
+JOGUE LIVRO 
+JOGUE OCULOS 
+JOGUE CORNETA 
+JOGUE LANTERNA 
+PEGUE PARA 
+PEGUE BOTE 
+PEGUE PISTOLA 
+PEGUE CORDA 
+ABRA PARA 
+PULE 
+VISTA BOTA 
+AMARRE CORDA 
+SOLTE PARA 
+PEGUE LANTERNA 
+PEGUE OCULOS 
+SOLTE PISTOLA 
+PEGUE CORNETA 
+SOLTE BOTE 
+PEGUE LIVRO 
+DESÇA (Se tiver dificuldades em achar o '&amp;CCedil;' basta DES 
+LESTE 
+LIGUE LANTERNA 
+NORTE 
+EMPURRE ESTALCTITE 
+SUL 
+SUL 
+LESTE 
+LESTE 
+LEIA PAREDE 
+OESTE 
+OESTE 
+NORTE 
+NORTE 
+EMPURRE ESTAL 
+SUL 
+OESTE 
+DESLIGUE LANTERNA 
+SOLTE LANTERNA 
+SUBA 
+PEGUE BOTE 
+DESÇA 
+SOLTE LIVRO 
+DESÇA 
+INFLE BOTE 
+ENTRE BOTE 
+NORTE 
+DE OCULOS 
+LESTE 
+SOLTE CORUJA 
+LESTE 
+TOQUE CORNETA 
+SUL 
+ENTRE 
+SUL 
+PEGUE OVO 
+SUBA PEDRA 
+PULE 
+OESTE 
+DESÇA 
+SOLTE CORNETA 
+PEGUE LIVRO 
+PEGUE LANTERNA 
+LESTE 
+LIGUE LANTERNA 
+EMPURRE ESTAL 
+SUL 
+SUL 
+LESTE 
+SUL 
+COLOQUE OVO IDOLO 
+PEGUE DIAMANTE 
+NORTE 
+OESTE 
+NORTE 
+NORTE 
+EMPURRE ESTAL 
+SUL 
+OESTE 
+SUBA 
+PEGUE PISTOLA 
+DISPARE PISTOLA
+
+Pronto! Se você fez tudo do jeito que está aqui, não tem como não terminar este adventure. 
+      

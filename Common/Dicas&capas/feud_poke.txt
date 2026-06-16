@@ -1,0 +1,12 @@
+Tentem utilizar essa "dica" pra que os feitiços de Learic não funcionem.
+
+10 POKE-1,170
+20 CLEAR 100,&H87FF:KEYOFF:CLS
+30 BLOAD"feud.001"
+40 BLOAD"feud.002"
+50 'FORI=&H9151TO&H9156:POKEI,0:NEXT:'imune aos feiticos
+60 'POKE&HA00C,0:'jogo rapido
+70 DEFUSR=&H8803:A=USR(0)
+80 BLOAD"feud.003"
+90 DEFUSR=&H8800:A=USR(0)
+

@@ -1,0 +1,15 @@
+Combinations with other Konami Games
+If you insert another Konami game in another slot, you can get some interesting effects. Not all games are have an effect, just these: 
+Penguin adventure
+Effect: metalion is changed into a penguin, and the power-ups are fishes (kinda Konami humour) 
+Q-Bert
+Effect: You can enter some passwords, press <F1> to pause, enter password and press <F1> to resume.
+
+METALION
+Your ship turns green and you're immortal. it wears of after a while; just re-enter the password. 
+NEMESIS
+You go to the next stage. 
+LARS18TH
+You get full power up (two options, laser etc.) and no speed ups. 
+The Maze of Galious
+Effect: when your ship gets destroyed, you can get your weapons back (backup). However, this does not work after a continue. 

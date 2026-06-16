@@ -1,0 +1,18 @@
+Pass Words:
+SQRYEPGO    estágio 2
+SQRYJTRRGO  estágio 3
+SQRGPITGO   estágio 4
+SQRGOBRGO   estágio 5
+SQRDOCGO    estágio 6
+SQRDRBRMGO  estágio 7
+
+Trapaças
+00f3-00f4: xx  número inicial de moedas
+01e0: 00       número de vidas não diminui
+06af: xx       número inicial de vidas
+06b4-06b5: xx  munição inicial
+1a04: c9       energia não diminui
+3525: 00       munição não diminui
+362a: 00       espada não perde energia
+ 
+Nota: alterando-se o número inicial de moedas ou munição os pontos são aumentados e ganha-se as vidas correspondentes.

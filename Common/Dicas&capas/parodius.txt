@@ -1,0 +1,14 @@
+Passwords
+The following passwords have an effect. To enter, press <F1> to pause the game, type the password, press <ENTER> and <F1> to resume the game. 
+ZENBU
+You get full power up. The password literary means everything. 
+KONAMI
+Always red bell-power (Vector Laser). 
+BUTAKO
+Always dark green bell-power (Up Laser). 
+TAKO18TH
+Always dark blue bell-power (Rotary Drill). 
+PARO
+Always white bell-power (wrap around horizontally). 
+KATAI
+Thanks to Shimanuki Koshi, I now know what it does: the effect of "KATAI" is increasing the Shield durability. It doesn't work with ZENBU, though. 

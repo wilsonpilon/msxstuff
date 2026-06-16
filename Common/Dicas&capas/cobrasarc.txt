@@ -1,0 +1,74 @@
+O Jogo
+
+Em mais este jogo da Dinamic, você será um cavaleiro medieval e seu objetivo será conseguir a arca do Príncipe Cobra, que guarda valiosos tesouros.
+Para isso, você contará com a ajuda de uma feiticeira e anões, lutando com as figuras mais estranhas.
+
+O Mapa
+
+Há um mapa do jogo a seguir.
+Os símbolos do mapa são os seguintes:
+
+Personagens
+
+A	Sivilix (Anão Púrpura)
+V	Servax (Anão Verde)
+G	Graudier (Filósofo)
+D	Dragões
+B	Gurka (Bárbaro)
+F	Dragora (Feiticeira)
+P	Príncipe Cobra
+X	Feiticeiro do Templo
+
+Objetos
+
+S	Silex	Mata o feiticeiro
+C	Copa de Ouro	Usada para matar o Príncipe Cobra
+J	Balsa	Permite andar sob o mar. Sem ela você morre ao entrar nele.
+E	Espada	Mata dragões e os personagens em geral.
+R	Relógio de Areia	Deve ser entrega a feiticeira, para que ela lhe dê a chave do templo Cobra.
+
+Alguns símbolos não estão no mapa.
+Isso se deve ao fato destes símbolos representarem objetos ou personagens que não tem localização exata.
+Dos símbolos que estão no mapa, apenas os seguintes têm localização exata: G (Graudier), F (Dragora), D (Dragões), P(Príncipe Cobra), X (Feiticeiro do Templo), e J (Balsa).
+Os outros objetos desenhados no mapa estão localizados na posição em que mais aparecem, porém podem estar em qualquer lugar.
+As casas amarelas (quadrados A8, D8 e G8) marcam os três locais em que o jogo pode iniciar.
+Em cada quadrado, há uma palavra que descreve o lugar, para melhor localização no mapa.
+As setas, entre as casas, indicam as direções possíveis.
+As portas indicam Entrada/Saida, sendo que a porta 1 se comunica com a outra porta 1, e a porta 2 com a outra 2.
+As duas partes separadas do mapa representam o interior do Castela de Glouster e do Templo Mágico.
+O acesso a elas é feito através das portas 1 e 2, localizadas nas casas G3 e D3 respectivamente.
+Estando nessas casas mande-os entrar (veja parte de comandos).
+Para sair do castelo ou do templo, é só ir até a primeira sala dos mesmos e dar o comando sair.
+
+O Roteiro
+
+O mapa é dividido ao meio pelo mar (linha 5).
+Observe que após passar para a parte de cima do mapa, você não poderá mais voltar para a parte de baixo.
+Na parte de baixo existem dois objetos: a balsa (D6) e outro aleatório.
+Portanto, recolha-os antes de passar para a parte de cima do mapa.
+A passagem para a parte de cima deve ser feita pela casa A5.
+Para terminar o jogo faça o seguinte:
+
+Pegue a balsa na casa D6.
+Procure pelo outro objeto que fica na parte de baixo do mapa.
+Encontrando o segundo o objeto passe para parte de cima.
+Procure os outros objetos (inclusive no Templo Mágico e no Castelo de Glouster), evitando entrar nas casa G1 e G4 e nas casas onde estão os dragões.
+Vá até a feiticeira (E4). Ela lhe dará a chave do Templo Cobra.
+Vá até o Príncipe Cobra (G1). Ele lhe tomará a Copa de Ouro, beberá o conteúdo e morrerá.
+Vá até os dragões e mate-os com a espada.
+Vá até o Templo Cobra. Use a chave para abrir a porta e entre.
+Acabou ...
+
+Dicas
+
+No caminho, mate, se encontrar, Graudier e Gurka.
+Só vá até o Príncipe Cobra, o Feiticeiro e os Dragões depois que tiver pego todos os objetos.
+Após conseguir a chave, evite encontrar Gurka, ou ele a tirará de você. Para recuperá-la, você terá de encontrá-lo e matá-lo.
+As casas marcadas com cruzes indicam morte.
+Não dê ouvidos aos conselhos de Graudier.
+Não mate os anões nem a feiticeira.
+
+Controles
+
+Os movimentos, neste jogo, são dados através de um cursor, que passa sobre os comandos.
+Os comandos são representados por desenhos que são auto-explicativos.

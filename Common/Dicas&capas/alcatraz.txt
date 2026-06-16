@@ -1,0 +1,127 @@
+Solução de Alcatraz - A Fuga Impossível
+
+Mapa e roteiro retirado do artigo publicado na Revista CPU edição 14 de autoria de Luiz Fernando Fiacadori.
+
+Controles
+
+Cursores (cima, baixo, direita e esquerda)
+SELECT - O que você no local
+ESC - O que você carrega
+Observação: No lugar da letra &CCedil;,
+você deve colocar a letra C. 
+Não há acentuações gráficas.
+
+O Roteiro
+
+Para conseguir escapar de Alcatraz, voce deve seguir estritamente os números na sua ordem crescente.
+Vamos começar do número 1. 
+Localize-o no mapa e faça o seguinte:
+
+Local 1 - Pressione Select
+PEGUE LENCOL
+RASGUE LENCOL
+AMARRE TIRAS
+
+Local 2 - Pressione Select (Guarda)
+PECA COMIDA GUARDA
+PEGUE COMIDA
+JOGUE CORDA
+PUXE CORDA
+ABRA GRADES CHAVE
+
+Local 3
+ABRA GRADES CHAVE
+SOLTE CHAVE
+
+Local 4 - Pressione Select (Cobertor e presidiário)
+PEGUE COBERTOR
+DE COMIDA PRESIDIARIO
+
+Local 5 - Pressione Select (Serra)
+PEGUE SERRA
+
+Local 6 - Pressione Select (Tomada)
+COLOQUE SERRA TOMADA
+LIGUE SERRA
+CORTE PORTA SERRA
+SOLTE SERRA
+
+Local 7 - Pressione Select (Pilha e baralho)
+PEGUE PILHA
+PEGUE BARALHO
+
+Local 8 - Pressione Select (Guarda)
+DE DINHEIRO GUARDA
+
+Local 9 - Pressione Select (Lanterna e revólver)
+PEGUE LANTERNA
+COLOQUE PILHA LANTERNA
+LIGUE LANTERNA
+
+Local 10 - Pressione Select (Fósforos)
+PEGUE FOSFOROS
+
+Local 11 - Pressione Select (Jornal)
+PEGUE JORNAL
+TIRE PILHA LANTERNA
+SOLTE LANTERNA
+
+Local 12
+COLOQUE JORNAL PORTA
+QUEIME JORNAL FOSFOROS
+
+Local 13
+COLOQUE COBERTOR FOGO
+SOLTE FOSFOROS
+
+Local 14 - Pressione Select (Água)
+PEGUE AGUA
+
+Local 15 - Pressione Select (Espelho)
+PEGUE ESPELHO
+
+Local 16 - Pressione Select (Fita)
+PEGUE FITA
+
+Local 17 - Pressione Select (Alarme)
+JOGUE AGUA ALARME
+
+Local 18 - Pressione Select (Luz)
+COLOQUE ESPELHO LUZ
+
+Local 19 - Pressione Select (Gravador)
+PEGUE GRAVADOR
+COLOQUE PILHA GRAVADOR
+COLOQUE FITA GRAVADOR
+
+Local 20 - Pressione Select (Roupa)
+PEGUE ROUPA
+VISTA ROUPA
+
+Local 21 - Pressione Select (Cães)
+LIGUE GRAVADOR
+
+Local 22
+SOLTE GRAVADOR
+
+Local 23 - Pressione Select (PÁ)
+PEGUE PA
+
+Local 24
+CAVE TERRA PA
+SOLTE PA
+
+Local 25 - Pressione Select (Dinheiro)
+PEGUE DINHEIRO
+
+Local 26 - Pressione Select (Carcereiro)
+DE BARALHO CARCEREIRO
+
+Local 27 - Pressione Select (Poço)
+COLOQUE CORDA POCO
+ENTRE POCO
+
+Assim você escapa de Alcatraz!
+Atenção
+Não se esqueça de que cada número equivale ao mesmo do mapa, e você deve estar na mesma posição em que eles se encontram no mapa.
+Tome Cuidado no local 8, pois à direita há uma cadeira elétrica, que poderá levá-lo à morte, caso encoste nela. 

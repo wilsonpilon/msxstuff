@@ -1,0 +1,45 @@
+Você tem que habilitar uma imagem de fita (.tap). Mas com o VMSX você não pode escutar aquela trilha sonora maravilhosa... 8b. Use o fMSX-DOS ou o BrMSX com uma imagem .cas (os manuais explicam como fazer).
+E já que você está usando ROM, dê uma olhada nisso aqui. Todos os endereços são relativos à imagem e estão em hexadecimal, logo, o 0000 é o início dela, onde está a identificação (41 42).
+ 
+The Castle:
+0045: 18       vidas infinitas (sem game over)
+04cf: 00       inimigos paralisados
+0d53: xx       número inicial de vidas
+0d58: lk       (linha,coluna) sala inicial conforme mapa
+0d62: xx       mapa (xx=1 - sem mapa; xx=9 - com mapa; xx=a - com mapa
+               indicando a saída)
+0d6c: kk       coluna inicial na sala
+0d71: ll       linha inicial na sala
+0d77: a7       todas as chaves e imunidade
+1070: 00       todas as portas abertas (deve-se sair da sala inicial)
+1aba: 00       número de vidas não diminui
+1afa-1afd: 00  imunidade (parece que basta 1afc:00)
+35a0: 00       não perde a chave após seu uso 
+ 
+      para iniciar junto à princesa, utilizar:
+      0d58: 09
+      0d6c: 10
+      0d71: 09
+ 
+Castle Excellent:
+0045: 18       vidas infinitas (sem game over)
+04cf: 00       inimigos paralisados
+0ad7: 00       número de vidas não diminui
+0b17-0b1a: 00  imunidade
+17d1: xx       número inicial de vidas
+17d6: lk       (linha,coluna) sala inicial conforme mapa
+17e0: xx       mapa (xx=1 - sem mapa; xx=9 - com mapa; xx=a - com mapa 
+               indicando a saída)
+17ea: kk       coluna inicial na sala
+17ef: ll       linha inicial na sala
+17f5: a7       todas as chaves e imunidade temporária
+17f5: 0f       todas as chaves e imunidade temporária permanente 
+               (não pegar oxigênio)
+1ad2: 00       todas as portas abertas (deve-se sair da sala inicial)
+35ae: 00       não perde a chave após seu uso 
+ 
+      para iniciar junto à princesa, utilizar:
+      17d6: 08
+      17ea: 10
+      17ef: 08 
+ 

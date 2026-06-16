@@ -1,0 +1,82 @@
+Konami Cartridges Combination List
+I've looked at the code of all konami games in search of combinations. I hope this is the complete list. 
+To use these combinations, put the game you wish to play in slot A and the other in slot B. If it does not have the effect stated here your ROM file could be damaged, or there may be a mistake in this list. Please mail me any corrections, questions, whatever. 
+
+Note that mostly only one combination is possible at a time, e.g.: Usas 'combines' with four different cartridges, but you can't put all of them in a slot expander or something: Usas stops searching after it's found one of the four. 
+
+I haven't listed the standard Game Master (2) combinations, only some special Game Master combinations. 
+
+RC 737: Yie Ar Kung-fu 2 
+
+RC 725: Yie Ar Kung-fu
+If you're nearly dead, your father will appear after a while and drop you a cup of tea. 
+RC 742: Nemesis 
+
+RC 740: Twinbee
+Your ship is a twinbee and energy pods are bells. Note that most of the ROM files of Twinbee around are not very good, and too errored to be detected. 
+RC 744: Vampire Killer 
+
+RC 735: The Game Master
+Choose stage and lifes when you start the game, and you can pause the game with <STOP>. 
+RC 745: King Kong 2 
+
+RC 747: Hinotori
+Thanks to Manuel Pazos: You can save the game to tape by pressing <F4> and load it by pressing <F5>. You must have Hinotori in a lower slot for this combination. Hinotori searches for King Kong 2, does some stuff and executes it. 
+RC 747: Hinotori 
+
+RC 735: The Game Master
+Choose stage and lifes when you start the game, and you can pause the game with <STOP>. 
+RC 745: King Kong 2
+See King Kong 2. 
+RC 746: Q-Bert
+Same as The Game Master. 
+RC 748: Ganbare Goemon 
+
+RC 735: The Game Master
+Choose stage and lifes when you start the game, and you can pause the game with <STOP>. 
+RC 746: Q-Bert
+Same as The Game Master. 
+RC 749: The Maze of Galious 
+
+RC 739: Knightmare
+You can revive Popolon or Aphrodite 99 times in Death's shrine. This can normally only be done once, but if you ask the game's password and enter it again, you can always revive your partner. 
+RC 746: Q-Bert
+You start with full vitality and 100 Arrows, Coins and Keys. 
+RC 751: Nemesis 2 
+
+RC 735: The Game Master
+Unknown. It does search for it though. 
+RC 743: Penguin Adventure
+Your ship is a Penguin, and energy capsules are fishes. 
+RC 746: Q-Bert
+You can enter some passwords: 
+NEMESIS
+Advance to the next stage. 
+LARS18TH
+You get full power up. 
+METALION
+You immortal for a while, but you can't fly through the landscape though. When it wears off, your ships starts to blink. Just enter the password again. 
+RC 749: The Maze of Galious
+If you die, you can get your weapons back (back up). 
+RC 752: F1 Spirit 
+
+RC 735: The Game Master
+
+RC 745: King Kong 2
+
+RC 746: Q-Bert
+They all of the same effect: you can race at every track. 
+RC 753: Usas 
+
+RC 749: The Maze of Galious
+100 Coins at the start. 
+RC 750: Metal Gear
+You'll only loose half the energy. 
+RC 751: Nemesis 2
+<F5> to continue after game over. 
+RC 752: F1 Spirit
+You always have special power (Cles can walk over gaps and Wit can jump mid air once per jump). 
+RC 758: Salamander 
+
+RC 751: Nemesis 2
+You get an extra stage so you can defeat Venom and finish the game. 

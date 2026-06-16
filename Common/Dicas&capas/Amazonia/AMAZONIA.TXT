@@ -1,0 +1,213 @@
+                    SOLUÄ∞O DO AMAZéNIA
+
+     O   adventure   Amazìnia,    de    Renato    Degiovani,
+provavelmente Ç o jogo mais famoso j† produzido  no  Brasil,
+porque teve versµes  lanáadas  para  praticamente  todas  as
+grandes fam°lias de microcomputadores que fizeram  parte  do
+mercado brasileiro na saudosa dÇcada de 80.
+     Devido Ö pequena mem¢ria e baixa capacidade gr†fica dos
+micros onde foi originalmente programado (Sinclair ZX-81), o
+jogo infelizmente n±o possui m£sica e gr†ficos. Ele  poderia
+ter sido melhorado em suas versµes mais novas, mas talvez  o
+autor tenha optado por  manter  total  fidelidade  Ö  vers±o
+original.
+     A vers±o MSX sofreu v†rios problemas adicionais  com  a
+incompatiblidade inicial da tabela de  caracteres  dos  dois
+MSX brasileiros, Ö n±o existància de  caracteres  acentuados
+nos MSX importados, e tambÇm devido Ö  incompatibilidade  do
+tipo  de  acesso  entre  as  interfaces  brasileiras  e   ao
+recomendado pelas normas de compatibilidade do  padr±o  MSX,
+que s±o seguidas pelos fabricantes  estrangeiros.  Mas  tudo
+isso foi contornado e hoje podemos desfrutar desse  jogo  em
+qualquer tipo de micro MSX.
+     N±o sei se outros micros tiveram esse  privilÇgio,  mas
+curiosamente, durante o per°odo  em  que  o  MSX  dominou  o
+mercado e as revistas, a soluá±o completa do jogo nunca  foi
+publicada. Renato, que foi editor da revista Micro  Sistemas
+durante longo per°odo, limitou-se a publicar o mapa do  jogo
+e a fornecer dicas esporadicamente em diferentes  seáµes  da
+revista.
+     Alguns elementos aleat¢rios que  fazem  parte  do  jogo
+impedem que seja  produzida  uma  soluá±o  £nica  para  este
+adventure. O m†ximo que podemos fazer  Ç  fornecer  o  mapa,
+algumas dicas e um roteiro para que o jogador possa terminar
+o jogo com maior facilidade...
+
+                          O MAPA
+
+     O mapa foi originalmente  publicado  na  revista  Micro
+Sistemas. A movimentaá±o do jogador Ç executada atravÇs  dos
+comandos N(norte),  S(sul),  L(leste),  O(oeste),  E(entre),
+SA(saia), SUB(suba) e D(desáa).
+     Uma linha simples ligando  dois  locais  indica  que  a
+movimentaá±o entre eles Ç efetuada apenas por um comando  de
+direá±o (N,S,L,O). Note que a disposiá±o dos  locais  n±o  Ç
+plana, e por isso nem sempre sair de uma sala pelo Sul  far†
+com que voce entre em outra pelo Norte, por exemplo.
+     Uma linha  dupla  ligando  dois  locais  indica  que  a
+movimentaá±o entre eles Ç efetuada apenas por um comando  de
+aá±o, (E,SA,SUB,D).
+     Finalmente uma linha dupla com uma  seta  ligando  dois
+locais indica que a movimentaá±o entre eles Ç  efetuada  por
+comandos de aá±o (E,SA,SUB,D), mas no sentido indicado  pela
+seta pode ser efetuada com um comando de direá±o (N,S,L,O).
+
+                        OS OBJETOS
+
+     A seguir uma lista com todos os objetos do  jogo  e  os
+locais onde podem ser inicialmente encontrados:
+
+     Ampola - dentro da cabana
+     Balde - acampamento
+     Ba£ - antigo dep¢sito
+     B£ssola - dentro do avi±o
+     Canoa - aldeia
+     Chave - dentro do vaso
+     Colar - sala de tesouros
+     Corda - posto da FUNAI
+     Documentos - dentro do avi±o
+     Espelho - dentro do avi±o
+     Espingarda - posto da FUNAI
+     Fac±o - dentro da oca
+     Garrafa - dentro do ba£
+     Jeep - acampamento
+     Lanterna - clareira ao lado dos destroáos
+     Livro - dentro do ba£
+     Machado - sala ao norte do altar
+     Mala - clareira ao lado dos destroáos
+     Mapa - sala de tesouros
+     Medalha - dentro do ba£
+     Muniá±o - no acampamento.
+     Pilhas - dentro do r†dio
+     R†dio - dentro do avi±o
+     Rel¢gio - dentro do avi±o
+     Rev¢lver - dentro do avi±o
+     T†bua - final da galeria
+     Vaso - dentro do templo
+
+     Objetos especiais:
+     Bambu - no bambuzal quando cortamos bambu com o fac±o
+     Tronco - no desmatamento quando cortamos uma †rvore com
+o machado
+     Jangada - fazer com corda, tronco e machado
+     Cristal - aparece aleatoriamente ap¢s matarmos a onáa
+     Cobra - aparece aleatoriamente
+     Onáa - aparece aleatoriamente, mas somente na mata
+
+                         O ROTEIRO
+
+     ê s¢ seguir o seguinte roteiro, que relaciona apenas  o
+indispens†vel para se concluir o jogo:
+
+     - Tirar as pilhas do r†dio e coloc†-las na lanterna.
+     - Pegar a corda e o machado. Cortar a †rvore  no  local
+do desmatamento e pegar o tronco. Construir a jangada em uma
+das margens do lago.
+     - Pegar a muniá±o e coloc†-la no rev¢lver.
+     - Matar o cacique com o rev¢lver e pegar  o  fac±o,  ou
+trocar alguma coisa por ele.
+     - Disparar o rev¢lver atÇ restar apenas 1 bala.
+     - Entrar na mata e atirar na onáa.
+     - Procurar o cristal e coloc†-lo no °dolo.
+     - Pegar a b£ssola e os documentos.
+     - Abrir uma trilha para o pÉntano com o fac±o, e entrar
+nele.
+     - Seguir o que diz o mapa: LLLNNNLLLLNN
+
+                           DICAS
+
+     Lendo o roteiro acima, atÇ parece que  Ç  f†cil  de  se
+chegar ao final, mas n±o Ç... Para  isso  Ç  que  servem  as
+dicas:
+
+     - Vocà pode dar 50 comandos sem morrer de sede.  Quando
+estiver faltando 5  comandos  para  a  morte,  o  computador
+avisar† que est† ficando com sede.
+     - Voce s¢ pode beber †gua na nascente,  no  lago  e  em
+suas margens, na cachoeira ou da garrafa cheia de †gua de um
+desses locais. A †gua do pÉntano est† contaminada e Ç letal.
+     - Vocà s¢ pode carregar 5 objetos. Vocà pode colocar  4
+objetos dentro da mala e carreg†-la com vocà, levando  assim
+8 objetos ao todo, mas os objetos que est±o dentro  da  mala
+n±o podem ser usados diretamente. Vocà tem que abrir a  mala
+primeiro e pegar o objeto desejado.
+     - Para explorar o fundo do fosso, a mina, a gruta atr†s
+da cachoeira e a caverna, vocà precisa  estar  carregando  a
+lanterna acesa.
+     - A lanterna s¢ pode ser acesa 3 vezes. Na quarta vez a
+lÉmpada queima. Se ela for deixada acesa, a  lÉmpada  queima
+ap¢s um certo tempo. Mas Ç tempo mais do que suficiente para
+se terminar o jogo.
+     - Para atravessar para  a  parte  norte  do  lago  vocà
+precisa usar a jangada. Mas se vocà atravessar carregando  a
+lanterna acesa os canibais te pegam. Se vocà n±o puder  mais
+apagar a lanterna, coloque-a dentro da mala e feche a mala.
+     - Para abrir a passagem secreta na esplanada, amarre  a
+corda na pedra e puxe a  corda.  Depois  desamarre  a  corda
+da pedra. Se vocà mexer no °dolo um  desabamento  fechar†  a
+passagem.
+     - Para passar pelo corredor vocà tem que abrir a  porta
+com a chave. A porta sempre  se  fecha  novamente.  Se  vocà
+deixar a chave na porta, ela desaparece quando  a  porta  se
+fecha e vocà fica  preso.  Para  pegar  a  chave  vocà  deve
+quebrar o vaso.
+     - Para poder atravessar o abismo, coloque  a  t†bua  no
+abismo, fazendo assim uma pingÅela.
+     - Quando vocà encontra a cobra em um local,  as  £nicas
+coisas que vocà pode fazer sem ser picado s±o: sair do local
+ou matar a cobra com o machado  ou  rev¢lver.  Se  vocà  for
+picado, morrer† em 5 comandos se n±o beber o soro da ampola.
+     - Quando a onáa aparecer, vocà tem cerca de 5  segundos
+para sair do local ou mat†-la com  o  rev¢lver.  Se  demorar
+para digitar ela te mata. Vocà s¢ acerta o tiro com a £ltima
+bala do rev¢lver.
+     - Quando a onáa Ç morta, o cristal aparece  em  um  dos
+seguintes locais: nascente, acampamento,  final  da  galeria
+(mina) ou antigo dep¢sito (caverna). Vocà tem que peg†-lo  e
+coloc†-lo no °dolo.
+     - Para pegar o fac±o vocà tem 3 alternativas:  matar  o
+cacique com o rev¢lver, entrar na oca e trocar algum  objeto
+pelo fac±o ou dar 6 presentes para o cacique. O cacique  n±o
+aceita o rel¢gio e fecha a aldeia se vocà lhe der o  espelho
+ou roubar a canoa, que est† furada e n±o  serve  para  nada,
+assim como o balde.
+     - Para entrar no pÉntano vocà precisa antes  fazer  uma
+trilha com o fac±o. Para que a sequància do  mapa  funcione,
+vocà precisa estar carregando a b£ssola. Para que  vocà  n±o
+seja  preso  pela  pol°cia,  vocà  precisa  estar   com   os
+documentos. Se vocà n±o estiver com os documentos, vocà  tem
+alguns segundos para voltar pelo pÉntano seguindo o  caminho
+inverso, antes que os policiais lhe vejam e prendam.
+     A seguir, a abreviaá±o de alguns comandos £teis:
+
+     gastar a muniá±o do rev¢lver:DI R
+     matar o cacique com o rev¢lver:M CACI R
+     presentear o cacique:PRES CACI objeto
+     trocar algo pelo fac±o:TR objeto F
+     matar a cobra:M COB MAC ou M COB R
+     matar a onáa:AT ON
+     colocar o cristal no olho do °dolo:PO CR â
+     fazer trilha com o fac±o:F TRI F
+     fazer a pingÅela no abismo:PO TÑ AB
+     encher a garrafa com †gua:PO èG G
+     abrir a porta:AB POR CH
+     lista de verbos:VERB
+     objetos no local:EX L
+     dica do jogo:DIC
+     objetos que carrega:T
+     instruáµes:INS
+
+     Local 		Para entrar 		Para sair
+     altar		SUB AL			D AL
+     avi±o 		E AV 			SA AV
+     cabana		E CAB			SA CAB
+     caverna		E CA			N
+     fosso		E FO			SA FO
+     gruta		E CAC			O
+     mina		E MI			O
+     oca		E OC			SA OC
+     passagem		E PASS			SUB ESC
+     sarc¢fago		E SAR			N
+     templo		E T			SA T
+
+
