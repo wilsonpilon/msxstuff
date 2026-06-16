@@ -1,0 +1,11 @@
+DIEET
+
+Laadinstructies programma Dieet:
+Sluit de computer aan zoals in de gebruiksaanwijzing staat aangegeven.
+U kunt het programma laden met de instructie: bload"cas:",r.
+Heeft u een MSX2 computer dan moet de computer aangezet worden met de
+SHIFT-toets ingedrukt.
+Kant A van het bandje bevat:
+1. Instructiegedeelte  2. Hoofdprogramma
+Kant B van het bandje bevat:
+1. Hoofdprogramma  2. Instructiegedeelte 

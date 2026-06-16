@@ -1,0 +1,87 @@
+======================================================================
+Fishing game with Naturalism for MSXturboR
+
+** The finest day for fishing **
+
+(C) GW's-Workshop 1996
+======================================================================
+
+ Thank you for downloading "The finest day for fishing". Please read this
+document carefully, before using this software.
+ Caution, this software is for MSXturboR only. You can't execute it on MSX,
+MSX2, nor MSX2+. And all of messages in this game are written in Japanese.
+
+1) How to Begin
+
+At first, set up MSX-DOS2. There are two ways to start the game.
+
+If you have FS-A1ST(256KB RAM), start batch file: FISH-ST
+Or, if you have FS-A1GT(512KB RAM) or FS-A1ST with extend RAM, start batch
+file: FISH-GT
+Once executed, never pull out the disk out of its drive.
+
+2) How to Play
+
+Only keyboard can be used.
+
+2-a: Preparing Mode
+
+ Soon after execution, you can ses your fishing rod raised. Now is called,
+"Preparing Mode." Push left to change devices. Push right to chnage bait.
+Push up for going to "Pocketbook Mode."
+ After you select the device and bait, push down for starting fishing. Your
+reel begins to revolve. While your device is going down, push SPACE to stop
+sinking, and go to "Waiting Mode."
+
+ * It stops automatically when depth gets to 8m50cm.
+
+2-b: Waiting Mode
+
+ Now, you are waitnig for fish. Push left for raising your rod to tempt fish.
+Push up for interrupt fishing, and your reel is rewound automatically, go back
+to "Preparing Mode."
+ When fish comes, you'll see the tip of your rod shaking. It means HIT!!.
+Let's push SPACE, or fish will steal bait and run away. If you swing up the
+rod timely, you can try to draw up fish!!
+
+2-c: Hit Mode
+
+ Now, you can see the fishing boy standing up. Push SPACE to rewind your reel.
+Push left to swing up the rod. It'll be easy to draw up fish if you do what we
+call POMPING: repeat swing up, and rewind again and again.
+ You must be careful when you hear beep sound. It means fish raging under the
+sea to run away. Now, don't rewind or swing up against fish's will , or you'll
+miss him or her.
+ If you succeed to fish, you can see your catch. Push any key for replaying
+the game.
+
+2-d: Pockectbook Mode
+
+ In this mode, you can read about devices, bait, and fish. Push up and down to
+move coursor. Push SPACE to choice. But those articles are written in Japanese
+, sorry....
+
+3) How to Enjoy
+
+ This game have niether GAME OVER nor ENDING. There is no purpose. You have
+just to enjoy fishing in the nature with hearing the sound of the wave, seeing
+sea gulls flying in the sky.
+
+4) Conditions required to use this software
+
+ This software is freeware. You can distribute widely. But the copyright of
+this game is monopolized by authors.
+ You don't have to pay any money to use this software. But you have a duty
+that you report your thought ,bugs information, and so on to the author.
+I would like everyone who downloaded this to drop me a note.
+
+E-mail address : ghost@antares.felix.or.jp
+Subject : fishing
+Use above format please.
+
+[CAUTION] The Author nor distributor hold no responsibility whatsoever on any
+troubles in the use of this software. Please be reminded.
+
+           The finest day for fishing(Internet Distribution Version) ver1.1
+
+                       (C) GW's-Workshop 1996

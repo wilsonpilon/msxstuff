@@ -1,0 +1,85 @@
+RETURN TO EDEN
+
+
+This adventure game is for 64K MSX micros (actually, Level 9's text
+adventures only need 32K). To load and start, type the following and
+press RETURN:
+
+   RUN "CAS:"
+
+Then play the cassette in your recorder to load the game (there is a
+copy on each side of the tape). The adventure starts automatically.
+
+
+PLAYING THE GAME
+
+The adventure asks "What now?" (or something similar) whenever it
+expects you to type another command. Simply type a short English
+phrase to tell it what you want to do next and press RETURN. The
+program will carry out your request and tell you if anything
+significant happens, then ask for the next command and so on..
+
+If the game doesn't understand what you mean, try and rephrase the
+command, using different words, and this may work better. Use
+capital letters.
+
+Here are some useful words. Not every on of these works in every
+adventure, but it's worth trying them:
+
+TAKE, GET, WEAR, DROP, the 8 compass directions, IN, UP, DOWN,
+CLIMB, LOOK AT, EXAMINE, FILL, OPEN, CLOSE, LIGHT, SCORE,
+INVENTORY (lists everything carried), AGAIN, SCORE, QUIT, SAVE and
+RESTORE (see below for details of these last two).
+
+Many words can be abbreviated, e.g. NORTH to N and NORTHEAST to NE.
+
+
+SAVING THE POSITION
+
+To save the state of play to tape, type SAVE and press RETURN. Start
+a blanj cassette on RECORD and press RETURN again to start the
+position saving. This takes a few seconds. When the program asks you
+"What next?", stop the tape. It may be a good idea to us SAVE before
+trying anything dangerous.
+
+To restore a save position, you must be playing the game. Type
+RESTORE and press RETURN. Some adventures ask you if you're sure: if
+so, type YES and press RETURN. Rewind the cassette on which the
+position was saved, and start it on PLAY: the data will load in the
+same way as a normal MSX program. Then carry on playing from the
+saved position.
+
+To stop a SAVE or RESTORE, hold down CTRL and press STOP.
+
+
+LOADING ADVICE
+
+We test cassettes thoroughly and few people should have any 
+difficulties in loading our games. If you do have any problems, 
+however, the following may help:
+
+1.  Try the other side of the cassette.
+2.  Load a program of your own to test that the recorder is 
+    connected.
+3.  Vary the volume and tone settings (using fairly load and fairly
+    high).
+4.  Clean and demagnetise the recorder, following the maker's
+    instructions.
+5.  Some recorders don't work well with some computers. Could you
+    use another type?
+6.  You may really have a bad cassette. As a last resort, return it
+    under guarantee to get a replacement (just return the cassette,
+    it costs more in postage if you return the box as well).
+
+
+
+NOTES FOR MSX OWNERS
+
+If the program stops mysteriously, this is because it is trying to
+print more text than will fit on the screen and has stopped to let
+you read the first part. Press RETURN and it will continue.
+
+Try the following commands:
+WORDS .......... Just display text
+PICTURES ....... Turn pictures on
+

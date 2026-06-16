@@ -1,0 +1,163 @@
+Program:        MSXRUN.EXE
+Version:        3.0
+Author:         Teemu Hummer
+Snail-mail:     Heponiementie 3a6
+                48350 Kotka
+                Finland
+E-mail:         kon6tehu@kotakk.fi
+Released:       11.11.1996
+Requires:       Marcel de Kogels FMSX-DOS version 1.6b1
+Disclaimer:     The author is NOT responsible of ANY damage use or misuse of
+                this product may cause. MSXRUN is copyrighted to Teemu Hummer
+                but can be distributed freely without fee as long as it
+                remains intact and unchanged. FMSX-DOS is copyrighted to
+                Marcel de Kogel. FMSX core program is copyrighted to Marat
+                Fayzullin.
+                If someone want's to sell this product: Consult the author.
+Suggestion:     Read the FMSX-DOS and FMSX manuals too!
+
+Filelist:
+        Without these files it is prohibited to copy this software:
+         MSXRUN.EXE
+         MSXRUN.TXT
+        Later MSXRun will create (if not present) MSXRUN.CFG, FMSX.CFG
+        and ROMS.CFG
+
+Interface (advanced users can skip this one...):
+        Main window buttons:
+                Emulation: MSX1 / MSX2
+                 - Selects the type of emulation either MSX1 or MSX2
+                Video: 320x200 / 320x240 / 640x480 / 256x212
+                 - Selects videomode for emulation.
+                   320x200 or 320x240 recommended
+                Allow/No VGA mode switches
+                 - Allows VGA mode switches?
+                Chipset: VESA / S3 / AUTO
+                 - Selects the video chipset for your videocard. If you are
+                   not sure what it is use AUTO
+                Sound: Variety of sound options
+                 - Sets your soundcard (or lack of it) for emulator sounds
+                Megaromtype: Konami and ASCII megaroms.
+                 - Usually default setting will do.
+                 - If ROMfile won't work, try testing different megarom-types
+                   and emulation types too!
+                Save:
+                 - Saves current ROMs megaromtype and MSX emulation used.
+                   So if you later select the same ROM again the MSXRUN will
+                   adjust the megaromtype and emulation type to match
+                   previous selection saved.
+                First ROM-file:
+                 - from here you can select the ROM-file for MSX-ROM-port 1
+                Second ROM-file:
+                 - This is the secondary MSX-ROM-port file
+                   Some games add cheat-codes to other games(Nemesis2&Qbert),
+                   if you already didn't know that...
+                Disk A image: xxxxxxxx.xxx
+                 - This is the file to access MSX drive A:
+                 - To the right of this button you can see two little buttons
+                   One saying A and the other says B. Use these buttons if
+                   you want to set drive A or B as MSX Drive.
+                Disk B image: xxxxxxxx.xxx
+                 - This is the file to access MSX drive B:
+                 - To the right of this button you can see two little buttons
+                   One saying A and the other says B. Use these buttons if
+                   you want to set drive A or B as MSX Drive.
+                Joystick Emulation: Off/Port1/Port2
+                 - Sets joystick emulation for analog joystics On/Off.
+                SwapButtons: Swap/NoSwap
+                 - Swaps the buttons from analog joystic
+                Scc: On/Off
+                 - Sets Scc emulation On/Off
+                FMPac: On/Off
+                 - Sets FMPac emulation Off/OPL2/MPU401/MPU401&OPL2.
+                Emulate VDM scr.adj: Off/Horiz/Vertic/Fully
+                 - Sets the VDP screen adjustment emulation.
+                Verbose: different verbose levels
+                 - You can set your favourite verbose level (SILENT!)
+                Launch xxxxxxxx.ROM [Enter-key]
+                 - Runs the emulator with ROM-file in any port. If there is
+                   no ROM-files selected it runs the FMSX-DOS emulator with
+                   any other file-options selected (tape / disk images).
+                   Remember! MSXRUN needs some memory to run the FMSX-DOS
+                   so if you have large programs resident in memory, please
+                   remove them.
+
+        Main window sliders:
+               All sliders work the same way: either you press left mouse
+               button down on a sliderblock(the white one) and drag it
+               horizontally or vertically or press the left mousebutton
+               above or below the white block in the black area and something
+               wonderful will happen...
+
+                 Volume:
+                  - With this slider you can set desired sound/music volume
+                    of the emulator.
+                 Reverb:
+                  - Reverb support for SoundBlaster-compatibles. (NO GUS)
+                 Chorus:
+                  - Chorus support for SoundBlaster compatibles. (NO GUS)
+                 Stereo:
+                  - AWE32 users may set the stereo panning (0-100, where 100
+                    is extreme)
+                 IFreq:
+                  - Sets the emulator Ifreq
+                 CPUSpeed:
+                  - Sets the speed of emulated CPU (0-500%)
+                 UPeriod:
+                  - Sets the Uperiods
+                 SB snd.Quality:
+                  - Sets the sound quality for SoundBlaster 0 worst 5 best
+                    and -- is OFF(for not being written to the .cfg file)
+
+                 If the IFreq or UPeriod -sliders are set to minimum they
+                 are set as 'Default'. This means the FMSX-DOS uses its own
+                 'factory' settings.
+
+        The filerequester:
+                You can scroll the filelist by pressing up/down arrows,
+                page up/down keys and using the slider on the right of
+                the requester-window.
+                The selected directory entry is highlited on the window.
+                If the entry is a directory or a drive letter you can enter
+                it by pressing right mousebutton or doubleclicking the left
+                mousebutton or by pressing ENTER. If the directory entry
+                is a file you can load it by first selecting it and then
+                pressing OK-button, ENTER-key or doubleclicking it with left
+                mousebutton.
+                By pressing ESC or CANCEL-button you can leave the file-
+                requester without choosing anything. By doing this you
+                clear the latest selection.
+                You can re-read the directory by entering (.) directory.
+                NOTE: CD-ROMS don't show the (..) directory on 2nd level
+                of dirs. If you want to go back, you must select the device
+                once more...
+                The filerequester doesn't mark CD-Roms if there isn't a
+                Data-CD inserted and it doesn't scan for drive B.
+                But who carez?
+
+        You can get more accurate information about FMSX-DOS options by
+        reading the FMSX-DOS and FMSX manual(s).
+
+Other notes:
+        First thing after installation you must delete the old
+        fmsx-dos.cfg or rename it to fmsx.cfg.
+        ...I won't add any sound options for the PC-beeper!
+        REMEMBER: THIS PRODUCT NEEDS FMSX-DOS V1.6b1 by Marcel de Kogel.
+
+        Feel free to mail any suggestions/comments/bug reports (needed).
+
+History (really short version):
+        3.0: As the FMSX-DOS 1.6b1 was released I had to modify the MSXRUN
+             to match all the new options.
+        2.1: Fixed some bugs(Logical and linguistic) and added the
+             Save-button.
+        2.0: Added different MegaRom-types support and moved the idiotic
+             type-in-the-directory-thing into the filerequester!
+         .   Added Reverb and Chorus sliders and MSX Drive gadgets...
+         .   Fixed some bugs in the GUI which is still under development.
+         .   Added IFreq, IPeriod and UPeriod sliders...
+         .   Boy, that window looks stuffed....... ;-)
+        1.0: First released/made version.
+
+Thanks to:
+        Marcel de Kogel and and Marat Fayzullin for FABULOUS MSX-emulator.

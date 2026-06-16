@@ -1,0 +1,41 @@
+-----------------------------------------------------------------------------
+THE MAZE OF GALIOUS  (Disk Cracked Version)  (Description of file MAZE.DSK)
+-----------------------------------------------------------------------------
+
+There is the disk cracked version of Maze of Galious, in .DSK format.
+(163.840 bytes). Try the game mode:
+
+[1] Key -> Normal Game, to play normal game.
+
+[2] Key -> Easy Game, This mode don't takes the maxium of energy,
+           takes the Ilimited energy, Ilimited Arrows, Ilimited
+           keys, and Ilimited coins !!!  :-)
+           In the game screen, you can press the key number (1-4)
+           to move Popolon and Aphrodite in this directions:
+
+           [1] Key -> Move the character to the top of screen.
+           [2] Key -> Move the character to the bottom of screen.
+           [3] Key -> Move the character at maxium left of the screen.
+           [4] Key -> Move the character at maxium right of the screen.
+
+
+Try Easy mode and enjoy it!
+_____________________________________________________________________________
+
+Important:
+If you use fMSX-DOS remember use -ram 32 parameter...
+Try the batch file are included. (MAZE.BAT)
+Copy all files in fMSX-DOS directory and write MAZE.BAT
+This batch file are for Sound Blaster 16 or AWE32.
+One possible line is:
+
+@FMSX-DOS -msx2+ -ifreq 60 -ram 32 -cpu 100 -video 3 -adjust 3 -sprite 1 -sound 3 -sq 5 -vol 15 -diska MAZE.DSK
+
+----------------------------------------------------------------------------- 
+http://www.terra.es/personal2/valley/galious
+2001 by Jordi Roca
+valley@teleline.es
+-----------------------------------------------------------------------------
+
+
+

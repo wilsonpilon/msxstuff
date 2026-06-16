@@ -1,0 +1,18 @@
+Exploding Atoms
+---------------
+A strategy game for two players. Place your atoms
+on a grid and capture your opponents territory.
+
+Vicious Viper
+-------------
+Guide the viper around the screen and, as it eats
+the fruit, it grows in length - but don't allow
+it to touch the edge of the screen or its own
+tail or you lose.
+
+
+TO LOAD EACH PROGRAM PRESS RESET BUTTON AND
+   TYPE CLOAD AND PRESS THE RETURN KEY
+
+
+ 

@@ -1,0 +1,17 @@
+ALPHA BLASTER
+
+Alphablaster is a space shoot 'em up arcade game in 16 screens. Destroy 
+Aliens by activating your blaster, dodge the projectiles they launch at 
+you and intercept as many fuel balls as possible.
+
+Loading instructions: RUN"CAS:" <RETURN>
+
+Controls: joystick or cursor keys.
+left = left    right = right
+Activate blasters by pressing space bar/fire button.
+
+To help you on your way, here's an introduction to the first 3 screens:
+1. Aim at the Aliens constantly firing away at you. Each Alien = 100pts.
+2. The Aliens will attempt to surround you. 200 points for a hit.
+3. You've reached the Astroid belt. Avoid rocks and intercept fuel balls 
+   (=100 bonus) for extra fuel.

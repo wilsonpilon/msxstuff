@@ -1,0 +1,1 @@
+@FMSX-DOS -diska %1.DSK %2 %3 %4 %5

@@ -1,0 +1,123 @@
+                                  SD Snatcher
+
+                            English version by OASIS
+
+                          Cracked to work with msx-dos
+
+
+                                Jan van Valburg
+
+
+                                      -=-
+                    Please take some time to read this text.
+               It's not that big and you'll probably need to know
+                        everything that's in here anyway.
+                                      -=-
+
+
+                             -=[ What is needed ]=-
+
+To run SD Snatcher you need fMSX-DOS and all the additional ROM files that are
+needed to emulate MSX 2. (the ROM files are usually distributed seperately)
+
+To run the emulator at a good speed a Pentium PC is recommended. For slower PCs,
+speed can be gained by turning off sound.
+
+Make sure you read the documentation about fMSX-DOS.
+
+
+                               -=[ How to run ]=-
+
+To run SD Snatcher, make sure you have all the programs you need, all in the
+same directory. Then start the game with this DOS command:
+
+fMSX-DOS -diska sd-s.dsk -adjust 3
+
+You might need additional switches to change sound settings, etc. For more
+information about that, look in the fMSX-DOS documentation.
+
+The game will boot up and it will ask you for an 'SCC slot (0=none)'. Now press
+'$' (shift-4) and you should get a message saying 'you hit the jackpot! infinite
+cash!'. Once you get that, press '1'.
+
+The game will start
+
+
+                              -=[ What's next ]=-
+
+
+You can either wait a while and the intro demo will start, or you can press
+space and select 'start' to start a new game. Enter 'GILIAN' for the name (that
+is what his real name is supposed to be anyway). You will see another introdemo.
+
+After the demo is over, you can play the game for a while. Play through the
+start until you encounter your first monster (metal creature). Then load the
+saved game from the data-disk and continue playing from there.
+
+
+                              -=[ The controls ]=-
+
+Cursor keys move Gilian around.
+Space is fire button A (select)
+ALT is fire button B (cancel)
+
+Use ALT key to speed up the text.
+
+F1 to pause the game
+F2 to save the game
+F3 to load a saved game (or select 'continue' when the game starts)
+
+The game will ask for different disks (disk 1,2,3 and user disk) when it does
+this, hold down the *right* CTRL key and press 1,2,3 for disk 1,2,3 respectively
+and press 4 for the user disk.
+
+
+                         -=[ What's wrong... why... ]=-
+
+This game has some problems because it was not properly cracked. 'Junkers' are
+extremely high priced, the MAX HP you start off with is wrong (51) and stays
+fixed to 51 throughout the game. Also the amount of EXP needed for LV UP is too
+high.
+
+The only way to get around these bugs and still play the game (kind of) is by
+cheating. This is why I've provided the hacked save-game. This save game gives
+you the highest possible level. Also, pressing '$' at the SCC selector gives you
+infinite money, so you can buy 'Junkers'.
+
+If you want to play SD-Snatcher the 'right' way I'm sorry to disappoint you but
+it's not possible... I'm trying to get a 100% working version but it might
+always stay this way...
+
+IF YOU HAVE A BETTER WORKING VERSION PLEASE PLEASE E-MAIL ME!! Thanks. Even if
+you know someone who has it or maybe can help me crack the game properly, many
+many SD-Snatcher fans will be eternally grateful!!
+
+
+                              -=[ I'm stuck... ]=-
+
+Just e-mail me with any questions. Just don't ask me about every little detail.
+After all it's all English so it shouldn't be too hard.
+
+
+                           -=[ This ZIP contains ]=-
+
+
+SD-S.TXT	This documentation
+
+SD-S.DSK	SD Snatcher disk image containing:
+		* SD Snatcher disk 1
+		* SD Snatcher disk 2
+		* SD Snatcher disk 3
+		* User disk with hacked data
+
+
+                             -=[ Me and my site ]=-
+
+This little piece of text was written by:
+
+Jan van Valburg ( Locke^ Cole )
+e-mail:  locke@rpgfan.demon.co.uk
+
+Get this ZIP file and fMSX-DOS at:
+website: http://www.rpgfan.demon.co.uk
+
