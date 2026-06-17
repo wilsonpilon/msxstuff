@@ -2,6 +2,7 @@ package main
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"image/color"
 	"log"
@@ -374,12 +375,12 @@ func runGUI() {
 		logDebug("updateGameDetails: Exibindo detalhes para o jogo '%s' (CD %d, Arquivo: %s)", selectedGame.Descricao, selectedGame.CdNumero, selectedGame.Disco)
  
 		var detailImg fyne.CanvasObject
-		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
+		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" || currentCategory == "Megaram" {
 			rootDir, err := filepath.Abs(".")
 			if err != nil {
 				rootDir = "."
 			}
-			if currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
+			if currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" || currentCategory == "Megaram" {
 				var msxmaniaPicsDir string
 				if currentCategory == "Good MSX 2" {
 					msxmaniaPicsDir = filepath.Join(rootDir, "pictures", "msxmania", "MSX2")
@@ -558,7 +559,7 @@ func runGUI() {
 		// Espaçadores para empurrar a imagem (ajuste fino de alinhamento)
 		var topOffset float32 = 135
 		var leftOffset float32 = 109
-		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
+		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" || currentCategory == "Megaram" {
 			topOffset = 172  // desce mais 2 pixels (total 37)
 			leftOffset = 116 // joga mais 2 pixels para a direita (total 7)
 		}
@@ -601,7 +602,7 @@ func runGUI() {
 
 	updateVolumeSelection = func(selectedVol int) {
 		for idx, btn := range volumeButtons {
-			if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
+			if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" || currentCategory == "Megaram" {
 				btn.Disable()
 			} else {
 				btn.Enable()
@@ -723,9 +724,10 @@ func runGUI() {
 			{3, "CAS Collection", 0},
 			{4, "Good MSX 1", 1},
 			{5, "Good MSX 2", 1},
-			{6, "Wave Games", 0},
-			{7, "MSX Tools", 0},
-			{8, "Nemesis Diskpack", 0},
+			{6, "Megaram", 1},
+			{7, "Wave Games", 0},
+			{8, "MSX Tools", 0},
+			{9, "Nemesis Diskpack", 0},
 		}
 	}
 
@@ -935,6 +937,17 @@ func getGamePath(game *Game) string {
 		}
 		return filepath.Join(romDir, game.Disco)
 	}
+	if currentCategory == "Megaram" {
+		romDir, err := GetConfig("megaram_dir")
+		if err != nil || romDir == "" {
+			rootDir, err := filepath.Abs(".")
+			if err != nil {
+				rootDir = "."
+			}
+			romDir = filepath.Join(rootDir, "Common", "MEGARAM")
+		}
+		return filepath.Join(romDir, game.Disco)
+	}
 
 	tipoUpper := strings.ToUpper(game.Tipo)
 	var baseDir string
@@ -972,13 +985,13 @@ func launchGame(game *Game, w fyne.Window) {
 
 	emuPath, err := GetConfig(emuName)
 	if err != nil || emuPath == "" {
-		dialog.ShowError(fmt.Errorf(T("err_emulator_path", emuName)), w)
+		dialog.ShowError(errors.New(T("err_emulator_path", emuName)), w)
 		return
 	}
 
 	gamePath := getGamePath(game)
 	if _, err := os.Stat(gamePath); os.IsNotExist(err) {
-		dialog.ShowError(fmt.Errorf(T("err_game_not_found", gamePath)), w)
+		dialog.ShowError(errors.New(T("err_game_not_found", gamePath)), w)
 		return
 	}
 
@@ -1075,7 +1088,7 @@ func launchGame(game *Game, w fyne.Window) {
 		if err := cmd.Start(); err != nil {
 			fmt.Println(T("log_emu_err", time.Now().Format("2006-01-02 15:04:05"), err))
 			fyne.Do(func() {
-				dialog.ShowError(fmt.Errorf(T("err_emulator_start", err)), w)
+				dialog.ShowError(errors.New(T("err_emulator_start", err)), w)
 			})
 			return
 		}
@@ -1094,7 +1107,7 @@ func launchGame(game *Game, w fyne.Window) {
 
 func showMachineListDialog(parent fyne.Window, openmsxExe string, onSelect func(string)) {
 	if openmsxExe == "" {
-		dialog.ShowError(fmt.Errorf(T("err_openmsx_required")), parent)
+		dialog.ShowError(errors.New(T("err_openmsx_required")), parent)
 		return
 	}
 	baseDir := filepath.Dir(openmsxExe)
@@ -1102,7 +1115,7 @@ func showMachineListDialog(parent fyne.Window, openmsxExe string, onSelect func(
 
 	entries, err := os.ReadDir(machinesDir)
 	if err != nil {
-		dialog.ShowError(fmt.Errorf(T("err_machines_dir", machinesDir)), parent)
+		dialog.ShowError(errors.New(T("err_machines_dir", machinesDir)), parent)
 		return
 	}
 
@@ -1181,7 +1194,7 @@ func showMachineListDialog(parent fyne.Window, openmsxExe string, onSelect func(
 
 func showBluemsxMachineListDialog(parent fyne.Window, bluemsxExe string, onSelect func(string)) {
 	if bluemsxExe == "" {
-		dialog.ShowError(fmt.Errorf(T("err_bluemsx_required")), parent)
+		dialog.ShowError(errors.New(T("err_bluemsx_required")), parent)
 		return
 	}
 	baseDir := filepath.Dir(bluemsxExe)
@@ -1192,7 +1205,7 @@ func showBluemsxMachineListDialog(parent fyne.Window, bluemsxExe string, onSelec
 
 	entries, err := os.ReadDir(machinesDir)
 	if err != nil {
-		dialog.ShowError(fmt.Errorf(T("err_machines_dir", machinesDir)), parent)
+		dialog.ShowError(errors.New(T("err_machines_dir", machinesDir)), parent)
 		return
 	}
 
@@ -1267,7 +1280,7 @@ func showBluemsxMachineListDialog(parent fyne.Window, bluemsxExe string, onSelec
 
 func showExtensionListDialog(parent fyne.Window, openmsxExe string, onSelect func(string)) {
 	if openmsxExe == "" {
-		dialog.ShowError(fmt.Errorf(T("err_openmsx_required")), parent)
+		dialog.ShowError(errors.New(T("err_openmsx_required")), parent)
 		return
 	}
 	baseDir := filepath.Dir(openmsxExe)
@@ -1275,7 +1288,7 @@ func showExtensionListDialog(parent fyne.Window, openmsxExe string, onSelect fun
 
 	entries, err := os.ReadDir(extensionsDir)
 	if err != nil {
-		dialog.ShowError(fmt.Errorf(T("err_extensions_dir", extensionsDir)), parent)
+		dialog.ShowError(errors.New(T("err_extensions_dir", extensionsDir)), parent)
 		return
 	}
 
@@ -1769,7 +1782,7 @@ var (
 func initOutputCapture() {
 	r, w, err := os.Pipe()
 	if err != nil {
-		fmt.Fprintf(os.Stderr, T("log_pipe_err", err))
+		fmt.Fprint(os.Stderr, T("log_pipe_err", err))
 		return
 	}
 
@@ -1988,6 +2001,8 @@ func buildFileArgs(emuName string, tipo string, gamePath string, companionPath s
 	case "openmsx":
 		if tipoUpper == "DSK" {
 			args = append(args, "-diska", gamePath)
+		} else if tipoUpper == "DIR" {
+			args = append(args, "-diskaasdir", gamePath)
 		} else if tipoUpper == "ROM" {
 			if companionPath != "" {
 				args = append(args, "-carta", gamePath, "-cartb", companionPath)
@@ -2018,6 +2033,8 @@ func buildFileArgs(emuName string, tipo string, gamePath string, companionPath s
 	case "fmsx":
 		if tipoUpper == "DSK" {
 			args = append(args, "-diska", gamePath)
+		} else if tipoUpper == "DIR" {
+			args = append(args, "-diskaasdir", gamePath)
 		} else if tipoUpper == "ROM" {
 			if companionPath != "" {
 				args = append(args, gamePath, companionPath)

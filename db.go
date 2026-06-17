@@ -64,6 +64,7 @@ func InitDB() error {
 		"database":          filepath.Join(rootDir, "data", "msxstuff.db"),
 		"goodmsx1_dir":      filepath.Join(rootDir, "Common", "Good_MSX1_Roms"),
 		"goodmsx2_dir":      filepath.Join(rootDir, "Common", "Good_MSX2_Roms"),
+		"megaram_dir":       filepath.Join(rootDir, "Common", "MEGARAM"),
 		"volume_inicial":    "1",
 		"openmsx":           "",
 		"fmsx":              "",
@@ -366,6 +367,14 @@ func GetGamesByVolume(category string, volume int, filter string) ([]Game, error
 			args = append(args, likeFilter, likeFilter)
 		}
 		query += " ORDER BY descricao ASC"
+	} else if category == "Megaram" {
+		query = "SELECT disco, descricao, cdnumero, emulador, options FROM megaram WHERE 1=1"
+		if filter != "" {
+			query += " AND (descricao LIKE ? OR disco LIKE ?)"
+			likeFilter := "%" + filter + "%"
+			args = append(args, likeFilter, likeFilter)
+		}
+		query += " ORDER BY descricao ASC"
 	} else {
 		query = "SELECT disco, descricao, cdnumero, raiz, tipo, emulador, options FROM msxstuffs WHERE cdnumero = ?"
 		args = append(args, volume)
@@ -388,14 +397,19 @@ func GetGamesByVolume(category string, volume int, filter string) ([]Game, error
 	var games []Game
 	for rows.Next() {
 		var g Game
-		if category == "MSX Mania" || category == "Good MSX 1" || category == "Good MSX 2" {
+		if category == "MSX Mania" || category == "Good MSX 1" || category == "Good MSX 2" || category == "Megaram" {
 			err = rows.Scan(&g.Disco, &g.Descricao, &g.CdNumero, &g.Emulador, &g.Options)
 			if err != nil {
 				return nil, err
 			}
-			ext := filepath.Ext(g.Disco)
-			g.Raiz = strings.TrimSuffix(g.Disco, ext)
-			g.Tipo = strings.TrimPrefix(ext, ".")
+			if category == "Megaram" {
+				g.Raiz = g.Disco
+				g.Tipo = "dir"
+			} else {
+				ext := filepath.Ext(g.Disco)
+				g.Raiz = strings.TrimSuffix(g.Disco, ext)
+				g.Tipo = strings.TrimPrefix(ext, ".")
+			}
 		} else {
 			err = rows.Scan(&g.Disco, &g.Descricao, &g.CdNumero, &g.Raiz, &g.Tipo, &g.Emulador, &g.Options)
 			if err != nil {
@@ -462,6 +476,7 @@ func InitGameEmulacaoTables() error {
 		{"CAS Collection", 0},
 		{"Good MSX 1", 1},
 		{"Good MSX 2", 1},
+		{"Megaram", 1},
 		{"Wave Games", 0},
 		{"MSX Tools", 0},
 		{"Nemesis Diskpack", 0},
@@ -926,6 +941,88 @@ func ImportGoodMSX2(rootDir string) error {
 			tx.Rollback()
 			return err
 		}
+	}
+
+	return tx.Commit()
+}
+
+// ImportMegaram le as configuracoes de megaram.txt e importa para a tabela megaram
+func ImportMegaram(rootDir string) error {
+	logDebug("Banco: Iniciando ImportMegaram do diretório raiz '%s'", rootDir)
+	megaramDir, err := GetConfig("megaram_dir")
+	if err != nil || megaramDir == "" {
+		megaramDir = filepath.Join(rootDir, "Common", "MEGARAM")
+	}
+	logDebug("Banco: Iniciando ImportMegaram do diretório '%s'", megaramDir)
+
+	dbPath := filepath.Join("data", "msxstuff.db")
+	db, err := sql.Open("sqlite", dbPath)
+	if err != nil {
+		return err
+	}
+	defer db.Close()
+
+	// Recria a tabela megaram
+	_, err = db.Exec("DROP TABLE IF EXISTS megaram")
+	if err != nil {
+		return err
+	}
+
+	_, err = db.Exec(`CREATE TABLE megaram (
+		disco TEXT,
+		descricao TEXT,
+		cdnumero INTEGER,
+		emulador TEXT,
+		options TEXT
+	)`)
+	if err != nil {
+		return err
+	}
+
+	filePath := filepath.Join(megaramDir, "megaram.txt")
+	file, err := os.Open(filePath)
+	if err != nil {
+		return fmt.Errorf("não foi possível abrir o arquivo %s: %w", filePath, err)
+	}
+	defer file.Close()
+
+	tx, err := db.Begin()
+	if err != nil {
+		return err
+	}
+
+	stmt, err := tx.Prepare("INSERT INTO megaram (disco, descricao, cdnumero, emulador, options) VALUES (?, ?, ?, ?, ?)")
+	if err != nil {
+		tx.Rollback()
+		return err
+	}
+	defer stmt.Close()
+
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		line := strings.TrimSpace(scanner.Text())
+		if line == "" {
+			continue
+		}
+
+		parts := strings.SplitN(line, "=", 2)
+		if len(parts) != 2 {
+			continue
+		}
+
+		dirVal := strings.TrimSpace(parts[0])
+		gameVal := strings.TrimSpace(parts[1])
+
+		_, err = stmt.Exec(dirVal, gameVal, 0, "openmsx", "-machine Gradiente_Expert_GPC-1 -ext1 DDX_3.0 -ext2 MegaRAM_2MB")
+		if err != nil {
+			tx.Rollback()
+			return err
+		}
+	}
+
+	if err := scanner.Err(); err != nil {
+		tx.Rollback()
+		return err
 	}
 
 	return tx.Commit()

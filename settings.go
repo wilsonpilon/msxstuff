@@ -127,6 +127,9 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 	goodmsx2Entry := widget.NewEntry()
 	goodmsx2Entry.SetText(getConfigWithFallback("goodmsx2_dir", filepath.Join(rootDir, "Common", "Good_MSX2_Roms")))
 
+	megaramEntry := widget.NewEntry()
+	megaramEntry.SetText(getConfigWithFallback("megaram_dir", filepath.Join(rootDir, "Common", "MEGARAM")))
+
 	// Botões de navegação
 	raizBrowseBtn := widget.NewButtonWithIcon("", theme.FolderOpenIcon(), func() {
 		dialog.ShowFolderOpen(func(uri fyne.ListableURI, err error) {
@@ -210,6 +213,15 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 		}, configWindow)
 	})
 
+	megaramBrowseBtn := widget.NewButtonWithIcon("", theme.FolderOpenIcon(), func() {
+		dialog.ShowFolderOpen(func(uri fyne.ListableURI, err error) {
+			if err != nil || uri == nil {
+				return
+			}
+			megaramEntry.SetText(uri.Path())
+		}, configWindow)
+	})
+
 	// Containers acoplando caixas de entrada com botões de navegação
 	raizContainer := container.NewBorder(nil, nil, nil, raizBrowseBtn, raizEntry)
 	picturesContainer := container.NewBorder(nil, nil, nil, picturesBrowseBtn, picturesEntry)
@@ -220,6 +232,7 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 	dbContainer := container.NewBorder(nil, nil, nil, dbBrowseBtn, dbEntry)
 	goodmsx1Container := container.NewBorder(nil, nil, nil, goodmsx1BrowseBtn, goodmsx1Entry)
 	goodmsx2Container := container.NewBorder(nil, nil, nil, goodmsx2BrowseBtn, goodmsx2Entry)
+	megaramContainer := container.NewBorder(nil, nil, nil, megaramBrowseBtn, megaramEntry)
 
 	pathsForm := widget.NewForm(
 		widget.NewFormItem(T("form_root_dir"), raizContainer),
@@ -231,6 +244,7 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 		widget.NewFormItem(T("form_database_file"), dbContainer),
 		widget.NewFormItem(T("form_goodmsx1_dir"), goodmsx1Container),
 		widget.NewFormItem(T("form_goodmsx2_dir"), goodmsx2Container),
+		widget.NewFormItem(T("form_megaram_dir"), megaramContainer),
 	)
 
 	savePathsBtn := widget.NewButtonWithIcon(T("btn_save_paths"), theme.ConfirmIcon(), func() {
@@ -268,6 +282,10 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 			return
 		}
 		if err = SetConfig("goodmsx2_dir", goodmsx2Entry.Text); err != nil {
+			dialog.ShowError(err, configWindow)
+			return
+		}
+		if err = SetConfig("megaram_dir", megaramEntry.Text); err != nil {
 			dialog.ShowError(err, configWindow)
 			return
 		}
@@ -615,6 +633,25 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 						}
 					}
 					err := ImportGoodMSX2(rootDir)
+					if err != nil {
+						dialog.ShowError(err, configWindow)
+					} else {
+						dialog.ShowInformation(T("msg_success"), T("msg_db_initialized"), configWindow)
+					}
+				})
+				return btn
+			}(),
+			func() *widget.Button {
+				btn := widget.NewButtonWithIcon(T("btn_initialize_megaram"), theme.StorageIcon(), func() {
+					rootDir := getConfigWithFallback("raiz", "")
+					if rootDir == "" {
+						var err error
+						rootDir, err = filepath.Abs(".")
+						if err != nil {
+							rootDir = "."
+						}
+					}
+					err := ImportMegaram(rootDir)
 					if err != nil {
 						dialog.ShowError(err, configWindow)
 					} else {
