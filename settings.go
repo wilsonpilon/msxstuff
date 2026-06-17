@@ -121,6 +121,12 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 	dbEntry := widget.NewEntry()
 	dbEntry.SetText(getConfigWithFallback("database", filepath.Join(rootDir, "data", "msxstuff.db")))
 
+	goodmsx1Entry := widget.NewEntry()
+	goodmsx1Entry.SetText(getConfigWithFallback("goodmsx1_dir", filepath.Join(rootDir, "Common", "Good_MSX1_Roms")))
+
+	goodmsx2Entry := widget.NewEntry()
+	goodmsx2Entry.SetText(getConfigWithFallback("goodmsx2_dir", filepath.Join(rootDir, "Common", "Good_MSX2_Roms")))
+
 	// Botões de navegação
 	raizBrowseBtn := widget.NewButtonWithIcon("", theme.FolderOpenIcon(), func() {
 		dialog.ShowFolderOpen(func(uri fyne.ListableURI, err error) {
@@ -186,6 +192,24 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 		}, configWindow)
 	})
 
+	goodmsx1BrowseBtn := widget.NewButtonWithIcon("", theme.FolderOpenIcon(), func() {
+		dialog.ShowFolderOpen(func(uri fyne.ListableURI, err error) {
+			if err != nil || uri == nil {
+				return
+			}
+			goodmsx1Entry.SetText(uri.Path())
+		}, configWindow)
+	})
+
+	goodmsx2BrowseBtn := widget.NewButtonWithIcon("", theme.FolderOpenIcon(), func() {
+		dialog.ShowFolderOpen(func(uri fyne.ListableURI, err error) {
+			if err != nil || uri == nil {
+				return
+			}
+			goodmsx2Entry.SetText(uri.Path())
+		}, configWindow)
+	})
+
 	// Containers acoplando caixas de entrada com botões de navegação
 	raizContainer := container.NewBorder(nil, nil, nil, raizBrowseBtn, raizEntry)
 	picturesContainer := container.NewBorder(nil, nil, nil, picturesBrowseBtn, picturesEntry)
@@ -194,6 +218,8 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 	msxmaniaContainer := container.NewBorder(nil, nil, nil, msxmaniaBrowseBtn, msxmaniaEntry)
 	msxmaniaPicturesContainer := container.NewBorder(nil, nil, nil, msxmaniaPicturesBrowseBtn, msxmaniaPicturesEntry)
 	dbContainer := container.NewBorder(nil, nil, nil, dbBrowseBtn, dbEntry)
+	goodmsx1Container := container.NewBorder(nil, nil, nil, goodmsx1BrowseBtn, goodmsx1Entry)
+	goodmsx2Container := container.NewBorder(nil, nil, nil, goodmsx2BrowseBtn, goodmsx2Entry)
 
 	pathsForm := widget.NewForm(
 		widget.NewFormItem(T("form_root_dir"), raizContainer),
@@ -203,6 +229,8 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 		widget.NewFormItem(T("form_msxmania_dir"), msxmaniaContainer),
 		widget.NewFormItem(T("form_msxmania_pictures_dir"), msxmaniaPicturesContainer),
 		widget.NewFormItem(T("form_database_file"), dbContainer),
+		widget.NewFormItem(T("form_goodmsx1_dir"), goodmsx1Container),
+		widget.NewFormItem(T("form_goodmsx2_dir"), goodmsx2Container),
 	)
 
 	savePathsBtn := widget.NewButtonWithIcon(T("btn_save_paths"), theme.ConfirmIcon(), func() {
@@ -232,6 +260,14 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 			return
 		}
 		if err = SetConfig("database", dbEntry.Text); err != nil {
+			dialog.ShowError(err, configWindow)
+			return
+		}
+		if err = SetConfig("goodmsx1_dir", goodmsx1Entry.Text); err != nil {
+			dialog.ShowError(err, configWindow)
+			return
+		}
+		if err = SetConfig("goodmsx2_dir", goodmsx2Entry.Text); err != nil {
 			dialog.ShowError(err, configWindow)
 			return
 		}
@@ -560,6 +596,25 @@ func showSettings(myApp fyne.App, statusBar *widget.Label) {
 						}
 					}
 					err := ImportGoodMSX1(rootDir)
+					if err != nil {
+						dialog.ShowError(err, configWindow)
+					} else {
+						dialog.ShowInformation(T("msg_success"), T("msg_db_initialized"), configWindow)
+					}
+				})
+				return btn
+			}(),
+			func() *widget.Button {
+				btn := widget.NewButtonWithIcon(T("btn_initialize_goodmsx2"), theme.StorageIcon(), func() {
+					rootDir := getConfigWithFallback("raiz", "")
+					if rootDir == "" {
+						var err error
+						rootDir, err = filepath.Abs(".")
+						if err != nil {
+							rootDir = "."
+						}
+					}
+					err := ImportGoodMSX2(rootDir)
 					if err != nil {
 						dialog.ShowError(err, configWindow)
 					} else {

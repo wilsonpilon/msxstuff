@@ -62,6 +62,8 @@ func InitDB() error {
 		"msxmania":          filepath.Join(rootDir, "Common", "MSX_MANIA"),
 		"msxmania_pictures": filepath.Join(rootDir, "pictures", "msxmania", "MSX"),
 		"database":          filepath.Join(rootDir, "data", "msxstuff.db"),
+		"goodmsx1_dir":      filepath.Join(rootDir, "Common", "Good_MSX1_Roms"),
+		"goodmsx2_dir":      filepath.Join(rootDir, "Common", "Good_MSX2_Roms"),
 		"volume_inicial":    "1",
 		"openmsx":           "",
 		"fmsx":              "",
@@ -356,6 +358,14 @@ func GetGamesByVolume(category string, volume int, filter string) ([]Game, error
 			args = append(args, likeFilter, likeFilter)
 		}
 		query += " ORDER BY descricao ASC"
+	} else if category == "Good MSX 2" {
+		query = "SELECT disco, descricao, cdnumero, emulador, options FROM goodmsx2 WHERE 1=1"
+		if filter != "" {
+			query += " AND (descricao LIKE ? OR disco LIKE ?)"
+			likeFilter := "%" + filter + "%"
+			args = append(args, likeFilter, likeFilter)
+		}
+		query += " ORDER BY descricao ASC"
 	} else {
 		query = "SELECT disco, descricao, cdnumero, raiz, tipo, emulador, options FROM msxstuffs WHERE cdnumero = ?"
 		args = append(args, volume)
@@ -378,7 +388,7 @@ func GetGamesByVolume(category string, volume int, filter string) ([]Game, error
 	var games []Game
 	for rows.Next() {
 		var g Game
-		if category == "MSX Mania" || category == "Good MSX 1" {
+		if category == "MSX Mania" || category == "Good MSX 1" || category == "Good MSX 2" {
 			err = rows.Scan(&g.Disco, &g.Descricao, &g.CdNumero, &g.Emulador, &g.Options)
 			if err != nil {
 				return nil, err
@@ -451,6 +461,7 @@ func InitGameEmulacaoTables() error {
 		{"MSX Mania", 1},
 		{"CAS Collection", 0},
 		{"Good MSX 1", 1},
+		{"Good MSX 2", 1},
 		{"Wave Games", 0},
 		{"MSX Tools", 0},
 		{"Nemesis Diskpack", 0},
@@ -706,11 +717,14 @@ func ImportMSXMania(msxmaniaDir string) error {
 	return tx.Commit()
 }
 
-// ImportGoodMSX1 le as ROMs do diretorio Common/Good_MSX1_Roms e importa para a tabela goodmsx1
+// ImportGoodMSX1 le as ROMs do diretorio configurado e importa para a tabela goodmsx1
 func ImportGoodMSX1(rootDir string) error {
-	logDebug("Banco: Iniciando ImportGoodMSX1 do diretório raiz '%s'", rootDir)
+	romsDir, err := GetConfig("goodmsx1_dir")
+	if err != nil || romsDir == "" {
+		romsDir = filepath.Join(rootDir, "Common", "Good_MSX1_Roms")
+	}
+	logDebug("Banco: Iniciando ImportGoodMSX1 do diretório '%s'", romsDir)
 	
-	romsDir := filepath.Join(rootDir, "Common", "Good_MSX1_Roms")
 	files, err := os.ReadDir(romsDir)
 	if err != nil {
 		return fmt.Errorf("não foi possível abrir o diretório %s: %w", romsDir, err)
@@ -824,6 +838,97 @@ func cleanROMName(filename string) string {
 	cleaned := sb.String()
 	words := strings.Fields(cleaned)
 	return strings.Join(words, " ")
+}
+
+// ImportGoodMSX2 le as ROMs do diretorio configurado e importa para a tabela goodmsx2
+func ImportGoodMSX2(rootDir string) error {
+	romsDir, err := GetConfig("goodmsx2_dir")
+	if err != nil || romsDir == "" {
+		romsDir = filepath.Join(rootDir, "Common", "Good_MSX2_Roms")
+	}
+	logDebug("Banco: Iniciando ImportGoodMSX2 do diretório '%s'", romsDir)
+	
+	files, err := os.ReadDir(romsDir)
+	if err != nil {
+		return fmt.Errorf("não foi possível abrir o diretório %s: %w", romsDir, err)
+	}
+
+	dbPath := filepath.Join("data", "msxstuff.db")
+	db, err := sql.Open("sqlite", dbPath)
+	if err != nil {
+		return err
+	}
+	defer db.Close()
+
+	// Recria a tabela goodmsx2
+	_, err = db.Exec("DROP TABLE IF EXISTS goodmsx2")
+	if err != nil {
+		return err
+	}
+
+	_, err = db.Exec(`CREATE TABLE goodmsx2 (
+		disco TEXT,
+		descricao TEXT,
+		cdnumero INTEGER,
+		emulador TEXT,
+		options TEXT
+	)`)
+	if err != nil {
+		return err
+	}
+
+	tx, err := db.Begin()
+	if err != nil {
+		return err
+	}
+
+	stmt, err := tx.Prepare("INSERT INTO goodmsx2 (disco, descricao, cdnumero, emulador, options) VALUES (?, ?, ?, ?, ?)")
+	if err != nil {
+		tx.Rollback()
+		return err
+	}
+	defer stmt.Close()
+
+	// Controla duplicatas para adicionar sufixos %A, %B, %C etc.
+	seenCount := make(map[string]int)
+
+	for _, file := range files {
+		if file.IsDir() {
+			continue
+		}
+		filename := file.Name()
+		ext := strings.ToLower(filepath.Ext(filename))
+		if ext != ".rom" {
+			continue
+		}
+
+		cleanedName := cleanROMName(filename)
+		if cleanedName == "" {
+			cleanedName = strings.TrimSuffix(filename, filepath.Ext(filename))
+		}
+
+		var finalName string
+		count := seenCount[cleanedName]
+		if count == 0 {
+			finalName = cleanedName
+			seenCount[cleanedName] = 1
+		} else {
+			// count = 1 -> %A, count = 2 -> %B, etc.
+			suffixRune := 'A' + rune(count-1)
+			finalName = fmt.Sprintf("%s %%%c", cleanedName, suffixRune)
+			seenCount[cleanedName] = count + 1
+		}
+
+		logDebug("ImportGoodMSX2: Importando '%s' como '%s'", filename, finalName)
+
+		_, err = stmt.Exec(filename, finalName, 0, "openmsx", "-machine Gradiente_Expert_GPC-1")
+		if err != nil {
+			tx.Rollback()
+			return err
+		}
+	}
+
+	return tx.Commit()
 }
 
 

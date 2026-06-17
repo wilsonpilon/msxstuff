@@ -24,6 +24,7 @@ Write-Host "==================================================" -ForegroundColor
 
 # Priorizar compiladores modernos no Windows se estiverem instalados
 if ($OS -eq "windows") {
+    $GoCommand = Get-Command go -ErrorAction SilentlyContinue
     $MSYS2Paths = @(
         "C:\msys64\ucrt64\bin",
         "C:\msys64\mingw64\bin"
@@ -33,6 +34,10 @@ if ($OS -eq "windows") {
             $env:PATH = "$Path;" + $env:PATH
             break
         }
+    }
+    if ($GoCommand) {
+        $GoDir = Split-Path $GoCommand.Source -Parent
+        $env:PATH = "$GoDir;" + $env:PATH
     }
 }
 
@@ -48,6 +53,13 @@ if ($LastExitCode -ne 0) {
 $BinaryName = if ($OS -eq "windows") { "msxstuffs.exe" } else { "msxstuffs" }
 Write-Host "[2/3] Configurando ambiente para OS: $OS | Modo: $Mode..." -ForegroundColor Yellow
 
+$Version = "3.1.1"
+$UnixTime = [DateTimeOffset]::UtcNow.ToUnixTimeSeconds()
+$BuildHex = [Convert]::ToString($UnixTime, 16).ToUpper()
+
+Write-Host "      -> Versão: $Version" -ForegroundColor Cyan
+Write-Host "      -> Build (UTC Hex): $BuildHex" -ForegroundColor Cyan
+
 $env:GOOS = $OS
 # Fyne exige CGO para bindings gráficos (OpenGL/GLFW), portanto mantemos o padrão do Go.
 
@@ -56,14 +68,16 @@ $BuildFlags = @()
 if ($Mode -eq "Release") {
     Write-Host "      -> Compilando em modo Release (removendo símbolos de depuração)..." -ForegroundColor Gray
     if ($OS -eq "windows") {
-        $BuildFlags += "-ldflags=-s -w -H=windowsgui"
+        $BuildFlags += "-ldflags=-s -w -H=windowsgui -X main.version=$Version -X main.build=$BuildHex"
     } else {
-        $BuildFlags += "-ldflags=-s -w"
+        $BuildFlags += "-ldflags=-s -w -X main.version=$Version -X main.build=$BuildHex"
     }
 } else {
     Write-Host "      -> Compilando em modo Debug..." -ForegroundColor Gray
     if ($OS -eq "windows") {
-        $BuildFlags += "-ldflags=-H=windowsgui"
+        $BuildFlags += "-ldflags=-H=windowsgui -X main.version=$Version -X main.build=$BuildHex"
+    } else {
+        $BuildFlags += "-ldflags=-X main.version=$Version -X main.build=$BuildHex"
     }
 }
 

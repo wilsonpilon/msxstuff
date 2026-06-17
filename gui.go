@@ -165,6 +165,97 @@ func findImageFile(dir, categoryDir, name string) string {
 	return ""
 }
 
+func findImageFilesRecursive(dir, name string) []string {
+	if dir == "" {
+		return nil
+	}
+	// Strip suffix like " %A", " %B", etc. at the end
+	if len(name) >= 3 && name[len(name)-2] == '%' {
+		if name[len(name)-3] == ' ' {
+			name = name[:len(name)-3]
+		}
+	}
+
+	removeParenthesesAndBrackets := func(s string) string {
+		var sb strings.Builder
+		inParen := 0
+		inBracket := 0
+		for _, r := range s {
+			if r == '(' {
+				inParen++
+			} else if r == '[' {
+				inBracket++
+			} else if r == ')' {
+				if inParen > 0 {
+					inParen--
+				}
+			} else if r == ']' {
+				if inBracket > 0 {
+					inBracket--
+				}
+			} else if inParen == 0 && inBracket == 0 {
+				sb.WriteRune(r)
+			}
+		}
+		return sb.String()
+	}
+
+	normalize := func(s string) string {
+		cleaned := removeParenthesesAndBrackets(s)
+		var sb strings.Builder
+		for _, r := range strings.ToLower(cleaned) {
+			if (r >= 'a' && r <= 'z') || (r >= '0' && r <= '9') {
+				sb.WriteRune(r)
+			}
+		}
+		return sb.String()
+	}
+
+	normTarget := normalize(name)
+	if normTarget == "" {
+		return nil
+	}
+
+	var matchedPaths []string
+
+	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
+		if err != nil {
+			return nil
+		}
+		if info.IsDir() {
+			return nil
+		}
+		ext := filepath.Ext(path)
+		if strings.ToLower(ext) != ".png" {
+			return nil
+		}
+		nameWithoutExt := strings.TrimSuffix(info.Name(), ext)
+		normEntry := normalize(nameWithoutExt)
+
+		if normEntry == normTarget || strings.HasPrefix(normEntry, normTarget) || strings.Contains(normEntry, normTarget) {
+			matchedPaths = append(matchedPaths, path)
+		}
+		return nil
+	})
+	if err != nil {
+		logDebug("findImageFilesRecursive: erro ao vasculhar diretório '%s': %v", dir, err)
+	}
+
+	sort.Strings(matchedPaths)
+
+	var uniquePaths []string
+	seen := make(map[string]bool)
+	for _, p := range matchedPaths {
+		if !seen[p] {
+			seen[p] = true
+			uniquePaths = append(uniquePaths, p)
+		}
+	}
+
+	logDebug("findImageFilesRecursive: Encontrou %d imagens para '%s' em '%s'", len(uniquePaths), name, dir)
+	return uniquePaths
+}
+
 func runGUI() {
 	CurrentLanguage = getConfigWithFallback("language", "en")
 	debugMode = getConfigWithFallback("debug", "false") == "true"
@@ -216,7 +307,7 @@ func runGUI() {
 		logDebug("Menu 'Ajuda -> Sobre' acionado. Exibindo janela informativa...")
 		dialog.ShowInformation(
 			T("about_title"),
-			T("about_text"),
+			T("about_text", version, build),
 			myWindow,
 		)
 	})
@@ -283,98 +374,151 @@ func runGUI() {
 		logDebug("updateGameDetails: Exibindo detalhes para o jogo '%s' (CD %d, Arquivo: %s)", selectedGame.Descricao, selectedGame.CdNumero, selectedGame.Disco)
  
 		var detailImg fyne.CanvasObject
-		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" {
+		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
 			rootDir, err := filepath.Abs(".")
 			if err != nil {
 				rootDir = "."
 			}
-			msxmaniaPicsDir := getConfigWithFallback("msxmania_pictures", filepath.Join(rootDir, "pictures", "msxmania", "MSX"))
-			logDebug("updateGameDetails: Buscando imagens em '%s'", msxmaniaPicsDir)
-			titlePath := findImageFile(msxmaniaPicsDir, "Title", selectedGame.Descricao)
-			snapPath := findImageFile(msxmaniaPicsDir, "Snap", selectedGame.Descricao)
- 
-			if titlePath != "" && snapPath != "" {
-				logDebug("updateGameDetails: Encontrado titlePath='%s' e snapPath='%s'. Iniciando alternância de 2 segundos.", titlePath, snapPath)
-				img := canvas.NewImageFromFile(titlePath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
- 
-				// Inicia a alternância das imagens
-				msxManiaTimerMutex.Lock()
-				cancelChan := make(chan struct{})
-				msxManiaTimerCancel = cancelChan
-				msxManiaTimerMutex.Unlock()
- 
-				go func(img *canvas.Image, title, snap string, cancel chan struct{}) {
-					isTitle := true
-					ticker := time.NewTicker(2 * time.Second)
-					defer ticker.Stop()
-					for {
-						select {
-						case <-ticker.C:
-							isTitle = !isTitle
-							if isTitle {
-								logDebug("Slideshow: Alternando para tela de título: '%s'", title)
-								img.File = title
-							} else {
-								logDebug("Slideshow: Alternando para tela de jogo: '%s'", snap)
-								img.File = snap
+			if currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
+				var msxmaniaPicsDir string
+				if currentCategory == "Good MSX 2" {
+					msxmaniaPicsDir = filepath.Join(rootDir, "pictures", "msxmania", "MSX2")
+				} else {
+					msxmaniaPicsDir = filepath.Join(rootDir, "pictures", "msxmania", "MSX")
+				}
+				logDebug("updateGameDetails: Buscando imagens recursivamente em '%s'", msxmaniaPicsDir)
+				imgPaths := findImageFilesRecursive(msxmaniaPicsDir, selectedGame.Descricao)
+				if len(imgPaths) >= 2 {
+					logDebug("updateGameDetails: Encontradas %d imagens. Iniciando alternância de 2 segundos.", len(imgPaths))
+					img := canvas.NewImageFromFile(imgPaths[0])
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+
+					// Inicia a alternância das imagens
+					msxManiaTimerMutex.Lock()
+					cancelChan := make(chan struct{})
+					msxManiaTimerCancel = cancelChan
+					msxManiaTimerMutex.Unlock()
+
+					go func(img *canvas.Image, paths []string, cancel chan struct{}) {
+						idx := 0
+						ticker := time.NewTicker(2 * time.Second)
+						defer ticker.Stop()
+						for {
+							select {
+							case <-ticker.C:
+								idx = (idx + 1) % len(paths)
+								logDebug("Slideshow: Alternando para imagem: '%s'", paths[idx])
+								img.File = paths[idx]
+								img.Refresh()
+							case <-cancel:
+								logDebug("Slideshow: Alternador parado/cancelado.")
+								return
 							}
-							img.Refresh()
-						case <-cancel:
-							logDebug("Slideshow: Alternador parado/cancelado.")
-							return
 						}
-					}
-				}(img, titlePath, snapPath, cancelChan)
-			} else if titlePath != "" {
-				logDebug("updateGameDetails: Apenas tela de título encontrada: '%s'", titlePath)
-				img := canvas.NewImageFromFile(titlePath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
-			} else if snapPath != "" {
-				logDebug("updateGameDetails: Apenas tela de jogo (snap) encontrada: '%s'", snapPath)
-				img := canvas.NewImageFromFile(snapPath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
-			} else if box2dPath := findImageFile(msxmaniaPicsDir, "2DBoxes", selectedGame.Descricao); box2dPath != "" {
-				logDebug("updateGameDetails: Encontrada 2D Box: '%s'", box2dPath)
-				img := canvas.NewImageFromFile(box2dPath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
-			} else if box2dzxPath := findImageFile(msxmaniaPicsDir, "2DBoxeszx", selectedGame.Descricao); box2dzxPath != "" {
-				logDebug("updateGameDetails: Encontrada 2D Box ZX: '%s'", box2dzxPath)
-				img := canvas.NewImageFromFile(box2dzxPath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
-			} else if box3dPath := findImageFile(msxmaniaPicsDir, "3DBoxes", selectedGame.Descricao); box3dPath != "" {
-				logDebug("updateGameDetails: Encontrada 3D Box: '%s'", box3dPath)
-				img := canvas.NewImageFromFile(box3dPath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
-			} else if logosPath := findImageFile(msxmaniaPicsDir, "Logos", selectedGame.Descricao); logosPath != "" {
-				logDebug("updateGameDetails: Encontrada Logos: '%s'", logosPath)
-				img := canvas.NewImageFromFile(logosPath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
-			} else if logoPath := findImageFile(msxmaniaPicsDir, "Logo", selectedGame.Descricao); logoPath != "" {
-				logDebug("updateGameDetails: Encontrada Logo: '%s'", logoPath)
-				img := canvas.NewImageFromFile(logoPath)
-				img.FillMode = canvas.ImageFillContain
-				img.SetMinSize(fyne.NewSize(380, 280))
-				detailImg = img
+					}(img, imgPaths, cancelChan)
+				} else if len(imgPaths) == 1 {
+					logDebug("updateGameDetails: Apenas uma imagem encontrada: '%s'", imgPaths[0])
+					img := canvas.NewImageFromFile(imgPaths[0])
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else {
+					logDebug("updateGameDetails: Nenhuma imagem encontrada para '%s' em '%s'", selectedGame.Descricao, msxmaniaPicsDir)
+					spacer := container.NewGridWrap(fyne.NewSize(380, 280))
+					lbl := widget.NewLabelWithStyle(T("no_screenshot"), fyne.TextAlignCenter, fyne.TextStyle{Italic: true})
+					detailImg = container.NewStack(spacer, container.NewCenter(lbl))
+				}
 			} else {
-				logDebug("updateGameDetails: Nenhuma imagem de jogo encontrada para '%s' nos diretórios do MSX Mania.", selectedGame.Descricao)
-				spacer := container.NewGridWrap(fyne.NewSize(380, 280))
-				lbl := widget.NewLabelWithStyle(T("no_screenshot"), fyne.TextAlignCenter, fyne.TextStyle{Italic: true})
-				detailImg = container.NewStack(spacer, container.NewCenter(lbl))
+				msxmaniaPicsDir := getConfigWithFallback("msxmania_pictures", filepath.Join(rootDir, "pictures", "msxmania", "MSX"))
+				logDebug("updateGameDetails: Buscando imagens em '%s'", msxmaniaPicsDir)
+				titlePath := findImageFile(msxmaniaPicsDir, "Title", selectedGame.Descricao)
+				snapPath := findImageFile(msxmaniaPicsDir, "Snap", selectedGame.Descricao)
+
+				if titlePath != "" && snapPath != "" {
+					logDebug("updateGameDetails: Encontrado titlePath='%s' e snapPath='%s'. Iniciando alternância de 2 segundos.", titlePath, snapPath)
+					img := canvas.NewImageFromFile(titlePath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+
+					// Inicia a alternância das imagens
+					msxManiaTimerMutex.Lock()
+					cancelChan := make(chan struct{})
+					msxManiaTimerCancel = cancelChan
+					msxManiaTimerMutex.Unlock()
+
+					go func(img *canvas.Image, title, snap string, cancel chan struct{}) {
+						isTitle := true
+						ticker := time.NewTicker(2 * time.Second)
+						defer ticker.Stop()
+						for {
+							select {
+							case <-ticker.C:
+								isTitle = !isTitle
+								if isTitle {
+									logDebug("Slideshow: Alternando para tela de título: '%s'", title)
+									img.File = title
+								} else {
+									logDebug("Slideshow: Alternando para tela de jogo: '%s'", snap)
+									img.File = snap
+								}
+								img.Refresh()
+							case <-cancel:
+								logDebug("Slideshow: Alternador parado/cancelado.")
+								return
+							}
+						}
+					}(img, titlePath, snapPath, cancelChan)
+				} else if titlePath != "" {
+					logDebug("updateGameDetails: Apenas tela de título encontrada: '%s'", titlePath)
+					img := canvas.NewImageFromFile(titlePath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else if snapPath != "" {
+					logDebug("updateGameDetails: Apenas tela de jogo (snap) encontrada: '%s'", snapPath)
+					img := canvas.NewImageFromFile(snapPath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else if box2dPath := findImageFile(msxmaniaPicsDir, "2DBoxes", selectedGame.Descricao); box2dPath != "" {
+					logDebug("updateGameDetails: Encontrada 2D Box: '%s'", box2dPath)
+					img := canvas.NewImageFromFile(box2dPath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else if box2dzxPath := findImageFile(msxmaniaPicsDir, "2DBoxeszx", selectedGame.Descricao); box2dzxPath != "" {
+					logDebug("updateGameDetails: Encontrada 2D Box ZX: '%s'", box2dzxPath)
+					img := canvas.NewImageFromFile(box2dzxPath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else if box3dPath := findImageFile(msxmaniaPicsDir, "3DBoxes", selectedGame.Descricao); box3dPath != "" {
+					logDebug("updateGameDetails: Encontrada 3D Box: '%s'", box3dPath)
+					img := canvas.NewImageFromFile(box3dPath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else if logosPath := findImageFile(msxmaniaPicsDir, "Logos", selectedGame.Descricao); logosPath != "" {
+					logDebug("updateGameDetails: Encontrada Logos: '%s'", logosPath)
+					img := canvas.NewImageFromFile(logosPath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else if logoPath := findImageFile(msxmaniaPicsDir, "Logo", selectedGame.Descricao); logoPath != "" {
+					logDebug("updateGameDetails: Encontrada Logo: '%s'", logoPath)
+					img := canvas.NewImageFromFile(logoPath)
+					img.FillMode = canvas.ImageFillContain
+					img.SetMinSize(fyne.NewSize(380, 280))
+					detailImg = img
+				} else {
+					logDebug("updateGameDetails: Nenhuma imagem de jogo encontrada para '%s' nos diretórios do MSX Mania.", selectedGame.Descricao)
+					spacer := container.NewGridWrap(fyne.NewSize(380, 280))
+					lbl := widget.NewLabelWithStyle(T("no_screenshot"), fyne.TextAlignCenter, fyne.TextStyle{Italic: true})
+					detailImg = container.NewStack(spacer, container.NewCenter(lbl))
+				}
 			}
 		} else {
 			picsPath := getConfigWithFallback("pictures", "pictures")
@@ -414,7 +558,7 @@ func runGUI() {
 		// Espaçadores para empurrar a imagem (ajuste fino de alinhamento)
 		var topOffset float32 = 135
 		var leftOffset float32 = 109
-		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" {
+		if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
 			topOffset = 172  // desce mais 2 pixels (total 37)
 			leftOffset = 116 // joga mais 2 pixels para a direita (total 7)
 		}
@@ -457,7 +601,7 @@ func runGUI() {
 
 	updateVolumeSelection = func(selectedVol int) {
 		for idx, btn := range volumeButtons {
-			if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" {
+			if currentCategory == "MSX Mania" || currentCategory == "Good MSX 1" || currentCategory == "Good MSX 2" {
 				btn.Disable()
 			} else {
 				btn.Enable()
@@ -578,9 +722,10 @@ func runGUI() {
 			{2, "MSX Mania", 0},
 			{3, "CAS Collection", 0},
 			{4, "Good MSX 1", 1},
-			{5, "Wave Games", 0},
-			{6, "MSX Tools", 0},
-			{7, "Nemesis Diskpack", 0},
+			{5, "Good MSX 2", 1},
+			{6, "Wave Games", 0},
+			{7, "MSX Tools", 0},
+			{8, "Nemesis Diskpack", 0},
 		}
 	}
 
@@ -769,11 +914,26 @@ func getGamePath(game *Game) string {
 		return filepath.Join(msxmaniaDir, game.Disco)
 	}
 	if currentCategory == "Good MSX 1" {
-		rootDir, err := filepath.Abs(".")
-		if err != nil {
-			rootDir = "."
+		romDir, err := GetConfig("goodmsx1_dir")
+		if err != nil || romDir == "" {
+			rootDir, err := filepath.Abs(".")
+			if err != nil {
+				rootDir = "."
+			}
+			romDir = filepath.Join(rootDir, "Common", "Good_MSX1_Roms")
 		}
-		return filepath.Join(rootDir, "Common", "Good_MSX1_Roms", game.Disco)
+		return filepath.Join(romDir, game.Disco)
+	}
+	if currentCategory == "Good MSX 2" {
+		romDir, err := GetConfig("goodmsx2_dir")
+		if err != nil || romDir == "" {
+			rootDir, err := filepath.Abs(".")
+			if err != nil {
+				rootDir = "."
+			}
+			romDir = filepath.Join(rootDir, "Common", "Good_MSX2_Roms")
+		}
+		return filepath.Join(romDir, game.Disco)
 	}
 
 	tipoUpper := strings.ToUpper(game.Tipo)
